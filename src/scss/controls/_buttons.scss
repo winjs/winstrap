@@ -1,0 +1,264 @@
+﻿//Override bootstrap mixins for button variants
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $background;
+    border-color: $color-base-medium;
+  }
+
+  //Active and disabled states for all buttons is the same  
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+    color: $color-base;
+    background-color: $color-base-medium; 
+    border-color: transparent;
+  }
+  
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      color: $color-base-medium-low;
+      background-color: $color-base-medium-low;
+      border-color: transparent;
+    }
+  }
+}
+
+// Add color transitions to buttons
+.btn {
+  @include win-type-base();
+  min-width: 120px;
+  min-height: 32px;
+  padding: 4px 8px;
+  border-style: solid;
+  border-width: 2px;
+
+  &,
+  &:focus {
+    color: $color-base-high;
+    background-color: $color-base-low;
+    border-color: transparent;
+  }
+}
+
+// Extra large button (not defined in Bootstrap)
+.win-btn-xl {
+  padding: 20px;
+  @include win-type-subtitle();
+  font-family: $font-family-light;
+}
+
+// Override Bootstrap settings
+.btn-primary,
+.btn-primary:focus {
+  color: $color-alt;
+  background-color: $color-accent;
+}
+.btn-primary:hover,
+.btn-default:hover,
+.btn-primary:focus,
+.btn-default:focus {
+  border-color: $color-base-medium;
+}
+.btn-default:hover {
+  background-color: $color-base-medium-low;
+}
+.btn-primary:hover {
+  background-color: $color-accent;
+}
+.btn:active,
+.btn.active {
+  border-color: $color-base-medium;
+  background-color: $color-base-medium;
+  @include box-shadow(none);
+}
+.btn:disabled {
+  color: $color-base-medium-low;
+  background-color: $color-base-medium-low;
+  border-color: transparent;
+}
+
+// Override Bootstrap alternate buttons
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+// Success appears as green
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+// Warning appears as orange
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+//Override Bootstrap link buttons
+// Make a button look and behave like a link
+.btn-link {
+  color: $link-color;
+  font-weight: normal;
+  border-radius: 0;
+  text-decoration: underline;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &:active,
+  &.active {
+    color: $color-base-medium;
+    border-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Dropdown button
+.btn-dropdown {
+  background: none;
+  border: 2px solid $color-chrome-20;
+
+  .caret {
+    margin-left: .5em;
+    border-top-width: 7px;
+  }
+}
+
+// Toggle buttons
+.win-btn-choice {
+  position: relative;
+  background: none;
+  border-color: $color-chrome-50;
+  text-align: left;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 1px solid $color-chrome-50;
+    @include transition(border-width .2s);
+  }
+
+  &:hover {
+    border-color: $color-chrome-70;
+
+    &:after {
+      border-color: $color-chrome-70;
+      border-width: 2px;
+    }
+  }
+
+  &.active {
+    font-family: $font-family-bold;
+
+    &:after {
+      border-width: 5px;
+    }
+  }
+}
+
+// Buttons with progress bar inside
+.btn-progress {
+  position: relative;
+}
+
+.btn-progress-bar {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  width: 0;
+  @include transition(width 2s ease-in-out);
+
+  .btn-primary & {
+    background: shade($btn-primary-bg, 25%);
+  }
+
+  .btn-primary:hover & {
+    background: $color-darker-blue;
+  }
+}
+
+.btn-progress-label {
+  position: relative;
+}
+
+// Button which collapses or expands an element
+.btn[data-toggle="collapse"] {
+  i[class*="win-icon-"] {
+    font-size: .9em;
+  }
+
+  &[aria-expanded="true"] {
+    .win-button-label-collapsed {
+      display: none;
+    }
+  }
+
+  &[aria-expanded="false"] {
+    .win-button-label-expanded {
+      display: none;
+    }
+  }
+}
+
+// Button filter
+.win-button-filter {
+  border-color: $color-chrome-50;
+  background: none;
+
+  // Clear filter
+  .icon-clear {
+    margin-left: 5px;
+  }
+}

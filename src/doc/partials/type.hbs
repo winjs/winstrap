@@ -1,0 +1,111 @@
+﻿<section class="win-section" id="fonts">
+    <header class="win-section-header row">
+        <h1 class="win-section-title col-xs-24">
+            <a href="#fonts">Fonts</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-sm-24">
+            <p>
+                The main typeface is Segoe UI.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h4>All the font styles</h4>
+            <h1 class="win-type-headline">Headline</h1>
+            <h1>Header</h1>
+            <h2>Subheader</h2>
+            <h3>Title</h3>
+            <h4>Subtitle</h4>
+            <h5>Base</h5>
+            <p>Body</p>
+            <p class="win-type-caption">Caption</p>
+            <p class="win-type-caption-alt">CaptionAlt</p>
+            <p class="win-type-subcaption">Subcaption</p>
+        </div>
+
+        <div class="col-sm-8">
+            <h4>CSS classes</h4>
+
+            {{#markdown}}
+```xml
+<h1 class="win-type-headline">...</h1>
+<div class="win-type-headline">...</div>
+
+<h1>Header</h1>
+<div class="win-type-header">...</div>
+
+<h2>Subheader</h2>
+<div class="win-type-subheader">...</div>
+
+<h3>Title</h3>
+<div class="win-type-title">...</div>
+
+<h4>Subtitle</h4>
+<div class="win-type-subtitle">...</div>
+
+<h5>Base</h5>
+<div class="win-type-base">...</div>
+
+<p>Body</p>
+<div class="win-type-body">...</div>
+
+<p class="win-type-caption">Caption</p>
+<div class="win-type-caption">...</div>
+
+<p class="win-type-caption-alt">CaptionAlt</p>
+<div class="win-type-caption-alt">...</div>
+
+<p class="win-type-subcaption">Subcaption</p>
+<div class="win-type-subcaption">...</div>
+
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-sm-8">
+            <h4>Sass mixins</h4>
+
+            {{#markdown}}
+```scss
+.selector {
+    @include win-type-headline();
+}
+
+.selector {
+    @include win-type-header();
+}
+
+.selector {
+    @include win-type-subheader();
+}
+
+.selector {
+    @include win-type-title();
+}
+
+.selector {
+    @include win-type-subtitle();
+}
+
+.selector {
+    @include win-type-base();
+}
+
+.selector {
+    @include win-type-body();
+}
+
+.selector {
+    @include win-type-caption();
+}
+
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

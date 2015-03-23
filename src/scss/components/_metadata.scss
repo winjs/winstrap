@@ -1,0 +1,37 @@
+﻿.metadata-list {
+    .metadata-list-title {
+        // Override the grid
+        .grid.fixed & {
+            padding: 20px 20px 10px;
+        }
+    }
+
+    .metadata-list-content {
+        // Override the grid
+        .grid.fixed & {
+            padding: 0 20px 10px;
+
+            @media (min-width: $screen-xs) {
+                padding: 20px 20px 10px;
+            }
+        }
+    }
+
+    .metadata-list-title {
+        font-size: $font-size-h6;
+        font-weight: normal;
+    }
+
+    .metadata-list-title:nth-of-type(2n+1),
+    .metadata-list-content:nth-of-type(2n+1) {
+        background: $color-chrome-10;
+    }
+
+    .list-inline {
+        margin-left: 0;
+
+        & > li {
+            padding: 0;
+        }
+    }
+}

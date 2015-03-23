@@ -1,0 +1,145 @@
+﻿//Typography mixins
+@mixin win-type-headline {
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 1.29;
+    letter-spacing: 0px;    
+}
+@mixin win-type-header {
+    font-size: 46px;
+    font-weight: 200;
+    line-height: 1.216;
+    letter-spacing: 0px;
+}
+@mixin win-type-subheader {
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 1.176;
+}
+@mixin win-type-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.167;
+}
+@mixin win-type-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+@mixin win-type-base {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.333;
+}
+@mixin win-type-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.333;
+}
+@mixin win-type-caption {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.167;
+}
+@mixin win-type-caption-alt {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;    
+}
+@mixin win-type-subcaption {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+//
+// Explicitly define a Segoe UI font-family so that we can assign Segoe UI
+// Semilight to an appropriate font-weight.
+//
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 500;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Bold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
+}
+
+//Apply mixins
+.win-type-headline {
+    @include win-type-headline();
+}
+h1, .h1, .win-type-header {
+    @include win-type-header();
+}
+h2, .h2, .win-type-subheader {
+    @include win-type-subheader();
+}
+h3, .h3, .win-type-title {
+    @include win-type-title();
+}
+h4, .h4, .win-type-subtitle {
+    @include win-type-subtitle();
+}
+h5, .h5, .win-type-base {
+    @include win-type-base();
+}
+p, .win-type-body {
+    @include win-type-body();
+}
+h6, .h6, .win-type-caption {
+    @include win-type-caption();
+}
+.win-type-caption-alt {
+   @include win-type-caption-alt();
+}
+.win-type-subcaption {
+    @include win-type-subcaption();
+}
+
+// Override Bootstrap Link syles
+.win-link {
+  color: $link-color;
+  text-decoration: underline;
+
+  &:hover
+ {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    @include tab-focus;
+    color: $color-base-medium-low;
+    text-decoration: underline;
+  }
+}

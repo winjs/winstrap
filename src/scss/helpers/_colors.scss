@@ -1,0 +1,30 @@
+﻿// Return a lighter color
+// 0% is the same color, 100% is white
+@function tint($color, $percent, $alpha: 1) {
+  @return rgba(mix(white, $color, $percent), $alpha);
+}
+
+// Return a darker color
+// 0% is the same color, 100% is black
+@function shade($color, $percent, $alpha: 1) {
+  @return rgba(mix(black, $color, $percent), $alpha);
+}
+
+// Return an intensity of white
+// 0% is black, 100% is white
+@function white($intensity: 100%, $alpha: 1) {
+  @return rgba(tint(black, $intensity), $alpha);
+}
+
+// Return an intensity of black
+// 0% is black, 100% is black
+@function black($intensity: 100%, $alpha: 1) {
+  @return rgba(shade(white, $intensity), $alpha);
+}
+
+// Return a tint of gray
+// 0% is black, 100% is white
+@function gray($intensity: 50%, $alpha: 1) {
+  @return rgba(mix(white, black, $intensity), $alpha);
+}
+

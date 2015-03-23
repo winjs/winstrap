@@ -1,0 +1,109 @@
+﻿<div class="page-header" id="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-24">
+                <h1>Layout</h1>
+
+                <ul class="nav nav-pills" data-win-scroll="smooth">
+                    <li role="presentation">
+                        <a href="#page-header">Page header</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#grid">Grid</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#grid-small-gutters">Small gutters</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#section">Section</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#section-gallery">Section gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <section class="win-section">
+        <header class="win-section-header row">
+            <h1 class="win-section-title col-xs-24">
+                <a href="#page-header">Page header</a>
+            </h1>
+        </header>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    The basic structure:
+                </p>
+
+                {{#markdown}}
+```xml
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-24">
+                <h1>This is a page header</h1>
+                <p>With some content</p>
+
+                <!--
+                    Add data-win-scroll="smooth" attribute
+                    and the following JS code
+                    to enable smooth scrolling
+                -->
+                <ul class="nav nav-pills"
+                    [data-win-scroll="smooth" ]>
+                    <li role="presentation" class="active">
+                        <a href="#nav-item-1">Nav item 1</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#nav-item-2">Nav item 2</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#nav-item-3">Nav item 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+```
+                {{/markdown}}
+            </div>
+
+            <div class="col-md-12">
+                <p>
+                    The JavaScript code to enable smooth scrolling:
+                </p>
+
+                {{#markdown}}
+```javascript
+$(function () {
+    $('[data-win-scroll="smooth"] a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+            location.hostname === this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1500);
+
+                return false; // prevent default href
+            }
+        }
+    });
+});
+```
+                {{/markdown}}
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,62 @@
+﻿<section class="win-section" id="back-to-top">
+    <header class="win-section-header row">
+        <h1 class="win-section-title col-xs-24">
+            <a href="#back-to-top">Back to top</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                This link uses <a href="http://getbootstrap.com/javascript/#affix">Bootstrap's affix</a> and should be a direct child of the body of the HTML document. It should be near the end.
+            </p>
+
+            {{#markdown}}
+```xml
+<a href="#top" class="win-back-to-top">
+    <i class="win-icon-up"></i>
+    <span class="sr-only">Back to top</span>
+</a>
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-12">
+            <p>
+                This component must be initialized with JavaScript.
+                It is displayed when the user has scrolled two times to viewport height.
+            </p>
+
+            {{#markdown}}
+```javascript
+$(function () {
+    var backToTop = $('.win-back-to-top'),
+        threshold = 2 * $(window).height();
+
+    // Displayed when we've scrolled 2x the viewport height
+    if (backToTop.length === 0 ||
+        $(document).height() < threshold) {
+        return;
+    }
+
+    backToTop.affix({
+        offset: {
+            top: threshold
+        }
+    });
+
+    // Smooth scroll to top
+    backToTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, {
+            duration: 750,
+            easing: 'swing'
+        });
+
+        return false; // prevent default href
+    });
+});
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

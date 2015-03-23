@@ -1,0 +1,95 @@
+﻿<section class="win-section" id="progress">
+    <header class="win-section-header row">
+        <h1 class="win-section-title col-xs-24">
+            <a href="#progress">Progress</a>
+        </h1>
+    </header>
+
+{{!--     <div class="row">
+        <div class="col-xs-24">
+            <h2>Inside a button</h2>
+        </div>
+
+        <div class="col-md-5">
+
+            <button type="button" class="btn btn-primary btn-progress btn-lg">
+                <span class="btn-progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width: 83%;"></span>
+                <span class="btn-progress-label">Resume (83%)</span>
+            </button>
+
+        </div>
+
+        <div class="col-md-18 col-md-offset-1">
+            {{#markdown}}
+```xml
+<button type="button" class="btn btn-primary btn-progress btn-lg">
+    <span class="btn-progress-bar" role="progressbar"
+            aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
+            style="width: 83%;"></span>
+    <span class="btn-progress-label">Resume (83%)</span>
+</button>
+```
+            {{/markdown}}
+        </div>
+    </div>
+ --}}
+    <div class="row">
+        <div class="col-xs-24">
+            <h2>Determinate progress bar</h2>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="progress progress-xs">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% Complete</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-20">
+            {{#markdown}}
+```xml
+<div class="progress progress-xs">
+    <div class="progress-bar" role="progressbar"
+         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 60%;">
+        <span class="sr-only">60%</span>
+    </div>
+</div>
+```
+            {{/markdown}}
+        </div>
+    </div>
+    <div class="col-xs-24">
+        <h2>Intrinsic progress bar</h2>
+        </div>
+
+        <div class="col-md-24">
+
+            <h3>Determinate</h3>
+            <progress value="0.5"></progress>
+
+            <h3>Determinate medium</h3>
+            <progress value="0.5" class="win-medium"></progress>
+
+            <h3>Determinate large</h3>
+            <progress value="0.5" class="win-large"></progress>
+
+        <div class="col-md-24">
+            {{#markdown}}
+```xml
+            <h3>Determinate</h3>
+            <progress value="0.5"></progress>
+
+            <h3>Determinate medium</h3>
+            <progress value="0.5" class="win-medium"></progress>
+
+            <h3>Determinate large</h3>
+            <progress value="0.5" class="win-large"></progress>
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

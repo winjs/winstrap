@@ -1,0 +1,139 @@
+﻿// Rating component with stars
+.win-rating {
+    margin: 0;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+// Inline rating
+.win-rating-inline {
+    display: inline-block;
+}
+
+// Button followed by an inline rating
+.btn + .win-rating-inline {
+    margin-left: 1em;
+}
+
+.win-rating-label {
+    display: inline-block;
+    margin-right: .5em;
+
+    + .win-rating-stars {
+        font-size: 1.25em;
+    } 
+}
+
+// Average square
+.win-rating-average {
+    @include win-type-headline();
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+    line-height: 90px;
+    text-align: center;
+    background: $color-chrome-30;
+
+    + .win-rating-stars {
+        font-size: 1.25em;
+        margin-top: 20px;
+    }
+}
+
+// Average rating with image
+.win-rating-average-img {
+    @include win-type-title();
+    display: inline-block;
+    margin: 0 .5em .5em 0;
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+// Stars
+.win-rating-stars {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 10px;
+    font-size: 24px;
+    line-height: 1;
+
+    .win-icon-ratingstar {
+        color: $color-base-medium-low;
+    }
+}
+
+.win-rating-stars-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .win-icon-ratingstar {
+        color: $color-accent;
+    }
+}
+
+// Rating numbers
+.win-rating-numbers {
+    @include win-type-caption-alt();
+    margin-left: .15em;
+    line-height: 24px;
+}
+
+.win-rating-total {
+    @include win-type-caption-alt();
+}
+
+// Histogram
+.win-rating-histogram {
+    @include list-unstyled();
+    margin-bottom: .5em;
+
+    li > a {
+        display: inline-block;
+        padding: 1px 5px 2px 0;
+        white-space: nowrap;
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            background: $color-chrome-10;
+        }
+    }
+
+    .progress {
+        display: inline-block;
+        width: 300px;
+        margin-right: 5px;
+    }
+
+    .progress-bar {
+        background: $color-webstore-orange;
+        box-shadow: none;
+    }
+
+    .icon-star {
+        font-size: $font-size-small;
+        vertical-align: 0;
+        margin: 0 2px;
+    }
+}
+
+.win-rating-histogram-caption {
+    @include win-type-caption-alt();
+    color: $color-chrome-50;
+}

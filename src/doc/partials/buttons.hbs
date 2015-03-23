@@ -1,0 +1,210 @@
+﻿<section class="win-section" id="buttons">
+    <header class="win-section-header row">
+        <h1 class="win-section-title col-xs-24">
+            <a href="#buttons">Buttons</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-md-24">
+            <p>The colors used for the background and text of buttons have been vetted to meet a minimum color contrast ratio of 4.5:1 for accesibility purposes.</p>
+        </div>
+        <div class="col-md-12">
+            <p><strong>Using <code>&lt;a&gt;</code> tag.</strong> The <code>&lt;a&gt;</code> tag should be used for links between pages, not for JavaScript actions.</p>
+            <p>Rest state</p>
+            <p>
+                <a href="" class="btn btn-default">Default</a>                
+                <a href="" class="btn btn-primary">Primary</a>
+                <a href="" class="btn btn-success">Success</a>
+                <a href="" class="btn btn-info">Info</a>
+                <a href="" class="btn btn-warning">Warning</a>
+                <a href="" class="btn btn-danger">Danger</a>
+            </p>
+            <p>Disabled state</p>
+            <p>
+                <a href="" class="btn btn-default disabled">Default disabled</a>                
+                <a href="" class="btn btn-primary disabled">Primary disabled</a>
+                <a href="" class="btn btn-success disabled">Success disabled</a>
+                <a href="" class="btn btn-info disabled">Info disabled</a>
+                <a href="" class="btn btn-warning disabled">Warning disabled</a>
+                <a href="" class="btn btn-danger disabled">Danger disabled</a>
+            </p>
+            <p>Active (on click/mouse down) state</p>
+            <p>
+                <a href="" class="btn btn-default active">Default active</a>                
+                <a href="" class="btn btn-primary active">Primary active</a>
+                <a href="" class="btn btn-success active">Success active</a>
+                <a href="" class="btn btn-info active">Info active</a>
+                <a href="" class="btn btn-warning active">Warning active</a>
+                <a href="" class="btn btn-danger active">Danger active</a>   
+            </p>
+
+            {{#markdown}}
+```xml
+<a href="" class="btn [btn-default] [btn-primary] [btn-success] [btn-info] [btn-warning] [btn-danger] [disabled] [active]">
+    Button link
+</a>
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-12">
+            <p><strong>Using <code>&lt;button&gt;</code> tag.</strong> The <code>&lt;button&gt;</code> tag is used on forms and for JavaScript actions.</p>           
+            <p>Rest state</p>
+            <p>
+                <button class="btn btn-default">Default</button>                
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-success">Success</button>                
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-link">Link</button>
+            </p>
+            <p>Disabled state</p>
+            <p>
+                <button class="btn btn-default" disabled>Default disabled</button>                
+                <button class="btn btn-primary" disabled>Primary disabled</button>
+                <button class="btn btn-success" disabled>Success disabled</button>                
+                <button class="btn btn-info" disabled>Info disabled</button>
+                <button class="btn btn-warning" disabled>Warning disabled</button>
+                <button class="btn btn-danger" disabled>Danger disabled</button>
+                <button class="btn btn-link" disabled>Link disabled</button>
+            </p>
+            <p>Active (on click/mouse down) state</p>
+            <p>
+                <button class="btn btn-default active">Default active</button>               
+                <button class="btn btn-primary active">Primary active</button>
+                <button class="btn btn-success active">Success active</button>                
+                <button class="btn btn-info active">Info active</button>
+                <button class="btn btn-warning active">Warning active</button>
+                <button class="btn btn-danger active">Danger active</button>
+                <button class="btn btn-link active">Link active</button>
+            </p>
+
+            {{#markdown}}
+```xml
+<button type="button"
+       [disabled]
+        class="btn [btn-default] [btn-primary] [btn-success] [btn-info] [btn-warning] [btn-danger] [active]">
+    Button
+</button>
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-xs-24">
+            <h2>Buttons sizes</h2>
+        </div>
+
+        <div class="col-md-12">
+            <p>
+                Button sizes from extra small, small, normal to large.
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-primary">Normal button</button>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-primary win-btn-xl">Extra large button</button>
+            </p>
+        </div>
+
+        <div class="col-md-12">
+            <p>
+                A full width button that can be used with the various sizes.
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block btn-xs">Extra small block button</button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block btn-sm">Small block button</button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block">Normal block button</button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block btn-lg">Large block button</button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary btn-block win-btn-xl">Extra large block button</button>
+            </p>
+        </div>
+
+        <div class="col-xs-24">
+            <h2>Button groups (aka Choice buttons)</h2>
+        </div>
+
+        <div class="col-md-6">
+            <p>
+                <button type="button" class="btn win-btn-choice btn-lg btn-block" data-toggle="button" aria-pressed="false">
+                    Choice
+                </button>
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <p>
+                <button type="button" class="btn win-btn-choice btn-lg btn-block" data-toggle="button" aria-pressed="false">
+                    Another choice
+                </button>
+            </p>
+        </div>
+
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+<button type="button" class="btn win-btn-choice btn-lg btn-block"
+       [data-toggle="button"]
+        aria-pressed="false|true">
+    Choice
+</button>
+```
+            {{/markdown}}
+        </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h2 id="button-filter">Button filter</h2>
+
+            <ul class="list-inline">
+                <li>
+                    <button class="btn win-button-filter" title="Clear filter">
+                        Filter
+                        <i class="win-icon-cancel"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn win-button-filter" title="Clear filter">
+                        Another filter
+                        <i class="win-icon-cancel"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn win-button-filter" title="Clear filter">
+                        Another one
+                        <i class="win-icon-cancel"></i>
+                    </button>
+                </li>
+            </ul>
+
+            {{#markdown}}
+```xml
+<ul class="list-inline">
+    <li>
+        <button class="btn win-button-filter" title="Clear filter">
+            Filter
+            <i class="win-icon-cancel"></i>
+        </button>
+    </li>
+    <li>
+        <button class="btn win-button-filter" title="Clear filter">
+            Another filter
+            <i class="win-icon-cancel"></i>
+        </button>
+    </li>
+</ul>
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

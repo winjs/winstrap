@@ -1,0 +1,256 @@
+﻿// Generic media container (image + text)
+.win-media {
+    position: relative;
+    margin: 0;
+
+    .win-media-img {
+        position: relative;
+        height: 0;
+        padding-bottom: 100%; // Default square ratio
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0; // remove space between inline-block elements
+
+        // Ratio of a movie cover
+        &.win-ratio-movie {
+            padding-bottom: 137%;
+        }
+
+        // Ratio 2:1
+        &.win-ratio-2-1 {
+            padding-bottom: percentage(1 / 2);
+        }
+
+        // Ratio 16:9
+        &.win-ratio-16-9 {
+            padding-bottom: percentage(9 / 16);
+        }
+
+        // Ratio square 1:1
+        &.win-ratio-1-1 {
+            padding-bottom: percentage(1);
+        }
+
+        a {
+            position: absolute;
+            top: 0; right: 0;
+            bottom: 0; left: 0;
+            cursor: pointer;
+
+            // Overlay for hover effect
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0; right: 0;
+                bottom: 0; left: 0;
+                background-color: rgba($body-bg, 0);
+                @include transition(background-color .3s);
+            }
+
+            &:hover:after {
+                background-color: rgba($body-bg, .3);
+            }
+
+            // Ghost element to align the image vertically
+            // http://css-tricks.com/centering-in-the-unknown/
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 100%;
+                vertical-align: bottom;
+            }
+        }
+
+        &.win-media-img-has-play {
+            a {
+                i[class*="win-icon-"] {
+                    z-index: 1;
+                }
+
+                &:after {
+                    background-color: $color-base-medium-low;
+                }
+
+                &:hover:after {
+                    background-color: rgba($color-base, 0);
+                }
+            }
+        }
+
+        img {
+            display: inline-block;
+            width: 100%;
+            vertical-align: bottom;
+            @include transition(opacity .5s);
+
+            &.loading {
+                opacity: 0;
+            }
+
+            &.loaded {
+                opacity: 1;
+            }
+        }
+
+        i[class*="win-icon-"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 60px;
+            margin-left: -30px;
+            margin-top: -30px;
+            color: white;
+        }
+
+        .progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+    }
+
+    // Horizontal media, image must be aligned on top
+    &.row {
+        .win-media-img {
+            margin-bottom: ($grid-gutter-width / 2);
+
+            a:before,
+            img {
+                vertical-align: top;
+            }
+        }
+
+        .win-media-header {
+            margin-top: 0;
+        }
+    }
+
+    .win-media-header {
+        @include win-type-base();
+        margin: .5em 0 .25em;
+        color: $headings-color;
+
+        a {
+            color: $brand-primary;
+        }
+    }
+
+    // Limit the media header to n lines
+    $media-header-line-height: 1.3em;
+
+    [class*="win-media-header-clamp-"] {
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 2em;
+            height: $media-header-line-height;
+            background: linear-gradient(to right, rgba($body-bg, 0), $body-bg);
+            pointer-events: none;
+        }
+    }
+
+    // Limit to 1 line
+    .win-media-header-clamp-1 {
+        height: $media-header-line-height;
+    }
+
+    // Limit to 2 lines
+    .win-media-header-clamp-2 {
+        height: 2 * $media-header-line-height;
+    }
+
+    .win-media-subheader {
+        @include win-type-caption-alt();
+        color: $color-chrome-70;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .win-media-caption {
+        font-size: $font-size-base;
+        white-space: normal;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .win-media-price {
+        @include win-type-subcaption();
+        color: $headings-color;
+
+        s {
+            margin-right: .5em;
+//            color: $color-gray-cool-gray-7;
+            color: #969696; //hard code this for now
+        }
+    }
+
+    .win-rating {
+        margin-bottom: .25em;
+    }
+
+    // Media with label
+    .win-media-img-has-label {
+        a:before,
+        img {
+            vertical-align: top;
+        }
+
+        i[class*="win-icon-"] {
+            top: 36%;
+        }
+    }
+
+    .win-media-img-label {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        min-height: 27%;
+        padding: 10% .75em 12%;
+        font-size: $font-size-small;
+        background: $color-chrome-70;
+        color: white;
+        pointer-events: none;
+    }
+}
+
+.win-media-play-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .win-btn-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        @include transition(background-color .3s);
+        background: $color-base-medium-low;
+
+        &:hover {
+            background: rgba($color-base, 0);
+        }
+    }
+}
+
+.win-media-info {
+    @include win-type-caption-alt();
+    color: $color-chrome-50;
+}

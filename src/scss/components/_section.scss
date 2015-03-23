@@ -1,0 +1,49 @@
+﻿// Section
+.win-section {
+    margin-bottom: 1.5em;
+}
+
+.win-section-header {
+    position: relative;
+    margin-bottom: 1.5em;
+
+    .win-section-title {
+        @include win-type-header();
+        margin-bottom: 0;
+        color: $headings-color;
+
+        a {
+            color: inherit;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+.win-section-header-aside {
+    position: absolute;
+    top: .25em;
+    right: ($grid-gutter-width / 2);
+}
+
+.win-section-header-more {
+    margin-left: .5em;
+
+    &.btn-link {
+        padding-right: 0;
+    }
+}
+
+.win-section-body {
+    margin-bottom: 1.5em;
+}
+
+.win-section-gallery {
+    .win-media {
+        margin-bottom: 2 * ($grid-gutter-width / 2);
+    }
+}

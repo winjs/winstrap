@@ -1,0 +1,78 @@
+﻿.win-list-items {
+    @include list-unstyled();
+    margin: 1em 0;
+
+    // Override a few WinJS Grid settings
+    .row {
+        padding: ($grid-gutter-width / 2);
+
+        .row {
+            padding: 0;
+        }
+    }
+
+    // Container for clickable header and collapsible details
+    .win-list-items-row {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid $color-chrome-10;
+    }
+
+    // Clickable header
+    [data-toggle="collapse"] {
+        // Avoid offset when the details container is expanded
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        cursor: pointer;
+
+        &[aria-expanded="true"],
+        &:hover {
+            background: $color-chrome-10;
+        }
+    }
+
+    .win-icon-add,
+    .win-icon-remove {
+        font-size: .75em;
+        height: 1.25em;
+    }
+
+    [aria-expanded="false"] .win-icon-remove {
+        display: none;
+    }
+
+    [aria-expanded="true"] .win-icon-add {
+        display: none;
+    }
+
+    // Collapsible details
+    .collapse,
+    .collapsing {
+        border-left: 1px solid $color-chrome-10;
+        border-right: 1px solid $color-chrome-10;
+    }
+}
+
+.win-list-quick-links {
+    @include list-unstyled();
+    margin-bottom: 2em;
+
+    li {
+        @include win-type-title();
+        margin-bottom: 2 * ($grid-gutter-width-sm / 2);
+    }
+
+    a {
+        display: block;
+        padding: .5em .25em;
+        background: $color-chrome-10;
+        text-align: center;
+
+        @media (min-width: $screen-sm) {
+            display: inline-block;
+            padding: 0;
+            margin-bottom: ($grid-gutter-width / 2);
+            background: none;
+        }
+    }
+}

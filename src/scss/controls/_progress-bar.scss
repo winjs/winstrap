@@ -1,0 +1,25 @@
+﻿.progress {
+    box-shadow: none;
+    background-color: $color-base-medium-low;
+    width: 180px;
+    height: 4px;
+
+    .progress-bar {
+        @include transition(width 2s ease-in-out);
+        background-color: $color-accent;
+    }
+}
+
+.progress-sm {
+    height: 4px;
+    margin: 0;
+}
+
+.progress-xs {
+    height: 4px;
+    margin: 0;
+}
+
+.progress-media {
+    height: 5px;
+}

@@ -1,0 +1,21 @@
+﻿.breadcrumb {
+    margin: 20px 0 25px;
+    font-size: $font-size-small;
+
+    a {
+        color: $text-color;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+
+    > li + li:before {
+        font-family: "winjs-symbols";
+        content: map-get($win-symbols, grouparrowright);
+        display: inline-block;
+        padding: 0 4px 0 1px;
+        font-size: .8em;
+        vertical-align: -0.15em;
+    }
+}

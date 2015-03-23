@@ -1,0 +1,5 @@
+﻿// Use our own mixin instead of Bootstrap
+@mixin tab-focus() {
+    outline: 1px dotted #999;
+    outline-offset: 1px;
+}

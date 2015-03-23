@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the generated HTML file of the demo page -->
+    <meta charset="utf-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{{ name }}</title>
+    
+    <link rel="stylesheet" href="css/app.css?{{ version }}" />
+
+    <script src="../external/jquery/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../external/html5shiv/html5shiv.min.js"></script>
+        <script src="../external/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    {{> navbar }}
+
+    {{> body }}
+
+    {{> back-to-top }}
+
+    {{> scripts }}
+</body>
+</html>

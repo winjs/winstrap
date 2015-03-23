@@ -1,0 +1,30 @@
+﻿@mixin triangle($dir, $base-width, $length, $color) {
+    width: 0; height: 0;
+    border: ($base-width / 2) solid transparent;
+
+    @if $dir == top {
+
+        border-top: none;
+        border-bottom-width: $length;
+        border-bottom-color: $color;
+
+    } @else if $dir == right {
+
+        border-right: none;
+        border-left-width: $length;
+        border-left-color: $color;
+
+    } @else if $dir == bottom {
+
+        border-top-width: $length;
+        border-bottom: none;
+        border-top-color: $color;
+
+    } @else if $dir == left {
+
+        border-right-width: $length;
+        border-left: none;
+        border-right-color: $color;
+
+    }
+}

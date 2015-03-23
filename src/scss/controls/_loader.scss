@@ -1,0 +1,72 @@
+﻿.win-loader {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    .win-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        @include rotate(225deg);
+        @include animation(win-loader-animation 5s infinite);
+    
+        &:after {
+            content: "\2022";
+            position: absolute;
+            font-size: 20px;
+            color: $brand-primary;
+        }
+    
+        &:nth-child(2) { @include animation-delay(300ms); }
+        &:nth-child(3) { @include animation-delay(600ms); }
+        &:nth-child(4) { @include animation-delay(900ms); }
+        &:nth-child(5) { @include animation-delay(1200ms); }
+    }
+}
+
+@include keyframes(win-loader-animation) {
+    0% {
+        @include rotate(225deg);
+        opacity: 1;
+        @include animation-timing-function(ease-out);
+    }
+
+    7% {
+        @include rotate(345deg);
+        @include animation-timing-function(linear);
+    }
+
+    30% {
+        @include rotate(455deg);
+        @include animation-timing-function(ease-in-out);
+    }
+
+    39% {
+        @include rotate(690deg);
+        @include animation-timing-function(linear);
+    }
+
+    70% {
+        @include rotate(815deg);
+        opacity: 1;
+        @include animation-timing-function(ease-out);
+    }
+
+    75% {
+        @include rotate(945deg);
+        @include animation-timing-function(ease-out);
+    }
+
+    76% {
+        @include rotate(945deg);
+        opacity: 0;
+    }
+
+    100% {
+        @include rotate(945deg);
+        opacity: 0;
+    }
+}

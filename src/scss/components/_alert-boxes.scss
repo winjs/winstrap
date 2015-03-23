@@ -1,0 +1,14 @@
+﻿.alert-box {
+    > [class*="win-icon-"] {
+        float: left;
+        font-size: 1em;
+        margin-right: .5em;
+    }
+
+    &.warning {
+        background: none;
+        color: $text-color;
+        border-top: 1px solid $color-chrome-10;
+        border-bottom: 1px solid $color-chrome-10;
+    }
+}

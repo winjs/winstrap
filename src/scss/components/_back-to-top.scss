@@ -1,0 +1,30 @@
+﻿.win-back-to-top {
+    visibility: hidden;
+    padding: (($grid-gutter-width / 2) / 2);
+    color: $color-base;
+    background: $color-chrome-10;
+    background: rgba($color-chrome-20, .5);
+    opacity: 0;
+    @include translate(0, 20px);
+    @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
+
+    // Added by Bootstrap Affix when scrolling
+    &.affix {
+        visibility: visible;
+        z-index: $zindex-navbar-fixed; // same level as a fixed nav bar
+        right: (($grid-gutter-width / 2) * 2);
+        bottom: ($grid-gutter-width / 2);
+        opacity: 1;
+        @include translate(0, 0);
+    }
+
+    &:hover {
+        color: $color-base;
+        background: $color-chrome-30;
+        background: rgba($color-chrome-20, .85);
+    }
+
+    [class*="icon"] {
+        font-size: $font-size-h2;
+    }
+}
