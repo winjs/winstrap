@@ -38,7 +38,7 @@ You need:
 - The SASS version of bootstrap in `external/bootstrap/`
 - jquery.min.js in `external/jquery/`
 - respond.min.js in `external/respond/`
-- html5shiv.min.js in `external/html5shiv/`im gon
+- html5shiv.min.js in `external/html5shiv/`
 
 ## Building bootstrap-winjs
 
