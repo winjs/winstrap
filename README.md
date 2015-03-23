@@ -6,11 +6,9 @@
 
 http://nodejs.org/download/
 
-Make sure Node.js is in your path environement variable.
+Make sure Node.js is available in your path.
 
 ### Install Grunt
-
-In an Administrator PowerShell console:
 
 ```
 npm install -g grunt-cli
@@ -18,10 +16,8 @@ npm install -g grunt-cli
 
 ### Clone the repo
 
-In a user PowerShell console:
-
 ```
-git clone https://winjs.visualstudio.com/DefaultCollection/_git/bootstrap-winjs
+git clone https://github.com/winjs/bootstrap-winjs.git
 ```
 
 You should have a `bootstrap-winjs` folder.
