@@ -1,4 +1,4 @@
-﻿.win-loader {
+﻿.win-progress-ring {
     position: relative;
     width: 40px;
     height: 40px;
@@ -11,7 +11,7 @@
         height: 40px;
         opacity: 0;
         @include rotate(225deg);
-        @include animation(win-loader-animation 5s infinite);
+        @include animation(win-progress-ring-animation 5s infinite);
     
         &:after {
             content: "\2022";
@@ -27,7 +27,7 @@
     }
 }
 
-@include keyframes(win-loader-animation) {
+@include keyframes(win-progress-ring-animation) {
     0% {
         @include rotate(225deg);
         opacity: 1;
