@@ -1,38 +1,45 @@
 {
-    "name": "bootstrap-winjs",
-    "description": "bootstrap-winjs is boilerplate constructs and CSS styling on top of Bootstrap controls.",
-    "repository": "https://github.com/winjs/bootstrap-winjs.git",
-    "version": "0.2.0",
-    "author": {
-        "name": "Microsoft"
+  "name": "bootstrap-winjs",
+  "description": "bootstrap-winjs is boilerplate constructs and CSS styling on top of Bootstrap controls.",
+  "repository": "https://github.com/winjs/bootstrap-winjs.git",
+  "version": "0.2.0",
+  "author": {
+    "name": "Microsoft"
+  },
+  "contributors": [
+    {
+      "name": "Frederic Perrin"
     },
-    "contributors": [
-        {
-            "name": "Frédéric Perrin",
-            "email": "frperrin@microsoft.com"
-        },
-        {
-            "name": "Romain Hottlet",
-            "email": "romainh@microsoft.com"
-        },
-        {
-            "name": "Andy Seres",
-            "email": "andyse@microsoft.com"
-        },
-        {
-            "name": "Mathias Wendlinger",
-            "email": "mwendlin@microsoft.com"
-        }
-    ],
-    "homepage": "",
-    "dependencies": {},
-    "devDependencies": {
-        "assemble": "^0.4.42",
-        "grunt": "^0.4.5",
-        "grunt-contrib-compress": "^0.12.0",
-        "grunt-contrib-connect": "^0.9.0",
-        "grunt-contrib-copy": "^0.7.0",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-sass": "^0.18.0"
+    {
+      "name": "Mathias Wendlinger"
+    },
+    {
+      "name": "Romain Hottlet"
+    },
+    {
+      "name": "Andy Seres"
+    },
+    {
+      "name": "Rachel Nizhnikov"
+    },
+    {
+      "name": "David Evans"
     }
+  ],
+  "homepage": "",
+  "dependencies": {
+    "html5shiv": "^3.7.2",
+    "jquery": "^1.11.2",
+    "respond.js": "^1.4.2"
+  },
+  "devDependencies": {
+    "assemble": "^0.4.42",
+    "bootstrap-sass": "^3.3.4",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.12.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.18.0"
+  }
 }
