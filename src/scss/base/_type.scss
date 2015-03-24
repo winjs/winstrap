@@ -95,34 +95,34 @@
 }
 
 //Apply mixins
-.win-type-headline {
+.win-type-headline, .text-headline {
     @include win-type-headline();
 }
-h1, .h1, .win-type-header {
+h1, .h1, .win-type-header, .text-header {
     @include win-type-header();
 }
-h2, .h2, .win-type-subheader {
+h2, .h2, .win-type-subheader, .text-subheader {
     @include win-type-subheader();
 }
-h3, .h3, .win-type-title {
+h3, .h3, .win-type-title, .text-title {
     @include win-type-title();
 }
-h4, .h4, .win-type-subtitle {
+h4, .h4, .win-type-subtitle, .text-subtitle {
     @include win-type-subtitle();
 }
-h5, .h5, .win-type-base {
+h5, .h5, .win-type-base, .text-base {
     @include win-type-base();
 }
-p, .win-type-body {
+p, .win-type-body, .text-body {
     @include win-type-body();
 }
-h6, .h6, .win-type-caption {
+h6, .h6, .win-type-caption, .text-caption {
     @include win-type-caption();
 }
-.win-type-caption-alt {
+.win-type-caption-alt, .text-caption-alt {
    @include win-type-caption-alt();
 }
-.win-type-subcaption {
+.win-type-subcaption, .text-subcaption {
     @include win-type-subcaption();
 }
 
