@@ -1,0 +1,31 @@
+﻿// Bootstrap Modal
+.modal-header .close {
+    position: absolute;
+    top: -27px;
+    right: 0;
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.modal-content {
+    box-shadow: none;
+}
+
+// Center the Bootstrap Modal vertically
+.win-modal-center {
+    text-align: center;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+}
