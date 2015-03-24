@@ -8,6 +8,9 @@ dist/js/*
 dist/*.html
 dist/*.zip
 
+# External requirements aren't versioned
+external/
+
 # User-specific files
 *.suo
 *.user

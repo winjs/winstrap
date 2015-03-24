@@ -31,6 +31,15 @@ cd bootstrap-winjs
 npm install
 ```
 
+### Installing external dependencies
+
+You need:
+
+- The SASS version of bootstrap in `external/bootstrap/`
+- jquery.min.js in `external/jquery/`
+- respond.min.js in `external/respond/`
+- html5shiv.min.js in `external/html5shiv/`
+
 ## Building bootstrap-winjs
 
 Just run:
@@ -51,4 +60,4 @@ grunt server
 
 Launch this URL in your brower: http://localhost:9001/
 
-The changes you make to the Sass files `*.scss` or source documentation files `*.hbs` will be automatically recompiled. Just refresh your browser window. 
+The changes you make to the Sass files `*.scss` or source documentation files `*.hbs` will be automatically recompiled. Just refresh your browser window.
