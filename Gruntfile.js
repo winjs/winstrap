@@ -67,27 +67,7 @@ module.exports = function (grunt) {
                     base: './'
                 }
             }
-        },
-
-        compress: {
-            main: {
-                options: {
-                    archive: 'dist/<%= pkg.name %>-<%= pkg.version %>.zip'
-                },
-                src: [
-                    'dist/*.html',
-                    'dist/css/*.css',
-                    'dist/fonts/*.{eot,ttf,woff}',
-                    'dist/images/**',
-                    'dist/js/*.js',
-                    'external/**',
-                    'src/**',
-                    'Gruntfile.js',
-                    'package.json'
-                ]
-            }
         }
-
     });
 
     grunt.loadNpmTasks('assemble');
@@ -99,5 +79,4 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['sass', 'assemble', 'copy']);
     grunt.registerTask('server', ['connect', 'watch']);
-    grunt.registerTask('zip', ['compress']);
 }
