@@ -71,7 +71,6 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('assemble');
-    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-sass');
