@@ -24,6 +24,30 @@ module.exports = function (grunt) {
                         cwd: 'src/js/',
                         src: 'app.js',
                         dest: 'dist/js/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/jquery/dist/',
+                        src: 'jquery.min.js',
+                        dest: 'dist/js/vendor/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/html5shiv/dist/',
+                        src: 'html5shiv.min.js',
+                        dest: 'dist/js/vendor/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/respond.js/dest/',
+                        src: 'respond.min.js',
+                        dest: 'dist/js/vendor/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/bootstrap-sass/assets/javascripts/',
+                        src: 'bootstrap.min.js',
+                        dest: 'dist/js/vendor/'
                     }
                 ]
             }
