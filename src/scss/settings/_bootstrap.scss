@@ -22,7 +22,7 @@ $gray-lighter:           $color-base-low !default;
 
 $brand-primary:         $color-accent !default; 
 $brand-success:         $color-core-green !default; 
-$brand-info:            $color-core-cyan !default; 
+$brand-info:            $color-core-blue !default; 
 $brand-warning:         $color-core-orange !default;
 $brand-danger:          $color-core-red !default;
 
@@ -161,11 +161,11 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $brand-primary !default;
 
-$btn-success-color:              #000 !default;
+$btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 #000 !default;
+$btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
