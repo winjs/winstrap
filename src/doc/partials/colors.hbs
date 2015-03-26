@@ -171,14 +171,34 @@ $color-accent: rgb(0, 120, 215);
         </div>     
 
         <div class="col-xs-6">
+            <p class="color accent-low"></p>
+
+            {{#markdown}}
+```scss
+$color-accent-low: rgba($color-accent, 0.4); 
+```
+            {{/markdown}}
+        </div>  
+
+        <div class="col-xs-6">
             <p class="color accent-medium"></p>
 
             {{#markdown}}
 ```scss
-$color-accent-medium: rgba($color-accent, 0.4);
+$color-accent-medium: rgba($color-accent, 0.6);
 ```
             {{/markdown}}
         </div>   
+       
+        <div class="col-xs-6">
+            <p class="color accent-high"></p>
+
+            {{#markdown}}
+```scss
+$color-accent-high: rgba($color-accent, 0.7);
+```
+            {{/markdown}}
+        </div>  
 </section>
 
 <section class="win-section" id="other-accent-colors">

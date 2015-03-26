@@ -500,9 +500,9 @@ $state-success-text:             $color-darker-green !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
- $state-info-text:                $color-darker-cyan !default;
- $state-info-bg:                  $color-chrome-10 !default;
- $state-info-border:              $color-chrome-30 !default;
+$state-info-text:                $color-core-cyan !default; 
+$state-info-bg:                  lighten(adjust-hue($color-core-cyan, -10), 50%) !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 5%) !default;
 
 $state-warning-text:             $color-darker-orange !default;
 $state-warning-bg:               #fcf8e3 !default;

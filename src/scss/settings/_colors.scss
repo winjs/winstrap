@@ -39,7 +39,9 @@ $color-darker-purple: #442359;
 
 //Accent color
 $color-accent: rgb(0, 120, 215);
-$color-accent-medium: rgba($color-accent, 0.4);
+$color-accent-low: rgba($color-accent, 0.4); 
+$color-accent-medium: rgba($color-accent, 0.6);
+$color-accent-high: rgba($color-accent, 0.7);
 
 //Greys
 $color-chrome-10: #f2f2f2; 
@@ -66,8 +68,4 @@ $color-alt-medium-low: rgba($color-alt, 0.2);
 $color-alt-medium: rgba($color-alt, 0.4);
 $color-alt-medium-high: rgba($color-alt, 0.6);
 $color-alt-high: rgba($color-alt, 0.8);
-
-$color-accent: rgb(0, 120, 215);
-$color-accent-medium-high: rgba($color-accent, 0.6);
-$color-accent-medium: rgba($color-accent, 0.4);
 

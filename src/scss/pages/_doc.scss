@@ -7,6 +7,7 @@
 .color {
     height: 0;
     padding-bottom: 25%;
+}
 
 //Greys
     &.chrome-10 { background: $color-chrome-10; }
@@ -20,7 +21,9 @@
 
 //Accent colors
     &.accent { background: $color-accent; }
+    &.accent-low { background: $color-accent-low; }
     &.accent-medium { background: $color-accent-medium; }
+    &.accent-high { background: $color-accent-high; }
 
 //Other accent colors
     &.lighter-blue { background: $color-lighter-blue; }  
