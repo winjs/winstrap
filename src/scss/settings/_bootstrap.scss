@@ -235,9 +235,9 @@ $cursor-disabled:                not-allowed !default;
 //** Background for the dropdown menu.
 $dropdown-bg:                    #fff !default;
 //** Dropdown menu `border-color`.
-$dropdown-border:                $color-webstore-blue !default;
+$dropdown-border:                $brand-primary !default;
 //** Dropdown menu `border-color` **for IE8**.
-$dropdown-fallback-border:       $color-webstore-blue !default;
+$dropdown-fallback-border:       $brand-primary !default;
 //** Divider color for between dropdown items.
 $dropdown-divider-bg:            $color-chrome-20 !default;
 
@@ -371,7 +371,7 @@ $navbar-default-border:            $color-chrome-20 !default;
 
 // Navbar links
 $navbar-default-link-color:                $color-chrome-70 !default;
-$navbar-default-link-hover-color:          $color-webstore-blue !default;
+$navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -380,7 +380,7 @@ $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color:               $color-chrome-70 !default;
-$navbar-default-brand-hover-color:         $color-webstore-blue !default;
+$navbar-default-brand-hover-color:         $brand-primary !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
