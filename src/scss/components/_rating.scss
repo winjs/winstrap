@@ -21,48 +21,6 @@
     display: inline-block;
 }
 
-// Button followed by an inline rating
-.btn + .win-rating-inline {
-    margin-left: 1em;
-}
-
-.win-rating-label {
-    display: inline-block;
-    margin-right: .5em;
-
-    + .win-rating-stars {
-        font-size: 1.25em;
-    } 
-}
-
-// Average square
-.win-rating-average {
-    @include win-type-headline();
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 0 10px 0 0;
-    line-height: 90px;
-    text-align: center;
-    background: $color-chrome-30;
-
-    + .win-rating-stars {
-        font-size: 1.25em;
-        margin-top: 20px;
-    }
-}
-
-// Average rating with image
-.win-rating-average-img {
-    @include win-type-title();
-    display: inline-block;
-    margin: 0 .5em .5em 0;
-
-    img {
-        vertical-align: middle;
-    }
-}
-
 // Stars
 .win-rating-stars {
     position: relative;
@@ -94,46 +52,33 @@
     line-height: 24px;
 }
 
-.win-rating-total {
-    @include win-type-caption-alt();
+// Clickable rating
+.win-rating-label {
+    display: inline-block;
+    margin-right: .5em;
 }
 
-// Histogram
-.win-rating-histogram {
-    @include list-unstyled();
-    margin-bottom: .5em;
+.win-rating-stars-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-    li > a {
-        display: inline-block;
-        padding: 1px 5px 2px 0;
-        white-space: nowrap;
-        color: $text-color;
-        text-decoration: none;
+.win-rating-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 1;
+    background: none;
 
-        &:hover {
-            background: $color-chrome-10;
+    .win-icon-ratingstar {
+        visibility: hidden;
+    }
+
+    &.active {
+        .win-icon-ratingstar {
+            visibility: visible;
+            color: $color-core-orange;
         }
     }
-
-    .progress {
-        display: inline-block;
-        width: 300px;
-        margin-right: 5px;
-    }
-
-    .progress-bar {
-        background: $color-darker-orange;
-        box-shadow: none;
-    }
-
-    .icon-star {
-        font-size: $font-size-small;
-        vertical-align: 0;
-        margin: 0 2px;
-    }
-}
-
-.win-rating-histogram-caption {
-    @include win-type-caption-alt();
-    color: $color-chrome-50;
 }

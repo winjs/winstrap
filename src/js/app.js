@@ -64,6 +64,25 @@
         });
     })();
 
+    // Star rating
+    (function () {
+        $('.win-rating-btn').on('mouseenter', function () {
+            var active = $(this);
+
+            // Highlight the hovered star and the previous stars
+            $(this).prevAll('.win-rating-btn').addClass('active');
+            $(this).addClass('active');
+
+            // Remove highlighting of the following stars
+            $(this).nextAll('.win-rating-btn').removeClass('active');
+        });
+
+        // Remove highlight of all stars when leaving the container
+        $('.win-rating-stars-input').on('mouseleave', function () {
+            $(this).find('.win-rating-btn').removeClass('active');
+        });
+    })();
+
 
     // Tooltips
     $('[data-toggle="tooltip"]').tooltip();
