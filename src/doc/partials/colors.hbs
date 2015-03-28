@@ -4,7 +4,7 @@
             <a href="#bootstrap-colors">Bootstrap colors</a>
         </h1>
     </header>        
-    <p>These are the primary colors used throughout various Bootstrap controls. It is VERY important we get these colors right. They've been altered to use Basel colors instead of Bootstrap colors.</p>
+    <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Basel colors instead of Bootstrap colors.</p>
         <div class="col-xs-6">
             <p class="color accent"></p>
 
@@ -24,11 +24,11 @@ $brand-success: $color-core-green !default;
             {{/markdown}}
         </div>
         <div class="col-xs-6">
-            <p class="color core-cyan"></p>
+            <p class="color core-blue"></p>
 
             {{#markdown}}
 ```scss
-$brand-info: $color-core-cyan !default; 
+$brand-info: $color-core-blue !default; 
 ```
             {{/markdown}}
         </div>      
@@ -171,14 +171,34 @@ $color-accent: rgb(0, 120, 215);
         </div>     
 
         <div class="col-xs-6">
+            <p class="color accent-low"></p>
+
+            {{#markdown}}
+```scss
+$color-accent-low: rgba($color-accent, 0.4); 
+```
+            {{/markdown}}
+        </div>  
+
+        <div class="col-xs-6">
             <p class="color accent-medium"></p>
 
             {{#markdown}}
 ```scss
-$color-accent-medium: rgba($color-accent, 0.4);
+$color-accent-medium: rgba($color-accent, 0.6);
 ```
             {{/markdown}}
         </div>   
+       
+        <div class="col-xs-6">
+            <p class="color accent-high"></p>
+
+            {{#markdown}}
+```scss
+$color-accent-high: rgba($color-accent, 0.7);
+```
+            {{/markdown}}
+        </div>  
 </section>
 
 <section class="win-section" id="other-accent-colors">
@@ -287,7 +307,7 @@ $color-lighter-green: #55D455;
 
             {{#markdown}}
 ```scss
-$color-core-green: #009E49;
+$color-core-green: #13A10E;
 ```
             {{/markdown}}
         </div>   

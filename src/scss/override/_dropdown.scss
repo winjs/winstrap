@@ -44,11 +44,11 @@
 
 .dropdown-menu li.active a {
   color: $color-base;
-  background-color: $color-accent-medium;
+  background-color: $color-accent-low;
 
   &:hover, &:focus {
     color: $color-base;
-    background-color: $color-accent-medium-high;
+    background-color: $color-accent-medium;
   }
 }
 
@@ -65,7 +65,7 @@ dl.dropdown-menu {
   border-color: $color-base-medium;
 
   &:focus {
-    background-color: $color-accent-medium;
+    background-color: $color-accent-low;
     border-color: $color-base-medium;
     outline: 0;
   }

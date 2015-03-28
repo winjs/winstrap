@@ -1,0 +1,84 @@
+﻿// Rating component with stars
+.win-rating {
+    margin: 0;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+// Inline rating
+.win-rating-inline {
+    display: inline-block;
+}
+
+// Stars
+.win-rating-stars {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 10px;
+    font-size: 24px;
+    line-height: 1;
+
+    .win-icon-ratingstar {
+        color: $color-base-medium-low;
+    }
+}
+
+.win-rating-stars-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .win-icon-ratingstar {
+        color: $color-accent;
+    }
+}
+
+// Rating numbers
+.win-rating-numbers {
+    @include win-type-caption-alt();
+    margin-left: .15em;
+    line-height: 24px;
+}
+
+// Clickable rating
+.win-rating-label {
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.win-rating-stars-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.win-rating-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 1;
+    background: none;
+
+    .win-icon-ratingstar {
+        visibility: hidden;
+    }
+
+    &.active {
+        .win-icon-ratingstar {
+            visibility: visible;
+            color: $color-core-orange;
+        }
+    }
+}

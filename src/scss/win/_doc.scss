@@ -7,6 +7,7 @@
 .color {
     height: 0;
     padding-bottom: 25%;
+}
 
 //Greys
     &.chrome-10 { background: $color-chrome-10; }
@@ -20,7 +21,9 @@
 
 //Accent colors
     &.accent { background: $color-accent; }
+    &.accent-low { background: $color-accent-low; }
     &.accent-medium { background: $color-accent-medium; }
+    &.accent-high { background: $color-accent-high; }
 
 //Other accent colors
     &.lighter-blue { background: $color-lighter-blue; }  
@@ -70,33 +73,6 @@
     &.alt-medium-high { background: $color-alt-medium-high; }
     &.alt-high { background: $color-alt-high; } 
 
-//OneUI starts here
-//    &.cool-gray-2 { background: $color-webstore-bg-light; }
-//    &.cool-gray-12 { background: $color-mscom-cool-gray-12; }
-    &.primary { background: $brand-primary; }
-
-//    &.webstore-text { background: $color-webstore-text; }
-//    &.webstore-text-secondary { background: $color-webstore-text-secondary; }
-//    &.webstore-bg-dark { background: $color-webstore-bg-dark; }
-//    &.webstore-bg-light { background: $color-webstore-bg-light; }
-//    &.webstore-border { background: $color-webstore-border; }
-    &.webstore-orange { background: $color-webstore-orange; }
-//    &.webstore-black { background: $color-webstore-black; }
-    &.webstore-blue { background: $color-webstore-blue; }
-
-    // &.lighter-purple { background: $color-lighter-purple; }
-    // &.core-purple { background: $color-core-purple; }
-    // &.darker-purple { background: $color-darker-purple; }
-    &.mscom-cyan { background: $color-mscom-cyan; }
-    // &.darker-blue { background: $color-darker-blue; }
-    // &.darker-green { background: $color-darker-green; }
-    // &.darker-orange { background: $color-darker-orange; }
-    // &.darker-teal { background: $color-darker-teal; }
-    // &.darker-lime { background: $color-darker-lime; }
-    // &.core-red { background: $color-core-red; }
-    // &.darker-cyan { background: $color-darker-cyan; }
-    // &.darker-red { background: $color-darker-red; }
-}
 
 pre {
     max-width: 100%;

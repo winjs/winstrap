@@ -6,31 +6,31 @@
     </header>
 
     <div class="row">
-        <div class="col-xs-24">
-            <p>
-                <div class="win-rating">
-                    <div class="win-rating-stars">
-                        <ul class="win-rating-stars-background">
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                        </ul>
+        <div class="col-md-8">
+            <div class="win-rating">
+                <div class="win-rating-stars">
+                    <ul class="win-rating-stars-background">
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                    </ul>
 
-                        <ul class="win-rating-stars-value" style="width: 80%">
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                            <li><i class="win-icon-ratingstar"></i></li>
-                        </ul>
-                    </div>
-
-                    <span class="win-rating-numbers">2701 ratings</span>
+                    <ul class="win-rating-stars-value" style="width: 80%">
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                    </ul>
                 </div>
-            </p>
 
+                <span class="win-rating-numbers">2701 ratings</span>
+            </div>
+        </div>
+
+        <div class="col-md-16">
             {{#markdown}}
 ```xml
 <div class="win-rating">
@@ -58,7 +58,107 @@
 </div>
 ```
             {{/markdown}}
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-xs-24">
+            <h2>Clickable rating</h2>
+        </div>
+
+        <div class="col-md-8">
+
+            <div class="win-rating win-rating-inline">
+                <div class="win-rating-label">Rate this stuff:</div>
+
+                <div class="win-rating-stars">
+                    <ul class="win-rating-stars-background">
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                    </ul>
+
+                    <ul class="win-rating-stars-value" style="width: 70%">
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                        <li><i class="win-icon-ratingstar"></i></li>
+                    </ul>
+
+                    <div class="win-rating-stars-input">
+                        <button class="win-rating-btn" title="1"><i class="win-icon-ratingstar"></i></button>
+                        <button class="win-rating-btn" title="2"><i class="win-icon-ratingstar"></i></button>
+                        <button class="win-rating-btn" title="3"><i class="win-icon-ratingstar"></i></button>
+                        <button class="win-rating-btn" title="4"><i class="win-icon-ratingstar"></i></button>
+                        <button class="win-rating-btn" title="5"><i class="win-icon-ratingstar"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-16">
+            {{#markdown}}
+```xml
+<div class="win-rating win-rating-inline">
+    <div class="win-rating-label">Rate this stuff:</div>
+
+    <div class="win-rating-stars">
+        <ul class="win-rating-stars-background">
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+        </ul>
+
+        <ul class="win-rating-stars-value" style="width: 70%">
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+            <li><i class="win-icon-ratingstar"></i></li>
+        </ul>
+
+        <div class="win-rating-stars-input">
+            <button class="win-rating-btn" title="1"><i class="win-icon-ratingstar"></i></button>
+            <button class="win-rating-btn" title="2"><i class="win-icon-ratingstar"></i></button>
+            <button class="win-rating-btn" title="3"><i class="win-icon-ratingstar"></i></button>
+            <button class="win-rating-btn" title="4"><i class="win-icon-ratingstar"></i></button>
+            <button class="win-rating-btn" title="5"><i class="win-icon-ratingstar"></i></button>
+        </div>
+    </div>
+</div>
+```
+            {{/markdown}}
+
+            <p>The interaction might be implemented through a MVVM library. This is the jQuery sample of this demo:</p>
+
+            {{#markdown}}
+```javascript
+$(function () {
+    // Star rating
+    $('.win-rating-btn').on('mouseenter', function () {
+        var active = $(this);
+
+        // Highlight the hovered star and the previous stars
+        $(this).prevAll('.win-rating-btn').addClass('active');
+        $(this).addClass('active');
+
+        // Remove highlighting of the following stars
+        $(this).nextAll('.win-rating-btn').removeClass('active');
+    });
+
+    // Remove highlight of all stars when leaving the container
+    $('.win-rating-stars-input').on('mouseleave', function () {
+        $(this).find('.win-rating-btn').removeClass('active');
+    });
+});
+```
+            {{/markdown}}
         </div>
     </div>
 </section>

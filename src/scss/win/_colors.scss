@@ -17,10 +17,10 @@ $color-lighter-purple: #9B4F96;
 $color-core-blue: #00188F;
 $color-core-cyan: #00BCF2;
 $color-core-teal: #00B294;
-$color-core-green: #13A10E;
+$color-core-green: #107c10;
 $color-core-lime: #7FBA00;
 $color-core-yellow: #FFF100;
-$color-core-orange: #FF8C00;
+$color-core-orange: #ffbc00;
 $color-core-red: #E81123;
 $color-core-magenta: #EC008C;
 $color-core-purple: #68217A;
@@ -39,7 +39,9 @@ $color-darker-purple: #442359;
 
 //Accent color
 $color-accent: rgb(0, 120, 215);
-$color-accent-medium: rgba($color-accent, 0.4);
+$color-accent-low: rgba($color-accent, 0.4); 
+$color-accent-medium: rgba($color-accent, 0.6);
+$color-accent-high: rgba($color-accent, 0.7);
 
 //Greys
 $color-chrome-10: #f2f2f2; 
@@ -67,11 +69,3 @@ $color-alt-medium: rgba($color-alt, 0.4);
 $color-alt-medium-high: rgba($color-alt, 0.6);
 $color-alt-high: rgba($color-alt, 0.8);
 
-$color-accent: rgb(0, 120, 215);
-$color-accent-medium-high: rgba($color-accent, 0.6);
-$color-accent-medium: rgba($color-accent, 0.4);
-
-//Other colors that need to be consolidated
-$color-mscom-cyan: #1570A6;
-$color-webstore-orange: #d1480e;
-$color-webstore-blue: #1570A6;

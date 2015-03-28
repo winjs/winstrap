@@ -22,7 +22,7 @@ $gray-lighter:           $color-base-low !default;
 
 $brand-primary:         $color-accent !default; 
 $brand-success:         $color-core-green !default; 
-$brand-info:            $color-core-cyan !default; 
+$brand-info:            $color-core-blue !default; 
 $brand-warning:         $color-core-orange !default;
 $brand-danger:          $color-core-red !default;
 
@@ -161,11 +161,11 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $brand-primary !default;
 
-$btn-success-color:              #000 !default;
+$btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 #000 !default;
+$btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
@@ -235,9 +235,9 @@ $cursor-disabled:                not-allowed !default;
 //** Background for the dropdown menu.
 $dropdown-bg:                    #fff !default;
 //** Dropdown menu `border-color`.
-$dropdown-border:                $color-webstore-blue !default;
+$dropdown-border:                $brand-primary !default;
 //** Dropdown menu `border-color` **for IE8**.
-$dropdown-fallback-border:       $color-webstore-blue !default;
+$dropdown-fallback-border:       $brand-primary !default;
 //** Divider color for between dropdown items.
 $dropdown-divider-bg:            $color-chrome-20 !default;
 
@@ -371,7 +371,7 @@ $navbar-default-border:            $color-chrome-20 !default;
 
 // Navbar links
 $navbar-default-link-color:                $color-chrome-70 !default;
-$navbar-default-link-hover-color:          $color-webstore-blue !default;
+$navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -380,7 +380,7 @@ $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color:               $color-chrome-70 !default;
-$navbar-default-brand-hover-color:         $color-webstore-blue !default;
+$navbar-default-brand-hover-color:         $brand-primary !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -500,9 +500,9 @@ $state-success-text:             $color-darker-green !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
- $state-info-text:                $color-darker-cyan !default;
- $state-info-bg:                  $color-chrome-10 !default;
- $state-info-border:              $color-chrome-30 !default;
+$state-info-text:                $color-core-cyan !default; 
+$state-info-bg:                  lighten(adjust-hue($color-core-cyan, -10), 50%) !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 5%) !default;
 
 $state-warning-text:             $color-darker-orange !default;
 $state-warning-bg:               #fcf8e3 !default;
