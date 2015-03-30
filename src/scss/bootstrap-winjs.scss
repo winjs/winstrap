@@ -1,6 +1,7 @@
 ﻿@charset "UTF-8";
 
-// Mixins
+// New mixins and mixins that completely replace
+// bootstrap mixins
 @import "win/mixins/colors";
 @import "win/mixins/animations";
 @import "win/mixins/triangle";
@@ -18,6 +19,9 @@
 @import "win/icons";
 @import "win/utilities";
 @import "win/type";
+
+// Mixins that override bootstrap mixins
+@import "override/mixins/buttons";
 
 // Overridden components
 @import "override/alert-boxes";
