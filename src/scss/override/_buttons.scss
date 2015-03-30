@@ -2,8 +2,6 @@
 .btn {
   @include win-type-body();
   min-width: 120px;
-  min-height: 32px;
-  padding: 4px 8px;
   border-style: solid;
   border-width: 2px;
 
@@ -13,13 +11,6 @@
     background-color: $color-base-low;
     border-color: transparent;
   }
-}
-
-// Extra large button (not defined in Bootstrap)
-.win-btn-xl {
-  padding: 20px;
-  @include win-type-subtitle();
-  font-family: $font-family-light;
 }
 
 // Override Bootstrap button settings
@@ -209,6 +200,13 @@
       display: none;
     }
   }
+}
+
+// Extra large button (not defined in Bootstrap)
+.win-btn-xl {
+  padding: 20px;
+  @include win-type-subtitle();
+  font-family: $font-family-light;
 }
 
 // Button filter

@@ -10,19 +10,19 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap  
+//## Gray and brand colors for use across Bootstrap
 // Override wwith Basel color definitions
 
 $gray-base:              #000 !default;
-$gray-darker:            $color-base-high !default; 
-$gray-dark:              $color-base-medium-high !default;   
-$gray:                   $color-base-medium !default; 
-$gray-light:             $color-base-medium-low !default; 
-$gray-lighter:           $color-base-low !default; 
+$gray-darker:            $color-base-high !default;
+$gray-dark:              $color-base-medium-high !default;
+$gray:                   $color-base-medium !default;
+$gray-light:             $color-base-medium-low !default;
+$gray-lighter:           $color-base-low !default;
 
-$brand-primary:         $color-accent !default; 
-$brand-success:         $color-core-green !default; 
-$brand-info:            $color-core-blue !default; 
+$brand-primary:         $color-accent !default;
+$brand-success:         $color-core-green !default;
+$brand-info:            $color-core-blue !default;
 $brand-warning:         $color-core-orange !default;
 $brand-danger:          $color-core-red !default;
 
@@ -96,8 +96,8 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     6px !default;
-$padding-base-horizontal:   12px !default;
+$padding-base-vertical:     4px !default;
+$padding-base-horizontal:   8px !default;
 
 $padding-large-vertical:    10px !default;
 $padding-large-horizontal:  16px !default;
@@ -500,7 +500,7 @@ $state-success-text:             $color-darker-green !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                $color-core-cyan !default; 
+$state-info-text:                $color-core-cyan !default;
 $state-info-bg:                  lighten(adjust-hue($color-core-cyan, -10), 50%) !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 5%) !default;
 
