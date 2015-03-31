@@ -9,6 +9,7 @@
 }
 
 .modal-content {
+    margin-top: 20px;
     box-shadow: none;
 }
 
@@ -17,10 +18,14 @@
     text-align: center;
 
     &:before {
-        content: "";
         display: inline-block;
         height: 100%;
         vertical-align: middle;
+
+        // The modal is vertically centered only on medium devices
+        @media (min-width: $screen-sm-min) {
+            content: "";
+        }
     }
 
     .modal-dialog {
