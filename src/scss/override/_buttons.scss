@@ -201,21 +201,3 @@
     }
   }
 }
-
-// Extra large button (not defined in Bootstrap)
-.win-btn-xl {
-  padding: 20px;
-  @include win-type-subtitle();
-  font-family: $font-family-light;
-}
-
-// Button filter
-.win-button-filter {
-  border-color: $color-chrome-50;
-  background: none;
-
-  // Clear filter
-  .icon-clear {
-    margin-left: 5px;
-  }
-}
