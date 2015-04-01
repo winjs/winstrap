@@ -18,20 +18,3 @@
     }
 }
 
-// Stacked alerts on top of the screen
-.win-alert-stack {
-    // Added by Bootstrap Affix when scrolling
-    &.affix {
-        top: 0; // position is fixed
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .alert {
-        margin: 0;
-        padding-right: ($grid-gutter-width / 2); // space for the close icon
-        border-top: none;
-        border-right: none;
-        border-left: none;
-    }
-}
