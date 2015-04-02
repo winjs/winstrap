@@ -1,0 +1,71 @@
+input.win-textbox,
+textarea.win-textbox {
+  -ms-user-select: element;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0;
+  margin: 8px 0px;
+  width: 296px;
+  min-width: 64px;
+  min-height: 28px;
+  background-clip: border-box;
+  box-sizing: border-box;
+  padding: 3px 6px 5px 10px;
+  vertical-align: top;
+  outline: 0;
+
+  @include win-type-body();
+
+  color: $color-base;
+  background-color: $color-alt;
+  border-color: $color-base-medium;
+
+  // Hint text color
+  // Single colon on -ms not a typo
+  &:-ms-input-placeholder {color: $color-base-medium-high;}
+  &::-webkit-input-placeholder {color: $color-base-medium-high;}
+  &::-moz-input-placeholder {color: $color-base-medium-high;}
+
+  &:hover {
+    background-color: $color-alt-medium-high;
+    border-color: $color-base-medium-high;
+  }
+
+  &:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: $color-accent;
+  }
+}
+
+input.win-textbox::-ms-value {
+  margin: 0;
+  padding: 0;
+}
+
+input.win-textbox::-ms-clear,
+input.win-textbox::-ms-reveal {
+  padding-right: 2px;
+  margin-right: -8px;
+  margin-left: 2px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  width: 30px;
+  height: 32px;
+  display: block;
+
+  color: $color-base-medium-high;
+
+  &:hover {
+    color: $color-accent;
+  }
+  &:active {
+    color: #fff;
+    background-color: $color-accent;
+  }
+}
+
+textarea.win-textbox {
+  resize: none;
+  overflow-y: auto;
+}
