@@ -6,18 +6,14 @@
 
 // Icon font
 @font-face {
-    font-family: "winjs-symbols";
-    src: url("#{$icon-font-path}/winjs-symbols.eot");
-    src: url("#{$icon-font-path}/winjs-symbols.eot?#iefix") format("embedded-opentype"),
-    	 url("#{$icon-font-path}/winjs-symbols.woff") format("woff"),
-         url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
+  font-family: "winjs-symbols";
+  src: url("#{$icon-font-path}/winjs-symbols.eot");
+  src: url("#{$icon-font-path}/winjs-symbols.eot?#iefix") format("embedded-opentype"),
+  	   url("#{$icon-font-path}/winjs-symbols.woff") format("woff"),
+       url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
 }
 
 $font-family-light: "wf_segoe-ui_light", "Arial", sans-serif;
 $font-family-normal: "wf_segoe-ui_normal", "Arial", sans-serif;
 $font-family-semibold: "wf_segoe-ui_semibold", "Arial", sans-serif;
 $font-family-bold: "wf_segoe-ui_bold", "Arial", sans-serif;
-
-$font-weight-light: normal;
-$font-weight-normal: normal;
-$font-weight-bold: normal;

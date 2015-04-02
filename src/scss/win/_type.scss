@@ -1,100 +1,68 @@
 ﻿//Typography mixins
 @mixin win-type-headline {
-    font-size: 62px;
-    font-weight: 200;
+    font-size: $win-font-size-headline;
+    font-weight: $win-font-weight-headline;
+    font-family: $win-font-family-headline;
     line-height: 1.29;
-    letter-spacing: 0px;    
+    letter-spacing: 0px;
 }
 @mixin win-type-header {
-    font-size: 46px;
-    font-weight: 200;
+    font-size: $font-size-h1;
+    font-weight: $win-font-weight-h1;
+    font-family: $win-font-family-h1;
     line-height: 1.216;
     letter-spacing: 0px;
 }
 @mixin win-type-subheader {
-    font-size: 34px;
-    font-weight: 200;
+    font-size: $font-size-h2;
+    font-weight: $win-font-weight-h2;
+    font-family: $win-font-family-h2;
     line-height: 1.176;
 }
 @mixin win-type-title {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: $font-size-h3;
+    font-weight: $win-font-weight-h3;
+    font-family: $win-font-family-h3;
     line-height: 1.167;
 }
 @mixin win-type-subtitle {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: $font-size-h4;
+    font-weight: $win-font-weight-h4;
+    font-family: $win-font-family-h4;
     line-height: 1.2;
 }
 @mixin win-type-base {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: $font-size-h5;
+    font-weight: $win-font-weight-h5;
+    font-family: $win-font-family-h5;
     line-height: 1.333;
 }
 @mixin win-type-body {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: $win-font-size-body;
+    font-weight: $win-font-weight-body;
+    font-family: $win-font-family-body;
     line-height: 1.333;
 }
 @mixin win-type-caption {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: $font-size-h6;
+    font-weight: $win-font-weight-h6;
+    font-family: $win-font-family-h6;
     line-height: 1.167;
 }
 @mixin win-type-caption-alt {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.2;    
+    font-size: $win-font-size-caption-alt;
+    font-weight: $win-font-weight-caption-alt;
+    font-family: $win-font-family-caption-alt;
+    line-height: 1.2;
 }
 @mixin win-type-subcaption {
-    font-size: 8px;
-    font-weight: 400;
+    font-size: $win-font-size-subcaption;
+    font-weight: $win-font-weight-subcaption;
+    font-family: $win-font-family-subcaption;
     line-height: 1.25;
 }
 
-//
-// Explicitly define a Segoe UI font-family so that we can assign Segoe UI
-// Semilight to an appropriate font-weight.
-//
-@font-face {
-    font-family: "Segoe UI";
-    font-weight: 200;
-    src: local("Segoe UI Light");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-weight: 300;
-    src: local("Segoe UI Semilight");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-weight: 400;
-    src: local("Segoe UI");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-weight: 500;
-    src: local("Segoe UI Semibold");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-weight: 600;
-    src: local("Segoe UI Bold");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-style: italic;
-    font-weight: 400;
-    src: local("Segoe UI Italic");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-style: italic;
-    font-weight: 700;
-    src: local("Segoe UI Bold Italic");
-}
-
-//Apply mixins
+// Apply mixins to typography classes
 .win-type-headline, .text-headline {
     @include win-type-headline();
 }
