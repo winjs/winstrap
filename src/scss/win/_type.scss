@@ -1,4 +1,13 @@
-﻿//Typography mixins
+﻿// Icon font
+@font-face {
+  font-family: "winjs-symbols";
+  src: url("#{$icon-font-path}/winjs-symbols.eot");
+  src: url("#{$icon-font-path}/winjs-symbols.eot?#iefix") format("embedded-opentype"),
+       url("#{$icon-font-path}/winjs-symbols.woff") format("woff"),
+       url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
+}
+
+//Typography mixins
 @mixin win-type-headline {
     font-size: $win-font-size-headline;
     font-weight: $win-font-weight-headline;
@@ -111,3 +120,4 @@ h6, .h6, .win-type-caption, .text-caption {
     text-decoration: underline;
   }
 }
+
