@@ -1,5 +1,5 @@
-input.win-textbox,
-textarea.win-textbox {
+input.form-control,
+textarea.form-control {
   -ms-user-select: element;
   border-style: solid;
   border-width: 2px;
@@ -15,6 +15,8 @@ textarea.win-textbox {
   outline: 0;
 
   @include win-type-body();
+  @include box-shadow(none);
+  @include transition(none);
 
   color: $color-base;
   background-color: $color-alt;
@@ -35,16 +37,17 @@ textarea.win-textbox {
     color: #000;
     background-color: #fff;
     border-color: $color-accent;
+    @include box-shadow(none);
   }
 }
 
-input.win-textbox::-ms-value {
+input.form-control::-ms-value {
   margin: 0;
   padding: 0;
 }
 
-input.win-textbox::-ms-clear,
-input.win-textbox::-ms-reveal {
+input.form-control::-ms-clear,
+input.form-control::-ms-reveal {
   padding-right: 2px;
   margin-right: -8px;
   margin-left: 2px;
@@ -65,7 +68,7 @@ input.win-textbox::-ms-reveal {
   }
 }
 
-textarea.win-textbox {
+textarea.form-control {
   resize: none;
   overflow-y: auto;
 }
