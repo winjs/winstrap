@@ -1,3 +1,6 @@
+//
+// Text controls
+//
 input.form-control,
 textarea.form-control {
   -ms-user-select: element;
@@ -71,4 +74,98 @@ input.form-control::-ms-reveal {
 textarea.form-control {
   resize: none;
   overflow-y: auto;
+}
+
+//
+// Select
+//
+select.form-control {
+  min-width: 56px;
+  max-width: 368px;
+  min-height: 32px;
+  margin: 8px 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 2px;
+  background-clip: border-box;
+  background-image: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  @include win-type-body();
+  @include box-shadow(none);
+  @include transition(none);
+
+  color: $color-base;
+  background-color: $color-base-medium-low;
+  border-color: $color-base-medium;
+
+  &::-ms-value {
+    padding: 5px 12px 7px 12px;
+    margin: 0;
+  }
+  &::-ms-expand {
+    border: none;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-bottom: -2px;
+    font-size: 20px;
+
+    color: $color-base-high;
+    background-color: transparent;
+  }
+
+  &:focus,
+  &:active {
+    @include box-shadow(none);
+    border-color: $color-base-medium-high;
+  }
+  &:hover {
+    background-color: $color-chrome-10;
+    border-color: $color-base-medium-high;
+  }
+  &:disabled {
+    color: $color-base-medium-low;
+    background-color: $color-base-medium-low;
+  }
+  &:disabled::-ms-expand {
+    color: $color-base-medium-low;
+    border-color: $color-base-medium-low;
+  }
+
+  option {
+    color: $color-base;
+    background-color: $color-chrome-10;
+
+    &:hover, &:active {
+      background-color: fade(#000, 20%);
+      color: $color-base;
+    }
+    &:checked {
+      color: #fff;
+      background-color: $color-accent;
+    }
+  }
+  optgroup {
+    color: $color-base;
+    background-color: $color-chrome-10;
+  }
+  optgroup:disabled {
+    color: $color-base-medium-low;
+  }
+}
+
+select[multiple].form-control {
+  border: none;
+  background-color: $color-chrome-10;
+
+  option {
+    color: $color-base;
+  }
+  option:hover {
+    color: $color-base;
+  }
+  option:checked {
+    color: #fff;
+    background-color: $color-accent;
+  }
 }
