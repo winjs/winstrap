@@ -3,7 +3,7 @@
     padding: (($grid-gutter-width / 2) / 2);
     color: $color-base;
     background: $color-chrome-10;
-    background: rgba($color-chrome-20, .5);
+    background: rgba($color-chrome-30, .5);
     opacity: 0;
     @include translate(0, 20px);
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
@@ -20,8 +20,8 @@
 
     &:hover {
         color: $color-base;
-        background: $color-chrome-30;
-        background: rgba($color-chrome-20, .85);
+        background: $color-chrome-20;
+        background: rgba($color-chrome-30, .85);
     }
 
     [class*="icon"] {

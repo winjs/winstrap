@@ -5,7 +5,7 @@
     .panel-footer {
         @include clearfix();
         padding: 15px 20px;
-        background: $color-chrome-30;
+        background: $color-chrome-20;
 
         p {
             margin-bottom: 0;
@@ -53,7 +53,7 @@
 .win-panel-line {
     margin: 0 0 15px 0;
     border: none;
-    border-top: 1px solid $color-chrome-20;
+    border-top: 1px solid $color-chrome-30;
 
     .panel-heading,
     .panel-footer {
