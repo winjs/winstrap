@@ -102,10 +102,10 @@ $padding-base-horizontal:   8px !default;
 $padding-large-vertical:    10px !default;
 $padding-large-horizontal:  16px !default;
 
-$padding-small-vertical:    5px !default;
-$padding-small-horizontal:  10px !default;
+$padding-small-vertical:    2px !default;
+$padding-small-horizontal:  7px !default;
 
-$padding-xs-vertical:       1px !default;
+$padding-xs-vertical:       0px !default;
 $padding-xs-horizontal:     5px !default;
 
 $line-height-large:         1.2 !default; // extra decimals for Win 8.1 Chrome
@@ -204,7 +204,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             $color-darker-orange !default;
+$input-border-focus:             $color-accent !default;
 
 //** Placeholder text color
 $input-color-placeholder:        $gray-light !default;
@@ -496,7 +496,7 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $color-darker-green !default;
+$state-success-text:             $color-core-green !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
@@ -504,7 +504,7 @@ $state-info-text:                $color-core-cyan !default;
 $state-info-bg:                  lighten(adjust-hue($color-core-cyan, -10), 50%) !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 5%) !default;
 
-$state-warning-text:             $color-darker-orange !default;
+$state-warning-text:             $color-core-orange !default;
 $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           #faebcc !default;
 
