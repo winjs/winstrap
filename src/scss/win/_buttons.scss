@@ -2,7 +2,7 @@
 .win-btn-xl {
   padding: 20px;
   @include win-type-subtitle();
-  font-family: $font-family-light;
+  font-family: $win-font-light;
 }
 
 // Button filter
