@@ -9,23 +9,14 @@
     padding-bottom: 25%;
 }
 
-//Greys
-    &.chrome-10 { background: $win-color-chrome-10; }
-    &.chrome-20 { background: $win-color-chrome-20; }
-    &.chrome-30 { background: $win-color-chrome-30; }    
-    &.chrome-40 { background: $win-color-chrome-40; }
-    &.chrome-50 { background: $win-color-chrome-50; }
-    &.chrome-60 { background: $win-color-chrome-60; }
-    &.chrome-70 { background: $win-color-chrome-70; }
-    &.chrome-80 { background: $win-color-chrome-80; }
 
-//Accent colors
+//Accent color and variants
     &.accent { background: $win-color-accent; }
     &.accent-low { background: $win-color-accent-low; }
     &.accent-medium { background: $win-color-accent-medium; }
     &.accent-high { background: $win-color-accent-high; }
 
-//Core colors
+//Core accent colors
     &.core-yellow { background: $win-color-core-yellow; }      
     &.core-orange { background: $win-color-core-orange; }  
     &.core-red { background: $win-color-core-red; }  
@@ -35,14 +26,14 @@
     &.core-teal { background: $win-color-core-teal; }  
     &.core-green { background: $win-color-core-green; }  
 
-//Secondary colors
+//Secondary accent colors
    &.secondary-magenta { background: $win-color-secondary-magenta; }  
    &.secondary-purple { background: $win-color-secondary-purple; }  
    &.secondary-blue { background: $win-color-secondary-blue; }  
    &.secondary-teal { background: $win-color-secondary-teal; }  
    &.secondary-green { background: $win-color-secondary-green; }  
 
-//Accent color
+//Tertiary accent colors
    &.tertiary-yellow { background: $win-color-tertiary-yellow; } 
    &.tertiary-orange { background: $win-color-tertiary-orange; } 
    &.tertiary-red { background: $win-color-tertiary-red; } 
@@ -53,6 +44,16 @@
    &.tertiary-teal { background: $win-color-tertiary-teal; } 
    &.tertiary-green { background: $win-color-tertiary-green; } 
 
+//Grays
+    &.chrome-10 { background: $win-color-chrome-10; }
+    &.chrome-20 { background: $win-color-chrome-20; }
+    &.chrome-30 { background: $win-color-chrome-30; }    
+    &.chrome-40 { background: $win-color-chrome-40; }
+    &.chrome-50 { background: $win-color-chrome-50; }
+    &.chrome-60 { background: $win-color-chrome-60; }
+    &.chrome-70 { background: $win-color-chrome-70; }
+    &.chrome-80 { background: $win-color-chrome-80; }
+    
 //Base
     &.base { background: $win-color-base; }
     &.base-low { background: $win-color-base-low; }
