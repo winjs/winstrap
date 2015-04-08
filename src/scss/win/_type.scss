@@ -116,7 +116,7 @@ h6, .h6, .win-type-caption, .text-caption {
 
   &:focus {
     @include tab-focus;
-    color: $color-base-medium-low;
+    color: $win-color-base-medium-low;
     text-decoration: underline;
   }
 }

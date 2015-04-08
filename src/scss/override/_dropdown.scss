@@ -14,8 +14,8 @@
 
 .dropdown-menu {
   box-shadow: none;
-  background-color: $color-chrome-10;
-  color: $color-base;
+  background-color: $win-color-chrome-10;
+  color: $win-color-base;
   border: none;
   padding-top: 5px;
   padding-bottom: 7px;
@@ -34,21 +34,21 @@
   padding-left: 12px;
 
   &:hover {
-    background-color: $color-base-low;
+    background-color: $win-color-base-low;
   }
 
   &:active {
-    background-color: $color-base-medium-low;
+    background-color: $win-color-base-medium-low;
   }
 }
 
 .dropdown-menu li.active a {
-  color: $color-base;
-  background-color: $color-accent-low;
+  color: $win-color-base;
+  background-color: $win-color-accent-low;
 
   &:hover, &:focus {
-    color: $color-base;
-    background-color: $color-accent-medium;
+    color: $win-color-base;
+    background-color: $win-color-accent-medium;
   }
 }
 
@@ -61,22 +61,22 @@ dl.dropdown-menu {
   padding-top: 3px;
   padding-bottom: 5px;
   padding-left: 10px;
-  background-color: $color-alt-medium;
-  border-color: $color-base-medium;
+  background-color: $win-color-alt-medium;
+  border-color: $win-color-base-medium;
 
   &:focus {
-    background-color: $color-accent-low;
-    border-color: $color-base-medium;
+    background-color: $win-color-accent-low;
+    border-color: $win-color-base-medium;
     outline: 0;
   }
 
   &:hover {
-    background-color: $color-alt-medium-high;
-    border-color: $color-base-medium-high;
+    background-color: $win-color-alt-medium-high;
+    border-color: $win-color-base-medium-high;
   }
 
   &:active {
-    background-color: $color-base-medium-low;
+    background-color: $win-color-base-medium-low;
     outline: 0;
   }
 
@@ -85,9 +85,9 @@ dl.dropdown-menu {
   }
 
   &:disabled {
-    color: $color-base-medium;
-    border-color: $color-base-medium;
-    background-color: $color-base-medium;
+    color: $win-color-base-medium;
+    border-color: $win-color-base-medium;
+    background-color: $win-color-base-medium;
   }
 }
 
@@ -96,7 +96,7 @@ dl.dropdown-menu {
   width: auto;
   height: auto;
   line-height: 1;
-  color: $color-base-high;
+  color: $win-color-base-high;
   font-family: "winjs-symbols";
   font-size: 12px;
 
@@ -107,5 +107,5 @@ dl.dropdown-menu {
 }
 
 .btn-dropdown:disabled .caret {
-  color: $color-base-medium;
+  color: $win-color-base-medium;
 }

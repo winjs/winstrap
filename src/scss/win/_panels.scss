@@ -5,7 +5,7 @@
     .panel-footer {
         @include clearfix();
         padding: 15px 20px;
-        background: $color-chrome-20;
+        background: $win-color-chrome-20;
 
         p {
             margin-bottom: 0;
@@ -27,8 +27,8 @@
 
     .nav-pills > li > a {
         padding: 0 1em;
-        border-left: 1px solid $color-chrome-70;
-        color: $color-chrome-70;
+        border-left: 1px solid $win-color-chrome-70;
+        color: $win-color-chrome-70;
         background: none;
 
         &:hover {
@@ -53,7 +53,7 @@
 .win-panel-line {
     margin: 0 0 15px 0;
     border: none;
-    border-top: 1px solid $color-chrome-30;
+    border-top: 1px solid $win-color-chrome-30;
 
     .panel-heading,
     .panel-footer {
@@ -80,12 +80,12 @@
 
             &.active {
                 a {
-                    color: $color-chrome-50;
+                    color: $win-color-chrome-50;
                 }
             }
 
             .icon-completed {
-                color: $color-base;
+                color: $win-color-base;
             }
         }
 

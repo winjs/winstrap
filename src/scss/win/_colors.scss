@@ -1,57 +1,62 @@
 // Microsoft branding color palette
 
+
 //Core colors
-$color-core-red: #E81123; //basel core
-$color-core-green: #107c10; //basel core
-$color-core-orange: #FFB900; //basel core
-
-$color-core-teal: #00B294; //not basel
-$color-core-lime: #7FBA00; //not basel
-$color-core-magenta: #EC008C; //not basel
-$color-core-purple: #68217A; //not basel
-
+$win-color-core-yellow: #FFB900; //basel core
+$win-color-core-orange: #D83B01; //basel core
+$win-color-core-red: #E81123; //basel core
+$win-color-core-magenta: #B4009E; // basel core
+$win-color-core-purple: #5C2D91; // basel core
+$win-color-core-blue: #0078D7;//basel core
+$win-color-core-teal: #008272; // basel core
+$win-color-core-green: #107c10; //basel core
 
 //Secondary colors
-$color-core-blue: #00188F; //basel secondary
+$win-color-secondary-magenta: #E3008C;
+$win-color-secondary-purple: #32145A;
+$win-color-secondary-blue: #00188F; 
+$win-color-secondary-teal: #004B50; 
+$win-color-secondary-green: #004B1C; 
 
+//Tertiary colors
+$win-color-tertiary-yellow: #FFF100;
+$win-color-tertiary-orange: #FF8C00;
+$win-color-tertiary-red: #A80000;
+$win-color-tertiary-magenta: #5C005C;
+$win-color-tertiary-purple: #B4A0FF;
+$win-color-tertiary-cyan: #00BCF2; 
+$win-color-tertiary-blue: #002050;
+$win-color-tertiary-teal: #00B294; 
+$win-color-tertiary-green: #BAD80A; 
 
-//Other accent colors
-$color-core-yellow: #FFF100; //basel accent
-$color-core-cyan: #00BCF2; //basel accent
-$color-darker-blue: #002050;
-
-
-
-//Accent color - designed to be replaced with any core accent color
-$color-accent: rgb(0, 120, 215); //#0078D7
-$color-accent-low: rgba($color-accent, 0.4); 
-$color-accent-medium: rgba($color-accent, 0.6);
-$color-accent-high: rgba($color-accent, 0.7);
-
+//Primary brand color - designed to be replaced with any core accent color
+$win-color-accent: $win-color-core-blue; 
+$win-color-accent-low: rgba($win-color-accent, 0.4); 
+$win-color-accent-medium: rgba($win-color-accent, 0.6);
+$win-color-accent-high: rgba($win-color-accent, 0.7);
 
 //Greys
-$color-chrome-10: #f2f2f2; 
-$color-chrome-20: #e6e6e6; 
-$color-chrome-30: #d2d2d2; //not controls ramp
-$color-chrome-40: #cccccc;
-$color-chrome-50: #767676; //not controls ramp
-$color-chrome-60: #7a7a7a;
-$color-chrome-70: #333333; //not on controls ramp
-$color-chrome-80: #171717;
+$win-color-chrome-10: #f2f2f2; 
+$win-color-chrome-20: #e6e6e6; 
+$win-color-chrome-30: #d2d2d2; //not controls ramp
+$win-color-chrome-40: #cccccc;
+$win-color-chrome-50: #767676; //not controls ramp
+$win-color-chrome-60: #7a7a7a;
+$win-color-chrome-70: #333333; //not on controls ramp
+$win-color-chrome-80: #171717;
 
 //Base colors
-$color-base: #000;
-$color-base-low: rgba($color-base, 0.1);
-$color-base-medium-low: rgba($color-base, 0.2);
-$color-base-medium: rgba($color-base, 0.4);
-$color-base-medium-high: rgba($color-base, 0.6);
-$color-base-high: rgba($color-base, 0.8);
+$win-color-base: #000;
+$win-color-base-low: rgba($win-color-base, 0.1);
+$win-color-base-medium-low: rgba($win-color-base, 0.2);
+$win-color-base-medium: rgba($win-color-base, 0.4);
+$win-color-base-medium-high: rgba($win-color-base, 0.6);
+$win-color-base-high: rgba($win-color-base, 0.8);
 
 //Alt colors
-$color-alt: #fff;
-$color-alt-low: rgba($color-alt, 0.1);
-$color-alt-medium-low: rgba($color-alt, 0.2);
-$color-alt-medium: rgba($color-alt, 0.4);
-$color-alt-medium-high: rgba($color-alt, 0.6);
-$color-alt-high: rgba($color-alt, 0.8);
-
+$win-color-alt: #fff;
+$win-color-alt-low: rgba($win-color-alt, 0.1);
+$win-color-alt-medium-low: rgba($win-color-alt, 0.2);
+$win-color-alt-medium: rgba($win-color-alt, 0.4);
+$win-color-alt-medium-high: rgba($win-color-alt, 0.6);
+$win-color-alt-high: rgba($win-color-alt, 0.8);

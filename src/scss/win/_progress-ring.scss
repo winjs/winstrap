@@ -17,7 +17,7 @@
       content: "\2022";
       position: absolute;
       font-size: 10px;
-      color: $color-accent;
+      color: $win-color-accent;
     }
 
     &:nth-child(2) { @include animation-delay(300ms); }
@@ -61,7 +61,7 @@
   animation-name: -ms-ring;
 }
 .win-progress-ring-ie {
-  color: $color-accent;
+  color: $win-color-accent;
 }
 
 
