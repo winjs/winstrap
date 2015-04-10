@@ -103,21 +103,3 @@ h6, .h6, .win-type-caption, .text-caption {
     @include win-type-subcaption();
 }
 
-// Override Bootstrap Link syles
-.win-link {
-  color: $link-color;
-  text-decoration: underline;
-
-  &:hover
- {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-  }
-
-  &:focus {
-    @include tab-focus;
-    color: $win-color-base-medium-low;
-    text-decoration: underline;
-  }
-}
-
