@@ -4,11 +4,11 @@ $win-font-size-caption-alt: 10px !default;
 $win-font-size-subcaption: 8px !default;
 
 $win-font-fallbacks: "Arial", sans-serif !default;
-$win-font-light: "Segoe UI Light", $win-font-fallbacks !default;
-$win-font-semilight: "Segoe UI Semilight", $win-font-fallbacks !default;
-$win-font-normal: "Segoe UI", $win-font-fallbacks !default;
-$win-font-semibold: "Segoe UI Semibold", $win-font-fallbacks !default;
-$win-font-bold: "Segoe UI Bold", $win-font-fallbacks !default;
+$win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
+$win-font-semilight: "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
+$win-font-normal: "Segoe UI", "Selawik", $win-font-fallbacks !default;
+$win-font-semibold: "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
+$win-font-bold: "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
 
 $win-font-family-headline: $win-font-light !default;
 $win-font-family-body: $win-font-normal !default;
