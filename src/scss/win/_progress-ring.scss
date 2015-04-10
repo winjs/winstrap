@@ -26,6 +26,16 @@
     &:nth-child(5) { @include animation-delay(1200ms); }
   }
 
+  &.win-medium {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.win-large {
+    width: 60px;
+    height: 60px;
+  }
+
   &.win-medium .win-circle {
     width: 40px;
     height: 40px;
@@ -41,27 +51,6 @@
       font-size: 20px;
     }
   }
-}
-
-.win-progress-ring,
-.win-progress-ring-ie {
-  &.win-medium {
-    width: 40px;
-    height: 40px;
-  }
-
-  &.win-large {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-// IE-only progress ring animation
-.win-progress-ring-ie::-ms-fill {
-  animation-name: -ms-ring;
-}
-.win-progress-ring-ie {
-  color: $win-color-accent;
 }
 
 
