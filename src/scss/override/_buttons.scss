@@ -123,39 +123,8 @@
 }
 
 // Toggle buttons
-.win-btn-choice {
-  position: relative;
-  background: none;
-  border-color: $win-color-chrome-50;
-  text-align: left;
+.btn[data-toggle="button"] {
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    border: 1px solid $win-color-chrome-50;
-    @include transition(border-width .2s);
-  }
-
-  &:hover {
-    border-color: $win-color-chrome-70;
-
-    &:after {
-      border-color: $win-color-chrome-70;
-      border-width: 2px;
-    }
-  }
-
-  &.active {
-    font-family: $win-font-bold;
-
-    &:after {
-      border-width: 5px;
-    }
-  }
 }
 
 // Button which collapses or expands an element
