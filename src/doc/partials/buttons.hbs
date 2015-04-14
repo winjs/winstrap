@@ -133,13 +133,20 @@
 
     <div class="row">
       <div class="col-xs-24">
-        <button type="button" autocomplete="off" class="btn" data-toggle="button" aria-pressed="false">Toggle Button</button>
+        <h2>Toggle Button</h2>
+        <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
         <script>
-          $("[data-toggle='button']").on("click", function() {
-            $(this).button("toggle");
-            console.log('test');
-          });
+          $("[data-toggle='button']").button("toggle");
         </script>
+
+        {{#markdown}}
+```xml
+<button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
+<script>
+  $("[data-toggle='button']").button("toggle");
+</script>
+```
+        {{/markdown}}
       </div>
     </div>
 </section>
