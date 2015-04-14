@@ -124,7 +124,19 @@
 
 // Toggle buttons
 .btn[data-toggle="button"] {
-
+  &.active {
+    background-color: $win-color-accent;
+    border-color: transparent;
+    color: #fff;
+  }
+  &.active:active {
+    background-color: $win-color-base-medium;
+    border-color: transparent;
+    color: $win-color-base;
+  }
+  &:hover {
+    border-color: $win-color-base-medium;
+  }
 }
 
 // Button which collapses or expands an element
