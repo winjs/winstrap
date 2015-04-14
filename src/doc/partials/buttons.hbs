@@ -136,7 +136,10 @@
         <h2>Toggle Button</h2>
         <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
         <script>
-          $("[data-toggle='button']").button("toggle");
+          window.addEventListener('onload', function()
+          {
+            $("[data-toggle='button']").button("toggle");
+          });
         </script>
 
         {{#markdown}}

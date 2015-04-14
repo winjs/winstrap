@@ -1,10 +1,7 @@
 ﻿// Icon font
 @font-face {
   font-family: "winjs-symbols";
-  src: url("#{$icon-font-path}/winjs-symbols.eot");
-  src: url("#{$icon-font-path}/winjs-symbols.eot?#iefix") format("embedded-opentype"),
-       url("#{$icon-font-path}/winjs-symbols.woff") format("woff"),
-       url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
+  src: url("#{$icon-font-path}/winjs-symbols.ttf");
 }
 
 @font-face {
