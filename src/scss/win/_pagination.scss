@@ -1,0 +1,47 @@
+﻿.win-pagination {
+    @include clearfix();
+
+    li.win-pagination-ellipsis {
+        > span {
+            border-color: transparent;
+            background: none;
+            color: $text-color;
+        }
+    }
+
+    li.win-pagination-prev,
+    li.win-pagination-next {
+        i[class*="win-icon"] {
+            margin: 0 2px;
+            font-size: .9em;
+            vertical-align: -.2em;
+        }
+
+        &.disabled {
+            display: none;
+        }
+
+        > a, > span {
+            background: none;
+            border-color: transparent;
+        }
+    }
+}
+
+@media (min-width: $screen-sm) {
+    .win-pagination-prev {
+        > a, > span {
+            &:after {
+                content: attr(aria-label);
+            }
+        }
+    }
+
+    .win-pagination-next {
+        > a, > span {
+            &:before {
+                content: attr(aria-label);
+            }
+        }
+    }
+}
