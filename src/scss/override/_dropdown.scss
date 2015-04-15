@@ -92,6 +92,12 @@ dl.dropdown-menu {
   }
 }
 
+.dropdown.open .btn-dropdown {
+  &:focus {
+    background-color: $win-color-alt-medium;
+  }
+}
+
 .btn-dropdown .caret {
   border: none;
   width: auto;
