@@ -96,7 +96,7 @@ select.form-control {
   @include transition(none);
 
   color: $win-color-base;
-  background-color: $win-color-base-medium-low;
+  background-color: $win-color-chrome-10;
   border-color: $win-color-base-medium;
 
   &::-ms-value {

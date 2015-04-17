@@ -2,6 +2,17 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    clean: {
+      options: {
+        force: true
+      },
+      all: ['dist/']
+    },
+
+    fileExists: {
+      css: ['dist/css/bootstrap-winjs.css']
+    },
+
     sass: {
       options: {
         outputStyle: 'nested',
@@ -115,8 +126,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-file-exists');
 
-  grunt.registerTask('default', ['sass', 'assemble', 'copy']);
+  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists']);
   grunt.registerTask('server', ['connect', 'watch']);
 
 }

@@ -1,33 +1,44 @@
 ﻿// Icon font
 @font-face {
   font-family: "winjs-symbols";
-  src: url("#{$icon-font-path}/winjs-symbols.ttf"),
-       url("#{$icon-font-path}/winjs-symbols.woff") format("woff");
+  src: url("#{$icon-font-path}/winjs-symbols.eot");
+  src: url("#{$icon-font-path}/winjs-symbols.eot#iefix") format("embedded-opentype"),
+       url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Selawik";
-  src: url("../fonts/selawk.ttf");
+  src: url("../fonts/selawk.eot");
+  src: url("../fonts/selawk.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawk.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Selawik Bold";
-  src: url("../fonts/selawkb.ttf");
+  src: url("../fonts/selawkb.eot");
+  src: url("../fonts/selawkb.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawkb.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Selawik Light";
-  src: url("../fonts/selawkl.ttf");
+  src: url("../fonts/selawkl.eot");
+  src: url("../fonts/selawkl.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawkl.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Selawik Semibold";
-  src: url("../fonts/selawksb.ttf");
+  src: url("../fonts/selawksb.eot");
+  src: url("../fonts/selawksb.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawksb.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Selawik Semilight";
-  src: url("../fonts/selawksl.ttf");
+  src: url("../fonts/selawksl.eot");
+  src: url("../fonts/selawksl.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawksl.ttf") format("truetype");
 }
 
 //Typography mixins

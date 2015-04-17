@@ -58,6 +58,10 @@
 // Info appears as blue-green
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+
+  &:hover {
+    border-color: $win-color-alt-medium;
+  }
 }
 // Warning appears as orange
 .btn-warning {
