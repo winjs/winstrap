@@ -34,7 +34,7 @@ $brand-danger:          $win-color-core-red !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $win-color-chrome-70 !default;
+$text-color:            $win-color-base !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -150,23 +150,23 @@ $btn-default-color:              $text-color !default;
 $btn-default-bg:                 $win-color-base-low !default;
 $btn-default-border:             transparent !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $win-color-alt !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $brand-primary !default;
 
-$btn-success-color:              #fff !default;
+$btn-success-color:              $win-color-alt !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 #fff !default;
+$btn-info-color:                 $win-color-alt !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
-$btn-warning-color:              #000 !default;
+$btn-warning-color:              $text-color !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             $brand-warning !default;
 
-$btn-danger-color:               #fff !default;
+$btn-danger-color:               $win-color-alt !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $brand-danger !default;
 
@@ -493,9 +493,9 @@ $state-success-text:             $win-color-core-green !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                $win-color-tertiary-cyan !default;
-$state-info-bg:                  lighten(adjust-hue($win-color-tertiary-cyan, -10), 50%) !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 5%) !default;
+$state-info-text:                $brand-info !default;
+$state-info-bg:                  lighten(adjust-hue($brand-info, -10), 50%) !default;
+$state-info-border:              darken(adjust-hue($brand-info, -10), 5%) !default;
 
 $state-warning-text:             $win-color-core-yellow !default;
 $state-warning-bg:               #fcf8e3 !default;
