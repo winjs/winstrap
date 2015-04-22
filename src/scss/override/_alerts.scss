@@ -1,20 +1,37 @@
 ﻿// Override
 .alert {
-    position: relative;
+  position: relative;
+  color: #fff;
+  border: none;
 
-    &.alert-dismissible {
-        padding-right: 3em;
-    }
+  &.alert-dismissible {
+    padding-right: 3em;
+  }
 
-    .close {
-        position: absolute;
-        top: ($grid-gutter-width / 2);
-        right: ($grid-gutter-width / 2);
-        z-index: 1;
-        @include win-type-headline();
-        line-height: 1;
-        opacity: 1;
-        font-size: 30px;
-    }
+  .close {
+    position: absolute;
+    top: ($grid-gutter-width / 2);
+    right: ($grid-gutter-width / 2);
+    z-index: 1;
+    @include win-type-headline();
+    line-height: 1;
+    opacity: 1;
+    font-size: 30px;
+  }
+
+  a {
+    color: #fff;
+  }
 }
 
+.alert-info {
+  background-color: $brand-info;
+}
+
+.alert-warning {
+  background-color: $brand-warning;
+}
+
+.alert-danger {
+  background-color: $brand-danger;
+}
