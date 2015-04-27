@@ -1,0 +1,218 @@
+.tile {
+    display: block;
+    cursor: pointer;
+    min-width: 75px;
+    min-height: 75px;
+    text-align: center;
+    background: #0078D7;
+    z-index: 1;
+    border: 3px #128ff2 solid;
+    color: #fff;
+
+
+    &.tile-medium {
+        height: 150px;
+        width: 150px;
+    }
+
+    &.tile-small {
+        height: 70px;
+        width: 70px;
+
+        .tile-icon {
+            margin-top: 6px;
+        }
+    }
+
+    &.tile-wide {
+        height: 150px;
+        width: 310px;
+    }
+
+    .tile-icon {
+        font-size: 4em;
+        margin-top: 23px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    div {
+        margin-top: 1em;
+    }
+
+    .tile-title {
+        float: left;
+        padding-left: 16px;
+    }
+
+    .tile-notification {
+        float: right;
+        padding-right: 16px;
+    }
+
+    $lightenBy: 15%;
+    $borderThickness: 3px;
+
+    &.core-yellow {
+        border: $borderThickness lighten($win-color-core-yellow, $lightenBy) solid;
+    }
+
+    &.core-orange {
+        border: $borderThickness lighten($win-color-core-orange, $lightenBy) solid;
+    }
+
+    &.core-red {
+        border: $borderThickness lighten($win-color-core-red, $lightenBy) solid;
+    }
+
+    &.core-magenta {
+        border: $borderThickness lighten($win-color-core-magenta, $lightenBy) solid;
+    }
+
+    &.core-purple {
+        border: $borderThickness lighten($win-color-core-purple, $lightenBy) solid;
+    }
+
+    &.core-blue {
+        border: $borderThickness lighten($win-color-core-blue, $lightenBy) solid;
+    }
+
+    &.core-teal {
+        border: $borderThickness lighten($win-color-core-teal, $lightenBy) solid;
+    }
+
+    &.core-green {
+        border: $borderThickness lighten($win-color-core-green, $lightenBy) solid;
+    }
+
+    &.secondary-magenta {
+        border: $borderThickness lighten($win-color-secondary-magenta, $lightenBy) solid;
+    }
+
+    &.secondary-purple {
+        border: $borderThickness lighten($win-color-secondary-purple, $lightenBy) solid;
+    }
+
+    &.secondary-blue {
+        border: $borderThickness lighten($win-color-secondary-blue, $lightenBy) solid;
+    }
+
+    &.secondary-teal {
+        border: $borderThickness lighten($win-color-secondary-teal, $lightenBy) solid;
+    }
+
+    &.secondary-green {
+        border: $borderThickness lighten($win-color-secondary-green, $lightenBy) solid;
+    }
+
+    &.tertiary-yellow {
+        border: $borderThickness lighten($win-color-tertiary-yellow, $lightenBy) solid;
+    }
+
+    &.tertiary-orange {
+        border: $borderThickness lighten($win-color-tertiary-orange, $lightenBy) solid;
+    }
+
+    &.tertiary-red {
+        border: $borderThickness lighten($win-color-tertiary-red, $lightenBy) solid;
+    }
+
+    &.tertiary-magenta {
+        border: $borderThickness lighten($win-color-tertiary-magenta, $lightenBy) solid;
+    }
+
+    &.tertiary-purple {
+        border: $borderThickness lighten($win-color-tertiary-purple, $lightenBy) solid;
+    }
+
+    &.tertiary-cyan {
+        border: $borderThickness lighten($win-color-tertiary-cyan, $lightenBy) solid;
+    }
+
+    &.tertiary-blue {
+        border: $borderThickness lighten($win-color-tertiary-blue, $lightenBy) solid;
+    }
+
+    &.tertiary-teal {
+        border: $borderThickness lighten($win-color-tertiary-teal, $lightenBy) solid;
+    }
+
+    &.tertiary-green {
+        border: $borderThickness lighten($win-color-tertiary-green, $lightenBy) solid;
+    }
+
+    &.accent {
+        border: $borderThickness lighten($win-color-accent, $lightenBy) solid;
+    }
+
+    &.accent-low {
+        border: $borderThickness lighten($win-color-accent-low, $lightenBy) solid;
+    }
+
+    &.accent-medium {
+        border: $borderThickness lighten($win-color-accent-medium, $lightenBy) solid;
+    }
+
+    &.accent-high {
+        border: $borderThickness lighten($win-color-accent-high, $lightenBy) solid;
+    }
+
+    &.chrome-10 {
+        border: $borderThickness lighten($win-color-chrome-10, $lightenBy) solid;
+    }
+
+    &.chrome-20 {
+        border: $borderThickness lighten($win-color-chrome-20, $lightenBy) solid;
+    }
+
+    &.chrome-30 {
+        border: $borderThickness lighten($win-color-chrome-30, $lightenBy) solid;
+    }
+
+    &.chrome-40 {
+        border: $borderThickness lighten($win-color-chrome-40, $lightenBy) solid;
+    }
+
+    &.chrome-50 {
+        border: $borderThickness lighten($win-color-chrome-50, $lightenBy) solid;
+    }
+
+    &.chrome-60 {
+        border: $borderThickness lighten($win-color-chrome-60, $lightenBy) solid;
+    }
+
+    &.chrome-70 {
+        border: $borderThickness lighten($win-color-chrome-70, $lightenBy) solid;
+    }
+
+    &.chrome-80 {
+        border: $borderThickness lighten($win-color-chrome-80, $lightenBy) solid;
+    }
+
+    &.base {
+        border: $borderThickness lighten($win-color-base, $lightenBy) solid;
+    }
+
+    &.base-low {
+        border: $borderThickness lighten($win-color-base-low, $lightenBy) solid;
+    }
+
+    &.base-medium-low {
+        border: $borderThickness lighten($win-color-base-medium-low, $lightenBy) solid;
+    }
+
+    &.base-medium {
+        border: $borderThickness lighten($win-color-base-medium, $lightenBy) solid;
+    }
+
+    &.base-medium-high {
+        border: $borderThickness lighten($win-color-base-medium-high, $lightenBy) solid;
+    }
+
+    &.base-high {
+        border: $borderThickness lighten($win-color-base-high, $lightenBy) solid;
+    }
+}
