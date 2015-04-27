@@ -1,5 +1,12 @@
 ﻿.panel {
+    background-color: $win-color-chrome-10;
+    color: $win-color-chrome-80;
     box-shadow: none;
+
+    & .panel-heading {
+        background-color: $win-color-chrome-50;
+        color: $win-color-chrome-20;
+    }
 
     .pager {
         margin: 0;

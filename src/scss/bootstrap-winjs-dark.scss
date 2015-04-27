@@ -9,7 +9,7 @@
 
 // Settings
 @import "win/resources";
-@import "win/colors";
+@import "win/colors-dark";
 @import "win/variables";
 @import "override/variables";
 
@@ -62,3 +62,8 @@
 
 // Pages
 @import "win/doc";
+
+
+.btn-info {
+    color: white
+}

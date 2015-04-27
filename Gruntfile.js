@@ -21,7 +21,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/css/bootstrap-winjs.css': 'src/scss/bootstrap-winjs.scss'
+            'dist/css/bootstrap-winjs.css': 'src/scss/bootstrap-winjs.scss',
+            'dist/css/bootstrap-winjs-dark.css': 'src/scss/bootstrap-winjs-dark.scss'
         }
       }
     },

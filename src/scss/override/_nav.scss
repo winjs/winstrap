@@ -4,7 +4,7 @@
     > li > a {
         margin-right: 2.5em;
         padding: 1em 0;
-        color: black;
+        color: $win-color-base;
 
         &:hover {
             color: $brand-primary;
