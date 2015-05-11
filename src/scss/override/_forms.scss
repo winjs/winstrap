@@ -169,3 +169,100 @@ select[multiple].form-control {
     background-color: $win-color-accent;
   }
 }
+
+//
+// Checkbox / Radio
+//
+.checkbox label,
+.radio label {
+  padding-left: 30px;
+}
+
+.checkbox input[type=checkbox],
+.radio input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+
+  &::-ms-check {
+    border-style: solid;
+    display: inline-block;
+    border-width: 2px;
+    background-clip: border-box;
+  }
+}
+
+.checkbox input[type=checkbox] {
+  &::-ms-check {
+    color: $win-color-base;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:indeterminate::-ms-check {
+    color: $win-color-base-high;
+    border-color: $win-color-accent;
+  }
+
+  &:checked::-ms-check {
+    color: #fff;
+    background-color: $win-color-accent;
+    border-color: transparent;
+  }
+
+  &:hover::-ms-check {
+    border-color: $win-color-base;
+  }
+
+  &:hover:indeterminate::-ms-check {
+    color: $win-color-base;
+    border-color: $win-color-accent;
+  }
+
+  &:active::-ms-check {
+    border-color: transparent;
+    background-color: $win-color-base-medium-high;
+  }
+
+  &:indeterminate:active::-ms-check {
+    color: $win-color-base-medium-high;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:disabled::-ms-check, &:indeterminate:disabled::-ms-check {
+    color: $win-color-base-medium-low;
+    border-color: $win-color-base-medium-low;
+    background-color: transparent;
+  }
+}
+
+.radio input[type=radio] {
+  &::-ms-check {
+    color: $win-color-base-high;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:hover::-ms-check {
+    border-color: $win-color-base;
+  }
+
+  &:checked::-ms-check {
+    border-color: $win-color-accent;
+  }
+
+  &:hover::-ms-check {
+    color: $win-color-base;
+  }
+
+  &:active::-ms-check {
+    color: $win-color-base-medium-high;
+    border-color: $win-color-base-medium-high;
+  }
+
+  &:disabled::-ms-check {
+    color: $win-color-base-medium-low;
+    border-color: $win-color-base-medium-low;
+  }
+}
