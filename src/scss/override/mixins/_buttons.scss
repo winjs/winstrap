@@ -1,0 +1,40 @@
+//Override bootstrap mixins for button variants
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $background;
+    border-color: $win-color-base-medium;
+  }
+
+  //Active and disabled states for all buttons is the same
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+    color: $win-color-base;
+    background-color: $win-color-base-medium;
+    border-color: transparent;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      color: $win-color-base-medium-low;
+      background-color: $win-color-base-medium-low;
+      border-color: transparent;
+    }
+  }
+}

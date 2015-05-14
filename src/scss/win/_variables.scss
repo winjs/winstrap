@@ -1,0 +1,33 @@
+$win-font-size-headline: 62px !default;
+$win-font-size-body: 15px !default;
+$win-font-size-caption-alt: 10px !default;
+$win-font-size-subcaption: 8px !default;
+
+$win-font-fallbacks: "Arial", sans-serif !default;
+$win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
+$win-font-semilight: "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
+$win-font-normal: "Segoe UI", "Selawik", $win-font-fallbacks !default;
+$win-font-semibold: "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
+$win-font-bold: "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
+
+$win-font-family-headline: $win-font-light !default;
+$win-font-family-body: $win-font-normal !default;
+$win-font-family-caption-alt: $win-font-normal !default;
+$win-font-family-subcaption: $win-font-normal !default;
+$win-font-family-h1: $win-font-light !default;
+$win-font-family-h2: $win-font-light !default;
+$win-font-family-h3: $win-font-semilight !default;
+$win-font-family-h4: $win-font-normal !default;
+$win-font-family-h5: $win-font-semibold !default;
+$win-font-family-h6: $win-font-normal !default;
+
+$win-font-weight-headline: 200 !default;
+$win-font-weight-body: 400 !default;
+$win-font-weight-caption-alt: 400 !default;
+$win-font-weight-subcaption: 400 !default;
+$win-font-weight-h1: 200 !default;
+$win-font-weight-h2: 200 !default;
+$win-font-weight-h3: 300 !default;
+$win-font-weight-h4: 400 !default;
+$win-font-weight-h5: 500 !default;
+$win-font-weight-h6: 400 !default;

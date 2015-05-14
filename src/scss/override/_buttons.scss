@@ -1,95 +1,46 @@
-﻿//Override bootstrap mixins for button variants
-@mixin button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-
-  &:hover,
-  &:focus,
-  &.focus,
-  .open > &.dropdown-toggle {
-    color: $color;
-    background-color: $background;
-    border-color: $color-base-medium;
-  }
-
-  //Active and disabled states for all buttons is the same  
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-    color: $color-base;
-    background-color: $color-base-medium; 
-    border-color: transparent;
-  }
-  
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-      color: $color-base-medium-low;
-      background-color: $color-base-medium-low;
-      border-color: transparent;
-    }
-  }
-}
-
-// Add color transitions to buttons
+﻿// Add color transitions to buttons
 .btn {
   @include win-type-body();
   min-width: 120px;
-  min-height: 32px;
-  padding: 4px 8px;
   border-style: solid;
   border-width: 2px;
+  text-decoration: none;
 
   &,
   &:focus {
-    color: $color-base-high;
-    background-color: $color-base-low;
+    color: $win-color-base-high;
+    background-color: $win-color-base-low;
     border-color: transparent;
   }
-}
-
-// Extra large button (not defined in Bootstrap)
-.win-btn-xl {
-  padding: 20px;
-  @include win-type-subtitle();
-  font-family: $font-family-light;
 }
 
 // Override Bootstrap button settings
 .btn-primary,
 .btn-primary:focus {
-  color: $color-alt;
-  background-color: $color-accent;
+  color: $win-color-alt;
+  background-color: $win-color-accent;
 }
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
-  border-color: $color-base-medium;
+  border-color: $win-color-base-medium;
 }
 .btn-default:hover {
-  background-color: $color-base-medium-low;
+  background-color: $win-color-base-medium-low;
 }
 .btn-primary:hover {
-  background-color: $color-accent;
+  background-color: $win-color-accent;
 }
 .btn:active,
 .btn.active {
-  border-color: $color-base-medium;
-  background-color: $color-base-medium;
+  border-color: $win-color-base-medium;
+  background-color: $win-color-base-medium;
   @include box-shadow(none);
 }
 .btn:disabled {
-  color: $color-base-medium-low;
-  background-color: $color-base-medium-low;
+  color: $win-color-base-medium-low;
+  background-color: $win-color-base-medium-low;
   border-color: transparent;
 }
 
@@ -107,6 +58,10 @@
 // Info appears as blue-green
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+
+  &:hover {
+    border-color: $win-color-alt-medium;
+  }
 }
 // Warning appears as orange
 .btn-warning {
@@ -147,7 +102,7 @@
   }
   &:active,
   &.active {
-    color: $color-base-medium;
+    color: $win-color-base-medium;
     border-color: transparent;
   }
   &[disabled],
@@ -163,7 +118,7 @@
 // Dropdown button
 .btn-dropdown {
   background: none;
-  border: 2px solid $color-chrome-20;
+  border: 2px solid $win-color-chrome-30;
 
   .caret {
     margin-left: .5em;
@@ -172,65 +127,20 @@
 }
 
 // Toggle buttons
-.win-btn-choice {
-  position: relative;
-  background: none;
-  border-color: $color-chrome-50;
-  text-align: left;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    border: 1px solid $color-chrome-50;
-    @include transition(border-width .2s);
-  }
-
-  &:hover {
-    border-color: $color-chrome-70;
-
-    &:after {
-      border-color: $color-chrome-70;
-      border-width: 2px;
-    }
-  }
-
+.btn[data-toggle="button"] {
   &.active {
-    font-family: $font-family-bold;
-
-    &:after {
-      border-width: 5px;
-    }
+    background-color: $win-color-accent;
+    border-color: transparent;
+    color: #fff;
   }
-}
-
-// Buttons with progress bar inside
-.btn-progress {
-  position: relative;
-}
-
-.btn-progress-bar {
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  width: 0;
-  @include transition(width 2s ease-in-out);
-
-  .btn-primary & {
-    background: shade($btn-primary-bg, 25%);
+  &.active:active {
+    background-color: $win-color-base-medium;
+    border-color: transparent;
+    color: $win-color-base;
   }
-
-  .btn-primary:hover & {
-    background: $color-darker-blue;
+  &:hover {
+    border-color: $win-color-base-medium;
   }
-}
-
-.btn-progress-label {
-  position: relative;
 }
 
 // Button which collapses or expands an element
@@ -249,16 +159,5 @@
     .win-button-label-expanded {
       display: none;
     }
-  }
-}
-
-// Button filter
-.win-button-filter {
-  border-color: $color-chrome-50;
-  background: none;
-
-  // Clear filter
-  .icon-clear {
-    margin-left: 5px;
   }
 }

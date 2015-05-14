@@ -17,13 +17,23 @@
       content: "\2022";
       position: absolute;
       font-size: 10px;
-      color: $color-accent;
+      color: $win-color-accent;
     }
 
     &:nth-child(2) { @include animation-delay(300ms); }
     &:nth-child(3) { @include animation-delay(600ms); }
     &:nth-child(4) { @include animation-delay(900ms); }
     &:nth-child(5) { @include animation-delay(1200ms); }
+  }
+
+  &.win-medium {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.win-large {
+    width: 60px;
+    height: 60px;
   }
 
   &.win-medium .win-circle {
@@ -41,27 +51,6 @@
       font-size: 20px;
     }
   }
-}
-
-.win-progress-ring,
-.win-progress-ring-ie {
-  &.win-medium {
-    width: 40px;
-    height: 40px;
-  }
-
-  &.win-large {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-// IE-only progress ring animation
-.win-progress-ring-ie::-ms-fill {
-  animation-name: -ms-ring;
-}
-.win-progress-ring-ie {
-  color: $color-accent;
 }
 
 

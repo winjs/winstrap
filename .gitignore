@@ -3,10 +3,7 @@
 
 ## Added for OneUI project
 [Nn]ode_modules/*
-dist/css/*
-dist/js/*
-dist/*.html
-dist/*.zip
+dist/
 
 # External requirements aren't versioned
 external/
@@ -15,6 +12,7 @@ external/
 *.suo
 *.user
 *.sln.docstates
+*.sublime-workspace
 
 # Build results
 [Dd]ebug/

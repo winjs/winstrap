@@ -1,71 +1,62 @@
 // Microsoft branding color palette
-// https://getmscom.microsoft.com/style-guide/Pages/color-bb.aspx
 
-//Lighter colors
-$color-lighter-blue: #4668C5;
-$color-lighter-cyan: #6DC2E9;
-$color-lighter-teal: #00D8CC;
-$color-lighter-green: #55D455;
-$color-lighter-lime: #BAD80A;
-$color-lighter-yellow: #FFFC9E;
-$color-lighter-orange: #FFB900;
-$color-lighter-red: #DD5900;
-$color-lighter-magenta: #F472D0;
-$color-lighter-purple: #9B4F96;
 
 //Core colors
-$color-core-blue: #00188F;
-$color-core-cyan: #00BCF2;
-$color-core-teal: #00B294;
-$color-core-green: #107c10;
-$color-core-lime: #7FBA00;
-$color-core-yellow: #FFF100;
-$color-core-orange: #ffbc00;
-$color-core-red: #E81123;
-$color-core-magenta: #EC008C;
-$color-core-purple: #68217A;
+$win-color-core-yellow: #FFB900; 
+$win-color-core-orange: #D83B01; 
+$win-color-core-red: #E81123; 
+$win-color-core-magenta: #B4009E; 
+$win-color-core-purple: #5C2D91; 
+$win-color-core-blue: #0078D7;
+$win-color-core-teal: #008272; 
+$win-color-core-green: #107c10; 
 
-//Darker colors
-$color-darker-blue: #002050;
-$color-darker-cyan: #0072C6;
-$color-darker-teal: #008272;
-$color-darker-green: #007233;
-$color-darker-lime: #008A00;
-$color-darker-yellow: #FCD116;
-$color-darker-orange: #DC3C00;
-$color-darker-red: #BA141A;
-$color-darker-magenta: #B4009E;
-$color-darker-purple: #442359;
+//Secondary colors
+$win-color-secondary-magenta: #E3008C;
+$win-color-secondary-purple: #32145A;
+$win-color-secondary-blue: #00188F; 
+$win-color-secondary-teal: #004B50; 
+$win-color-secondary-green: #004B1C; 
 
-//Accent color
-$color-accent: rgb(0, 120, 215);
-$color-accent-low: rgba($color-accent, 0.4); 
-$color-accent-medium: rgba($color-accent, 0.6);
-$color-accent-high: rgba($color-accent, 0.7);
+//Tertiary colors
+$win-color-tertiary-yellow: #FFF100;
+$win-color-tertiary-orange: #FF8C00;
+$win-color-tertiary-red: #A80000;
+$win-color-tertiary-magenta: #5C005C;
+$win-color-tertiary-purple: #B4A0FF;
+$win-color-tertiary-cyan: #00BCF2; 
+$win-color-tertiary-blue: #002050;
+$win-color-tertiary-teal: #00B294; 
+$win-color-tertiary-green: #BAD80A; 
 
-//Greys
-$color-chrome-10: #f2f2f2; 
-$color-chrome-20: #d2d2d2; //chrome-20 and chrome-30 need to be swapped
-$color-chrome-30: #e6e6e6; 
-$color-chrome-40: #cccccc;
-$color-chrome-50: #767676;
-$color-chrome-60: #7a7a7a;
-$color-chrome-70: #333333;
-$color-chrome-80: #171717;
+//Primary brand color - designed to be replaced with any core accent color
+$win-color-accent: $win-color-core-blue; 
+$win-color-accent-low: rgba($win-color-accent, 0.4); 
+$win-color-accent-medium: rgba($win-color-accent, 0.6);
+$win-color-accent-high: rgba($win-color-accent, 0.7);
+
+//Grays
+$win-color-chrome-10: #f2f2f2; 
+$win-color-chrome-20: #e6e6e6; 
+$win-color-chrome-30: #d2d2d2; //not controls ramp
+$win-color-chrome-40: #cccccc;
+$win-color-chrome-50: #767676; //not controls ramp
+$win-color-chrome-60: #7a7a7a;
+$win-color-chrome-70: #333333; //not on controls ramp
+$win-color-chrome-80: #171717;
 
 //Base colors
-$color-base: #000;
-$color-base-low: rgba($color-base, 0.1);
-$color-base-medium-low: rgba($color-base, 0.2);
-$color-base-medium: rgba($color-base, 0.4);
-$color-base-medium-high: rgba($color-base, 0.6);
-$color-base-high: rgba($color-base, 0.8);
+$win-color-base: #000;
+$win-color-base-low: rgba($win-color-base, 0.1);
+$win-color-base-medium-low: rgba($win-color-base, 0.2);
+$win-color-base-medium: rgba($win-color-base, 0.4);
+$win-color-base-medium-high: rgba($win-color-base, 0.6);
+$win-color-base-high: rgba($win-color-base, 0.8);
 
 //Alt colors
-$color-alt: #fff;
-$color-alt-low: rgba($color-alt, 0.1);
-$color-alt-medium-low: rgba($color-alt, 0.2);
-$color-alt-medium: rgba($color-alt, 0.4);
-$color-alt-medium-high: rgba($color-alt, 0.6);
-$color-alt-high: rgba($color-alt, 0.8);
-
+$win-color-alt: #fff;
+$win-color-alt-low: rgba($win-color-alt, 0.1);
+$win-color-alt-medium-low: rgba($win-color-alt, 0.2);
+$win-color-alt-medium: rgba($win-color-alt, 0.4);
+$win-color-alt-medium-high: rgba($win-color-alt, 0.6);
+$win-color-alt-high: rgba($win-color-alt, 0.8);

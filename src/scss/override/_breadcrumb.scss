@@ -1,21 +1,23 @@
 ﻿.breadcrumb {
-    margin: 20px 0 25px;
-    font-size: $font-size-small;
+  margin: 20px 0 25px;
+  font-size: $font-size-small;
 
-    a {
-        color: $text-color;
+  a {
+    color: $text-color;
+    text-decoration: none;
 
-        &:hover {
-            color: $link-color;
-        }
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
     }
+  }
 
-    > li + li:before {
-        font-family: "winjs-symbols";
-        content: map-get($win-symbols, grouparrowright);
-        display: inline-block;
-        padding: 0 4px 0 1px;
-        font-size: .8em;
-        vertical-align: -0.15em;
-    }
+  > li + li:before {
+    font-family: "winjs-symbols";
+    content: map-get($win-symbols, grouparrowright);
+    display: inline-block;
+    padding: 0 4px 0 1px;
+    font-size: .8em;
+    vertical-align: -0.15em;
+  }
 }

@@ -1,31 +1,53 @@
 ﻿// Bootstrap Modal
 .modal-header .close {
-    position: absolute;
-    top: -27px;
-    right: 0;
-    color: white;
-    opacity: 1;
-    font-size: 20px;
+  position: absolute;
+  top: -27px;
+  right: 0;
+  color: white;
+  opacity: 1;
+  font-size: 20px;
 }
 
 .modal-content {
-    box-shadow: none;
+  margin-top: 20px;
+  padding: 24px;
+  box-shadow: none;
+
+  background-color: $win-color-chrome-10;
+  border-color: $win-color-accent;
+  color: $win-color-base;
+}
+
+.modal-header {
+  @include win-type-subtitle();
+}
+
+.modal-body {
+  @include win-type-body();
+}
+
+.modal-backdrop {
+  background-color: #fff;
 }
 
 // Center the Bootstrap Modal vertically
 .win-modal-center {
-    text-align: center;
+  text-align: center;
 
-    &:before {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
+  &:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 
-    .modal-dialog {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: left;
+    // The modal is vertically centered on medium devices and up
+    @media (min-width: $screen-sm-min) {
+      content: "";
     }
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
 }

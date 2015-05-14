@@ -1,0 +1,268 @@
+//
+// Text controls
+//
+input.form-control,
+textarea.form-control {
+  -ms-user-select: element;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0;
+  margin: 0;
+  width: 296px;
+  min-width: 64px;
+  min-height: 28px;
+  background-clip: border-box;
+  box-sizing: border-box;
+  padding: 3px 6px 5px 10px;
+  vertical-align: top;
+  outline: 0;
+
+  @include win-type-body();
+  @include box-shadow(none);
+  @include transition(none);
+
+  color: $win-color-base;
+  background-color: $win-color-alt;
+  border-color: $win-color-base-medium;
+
+  // Hint text color
+  // Single colon on -ms not a typo
+  &:-ms-input-placeholder {color: $win-color-base-medium-high;}
+  &::-webkit-input-placeholder {color: $win-color-base-medium-high;}
+  &::-moz-input-placeholder {color: $win-color-base-medium-high;}
+
+  &:hover {
+    background-color: $win-color-alt-medium-high;
+    border-color: $win-color-base-medium-high;
+  }
+
+  &:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: $win-color-accent;
+    @include box-shadow(none);
+  }
+}
+
+input.form-control::-ms-value {
+  margin: 0;
+  padding: 0;
+}
+
+input.form-control::-ms-clear,
+input.form-control::-ms-reveal {
+  padding-right: 2px;
+  margin-right: -8px;
+  margin-left: 2px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  width: 30px;
+  height: 32px;
+  display: block;
+
+  color: $win-color-base-medium-high;
+
+  &:hover {
+    color: $win-color-accent;
+  }
+  &:active {
+    color: #fff;
+    background-color: $win-color-accent;
+  }
+}
+
+textarea.form-control {
+  resize: none;
+  overflow-y: auto;
+}
+
+//
+// Select
+//
+select.form-control {
+  min-width: 56px;
+  max-width: 368px;
+  min-height: 32px;
+  margin: 8px 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 2px;
+  background-clip: border-box;
+  background-image: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  @include win-type-body();
+  @include box-shadow(none);
+  @include transition(none);
+
+  color: $win-color-base;
+  background-color: $win-color-chrome-10;
+  border-color: $win-color-base-medium;
+
+  &::-ms-value {
+    padding: 5px 12px 7px 12px;
+    margin: 0;
+  }
+  &::-ms-expand {
+    border: none;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-bottom: -2px;
+    font-size: 20px;
+
+    color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:focus,
+  &:active {
+    @include box-shadow(none);
+    border-color: $win-color-base-medium-high;
+  }
+  &:hover {
+    background-color: $win-color-chrome-10;
+    border-color: $win-color-base-medium-high;
+  }
+  &:disabled {
+    color: $win-color-base-medium-low;
+    background-color: $win-color-base-medium-low;
+  }
+  &:disabled::-ms-expand {
+    color: $win-color-base-medium-low;
+    border-color: $win-color-base-medium-low;
+  }
+
+  option {
+    color: $win-color-base;
+    background-color: $win-color-chrome-10;
+
+    &:hover, &:active {
+      background-color: fade(#000, 20%);
+      color: $win-color-base;
+    }
+    &:checked {
+      color: #fff;
+      background-color: $win-color-accent;
+    }
+  }
+  optgroup {
+    color: $win-color-base;
+    background-color: $win-color-chrome-10;
+  }
+  optgroup:disabled {
+    color: $win-color-base-medium-low;
+  }
+}
+
+select[multiple].form-control {
+  border: none;
+  background-color: $win-color-chrome-10;
+
+  option {
+    color: $win-color-base;
+  }
+  option:hover {
+    color: $win-color-base;
+  }
+  option:checked {
+    color: #fff;
+    background-color: $win-color-accent;
+  }
+}
+
+//
+// Checkbox / Radio
+//
+.checkbox label,
+.radio label {
+  padding-left: 30px;
+}
+
+.checkbox input[type=checkbox],
+.radio input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+
+  &::-ms-check {
+    border-style: solid;
+    display: inline-block;
+    border-width: 2px;
+    background-clip: border-box;
+  }
+}
+
+.checkbox input[type=checkbox] {
+  &::-ms-check {
+    color: $win-color-base;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:indeterminate::-ms-check {
+    color: $win-color-base-high;
+    border-color: $win-color-accent;
+  }
+
+  &:checked::-ms-check {
+    color: #fff;
+    background-color: $win-color-accent;
+    border-color: transparent;
+  }
+
+  &:hover::-ms-check {
+    border-color: $win-color-base;
+  }
+
+  &:hover:indeterminate::-ms-check {
+    color: $win-color-base;
+    border-color: $win-color-accent;
+  }
+
+  &:active::-ms-check {
+    border-color: transparent;
+    background-color: $win-color-base-medium-high;
+  }
+
+  &:indeterminate:active::-ms-check {
+    color: $win-color-base-medium-high;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:disabled::-ms-check, &:indeterminate:disabled::-ms-check {
+    color: $win-color-base-medium-low;
+    border-color: $win-color-base-medium-low;
+    background-color: transparent;
+  }
+}
+
+.radio input[type=radio] {
+  &::-ms-check {
+    color: $win-color-base-high;
+    border-color: $win-color-base-high;
+    background-color: transparent;
+  }
+
+  &:hover::-ms-check {
+    border-color: $win-color-base;
+  }
+
+  &:checked::-ms-check {
+    border-color: $win-color-accent;
+  }
+
+  &:hover::-ms-check {
+    color: $win-color-base;
+  }
+
+  &:active::-ms-check {
+    color: $win-color-base-medium-high;
+    border-color: $win-color-base-medium-high;
+  }
+
+  &:disabled::-ms-check {
+    color: $win-color-base-medium-low;
+    border-color: $win-color-base-medium-low;
+  }
+}
