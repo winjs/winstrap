@@ -4,9 +4,5 @@
   "homepage": "https://github.com/winjs/bootstrap-winjs",
   "authors": "",
   "description": "Microsoft Bootstrap Theme for Metro 2.0 (Basel)",
-  "license": "MIT",
-  "devDependencies": {
-    "bootstrap-sass": "~3.3.4",
-    "jquery": "~2.1.4"
-  }
+  "license": "MIT"
 }

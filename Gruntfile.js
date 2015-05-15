@@ -54,25 +54,25 @@ module.exports = function (grunt) {
         },
         {
           expand: true,
-          cwd: 'bower_components/jquery/dist/',
+          cwd: 'node_modules/jquery/dist/',
           src: 'jquery.min.js',
           dest: 'dist/js/vendor/'
         },
         {
           expand: true,
-          cwd: 'bower_components/html5shiv/dist/',
+          cwd: 'node_modules/html5shiv/dist/',
           src: 'html5shiv.min.js',
           dest: 'dist/js/vendor/'
         },
         {
           expand: true,
-          cwd: 'bower_components/respond.js/dest/',
+          cwd: 'node_modules/respond.js/dest/',
           src: 'respond.min.js',
           dest: 'dist/js/vendor/'
         },
         {
           expand: true,
-          cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
+          cwd: 'node_modules/bootstrap-sass/assets/javascripts/',
           src: 'bootstrap.min.js',
           dest: 'dist/js/vendor/'
         }
