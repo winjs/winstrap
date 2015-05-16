@@ -11,64 +11,195 @@
 
 
 //Accent color and variants
-    &.accent { background: $win-color-accent; }
-    &.accent-low { background: $win-color-accent-low; }
-    &.accent-medium { background: $win-color-accent-medium; }
-    &.accent-high { background: $win-color-accent-high; }
+&.accent {
+    background: $win-color-accent;
+}
+
+&.accent-low {
+    background: $win-color-accent-low;
+}
+
+&.accent-medium {
+    background: $win-color-accent-medium;
+}
+
+&.accent-high {
+    background: $win-color-accent-high;
+}
 
 //Core accent colors
-    &.core-yellow { background: $win-color-core-yellow; }      
-    &.core-orange { background: $win-color-core-orange; }  
-    &.core-red { background: $win-color-core-red; }  
-    &.core-magenta { background: $win-color-core-magenta; }  
-    &.core-purple { background: $win-color-core-purple; }  
-    &.core-blue { background: $win-color-core-blue; } 
-    &.core-teal { background: $win-color-core-teal; }  
-    &.core-green { background: $win-color-core-green; }  
+&.core-yellow {
+    background: $win-color-core-yellow;
+}
+
+&.core-orange {
+    background: $win-color-core-orange;
+}
+
+&.core-red {
+    background: $win-color-core-red;
+}
+
+&.core-magenta {
+    background: $win-color-core-magenta;
+}
+
+&.core-purple {
+    background: $win-color-core-purple;
+}
+
+&.core-blue {
+    background: $win-color-core-blue;
+}
+
+&.core-teal {
+    background: $win-color-core-teal;
+}
+
+&.core-green {
+    background: $win-color-core-green;
+}
 
 //Secondary accent colors
-   &.secondary-magenta { background: $win-color-secondary-magenta; }  
-   &.secondary-purple { background: $win-color-secondary-purple; }  
-   &.secondary-blue { background: $win-color-secondary-blue; }  
-   &.secondary-teal { background: $win-color-secondary-teal; }  
-   &.secondary-green { background: $win-color-secondary-green; }  
+&.secondary-magenta {
+    background: $win-color-secondary-magenta;
+}
+
+&.secondary-purple {
+    background: $win-color-secondary-purple;
+}
+
+&.secondary-blue {
+    background: $win-color-secondary-blue;
+}
+
+&.secondary-teal {
+    background: $win-color-secondary-teal;
+}
+
+&.secondary-green {
+    background: $win-color-secondary-green;
+}
 
 //Tertiary accent colors
-   &.tertiary-yellow { background: $win-color-tertiary-yellow; } 
-   &.tertiary-orange { background: $win-color-tertiary-orange; } 
-   &.tertiary-red { background: $win-color-tertiary-red; } 
-   &.tertiary-magenta { background: $win-color-tertiary-magenta; } 
-   &.tertiary-purple { background: $win-color-tertiary-purple; } 
-   &.tertiary-cyan { background: $win-color-tertiary-cyan; } 
-   &.tertiary-blue { background: $win-color-tertiary-blue; } 
-   &.tertiary-teal { background: $win-color-tertiary-teal; } 
-   &.tertiary-green { background: $win-color-tertiary-green; } 
+&.tertiary-yellow {
+    background: $win-color-tertiary-yellow;
+}
+
+&.tertiary-orange {
+    background: $win-color-tertiary-orange;
+}
+
+&.tertiary-red {
+    background: $win-color-tertiary-red;
+}
+
+&.tertiary-magenta {
+    background: $win-color-tertiary-magenta;
+}
+
+&.tertiary-purple {
+    background: $win-color-tertiary-purple;
+}
+
+&.tertiary-cyan {
+    background: $win-color-tertiary-cyan;
+}
+
+&.tertiary-blue {
+    background: $win-color-tertiary-blue;
+}
+
+&.tertiary-teal {
+    background: $win-color-tertiary-teal;
+}
+
+&.tertiary-green {
+    background: $win-color-tertiary-green;
+}
 
 //Grays
-    &.chrome-10 { background: $win-color-chrome-10; }
-    &.chrome-20 { background: $win-color-chrome-20; }
-    &.chrome-30 { background: $win-color-chrome-30; }    
-    &.chrome-40 { background: $win-color-chrome-40; }
-    &.chrome-50 { background: $win-color-chrome-50; }
-    &.chrome-60 { background: $win-color-chrome-60; }
-    &.chrome-70 { background: $win-color-chrome-70; }
-    &.chrome-80 { background: $win-color-chrome-80; }
-    
+&.chrome-10 {
+    background: $win-color-chrome-10;
+}
+
+&.chrome-20 {
+    background: $win-color-chrome-20;
+}
+
+&.chrome-30 {
+    background: $win-color-chrome-30;
+}
+
+&.chrome-40 {
+    background: $win-color-chrome-40;
+}
+
+&.chrome-50 {
+    background: $win-color-chrome-50;
+}
+
+&.chrome-60 {
+    background: $win-color-chrome-60;
+}
+
+&.chrome-70 {
+    background: $win-color-chrome-70;
+}
+
+&.chrome-80 {
+    background: $win-color-chrome-80;
+}
+
 //Base
-    &.base { background: $win-color-base; }
-    &.base-low { background: $win-color-base-low; }
-    &.base-medium-low { background: $win-color-base-medium-low; }
-    &.base-medium { background: $win-color-base-medium; }
-    &.base-medium-high { background: $win-color-base-medium-high; }
-    &.base-high { background: $win-color-base-high; }
+&.base {
+    background: $win-color-base;
+}
+
+&.base-low {
+    background: $win-color-base-low;
+}
+
+&.base-medium-low {
+    background: $win-color-base-medium-low;
+}
+
+&.base-medium {
+    background: $win-color-base-medium;
+}
+
+&.base-medium-high {
+    background: $win-color-base-medium-high;
+}
+
+&.base-high {
+    background: $win-color-base-high;
+}
 
 //Alt
-    &.alt { background: $win-color-alt; }
-    &.alt-low { background: $win-color-alt-low; }
-    &.alt-medium-low { background: $win-color-alt-medium-low; }
-    &.alt-medium { background: $win-color-alt-medium; }
-    &.alt-medium-high { background: $win-color-alt-medium-high; }
-    &.alt-high { background: $win-color-alt-high; } 
+&.alt {
+    background: $win-color-alt;
+}
+
+&.alt-low {
+    background: $win-color-alt-low;
+}
+
+&.alt-medium-low {
+    background: $win-color-alt-medium-low;
+}
+
+&.alt-medium {
+    background: $win-color-alt-medium;
+}
+
+&.alt-medium-high {
+    background: $win-color-alt-medium-high;
+}
+
+&.alt-high {
+    background: $win-color-alt-high;
+}
 
 
 pre {
@@ -84,16 +215,27 @@ code {
     .tag {
         color: #008080;
 
-        .title { color: #800000; }
+        .title {
+            color: #800000;
+        }
     }
 
-    .value, .string { color: #0451A5; }
+    .value, .string {
+        color: #0451A5;
+    }
 
-    .attribute { color: red; }
+    .attribute {
+        color: red;
+    }
 
-    .comment { color: #008000; font-style: italic; }
+    .comment {
+        color: #008000;
+        font-style: italic;
+    }
 
-    .number { color: #09885A; }
+    .number {
+        color: #09885A;
+    }
 }
 
 .caption-style-example {
@@ -119,3 +261,8 @@ code {
 //  a {
 //     text-decoration: none;
 // }
+
+
+#tiles > .row > .col-md-3 {
+    margin-right: 8px;
+}

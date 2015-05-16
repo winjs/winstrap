@@ -2,7 +2,7 @@
     "name": "bootstrap-winjs",
     "description": "bootstrap-winjs is boilerplate constructs and CSS styling on top of Bootstrap controls.",
     "repository": "https://github.com/winjs/bootstrap-winjs.git",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "author": {
         "name": "Microsoft"
     },
