@@ -1,3 +1,2 @@
 [config]
 command = deploy.cmd
-project = dist
