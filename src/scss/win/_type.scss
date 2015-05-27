@@ -46,7 +46,7 @@
     font-size: $win-font-size-headline;
     font-weight: $win-font-weight-headline;
     font-family: $win-font-family-headline;
-    line-height: 1.29;
+    line-height: 1.29032; // 80px
     letter-spacing: 0px;
 }
 @mixin win-type-header {
