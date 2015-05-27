@@ -1,4 +1,5 @@
-﻿# Bootstrap WinJS
+﻿# Winstrap
+##### The official Bootstrap theme for Windows
 ﻿
 http://bootstrap-winjs.azurewebsites.net/
 
@@ -19,21 +20,21 @@ npm install -g grunt-cli
 ### Clone the repo
 
 ```
-git clone https://github.com/winjs/bootstrap-winjs.git
+git clone https://github.com/winjs/bootstrap-winjs.git winstrap
 ```
 
-You should have a `bootstrap-winjs` folder.
+You should have a `winstrap` folder.
 
 ### Installing npm packages
 
 To install the required `npm` packages:
 
 ```
-cd bootstrap-winjs
+cd winstrap
 npm install
 ```
 
-## Building bootstrap-winjs
+## Building winstrap
 
 Just run:
 

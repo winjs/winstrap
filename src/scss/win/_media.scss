@@ -186,7 +186,7 @@
     }
 
     .win-media-price {
-        @include win-type-subcaption();
+        @include win-type-caption-alt();
         color: $headings-color;
 
         s {
