@@ -1,4 +1,5 @@
-﻿# Bootstrap WinJS
+﻿# WinStrap
+##### Formerly Bootstrap-winjss
 ﻿
 http://bootstrap-winjs.azurewebsites.net/
 
