@@ -1,8 +1,40 @@
-$win-font-size-headline: 62px !default;
-$win-font-size-subtitle-alt: 18px !default;
-$win-font-size-body: 15px !default;
-$win-font-size-base: $win-font-size-body !default;
-$win-font-size-caption-alt: 11px !default;
+// Responsive Type Ramp Variables
+
+// Extra Small & Small Breakpoints
+$win-font-size-xs-headline: 				46px !default;
+$win-font-size-xs-header: 					34px !default;
+$win-font-size-xs-subheader: 				28px !default;
+$win-font-size-xs-title: 					20px !default;
+$win-font-size-xs-subtitle: 				18px !default;
+$win-font-size-xs-subtitle-alt: 			16px !default;
+$win-font-size-xs-base: 					14px !default;
+$win-font-size-xs-body: 					14px !default;
+$win-font-size-xs-caption: 					12px !default;
+$win-font-size-xs-caption-alt: 				11px !default;
+
+// Medium & Large Breakpoints
+$win-font-size-md-headline: 				62px !default;
+$win-font-size-md-header: 					46px !default;
+$win-font-size-md-subheader: 				34px !default;
+$win-font-size-md-title: 					24px !default;
+$win-font-size-md-subtitle: 				20px !default;
+$win-font-size-md-subtitle-alt: 			18px !default;
+$win-font-size-md-base: 					15px !default;
+$win-font-size-md-body: 					15px !default;
+$win-font-size-md-caption: 					13px !default;
+$win-font-size-md-caption-alt: 				11px !default;
+
+// Extra Large Breakpoint
+$win-font-size-xl-headline: 				80px !default;
+$win-font-size-xl-header: 					58px !default;
+$win-font-size-xl-subheader: 				46px !default;
+$win-font-size-xl-title: 					34px !default;
+$win-font-size-xl-subtitle: 				24px !default;
+$win-font-size-xl-subtitle-alt: 			20px !default;
+$win-font-size-xl-base: 					18px !default;
+$win-font-size-xl-body: 					18px !default;
+$win-font-size-xl-caption: 					15px !default;
+$win-font-size-xl-caption-alt: 				13px !default;
 
 $win-font-fallbacks: "Arial", sans-serif !default;
 $win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;

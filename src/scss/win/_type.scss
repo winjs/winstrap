@@ -43,63 +43,63 @@
 
 //Typography mixins
 @mixin win-type-headline {
-    font-size: $win-font-size-headline;
+    font-size: $win-font-size-xs-headline;
     font-weight: $win-font-weight-headline;
     font-family: $win-font-family-headline;
     line-height: 1.29032;
     letter-spacing: -0.6px;
 }
 @mixin win-type-header {
-    font-size: $font-size-h1;
+    font-size: $win-font-size-xs-header; //formerly $font-size-h1;
     font-weight: $win-font-weight-h1;
     font-family: $win-font-family-h1;
     line-height: 1.21739;
     letter-spacing: -0.6px;
 }
 @mixin win-type-subheader {
-    font-size: $font-size-h2;
+    font-size: $win-font-size-xs-subheader; // formerly $font-size-h2;
     font-weight: $win-font-weight-h2;
     font-family: $win-font-family-h2;
     line-height: 1.17647;
 }
 @mixin win-type-title {
-    font-size: $font-size-h3;
+    font-size: $win-font-size-xs-title; // formerly $font-size-h3;
     font-weight: $win-font-weight-h3;
     font-family: $win-font-family-h3;
     line-height: 1.16667;
 }
 @mixin win-type-subtitle {
-    font-size: $font-size-h4;
+    font-size: $win-font-size-xs-subtitle; // $font-size-h4;
     font-weight: $win-font-weight-h4;
     font-family: $win-font-family-h4;
     line-height: 1.2;
 }
 @mixin win-type-subtitle-alt {
-    font-size: $win-font-size-subtitle-alt;
+    font-size: $win-font-size-xs-subtitle-alt;
     font-weight: $win-font-weight-h4;
     font-family: $win-font-family-h4;
     line-height: 1.22222;
 }
 @mixin win-type-body {
-    font-size: $win-font-size-body;
+    font-size: $win-font-size-xs-base;
     font-weight: $win-font-weight-body;
     font-family: $win-font-family-body;
     line-height: 1.33333;
 }
 @mixin win-type-base {
-    font-size: $win-font-size-base;
+    font-size: $win-font-size-xs-body;
     font-weight: $win-font-weight-base;
     font-family: $win-font-family-base;
     line-height: 1.33333;
 }
 @mixin win-type-caption {
-    font-size: $font-size-h6;
+    font-size: $win-font-size-xs-caption; // $font-size-h6;
     font-weight: $win-font-weight-h6;
     font-family: $win-font-family-h6;
     line-height: 1.23077;
 }
 @mixin win-type-caption-alt {
-    font-size: $win-font-size-caption-alt;
+    font-size: $win-font-size-xs-caption-alt;
     font-weight: $win-font-weight-caption-alt;
     font-family: $win-font-family-caption-alt;
     line-height: 1.27273;
