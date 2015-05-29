@@ -41,148 +41,56 @@
        url("../fonts/selawksl.ttf") format("truetype");
 }
 
+@mixin responsive-type($font) {
+    
+    font-family:        map-deep-get($win-fonts, $font, "font-family");
+    font-size:          map-deep-get($win-fonts, $font, "size-xs");
+    font-weight:        map-deep-get($win-fonts, $font, "font-weight-xs");
+    line-height:        (map-deep-get($win-fonts, $font, "line-height-xs") / map-deep-get($win-fonts, $font, "size-xs"));
+
+    @media (min-width: $screen-md-min) {
+        font-size:      map-deep-get($win-fonts, $font, "size-md");
+        line-height:    (map-deep-get($win-fonts, $font, "line-height-md") / map-deep-get($win-fonts, $font, "size-md"));
+    }
+    @media (min-width: $screen-xl-min) {
+        font-size:      map-deep-get($win-fonts, $font, "size-xl");
+        line-height:    (map-deep-get($win-fonts, $font, "line-height-xl") / map-deep-get($win-fonts, $font, "size-xl"));
+    }
+
+}
+
 // Responsive Typography mixins
 @mixin win-type-headline {
-    font-size: $win-font-size-xs-headline;
-    font-weight: $win-font-weight-headline;
-    font-family: $win-font-family-headline;
-    line-height: ($win-line-height-xs-headline / $win-font-size-xs-headline);
     letter-spacing: -0.01em;
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-headline;
-      line-height: ($win-line-height-md-headline / $win-font-size-md-headline);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-headline;
-      line-height: ($win-line-height-xl-headline / $win-font-size-xl-headline);
-    }
+    @include responsive-type(headline);
 }
 @mixin win-type-header {
-    font-size: $win-font-size-xs-header; //formerly $font-size-h1;
-    font-weight: $win-font-weight-header;
-    font-family: $win-font-family-header;
-    line-height: ($win-line-height-xs-header / $win-font-size-xs-header);
     letter-spacing: -0.01em;
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-header;
-      line-height: ($win-line-height-md-header / $win-font-size-md-header);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-header;
-      line-height: ($win-line-height-xl-header / $win-font-size-xl-header);
-    }
+    @include responsive-type(header);
 }
 @mixin win-type-subheader {
-    font-size: $win-font-size-xs-subheader; // formerly $font-size-h2;
-    font-weight: $win-font-weight-subheader;
-    font-family: $win-font-family-subheader;
-    line-height: ($win-line-height-xs-subheader / $win-font-size-xs-subheader);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-subheader;
-      line-height: ($win-line-height-md-subheader / $win-font-size-md-subheader);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-subheader;
-      line-height: ($win-line-height-xl-subheader / $win-font-size-xl-subheader);
-    }
+    @include responsive-type(subheader);
 }
 @mixin win-type-title {
-    font-size: $win-font-size-xs-title; // formerly $font-size-h3;
-    font-weight: $win-font-weight-title;
-    font-family: $win-font-family-title;
-    line-height: ($win-line-height-xs-title / $win-font-size-xs-title);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-title;
-      line-height: ($win-line-height-md-title / $win-font-size-md-title);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-title;
-      line-height: ($win-line-height-xl-title / $win-font-size-xl-title);
-    }
+    @include responsive-type(title);
 }
 @mixin win-type-subtitle {
-    font-size: $win-font-size-xs-subtitle; // $font-size-h4;
-    font-weight: $win-font-weight-subtitle;
-    font-family: $win-font-family-subtitle;
-    line-height: ($win-line-height-xs-subtitle / $win-font-size-xs-subtitle);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-subtitle;
-      line-height: ($win-line-height-md-subtitle / $win-font-size-md-subtitle);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-subtitle;
-      line-height: ($win-line-height-xl-subtitle / $win-font-size-xl-subtitle);
-    }
+    @include responsive-type(subtitle);
 }
 @mixin win-type-subtitle-alt {
-    font-size: $win-font-size-xs-subtitle-alt;
-    font-weight: $win-font-weight-subtitle-alt;
-    font-family: $win-font-family-subtitle-alt;
-    line-height: ($win-line-height-xs-subtitle-alt / $win-font-size-xs-subtitle-alt);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-subtitle-alt;
-      line-height: ($win-line-height-md-subtitle-alt / $win-font-size-md-subtitle-alt);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-subtitle-alt;
-      line-height: ($win-line-height-xl-subtitle-alt / $win-font-size-xl-subtitle-alt);
-    }
+    @include responsive-type(subtitle-alt);
 }
 @mixin win-type-base {
-    font-size: $win-font-size-xs-base;
-    font-weight: $win-font-weight-base;
-    font-family: $win-font-family-base;
-    line-height: ($win-line-height-xs-base / $win-font-size-xs-base);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-base;
-      line-height: ($win-line-height-md-base / $win-font-size-md-base);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-base;
-      line-height: ($win-line-height-xl-base / $win-font-size-xl-base);
-    }
+    @include responsive-type(base);
 }
 @mixin win-type-body {
-    font-size: $win-font-size-xs-body;
-    font-weight: $win-font-weight-body;
-    font-family: $win-font-family-body;
-    line-height: ($win-line-height-xs-body / $win-font-size-xs-body);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-body;
-      line-height: ($win-line-height-md-body / $win-font-size-md-body);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-body;
-      line-height: ($win-line-height-xl-body / $win-font-size-xl-body);
-    }
+    @include responsive-type(body);
 }
 @mixin win-type-caption {
-    font-size: $win-font-size-xs-caption; // $font-size-h6;
-    font-weight: $win-font-weight-caption;
-    font-family: $win-font-family-caption;
-    line-height: ($win-line-height-xs-caption / $win-font-size-xs-caption);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-caption;
-      line-height: ($win-line-height-md-caption / $win-font-size-md-caption);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-caption;
-      line-height: ($win-line-height-xl-caption / $win-font-size-xl-caption);
-    }
+    @include responsive-type(caption);
 }
 @mixin win-type-caption-alt {
-    font-size: $win-font-size-xs-caption-alt;
-    font-weight: $win-font-weight-caption-alt;
-    font-family: $win-font-family-caption-alt;
-    line-height: ($win-line-height-xs-caption-alt / $win-font-size-xs-caption-alt);
-    @media (min-width: $screen-sm-min) {
-      font-size: $win-font-size-md-caption-alt;
-      line-height: ($win-line-height-md-caption-alt / $win-font-size-md-caption-alt);
-    }
-    @media (min-width: $screen-xl-min) {
-      font-size: $win-font-size-xl-caption-alt;
-      line-height: ($win-line-height-xl-caption-alt / $win-font-size-xl-caption-alt);
-    }
+    @include responsive-type(caption-alt);
 }
 
 // Apply mixins to typography classes
