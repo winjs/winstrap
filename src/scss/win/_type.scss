@@ -47,7 +47,7 @@
     font-weight: $win-font-weight-headline;
     font-family: $win-font-family-headline;
     line-height: ($win-line-height-xs-headline / $win-font-size-xs-headline);
-    letter-spacing: -0.6px;
+    letter-spacing: -0.01em;
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-headline;
       line-height: ($win-line-height-md-headline / $win-font-size-md-headline);
@@ -59,10 +59,10 @@
 }
 @mixin win-type-header {
     font-size: $win-font-size-xs-header; //formerly $font-size-h1;
-    font-weight: $win-font-weight-h1;
-    font-family: $win-font-family-h1;
+    font-weight: $win-font-weight-header;
+    font-family: $win-font-family-header;
     line-height: ($win-line-height-xs-header / $win-font-size-xs-header);
-    letter-spacing: -0.6px;
+    letter-spacing: -0.01em;
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-header;
       line-height: ($win-line-height-md-header / $win-font-size-md-header);
@@ -74,8 +74,8 @@
 }
 @mixin win-type-subheader {
     font-size: $win-font-size-xs-subheader; // formerly $font-size-h2;
-    font-weight: $win-font-weight-h2;
-    font-family: $win-font-family-h2;
+    font-weight: $win-font-weight-subheader;
+    font-family: $win-font-family-subheader;
     line-height: ($win-line-height-xs-subheader / $win-font-size-xs-subheader);
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-subheader;
@@ -88,8 +88,8 @@
 }
 @mixin win-type-title {
     font-size: $win-font-size-xs-title; // formerly $font-size-h3;
-    font-weight: $win-font-weight-h3;
-    font-family: $win-font-family-h3;
+    font-weight: $win-font-weight-title;
+    font-family: $win-font-family-title;
     line-height: ($win-line-height-xs-title / $win-font-size-xs-title);
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-title;
@@ -102,8 +102,8 @@
 }
 @mixin win-type-subtitle {
     font-size: $win-font-size-xs-subtitle; // $font-size-h4;
-    font-weight: $win-font-weight-h4;
-    font-family: $win-font-family-h4;
+    font-weight: $win-font-weight-subtitle;
+    font-family: $win-font-family-subtitle;
     line-height: ($win-line-height-xs-subtitle / $win-font-size-xs-subtitle);
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-subtitle;
@@ -116,8 +116,8 @@
 }
 @mixin win-type-subtitle-alt {
     font-size: $win-font-size-xs-subtitle-alt;
-    font-weight: $win-font-weight-h4;
-    font-family: $win-font-family-h4;
+    font-weight: $win-font-weight-subtitle-alt;
+    font-family: $win-font-family-subtitle-alt;
     line-height: ($win-line-height-xs-subtitle-alt / $win-font-size-xs-subtitle-alt);
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-subtitle-alt;
@@ -158,8 +158,8 @@
 }
 @mixin win-type-caption {
     font-size: $win-font-size-xs-caption; // $font-size-h6;
-    font-weight: $win-font-weight-h6;
-    font-family: $win-font-family-h6;
+    font-weight: $win-font-weight-caption;
+    font-family: $win-font-family-caption;
     line-height: ($win-line-height-xs-caption / $win-font-size-xs-caption);
     @media (min-width: $screen-sm-min) {
       font-size: $win-font-size-md-caption;

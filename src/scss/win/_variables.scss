@@ -75,31 +75,34 @@ $win-line-height-xl-body: 					22px !default;
 $win-line-height-xl-caption: 				20px !default;
 $win-line-height-xl-caption-alt: 			16px !default;
 
-$win-font-fallbacks: "Arial", sans-serif !default;
-$win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
-$win-font-semilight: "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
-$win-font-normal: "Segoe UI", "Selawik", $win-font-fallbacks !default;
-$win-font-semibold: "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
-$win-font-bold: "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
+// Font Variables
+$win-font-fallbacks: 						"Arial", sans-serif !default;
+$win-font-light: 							"Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
+$win-font-semilight: 						"Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
+$win-font-normal: 							"Segoe UI", "Selawik", $win-font-fallbacks !default;
+$win-font-semibold: 						"Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
+$win-font-bold: 							"Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
 
-$win-font-family-headline: $win-font-light !default;
-$win-font-family-body: $win-font-normal !default;
-$win-font-family-base: $win-font-semibold !default;
-$win-font-family-caption-alt: $win-font-normal !default;
-$win-font-family-h1: $win-font-light !default;
-$win-font-family-h2: $win-font-light !default;
-$win-font-family-h3: $win-font-semilight !default;
-$win-font-family-h4: $win-font-semilight !default;
-$win-font-family-h5: $win-font-semibold !default;
-$win-font-family-h6: $win-font-normal !default;
+// Associate font variables with type ramp
+$win-font-family-headline: 					$win-font-light !default;
+$win-font-family-header: 					$win-font-light !default;
+$win-font-family-subheader: 				$win-font-light !default;
+$win-font-family-title: 					$win-font-semilight !default;
+$win-font-family-subtitle: 					$win-font-semilight !default;
+$win-font-family-subtitle-alt: 				$win-font-semilight !default;
+$win-font-family-base: 						$win-font-semibold !default;
+$win-font-family-body: 						$win-font-normal !default;
+$win-font-family-caption: 					$win-font-normal !default;
+$win-font-family-caption-alt: 				$win-font-normal !default;
 
-$win-font-weight-headline: 200 !default;
-$win-font-weight-body: 400 !default;
-$win-font-weight-base: 500 !default;
-$win-font-weight-caption-alt: 400 !default;
-$win-font-weight-h1: 200 !default;
-$win-font-weight-h2: 200 !default;
-$win-font-weight-h3: 300 !default;
-$win-font-weight-h4: 300 !default;
-$win-font-weight-h5: 500 !default;
-$win-font-weight-h6: 400 !default;
+// Font Weights
+$win-font-weight-headline: 					200 !default;
+$win-font-weight-header: 					200 !default;
+$win-font-weight-subheader: 				200 !default;
+$win-font-weight-title: 					300 !default;
+$win-font-weight-subtitle: 					300 !default;
+$win-font-weight-subtitle-alt: 				300 !default;
+$win-font-weight-base: 						500 !default;
+$win-font-weight-body: 						400 !default;
+$win-font-weight-caption: 					400 !default;
+$win-font-weight-caption-alt: 				400 !default;
