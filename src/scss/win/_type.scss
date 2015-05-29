@@ -41,68 +41,148 @@
        url("../fonts/selawksl.ttf") format("truetype");
 }
 
-//Typography mixins
+// Responsive Typography mixins
 @mixin win-type-headline {
     font-size: $win-font-size-xs-headline;
     font-weight: $win-font-weight-headline;
     font-family: $win-font-family-headline;
-    line-height: 1.29032;
+    line-height: ($win-line-height-xs-headline / $win-font-size-xs-headline);
     letter-spacing: -0.6px;
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-headline;
+      line-height: ($win-line-height-md-headline / $win-font-size-md-headline);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-headline;
+      line-height: ($win-line-height-xl-headline / $win-font-size-xl-headline);
+    }
 }
 @mixin win-type-header {
     font-size: $win-font-size-xs-header; //formerly $font-size-h1;
     font-weight: $win-font-weight-h1;
     font-family: $win-font-family-h1;
-    line-height: 1.21739;
+    line-height: ($win-line-height-xs-header / $win-font-size-xs-header);
     letter-spacing: -0.6px;
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-header;
+      line-height: ($win-line-height-md-header / $win-font-size-md-header);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-header;
+      line-height: ($win-line-height-xl-header / $win-font-size-xl-header);
+    }
 }
 @mixin win-type-subheader {
     font-size: $win-font-size-xs-subheader; // formerly $font-size-h2;
     font-weight: $win-font-weight-h2;
     font-family: $win-font-family-h2;
-    line-height: 1.17647;
+    line-height: ($win-line-height-xs-subheader / $win-font-size-xs-subheader);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-subheader;
+      line-height: ($win-line-height-md-subheader / $win-font-size-md-subheader);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-subheader;
+      line-height: ($win-line-height-xl-subheader / $win-font-size-xl-subheader);
+    }
 }
 @mixin win-type-title {
     font-size: $win-font-size-xs-title; // formerly $font-size-h3;
     font-weight: $win-font-weight-h3;
     font-family: $win-font-family-h3;
-    line-height: 1.16667;
+    line-height: ($win-line-height-xs-title / $win-font-size-xs-title);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-title;
+      line-height: ($win-line-height-md-title / $win-font-size-md-title);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-title;
+      line-height: ($win-line-height-xl-title / $win-font-size-xl-title);
+    }
 }
 @mixin win-type-subtitle {
     font-size: $win-font-size-xs-subtitle; // $font-size-h4;
     font-weight: $win-font-weight-h4;
     font-family: $win-font-family-h4;
-    line-height: 1.2;
+    line-height: ($win-line-height-xs-subtitle / $win-font-size-xs-subtitle);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-subtitle;
+      line-height: ($win-line-height-md-subtitle / $win-font-size-md-subtitle);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-subtitle;
+      line-height: ($win-line-height-xl-subtitle / $win-font-size-xl-subtitle);
+    }
 }
 @mixin win-type-subtitle-alt {
     font-size: $win-font-size-xs-subtitle-alt;
     font-weight: $win-font-weight-h4;
     font-family: $win-font-family-h4;
-    line-height: 1.22222;
-}
-@mixin win-type-body {
-    font-size: $win-font-size-xs-base;
-    font-weight: $win-font-weight-body;
-    font-family: $win-font-family-body;
-    line-height: 1.33333;
+    line-height: ($win-line-height-xs-subtitle-alt / $win-font-size-xs-subtitle-alt);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-subtitle-alt;
+      line-height: ($win-line-height-md-subtitle-alt / $win-font-size-md-subtitle-alt);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-subtitle-alt;
+      line-height: ($win-line-height-xl-subtitle-alt / $win-font-size-xl-subtitle-alt);
+    }
 }
 @mixin win-type-base {
-    font-size: $win-font-size-xs-body;
+    font-size: $win-font-size-xs-base;
     font-weight: $win-font-weight-base;
     font-family: $win-font-family-base;
-    line-height: 1.33333;
+    line-height: ($win-line-height-xs-base / $win-font-size-xs-base);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-base;
+      line-height: ($win-line-height-md-base / $win-font-size-md-base);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-base;
+      line-height: ($win-line-height-xl-base / $win-font-size-xl-base);
+    }
+}
+@mixin win-type-body {
+    font-size: $win-font-size-xs-body;
+    font-weight: $win-font-weight-body;
+    font-family: $win-font-family-body;
+    line-height: ($win-line-height-xs-body / $win-font-size-xs-body);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-body;
+      line-height: ($win-line-height-md-body / $win-font-size-md-body);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-body;
+      line-height: ($win-line-height-xl-body / $win-font-size-xl-body);
+    }
 }
 @mixin win-type-caption {
     font-size: $win-font-size-xs-caption; // $font-size-h6;
     font-weight: $win-font-weight-h6;
     font-family: $win-font-family-h6;
-    line-height: 1.23077;
+    line-height: ($win-line-height-xs-caption / $win-font-size-xs-caption);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-caption;
+      line-height: ($win-line-height-md-caption / $win-font-size-md-caption);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-caption;
+      line-height: ($win-line-height-xl-caption / $win-font-size-xl-caption);
+    }
 }
 @mixin win-type-caption-alt {
     font-size: $win-font-size-xs-caption-alt;
     font-weight: $win-font-weight-caption-alt;
     font-family: $win-font-family-caption-alt;
-    line-height: 1.27273;
+    line-height: ($win-line-height-xs-caption-alt / $win-font-size-xs-caption-alt);
+    @media (min-width: $screen-sm-min) {
+      font-size: $win-font-size-md-caption-alt;
+      line-height: ($win-line-height-md-caption-alt / $win-font-size-md-caption-alt);
+    }
+    @media (min-width: $screen-xl-min) {
+      font-size: $win-font-size-xl-caption-alt;
+      line-height: ($win-line-height-xl-caption-alt / $win-font-size-xl-caption-alt);
+    }
 }
 
 // Apply mixins to typography classes

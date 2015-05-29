@@ -1,5 +1,6 @@
 // Responsive Type Ramp Variables
 
+// FONT SIZE
 // Extra Small & Small Breakpoints
 $win-font-size-xs-headline: 				46px !default;
 $win-font-size-xs-header: 					34px !default;
@@ -35,6 +36,44 @@ $win-font-size-xl-base: 					18px !default;
 $win-font-size-xl-body: 					18px !default;
 $win-font-size-xl-caption: 					15px !default;
 $win-font-size-xl-caption-alt: 				13px !default;
+
+
+// LINE HEIGHT
+// Extra Small & Small Breakpoints
+$win-line-height-xs-headline: 				56px !default;
+$win-line-height-xs-header: 				40px !default;
+$win-line-height-xs-subheader: 				36px !default;
+$win-line-height-xs-title: 					24px !default;
+$win-line-height-xs-subtitle: 				22px !default;
+$win-line-height-xs-subtitle-alt: 			21px !default;
+$win-line-height-xs-base: 					18px !default;
+$win-line-height-xs-body: 					18px !default;
+$win-line-height-xs-caption: 				15px !default;
+$win-line-height-xs-caption-alt: 			13px !default;
+
+// Medium & Large Breakpoints
+$win-line-height-md-headline: 				80px !default;
+$win-line-height-md-header: 				56px !default;
+$win-line-height-md-subheader: 				40px !default;
+$win-line-height-md-title: 					28px !default;
+$win-line-height-md-subtitle: 				24px !default;
+$win-line-height-md-subtitle-alt: 			22px !default;
+$win-line-height-md-base: 					20px !default;
+$win-line-height-md-body: 					20px !default;
+$win-line-height-md-caption: 				16px !default;
+$win-line-height-md-caption-alt: 			14px !default;
+
+// Extra Large Breakpoint
+$win-line-height-xl-headline: 				88px !default;
+$win-line-height-xl-header: 				72px !default;
+$win-line-height-xl-subheader: 				56px !default;
+$win-line-height-xl-title: 					40px !default;
+$win-line-height-xl-subtitle: 				28px !default;
+$win-line-height-xl-subtitle-alt: 			24px !default;
+$win-line-height-xl-base: 					22px !default;
+$win-line-height-xl-body: 					22px !default;
+$win-line-height-xl-caption: 				20px !default;
+$win-line-height-xl-caption-alt: 			16px !default;
 
 $win-font-fallbacks: "Arial", sans-serif !default;
 $win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
