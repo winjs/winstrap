@@ -185,17 +185,6 @@
         }
     }
 
-    .win-media-price {
-        @include win-type-caption-alt();
-        color: $headings-color;
-
-        s {
-            margin-right: .5em;
-//            color: $win-color-gray-cool-gray-7;
-            color: #969696; //hard code this for now
-        }
-    }
-
     .win-rating {
         margin-bottom: .25em;
     }
