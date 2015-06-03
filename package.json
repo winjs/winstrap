@@ -1,6 +1,6 @@
 {
-    "name": "WinStrap",
-    "description": "WinStrap is boilerplate constructs and CSS styling on top of Bootstrap controls.",
+    "name": "Winstrap",
+    "description": "Winstrap is the official Bootstrap theme for Windows.",
     "repository": "https://github.com/winjs/bootstrap-winjs.git",
     "version": "0.3.0",
     "author": {
