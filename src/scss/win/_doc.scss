@@ -9,8 +9,101 @@
     padding-bottom: 25%;
 }
 
+// Basel text colors
+&.primary-type {
+    color: $win-color-primary-type;
+}
 
-//Accent color and variants
+&.secondary-type {
+    color: $win-color-secondary-type;
+}
+
+&.disabled-type {
+    color: $win-color-disabled-type;
+}
+
+&.accent-type {
+    color: $win-color-accent-type;
+}
+
+&.alert-type {
+    color: $win-color-alert-type;
+}
+
+// Basel fill colors
+&.color-fill-10 {
+    background: $win-color-fl-10;
+}
+
+&.color-fill-20 {
+    background: $win-color-fl-20;
+}
+
+&.color-fill-30 {
+    background: $win-color-fl-30;
+}
+
+&.color-fill-40 {
+    background: $win-color-fl-40;
+}
+
+&.color-fill-50 {
+    background: $win-color-fl-50;
+}
+
+&.color-fill-60 {
+    background: $win-color-fl-60;
+}
+
+&.color-fill-70 {
+    background: $win-color-fl-70;
+}
+
+&.color-fill-accent {
+    background: $win-color-accent-fl;
+}
+
+&.color-fill-accent-low {
+    background: $win-color-accent-low;
+}
+
+&.color-fill-accent-medium {
+    background: $win-color-accent-medium;
+}
+
+&.color-fill-accent-high {
+    background: $win-color-accent-high;
+}
+
+&.color-fill-alert {
+    background: $win-color-alert-fl;
+}
+
+
+// Basel background colors 
+&.color-bg-10 {
+    background: $win-color-bg-10;
+}
+
+&.color-bg-20 {
+    background: $win-color-bg-20;
+}
+
+&.color-bg-30 {
+    background: $win-color-bg-30;
+}
+
+&.color-bg-40 {
+    background: $win-color-bg-40;
+}
+
+&.color-bg-50 {
+    background: $win-color-bg-50;
+}
+
+
+// Bootstrap-winjs accent color and variants
+// TODO: Deprecate these, adopt Basel classes
 &.accent {
     background: $win-color-accent;
 }

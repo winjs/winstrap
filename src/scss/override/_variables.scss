@@ -20,11 +20,11 @@ $gray:                   $win-color-base-medium !default;
 $gray-light:             $win-color-base-medium-low !default;
 $gray-lighter:           $win-color-base-low !default;
 
-$brand-primary:         $win-color-accent !default;
-$brand-success:         $win-color-core-green !default;
-$brand-info:            $win-color-secondary-blue !default;
-$brand-warning:         $win-color-core-yellow !default;
-$brand-danger:          $win-color-core-red !default;
+$brand-primary:         $win-color-accent-fl !default;
+$brand-success:         $win-color-fl-50 !default;
+$brand-info:            $win-color-fl-50 !default;
+$brand-warning:         $win-color-alert-type !default;
+$brand-danger:          $win-color-alert-type !default;
 
 
 //== Scaffolding

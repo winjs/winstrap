@@ -8,58 +8,58 @@
 // You can convert HEX to RGBA using the rgba($color, opacity) function
 
 // Base
-$win-color-light: 						#FFFFFF;
-$win-color-dark: 						#000000;
+$win-color-light:                       #FFFFFF;
+$win-color-dark:                        #000000;
 
 
 // Text Colors
-$win-color-primary-type:				$win-color-dark;
-$win-color-secondary-type:				rgba($win-color-primary-type, 0.6);
-$win-color-disabled-type:				rgba($win-color-primary-type, 0.2);
-$win-color-accent-type:					#0070BC;
-$win-color-alert-type:					#D02E00;
+$win-color-primary-type:                $win-color-dark;
+$win-color-secondary-type:              rgba($win-color-primary-type, 0.6);
+$win-color-disabled-type:               rgba($win-color-primary-type, 0.2);
+$win-color-accent-type:                 #0070BC;
+$win-color-alert-type:                  #D02E00;
 
-$win-color-primary-type-alt:			$win-color-light;
-$win-color-secondary-type-alt:			rgba($win-color-primary-type-alt, 0.6);
-$win-color-disabled-type-alt:			rgba($win-color-primary-type-alt, 0.2);
-$win-color-accent-type-alt:				#008EEF;
-$win-color-alert-type-alt:				#D02E00;
+$win-color-primary-type-alt:            $win-color-light;
+$win-color-secondary-type-alt:          rgba($win-color-primary-type-alt, 0.6);
+$win-color-disabled-type-alt:           rgba($win-color-primary-type-alt, 0.2);
+$win-color-accent-type-alt:             #008EEF;
+$win-color-alert-type-alt:              #D02E00;
 
 
 // Fills/Lines color & values
-$win-color-fl-10:						rgba($win-color-dark, 0.05);
-$win-color-fl-20:						rgba($win-color-dark, 0.1);
-$win-color-fl-30:						rgba($win-color-dark, 0.2);
-$win-color-fl-40:						rgba($win-color-dark, 0.4);
-$win-color-fl-50:						rgba($win-color-dark, 0.6);
-$win-color-fl-60:						rgba($win-color-dark, 0.8);
-$win-color-fl-70:						$win-color-dark;
-$win-color-accent-fl:					#0078D7;
-$win-color-alert-fl:					#D02E00;
+$win-color-fl-10:                       rgba($win-color-dark, 0.05);
+$win-color-fl-20:                       rgba($win-color-dark, 0.1);
+$win-color-fl-30:                       rgba($win-color-dark, 0.2);
+$win-color-fl-40:                       rgba($win-color-dark, 0.4);
+$win-color-fl-50:                       rgba($win-color-dark, 0.6);
+$win-color-fl-60:                       rgba($win-color-dark, 0.8);
+$win-color-fl-70:                       $win-color-dark;
+$win-color-accent-fl:                   #0078D7;
+$win-color-alert-fl:                    #D02E00;
 
-$win-color-fl-10-alt:					rgba($win-color-light, 0.1);
-$win-color-fl-20-alt:					rgba($win-color-light, 0.15);
-$win-color-fl-30-alt:					rgba($win-color-light, 0.2);
-$win-color-fl-40-alt:					rgba($win-color-light, 0.4);
-$win-color-fl-50-alt:					rgba($win-color-light, 0.6);
-$win-color-fl-60-alt:					rgba($win-color-light, 0.8);
-$win-color-fl-70-alt:					$win-color-light;
-$win-color-accent-fl-alt:				$win-color-accent-fl;
-$win-color-alert-fl-alt:				$win-color-alert-fl;
+$win-color-fl-10-alt:                   rgba($win-color-light, 0.1);
+$win-color-fl-20-alt:                   rgba($win-color-light, 0.15);
+$win-color-fl-30-alt:                   rgba($win-color-light, 0.2);
+$win-color-fl-40-alt:                   rgba($win-color-light, 0.4);
+$win-color-fl-50-alt:                   rgba($win-color-light, 0.6);
+$win-color-fl-60-alt:                   rgba($win-color-light, 0.8);
+$win-color-fl-70-alt:                   $win-color-light;
+$win-color-accent-fl-alt:               $win-color-accent-fl;
+$win-color-alert-fl-alt:                $win-color-alert-fl;
 
 
 // Background Colors
-$win-color-bg-10:						$win-color-light;
-$win-color-bg-20:						#F2F2F2;
-$win-color-bg-30:						#E5E5E5;
-$win-color-bg-40:						#D9D9D9;
-$win-color-bg-50:						#CCCCCC;
+$win-color-bg-10:                       $win-color-light;
+$win-color-bg-20:                       #F2F2F2;
+$win-color-bg-30:                       #E5E5E5;
+$win-color-bg-40:                       #D9D9D9;
+$win-color-bg-50:                       #CCCCCC;
 
-$win-color-bg-10-alt:					$win-color-dark;
-$win-color-bg-20-alt:					#191919;
-$win-color-bg-30-alt:					#262626;
-$win-color-bg-40-alt:					#333333;
-$win-color-bg-50-alt:					#404040;
+$win-color-bg-10-alt:                   $win-color-dark;
+$win-color-bg-20-alt:                   #191919;
+$win-color-bg-30-alt:                   #262626;
+$win-color-bg-40-alt:                   #333333;
+$win-color-bg-50-alt:                   #404040;
 
 
 //Core colors
@@ -90,11 +90,13 @@ $win-color-tertiary-blue: #002050;
 $win-color-tertiary-teal: #00B294; 
 $win-color-tertiary-green: #BAD80A; 
 
-//Primary brand color - designed to be replaced with any core accent color
-$win-color-accent: $win-color-core-blue; 
-$win-color-accent-low: rgba($win-color-accent, 0.4); 
-$win-color-accent-medium: rgba($win-color-accent, 0.6);
-$win-color-accent-high: rgba($win-color-accent, 0.7);
+// Primary brand color - designed to be replaced with any core accent color
+// Just setting these to the Basel Colors defined above
+// TODO: remove these, replace with their Basel counterparts
+$win-color-accent:                      $win-color-accent-fl; 
+$win-color-accent-low:                  rgba($win-color-accent, 0.4); 
+$win-color-accent-medium:               rgba($win-color-accent, 0.6);
+$win-color-accent-high:                 rgba($win-color-accent, 0.7);
 
 //Grays
 $win-color-chrome-10: #f2f2f2;
@@ -109,19 +111,19 @@ $win-color-chrome-80: #171717;
 // Base colors
 // Just setting these to the Basel Colors defined above
 // TODO: remove these, replace with their Basel counterparts
-$win-color-base:						$win-color-dark;
-$win-color-base-low:					$win-color-fl-20;
-$win-color-base-medium-low:				$win-color-fl-30;
-$win-color-base-medium:					$win-color-fl-40;
-$win-color-base-medium-high:			$win-color-fl-50;
-$win-color-base-high:					$win-color-fl-60;
+$win-color-base:                        $win-color-dark;
+$win-color-base-low:                    $win-color-fl-20;
+$win-color-base-medium-low:             $win-color-fl-30;
+$win-color-base-medium:                 $win-color-fl-40;
+$win-color-base-medium-high:            $win-color-fl-50;
+$win-color-base-high:                   $win-color-fl-60;
 
 // Alt colors 
 // Just setting these to the Basel Colors defined above
 // TODO: remove these, replace with their Basel counterparts
-$win-color-alt: 						$win-color-light;
-$win-color-alt-low: 					$win-color-fl-10-alt;
-$win-color-alt-medium-low: 				$win-color-fl-30-alt;
-$win-color-alt-medium: 					$win-color-fl-40-alt;
-$win-color-alt-medium-high: 			$win-color-fl-50-alt;
-$win-color-alt-high: 					$win-color-fl-60-alt;
+$win-color-alt:                         $win-color-light;
+$win-color-alt-low:                     $win-color-fl-10-alt;
+$win-color-alt-medium-low:              $win-color-fl-30-alt;
+$win-color-alt-medium:                  $win-color-fl-40-alt;
+$win-color-alt-medium-high:             $win-color-fl-50-alt;
+$win-color-alt-high:                    $win-color-fl-60-alt;
