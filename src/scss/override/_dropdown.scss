@@ -27,7 +27,7 @@
 }
 
 .dropdown-menu li a {
-  @include win-type-body();
+  @include win-type-body(no-line-height);
   line-height: 32px;
   height: 32px;
   padding: 0;
