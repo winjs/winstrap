@@ -8,8 +8,8 @@
 
   &,
   &:focus {
-    color: $win-color-base-high;
-    background-color: $win-color-base-low;
+    color: $win-color-primary-type;
+    background-color: $win-color-fl-20;
     border-color: transparent;
   }
 }
@@ -17,30 +17,30 @@
 // Override Bootstrap button settings
 .btn-primary,
 .btn-primary:focus {
-  color: $win-color-alt;
-  background-color: $win-color-accent;
+  color: $win-color-primary-type-alt;
+  background-color: $win-color-fl-accent;
 }
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
-  border-color: $win-color-base-medium;
+  border-color: $win-color-fl-40;
 }
 .btn-default:hover {
-  background-color: $win-color-base-medium-low;
+  background-color: $win-color-fl-30;
 }
 .btn-primary:hover {
-  background-color: $win-color-accent;
+  background-color: $win-color-fl-accent;
 }
 .btn:active,
 .btn.active {
-  border-color: $win-color-base-medium;
-  background-color: $win-color-base-medium;
+  border-color: $win-color-fl-40;
+  background-color: $win-color-fl-40;
   @include box-shadow(none);
 }
 .btn:disabled {
-  color: $win-color-base-medium-low;
-  background-color: $win-color-base-medium-low;
+  color: $win-color-disabled-type-alt;
+  background-color: $win-color-fl-30;
   border-color: transparent;
 }
 
@@ -60,7 +60,7 @@
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 
   &:hover {
-    border-color: $win-color-alt-medium;
+    border-color: $win-color-fl-40-alt;
   }
 }
 // Warning appears as orange
@@ -102,7 +102,7 @@
   }
   &:active,
   &.active {
-    color: $win-color-base-medium;
+    color: $win-color-primary-type-alt;
     border-color: transparent;
   }
   &[disabled],
@@ -118,7 +118,7 @@
 // Dropdown button
 .btn-dropdown {
   background: none;
-  border: 2px solid $win-color-chrome-30;
+  border: 2px solid $win-color-fl-30;
 
   .caret {
     margin-left: .5em;
@@ -129,17 +129,17 @@
 // Toggle buttons
 .btn[data-toggle="button"] {
   &.active {
-    background-color: $win-color-accent;
+    background-color: $win-color-fl-accent;
     border-color: transparent;
     color: #fff;
   }
   &.active:active {
-    background-color: $win-color-base-medium;
+    background-color: darken($win-color-fl-accent, 5%);
     border-color: transparent;
-    color: $win-color-base;
+    color: $win-color-primary-type;
   }
   &:hover {
-    border-color: $win-color-base-medium;
+    border-color: $win-color-fl-accent;
   }
 }
 

@@ -30,11 +30,11 @@
     }
 
     &:hover {
-        border: 2px $win-color-base-medium-high solid;
+        border: 2px $win-color-fl-50 solid;
     }
 
     &:active, &.active {
-        border: 2px rgba($win-color-base, 0.8) solid;
+        border: 2px $win-color-fl-60 solid;
     }
 
     .win-tile-icon {

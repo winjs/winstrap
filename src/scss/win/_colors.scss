@@ -70,6 +70,7 @@ $win-color-bg-50-alt:                   #404040;
 
 // Core colors
 // TODO: remove
+// These are not used by any components
 $win-color-core-yellow: #FFB900; 
 $win-color-core-orange: #D83B01; 
 $win-color-core-red: #E81123; 
@@ -81,6 +82,7 @@ $win-color-core-green: #107c10;
 
 // Secondary colors
 // TODO: remove
+// These are not used by any components
 $win-color-secondary-magenta: #E3008C;
 $win-color-secondary-purple: #32145A;
 $win-color-secondary-blue: #00188F; 
@@ -89,6 +91,7 @@ $win-color-secondary-green: #004B1C;
 
 // Tertiary color
 // TODO: remove
+// These are not used by any components
 $win-color-tertiary-yellow: #FFF100;
 $win-color-tertiary-orange: #FF8C00;
 $win-color-tertiary-red: #A80000;
@@ -97,43 +100,4 @@ $win-color-tertiary-purple: #B4A0FF;
 $win-color-tertiary-cyan: #00BCF2; 
 $win-color-tertiary-blue: #002050;
 $win-color-tertiary-teal: #00B294; 
-$win-color-tertiary-green: #BAD80A; 
-
-// Primary brand color - designed to be replaced with any core accent color
-// Just setting these to the Basel Colors defined above
-// TODO: remove these, replace with their Basel counterparts
-$win-color-accent:                      $win-color-fl-accent; 
-$win-color-accent-low:                  rgba($win-color-accent, 0.4); 
-$win-color-accent-medium:               rgba($win-color-accent, 0.6);
-$win-color-accent-high:                 rgba($win-color-accent, 0.7);
-
-// Grays
-// TODO: remove, replace with Basel counterparts
-$win-color-chrome-10: #f2f2f2;
-$win-color-chrome-20: #e6e6e6; 
-$win-color-chrome-30: #d2d2d2; //not controls ramp
-$win-color-chrome-40: #cccccc;
-$win-color-chrome-50: #767676; //not controls ramp
-$win-color-chrome-60: #7a7a7a;
-$win-color-chrome-70: #333333; //not on controls ramp
-$win-color-chrome-80: #171717;
-
-// Base colors
-// Just setting these to the Basel Colors defined above
-// TODO: remove these, replace with their Basel counterparts
-$win-color-base:                        $win-color-dark;
-$win-color-base-low:                    $win-color-fl-20;
-$win-color-base-medium-low:             $win-color-fl-30;
-$win-color-base-medium:                 $win-color-fl-40;
-$win-color-base-medium-high:            $win-color-fl-50;
-$win-color-base-high:                   $win-color-fl-60;
-
-// Alt colors 
-// Just setting these to the Basel Colors defined above
-// TODO: remove these, replace with their Basel counterparts
-$win-color-alt:                         $win-color-light;
-$win-color-alt-low:                     $win-color-fl-10-alt;
-$win-color-alt-medium-low:              $win-color-fl-30-alt;
-$win-color-alt-medium:                  $win-color-fl-40-alt;
-$win-color-alt-medium-high:             $win-color-fl-50-alt;
-$win-color-alt-high:                    $win-color-fl-60-alt;
+$win-color-tertiary-green: #BAD80A;

@@ -309,21 +309,6 @@
 
 // Bootstrap-winjs accent color and variants
 // TODO: Deprecate these, adopt Basel classes
-&.win-color-accent {
-    background: $win-color-accent;
-}
-
-&.win-color-accent-low {
-    background: $win-color-accent-low;
-}
-
-&.win-color-accent-medium {
-    background: $win-color-accent-medium;
-}
-
-&.win-color-accent-high {
-    background: $win-color-accent-high;
-}
 
 //Core accent colors
 &.core-yellow {
@@ -416,90 +401,6 @@
     background: $win-color-tertiary-green;
 }
 
-//Grays
-&.chrome-10 {
-    background: $win-color-chrome-10;
-}
-
-&.chrome-20 {
-    background: $win-color-chrome-20;
-}
-
-&.chrome-30 {
-    background: $win-color-chrome-30;
-}
-
-&.chrome-40 {
-    background: $win-color-chrome-40;
-}
-
-&.chrome-50 {
-    background: $win-color-chrome-50;
-}
-
-&.chrome-60 {
-    background: $win-color-chrome-60;
-}
-
-&.chrome-70 {
-    background: $win-color-chrome-70;
-}
-
-&.chrome-80 {
-    background: $win-color-chrome-80;
-}
-
-//Base
-&.base {
-    background: $win-color-base;
-}
-
-&.base-low {
-    background: $win-color-base-low;
-}
-
-&.base-medium-low {
-    background: $win-color-base-medium-low;
-}
-
-&.base-medium {
-    background: $win-color-base-medium;
-}
-
-&.base-medium-high {
-    background: $win-color-base-medium-high;
-}
-
-&.base-high {
-    background: $win-color-base-high;
-}
-
-//Alt
-&.alt {
-    background: $win-color-alt;
-}
-
-&.alt-low {
-    background: $win-color-alt-low;
-}
-
-&.alt-medium-low {
-    background: $win-color-alt-medium-low;
-}
-
-&.alt-medium {
-    background: $win-color-alt-medium;
-}
-
-&.alt-medium-high {
-    background: $win-color-alt-medium-high;
-}
-
-&.alt-high {
-    background: $win-color-alt-high;
-}
-
-
 pre {
     max-width: 100%;
     overflow-x: auto;
@@ -544,7 +445,7 @@ code {
 
 //make it possible to see alt colors in docs
 #alt-colors > .col-sm-6 {
-    background-color: $win-color-base;
+    background-color: $win-color-primary-type;
 }
 
 //space out buttons in documentation easier
