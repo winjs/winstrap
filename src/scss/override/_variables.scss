@@ -20,7 +20,7 @@ $gray:                   rgba($win-color-dark, .4) !default;
 $gray-light:             rgba($win-color-dark, .2) !default;
 $gray-lighter:           rgba($win-color-dark, .1) !default;
 
-$brand-primary:         $win-color-fl-accent !default;
+$brand-primary:         $win-color-dark !default;
 $brand-success:         $win-color-fl-50 !default;
 $brand-info:            $win-color-fl-50 !default;
 $brand-warning:         $win-color-fl-alert !default;
@@ -37,9 +37,9 @@ $body-bg:               #fff !default;
 $text-color:            $win-color-primary-type !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $win-color-fl-accent !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $brand-primary !default;
+$link-hover-color:      $win-color-fl-accent !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
