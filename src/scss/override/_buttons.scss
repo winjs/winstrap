@@ -131,7 +131,7 @@
   &.active {
     background-color: $win-color-fl-accent;
     border-color: transparent;
-    color: #fff;
+    color: $win-color-light;
   }
   &.active:active {
     background-color: darken($win-color-fl-accent, 5%);

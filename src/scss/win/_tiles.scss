@@ -6,7 +6,7 @@
     text-align: center;
     background: #0078D7;
     z-index: 1;
-    color: #fff;
+    color: $win-color-light;
     border: 2px rgba(0,0,0,0) solid;
 
 
@@ -43,7 +43,7 @@
     }
 
     a {
-        color: #fff;
+        color: $win-color-light;
         text-decoration: none;
     }
 

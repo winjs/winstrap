@@ -37,8 +37,8 @@ textarea.form-control {
   }
 
   &:focus {
-    color: #000;
-    background-color: #fff;
+    color: $win-color-dark;
+    background-color: $win-color-light;
     border-color: $win-color-fl-accent;
     @include box-shadow(none);
   }
@@ -66,7 +66,7 @@ input.form-control::-ms-reveal {
     color: $win-color-fl-accent;
   }
   &:active {
-    color: #fff;
+    color: $win-color-light;
     background-color: $win-color-fl-accent;
   }
 }
@@ -141,7 +141,7 @@ select.form-control {
       color: $win-color-primary-type;
     }
     &:checked {
-      color: #fff;
+      color: $win-color-light;
       background-color: $win-color-fl-accent;
     }
   }
@@ -165,7 +165,7 @@ select[multiple].form-control {
     color: $win-color-primary-type;
   }
   option:checked {
-    color: #fff;
+    color: $win-color-light;
     background-color: $win-color-fl-accent;
   }
 }
@@ -205,7 +205,7 @@ select[multiple].form-control {
   }
 
   &:checked::-ms-check {
-    color: #fff;
+    color: $win-color-light;
     background-color: $win-color-fl-accent;
     border-color: transparent;
   }

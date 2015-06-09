@@ -42,7 +42,7 @@
 }
 
 @mixin responsive-type($font, $lh) {
-    // Produce the proper responsive type attributs with optional argument for no line height
+    // Produce the proper responsive type attributes with optional argument for no line height
     font-family:        map-deep-get($win-fonts, $font, "font-family");
     font-size:          map-deep-get($win-fonts, $font, "size-xs");
     font-weight:        map-deep-get($win-fonts, $font, "font-weight-xs");

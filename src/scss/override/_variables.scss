@@ -32,7 +32,7 @@ $brand-danger:          $win-color-fl-alert !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $win-color-light !default;
 //** Global text color on `<body>`.
 $text-color:            $win-color-primary-type !default;
 
@@ -102,7 +102,7 @@ $border-radius-large:       0px !default;
 $border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff !default;
+$component-active-color:    $win-color-light !default;
 //** Global background color for active items (e.g., navs or dropdowns).
 $component-active-bg:       $brand-primary !default;
 
@@ -171,7 +171,7 @@ $btn-link-disabled-color:        $win-color-disabled-type !default;
 //##
 
 //** `<input>` background color
-$input-bg:                       #fff !default;
+$input-bg:                       $win-color-light !default;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter !default;
 
@@ -202,8 +202,8 @@ $input-height-large:             (ceil($font-size-large * $line-height-large) + 
 //** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-$legend-color:                   $gray-dark !default;
-$legend-border-color:            #e5e5e5 !default;
+$legend-color:                   $win-color-fl-50 !default;
+$legend-border-color:            $win-color-fl-20 !default;
 
 //** Background color for textual input addons
 $input-group-addon-bg:           $gray-lighter !default;
@@ -219,7 +219,7 @@ $cursor-disabled:                not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff !default;
+$dropdown-bg:                    $win-color-light !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                $brand-primary !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -246,7 +246,7 @@ $dropdown-link-disabled-color:   $win-color-fl-50 !default;
 $dropdown-header-color:          $win-color-fl-50 !default;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
-$dropdown-caret-color:           #000 !default;
+$dropdown-caret-color:           $win-color-dark !default;
 
 
 //-- Z-index master list
@@ -364,7 +364,7 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $win-color-fl-60 !default;
-$navbar-default-bg:                #ffffff !default;
+$navbar-default-bg:                $win-color-light !default;
 $navbar-default-border:            $win-color-fl-30 !default;
 
 // Navbar links
@@ -404,7 +404,7 @@ $navbar-inverse-link-disabled-bg:           transparent !default;
 
 // Inverted navbar brand label
 $navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-color:          $win-color-light !default;
 $navbar-inverse-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
@@ -454,7 +454,7 @@ $pagination-hover-color:               $link-color !default;
 $pagination-hover-bg:                  $win-color-bg-20 !default;
 $pagination-hover-border:              $win-color-bg-20 !default;
 
-$pagination-active-color:              #fff !default;
+$pagination-active-color:              $win-color-light !default;
 $pagination-active-bg:                 $brand-primary !default;
 $pagination-active-border:             $brand-primary !default;
 
@@ -518,7 +518,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 //** Tooltip max width
 $tooltip-max-width:           320px !default;
 //** Tooltip text color
-$tooltip-color:               #000 !default;
+$tooltip-color:               $win-color-dark !default;
 //** Tooltip background color
 $tooltip-bg:                  $win-color-bg-20 !default;
 $tooltip-opacity:             1.0 !default;
@@ -534,7 +534,7 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          #fff !default;
+$popover-bg:                          $win-color-light !default;
 //** Popover maximum width
 $popover-max-width:                   276px !default;
 //** Popover border color
@@ -576,9 +576,9 @@ $label-warning-bg:            $brand-warning !default;
 $label-danger-bg:             $brand-danger !default;
 
 //** Default label text color
-$label-color:                 #fff !default;
+$label-color:                 $win-color-light !default;
 //** Default text color of a linked label
-$label-link-hover-color:      #fff !default;
+$label-link-hover-color:      $win-color-light !default;
 
 
 //== Modals
@@ -594,14 +594,14 @@ $modal-title-padding:         10px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             $win-color-light !default;
 //** Modal content border color
 $modal-content-border-color:                   $brand-primary !default;
 //** Modal content border color **for IE8**
 $modal-content-fallback-border-color:          $brand-primary !default;
 
 //** Modal backdrop background color
-$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-bg:           $win-color-dark !default;
 //** Modal backdrop opacity
 $modal-backdrop-opacity:      0.6 !default;
 //** Modal header border color
@@ -646,7 +646,7 @@ $alert-danger-border:         $state-danger-border !default;
 //** Background color of the whole progress component
 $progress-bg:                 $win-color-fl-20 !default;
 //** Progress bar text color
-$progress-bar-color:          #fff !default;
+$progress-bar-color:          $win-color-light !default;
 //** Variable for setting rounded corners on progress bar.
 $progress-border-radius:      0 !default;
 
@@ -700,7 +700,7 @@ $list-group-link-heading-color: #333 !default;
 //
 //##
 
-$panel-bg:                    #fff !default;
+$panel-bg:                    $win-color-light !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
@@ -714,7 +714,7 @@ $panel-default-text:          $gray-dark !default;
 $panel-default-border:        #ddd !default;
 $panel-default-heading-bg:    #f5f5f5 !default;
 
-$panel-primary-text:          #fff !default;
+$panel-primary-text:          $win-color-light !default;
 $panel-primary-border:        $brand-primary !default;
 $panel-primary-heading-bg:    $brand-primary !default;
 
@@ -766,15 +766,15 @@ $well-border:                 darken($well-bg, 7%) !default;
 //
 //##
 
-$badge-color:                 #fff !default;
+$badge-color:                 $win-color-light !default;
 //** Linked badge text color on hover
-$badge-link-hover-color:      #fff !default;
+$badge-link-hover-color:      $win-color-light !default;
 $badge-bg:                    $gray-light !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff !default;
+$badge-active-bg:             $win-color-light !default;
 
 $badge-font-weight:           normal !default;
 $badge-line-height:           1 !default;
@@ -803,15 +803,15 @@ $breadcrumb-separator:          "\203a" !default;
 
 $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
-$carousel-control-color:                      #fff !default;
+$carousel-control-color:                      $win-color-light !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 $carousel-control-font-size:                  20px !default;
 
-$carousel-indicator-active-bg:                #fff !default;
-$carousel-indicator-border-color:             #fff !default;
+$carousel-indicator-active-bg:                $win-color-light !default;
+$carousel-indicator-border-color:             $win-color-light !default;
 
-$carousel-caption-color:                      #fff !default;
+$carousel-caption-color:                      $win-color-light !default;
 
 
 //== Close
@@ -819,7 +819,7 @@ $carousel-caption-color:                      #fff !default;
 //##
 
 $close-font-weight:           normal !default;
-$close-color:                 #000 !default;
+$close-color:                 $win-color-dark !default;
 $close-text-shadow:           none !default;
 
 
@@ -830,7 +830,7 @@ $close-text-shadow:           none !default;
 $code-color:                  $text-color !default;
 $code-bg:                     shade(white, 3%) !default;
 
-$kbd-color:                   #fff !default;
+$kbd-color:                   $win-color-light !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      $code-bg !default;
