@@ -1,10 +1,3 @@
-// Extra large button (not defined in Bootstrap)
-.win-btn-xl {
-  padding: 20px;
-  @include win-type-subtitle();
-  font-family: $win-font-light;
-}
-
 // Button filter
 .win-button-filter {
   border-color: $win-color-fl-50;
