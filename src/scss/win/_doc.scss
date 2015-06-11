@@ -25,24 +25,24 @@
 }
 
 // Basel text colors
-&.win-color-primary-type {
-    color: $win-color-primary-type;
+&.win-color-type-primary {
+    color: $win-color-type-primary;
 }
 
-&.win-color-secondary-type {
-    color: $win-color-secondary-type;
+&.win-color-type-secondary {
+    color: $win-color-type-secondary;
 }
 
-&.win-color-disabled-type {
-    color: $win-color-disabled-type;
+&.win-color-type-disabled {
+    color: $win-color-type-disabled;
 }
 
-&.win-color-accent-type {
-    color: $win-color-accent-type;
+&.win-color-type-accent {
+    color: $win-color-type-accent;
 }
 
-&.win-color-alert-type {
-    color: $win-color-alert-type;
+&.win-color-type-alert {
+    color: $win-color-type-alert;
 }
 
 // Basel fill colors
@@ -167,24 +167,24 @@
 
 
 // Basel alt text colors
-&.win-color-primary-type-alt {
-    color: $win-color-primary-type-alt;
+&.win-color-type-primary-alt {
+    color: $win-color-type-primary-alt;
 }
 
-&.win-color-secondary-type-alt {
-    color: $win-color-secondary-type-alt;
+&.win-color-type-secondary-alt {
+    color: $win-color-type-secondary-alt;
 }
 
-&.win-color-disabled-type-alt {
-    color: $win-color-disabled-type-alt;
+&.win-color-type-disabled-alt {
+    color: $win-color-type-disabled-alt;
 }
 
-&.win-color-accent-type-alt {
-    color: $win-color-accent-type-alt;
+&.win-color-type-accent-alt {
+    color: $win-color-type-accent-alt;
 }
 
-&.win-color-alert-type-alt {
-    color: $win-color-alert-type-alt;
+&.win-color-type-alert-alt {
+    color: $win-color-type-alert-alt;
 }
 
 // Basel alt fill colors
@@ -445,7 +445,7 @@ code {
 
 //make it possible to see alt colors in docs
 #alt-colors > .col-sm-6 {
-    background-color: $win-color-primary-type;
+    background-color: $win-color-type-primary;
 }
 
 //space out buttons in documentation easier

@@ -169,7 +169,7 @@
 
     .win-media-subheader {
         @include win-type-caption-alt();
-        color: $win-color-primary-type;
+        color: $win-color-type-primary;
 
         a {
             color: inherit;
@@ -241,5 +241,5 @@
 
 .win-media-info {
     @include win-type-caption-alt();
-    color: $win-color-secondary-type;
+    color: $win-color-type-secondary;
 }

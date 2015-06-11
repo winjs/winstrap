@@ -34,7 +34,7 @@ $brand-danger:          $win-color-fl-alert !default;
 //** Background color for `<body>`.
 $body-bg:               $win-color-light !default;
 //** Global text color on `<body>`.
-$text-color:            $win-color-primary-type !default;
+$text-color:            $win-color-type-primary !default;
 
 //** Global textual link color.
 $link-color:            $win-color-fl-accent !default;
@@ -143,27 +143,27 @@ $btn-default-color:              $text-color !default;
 $btn-default-bg:                 $win-color-fl-20 !default;
 $btn-default-border:             transparent !default;
 
-$btn-primary-color:              $win-color-primary-type-alt !default;
+$btn-primary-color:              $win-color-type-primary-alt !default;
 $btn-primary-bg:                 $win-color-fl-accent !default;
 $btn-primary-border:             $win-color-fl-accent !default;
 
-$btn-success-color:              $win-color-primary-type-alt !default;
+$btn-success-color:              $win-color-type-primary-alt !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 $win-color-primary-type-alt !default;
+$btn-info-color:                 $win-color-type-primary-alt !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
-$btn-warning-color:              $win-color-primary-type-alt !default;
+$btn-warning-color:              $win-color-type-primary-alt !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             $brand-warning !default;
 
-$btn-danger-color:               $win-color-primary-type-alt !default;
+$btn-danger-color:               $win-color-type-primary-alt !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $brand-danger !default;
 
-$btn-link-disabled-color:        $win-color-disabled-type !default;
+$btn-link-disabled-color:        $win-color-type-disabled !default;
 
 
 //== Forms
@@ -228,9 +228,9 @@ $dropdown-fallback-border:       $brand-primary !default;
 $dropdown-divider-bg:            $win-color-fl-30 !default;
 
 //** Dropdown link text color.
-$dropdown-link-color:            $win-color-primary-type !default;
+$dropdown-link-color:            $win-color-type-primary !default;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      $win-color-primary-type !default;
+$dropdown-link-hover-color:      $win-color-type-primary !default;
 //** Hover background for dropdown links.
 $dropdown-link-hover-bg:         $win-color-bg-20 !default;
 
@@ -368,7 +368,7 @@ $navbar-default-bg:                $win-color-light !default;
 $navbar-default-border:            $win-color-fl-30 !default;
 
 // Navbar links
-$navbar-default-link-color:                $win-color-primary-type !default;
+$navbar-default-link-color:                $win-color-type-primary !default;
 $navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
@@ -377,7 +377,7 @@ $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $win-color-primary-type !default;
+$navbar-default-brand-color:               $win-color-type-primary !default;
 $navbar-default-brand-hover-color:         $brand-primary !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
@@ -846,7 +846,7 @@ $pre-scrollable-max-height:   340px !default;
 //** Horizontal offset for forms and list
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $win-color-disabled-type !default;
+$text-muted:                  $win-color-type-disabled !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color

@@ -2,7 +2,7 @@
 
 // WHEN DEFINING COLORS...
 // Opacity is the primary device used to ensure proper contrast ratio
-// When $win-color-secondary-type calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
+// When $win-color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
 // Use HEX for colors with 100% opacity
 // Use RGBA for colors with < 100% opacity
 // You can convert HEX to RGBA using the rgba($color, opacity) function
@@ -13,17 +13,17 @@ $win-color-dark:                        #000000;
 
 
 // Text Colors
-$win-color-primary-type:                $win-color-dark;
-$win-color-secondary-type:              rgba($win-color-primary-type, 0.6);
-$win-color-disabled-type:               rgba($win-color-primary-type, 0.2);
-$win-color-accent-type:                 #0070BC;
-$win-color-alert-type:                  #D02E00;
+$win-color-type-primary:                $win-color-dark;
+$win-color-type-secondary:              rgba($win-color-type-primary, 0.6);
+$win-color-type-disabled:               rgba($win-color-type-primary, 0.2);
+$win-color-type-accent:                 #0070BC;
+$win-color-type-alert:                  #D02E00;
 
-$win-color-primary-type-alt:            $win-color-light;
-$win-color-secondary-type-alt:          rgba($win-color-primary-type-alt, 0.6);
-$win-color-disabled-type-alt:           rgba($win-color-primary-type-alt, 0.2);
-$win-color-accent-type-alt:             #008EEF;
-$win-color-alert-type-alt:              #D02E00;
+$win-color-type-primary-alt:            $win-color-light;
+$win-color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
+$win-color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
+$win-color-type-accent-alt:             #008EEF;
+$win-color-type-alert-alt:              #D02E00;
 
 
 // Fills/Lines color & values

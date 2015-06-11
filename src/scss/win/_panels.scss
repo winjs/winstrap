@@ -28,7 +28,7 @@
     .nav-pills > li > a {
         padding: 0 1em;
         border-left: 1px solid $win-color-fl-60;
-        color: $win-color-primary-type;
+        color: $win-color-type-primary;
         background: none;
 
         &:hover {
@@ -80,12 +80,12 @@
 
             &.active {
                 a {
-                    color: $win-color-secondary-type;
+                    color: $win-color-type-secondary;
                 }
             }
 
             .icon-completed {
-                color: $win-color-primary-type;
+                color: $win-color-type-primary;
             }
         }
 

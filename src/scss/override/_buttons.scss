@@ -8,7 +8,7 @@
 
   &,
   &:focus {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     background-color: $win-color-fl-20;
     border-color: transparent;
   }
@@ -17,7 +17,7 @@
 // Override Bootstrap button settings
 .btn-primary,
 .btn-primary:focus {
-  color: $win-color-primary-type-alt;
+  color: $win-color-type-primary-alt;
   background-color: $win-color-fl-accent;
 }
 .btn-primary:hover,
@@ -39,7 +39,7 @@
   @include box-shadow(none);
 }
 .btn:disabled {
-  color: $win-color-disabled-type-alt;
+  color: $win-color-type-disabled-alt;
   background-color: $win-color-fl-30;
   border-color: transparent;
 }
@@ -102,7 +102,7 @@
   }
   &:active,
   &.active {
-    color: $win-color-primary-type-alt;
+    color: $win-color-type-primary-alt;
     border-color: transparent;
   }
   &[disabled],
@@ -136,7 +136,7 @@
   &.active:active {
     background-color: darken($win-color-fl-accent, 5%);
     border-color: transparent;
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
   }
   &:hover {
     border-color: $win-color-fl-accent;

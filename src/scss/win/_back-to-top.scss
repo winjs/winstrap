@@ -1,7 +1,7 @@
 ﻿.win-back-to-top {
     visibility: hidden;
     padding: (($grid-gutter-width / 2) / 2);
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     background: $win-color-fl-20;
     opacity: 0;
     @include translate(0, 20px);
@@ -18,7 +18,7 @@
     }
 
     &:hover {
-        color: $win-color-primary-type;
+        color: $win-color-type-primary;
         background: $win-color-fl-20;
     }
 

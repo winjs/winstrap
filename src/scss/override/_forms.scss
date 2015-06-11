@@ -21,15 +21,15 @@ textarea.form-control {
   @include box-shadow(none);
   @include transition(none);
 
-  color: $win-color-primary-type;
-  background-color: $win-color-primary-type-alt;
+  color: $win-color-type-primary;
+  background-color: $win-color-type-primary-alt;
   border-color: $win-color-fl-40;
 
   // Hint text color
   // Single colon on -ms not a typo
-  &:-ms-input-placeholder {color: $win-color-secondary-type;}
-  &::-webkit-input-placeholder {color: $win-color-secondary-type;}
-  &::-moz-input-placeholder {color: $win-color-secondary-type;}
+  &:-ms-input-placeholder {color: $win-color-type-secondary;}
+  &::-webkit-input-placeholder {color: $win-color-type-secondary;}
+  &::-moz-input-placeholder {color: $win-color-type-secondary;}
 
   &:hover {
     background-color: $win-color-fl-50-alt;
@@ -60,7 +60,7 @@ input.form-control::-ms-reveal {
   height: 32px;
   display: block;
 
-  color: $win-color-secondary-type;
+  color: $win-color-type-secondary;
 
   &:hover {
     color: $win-color-fl-accent;
@@ -95,7 +95,7 @@ select.form-control {
   @include box-shadow(none);
   @include transition(none);
 
-  color: $win-color-primary-type;
+  color: $win-color-type-primary;
   background-color: $win-color-fl-20;
   border-color: $win-color-fl-40;
 
@@ -110,7 +110,7 @@ select.form-control {
     margin-bottom: -2px;
     font-size: 20px;
 
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     background-color: transparent;
   }
 
@@ -124,21 +124,21 @@ select.form-control {
     border-color: $win-color-fl-50;
   }
   &:disabled {
-    color: $win-color-disabled-type-alt;
+    color: $win-color-type-disabled-alt;
     background-color: $win-color-fl-30;
   }
   &:disabled::-ms-expand {
-    color: $win-color-disabled-type-alt;
+    color: $win-color-type-disabled-alt;
     border-color: $win-color-fl-30;
   }
 
   option {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     background-color: $win-color-fl-10;
 
     &:hover, &:active {
       background-color: fade(#000, 20%);
-      color: $win-color-primary-type;
+      color: $win-color-type-primary;
     }
     &:checked {
       color: $win-color-light;
@@ -146,11 +146,11 @@ select.form-control {
     }
   }
   optgroup {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     background-color: $win-color-fl-10;
   }
   optgroup:disabled {
-    color: $win-color-disabled-type-alt;
+    color: $win-color-type-disabled-alt;
   }
 }
 
@@ -159,10 +159,10 @@ select[multiple].form-control {
   background-color: $win-color-fl-10;
 
   option {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
   }
   option:hover {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
   }
   option:checked {
     color: $win-color-light;
@@ -194,13 +194,13 @@ select[multiple].form-control {
 
 .checkbox input[type=checkbox] {
   &::-ms-check {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:indeterminate::-ms-check {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     border-color: $win-color-fl-accent;
   }
 
@@ -211,11 +211,11 @@ select[multiple].form-control {
   }
 
   &:hover::-ms-check {
-    border-color: $win-color-primary-type;
+    border-color: $win-color-type-primary;
   }
 
   &:hover:indeterminate::-ms-check {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     border-color: $win-color-fl-accent;
   }
 
@@ -225,13 +225,13 @@ select[multiple].form-control {
   }
 
   &:indeterminate:active::-ms-check {
-    color: $win-color-secondary-type;
+    color: $win-color-type-secondary;
     border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:disabled::-ms-check, &:indeterminate:disabled::-ms-check {
-    color: $win-color-disabled-type-alt;
+    color: $win-color-type-disabled-alt;
     border-color: $win-color-fl-30;
     background-color: transparent;
   }
@@ -239,13 +239,13 @@ select[multiple].form-control {
 
 .radio input[type=radio] {
   &::-ms-check {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
     border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:hover::-ms-check {
-    border-color: $win-color-primary-type;
+    border-color: $win-color-type-primary;
   }
 
   &:checked::-ms-check {
@@ -253,16 +253,16 @@ select[multiple].form-control {
   }
 
   &:hover::-ms-check {
-    color: $win-color-primary-type;
+    color: $win-color-type-primary;
   }
 
   &:active::-ms-check {
-    color: $win-color-secondary-type;
+    color: $win-color-type-secondary;
     border-color: $win-color-fl-50;
   }
 
   &:disabled::-ms-check {
-    color: $win-color-disabled-type-alt;
+    color: $win-color-type-disabled-alt;
     border-color: $win-color-fl-30;
   }
 }
