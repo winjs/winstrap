@@ -54,18 +54,11 @@
     background-color: $win-color-fl-40;
   }
 }
-.btn-primary {
+.btn-primary,
+.btn-success {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
-// Success appears as green
-.btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-  &:active,
-  &.active {
-    background-color: $win-color-fl-40;
-  }
-}
-// Info appears as blue-green
+
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
   &:active,

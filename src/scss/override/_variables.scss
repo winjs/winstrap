@@ -137,33 +137,41 @@ $table-border-color:            transparent !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                   normal !default;
 
-$btn-default-color:              $win-color-type-primary !default;
-$btn-default-bg:                 $win-color-fl-30 !default;
-$btn-default-border:             transparent !default;
+$btn-default-color:                 $win-color-type-primary !default;
+$btn-default-bg:                    $win-color-fl-30 !default;
+$btn-default-border:                transparent !default;
 
-$btn-primary-color:              $win-color-type-primary-alt !default;
-$btn-primary-bg:                 $win-color-fl-accent !default;
-$btn-primary-border:             $win-color-fl-accent !default;
+$btn-primary-color:                 $win-color-type-primary-alt !default;
+$btn-primary-bg:                    $win-color-fl-accent !default;
+$btn-primary-border:                $win-color-fl-accent !default;
 
-$btn-success-color:              $win-color-type-primary !default;
-$btn-success-bg:                 $win-color-fl-30 !default;
-$btn-success-border:             transparent !default;
+$btn-success-color:                 $win-color-type-primary-alt !default;
+$btn-success-bg:                    $win-color-fl-accent !default;
+$btn-success-border:                $win-color-fl-accent !default;
 
-$btn-info-color:                 $win-color-type-primary !default;
-$btn-info-bg:                    $win-color-fl-30 !default;
-$btn-info-border:                transparent !default;
+$btn-info-color:                    $win-color-type-primary !default;
+$btn-info-bg:                       $win-color-fl-30 !default;
+$btn-info-border:                   transparent !default;
 
-$btn-warning-color:              $win-color-type-primary-alt !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             $brand-warning !default;
+$btn-warning-color:                 $win-color-type-primary-alt !default;
+$btn-warning-bg:                    $brand-warning !default;
+$btn-warning-border:                $brand-warning !default;
 
-$btn-danger-color:               $win-color-type-primary-alt !default;
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              $brand-danger !default;
+$btn-danger-color:                  $win-color-type-primary-alt !default;
+$btn-danger-bg:                     $brand-danger !default;
+$btn-danger-border:                 $brand-danger !default;
 
-$btn-link-disabled-color:        $win-color-type-disabled !default;
+$btn-link-disabled-color:           $win-color-type-disabled !default;
+
+$btn-on-dark-color:                 $win-color-dark !default;
+$btn-on-dark-bg:                    $win-color-fl-70-alt !default;
+$btn-on-dark-border:                transparent !default;
+
+$btn-on-light-color:                $win-color-type-primary-alt !default;
+$btn-on-light-bg:                   $win-color-fl-70 !default;
+$btn-on-light-border:               transparent !default;
 
 
 //== Forms
