@@ -2,11 +2,11 @@
 
 // Font Variables
 $win-font-fallbacks:                "Arial", sans-serif !default;
-$win-font-light:                    "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
-$win-font-semilight:                "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
+$win-font-light:                    "Segoe UI Light", "Segoe UI", "Selawik Light", $win-font-fallbacks !default;
+$win-font-semilight:                "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $win-font-fallbacks !default;
 $win-font-normal:                   "Segoe UI", "Selawik", $win-font-fallbacks !default;
-$win-font-semibold:                 "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
-$win-font-bold:                     "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
+$win-font-semibold:                 "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $win-font-fallbacks !default;
+$win-font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $win-font-fallbacks !default;
 
 // Responsive Type Ramp key:value
 $win-fonts: (
