@@ -20,7 +20,7 @@ npm install -g grunt-cli
 ### Clone the repo
 
 ```
-git clone https://github.com/winjs/bootstrap-winjs.git winstrap
+git clone https://github.com/winjs/winstrap.git winstrap
 ```
 
 You should have a `winstrap` folder.
