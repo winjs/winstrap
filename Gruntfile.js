@@ -10,7 +10,7 @@ module.exports = function (grunt) {
     },
 
     fileExists: {
-      css: ['dist/css/bootstrap-winjs.css']
+      css: ['dist/css/winstrap.css']
     },
 
     sass: {
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/css/bootstrap-winjs.css': 'src/scss/bootstrap-winjs.scss'
+          'dist/css/winstrap.css': 'src/scss/winstrap.scss'
         }
       }
     },

@@ -1,9 +1,9 @@
 {
-  "name": "bootstrap-winjs",
-  "version": "0.2.0",
+  "name": "Winstrap",
+  "version": "0.3.0",
   "homepage": "https://github.com/winjs/bootstrap-winjs",
   "authors": "",
-  "description": "Microsoft Bootstrap Theme for Metro 2.0 (Basel)",
+  "description": "Microsoft Bootstrap Theme for Basel",
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "~3.3.4",
