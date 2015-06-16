@@ -15,7 +15,7 @@
     .win-list-items-row {
         margin: 0;
         padding: 0;
-        border-top: 1px solid $win-color-chrome-10;
+        border-top: 1px solid $win-color-fl-10;
     }
 
     // Clickable header
@@ -27,7 +27,7 @@
 
         &[aria-expanded="true"],
         &:hover {
-            background: $win-color-chrome-10;
+            background: $win-color-fl-10;
         }
     }
 
@@ -48,8 +48,8 @@
     // Collapsible details
     .collapse,
     .collapsing {
-        border-left: 1px solid $win-color-chrome-10;
-        border-right: 1px solid $win-color-chrome-10;
+        border-left: 1px solid $win-color-fl-10;
+        border-right: 1px solid $win-color-fl-10;
     }
 }
 
@@ -65,7 +65,7 @@
     a {
         display: block;
         padding: .5em .25em;
-        background: $win-color-chrome-10;
+        background: $win-color-fl-10;
         text-align: center;
 
         @media (min-width: $screen-sm) {

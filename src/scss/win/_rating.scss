@@ -30,7 +30,7 @@
     line-height: 1;
 
     .win-icon-ratingstar {
-        color: $win-color-base-medium-low;
+        color: $win-color-fl-30;
     }
 }
 
@@ -41,7 +41,7 @@
     overflow: hidden;
 
     .win-icon-ratingstar {
-        color: $win-color-accent;
+        color: $win-color-fl-accent;
     }
 }
 
@@ -78,7 +78,7 @@
     &.active {
         .win-icon-ratingstar {
             visibility: visible;
-            color: $win-color-base-high;
+            color: $win-color-type-primary;
         }
     }
 }

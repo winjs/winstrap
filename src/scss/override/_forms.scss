@@ -21,25 +21,25 @@ textarea.form-control {
   @include box-shadow(none);
   @include transition(none);
 
-  color: $win-color-base;
-  background-color: $win-color-alt;
-  border-color: $win-color-base-medium;
+  color: $win-color-type-primary;
+  background-color: $win-color-type-primary-alt;
+  border-color: $win-color-fl-40;
 
   // Hint text color
   // Single colon on -ms not a typo
-  &:-ms-input-placeholder {color: $win-color-base-medium-high;}
-  &::-webkit-input-placeholder {color: $win-color-base-medium-high;}
-  &::-moz-input-placeholder {color: $win-color-base-medium-high;}
+  &:-ms-input-placeholder {color: $win-color-type-secondary;}
+  &::-webkit-input-placeholder {color: $win-color-type-secondary;}
+  &::-moz-input-placeholder {color: $win-color-type-secondary;}
 
   &:hover {
-    background-color: $win-color-alt-medium-high;
-    border-color: $win-color-base-medium-high;
+    background-color: $win-color-fl-50-alt;
+    border-color: $win-color-fl-50;
   }
 
   &:focus {
-    color: #000;
-    background-color: #fff;
-    border-color: $win-color-accent;
+    color: $win-color-dark;
+    background-color: $win-color-light;
+    border-color: $win-color-fl-accent;
     @include box-shadow(none);
   }
 }
@@ -60,14 +60,14 @@ input.form-control::-ms-reveal {
   height: 32px;
   display: block;
 
-  color: $win-color-base-medium-high;
+  color: $win-color-type-secondary;
 
   &:hover {
-    color: $win-color-accent;
+    color: $win-color-fl-accent;
   }
   &:active {
-    color: #fff;
-    background-color: $win-color-accent;
+    color: $win-color-light;
+    background-color: $win-color-fl-accent;
   }
 }
 
@@ -95,9 +95,9 @@ select.form-control {
   @include box-shadow(none);
   @include transition(none);
 
-  color: $win-color-base;
-  background-color: $win-color-chrome-10;
-  border-color: $win-color-base-medium;
+  color: $win-color-type-primary;
+  background-color: $win-color-fl-20;
+  border-color: $win-color-fl-40;
 
   &::-ms-value {
     padding: 5px 12px 7px 12px;
@@ -110,63 +110,63 @@ select.form-control {
     margin-bottom: -2px;
     font-size: 20px;
 
-    color: $win-color-base-high;
+    color: $win-color-type-primary;
     background-color: transparent;
   }
 
   &:focus,
   &:active {
     @include box-shadow(none);
-    border-color: $win-color-base-medium-high;
+    border-color: $win-color-fl-50;
   }
   &:hover {
-    background-color: $win-color-chrome-10;
-    border-color: $win-color-base-medium-high;
+    background-color: $win-color-fl-10;
+    border-color: $win-color-fl-50;
   }
   &:disabled {
-    color: $win-color-base-medium-low;
-    background-color: $win-color-base-medium-low;
+    color: $win-color-type-disabled-alt;
+    background-color: $win-color-fl-30;
   }
   &:disabled::-ms-expand {
-    color: $win-color-base-medium-low;
-    border-color: $win-color-base-medium-low;
+    color: $win-color-type-disabled-alt;
+    border-color: $win-color-fl-30;
   }
 
   option {
-    color: $win-color-base;
-    background-color: $win-color-chrome-10;
+    color: $win-color-type-primary;
+    background-color: $win-color-fl-10;
 
     &:hover, &:active {
       background-color: fade(#000, 20%);
-      color: $win-color-base;
+      color: $win-color-type-primary;
     }
     &:checked {
-      color: #fff;
-      background-color: $win-color-accent;
+      color: $win-color-light;
+      background-color: $win-color-fl-accent;
     }
   }
   optgroup {
-    color: $win-color-base;
-    background-color: $win-color-chrome-10;
+    color: $win-color-type-primary;
+    background-color: $win-color-fl-10;
   }
   optgroup:disabled {
-    color: $win-color-base-medium-low;
+    color: $win-color-type-disabled-alt;
   }
 }
 
 select[multiple].form-control {
   border: none;
-  background-color: $win-color-chrome-10;
+  background-color: $win-color-fl-10;
 
   option {
-    color: $win-color-base;
+    color: $win-color-type-primary;
   }
   option:hover {
-    color: $win-color-base;
+    color: $win-color-type-primary;
   }
   option:checked {
-    color: #fff;
-    background-color: $win-color-accent;
+    color: $win-color-light;
+    background-color: $win-color-fl-accent;
   }
 }
 
@@ -194,75 +194,75 @@ select[multiple].form-control {
 
 .checkbox input[type=checkbox] {
   &::-ms-check {
-    color: $win-color-base;
-    border-color: $win-color-base-high;
+    color: $win-color-type-primary;
+    border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:indeterminate::-ms-check {
-    color: $win-color-base-high;
-    border-color: $win-color-accent;
+    color: $win-color-type-primary;
+    border-color: $win-color-fl-accent;
   }
 
   &:checked::-ms-check {
-    color: #fff;
-    background-color: $win-color-accent;
+    color: $win-color-light;
+    background-color: $win-color-fl-accent;
     border-color: transparent;
   }
 
   &:hover::-ms-check {
-    border-color: $win-color-base;
+    border-color: $win-color-type-primary;
   }
 
   &:hover:indeterminate::-ms-check {
-    color: $win-color-base;
-    border-color: $win-color-accent;
+    color: $win-color-type-primary;
+    border-color: $win-color-fl-accent;
   }
 
   &:active::-ms-check {
     border-color: transparent;
-    background-color: $win-color-base-medium-high;
+    background-color: $win-color-fl-50;
   }
 
   &:indeterminate:active::-ms-check {
-    color: $win-color-base-medium-high;
-    border-color: $win-color-base-high;
+    color: $win-color-type-secondary;
+    border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:disabled::-ms-check, &:indeterminate:disabled::-ms-check {
-    color: $win-color-base-medium-low;
-    border-color: $win-color-base-medium-low;
+    color: $win-color-type-disabled-alt;
+    border-color: $win-color-fl-30;
     background-color: transparent;
   }
 }
 
 .radio input[type=radio] {
   &::-ms-check {
-    color: $win-color-base-high;
-    border-color: $win-color-base-high;
+    color: $win-color-type-primary;
+    border-color: $win-color-fl-60;
     background-color: transparent;
   }
 
   &:hover::-ms-check {
-    border-color: $win-color-base;
+    border-color: $win-color-type-primary;
   }
 
   &:checked::-ms-check {
-    border-color: $win-color-accent;
+    border-color: $win-color-fl-accent;
   }
 
   &:hover::-ms-check {
-    color: $win-color-base;
+    color: $win-color-type-primary;
   }
 
   &:active::-ms-check {
-    color: $win-color-base-medium-high;
-    border-color: $win-color-base-medium-high;
+    color: $win-color-type-secondary;
+    border-color: $win-color-fl-50;
   }
 
   &:disabled::-ms-check {
-    color: $win-color-base-medium-low;
-    border-color: $win-color-base-medium-low;
+    color: $win-color-type-disabled-alt;
+    border-color: $win-color-fl-30;
   }
 }

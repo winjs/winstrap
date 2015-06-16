@@ -13,18 +13,18 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //## Gray and brand colors for use across Bootstrap
 // Override wwith Basel color definitions
 
-$gray-base:              #000 !default;
-$gray-darker:            $win-color-base-high !default;
-$gray-dark:              $win-color-base-medium-high !default;
-$gray:                   $win-color-base-medium !default;
-$gray-light:             $win-color-base-medium-low !default;
-$gray-lighter:           $win-color-base-low !default;
+$gray-base:              $win-color-dark !default;
+$gray-darker:            rgba($win-color-dark, .8) !default;
+$gray-dark:              rgba($win-color-dark, .6) !default;
+$gray:                   rgba($win-color-dark, .4) !default;
+$gray-light:             rgba($win-color-dark, .2) !default;
+$gray-lighter:           rgba($win-color-dark, .1) !default;
 
-$brand-primary:         $win-color-accent !default;
-$brand-success:         $win-color-core-green !default;
-$brand-info:            $win-color-secondary-blue !default;
-$brand-warning:         $win-color-core-yellow !default;
-$brand-danger:          $win-color-core-red !default;
+$brand-primary:         $win-color-dark !default;
+$brand-success:         $win-color-fl-50 !default;
+$brand-info:            $win-color-fl-50 !default;
+$brand-warning:         $win-color-fl-alert !default;
+$brand-danger:          $win-color-fl-alert !default;
 
 
 //== Scaffolding
@@ -32,14 +32,14 @@ $brand-danger:          $win-color-core-red !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $win-color-light !default;
 //** Global text color on `<body>`.
-$text-color:            $win-color-base !default;
+$text-color:            $win-color-type-primary !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $win-color-fl-accent !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $win-color-base-medium-high !default;
+$link-hover-color:      $win-color-fl-accent !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -102,7 +102,7 @@ $border-radius-large:       0px !default;
 $border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff !default;
+$component-active-color:    $win-color-light !default;
 //** Global background color for active items (e.g., navs or dropdowns).
 $component-active-bg:       $brand-primary !default;
 
@@ -124,7 +124,7 @@ $table-condensed-cell-padding:  5px !default;
 //** Default background color used for all tables.
 $table-bg:                      transparent !default;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               $win-color-chrome-10 !default;
+$table-bg-accent:               $win-color-bg-20 !default;
 //** Background color used for `.table-hover`.
 $table-bg-hover:                #f5f5f5 !default;
 $table-bg-active:               $table-bg-hover !default;
@@ -137,33 +137,41 @@ $table-border-color:            transparent !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                   normal !default;
 
-$btn-default-color:              $text-color !default;
-$btn-default-bg:                 $win-color-base-low !default;
-$btn-default-border:             transparent !default;
+$btn-default-color:                 $win-color-type-primary !default;
+$btn-default-bg:                    $win-color-fl-30 !default;
+$btn-default-border:                transparent !default;
 
-$btn-primary-color:              $win-color-alt !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             $brand-primary !default;
+$btn-primary-color:                 $win-color-type-primary-alt !default;
+$btn-primary-bg:                    $win-color-fl-accent !default;
+$btn-primary-border:                $win-color-fl-accent !default;
 
-$btn-success-color:              $win-color-alt !default;
-$btn-success-bg:                 $brand-success !default;
-$btn-success-border:             $brand-success !default;
+$btn-success-color:                 $win-color-type-primary-alt !default;
+$btn-success-bg:                    $win-color-fl-accent !default;
+$btn-success-border:                $win-color-fl-accent !default;
 
-$btn-info-color:                 $win-color-alt !default;
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                $brand-info !default;
+$btn-info-color:                    $win-color-type-primary !default;
+$btn-info-bg:                       $win-color-fl-30 !default;
+$btn-info-border:                   transparent !default;
 
-$btn-warning-color:              $text-color !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             $brand-warning !default;
+$btn-warning-color:                 $win-color-type-primary-alt !default;
+$btn-warning-bg:                    $brand-warning !default;
+$btn-warning-border:                $brand-warning !default;
 
-$btn-danger-color:               $win-color-alt !default;
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              $brand-danger !default;
+$btn-danger-color:                  $win-color-type-primary-alt !default;
+$btn-danger-bg:                     $brand-danger !default;
+$btn-danger-border:                 $brand-danger !default;
 
-$btn-link-disabled-color:        $win-color-base-medium-low !default;
+$btn-link-disabled-color:           $win-color-type-disabled !default;
+
+$btn-on-dark-color:                 $win-color-dark !default;
+$btn-on-dark-bg:                    $win-color-fl-70-alt !default;
+$btn-on-dark-border:                transparent !default;
+
+$btn-on-light-color:                $win-color-type-primary-alt !default;
+$btn-on-light-bg:                   $win-color-fl-70 !default;
+$btn-on-light-border:               transparent !default;
 
 
 //== Forms
@@ -171,7 +179,7 @@ $btn-link-disabled-color:        $win-color-base-medium-low !default;
 //##
 
 //** `<input>` background color
-$input-bg:                       #fff !default;
+$input-bg:                       $win-color-light !default;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter !default;
 
@@ -190,7 +198,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             $win-color-accent !default;
+$input-border-focus:             $win-color-fl-accent !default;
 
 //** Placeholder text color
 $input-color-placeholder:        $gray-light !default;
@@ -202,8 +210,8 @@ $input-height-large:             (ceil($font-size-large * $line-height-large) + 
 //** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-$legend-color:                   $gray-dark !default;
-$legend-border-color:            #e5e5e5 !default;
+$legend-color:                   $win-color-fl-50 !default;
+$legend-border-color:            $win-color-fl-20 !default;
 
 //** Background color for textual input addons
 $input-group-addon-bg:           $gray-lighter !default;
@@ -219,20 +227,20 @@ $cursor-disabled:                not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff !default;
+$dropdown-bg:                    $win-color-light !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                $brand-primary !default;
 //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       $brand-primary !default;
 //** Divider color for between dropdown items.
-$dropdown-divider-bg:            $win-color-chrome-30 !default;
+$dropdown-divider-bg:            $win-color-fl-30 !default;
 
 //** Dropdown link text color.
-$dropdown-link-color:            $win-color-chrome-70 !default;
+$dropdown-link-color:            $win-color-type-primary !default;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      $win-color-base !default;
+$dropdown-link-hover-color:      $win-color-type-primary !default;
 //** Hover background for dropdown links.
-$dropdown-link-hover-bg:         $win-color-chrome-10 !default;
+$dropdown-link-hover-bg:         $win-color-bg-20 !default;
 
 //** Active dropdown menu item text color.
 $dropdown-link-active-color:     $component-active-color !default;
@@ -240,13 +248,13 @@ $dropdown-link-active-color:     $component-active-color !default;
 $dropdown-link-active-bg:        $component-active-bg !default;
 
 //** Disabled dropdown menu item background color.
-$dropdown-link-disabled-color:   $win-color-chrome-50 !default;
+$dropdown-link-disabled-color:   $win-color-fl-50 !default;
 
 //** Text color for headers within dropdown menus.
-$dropdown-header-color:          $win-color-chrome-50 !default;
+$dropdown-header-color:          $win-color-fl-50 !default;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
-$dropdown-caret-color:           #000 !default;
+$dropdown-caret-color:           $win-color-dark !default;
 
 
 //-- Z-index master list
@@ -363,12 +371,12 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             $win-color-chrome-70 !default;
-$navbar-default-bg:                #ffffff !default;
-$navbar-default-border:            $win-color-chrome-30 !default;
+$navbar-default-color:             $win-color-fl-60 !default;
+$navbar-default-bg:                $win-color-light !default;
+$navbar-default-border:            $win-color-fl-30 !default;
 
 // Navbar links
-$navbar-default-link-color:                $win-color-chrome-70 !default;
+$navbar-default-link-color:                $win-color-type-primary !default;
 $navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
@@ -377,13 +385,13 @@ $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $win-color-chrome-70 !default;
+$navbar-default-brand-color:               $win-color-type-primary !default;
 $navbar-default-brand-hover-color:         $brand-primary !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           transparent !default;
-$navbar-default-toggle-icon-bar-bg:        $win-color-chrome-50 !default;
+$navbar-default-toggle-icon-bar-bg:        $win-color-fl-50 !default;
 $navbar-default-toggle-border-color:       transparent !default;
 
 
@@ -404,7 +412,7 @@ $navbar-inverse-link-disabled-bg:           transparent !default;
 
 // Inverted navbar brand label
 $navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-color:          $win-color-light !default;
 $navbar-inverse-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
@@ -451,14 +459,14 @@ $pagination-bg:                        transparent !default;
 $pagination-border:                    transparent !default;
 
 $pagination-hover-color:               $link-color !default;
-$pagination-hover-bg:                  $win-color-chrome-10 !default;
-$pagination-hover-border:              $win-color-chrome-10 !default;
+$pagination-hover-bg:                  $win-color-bg-20 !default;
+$pagination-hover-border:              $win-color-bg-20 !default;
 
-$pagination-active-color:              #fff !default;
+$pagination-active-color:              $win-color-light !default;
 $pagination-active-bg:                 $brand-primary !default;
 $pagination-active-border:             $brand-primary !default;
 
-$pagination-disabled-color:            $win-color-chrome-50 !default;
+$pagination-disabled-color:            $win-color-fl-50 !default;
 $pagination-disabled-bg:               transparent !default;
 $pagination-disabled-border:           transparent !default;
 
@@ -494,7 +502,7 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $win-color-core-green !default;
+$state-success-text:             $brand-success !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
@@ -502,11 +510,11 @@ $state-info-text:                $brand-info !default;
 $state-info-bg:                  lighten(adjust-hue($brand-info, -10), 50%) !default;
 $state-info-border:              darken(adjust-hue($brand-info, -10), 5%) !default;
 
-$state-warning-text:             $win-color-core-yellow !default;
+$state-warning-text:             $brand-warning !default;
 $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           #faebcc !default;
 
-$state-danger-text:              $win-color-core-red !default;
+$state-danger-text:              $brand-danger !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
@@ -518,9 +526,9 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 //** Tooltip max width
 $tooltip-max-width:           320px !default;
 //** Tooltip text color
-$tooltip-color:               #000 !default;
+$tooltip-color:               $win-color-dark !default;
 //** Tooltip background color
-$tooltip-bg:                  $win-color-chrome-10 !default;
+$tooltip-bg:                  $win-color-bg-20 !default;
 $tooltip-opacity:             1.0 !default;
 
 //** Tooltip arrow width
@@ -534,7 +542,7 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          #fff !default;
+$popover-bg:                          $win-color-light !default;
 //** Popover maximum width
 $popover-max-width:                   276px !default;
 //** Popover border color
@@ -576,9 +584,9 @@ $label-warning-bg:            $brand-warning !default;
 $label-danger-bg:             $brand-danger !default;
 
 //** Default label text color
-$label-color:                 #fff !default;
+$label-color:                 $win-color-light !default;
 //** Default text color of a linked label
-$label-link-hover-color:      #fff !default;
+$label-link-hover-color:      $win-color-light !default;
 
 
 //== Modals
@@ -594,14 +602,14 @@ $modal-title-padding:         10px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             $win-color-light !default;
 //** Modal content border color
 $modal-content-border-color:                   $brand-primary !default;
 //** Modal content border color **for IE8**
 $modal-content-fallback-border-color:          $brand-primary !default;
 
 //** Modal backdrop background color
-$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-bg:           $win-color-dark !default;
 //** Modal backdrop opacity
 $modal-backdrop-opacity:      0.6 !default;
 //** Modal header border color
@@ -644,9 +652,9 @@ $alert-danger-border:         $state-danger-border !default;
 //##
 
 //** Background color of the whole progress component
-$progress-bg:                 $win-color-chrome-20 !default;
+$progress-bg:                 $win-color-fl-20 !default;
 //** Progress bar text color
-$progress-bar-color:          #fff !default;
+$progress-bar-color:          $win-color-light !default;
 //** Variable for setting rounded corners on progress bar.
 $progress-border-radius:      0 !default;
 
@@ -700,21 +708,21 @@ $list-group-link-heading-color: #333 !default;
 //
 //##
 
-$panel-bg:                    #fff !default;
+$panel-bg:                    $win-color-light !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border:          $win-color-chrome-30 !default;
+$panel-inner-border:          $win-color-fl-30 !default;
 $panel-footer-bg:             transparent !default;
 
 $panel-default-text:          $gray-dark !default;
 $panel-default-border:        #ddd !default;
 $panel-default-heading-bg:    #f5f5f5 !default;
 
-$panel-primary-text:          #fff !default;
+$panel-primary-text:          $win-color-light !default;
 $panel-primary-border:        $brand-primary !default;
 $panel-primary-heading-bg:    $brand-primary !default;
 
@@ -766,15 +774,15 @@ $well-border:                 darken($well-bg, 7%) !default;
 //
 //##
 
-$badge-color:                 #fff !default;
+$badge-color:                 $win-color-light !default;
 //** Linked badge text color on hover
-$badge-link-hover-color:      #fff !default;
+$badge-link-hover-color:      $win-color-light !default;
 $badge-bg:                    $gray-light !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff !default;
+$badge-active-bg:             $win-color-light !default;
 
 $badge-font-weight:           normal !default;
 $badge-line-height:           1 !default;
@@ -803,15 +811,15 @@ $breadcrumb-separator:          "\203a" !default;
 
 $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
-$carousel-control-color:                      #fff !default;
+$carousel-control-color:                      $win-color-light !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 $carousel-control-font-size:                  20px !default;
 
-$carousel-indicator-active-bg:                #fff !default;
-$carousel-indicator-border-color:             #fff !default;
+$carousel-indicator-active-bg:                $win-color-light !default;
+$carousel-indicator-border-color:             $win-color-light !default;
 
-$carousel-caption-color:                      #fff !default;
+$carousel-caption-color:                      $win-color-light !default;
 
 
 //== Close
@@ -819,7 +827,7 @@ $carousel-caption-color:                      #fff !default;
 //##
 
 $close-font-weight:           normal !default;
-$close-color:                 #000 !default;
+$close-color:                 $win-color-dark !default;
 $close-text-shadow:           none !default;
 
 
@@ -830,7 +838,7 @@ $close-text-shadow:           none !default;
 $code-color:                  $text-color !default;
 $code-bg:                     shade(white, 3%) !default;
 
-$kbd-color:                   #fff !default;
+$kbd-color:                   $win-color-light !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      $code-bg !default;
@@ -846,7 +854,7 @@ $pre-scrollable-max-height:   340px !default;
 //** Horizontal offset for forms and list
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $win-color-chrome-50 !default;
+$text-muted:                  $win-color-type-disabled !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color
@@ -858,8 +866,8 @@ $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter !default;
 //** Page header border color
-$page-header-border-color:    $win-color-chrome-30 !default;
+$page-header-border-color:    $win-color-fl-30 !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
-$hr-border:                   $win-color-chrome-30 !default;
+$hr-border:                   $win-color-fl-30 !default;

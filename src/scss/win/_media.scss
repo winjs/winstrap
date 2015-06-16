@@ -69,11 +69,11 @@
                 }
 
                 &:after {
-                    background-color: $win-color-base-medium-low;
+                    background-color: $win-color-fl-30;
                 }
 
                 &:hover:after {
-                    background-color: rgba($win-color-base, 0);
+                    background-color: rgba($win-color-dark, 0);
                 }
             }
         }
@@ -169,7 +169,7 @@
 
     .win-media-subheader {
         @include win-type-caption-alt();
-        color: $win-color-chrome-70;
+        color: $win-color-type-primary;
 
         a {
             color: inherit;
@@ -209,7 +209,7 @@
         min-height: 27%;
         padding: 10% .75em 12%;
         font-size: $font-size-small;
-        background: $win-color-chrome-70;
+        background: $win-color-fl-60;
         color: white;
         pointer-events: none;
     }
@@ -231,15 +231,15 @@
         background: none;
         border: none;
         @include transition(background-color .3s);
-        background: $win-color-base-medium-low;
+        background: $win-color-fl-30;
 
         &:hover {
-            background: rgba($win-color-base, 0);
+            background: rgba($win-color-dark, 0);
         }
     }
 }
 
 .win-media-info {
     @include win-type-caption-alt();
-    color: $win-color-chrome-50;
+    color: $win-color-type-secondary;
 }

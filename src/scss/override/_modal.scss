@@ -13,9 +13,9 @@
   padding: 24px;
   box-shadow: none;
 
-  background-color: $win-color-chrome-10;
-  border-color: $win-color-accent;
-  color: $win-color-base;
+  background-color: $win-color-bg-20;
+  border-color: $win-color-fl-accent;
+  color: $win-color-type-primary;
 }
 
 .modal-header {
@@ -27,7 +27,7 @@
 }
 
 .modal-backdrop {
-  background-color: #fff;
+  background-color: $win-color-light;
 }
 
 // Center the Bootstrap Modal vertically
