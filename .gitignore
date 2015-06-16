@@ -16,6 +16,8 @@ external/
 *.sublime-workspace
 .DS_Store
 
+.jshintrc
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
