@@ -18,8 +18,8 @@
   &.active,
   .open > &.dropdown-toggle {
     background-image: none;
-    color: $win-color-type-primary;
-    background-color: $win-color-fl-40;
+    color: $color;
+    background-color: darken($background, 10%);
     border-color: transparent;
   }
 
@@ -32,7 +32,7 @@
     &.focus,
     &:active,
     &.active {
-      color: $win-color-type-disabled-alt;
+      color: $win-color-type-secondary;
       background-color: $win-color-fl-30;
       border-color: transparent;
     }
