@@ -1,12 +1,12 @@
 ﻿.progress {
   box-shadow: none;
-  background-color: $win-color-base-medium-low;
+  background-color: $win-color-fl-30;
   width: 180px;
   height: 4px;
 
   .progress-bar {
     @include transition(width 2s ease-in-out);
-    background-color: $win-color-accent;
+    background-color: $win-color-fl-accent;
   }
 }
 

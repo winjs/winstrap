@@ -1,33 +1,115 @@
-$win-font-size-headline: 62px !default;
-$win-font-size-body: 15px !default;
-$win-font-size-caption-alt: 10px !default;
-$win-font-size-subcaption: 8px !default;
+// Responsive Type Ramp
 
-$win-font-fallbacks: "Arial", sans-serif !default;
-$win-font-light: "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
-$win-font-semilight: "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
-$win-font-normal: "Segoe UI", "Selawik", $win-font-fallbacks !default;
-$win-font-semibold: "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
-$win-font-bold: "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
+// Font Variables
+$win-font-fallbacks:                "Arial", sans-serif !default;
+$win-font-light:                    "Segoe UI Light", "Selawik Light", $win-font-fallbacks !default;
+$win-font-semilight:                "Segoe UI Semilight", "Selawik Semilight", $win-font-fallbacks !default;
+$win-font-normal:                   "Segoe UI", "Selawik", $win-font-fallbacks !default;
+$win-font-semibold:                 "Segoe UI Semibold", "Selawik Semibold", $win-font-fallbacks !default;
+$win-font-bold:                     "Segoe UI Bold", "Selawik Bold", $win-font-fallbacks !default;
 
-$win-font-family-headline: $win-font-light !default;
-$win-font-family-body: $win-font-normal !default;
-$win-font-family-caption-alt: $win-font-normal !default;
-$win-font-family-subcaption: $win-font-normal !default;
-$win-font-family-h1: $win-font-light !default;
-$win-font-family-h2: $win-font-light !default;
-$win-font-family-h3: $win-font-semilight !default;
-$win-font-family-h4: $win-font-normal !default;
-$win-font-family-h5: $win-font-semibold !default;
-$win-font-family-h6: $win-font-normal !default;
+// Responsive Type Ramp key:value
+$win-fonts: (
+    headline: (
+        size-xs:                  46px,
+        size-md:                  62px,
+        size-xl:                  80px,
+        line-height-xs:           56px,
+        line-height-md:           80px,
+        line-height-xl:           88px,
+        font-weight-xs:           200,
+        font-family:              $win-font-light
+    ),
+    header: (
+        size-xs:                  34px,
+        size-md:                  46px,
+        size-xl:                  58px,
+        line-height-xs:           40px,
+        line-height-md:           56px,
+        line-height-xl:           72px,
+        font-weight-xs:           200,
+        font-family:              $win-font-light
+    ),
+    subheader: (
+        size-xs:                  28px,
+        size-md:                  34px,
+        size-xl:                  46px,
+        line-height-xs:           36px,
+        line-height-md:           40px,
+        line-height-xl:           56px,
+        font-weight-xs:           200,
+        font-family:              $win-font-light
+    ),
+    title: (
+        size-xs:                  20px,
+        size-md:                  24px,
+        size-xl:                  34px,
+        line-height-xs:           24px,
+        line-height-md:           28px,
+        line-height-xl:           40px,
+        font-weight-xs:           200,
+        font-family:              $win-font-light
+    ),
+    subtitle: (
+        size-xs:                  18px,
+        size-md:                  20px,
+        size-xl:                  24px,
+        line-height-xs:           22px,
+        line-height-md:           24px,
+        line-height-xl:           28px,
+        font-weight-xs:           300,
+        font-family:              $win-font-semilight
+    ),
+    subtitle-alt: (
+        size-xs:                  16px,
+        size-md:                  18px,
+        size-xl:                  20px,
+        line-height-xs:           21px,
+        line-height-md:           22px,
+        line-height-xl:           24px,
+        font-weight-xs:           300,
+        font-family:              $win-font-semilight
+    ),
+    base: (
+        size-xs:                  14px,
+        size-md:                  15px,
+        size-xl:                  18px,
+        line-height-xs:           18px,
+        line-height-md:           20px,
+        line-height-xl:           22px,
+        font-weight-xs:           500,
+        font-family:              $win-font-semibold
+    ),
+    body: (
+        size-xs:                  14px,
+        size-md:                  15px,
+        size-xl:                  18px,
+        line-height-xs:           18px,
+        line-height-md:           20px,
+        line-height-xl:           22px,
+        font-weight-xs:           400,
+        font-family:              $win-font-normal
+    ),
+    caption: (
+        size-xs:                  12px,
+        size-md:                  13px,
+        size-xl:                  15px,
+        line-height-xs:           15px,
+        line-height-md:           16px,
+        line-height-xl:           20px,
+        font-weight-xs:           400,
+        font-family:              $win-font-normal
+    ),
+    caption-alt: (
+        size-xs:                  10px,
+        size-md:                  11px,
+        size-xl:                  13px,
+        line-height-xs:           13px,
+        line-height-md:           14px,
+        line-height-xl:           16px,
+        font-weight-xs:           400,
+        font-family:              $win-font-normal
+    ),
 
-$win-font-weight-headline: 200 !default;
-$win-font-weight-body: 400 !default;
-$win-font-weight-caption-alt: 400 !default;
-$win-font-weight-subcaption: 400 !default;
-$win-font-weight-h1: 200 !default;
-$win-font-weight-h2: 200 !default;
-$win-font-weight-h3: 300 !default;
-$win-font-weight-h4: 400 !default;
-$win-font-weight-h5: 500 !default;
-$win-font-weight-h6: 400 !default;
+);
+

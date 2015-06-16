@@ -6,7 +6,7 @@
     text-align: center;
     background: #0078D7;
     z-index: 1;
-    color: #fff;
+    color: $win-color-light;
     border: 2px rgba(0,0,0,0) solid;
 
 
@@ -30,11 +30,11 @@
     }
 
     &:hover {
-        border: 2px $win-color-base-medium-high solid;
+        border: 2px $win-color-fl-50 solid;
     }
 
     &:active, &.active {
-        border: 2px rgba($win-color-base, 0.8) solid;
+        border: 2px $win-color-fl-60 solid;
     }
 
     .win-tile-icon {
@@ -43,7 +43,7 @@
     }
 
     a {
-        color: #fff;
+        color: $win-color-light;
         text-decoration: none;
     }
 
