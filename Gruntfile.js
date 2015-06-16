@@ -107,7 +107,7 @@ module.exports = function (grunt) {
 
       doc: {
         files: ['src/doc/**/*', 'src/js/*.js'],
-        tasks: ['assemble', 'copy:doc', 'jshint']
+        tasks: ['jshint', 'assemble', 'copy:doc']
       },
       configFiles: {
         files: ['gruntfile.js'],
@@ -147,16 +147,6 @@ module.exports = function (grunt) {
         regExp: false
       }
     },
-
-    // copy: {
-    //   phx: {
-    //     files: [{
-    //       expand: true,
-    //       src: ['dist/css/app.css', 'dist/fonts/**/*'],
-    //       dest: '//phx/marketplace/SFW/Transfer/OneStore/Assets/oneui<%= pkg.version %>/'
-    //     }]
-    //   }
-    // },
     notify: {
       server: {
         options: {
