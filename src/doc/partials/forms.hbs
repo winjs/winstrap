@@ -19,10 +19,40 @@
         <input type="file" id="exampleInputFile">
         <p class="help-block">Example block-level help text here.</p>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
+      <div class="form-group">
+        <label>Checkbox</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"></input>
+            <span>Rest</span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" checked></input>
+            <span>Checked</span>
+          </label>
+        </div>
+
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" disabled="true"></input>
+            <span>Disabled</span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="foo"></input>
+            <span>Indeterminate</span>
+          </label>
+          <script type="text/javascript">
+              var checkbox = document.getElementById("foo");
+              checkbox.indeterminate = true;
+            </script>
+        </div>
+
       </div>
       <div class="radio">
         <label>

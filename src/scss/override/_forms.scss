@@ -173,69 +173,186 @@ select[multiple].form-control {
 //
 // Checkbox / Radio
 //
-.checkbox label,
-.radio label {
-  padding-left: 30px;
+
+.form-group .checkbox:first-of-type,
+.form-group .radio:first-of-type {
+  margin-top: 12px
 }
 
-.checkbox input[type=checkbox],
-.radio input[type=radio] {
-  width: 20px;
-  height: 20px;
-  margin-left: -30px;
+.form-group > label:first-of-type {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1em;
+}
 
-  &::-ms-check {
-    border-style: solid;
-    display: inline-block;
-    border-width: 2px;
-    background-clip: border-box;
+.checkbox,
+.radio {
+  margin: 24px 0;
+
+  & input[type=checkbox],
+  & input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin-left: -28px;
+    margin-top: 0;
+  }
+
+  & label {
+    padding-left: 0px;
+    font-weight: 400;
+    margin-left: 28px;
+    min-height: initial;
+    line-height: 20px;
+
+    input[type=checkbox] {
+        opacity: 0;
+    }
+
+    span::before {
+        border-width: 1px;
+        border-style: solid;
+        border-color: $win-color-fl-60;
+        content: "";
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+    }
+
+    input:checked ~ span::before {
+        background-color: $win-color-fl-accent;
+        border-color: $win-color-fl-accent;
+        color: $win-color-fl-70-alt;
+        font-family: $win-font-symbols;
+        content: "\E081";
+        text-indent: 2px;
+        line-height: 1em;
+        padding-top: 1px;
+    }
+
+    input:indeterminate ~ span::before {
+      border-color: $win-color-fl-accent;
+      color: $win-color-type-primary;
+      // font-family: $win-font-symbols;
+      content: "■"; // Use "\E73C" when we get Basel Symbols font
+      text-indent: 2px;
+      line-height: 12px;
+      font-size: 17px;
+      padding-top: 2px;
+    }
+  }
+
+  &.disabled label,
+  &:disabled label {
+    color: $win-color-type-disabled;
+     span::before {
+      border-color: $win-color-fl-25;
+    }
   }
 }
 
-.checkbox input[type=checkbox] {
-  &::-ms-check {
-    color: $win-color-type-primary;
-    border-color: $win-color-fl-60;
-    background-color: transparent;
-  }
+// .checkbox label,
+// .radio label {
+//   padding-left: 0px;
+//   font-weight: 400;
+//   margin-left: 28px;
+//   min-height: initial;
+//   line-height: 20px
+// }
 
-  &:indeterminate::-ms-check {
-    color: $win-color-type-primary;
-    border-color: $win-color-fl-accent;
-  }
+// input[type=checkbox],
+// input[type=radio],
+// .checkbox input[type=checkbox],
+// .radio input[type=radio] {
+//   width: 20px;
+//   height: 20px;
+//   margin-left: -28px;
+//   margin-top: 0;
 
-  &:checked::-ms-check {
-    color: $win-color-light;
-    background-color: $win-color-fl-accent;
-    border-color: transparent;
-  }
+  // &::-ms-check {
+  //   border-style: solid;
+  //   display: inline-block;
+  //   border-width: 1px;
+  //   background-clip: border-box;
+  // }
+// }
 
-  &:hover::-ms-check {
-    border-color: $win-color-type-primary;
-  }
+// input[type=checkbox],
+// .checkbox input[type=checkbox] {
+//   &::-ms-check {
+//     color: $win-color-type-primary;
+//     border-color: $win-color-fl-60;
+//     background-color: transparent;
+//   }
 
-  &:hover:indeterminate::-ms-check {
-    color: $win-color-type-primary;
-    border-color: $win-color-fl-accent;
-  }
+//   &:indeterminate::-ms-check {
+//     color: $win-color-type-primary;
+//     border-color: $win-color-fl-accent;
+//   }
 
-  &:active::-ms-check {
-    border-color: transparent;
-    background-color: $win-color-fl-50;
-  }
+//   &:checked::-ms-check {
+//     color: $win-color-light;
+//     background-color: $win-color-fl-accent;
+//     border-color: transparent;
+//   }
 
-  &:indeterminate:active::-ms-check {
-    color: $win-color-type-secondary;
-    border-color: $win-color-fl-60;
-    background-color: transparent;
-  }
+//   &:hover::-ms-check {
+//     border-color: $win-color-type-primary;
+//   }
 
-  &:disabled::-ms-check, &:indeterminate:disabled::-ms-check {
-    color: $win-color-type-disabled-alt;
-    border-color: $win-color-fl-30;
-    background-color: transparent;
-  }
-}
+//   &:hover:indeterminate::-ms-check {
+//     color: $win-color-type-primary;
+//     border-color: $win-color-fl-accent;
+//   }
+
+//   &:active::-ms-check {
+//     border-color: transparent;
+//     background-color: $win-color-fl-50;
+//   }
+
+//   &:indeterminate:active::-ms-check {
+//     color: $win-color-type-secondary;
+//     border-color: $win-color-fl-60;
+//     background-color: transparent;
+//   }
+
+// }
+
+// .checkbox label {
+
+//     input[type=checkbox] {
+//         opacity: 0;
+//     }
+
+//     span::before {
+//         border-width: 1px;
+//         border-style: solid;
+//         border-color: $win-color-fl-60;
+//         content: "";
+//         height: 20px;
+//         width: 20px;
+//         position: absolute;
+//         left: 0;
+//         cursor: pointer;
+//     }
+
+//     input:checked ~ span::before {
+//         background-color: $win-color-fl-accent;
+//         border-color: $win-color-fl-accent;
+//         color: $win-color-fl-70-alt;
+//         font-family: $win-font-symbols;
+//         content: "\E081";
+//         text-indent: 2px;
+//         line-height: 1em;
+//         padding-top: 1px;
+//     }
+
+//     input:indeterminate ~ span::before {
+
+//     }
+// }
 
 .radio input[type=radio] {
   &::-ms-check {
