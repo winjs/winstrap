@@ -19,9 +19,9 @@
         <input type="file" id="exampleInputFile">
         <p class="help-block">Example block-level help text here.</p>
       </div>
-      
+
       <div class="form-group">
-        <label>Checkbox</label>
+        <p class="form-group-label">Checkbox</p>
         <div class="checkbox">
           <label>
             <input type="checkbox"></input>
@@ -36,7 +36,7 @@
           </label>
         </div>
 
-        <div class="checkbox disabled">
+        <div class="checkbox">
           <label>
             <input type="checkbox" disabled="true"></input>
             <span>Disabled</span>
@@ -56,15 +56,23 @@
       </div>
 
       <div class="form-group">
-        <label>Radio buttons</label>
+        <p class="form-group-label">Radio buttons</p>
         <div class="radio">
           <label>
-            <input type="radio" name='radio1'> Radio me out
+            <input type="radio" name='radio1'>
+            <span>Radio</span>
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name='radio1'> Radio me out
+            <input type="radio" name='radio1' checked="checked"> 
+            <span>Checked</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1' disabled="true"> 
+            <span>Disabled</span>
           </label>
         </div>
       </div>
@@ -87,21 +95,62 @@
         <input type="file" id="exampleInputFile">
         <p class="help-block">Example block-level help text here.</p>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
+      <div class="form-group">
+        <label>Checkbox</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"></input>
+            <span>Rest</span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" checked></input>
+            <span>Checked</span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" disabled="true"></input>
+            <span>Disabled</span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="foo"></input>
+            <span>Indeterminate</span>
+          </label>
+          <script type="text/javascript">
+              var checkbox = document.getElementById("foo");
+              checkbox.indeterminate = true;
+            </script>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name='radio1'> Radio me out
-        </label>
+      <div class="form-group">
+        <label>Radio buttons</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1'>
+            <span>Radio</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1' checked="checked"> 
+            <span>Checked</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1' disabled="true"> 
+            <span>Disabled</span>
+          </label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name='radio1'> Radio me out
-        </label>
-      </div>
+
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
 ```

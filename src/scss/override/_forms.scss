@@ -177,10 +177,10 @@ select[multiple].form-control {
 .form-group {
   .checkbox:first-of-type,
   .radio:first-of-type {
-    margin-top: 12px
+    margin-top: 20px
   }
 
-  > label:first-of-type {
+  .form-group-label {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 0;
@@ -191,7 +191,7 @@ select[multiple].form-control {
 
 }
 
-
+// Common checkbox and radio styles
 .checkbox,
 .radio {
   margin: 24px 0;
@@ -210,8 +210,8 @@ select[multiple].form-control {
     margin-left: 28px;
     min-height: initial;
     line-height: 20px;
-
-    input[type=checkbox] {
+    input[type=checkbox],
+    input[type=radio] {
         opacity: 0;
     }
 
@@ -227,6 +227,23 @@ select[multiple].form-control {
         cursor: pointer;
     }
 
+    input:disabled {
+      ~ span {
+        color: $win-color-type-disabled;
+      }
+
+      ~ span::before {
+        border-color: $win-color-fl-25;
+        color: $win-color-type-disabled;
+      }
+    }
+  }
+}
+
+// Checkbox only
+.checkbox {
+
+  & label {
     input:checked ~ span::before {
         background-color: $win-color-fl-accent;
         border-color: $win-color-fl-accent;
@@ -249,51 +266,46 @@ select[multiple].form-control {
     }
   }
 
-  &.disabled label,
-  &:disabled label {
-    color: $win-color-type-disabled;
-     span::before {
-      border-color: $win-color-fl-25;
-    }
-  }
-
   &:hover {
     span::before,
     input:checked ~ span::before {
       border-color: $win-color-fl-70;
     }
+
     input:indeterminate ~ span::before {
       color: $win-color-fl-70;
     }
   }
 }
 
-.radio input[type=radio] {
-  &::-ms-check {
-    color: $win-color-type-primary;
-    border-color: $win-color-fl-60;
-    background-color: transparent;
+// Radio only
+.radio { 
+
+  & label {
+    span::before {
+        border-radius: 100%;
+    }
+
+    input:checked ~ span::before {
+        border-color: $win-color-fl-accent;
+        color: $win-color-fl-70;
+        content: "•";
+        text-indent: 0px;
+        line-height: 6px;
+        padding-top: 2px;
+        font-size: 45px;
+    }
   }
 
-  &:hover::-ms-check {
-    border-color: $win-color-type-primary;
-  }
+  &:hover {
+    span::before,
+    input:checked ~ span::before {
+      border-color: $win-color-fl-accent;
+      color: $win-color-fl-60;
+    }
 
-  &:checked::-ms-check {
-    border-color: $win-color-fl-accent;
-  }
-
-  &:hover::-ms-check {
-    color: $win-color-type-primary;
-  }
-
-  &:active::-ms-check {
-    color: $win-color-type-secondary;
-    border-color: $win-color-fl-50;
-  }
-
-  &:disabled::-ms-check {
-    color: $win-color-type-disabled-alt;
-    border-color: $win-color-fl-30;
+    input:disabled ~ span::before {
+      border-color: $win-color-fl-25;
+    }
   }
 }
