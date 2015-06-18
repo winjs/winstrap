@@ -1,15 +1,17 @@
 ﻿// Add color transitions to buttons
 .btn {
-  @include win-type-body();
+  @include win-type-body(no-line-height);
   min-width: 120px;
+  line-height: 1.66667em;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   text-decoration: none;
+  padding: 6px 18px;
 
   &,
   &:focus {
-    color: $win-color-base-high;
-    background-color: $win-color-base-low;
+    color: $win-color-type-primary;
+    background-color: $win-color-fl-20;
     border-color: transparent;
   }
 }
@@ -17,50 +19,51 @@
 // Override Bootstrap button settings
 .btn-primary,
 .btn-primary:focus {
-  color: $win-color-alt;
-  background-color: $win-color-accent;
+  color: $win-color-type-primary-alt;
+  background-color: $win-color-fl-accent;
 }
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
-  border-color: $win-color-base-medium;
+  border-color: $win-color-fl-40;
 }
 .btn-default:hover {
-  background-color: $win-color-base-medium-low;
+  background-color: $win-color-fl-30;
 }
 .btn-primary:hover {
-  background-color: $win-color-accent;
+  background-color: $win-color-fl-accent;
 }
 .btn:active,
 .btn.active {
-  border-color: $win-color-base-medium;
-  background-color: $win-color-base-medium;
+  border-color: $win-color-fl-40;
+  background-color: $win-color-fl-40;
   @include box-shadow(none);
 }
 .btn:disabled {
-  color: $win-color-base-medium-low;
-  background-color: $win-color-base-medium-low;
+  color: $win-color-type-disabled-alt;
+  background-color: $win-color-fl-30;
   border-color: transparent;
 }
 
 // Override Bootstrap alternate buttons
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  &:active,
+  &.active {
+    background-color: $win-color-fl-40;
+  }
 }
-.btn-primary {
+.btn-primary,
+.btn-success {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
-// Success appears as green
-.btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-}
-// Info appears as blue-green
+
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
-
-  &:hover {
-    border-color: $win-color-alt-medium;
+  &:active,
+  &.active {
+    background-color: $win-color-fl-40;
   }
 }
 // Warning appears as orange
@@ -78,7 +81,7 @@
   color: $link-color;
   font-weight: normal;
   border-radius: 0;
-  text-decoration: underline;
+  padding: 6px 10px;
 
   &,
   &:active,
@@ -102,14 +105,21 @@
   }
   &:active,
   &.active {
-    color: $win-color-base-medium;
+    color: darken($link-color, 10%);
     border-color: transparent;
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $win-color-type-disabled;
+      text-decoration: none;
   }
   &[disabled],
   fieldset[disabled] & {
     &:hover,
     &:focus {
-      color: $btn-link-disabled-color;
+      color: $win-color-type-disabled;
       text-decoration: none;
     }
   }
@@ -118,7 +128,7 @@
 // Dropdown button
 .btn-dropdown {
   background: none;
-  border: 2px solid $win-color-chrome-30;
+  border: 2px solid $win-color-fl-30;
 
   .caret {
     margin-left: .5em;
@@ -129,17 +139,17 @@
 // Toggle buttons
 .btn[data-toggle="button"] {
   &.active {
-    background-color: $win-color-accent;
+    background-color: $win-color-fl-accent;
     border-color: transparent;
-    color: #fff;
+    color: $win-color-light;
   }
   &.active:active {
-    background-color: $win-color-base-medium;
+    background-color: darken($win-color-fl-accent, 5%);
     border-color: transparent;
-    color: $win-color-base;
+    color: $win-color-type-primary;
   }
   &:hover {
-    border-color: $win-color-base-medium;
+    border-color: $win-color-fl-accent;
   }
 }
 
@@ -160,4 +170,17 @@
       display: none;
     }
   }
+}
+
+// restore Bootstrap button size ramp
+.btn-xs {
+  padding: 0 5px;
+}
+
+.btn-sm {
+  padding: 2px 7px;
+}
+
+.btn-lg {
+  padding: 10px 16px;
 }

@@ -107,7 +107,16 @@ module.exports = function (grunt) {
 
       doc: {
         files: ['src/doc/**/*', 'src/js/*.js'],
-        tasks: ['assemble', 'copy:doc']
+        tasks: ['jshint', 'assemble', 'copy:doc']
+      },
+      configFiles: {
+        files: ['gruntfile.js'],
+        options: {
+          reload: true
+        }
+      },
+      options: {
+        tasks: ['notify:assemble']
       }
     },
 
@@ -118,6 +127,45 @@ module.exports = function (grunt) {
           base: './dist/'
         }
       }
+    },
+
+    bump: {
+      options: {
+        files: ['package.json'],
+        commit: true,
+        commitMessage: 'Release version %VERSION%',
+        commitFiles: ['package.json'],
+        updateConfigs: ['pkg'],
+        createTag: true,
+        tagName: '%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: true,
+        pushTo: 'upstream',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+        globalReplace: false,
+        prereleaseName: false,
+        regExp: false
+      }
+    },
+    notify: {
+      server: {
+        options: {
+          title: 'Winstrap',
+          message: 'Server started'
+        },
+      },
+      watch: {
+        options: {
+          title: 'Winstrap',
+          message: 'assemble completed', //required 
+        }
+      }
+    },
+    jshint: {
+      options: {
+        reporter: require('jshint-stylish')
+      },
+      all: ['gruntfile.js', 'src/js/**/*']
     }
   });
 
@@ -128,8 +176,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-file-exists');
+  grunt.loadNpmTasks('grunt-bump');
+  grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists']);
-  grunt.registerTask('server', ['connect', 'watch']);
+  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists', 'jshint']);
+  grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 
-}
+};

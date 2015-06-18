@@ -6,26 +6,309 @@
 
 .color {
     height: 0;
-    padding-bottom: 25%;
+    padding-bottom: 39px;
+}
+
+.line {
+    border: 5px solid;
+    padding-bottom: 29px;
+}
+
+// Basel base colors
+
+&.win-color-light {
+    background: $win-color-light;
+}
+
+&.win-color-dark {
+    background: $win-color-dark;
+}
+
+// Basel text colors
+&.win-color-type-primary {
+    color: $win-color-type-primary;
+}
+
+&.win-color-type-secondary {
+    color: $win-color-type-secondary;
+}
+
+&.win-color-type-disabled {
+    color: $win-color-type-disabled;
+}
+
+&.win-color-type-accent {
+    color: $win-color-type-accent;
+}
+
+&.win-color-type-alert {
+    color: $win-color-type-alert;
+}
+
+// Basel fill colors
+&.win-color-fill-10 {
+    background: $win-color-fl-10;
+}
+
+&.win-color-fill-20 {
+    background: $win-color-fl-20;
+}
+
+&.win-color-fill-30 {
+    background: $win-color-fl-30;
+}
+
+&.win-color-fill-40 {
+    background: $win-color-fl-40;
+}
+
+&.win-color-fill-50 {
+    background: $win-color-fl-50;
+}
+
+&.win-color-fill-60 {
+    background: $win-color-fl-60;
+}
+
+&.win-color-fill-70 {
+    background: $win-color-fl-70;
+}
+
+&.win-color-fill-accent {
+    background: $win-color-fl-accent;
+}
+
+&.win-color-fill-accent-low {
+    background: $win-color-fl-accent-low;
+}
+
+&.win-color-fill-accent-medium {
+    background: $win-color-fl-accent-medium;
+}
+
+&.win-color-fill-accent-high {
+    background: $win-color-fl-accent-high;
+}
+
+&.win-color-fill-alert {
+    background: $win-color-fl-alert;
+}
+
+// Basel line colors
+&.win-color-line-10 {
+    border-color: $win-color-fl-10;
+}
+
+&.win-color-line-20 {
+    border-color: $win-color-fl-20;
+}
+
+&.win-color-line-30 {
+    border-color: $win-color-fl-30;
+}
+
+&.win-color-line-40 {
+    border-color: $win-color-fl-40;
+}
+
+&.win-color-line-50 {
+    border-color: $win-color-fl-50;
+}
+
+&.win-color-line-60 {
+    border-color: $win-color-fl-60;
+}
+
+&.win-color-line-70 {
+    border-color: $win-color-fl-70;
+}
+
+&.win-color-line-accent {
+    border-color: $win-color-fl-accent;
+}
+
+&.win-color-line-accent-low {
+    border-color: $win-color-fl-accent-low;
+}
+
+&.win-color-line-accent-medium {
+    border-color: $win-color-fl-accent-medium;
+}
+
+&.win-color-line-accent-high {
+    border-color: $win-color-fl-accent-high;
+}
+
+&.win-color-line-alert {
+    border-color: $win-color-fl-alert;
 }
 
 
-//Accent color and variants
-&.accent {
-    background: $win-color-accent;
+// Basel background colors 
+&.win-color-bg-10 {
+    background: $win-color-bg-10;
 }
 
-&.accent-low {
-    background: $win-color-accent-low;
+&.win-color-bg-20 {
+    background: $win-color-bg-20;
 }
 
-&.accent-medium {
-    background: $win-color-accent-medium;
+&.win-color-bg-30 {
+    background: $win-color-bg-30;
 }
 
-&.accent-high {
-    background: $win-color-accent-high;
+&.win-color-bg-40 {
+    background: $win-color-bg-40;
 }
+
+&.win-color-bg-50 {
+    background: $win-color-bg-50;
+}
+
+
+// Basel alt text colors
+&.win-color-type-primary-alt {
+    color: $win-color-type-primary-alt;
+}
+
+&.win-color-type-secondary-alt {
+    color: $win-color-type-secondary-alt;
+}
+
+&.win-color-type-disabled-alt {
+    color: $win-color-type-disabled-alt;
+}
+
+&.win-color-type-accent-alt {
+    color: $win-color-type-accent-alt;
+}
+
+&.win-color-type-alert-alt {
+    color: $win-color-type-alert-alt;
+}
+
+// Basel alt fill colors
+&.win-color-fill-10-alt {
+    background: $win-color-fl-10-alt;
+}
+
+&.win-color-fill-20-alt {
+    background: $win-color-fl-20-alt;
+}
+
+&.win-color-fill-30-alt {
+    background: $win-color-fl-30-alt;
+}
+
+&.win-color-fill-40-alt {
+    background: $win-color-fl-40-alt;
+}
+
+&.win-color-fill-50-alt {
+    background: $win-color-fl-50-alt;
+}
+
+&.win-color-fill-60-alt {
+    background: $win-color-fl-60-alt;
+}
+
+&.win-color-fill-70-alt {
+    background: $win-color-fl-70-alt;
+}
+
+&.win-color-fill-accent-alt {
+    background: $win-color-fl-accent;
+}
+
+&.win-color-fill-accent-low-alt {
+    background: $win-color-fl-accent-low;
+}
+
+&.win-color-fill-accent-medium-alt {
+    background: $win-color-fl-accent-medium;
+}
+
+&.win-color-fill-accent-high-alt {
+    background: $win-color-fl-accent-high;
+}
+
+&.win-color-fill-alert-alt {
+    background: $win-color-fl-alert;
+}
+
+// Basel alt line colors
+&.win-color-line-10-alt {
+    border-color: $win-color-fl-10-alt;
+}
+
+&.win-color-line-20-alt {
+    border-color: $win-color-fl-20-alt;
+}
+
+&.win-color-line-30-alt {
+    border-color: $win-color-fl-30-alt;
+}
+
+&.win-color-line-40-alt {
+    border-color: $win-color-fl-40-alt;
+}
+
+&.win-color-line-50-alt {
+    border-color: $win-color-fl-50-alt;
+}
+
+&.win-color-line-60-alt {
+    border-color: $win-color-fl-60-alt;
+}
+
+&.win-color-line-70-alt {
+    border-color: $win-color-fl-70-alt;
+}
+
+&.win-color-line-accent-alt {
+    border-color: $win-color-fl-accent;
+}
+
+&.win-color-line-accent-low-alt {
+    border-color: $win-color-fl-accent-low;
+}
+
+&.win-color-line-accent-medium-alt {
+    border-color: $win-color-fl-accent-medium;
+}
+
+&.win-color-line-accent-high-alt {
+    border-color: $win-color-fl-accent-high;
+}
+
+&.win-color-line-alert-alt {
+    border-color: $win-color-fl-alert;
+}
+
+
+// Basel alt background colors 
+&.win-color-bg-10-alt {
+    background: $win-color-bg-10-alt;
+}
+
+&.win-color-bg-20-alt {
+    background: $win-color-bg-20-alt;
+}
+
+&.win-color-bg-30-alt {
+    background: $win-color-bg-30-alt;
+}
+
+&.win-color-bg-40-alt {
+    background: $win-color-bg-40-alt;
+}
+
+&.win-color-bg-50-alt {
+    background: $win-color-bg-50-alt;
+}
+
+// Bootstrap-winjs accent color and variants
+// TODO: Deprecate these, adopt Basel classes
 
 //Core accent colors
 &.core-yellow {
@@ -118,90 +401,6 @@
     background: $win-color-tertiary-green;
 }
 
-//Grays
-&.chrome-10 {
-    background: $win-color-chrome-10;
-}
-
-&.chrome-20 {
-    background: $win-color-chrome-20;
-}
-
-&.chrome-30 {
-    background: $win-color-chrome-30;
-}
-
-&.chrome-40 {
-    background: $win-color-chrome-40;
-}
-
-&.chrome-50 {
-    background: $win-color-chrome-50;
-}
-
-&.chrome-60 {
-    background: $win-color-chrome-60;
-}
-
-&.chrome-70 {
-    background: $win-color-chrome-70;
-}
-
-&.chrome-80 {
-    background: $win-color-chrome-80;
-}
-
-//Base
-&.base {
-    background: $win-color-base;
-}
-
-&.base-low {
-    background: $win-color-base-low;
-}
-
-&.base-medium-low {
-    background: $win-color-base-medium-low;
-}
-
-&.base-medium {
-    background: $win-color-base-medium;
-}
-
-&.base-medium-high {
-    background: $win-color-base-medium-high;
-}
-
-&.base-high {
-    background: $win-color-base-high;
-}
-
-//Alt
-&.alt {
-    background: $win-color-alt;
-}
-
-&.alt-low {
-    background: $win-color-alt-low;
-}
-
-&.alt-medium-low {
-    background: $win-color-alt-medium-low;
-}
-
-&.alt-medium {
-    background: $win-color-alt-medium;
-}
-
-&.alt-medium-high {
-    background: $win-color-alt-medium-high;
-}
-
-&.alt-high {
-    background: $win-color-alt-high;
-}
-
-
 pre {
     max-width: 100%;
     overflow-x: auto;
@@ -246,7 +445,7 @@ code {
 
 //make it possible to see alt colors in docs
 #alt-colors > .col-sm-6 {
-    background-color: $win-color-base;
+    background-color: $win-color-type-primary;
 }
 
 //space out buttons in documentation easier

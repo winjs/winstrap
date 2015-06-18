@@ -14,6 +14,9 @@ external/
 *.user
 *.sln.docstates
 *.sublime-workspace
+.DS_Store
+
+.jshintrc
 
 # Build results
 [Dd]ebug/

@@ -1,10 +1,12 @@
 // Override Bootstrap Link syles
 a {
-  color: $link-color;
-  text-decoration: underline;
+    color: $link-color;
 
-  &:focus {
-    @include tab-focus;
-    color: $win-color-base-medium-low;
-  }
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        @include tab-focus;
+    }
 }

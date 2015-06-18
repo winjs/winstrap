@@ -1,17 +1,98 @@
-// Extra large button (not defined in Bootstrap)
-.win-btn-xl {
-  padding: 20px;
-  @include win-type-subtitle();
-  font-family: $win-font-light;
-}
-
 // Button filter
 .win-button-filter {
-  border-color: $win-color-chrome-50;
+  border-color: $win-color-fl-50;
   background: none;
 
   // Clear filter
   .icon-clear {
     margin-left: 5px;
   }
+}
+
+.win-btn-on-light {
+    color: $btn-on-light-color;
+    background-color: $btn-on-light-bg;
+    border-color: $btn-on-light-border;
+
+    &:hover,
+    &:focus,
+    &.focus, 
+    .open > &.dropdown-toggle{
+        color: $btn-on-light-color;
+        background-color: $btn-on-light-bg;
+        border-color: $win-color-fl-50-alt;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+        background-color: $win-color-fl-60;
+        color: $btn-on-light-color;
+        border-color: transparent;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          color: $win-color-type-secondary;
+          background-color: $win-color-fl-40;
+          border-color: transparent;
+        }
+    }
+}
+
+.win-btn-on-dark {
+    color: $btn-on-dark-color;
+    background-color: $btn-on-dark-bg;
+    border-color: $btn-on-dark-border;
+
+    &:hover,
+    &:focus,
+    &.focus, 
+    .open > &.dropdown-toggle{
+        color: $btn-on-dark-color;
+        background-color: $btn-on-dark-bg;
+        border-color: $win-color-fl-accent-medium;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+        background-color: $win-color-fl-60-alt;
+        color: $btn-on-dark-color;
+        border-color: transparent;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          color: $win-color-type-secondary;
+          background-color: $win-color-fl-40-alt;
+          border-color: transparent;
+        }
+    }
+}
+
+a.win-link-on-light {
+    text-decoration: underline;
+    color: $win-color-type-primary;
+}
+
+a.win-link-on-dark {
+    text-decoration: underline;
+    color: $win-color-type-primary-alt;
 }

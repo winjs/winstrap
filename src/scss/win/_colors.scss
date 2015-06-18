@@ -1,7 +1,76 @@
-// Microsoft branding color palette
+// Microsoft Basel branding color palette
+
+// WHEN DEFINING COLORS...
+// Opacity is the primary device used to ensure proper contrast ratio
+// When $win-color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
+// Use HEX for colors with 100% opacity
+// Use RGBA for colors with < 100% opacity
+// You can convert HEX to RGBA using the rgba($color, opacity) function
+
+// Base
+$win-color-light:                       #FFFFFF;
+$win-color-dark:                        #000000;
 
 
-//Core colors
+// Text Colors
+$win-color-type-primary:                $win-color-dark;
+$win-color-type-secondary:              rgba($win-color-type-primary, 0.6);
+$win-color-type-disabled:               rgba($win-color-type-primary, 0.2);
+$win-color-type-accent:                 #0070BC;
+$win-color-type-alert:                  #D02E00;
+
+$win-color-type-primary-alt:            $win-color-light;
+$win-color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
+$win-color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
+$win-color-type-accent-alt:             #008EEF;
+$win-color-type-alert-alt:              #D02E00;
+
+
+// Fills/Lines color & values
+$win-color-fl-10:                       rgba($win-color-dark, 0.05);
+$win-color-fl-20:                       rgba($win-color-dark, 0.1);
+$win-color-fl-30:                       rgba($win-color-dark, 0.2);
+$win-color-fl-40:                       rgba($win-color-dark, 0.4);
+$win-color-fl-50:                       rgba($win-color-dark, 0.6);
+$win-color-fl-60:                       rgba($win-color-dark, 0.8);
+$win-color-fl-70:                       $win-color-dark;
+$win-color-fl-accent:                   #0078D7;
+$win-color-fl-accent-low:               rgba($win-color-fl-accent, 0.4); 
+$win-color-fl-accent-medium:            rgba($win-color-fl-accent, 0.6); 
+$win-color-fl-accent-high:              rgba($win-color-fl-accent, 0.7); 
+$win-color-fl-alert:                    #D02E00;
+
+$win-color-fl-10-alt:                   rgba($win-color-light, 0.1);
+$win-color-fl-20-alt:                   rgba($win-color-light, 0.15);
+$win-color-fl-30-alt:                   rgba($win-color-light, 0.2);
+$win-color-fl-40-alt:                   rgba($win-color-light, 0.4);
+$win-color-fl-50-alt:                   rgba($win-color-light, 0.6);
+$win-color-fl-60-alt:                   rgba($win-color-light, 0.8);
+$win-color-fl-70-alt:                   $win-color-light;
+$win-color-fl-accent-alt:               $win-color-fl-accent;
+$win-color-fl-accent-low-alt:           $win-color-fl-accent-low;
+$win-color-fl-accent-medium-alt:        $win-color-fl-accent-medium;
+$win-color-fl-accent-high-alt:          $win-color-fl-accent-high;
+$win-color-fl-alert-alt:                $win-color-fl-alert;
+
+
+// Background Colors
+$win-color-bg-10:                       $win-color-light;
+$win-color-bg-20:                       #F2F2F2;
+$win-color-bg-30:                       #E5E5E5;
+$win-color-bg-40:                       #D9D9D9;
+$win-color-bg-50:                       #CCCCCC;
+
+$win-color-bg-10-alt:                   $win-color-dark;
+$win-color-bg-20-alt:                   #191919;
+$win-color-bg-30-alt:                   #262626;
+$win-color-bg-40-alt:                   #333333;
+$win-color-bg-50-alt:                   #404040;
+
+
+// Core colors
+// TODO: remove
+// These are not used by any components
 $win-color-core-yellow: #FFB900; 
 $win-color-core-orange: #D83B01; 
 $win-color-core-red: #E81123; 
@@ -11,14 +80,18 @@ $win-color-core-blue: #0078D7;
 $win-color-core-teal: #008272; 
 $win-color-core-green: #107c10; 
 
-//Secondary colors
+// Secondary colors
+// TODO: remove
+// These are not used by any components
 $win-color-secondary-magenta: #E3008C;
 $win-color-secondary-purple: #32145A;
 $win-color-secondary-blue: #00188F; 
 $win-color-secondary-teal: #004B50; 
 $win-color-secondary-green: #004B1C; 
 
-//Tertiary colors
+// Tertiary color
+// TODO: remove
+// These are not used by any components
 $win-color-tertiary-yellow: #FFF100;
 $win-color-tertiary-orange: #FF8C00;
 $win-color-tertiary-red: #A80000;
@@ -27,36 +100,4 @@ $win-color-tertiary-purple: #B4A0FF;
 $win-color-tertiary-cyan: #00BCF2; 
 $win-color-tertiary-blue: #002050;
 $win-color-tertiary-teal: #00B294; 
-$win-color-tertiary-green: #BAD80A; 
-
-//Primary brand color - designed to be replaced with any core accent color
-$win-color-accent: $win-color-core-blue; 
-$win-color-accent-low: rgba($win-color-accent, 0.4); 
-$win-color-accent-medium: rgba($win-color-accent, 0.6);
-$win-color-accent-high: rgba($win-color-accent, 0.7);
-
-//Grays
-$win-color-chrome-10: #f2f2f2; 
-$win-color-chrome-20: #e6e6e6; 
-$win-color-chrome-30: #d2d2d2; //not controls ramp
-$win-color-chrome-40: #cccccc;
-$win-color-chrome-50: #767676; //not controls ramp
-$win-color-chrome-60: #7a7a7a;
-$win-color-chrome-70: #333333; //not on controls ramp
-$win-color-chrome-80: #171717;
-
-//Base colors
-$win-color-base: #000;
-$win-color-base-low: rgba($win-color-base, 0.1);
-$win-color-base-medium-low: rgba($win-color-base, 0.2);
-$win-color-base-medium: rgba($win-color-base, 0.4);
-$win-color-base-medium-high: rgba($win-color-base, 0.6);
-$win-color-base-high: rgba($win-color-base, 0.8);
-
-//Alt colors
-$win-color-alt: #fff;
-$win-color-alt-low: rgba($win-color-alt, 0.1);
-$win-color-alt-medium-low: rgba($win-color-alt, 0.2);
-$win-color-alt-medium: rgba($win-color-alt, 0.4);
-$win-color-alt-medium-high: rgba($win-color-alt, 0.6);
-$win-color-alt-high: rgba($win-color-alt, 0.8);
+$win-color-tertiary-green: #BAD80A;

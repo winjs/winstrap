@@ -1,9 +1,8 @@
 ﻿.win-back-to-top {
     visibility: hidden;
     padding: (($grid-gutter-width / 2) / 2);
-    color: $win-color-base;
-    background: $win-color-chrome-10;
-    background: rgba($win-color-chrome-30, .5);
+    color: $win-color-type-primary;
+    background: $win-color-fl-20;
     opacity: 0;
     @include translate(0, 20px);
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
@@ -19,9 +18,8 @@
     }
 
     &:hover {
-        color: $win-color-base;
-        background: $win-color-chrome-20;
-        background: rgba($win-color-chrome-30, .85);
+        color: $win-color-type-primary;
+        background: $win-color-fl-20;
     }
 
     [class*="icon"] {

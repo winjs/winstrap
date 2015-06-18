@@ -6,10 +6,10 @@ $grid-gutter-width-sm: $grid-gutter-width / 5;
     margin-right: (-.5 * $grid-gutter-width-sm);
 
     $i: 1;
-    $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+    $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-xl-#{$i}";
 
     @for $i from (1 + 1) through $grid-columns {
-        $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+        $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-xl-#{$i}";
     }
 
     #{$list} {

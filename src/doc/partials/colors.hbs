@@ -1,525 +1,886 @@
-﻿<section class="win-section" id="bootstrap-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#bootstrap-colors">Bootstrap colors</a>
-        </h1>
-    </header>        
-    <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Windows 10 colors instead of Bootstrap colors.</p>
-        <div class="col-sm-6">
-            <p class="color accent"></p>
-
-            {{#markdown}}
+﻿<div class="row">
+    <div class="col-xs-24">
+        <section class="win-section" id="bootstrap-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#bootstrap-colors">Bootstrap colors</a>
+                </h1>
+            </header>        
+            <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Basel colors instead of Bootstrap colors.</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent"></p>
+                </div> 
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$brand-primary: $win-color-accent !default;
+$brand-primary: $win-color-fl-accent;
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-green"></p>
-
-            {{#markdown}}
+                    {{/markdown}}
+                </div>  
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$brand-success: $win-color-core-green !default; 
+$brand-success: $win-color-fl-50;
 ```
-            {{/markdown}}
-        </div>
-        <div class="col-sm-6">
-            <p class="color secondary-blue"></p>
-
-            {{#markdown}}
+                    {{/markdown}}
+                </div>
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$brand-info: $win-color-secondary-blue !default;
+$brand-info: $win-color-fl-50;
 ```
-            {{/markdown}}
-        </div>      
-        <div class="col-sm-6">
-            <p class="color core-yellow"></p>
-
-            {{#markdown}}
+                    {{/markdown}}
+                </div>      
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$brand-warning: $win-color-core-yellow !default;
+$brand-warning: $win-color-fl-alert;
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-red"></p>
-
-            {{#markdown}}
+                    {{/markdown}}
+                </div>   
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$brand-danger: $win-color-core-red !default;
+$brand-danger: $win-color-fl-alert;
 ```
-            {{/markdown}}
-        </div>   
-    </section>
+                    {{/markdown}}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 
-
-<section class="win-section" id="grays">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#grays">Grays</a>
-        </h1>
-    </header>
-
-    <div class="row">
-        <div class="col-xs-24">
-            <p>
-                Here are the grays in Bootstrap-WinJS. These greys are a combination of colors in the controls color ramp as well as the services guide.
-            </p>
-        </div>
-
-        <div class="col-sm-6">
-            <p class="color chrome-10"></p>
-
-            {{#markdown}}
+<div class="row">
+    <div class="col-xs-24">
+        <section class="win-section" id="basel-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#basel-colors">Basel colors</a>
+                </h1>
+            </header>
+            <h3>Base colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-light"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-10: #f2f2f2; 
+$win-color-light: #FFFFFF;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color chrome-20"></p>
-
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-dark"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-20: #d2d2d2; 
+$win-color-dark: #000000;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>        
+            </div>
 
-        <div class="col-sm-6">
-            <p class="color chrome-30"></p>
-
-            {{#markdown}}
+            <h3>Background colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-bg-10"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-30: #e6e6e6; 
+$win-color-bg-10: $win-color-light;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color chrome-40"></p>
-
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-bg-20"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-40: #cccccc; 
+$win-color-bg-20: #F2F2F2;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color chrome-50"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-bg-30"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-bg-30: #E5E5E5;
+```
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-bg-40"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-50: #767676;
+$win-color-bg-40: #D9D9D9;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color chrome-60"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-bg-50"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-bg-50: #CCCCCC;
+```
+                    {{/markdown}}
+                </div>
+            </div>
 
-            {{#markdown}}
+            <h3>Fill colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-60: #7a7a7a;
+$win-color-fl-accent: #0078D7;
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>
 
-        <div class="col-sm-6">
-            <p class="color chrome-70"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-accent-low: rgba($win-color-fl-accent, 0.4); 
+```
+                    {{/markdown}}
+                </div>  
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-medium"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-70: #333333;
+$win-color-fl-accent-medium: rgba($win-color-fl-accent, 0.6);
 ```
-            {{/markdown}}
-        </div>        
+                    {{/markdown}}
+                </div>   
+               
+                <div class="col-md-12">
+                    <p class="color win-color-fill-accent-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-accent-high: rgba($win-color-fl-accent, 0.7);
+```
+                    {{/markdown}}
+                </div>
 
-        <div class="col-sm-6">
-            <p class="color chrome-80"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-alert: #D02E00;
+```
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-fill-10"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-chrome-80: #171717;
+$win-color-fl-10: rgba($win-color-dark, 0.05);
 ```
-            {{/markdown}}
-        </div>        
-</section>
+                    {{/markdown}}
+                </div>        
 
+                <div class="col-md-12">
+                    <p class="color win-color-fill-20"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-20: rgba($win-color-dark, 0.1);
+```
+                    {{/markdown}}
+                </div>        
 
+                <div class="col-md-12">
+                    <p class="color win-color-fill-30"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-30: rgba($win-color-dark, 0.2);
+```
+                    {{/markdown}}
+                </div>        
 
-<section class="win-section" id="base-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#base-colors">Base colors</a>
-        </h1>
-    </header>        
-    <p>Base colors</p>
-  
-        <div class="col-sm-6">
-            <p class="color base-low"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-fill-40"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-40: rgba($win-color-dark, 0.4);
+```
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-fill-50"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base-low: rgba($win-color-base, 0.1);
+$win-color-fl-50: rgba($win-color-dark, 0.6);
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color base-medium-low"></p>
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-fill-60"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base-medium-low: rgba($win-color-base, 0.2);
+$win-color-fl-60: rgba($win-color-dark, 0.8);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-medium"></p>
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-fill-70"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base-medium: rgba($win-color-base, 0.4);
+$win-color-fl-70: $win-color-dark;
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-medium-high"></p>
+                    {{/markdown}}
+                </div>
+            </div>
 
-            {{#markdown}}
+            <h3>Line colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base-medium-high: rgba($win-color-base, 0.6);
+$win-color-fl-accent: #0078D7;
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base-high"></p>
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base-high: rgba($win-color-base, 0.8);
+$win-color-fl-accent-low: rgba($win-color-fl-accent, 0.4); 
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color base"></p>
+                    {{/markdown}}
+                </div>  
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-medium"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-base: #000;
+$win-color-fl-accent-medium: rgba($win-color-fl-accent, 0.6);
 ```
-            {{/markdown}}
-        </div> 
-</section>
+                    {{/markdown}}
+                </div>   
+               
+                <div class="col-md-12">
+                    <p class="color line win-color-line-accent-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-accent-high: rgba($win-color-fl-accent, 0.7);
+```
+                    {{/markdown}}
+                </div>
 
-<section class="win-section" id="alt-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#alt-colors">Alt colors</a>
-        </h1>
-    </header>        
-    <p>Alt colors</p>
+                <div class="col-md-12">
+                    <p class="color line win-color-line-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-alert: #D02E00;
+```
+                    {{/markdown}}
+                </div>
 
-        <div class="col-sm-6">
-            <p class="color alt-low"></p>
+                <div class="col-md-12">
+                    <p class="color line win-color-line-10"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-10: rgba($win-color-dark, 0.05);
+```
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-20"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt-low: rgba($win-color-alt, 0.1);
+$win-color-fl-20: rgba($win-color-dark, 0.1);
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color alt-medium-low"></p>
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-30"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt-medium-low: rgba($win-color-alt, 0.2);
+$win-color-fl-30: rgba($win-color-dark, 0.2);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-medium"></p>
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-40"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt-medium: rgba($win-color-alt, 0.4);
+$win-color-fl-40: rgba($win-color-dark, 0.4);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-medium-high"></p>
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-50"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt-medium-high: rgba($win-color-alt, 0.6);
+$win-color-fl-50: rgba($win-color-dark, 0.6);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6">
-            <p class="color alt-high"></p>
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-60"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt-high: rgba($win-color-alt, 0.8);
+$win-color-fl-60: rgba($win-color-dark, 0.8);
 ```
-            {{/markdown}}
-        </div>      
-        <div class="col-sm-6">
-            <p class="color alt"></p>
+                    {{/markdown}}
+                </div>
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color line win-color-line-70"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-alt: #fff;
+$win-color-fl-70: $win-color-dark;
 ```
-            {{/markdown}}
-        </div>   
-</section>
-<section class="win-section" id="accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#accent-colors">Brand accent color</a>
-        </h1>
-    </header>
+                    {{/markdown}}
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-xs-24">
-            <p>Brand accent color</p>
-        </div>
+            <h3>Text colors</h3> 
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color win-color-type-primary">Primary</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-primary: $win-color-dark;
+```
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color accent"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-type-secondary">Secondary</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-secondary: rgba($win-color-type-primary, 0.6);
+```
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-type-disabled">Disabled</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-accent: rgb(0, 120, 215);
+$win-color-type-disabled: rgba($win-color-type-primary, 0.2);
 ```
-            {{/markdown}}
-        </div>     
+                    {{/markdown}}
+                </div>        
 
-        <div class="col-sm-6">
-            <p class="color accent-low"></p>
+                <div class="col-md-12">
+                    <p class="color win-color-type-accent">Accent</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-accent: #0078D7;
+```
+                    {{/markdown}}
+                </div>        
 
-            {{#markdown}}
+                <div class="col-md-12">
+                    <p class="color win-color-type-alert">Alert</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-accent-low: rgba($win-color-accent, 0.4); 
+$win-color-type-alert: #D02E00;
 ```
-            {{/markdown}}
-        </div>  
+                    {{/markdown}}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 
-        <div class="col-sm-6">
-            <p class="color accent-medium"></p>
+<div class="row">
+    <div class="col-xs-24">
+        <section class="win-section" id="basel-alt-colors">
+            <header class="win-section-header">
+                <h1 class="win-section-title">
+                    <a href="#basel-alt-colors">Basel alt colors</a>
+                </h1>
+            </header>
+            <div class="win-section-body win-color-bg-10-alt"  style="padding: 11.5px 11.5px 0 11.5px">
+                <h3 class="win-color-primary-type-alt">Alt background colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-bg-10-alt: $win-color-dark;
+```
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-accent-medium: rgba($win-color-accent, 0.6);
+$win-color-bg-20-alt: #191919;
 ```
-            {{/markdown}}
-        </div>   
-       
-        <div class="col-sm-6">
-            <p class="color accent-high"></p>
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-accent-high: rgba($win-color-accent, 0.7);
+$win-color-bg-30-alt: #262626;
 ```
-            {{/markdown}}
-        </div>  
-</section>
-<section class="win-section" id="other-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#other-accent-colors">Core accent colors</a>
-        </h1>
-    </header>        
-{{!--         Old colors for reference by MSCOM https://getmscom.microsoft.com/style-guide/Pages/color-bb.aspx --}}
-    <p>Core accent colors</p>  
-        <div class="col-sm-6">
-            <p class="color core-yellow"></p>
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-yellow: #FFF100;
+$win-color-bg-40-alt: #333333;
 ```
-            {{/markdown}}
-        </div>    
-        <div class="col-sm-6">
-            <p class="color core-orange"></p>
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-bg-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-orange: #FF8C00;
+$win-color-bg-50-alt: #404040;
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-red"></p>
+                    {{/markdown}}
+                    </div>
+                </div>
 
-            {{#markdown}}
+                <h3 class="win-color-primary-type-alt">Alt fill colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-red: #E81123;
+$win-color-fl-accent-alt: $win-color-fl-accent;
 ```
-            {{/markdown}}
-        </div> 
-        <div class="col-sm-6">
-            <p class="color core-magenta"></p>
+                    {{/markdown}}
+                    </div>
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-low-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-magenta: #EC008C;
+$win-color-fl-accent-low-alt: rgba($win-color-fl-accent, 0.4); 
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-purple"></p>
+                    {{/markdown}}
+                    </div>  
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-medium-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-purple: #68217A;
+$win-color-fl-accent-medium-alt: rgba($win-color-fl-accent, 0.6);
 ```
-            {{/markdown}}
-        </div>          
+                    {{/markdown}}
+                    </div>   
+                   
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-accent-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-accent-high-alt: rgba($win-color-fl-accent, 0.7);
+```
+                    {{/markdown}}
+                    </div>
 
-        <div class="col-sm-6">
-            <p class="color core-blue"></p>
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-alert-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-alert-alt: #D02E00;
+```
+                    {{/markdown}}
+                    </div>
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-blue: #00188F;
+$win-color-fl-10-alt: rgba(255,255,255,.1);
 ```
-            {{/markdown}}
-        </div>    
-        <div class="col-sm-6">
-            <p class="color core-teal"></p>
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-teal: #00B294;
+$win-color-fl-20-alt: rgba(255,255,255,.15);
 ```
-            {{/markdown}}
-        </div>   
-        <div class="col-sm-6">
-            <p class="color core-green"></p>
+                    {{/markdown}}
+                    </div>        
 
-            {{#markdown}}
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-core-green: #13A10E;
+$win-color-fl-30-alt: rgba(255,255,255,.3);
 ```
-            {{/markdown}}
-        </div>   
-<section class="win-section" id="secondary-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#secondary-accent-colors">Secondary accent colors</a>
-        </h1>
-    </header>          
-        <div class="col-sm-6">
-            <p class="color secondary-magenta"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-secondary-magenta: #E3008C;
+$win-color-fl-40-alt: rgba(255,255,255,.4);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-purple"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-secondary-purple: #32145A;
+$win-color-fl-50-alt: rgba(255,255,255,.6);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-blue"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-60-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-secondary-blue: #00188F; 
+$win-color-fl-60-alt: rgba(255,255,255,.8);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-teal"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-fill-70-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-secondary-teal: #004B50; 
+$win-color-fl-70-alt: #FFFFFF;
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color secondary-green"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+                </div>
+
+                <h3 class="win-color-primary-type-alt">Alt line colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-secondary-green: #004B1C; 
+$win-color-fl-accent-alt: #0078D7;
 ```
-            {{/markdown}}
-        </div> 
-</section>
-<section class="win-section" id="tertiary-accent-colors">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
-            <a href="#tertiary-accent-colors">Tertiary accent colors</a>
-        </h1>
-    </header>          
-        <div class="col-sm-6"><p class="color tertiary-yellow"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-low-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-yellow: #FFF100;
+$win-color-fl-accent-low-alt: rgba($win-color-fl-accent, 0.4); 
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-orange"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>  
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-medium-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-orange: #FF8C00;
+$win-color-fl-accent-medium-alt: rgba($win-color-fl-accent, 0.6);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-red"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>   
+                   
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-accent-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-red: #A80000;
+$win-color-fl-accent-high-alt: rgba($win-color-fl-accent, 0.7);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-magenta"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-alert-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-magenta: #5C005C;
+$win-color-fl-alert-alt: #D02E00;
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-purple"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-10-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-purple: #B4A0FF;
+$win-color-fl-10-alt: rgba($win-color-light, 0.1);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-cyan"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-20-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-cyan: #00BCF2; 
+$win-color-fl-20-alt: rgba($win-color-light, 0.15);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-blue"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-30-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-blue: #002050;
+$win-color-fl-30-alt: rgba($win-color-light, 0.2);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-teal"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-40-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-teal: #00B294; 
+$win-color-fl-40-alt: rgba($win-color-light, 0.4);
 ```
-            {{/markdown}}
-        </div>  
-        <div class="col-sm-6"><p class="color tertiary-green"></p>
-            {{#markdown}}
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-50-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
 ```scss
-$win-color-tertiary-green: #BAD80A; 
+$win-color-fl-50-alt: rgba($win-color-light, 0.6);
 ```
-            {{/markdown}}
-        </div>  
-</section>
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-60-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-60-alt: rgba($win-color-light, 0.8);
+```
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line win-color-line-70-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-fl-70-alt: $win-color-light;
+```
+                    {{/markdown}}
+                    </div>
+                </div>
+
+                <h3 class="win-color-type-primary-alt">Alt text colors</h3> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color win-color-type-primary-alt">Primary</p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-primary-alt: $win-color-light;
+```
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-secondary-alt">Secondary</p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-secondary-alt: rgba($win-color-type-primary-alt, 0.6);
+```
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-disabled-alt">Disabled</p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-disabled-alt: rgba($win-color-type-primary-alt, 0.2);
+```
+                    {{/markdown}}
+                    </div>        
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-accent-alt">Accent</p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-accent-alt: #0078D7;
+```
+                    {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color win-color-type-alert-alt">Alert</p>
+                    </div>
+                    <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$win-color-type-alert-alt: #D02E00;
+```
+                    {{/markdown}}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

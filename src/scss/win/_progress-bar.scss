@@ -16,7 +16,7 @@
       content: "\2022";
       position: absolute;
       font-size: 10px;
-      color: $win-color-accent;
+      color: $win-color-fl-accent;
     }
 
     &:nth-child(2) { @include animation-delay(200ms); }
