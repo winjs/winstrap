@@ -19,6 +19,7 @@
         <input type="file" id="exampleInputFile">
         <p class="help-block">Example block-level help text here.</p>
       </div>
+      
       <div class="form-group">
         <label>Checkbox</label>
         <div class="checkbox">
@@ -52,18 +53,22 @@
               checkbox.indeterminate = true;
             </script>
         </div>
+      </div>
 
+      <div class="form-group">
+        <label>Radio buttons</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1'> Radio me out
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name='radio1'> Radio me out
+          </label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name='radio1'> Radio me out
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name='radio1'> Radio me out
-        </label>
-      </div>
+
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
       {{#markdown}}

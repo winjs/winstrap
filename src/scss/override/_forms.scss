@@ -174,17 +174,23 @@ select[multiple].form-control {
 // Checkbox / Radio
 //
 
-.form-group .checkbox:first-of-type,
-.form-group .radio:first-of-type {
-  margin-top: 12px
+.form-group {
+  .checkbox:first-of-type,
+  .radio:first-of-type {
+    margin-top: 12px
+  }
+
+  > label:first-of-type {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+
+  margin-bottom: 36px;
+
 }
 
-.form-group > label:first-of-type {
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 1em;
-}
 
 .checkbox,
 .radio {
@@ -229,13 +235,12 @@ select[multiple].form-control {
         content: "\E081";
         text-indent: 2px;
         line-height: 1em;
-        padding-top: 1px;
+        padding-top: 2px;
     }
 
     input:indeterminate ~ span::before {
       border-color: $win-color-fl-accent;
-      color: $win-color-type-primary;
-      // font-family: $win-font-symbols;
+      color: $win-color-fl-60;
       content: "■"; // Use "\E73C" when we get Basel Symbols font
       text-indent: 2px;
       line-height: 12px;
@@ -251,108 +256,17 @@ select[multiple].form-control {
       border-color: $win-color-fl-25;
     }
   }
+
+  &:hover {
+    span::before,
+    input:checked ~ span::before {
+      border-color: $win-color-fl-70;
+    }
+    input:indeterminate ~ span::before {
+      color: $win-color-fl-70;
+    }
+  }
 }
-
-// .checkbox label,
-// .radio label {
-//   padding-left: 0px;
-//   font-weight: 400;
-//   margin-left: 28px;
-//   min-height: initial;
-//   line-height: 20px
-// }
-
-// input[type=checkbox],
-// input[type=radio],
-// .checkbox input[type=checkbox],
-// .radio input[type=radio] {
-//   width: 20px;
-//   height: 20px;
-//   margin-left: -28px;
-//   margin-top: 0;
-
-  // &::-ms-check {
-  //   border-style: solid;
-  //   display: inline-block;
-  //   border-width: 1px;
-  //   background-clip: border-box;
-  // }
-// }
-
-// input[type=checkbox],
-// .checkbox input[type=checkbox] {
-//   &::-ms-check {
-//     color: $win-color-type-primary;
-//     border-color: $win-color-fl-60;
-//     background-color: transparent;
-//   }
-
-//   &:indeterminate::-ms-check {
-//     color: $win-color-type-primary;
-//     border-color: $win-color-fl-accent;
-//   }
-
-//   &:checked::-ms-check {
-//     color: $win-color-light;
-//     background-color: $win-color-fl-accent;
-//     border-color: transparent;
-//   }
-
-//   &:hover::-ms-check {
-//     border-color: $win-color-type-primary;
-//   }
-
-//   &:hover:indeterminate::-ms-check {
-//     color: $win-color-type-primary;
-//     border-color: $win-color-fl-accent;
-//   }
-
-//   &:active::-ms-check {
-//     border-color: transparent;
-//     background-color: $win-color-fl-50;
-//   }
-
-//   &:indeterminate:active::-ms-check {
-//     color: $win-color-type-secondary;
-//     border-color: $win-color-fl-60;
-//     background-color: transparent;
-//   }
-
-// }
-
-// .checkbox label {
-
-//     input[type=checkbox] {
-//         opacity: 0;
-//     }
-
-//     span::before {
-//         border-width: 1px;
-//         border-style: solid;
-//         border-color: $win-color-fl-60;
-//         content: "";
-//         height: 20px;
-//         width: 20px;
-//         position: absolute;
-//         left: 0;
-//         cursor: pointer;
-//     }
-
-//     input:checked ~ span::before {
-//         background-color: $win-color-fl-accent;
-//         border-color: $win-color-fl-accent;
-//         color: $win-color-fl-70-alt;
-//         font-family: $win-font-symbols;
-//         content: "\E081";
-//         text-indent: 2px;
-//         line-height: 1em;
-//         padding-top: 1px;
-//     }
-
-//     input:indeterminate ~ span::before {
-
-//     }
-// }
 
 .radio input[type=radio] {
   &::-ms-check {
