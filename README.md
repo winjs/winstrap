@@ -1,23 +1,23 @@
 ﻿# Winstrap
-###### The official Bootstrap theme for Windows
+##### The official Bootstrap theme for Windows
 ﻿
 http://winstrap.azurewebsites.net/
 
 ## Development
 
-#### Install Node.js
+### Install Node.js
 
 http://nodejs.org/download/
 
 Make sure Node.js is available in your path.
 
-#### Install Grunt
+### Install Grunt
 
 ```
 npm install -g grunt-cli
 ```
 
-#### Clone the repo
+### Clone the repo
 
 ```
 git clone https://github.com/winjs/winstrap.git
@@ -25,7 +25,7 @@ git clone https://github.com/winjs/winstrap.git
 
 You should have a `winstrap` folder.
 
-#### Installing npm packages
+### Installing npm packages
 
 To install the required `npm` packages:
 
@@ -44,7 +44,7 @@ grunt
 
 This will compile the generated files into the `dist` folder.
 
-#### Launching a local server
+### Launching a local server
 
 Just run this task to display the demo pages in your browser:
 
