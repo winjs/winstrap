@@ -194,7 +194,7 @@ select[multiple].form-control {
 // Common checkbox and radio styles
 .checkbox,
 .radio {
-  margin: win-spacer(xs, 0) 0;
+  margin: win-spacer(xs) 0;
 
   & input[type=checkbox],
   & input[type=radio] {
