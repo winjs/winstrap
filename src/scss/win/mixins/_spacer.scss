@@ -1,0 +1,12 @@
+@function win-spacer($size, $shim) {
+
+    // first, get the desired spacer
+    $spacer: map-get($win-spacer-sizes, $size);
+
+    // if we passed a shim, add it to the spacer
+    @if $shim {
+        $spacer: ($spacer + $shim);
+    }
+
+    @return $spacer;
+}

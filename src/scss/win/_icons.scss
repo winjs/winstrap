@@ -243,3 +243,20 @@ $win-symbols: (
 @each $glyph, $code in $win-symbols {
     .win-icon-#{$glyph}:before { content: $code; }
 }
+
+
+// Checkbox & Radio Buttons
+.checkbox label {
+    input:checked ~ span::before { 
+        content: map-get($win-symbols, checkbox);
+    }
+    input:indeterminate ~ span::before {
+        content: "■"; // Use "\E73C" when we get Basel Symbols font
+    }
+}
+
+.radio label {
+    input:checked ~ span::before { 
+        content: "•"; // Replace this when we get Basel Symbols font
+    }
+}
