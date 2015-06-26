@@ -1,7 +1,7 @@
 {
   "name": "Winstrap",
   "description": "Winstrap is the official Bootstrap theme for Windows.",
-  "repository": "https://github.com/winjs/bootstrap-winjs.git",
+  "repository": "https://github.com/winjs/winstrap.git",
   "version": "0.3.0",
   "author": {
     "name": "Microsoft"
