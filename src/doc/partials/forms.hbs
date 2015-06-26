@@ -1,176 +1,216 @@
 <section class="win-section" id="forms">
-  <header class="win-section-header row">
-    <h1 class="win-section-title col-xs-24">
+  <header class="win-section-header">
+    <h1 class="win-section-title">
       <a href="#forms">Forms</a>
     </h1>
+    <p>Individual form controls automatically receive some global styling. <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%</code>; by default Wrap labels and controls in <code>.form-group</code> for optimum spacing.
   </header>
   <div class="row">
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
+    <div class="col-xs-8">
+      <form>
 
-      <div class="form-group">
-        <p class="form-group-label">Checkbox</p>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"></input>
-            <span>Rest</span>
-          </label>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" checked></input>
-            <span>Checked</span>
-          </label>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
         </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" disabled="true"></input>
-            <span>Disabled</span>
-          </label>
-        </div>
+        <div class="form-group">
+          <p class="form-group-label">Checkbox</p>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"></input>
+              <span>Rest</span>
+            </label>
+          </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" id="foo"></input>
-            <span>Indeterminate</span>
-          </label>
-          <script type="text/javascript">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked></input>
+              <span>Checked</span>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" disabled="true"></input>
+              <span>Disabled</span>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="foo"></input>
+              <span>Indeterminate</span>
+            </label>
+            <script type="text/javascript">
               var checkbox = document.getElementById("foo");
               checkbox.indeterminate = true;
             </script>
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <p class="form-group-label">Radio buttons</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1'>
-            <span>Radio</span>
-          </label>
+        <div class="form-group">
+          <p class="form-group-label">Radio buttons</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name='radio1'>
+              <span>Radio</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name='radio1' checked="checked"> 
+              <span>Checked</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name='radio1' disabled="true"> 
+              <span>Disabled</span>
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1' checked="checked"> 
-            <span>Checked</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1' disabled="true"> 
-            <span>Disabled</span>
-          </label>
-        </div>
-      </div>
 
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div class="col-xs-24">
       {{#markdown}}
 ```xml
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="form-group">
-        <p class="form-group-label">Checkbox</p>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"></input>
-            <span>Rest</span>
-          </label>
-        </div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" checked></input>
-            <span>Checked</span>
-          </label>
-        </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" disabled="true"></input>
-            <span>Disabled</span>
-          </label>
-        </div>
+  <div class="form-group">
+    <p class="form-group-label">Checkbox</p>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"></input>
+        <span>Rest</span>
+      </label>
+    </div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" id="foo"></input>
-            <span>Indeterminate</span>
-          </label>
-          <script type="text/javascript">
-              var checkbox = document.getElementById("foo");
-              checkbox.indeterminate = true;
-            </script>
-        </div>
-      </div>
-      <div class="form-group">
-        <p class="form-group-label">Radio buttons</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1'>
-            <span>Radio</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1' checked="checked"> 
-            <span>Checked</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name='radio1' disabled="true"> 
-            <span>Disabled</span>
-          </label>
-        </div>
-      </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" checked></input>
+        <span>Checked</span>
+      </label>
+    </div>
 
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" disabled="true"></input>
+        <span>Disabled</span>
+      </label>
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="foo"></input>
+        <span>Indeterminate</span>
+      </label>
+      <script type="text/javascript">
+        var checkbox = document.getElementById("foo");
+        checkbox.indeterminate = true;
+      </script>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <p class="form-group-label">Radio buttons</p>
+    <div class="radio">
+      <label>
+        <input type="radio" name='radio1'>
+        <span>Radio</span>
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name='radio1' checked="checked"> 
+        <span>Checked</span>
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name='radio1' disabled="true"> 
+        <span>Disabled</span>
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 ```
       {{/markdown}}
+    </div>
   </div>
 
   <div class="row">
+    <div class="col-xs-8">
+      <form>
+        <div class="form-group">
+          <label>Text</label>
+          <input type='text' class='form-control'/>
+        </div>
+        <div class="form-group">
+          <label class="disabled">Text</label>
+          <input type='text' class='form-control' value="Disabled value" disabled="disabled" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type='password' class='form-control' />
+        </div>
+        <div class="form-group">
+          <label>Text Area</label>
+          <textarea class='form-control'></textarea>
+        </div>
+      </form>
+    </div>
     <div class="col-xs-24">
-      <h2>Text</h2>
-      <input type='text' class='form-control' />
-      <h2>Password</h2>
-      <input type='password' class='form-control' />
-      <h2>Text Area</h2>
-      <textarea class='form-control'></textarea>
-
       {{#markdown}}
 ```xml
-<input type='text' class='form-control' />
-<input type='password' class='form-control' />
-<textarea class='form-control'></textarea>
+<form>
+  <div class="form-group">
+    <label>Text</label>
+    <input type='text' class='form-control' />
+  </div>
+  <div class="form-group">
+    <label class="disabled">Text</label>
+    <input type='text' class='form-control' value="Disabled value" disabled="disabled" />
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type='password' class='form-control' />
+  </div>
+  <div class="form-group">
+    <label>Text Area</label>
+    <textarea class='form-control'></textarea>
+  </div>
+</form>
 ```
       {{/markdown}}
 

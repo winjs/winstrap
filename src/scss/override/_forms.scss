@@ -5,42 +5,49 @@ input.form-control,
 textarea.form-control {
     -ms-user-select: element;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 0;
-    margin: 0;
-    width: 296px;
+    border-width: 1px;
+    border-radius: $border-radius-base;
+    margin-top: win-spacer(xxs, -10);
+    margin-bottom: win-spacer(xs, -4);
     min-width: 64px;
-    min-height: 28px;
+    min-height: 36px;
     background-clip: border-box;
     box-sizing: border-box;
-    padding: 3px 6px 5px 10px;
+    padding-left: 11px;
     vertical-align: top;
     outline: 0;
 
-    @include win-type-body();
     @include box-shadow(none);
     @include transition(none);
 
     color: $win-color-type-primary;
-    background-color: $win-color-type-primary-alt;
-    border-color: $win-color-fl-40;
+    background-color: $win-color-fl-60-alt;
+    border-color: $win-color-fl-50;
 
     // Hint text color
     // Single colon on -ms not a typo
     &:-ms-input-placeholder {color: $win-color-type-secondary;}
     &::-webkit-input-placeholder {color: $win-color-type-secondary;}
-    &::-moz-input-placeholder {color: $win-color-type-secondary;}
+    &:-moz-placeholder {color: $win-color-type-secondary;}
+    &::-moz-placeholder {color: $win-color-type-secondary;}
 
     &:hover {
         background-color: $win-color-fl-50-alt;
-        border-color: $win-color-fl-50;
+        border-color: $win-color-fl-70;
     }
 
     &:focus {
-        color: $win-color-dark;
-        background-color: $win-color-light;
+        color: $win-color-type-primary;
+        background-color: $win-color-fl-70-alt;
         border-color: $win-color-fl-accent;
         @include box-shadow(none);
+    }
+
+    &:disabled,
+    &[disabled], {
+        border-color: $win-color-fl-25;
+        color: $win-color-type-disabled;
+        background-color: $win-color-fl-20-alt;
     }
 }
 
@@ -51,16 +58,12 @@ input.form-control::-ms-value {
 
 input.form-control::-ms-clear,
 input.form-control::-ms-reveal {
-    padding-right: 2px;
     margin-right: -8px;
-    margin-left: 2px;
-    margin-top: -8px;
-    margin-bottom: -8px;
-    width: 30px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: block;
 
-    color: $win-color-type-secondary;
+    color: $win-color-fl-50;
 
     &:hover {
         color: $win-color-fl-accent;
@@ -177,24 +180,41 @@ select[multiple].form-control {
 .form-group {
     .checkbox:first-of-type,
     .radio:first-of-type {
-        margin-top: win-spacer(xxs, 4)
+        margin-top: win-spacer(xs, -2)
     }
 
+    .checkbox:last-of-type,
+    .radio:last-of-type {
+        margin-bottom: win-spacer(xs, 3);
+    }
+
+    label,
     .form-group-label {
         font-size: 15px;
         font-weight: 400;
         margin-bottom: 0;
         line-height: 1em;
+        vertical-align: top;
     }
 
-    margin-bottom: win-spacer(sm);
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled;
+    }
+
+    margin-bottom: win-spacer(xs, -2);
 
 }
 
 // Common checkbox and radio styles
+.radio + .radio,
+.checkbox + .checkbox {
+    margin-top: initial;
+}
+
 .checkbox,
 .radio {
-    margin: win-spacer(xs) 0;
+    margin: win-spacer(xs, -2) 0;
 
     & input[type=checkbox],
     & input[type=radio] {
@@ -305,5 +325,17 @@ select[multiple].form-control {
         input:disabled ~ span::before {
             border-color: $win-color-fl-25;
         }
+    }
+}
+
+// For use on dark backgrounds
+form.win-color-alt {
+    label {
+        color: $win-color-type-primary-alt;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled-alt;
     }
 }
