@@ -1,0 +1,3 @@
+@function win-spacer($size, $shim: 0) {
+    @return (map-get($win-spacer-sizes, $size) + $shim);
+}
