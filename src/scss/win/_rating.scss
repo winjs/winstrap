@@ -96,37 +96,37 @@
         }
     }
 
-    &.win-rating-dark {
-        .win-rating-stars {
-            .win-icon-ratingstar {
-                color: $win-color-fl-25;
-            }
-        }
-
-        .win-rating-stars-value {
-            .win-icon-ratingstar {
-                color: $win-color-fl-70;
-            }
-
-            &.win-rating-stars-value-user {
-                .win-icon-ratingstar {
-                    color: $win-color-fl-accent;
-                }
-            }
-        }
-
-        .win-rating-btn.active {
-            .win-icon-ratingstar {
-                color: $win-color-fl-60;
-            }
-        }
-
-        .win-rating-label {
-            color: $win-color-type-primary;
+    // Default colors
+    .win-rating-stars {
+        .win-icon-ratingstar {
+            color: $win-color-fl-25;
         }
     }
 
-    &.win-rating-light {
+    .win-rating-stars-value {
+        .win-icon-ratingstar {
+            color: $win-color-fl-70;
+        }
+
+        &.win-rating-stars-value-user {
+            .win-icon-ratingstar {
+                color: $win-color-fl-accent;
+            }
+        }
+    }
+
+    .win-rating-btn.active {
+        .win-icon-ratingstar {
+            color: $win-color-fl-60;
+        }
+    }
+
+    .win-rating-label {
+        color: $win-color-type-primary;
+    }
+
+    // Alt colors
+    &.win-color-alt {
         .win-rating-stars {
             .win-icon-ratingstar {
                 color: $win-color-fl-25-alt;
