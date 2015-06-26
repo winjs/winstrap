@@ -3,6 +3,7 @@
     .win-rating-label {
         @include win-type-title(no-line-height);
         line-height: 44px;
+        margin-bottom: 1px;
         vertical-align: bottom;
 
         &.win-rating-label-left {
