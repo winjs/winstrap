@@ -330,7 +330,8 @@ select[multiple].form-control {
 }
 
 // For use on dark backgrounds
-form.win-color-alt {
+form.win-color-alt,
+form .win-color-alt {
     label {
         color: $win-color-type-primary-alt;
     }
