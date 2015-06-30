@@ -14,7 +14,7 @@ textarea.form-control {
     min-height: 36px;
     background-clip: border-box;
     box-sizing: border-box;
-    padding-left: 11px;
+    padding-left: win-spacer(xxs, -1);
     vertical-align: top;
     outline: 0;
 
