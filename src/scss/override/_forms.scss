@@ -174,9 +174,15 @@ select[multiple].form-control {
     }
 }
 
-// Keep color abstracted for themes
+
+/////////////
+/// COLOR ///
+/////////////
+// Color is abstracted for themes
+
+// Default: Primary (White background)
 input.form-control,
-text-area.form-control {
+textarea.form-control {
     @include box-shadow(none);
     @include transition(none);
     color: $win-color-type-primary;
@@ -191,7 +197,6 @@ text-area.form-control {
     &::-moz-placeholder             {color: $win-color-type-secondary;}
 
     &:hover {
-        background-color: $win-color-fl-50-alt;
         border-color: $win-color-fl-70;
     }
 
@@ -371,9 +376,13 @@ select[multiple].form-control {
     }
 }
 
-form.win-color-alt,
-form .win-color-alt {
-    background: $win-color-fl-accent;
+// Alt (Black background)
+// Currently Alt and on-img-dark are identical
+form.win-theme-alt,
+form .win-theme-alt,
+form.win-theme-on-img-dark,
+form .win-theme-on-img-dark {
+
     label {
         color: $win-color-type-primary-alt;
     }
@@ -381,5 +390,124 @@ form .win-color-alt {
     label.disabled,
     .form-group-label.disabled {
         color: $win-color-type-disabled-alt;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-color: $win-color-fl-50-alt;
+        background-color: $win-color-fl-60;
+        color: $win-color-type-primary-alt;
+
+        &:-ms-input-placeholder         {color: $win-color-type-secondary-alt;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary-alt;}
+        &:-moz-placeholder              {color: $win-color-type-secondary-alt;}
+        &::-moz-placeholder             {color: $win-color-type-secondary-alt;}
+
+        &:hover {
+            border-color: $win-color-fl-60-alt;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: $win-color-fl-accent;
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25-alt;
+            color: $win-color-type-disabled-alt;
+            background-color: $win-color-fl-25;
+        }
+    }
+}
+
+// On Solid Color
+form.win-theme-on-color,
+form .win-theme-on-color {
+
+    label {
+        color: $win-color-type-primary-alt;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled-alt;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-color: $win-color-fl-70-alt;
+        background-color: $win-color-fl-50-alt;
+
+        &:-ms-input-placeholder         {color: $win-color-type-secondary;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
+        &:-moz-placeholder              {color: $win-color-type-secondary;}
+        &::-moz-placeholder             {color: $win-color-type-secondary;}
+
+        &:hover {
+            background-color: $win-color-fl-60-alt;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: rgba($win-color-fl-accent, .6);
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25-alt;
+            color: $win-color-type-disabled-alt;
+            background-color: $win-color-fl-25-alt;
+        }
+    }
+}
+
+// On light image background
+form.win-theme-on-img-light,
+form .win-theme-on-img-light {
+
+    label {
+        color: $win-color-type-primary;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        color: $win-color-type-primary;
+        background-color: $win-color-fl-60-alt;
+        border-color: $win-color-fl-50;
+
+        // Hint text color
+        // Single colon on -ms not a typo
+        &:-ms-input-placeholder         {color: $win-color-type-secondary;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
+        &:-moz-placeholder              {color: $win-color-type-secondary;}
+        &::-moz-placeholder             {color: $win-color-type-secondary;}
+
+        &:hover {
+            border-color: $win-color-fl-70;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: $win-color-fl-accent;
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25;
+            color: $win-color-type-disabled;
+            background-color: $win-color-fl-20-alt;
+        }
     }
 }

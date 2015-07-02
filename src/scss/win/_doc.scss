@@ -144,7 +144,7 @@
 }
 
 
-// Basel background colors 
+// Basel background colors
 &.win-color-bg-10 {
     background: $win-color-bg-10;
 }
@@ -286,7 +286,7 @@
 }
 
 
-// Basel alt background colors 
+// Basel alt background colors
 &.win-color-bg-10-alt {
     background: $win-color-bg-10-alt;
 }
@@ -459,4 +459,16 @@ code {
 
 #tiles > .row > .col-md-3 {
     margin-right: 8px;
+}
+
+.ws-example-dark-image-bg {
+    background-image: url('../images/example_dark.jpg');
+    background-position: top left;
+    background-size: cover;
+}
+
+.ws-example-light-image-bg {
+    background-image: url('../images/example_light.jpg');
+    background-position: top right;
+    background-size: cover;
 }
