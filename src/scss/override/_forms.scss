@@ -5,43 +5,18 @@ input.form-control,
 textarea.form-control {
     -ms-user-select: element;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 0;
-    margin: 0;
-    width: 296px;
-    min-width: 64px;
-    min-height: 28px;
+    border-width: 1px;
+    border-radius: $border-radius-base;
+    margin-top: win-spacer(xxs, -10);
+    margin-bottom: win-spacer(xs, -4);
+    max-width: 296px;
+    min-width: 88px;
+    min-height: 36px;
     background-clip: border-box;
     box-sizing: border-box;
-    padding: 3px 6px 5px 10px;
+    padding-left: win-spacer(xxs, -1);
     vertical-align: top;
     outline: 0;
-
-    @include win-type-body();
-    @include box-shadow(none);
-    @include transition(none);
-
-    color: $win-color-type-primary;
-    background-color: $win-color-type-primary-alt;
-    border-color: $win-color-fl-40;
-
-    // Hint text color
-    // Single colon on -ms not a typo
-    &:-ms-input-placeholder {color: $win-color-type-secondary;}
-    &::-webkit-input-placeholder {color: $win-color-type-secondary;}
-    &::-moz-input-placeholder {color: $win-color-type-secondary;}
-
-    &:hover {
-        background-color: $win-color-fl-50-alt;
-        border-color: $win-color-fl-50;
-    }
-
-    &:focus {
-        color: $win-color-dark;
-        background-color: $win-color-light;
-        border-color: $win-color-fl-accent;
-        @include box-shadow(none);
-    }
 }
 
 input.form-control::-ms-value {
@@ -51,24 +26,10 @@ input.form-control::-ms-value {
 
 input.form-control::-ms-clear,
 input.form-control::-ms-reveal {
-    padding-right: 2px;
     margin-right: -8px;
-    margin-left: 2px;
-    margin-top: -8px;
-    margin-bottom: -8px;
-    width: 30px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: block;
-
-    color: $win-color-type-secondary;
-
-    &:hover {
-        color: $win-color-fl-accent;
-    }
-    &:active {
-        color: $win-color-light;
-        background-color: $win-color-fl-accent;
-    }
 }
 
 textarea.form-control {
@@ -92,12 +53,6 @@ select.form-control {
     box-sizing: border-box;
     border-radius: 0;
     @include win-type-body();
-    @include box-shadow(none);
-    @include transition(none);
-
-    color: $win-color-type-primary;
-    background-color: $win-color-fl-20;
-    border-color: $win-color-fl-40;
 
     &::-ms-value {
         padding: 5px 12px 7px 12px;
@@ -109,14 +64,183 @@ select.form-control {
         margin-left: 3px;
         margin-bottom: -2px;
         font-size: 20px;
+    }
+}
 
+select[multiple].form-control {
+    border: none;
+}
+
+//
+// Checkbox / Radio
+//
+.form-group {
+    .checkbox:first-of-type,
+    .radio:first-of-type {
+        margin-top: win-spacer(xs, -2)
+    }
+
+    .checkbox:last-of-type,
+    .radio:last-of-type {
+        margin-bottom: win-spacer(xs, 3);
+    }
+
+    label,
+    .form-group-label {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 0;
+        line-height: 1em;
+        vertical-align: top;
+    }
+
+    margin-bottom: win-spacer(xs, -2);
+
+}
+
+// Common checkbox and radio styles
+.radio + .radio,
+.checkbox + .checkbox {
+    margin-top: initial;
+}
+
+.checkbox,
+.radio {
+    margin: win-spacer(xs, -2) 0;
+
+    & input[type=checkbox],
+    & input[type=radio] {
+        width: 20px;
+        height: 20px;
+        margin-left: -28px;
+        margin-top: 0;
+    }
+
+    & label {
+        padding-left: 0px;
+        font-weight: 400;
+        margin-left: 28px;
+        min-height: initial;
+        line-height: 20px;
+
+        span::before {
+            border-width: 1px;
+            border-style: solid;
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+// Checkbox only
+.checkbox {
+
+    & label {
+        input:checked ~ span::before {
+            font-family: $win-font-symbols;
+            text-indent: 2px;
+            line-height: 1em;
+            padding-top: 2px;
+        }
+
+        input:indeterminate ~ span::before {
+            text-indent: 2px;
+            line-height: 12px;
+            font-size: 17px;
+            padding-top: 2px;
+        }
+    }
+
+}
+
+// Radio only
+.radio {
+
+    & label {
+        span::before {
+            border-radius: 100%;
+        }
+
+        input:checked ~ span::before {
+            text-indent: 0px;
+            line-height: 6px;
+            padding-top: 2px;
+            font-size: 45px;
+        }
+    }
+}
+
+
+/////////////
+/// COLOR ///
+/////////////
+// Color is abstracted for themes
+
+// Default: Primary (White background)
+input.form-control,
+textarea.form-control {
+    @include box-shadow(none);
+    @include transition(none);
+    color: $win-color-type-primary;
+    background-color: $win-color-fl-60-alt;
+    border-color: $win-color-fl-50;
+
+    // Hint text color
+    &:-ms-input-placeholder         {color: $win-color-type-secondary;}
+    &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
+    &:-moz-placeholder              {color: $win-color-type-secondary;}
+    &::-moz-placeholder             {color: $win-color-type-secondary;}
+
+    &:hover {
+        border-color: $win-color-fl-70;
+    }
+
+    &:focus {
+        color: $win-color-type-primary;
+        background-color: $win-color-fl-70-alt;
+        border-color: $win-color-fl-accent;
+        @include box-shadow(none);
+    }
+
+    &:disabled,
+    &[disabled], {
+        border-color: $win-color-fl-25;
+        color: $win-color-type-disabled;
+        background-color: $win-color-fl-20-alt;
+    }
+}
+
+input.form-control::-ms-clear,
+input.form-control::-ms-reveal {
+    color: $win-color-fl-50;
+    &:hover {
+        color: $win-color-fl-accent;
+    }
+    &:active {
+        color: $win-color-light;
+        background-color: $win-color-fl-accent;
+    }
+}
+
+select.form-control {
+    @include box-shadow(none);
+    @include transition(none);
+    color: $win-color-type-primary;
+    background-color: $win-color-fl-20;
+    border-color: $win-color-fl-40;
+
+    &::-ms-expand {
         color: $win-color-type-primary;
         background-color: transparent;
     }
 
     &:focus,
     &:active {
-    @include box-shadow(none);
+        @include box-shadow(none);
         border-color: $win-color-fl-50;
     }
     &:hover {
@@ -155,7 +279,6 @@ select.form-control {
 }
 
 select[multiple].form-control {
-    border: none;
     background-color: $win-color-fl-10;
 
     option {
@@ -170,62 +293,24 @@ select[multiple].form-control {
     }
 }
 
-//
-// Checkbox / Radio
-//
-
 .form-group {
-    .checkbox:first-of-type,
-    .radio:first-of-type {
-        margin-top: win-spacer(xxs, 4)
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled;
     }
-
-    .form-group-label {
-        font-size: 15px;
-        font-weight: 400;
-        margin-bottom: 0;
-        line-height: 1em;
-    }
-
-    margin-bottom: win-spacer(sm);
-
 }
 
-// Common checkbox and radio styles
 .checkbox,
 .radio {
-    margin: win-spacer(xs) 0;
-
-    & input[type=checkbox],
-    & input[type=radio] {
-        width: 20px;
-        height: 20px;
-        margin-left: -28px;
-        margin-top: 0;
-    }
 
     & label {
-        padding-left: 0px;
-        font-weight: 400;
-        margin-left: 28px;
-        min-height: initial;
-        line-height: 20px;
-
         input[type=checkbox],
         input[type=radio] {
             opacity: 0;
         }
 
         span::before {
-            border-width: 1px;
-            border-style: solid;
             border-color: $win-color-fl-60;
-            content: "";
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            left: 0;
-            cursor: pointer;
         }
 
         input:disabled {
@@ -241,7 +326,6 @@ select[multiple].form-control {
     }
 }
 
-// Checkbox only
 .checkbox {
 
     & label {
@@ -249,19 +333,11 @@ select[multiple].form-control {
             background-color: $win-color-fl-accent;
             border-color: $win-color-fl-accent;
             color: $win-color-fl-70-alt;
-            font-family: $win-font-symbols;
-            text-indent: 2px;
-            line-height: 1em;
-            padding-top: 2px;
         }
 
         input:indeterminate ~ span::before {
             border-color: $win-color-fl-accent;
             color: $win-color-fl-60;
-            text-indent: 2px;
-            line-height: 12px;
-            font-size: 17px;
-            padding-top: 2px;
         }
     }
 
@@ -277,21 +353,12 @@ select[multiple].form-control {
     }
 }
 
-// Radio only
-.radio { 
+.radio {
 
     & label {
-        span::before {
-            border-radius: 100%;
-        }
-
         input:checked ~ span::before {
             border-color: $win-color-fl-accent;
             color: $win-color-fl-70;
-            text-indent: 0px;
-            line-height: 6px;
-            padding-top: 2px;
-            font-size: 45px;
         }
     }
 
@@ -304,6 +371,142 @@ select[multiple].form-control {
 
         input:disabled ~ span::before {
             border-color: $win-color-fl-25;
+        }
+    }
+}
+
+// Alt (Black background)
+// Currently Alt and on-img-dark are identical
+form.win-theme-alt,
+form .win-theme-alt,
+form.win-theme-on-img-dark,
+form .win-theme-on-img-dark {
+
+    label {
+        color: $win-color-type-primary-alt;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled-alt;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-color: $win-color-fl-50-alt;
+        background-color: $win-color-fl-60;
+        color: $win-color-type-primary-alt;
+
+        &:-ms-input-placeholder         {color: $win-color-type-secondary-alt;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary-alt;}
+        &:-moz-placeholder              {color: $win-color-type-secondary-alt;}
+        &::-moz-placeholder             {color: $win-color-type-secondary-alt;}
+
+        &:hover {
+            border-color: $win-color-fl-60-alt;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: $win-color-fl-accent;
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25-alt;
+            color: $win-color-type-disabled-alt;
+            background-color: $win-color-fl-25;
+        }
+    }
+}
+
+// On Solid Color
+form.win-theme-on-color,
+form .win-theme-on-color {
+
+    label {
+        color: $win-color-type-primary-alt;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled-alt;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-color: $win-color-fl-70-alt;
+        background-color: $win-color-fl-50-alt;
+
+        &:-ms-input-placeholder         {color: $win-color-type-secondary;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
+        &:-moz-placeholder              {color: $win-color-type-secondary;}
+        &::-moz-placeholder             {color: $win-color-type-secondary;}
+
+        &:hover {
+            background-color: $win-color-fl-60-alt;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: rgba($win-color-fl-accent, .6);
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25-alt;
+            color: $win-color-type-disabled-alt;
+            background-color: $win-color-fl-25-alt;
+        }
+    }
+}
+
+// On light image background
+form.win-theme-on-img-light,
+form .win-theme-on-img-light {
+
+    label {
+        color: $win-color-type-primary;
+    }
+
+    label.disabled,
+    .form-group-label.disabled {
+        color: $win-color-type-disabled;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        color: $win-color-type-primary;
+        background-color: $win-color-fl-60-alt;
+        border-color: $win-color-fl-50;
+
+        // Hint text color
+        // Single colon on -ms not a typo
+        &:-ms-input-placeholder         {color: $win-color-type-secondary;}
+        &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
+        &:-moz-placeholder              {color: $win-color-type-secondary;}
+        &::-moz-placeholder             {color: $win-color-type-secondary;}
+
+        &:hover {
+            border-color: $win-color-fl-70;
+        }
+
+        &:focus {
+            color: $win-color-type-primary;
+            background-color: $win-color-fl-70-alt;
+            border-color: $win-color-fl-accent;
+            @include box-shadow(none);
+        }
+
+        &:disabled,
+        &[disabled], {
+            border-color: $win-color-fl-25;
+            color: $win-color-type-disabled;
+            background-color: $win-color-fl-20-alt;
         }
     }
 }
