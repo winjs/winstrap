@@ -1,4 +1,4 @@
-﻿// Icon font
+// Icon font
 @font-face {
     font-family: "winjs-symbols";
     src: url("#{$icon-font-path}/winjs-symbols.eot");
@@ -41,24 +41,50 @@
          url("../fonts/selawksl.ttf") format("truetype");
 }
 
-@mixin responsive-type($font, $lh) {
-    // Produce the proper responsive type attributes with optional argument for no line height
-    font-family:        map-deep-get($win-fonts, $font, "font-family");
-    font-size:          map-deep-get($win-fonts, $font, "size-xs");
-    font-weight:        map-deep-get($win-fonts, $font, "font-weight-xs");
-    @if not ("#{$lh}" == "no-line-height") {
-        line-height:    (map-deep-get($win-fonts, $font, "line-height-xs") / map-deep-get($win-fonts, $font, "size-xs"));
+// Produce the proper responsive type attributes with optional arguments for no line height and no responsive font size.
+@mixin responsive-type($font, $options) {
+    $responsive: "true";
+    $set-line-height: "true";
+
+    @each $option in $options {
+        @if ($option == "no-responsive") {
+            $responsive: "false";
+        }
+
+        @if ($option == "no-line-height") {
+            $set-line-height: "false";
+        }
+    }
+    
+    font-family:            map-deep-get($win-fonts, $font, "font-family");
+    font-weight:            map-deep-get($win-fonts, $font, "font-weight-xs");
+
+    @if (#{$responsive} == "true") {
+        font-size:          map-deep-get($win-fonts, $font, "size-xs");
+    } @else {
+        font-size:          map-deep-get($win-fonts, $font, "size-md");
+    }
+
+    @if (#{$set-line-height} == "true") {
+        line-height:        (map-deep-get($win-fonts, $font, "line-height-xs") / map-deep-get($win-fonts, $font, "size-xs"));
     }
 
     @media (min-width: $screen-md-min) {
-        font-size:      map-deep-get($win-fonts, $font, "size-md");
-        @if not ("#{$lh}" == "no-line-height") {
+        @if (#{$responsive} == "true") {
+            font-size:      map-deep-get($win-fonts, $font, "size-md");
+        }
+
+        @if (#{$set-line-height} == "true") {
             line-height:    (map-deep-get($win-fonts, $font, "line-height-md") / map-deep-get($win-fonts, $font, "size-md"));
         }
     }
+
     @media (min-width: $screen-xl-min) {
-        font-size:      map-deep-get($win-fonts, $font, "size-xl");
-        @if not ("#{$lh}" == "no-line-height") {
+        @if (#{$responsive} == "true") {
+            font-size:      map-deep-get($win-fonts, $font, "size-xl");
+        }
+
+        @if (#{$set-line-height} == "true") {
             line-height:    (map-deep-get($win-fonts, $font, "line-height-xl") / map-deep-get($win-fonts, $font, "size-xl"));
         }
     }
@@ -66,37 +92,37 @@
 }
 
 // Responsive Typography mixins
-@mixin win-type-headline($lh...) {
+@mixin win-type-headline($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(headline, $lh);
+    @include responsive-type(headline, $options);
 }
-@mixin win-type-header($lh...) {
+@mixin win-type-header($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(header, $lh);
+    @include responsive-type(header, $options);
 }
-@mixin win-type-subheader($lh...) {
-    @include responsive-type(subheader, $lh);
+@mixin win-type-subheader($options...) {
+    @include responsive-type(subheader, $options);
 }
-@mixin win-type-title($lh...) {
-    @include responsive-type(title, $lh);
+@mixin win-type-title($options...) {
+    @include responsive-type(title, $options);
 }
-@mixin win-type-subtitle($lh...) {
-    @include responsive-type(subtitle, $lh);
+@mixin win-type-subtitle($options...) {
+    @include responsive-type(subtitle, $options);
 }
-@mixin win-type-subtitle-alt($lh...) {
-    @include responsive-type(subtitle-alt, $lh);
+@mixin win-type-subtitle-alt($options...) {
+    @include responsive-type(subtitle-alt, $options);
 }
-@mixin win-type-base($lh...) {
-    @include responsive-type(base, $lh);
+@mixin win-type-base($options...) {
+    @include responsive-type(base, $options);
 }
-@mixin win-type-body($lh...) {
-    @include responsive-type(body, $lh);
+@mixin win-type-body($options...) {
+    @include responsive-type(body, $options);
 }
-@mixin win-type-caption($lh...) {
-    @include responsive-type(caption, $lh);
+@mixin win-type-caption($options...) {
+    @include responsive-type(caption, $options);
 }
-@mixin win-type-caption-alt($lh...) {
-    @include responsive-type(caption-alt, $lh);
+@mixin win-type-caption-alt($options...) {
+    @include responsive-type(caption-alt, $options);
 }
 
 // Apply mixins to typography classes
@@ -130,4 +156,3 @@ h6, .h6, .win-type-caption, .text-caption {
 .win-type-caption-alt, .text-caption-alt {
     @include win-type-caption-alt();
 }
-
