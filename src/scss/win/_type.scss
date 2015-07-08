@@ -55,7 +55,7 @@
             $set-line-height: "false";
         }
     }
-    
+
     font-family:            map-deep-get($win-fonts, $font, "font-family");
     font-weight:            map-deep-get($win-fonts, $font, "font-weight-xs");
 
@@ -92,6 +92,10 @@
 }
 
 // Responsive Typography mixins
+//
+// Optional arguments:
+// no-line-height   (does not set line height)
+// no-responsive    (does not set responsive font size)
 @mixin win-type-headline($options...) {
     letter-spacing: -0.01em;
     @include responsive-type(headline, $options);

@@ -112,6 +112,19 @@ a.win-link-on-dark {
     border-width: 1px;
     border-style: solid;
 
+    .stateLabel {
+        position: absolute;
+        top: 1px;
+        left: 54px;
+        line-height: 1;
+        @include win-type-body(no-responsive, no-line-height);
+    }
+
+    .stateLabel-on {
+        display: none;
+    }
+
+    // Indicator circle
     &::before {
         content: '';
         position: absolute;
@@ -120,18 +133,6 @@ a.win-link-on-dark {
         top: 4px;
         left: 4px;
         border-radius: $toggle-switch-indicator-size / 2;
-    }
-
-    .stateLabel-on {
-        display: none;
-    }
-
-    .stateLabel {
-        position: absolute;
-        top: 1px;
-        left: 54px;
-        line-height: 1;
-        @include win-type-body(no-responsive, no-line-height);
     }
 
     &.active {
