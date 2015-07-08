@@ -190,7 +190,6 @@ textarea.form-control {
     border-color: $win-color-fl-50;
 
     // Hint text color
-    // Single colon on -ms not a typo
     &:-ms-input-placeholder         {color: $win-color-type-secondary;}
     &::-webkit-input-placeholder    {color: $win-color-type-secondary;}
     &:-moz-placeholder              {color: $win-color-type-secondary;}
