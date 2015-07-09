@@ -5,33 +5,44 @@
         </h1>
     </header>
 
-    <div class="row">
+    <div class="row" style="margin-bottom: 1em;">
         <div class="col-xs-24">
             <p>
                 This is <a href="" data-toggle="tooltip" title="Tooltip content">a simple tooltip</a> on top (default).
-                On <a href="" data-toggle="tooltip" data-placement="right" title="Tooltip content">right</a>.
-                On the <a href="" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">bottom</a>.
                 On the <a href="" data-toggle="tooltip" data-placement="left" title="Tooltip content">left</a>.
-            </p>
-            <p>
-                You can also place them on buttons.
-                <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip content">Tooltip top</button>
-                <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip content">Tooltip right</button>
-                <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">Tooltip bottom</button>            
-                <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip content">Tooltip left</button>               
+                On the <a href="" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">bottom</a>.
+                On the <a href="" data-toggle="tooltip" data-placement="right" title="Tooltip content">right</a>.
             </p>
         </div>
+    </div>
 
+    <div class="row" style="margin-bottom: 2em;">
+        <div class="col-xs-24">
+            <p>You can also place them on buttons.</p>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip content">Tooltip left</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip content">Tooltip top</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">Tooltip bottom</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip content">Tooltip right</button>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 2em;">
+        <div class="col-xs-24">
+            <p>Tooltips are also available in alt color.</p>
+            <button class="btn btn-primary win-theme-alt" data-toggle="tooltip" data-placement="right" title="Tooltip content">Tooltip in alt color</button>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-12">
-            <p>
-                To enable the tooltip on the HTML:
-            </p>
+            <p>To enable the tooltip on the HTML:</p>
 
             {{#markdown}}
 ```xml
 <span data-toggle="tooltip"
      [data-placement="top|right|bottom|left"]
-      title="Tooltip content">
+      title="Tooltip content"
+      class="[win-theme-alt] [win-theme-on-color] [win-theme-on-img-light] [win-theme-on-img-dark]">
     Has a tooltip
 </span>
 ```
@@ -39,10 +50,8 @@
         </div>
 
         <div class="col-md-12">
-            <p>
-                And the required JavaScript initialization:
-            </p>
-
+            <p>And the required JavaScript initialization:</p>
+            
             {{#markdown}}
 ```javascript
 $(function () {
