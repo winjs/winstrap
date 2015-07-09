@@ -2,9 +2,10 @@
     @include win-type-caption(no-responsive);
 
     .tooltip-inner {
-    padding: 7px 8px 9px 8px;
-    border-style: solid;
-    border-width: 1px;
+        padding: 7px 8px 9px 8px;
+        border-style: solid;
+        border-width: 1px;
+        text-align: left;
     }
 
     .tooltip-arrow {
