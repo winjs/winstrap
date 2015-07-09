@@ -14,13 +14,10 @@
 
     // Colors
     // On light surface (default), on light image
-    &,
-    .win-theme-on-img-light + & {
-        .tooltip-inner {
-            border-color: $win-color-fl-30;
-            background-color: $win-color-bg-20;
-            color: $win-color-type-primary;
-        }
+    .tooltip-inner {
+        border-color: $win-color-fl-30;
+        background-color: $win-color-bg-20;
+        color: $win-color-type-primary;
     }
 
     // On dark surface, on colored background, on dark image
