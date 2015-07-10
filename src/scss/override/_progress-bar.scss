@@ -9,7 +9,8 @@
         background-color: $win-color-fl-accent;
     }
 
-    &.win-theme-alt {
+    &.win-theme-alt, 
+    &.win-theme-on-img-dark {
         background-color: $win-color-fl-25-alt;
 
         .progress-bar {
