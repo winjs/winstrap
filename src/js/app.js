@@ -86,4 +86,13 @@
 
     // Tooltips
     $('[data-toggle="tooltip"]').tooltip();
+
+    // Flyouts
+    $('[data-toggle="popover"]').popover();
+
+    $('#btn-close').popover({
+        placement: 'right',
+        html: 'true',
+        content: 'This is a flyout with a button. <button type="button" class="btn btn-default" onclick="$(&quot;#btn-close&quot;).popover(&quot;hide&quot;);">button</button>'
+    });
 });

@@ -542,11 +542,11 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          $win-color-light !default;
+$popover-bg:                          $win-color-bg-20 !default;
 //** Popover maximum width
-$popover-max-width:                   276px !default;
+$popover-max-width:                   296px !default;
 //** Popover border color
-$popover-border-color:                rgba(0,0,0,.2) !default;
+$popover-border-color:                $win-color-fl-30 !default;
 //** Popover fallback border color
 $popover-fallback-border-color:       #ccc !default;
 
