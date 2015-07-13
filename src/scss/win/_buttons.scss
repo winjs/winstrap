@@ -1,3 +1,10 @@
+//
+// Static resources
+//
+$toggle-switch-width:           44px;
+$toggle-switch-height:          20px;
+$toggle-switch-indicator-size:  10px;
+
 // Button filter
 .win-button-filter {
   border-color: $win-color-fl-50;
@@ -16,7 +23,7 @@
 
     &:hover,
     &:focus,
-    &.focus, 
+    &.focus,
     .open > &.dropdown-toggle{
         color: $btn-on-light-color;
         background-color: $btn-on-light-bg;
@@ -55,7 +62,7 @@
 
     &:hover,
     &:focus,
-    &.focus, 
+    &.focus,
     .open > &.dropdown-toggle{
         color: $btn-on-dark-color;
         background-color: $btn-on-dark-bg;
@@ -95,4 +102,179 @@ a.win-link-on-light {
 a.win-link-on-dark {
     text-decoration: underline;
     color: $win-color-type-primary-alt;
+}
+
+// Toggle switch button
+.btn[data-toggle="button"].btn-toggle-switch {
+    position: relative;
+    width: $toggle-switch-width;
+    min-width: $toggle-switch-width;
+    max-width: $toggle-switch-width;
+    height: $toggle-switch-height;
+    border-radius: $toggle-switch-height / 2;
+    border-width: 1px;
+    border-style: solid;
+
+    .stateLabel {
+        position: absolute;
+        top: 1px;
+        left: 54px;
+        line-height: 1;
+        @include win-type-body(no-responsive, no-line-height);
+    }
+
+    .stateLabel-on {
+        display: none;
+    }
+
+    // Indicator circle
+    &::before {
+        content: '';
+        position: absolute;
+        width: $toggle-switch-indicator-size;
+        height: $toggle-switch-indicator-size;
+        top: 4px;
+        left: 4px;
+        border-radius: $toggle-switch-indicator-size / 2;
+    }
+
+    &.active {
+        &::before {
+            left: 28px;
+        }
+
+        .stateLabel-on {
+            display: block;
+        }
+
+        .stateLabel-off {
+            display: none;
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // On light surface and on light image
+    &,
+    &.win-theme-on-img-light {
+        background-color: transparent;
+        border-color: $win-color-fl-60;
+
+        &::before {
+            background-color: $win-color-fl-60;
+        }
+
+        .stateLabel {
+            color: $win-color-type-primary;
+        }
+
+        &.active {
+            background-color: $win-color-fl-accent;
+            border-color: transparent;
+
+            &::before {
+                background-color: $win-color-bg-10;
+            }
+        }
+
+        &:disabled {
+            border-color: $win-color-fl-25;
+
+            &::before {
+                background-color: $win-color-fl-25;
+            }
+
+            .stateLabel {
+                color: $win-color-type-disabled;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $win-color-fl-25;
+            }
+        }
+    }
+
+    // On dark surface and on dark image
+    &.win-theme-alt,
+    &.win-theme-on-img-dark {
+        background-color: transparent;
+        border-color: $win-color-fl-60-alt;
+
+        &::before {
+            background-color: $win-color-fl-60-alt;
+        }
+
+        .stateLabel {
+            color: $win-color-type-primary-alt;
+        }
+
+        &.active {
+            background-color: $win-color-fl-accent;
+            border-color: transparent;
+
+            &::before {
+                background-color: $win-color-bg-10;
+            }
+        }
+
+        &:disabled {
+            border-color: $win-color-fl-25-alt;
+
+            &::before {
+                background-color: $win-color-fl-25-alt;
+            }
+
+            .stateLabel {
+                color: $win-color-type-disabled-alt;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $win-color-fl-25-alt;
+            }
+        }
+    }
+
+    // On colored surface
+    &.win-theme-on-color {
+        background-color: transparent;
+        border-color: $win-color-fl-60-alt;
+
+        &::before {
+            background-color: $win-color-fl-60-alt;
+        }
+
+        .stateLabel {
+            color: $win-color-type-primary-alt;
+        }
+
+        &.active {
+            background-color: $win-color-bg-10;
+            border-color: transparent;
+
+            &::before {
+                background-color: $win-color-fl-accent;
+            }
+        }
+
+        &:disabled {
+            border-color: $win-color-fl-25-alt;
+
+            &::before {
+                background-color: $win-color-fl-25-alt;
+            }
+
+            .stateLabel {
+                color: $win-color-type-disabled-alt;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $win-color-fl-25-alt;
+            }
+        }
+    }
 }

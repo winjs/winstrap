@@ -166,7 +166,7 @@
 <button type="button" class="btn btn-primary">Normal button</button>
 <button type="button" class="btn btn-primary btn-lg">Large button</button>
 ```
-                {{/markdown}} 
+                {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
@@ -184,7 +184,7 @@
 <button type="button" class="btn btn-primary btn-block">Normal block button</button>
 <button type="button" class="btn btn-primary btn-block btn-lg">Large block button</button>
 ```
-                {{/markdown}}             
+                {{/markdown}}
                 </div>
             </div>
 
@@ -208,6 +208,88 @@
 ```
                 {{/markdown}}
               </div>
+            </div>
+
+            <!-- Toggle switch -->
+            <div class="row">
+                <div class="col-md-24">
+                    <h2>Toggle Switch Button</h2>
+                    <!-- On light background -->
+                    <div style="padding: 1em; margin-bottom: 0.5em;">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
+                            <span class="stateLabel stateLabel-on">On</span>
+                            <span class="stateLabel stateLabel-off">Off</span>
+                        </button>
+                    </div>
+
+                    {{#markdown}}
+```xml
+<button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
+    <span class="stateLabel stateLabel-on">On</span>
+    <span class="stateLabel stateLabel-off">Off</span>
+</button>
+```
+                    {{/markdown}}
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- On dark background -->
+                <div class="col-md-6">
+                    <h4>Alt</h4>
+                    <div class="win-color-dark" style="padding: 1em; margin-bottom: 0.5em;">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-alt" autocomplete="off" aria-pressed="false">
+                            <span class="stateLabel stateLabel-on">On</span>
+                            <span class="stateLabel stateLabel-off">Off</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- On colored background -->
+                <div class="col-md-6">
+                    <h4>On solid color</h4>
+                    <div class="win-color-fill-accent" style="padding: 1em; margin-bottom: 0.5em;">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-color" autocomplete="off" aria-pressed="false">
+                            <span class="stateLabel stateLabel-on">On</span>
+                            <span class="stateLabel stateLabel-off">Off</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- On light image -->
+                <div class="col-md-6">
+                    <h4>On light image</h4>
+                    <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em; background-position: center;">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-img-light" autocomplete="off" aria-pressed="false">
+                            <span class="stateLabel stateLabel-on">On</span>
+                            <span class="stateLabel stateLabel-off">Off</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- On dark image -->
+                <div class="col-md-6">
+                    <h4>On dark image</h4>
+                    <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-img-dark" autocomplete="off" aria-pressed="false">
+                            <span class="stateLabel stateLabel-on">On</span>
+                            <span class="stateLabel stateLabel-off">Off</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-24">
+                    {{#markdown}}
+```xml
+<button type="button" data-toggle="button" class="btn btn-toggle-switch [win-theme-alt] [win-theme-on-color] [win-theme-on-img-light] [win-theme-on-img-dark]" autocomplete="off" aria-pressed="false">
+    <span class="stateLabel stateLabel-on">On</span>
+    <span class="stateLabel stateLabel-off">Off</span>
+</button>
+```
+                    {{/markdown}}
+                </div>
             </div>
         </section>
     </div>
