@@ -95,7 +95,7 @@
 //
 // Optional arguments:
 // no-line-height   (does not set line height)
-// no-responsive    (does not set responsive font size)
+// no-responsive    (fixes the size to the md breakpoint)
 @mixin win-type-headline($options...) {
     letter-spacing: -0.01em;
     @include responsive-type(headline, $options);

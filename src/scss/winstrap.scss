@@ -23,12 +23,9 @@
 
 // Mixins that override bootstrap mixins
 @import "override/mixins/buttons";
-@import "override/mixins/grid-framework";
-@import "override/mixins/grid";
-
-@import "override/grid";
 
 // Overridden components
+@import "override/grid";
 @import "override/scaffolding";
 @import "override/labels";
 @import "override/nav";

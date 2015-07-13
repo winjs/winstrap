@@ -1,3 +1,6 @@
+//
+// Static resources
+//
 $toggle-switch-width:           44px;
 $toggle-switch-height:          20px;
 $toggle-switch-indicator-size:  10px;
@@ -149,7 +152,10 @@ a.win-link-on-dark {
         }
     }
 
+    //
     // Colors
+    //
+
     // On light surface and on light image
     &,
     &.win-theme-on-img-light {
