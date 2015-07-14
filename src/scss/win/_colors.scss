@@ -7,99 +7,95 @@
 // Use RGBA for colors with < 100% opacity
 // You can convert HEX to RGBA using the rgba($color, opacity) function
 
-// Base
-$win-color-light:                       #FFFFFF;
-$win-color-dark:                        #000000;
+
+// Fixed colors
+$color-light:                       #FFFFFF;
+$color-dark:                        #000000;
+$color-accent:                      #0078D7;
+$color-alert:                       #D02E00;
 
 
-// Text Colors
-$win-color-type-primary:                $win-color-dark;
-$win-color-type-secondary:              rgba($win-color-type-primary, 0.6);
-$win-color-type-disabled:               rgba($win-color-type-primary, 0.2);
-$win-color-type-accent:                 #0070BC;
-$win-color-type-alert:                  #D02E00;
+// Primary brand colors
+$color-bgc-blue:                    #0078D7;
+$color-bgc-purple:                  #5C2D91;
+$color-bgc-magenta:                 #B4009E;
+$color-bgc-red:                     #E81123;
+$color-bgc-orange:                  #D83B01;
+$color-bgc-yellow:                  #FFB900;
+$color-bgc-green:                   #107C10;
+$color-bgc-teal:                    #008272;
 
-$win-color-type-primary-alt:            $win-color-light;
-$win-color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
-$win-color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
-$win-color-type-accent-alt:             #008EEF;
-$win-color-type-alert-alt:              #D02E00;
+
+// Content accent colors
+$color-bgc-lightblue:               #00BCF2;
+$color-bgc-midblue:                 #00188F;
+$color-bgc-darkblue:                #002050;
+$color-bgc-lightpurple:             #B4A0FF;
+$color-bgc-darkpurple:              #32145A;
+$color-bgc-lightmagenta:            #E3008C;
+$color-bgc-darkmegenta:             #5C005C;
+$color-bgc-darkred:                 #A80000;
+$color-bgc-lightorange:             #FF8C00;
+$color-bgc-lightyellow:             #FFF100;
+$color-bgc-lightgreen:              #BAD80A;
+$color-bgc-darkgreen:               #004B1C;
+$color-bgc-lightteal:               #00B294;
+$color-bgc-darkteal:                #004B50;
+
+
+// Background colors
+$color-bg-light-vivid-high:         $win-color-light;
+$color-bg-light-vivid-mid:          #F2F2F2;
+$color-bg-light-vivid-low:          #E5E5E5;
+$color-bg-light-neutral-high:       #D9D9D9;
+$color-bg-light-neutral-mid:        #CCCCCC;
+
+$color-bg-dark-vivid-high:          $win-color-dark;
+$color-bg-dark-vivid-mid:           #191919;
+$color-bg-dark-vivid-low:           #262626;
+$color-bg-dark-neutral-high:        #333333;
+$color-bg-dark-neutral-mid:         #404040;
+
+
+// Text colors
+$color-type-primary:                $win-color-dark;
+$color-type-secondary:              rgba($win-color-type-primary, 0.6);
+$color-type-disabled:               rgba($win-color-type-primary, 0.2);
+$color-type-accent:                 $color-accent;
+$color-type-alert:                  $color-alert;
+
+$color-type-primary-alt:            $win-color-light;
+$color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
+$color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
+$color-type-accent-alt:             $color-accent;
+$color-type-alert-alt:              $color-alert;
 
 
 // Fills/Lines color & values
-$win-color-fl-10:                       rgba($win-color-dark, 0.05);
-$win-color-fl-20:                       rgba($win-color-dark, 0.1);
-$win-color-fl-25:                       rgba($win-color-dark, 0.2);
-$win-color-fl-30:                       rgba($win-color-dark, 0.3);
-$win-color-fl-40:                       rgba($win-color-dark, 0.4);
-$win-color-fl-50:                       rgba($win-color-dark, 0.6);
-$win-color-fl-60:                       rgba($win-color-dark, 0.8);
-$win-color-fl-70:                       $win-color-dark;
-$win-color-fl-accent:                   #0078D7;
-$win-color-fl-accent-low:               rgba($win-color-fl-accent, 0.4); 
-$win-color-fl-accent-medium:            rgba($win-color-fl-accent, 0.6); 
-$win-color-fl-accent-high:              rgba($win-color-fl-accent, 0.7); 
-$win-color-fl-alert:                    #D02E00;
+$color-dim-low:                     rgba($win-color-dark, 0.05);
+$color-dim-mid:                     rgba($win-color-dark, 0.1);
+$color-neutral-low:                 rgba($win-color-dark, 0.2);
+$color-neutral-mid:                 rgba($win-color-dark, 0.3);
+$color-neutral-high:                rgba($win-color-dark, 0.4);
+$color-vivid-low:                   rgba($win-color-dark, 0.6);
+$color-vivid-mid:                   rgba($win-color-dark, 0.8);
+$color-vivid-high:                  $win-color-dark;
 
-$win-color-fl-10-alt:                   rgba($win-color-light, 0.1);
-$win-color-fl-20-alt:                   rgba($win-color-light, 0.15);
-$win-color-fl-25-alt:                   rgba($win-color-light, 0.2);
-$win-color-fl-30-alt:                   rgba($win-color-light, 0.3);
-$win-color-fl-40-alt:                   rgba($win-color-light, 0.4);
-$win-color-fl-50-alt:                   rgba($win-color-light, 0.6);
-$win-color-fl-60-alt:                   rgba($win-color-light, 0.8);
-$win-color-fl-70-alt:                   $win-color-light;
-$win-color-fl-accent-alt:               $win-color-fl-accent;
-$win-color-fl-accent-low-alt:           $win-color-fl-accent-low;
-$win-color-fl-accent-medium-alt:        $win-color-fl-accent-medium;
-$win-color-fl-accent-high-alt:          $win-color-fl-accent-high;
-$win-color-fl-alert-alt:                $win-color-fl-alert;
+$color-dim-mid-alt:                 rgba($win-color-light, 0.1);
+$color-dim-high-alt:                rgba($win-color-light, 0.15);
+$color-neutral-low-alt:             rgba($win-color-light, 0.2);
+$color-neutral-mid-alt:             rgba($win-color-light, 0.3);
+$color-neutral-high-alt:            rgba($win-color-light, 0.4);
+$color-vivid-low-alt:               rgba($win-color-light, 0.6);
+$color-vivid-mid-alt:               rgba($win-color-light, 0.8);
+$color-vivid-high-alt:              $win-color-light;
 
-
-// Background Colors
-$win-color-bg-10:                       $win-color-light;
-$win-color-bg-20:                       #F2F2F2;
-$win-color-bg-30:                       #E5E5E5;
-$win-color-bg-40:                       #D9D9D9;
-$win-color-bg-50:                       #CCCCCC;
-
-$win-color-bg-10-alt:                   $win-color-dark;
-$win-color-bg-20-alt:                   #191919;
-$win-color-bg-30-alt:                   #262626;
-$win-color-bg-40-alt:                   #333333;
-$win-color-bg-50-alt:                   #404040;
-
-
-// Core colors
-// TODO: remove
-// These are not used by any components
-$win-color-core-yellow: #FFB900; 
-$win-color-core-orange: #D83B01; 
-$win-color-core-red: #E81123; 
-$win-color-core-magenta: #B4009E; 
-$win-color-core-purple: #5C2D91; 
-$win-color-core-blue: #0078D7;
-$win-color-core-teal: #008272; 
-$win-color-core-green: #107c10; 
-
-// Secondary colors
-// TODO: remove
-// These are not used by any components
-$win-color-secondary-magenta: #E3008C;
-$win-color-secondary-purple: #32145A;
-$win-color-secondary-blue: #00188F; 
-$win-color-secondary-teal: #004B50; 
-$win-color-secondary-green: #004B1C; 
-
-// Tertiary color
-// TODO: remove
-// These are not used by any components
-$win-color-tertiary-yellow: #FFF100;
-$win-color-tertiary-orange: #FF8C00;
-$win-color-tertiary-red: #A80000;
-$win-color-tertiary-magenta: #5C005C;
-$win-color-tertiary-purple: #B4A0FF;
-$win-color-tertiary-cyan: #00BCF2; 
-$win-color-tertiary-blue: #002050;
-$win-color-tertiary-teal: #00B294; 
-$win-color-tertiary-green: #BAD80A;
+$color-accent-dim-low:              rgba($color-accent, 0.05);
+$color-accent-dim-mid:              rgba($color-accent, 0.1);
+$color-accent-dim-high:             rgba($color-accent, 0.15);
+$color-accent-neutral-low:          rgba($color-accent, 0.2);
+$color-accent-neutral-mid:          rgba($color-accent, 0.3);
+$color-accent-neutral-high:         rgba($color-accent, 0.4);
+$color-accent-vivid-low:            rgba($color-accent, 0.6);
+$color-accent-vivid-mid:            rgba($color-accent, 0.8);
+$color-accent-vivid-high:           $color-accent;
