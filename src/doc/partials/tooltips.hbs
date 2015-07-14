@@ -28,7 +28,7 @@
             <button class="btn btn-primary win-theme-alt" data-toggle="tooltip" data-placement="right" title="Tooltip content">Tooltip in alt color</button>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-24" style="margin-bottom: 1em">
             <p>To enable the tooltip on the HTML:</p>
 
             {{#markdown}}
@@ -43,13 +43,15 @@
             {{/markdown}}
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-24">
             <p>And the required JavaScript initialization:</p>
 
             {{#markdown}}
 ```javascript
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
+    });
 });
 ```
             {{/markdown}}
