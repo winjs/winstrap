@@ -141,7 +141,7 @@
   &.active {
     background-color: $color-accent;
     border-color: transparent;
-    color: $color-light;
+    color: $color-white;
   }
   &.active:active {
     background-color: darken($color-accent, 5%);

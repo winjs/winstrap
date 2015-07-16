@@ -1,7 +1,7 @@
 ﻿// Override
 .alert {
   position: relative;
-  color: $color-light;
+  color: $color-white;
   border: none;
 
   &.alert-dismissible {
@@ -20,7 +20,7 @@
   }
 
   a {
-    color: $color-light;
+    color: $color-white;
   }
 }
 

@@ -1,4 +1,4 @@
-// Microsoft Basel branding color palette
+// Microsoft MDL color palette
 
 // WHEN DEFINING COLORS...
 // Opacity is the primary device used to ensure proper contrast ratio
@@ -7,88 +7,91 @@
 // Use RGBA for colors with < 100% opacity
 // You can convert HEX to RGBA using the rgba($color, opacity) function
 
+//
+// Color variables
+//
 
 // Base colors
-$color-light:                       #FFFFFF;
-$color-dark:                        #000000;
+$color-white:                       #FFFFFF;
+$color-black:                       #000000;
 $color-accent:                      #0078D7;
 $color-alert:                       #D02E00;
 
 
 // Primary brand colors
-$color-bgc-blue:                    #0078D7;
-$color-bgc-purple:                  #5C2D91;
-$color-bgc-magenta:                 #B4009E;
-$color-bgc-red:                     #E81123;
-$color-bgc-orange:                  #D83B01;
-$color-bgc-yellow:                  #FFB900;
-$color-bgc-green:                   #107C10;
-$color-bgc-teal:                    #008272;
+$color-blue:                        #0078D7;
+$color-purple:                      #5C2D91;
+$color-magenta:                     #B4009E;
+$color-red:                         #E81123;
+$color-orange:                      #D83B01;
+$color-yellow:                      #FFB900;
+$color-green:                       #107C10;
+$color-teal:                        #008272;
 
 
 // Brand content accent colors
-$color-bgc-lightblue:               #00BCF2;
-$color-bgc-midblue:                 #00188F;
-$color-bgc-darkblue:                #002050;
-$color-bgc-lightpurple:             #B4A0FF;
-$color-bgc-darkpurple:              #32145A;
-$color-bgc-lightmagenta:            #E3008C;
-$color-bgc-darkmagenta:             #5C005C;
-$color-bgc-darkred:                 #A80000;
-$color-bgc-lightorange:             #FF8C00;
-$color-bgc-lightyellow:             #FFF100;
-$color-bgc-lightgreen:              #BAD80A;
-$color-bgc-darkgreen:               #004B1C;
-$color-bgc-lightteal:               #00B294;
-$color-bgc-darkteal:                #004B50;
+$color-lightblue:                   #00BCF2;
+$color-midblue:                     #00188F;
+$color-darkblue:                    #002050;
+$color-lightpurple:                 #B4A0FF;
+$color-darkpurple:                  #32145A;
+$color-lightmagenta:                #E3008C;
+$color-darkmagenta:                 #5C005C;
+$color-darkred:                     #A80000;
+$color-lightorange:                 #FF8C00;
+$color-lightyellow:                 #FFF100;
+$color-lightgreen:                  #BAD80A;
+$color-darkgreen:                   #004B1C;
+$color-lightteal:                   #00B294;
+$color-darkteal:                    #004B50;
 
 
 // Background colors
-$color-bg-light-vivid-high:         $color-light;
+$color-bg-light-vivid-high:         $color-white;
 $color-bg-light-vivid-mid:          #F2F2F2;
 $color-bg-light-vivid-low:          #E5E5E5;
 $color-bg-light-neutral-high:       #D9D9D9;
 $color-bg-light-neutral-mid:        #CCCCCC;
 
-$color-bg-dark-vivid-high:          $color-dark;
+$color-bg-dark-vivid-high:          $color-black;
 $color-bg-dark-vivid-mid:           #191919;
 $color-bg-dark-vivid-low:           #262626;
 $color-bg-dark-neutral-high:        #333333;
 $color-bg-dark-neutral-mid:         #404040;
 
 
-// Text colors
-$color-type-primary:                $color-dark;
-$color-type-secondary:              rgba($color-dark, 0.6);
-$color-type-disabled:               rgba($color-dark, 0.2);
+// Type colors
+$color-type-primary:                $color-black;
+$color-type-secondary:              rgba($color-black, 0.6);
+$color-type-disabled:               rgba($color-black, 0.2);
 $color-type-accent:                 $color-accent;
 $color-type-alert:                  $color-alert;
 
-$color-type-primary-alt:            $color-light;
-$color-type-secondary-alt:          rgba($color-light, 0.6);
-$color-type-disabled-alt:           rgba($color-light, 0.2);
+$color-type-primary-alt:            $color-white;
+$color-type-secondary-alt:          rgba($color-white, 0.6);
+$color-type-disabled-alt:           rgba($color-white, 0.2);
 $color-type-accent-alt:             $color-accent;
 $color-type-alert-alt:              $color-alert;
 
 
-// Fills/Lines color & values
-$color-dim-low:                     rgba($color-dark, 0.05);
-$color-dim-mid:                     rgba($color-dark, 0.1);
-$color-neutral-low:                 rgba($color-dark, 0.2);
-$color-neutral-mid:                 rgba($color-dark, 0.3);
-$color-neutral-high:                rgba($color-dark, 0.4);
-$color-vivid-low:                   rgba($color-dark, 0.6);
-$color-vivid-mid:                   rgba($color-dark, 0.8);
-$color-vivid-high:                  $color-dark;
+// Fill/line colors
+$color-dim-low:                     rgba($color-black, 0.05);
+$color-dim-mid:                     rgba($color-black, 0.1);
+$color-neutral-low:                 rgba($color-black, 0.2);
+$color-neutral-mid:                 rgba($color-black, 0.3);
+$color-neutral-high:                rgba($color-black, 0.4);
+$color-vivid-low:                   rgba($color-black, 0.6);
+$color-vivid-mid:                   rgba($color-black, 0.8);
+$color-vivid-high:                  $color-black;
 
-$color-dim-mid-alt:                 rgba($color-light, 0.1);
-$color-dim-high-alt:                rgba($color-light, 0.15);
-$color-neutral-low-alt:             rgba($color-light, 0.2);
-$color-neutral-mid-alt:             rgba($color-light, 0.3);
-$color-neutral-high-alt:            rgba($color-light, 0.4);
-$color-vivid-low-alt:               rgba($color-light, 0.6);
-$color-vivid-mid-alt:               rgba($color-light, 0.8);
-$color-vivid-high-alt:              $color-light;
+$color-dim-mid-alt:                 rgba($color-white, 0.1);
+$color-dim-high-alt:                rgba($color-white, 0.15);
+$color-neutral-low-alt:             rgba($color-white, 0.2);
+$color-neutral-mid-alt:             rgba($color-white, 0.3);
+$color-neutral-high-alt:            rgba($color-white, 0.4);
+$color-vivid-low-alt:               rgba($color-white, 0.6);
+$color-vivid-mid-alt:               rgba($color-white, 0.8);
+$color-vivid-high-alt:              $color-white;
 
 $color-accent-dim-low:              rgba($color-accent, 0.05);
 $color-accent-dim-mid:              rgba($color-accent, 0.1);
@@ -99,3 +102,423 @@ $color-accent-neutral-high:         rgba($color-accent, 0.4);
 $color-accent-vivid-low:            rgba($color-accent, 0.6);
 $color-accent-vivid-mid:            rgba($color-accent, 0.8);
 $color-accent-vivid-high:           $color-accent;
+
+
+//
+// Color classes
+//
+
+// Base colors
+.color-white {
+    background: $color-white;
+}
+
+.color-black {
+    background: $color-black;
+}
+
+.color-accent {
+    background: $color-accent;
+}
+
+.color-alert {
+    background: $color-alert;
+}
+
+
+// Text colors
+.color-type-primary {
+    color: $color-type-primary;
+}
+
+.color-type-secondary {
+    color: $color-type-secondary;
+}
+
+.color-type-disabled {
+    color: $color-type-disabled;
+}
+
+.color-type-accent {
+    color: $color-type-accent;
+}
+
+.color-type-alert {
+    color: $color-type-alert;
+}
+
+
+// Alt text colors
+.color-type-primary-alt {
+    color: $color-type-primary-alt;
+}
+
+.color-type-secondary-alt {
+    color: $color-type-secondary-alt;
+}
+
+.color-type-disabled-alt {
+    color: $color-type-disabled-alt;
+}
+
+.color-type-accent-alt {
+    color: $color-type-accent-alt;
+}
+
+.color-type-alert-alt {
+    color: $color-type-alert-alt;
+}
+
+
+// Fill colors
+.color-fill-dim-low {
+    background-color: $color-dim-low;
+}
+
+.color-fill-dim-mid {
+    background-color: $color-dim-mid;
+}
+
+.color-fill-neutral-low {
+    background-color: $color-neutral-low;
+}
+
+.color-fill-neutral-mid {
+    background-color: $color-neutral-mid;
+}
+
+.color-fill-neutral-high {
+    background-color: $color-neutral-high;
+}
+
+.color-fill-vivid-low {
+    background-color: $color-vivid-low;
+}
+
+.color-fill-vivid-mid {
+    background-color: $color-vivid-mid;
+}
+
+.color-fill-vivid-high {
+    background-color: $color-vivid-high;
+}
+
+
+// Alt fill colors
+.color-fill-dim-mid-alt {
+    background-color: $color-dim-mid-alt;
+}
+
+.color-fill-dim-high-alt {
+    background-color: $color-dim-high-alt;
+}
+
+.color-fill-neutral-low-alt {
+    background-color: $color-neutral-low-alt;
+}
+
+.color-fill-neutral-mid-alt {
+    background-color: $color-neutral-mid-alt;
+}
+
+.color-fill-neutral-high-alt {
+    background-color: $color-neutral-high-alt;
+}
+
+.color-fill-vivid-low-alt {
+    background-color: $color-vivid-low-alt;
+}
+
+.color-fill-vivid-mid-alt {
+    background-color: $color-vivid-mid-alt;
+}
+
+.color-fill-vivid-high-alt {
+    background-color: $color-vivid-high-alt;
+}
+
+
+// Line colors
+.color-line-dim-low {
+    border-color: $color-dim-low;
+}
+
+.color-line-dim-mid {
+    border-color: $color-dim-mid;
+}
+
+.color-line-neutral-low {
+    border-color: $color-neutral-low;
+}
+
+.color-line-neutral-mid {
+    border-color: $color-neutral-mid;
+}
+
+.color-line-neutral-high {
+    border-color: $color-neutral-high;
+}
+
+.color-line-vivid-low {
+    border-color: $color-vivid-low;
+}
+
+.color-line-vivid-mid {
+    border-color: $color-vivid-mid;
+}
+
+.color-line-vivid-high {
+    border-color: $color-vivid-high;
+}
+
+
+// Alt line colors
+.color-line-dim-mid-alt {
+    border-color: $color-dim-mid-alt;
+}
+
+.color-line-dim-high-alt {
+    border-color: $color-dim-high-alt;
+}
+
+.color-line-neutral-low-alt {
+    border-color: $color-neutral-low-alt;
+}
+
+.color-line-neutral-mid-alt {
+    border-color: $color-neutral-mid-alt;
+}
+
+.color-line-neutral-high-alt {
+    border-color: $color-neutral-high-alt;
+}
+
+.color-line-vivid-low-alt {
+    border-color: $color-vivid-low-alt;
+}
+
+.color-line-vivid-mid-alt {
+    border-color: $color-vivid-mid-alt;
+}
+
+.color-line-vivid-high-alt {
+    border-color: $color-vivid-high-alt;
+}
+
+
+// Background colors
+.color-bg-light-vivid-high {
+    background-color: $color-bg-light-vivid-high;
+}
+
+.color-bg-light-vivid-mid {
+    background-color: $color-bg-light-vivid-mid;
+}
+
+.color-bg-light-vivid-low {
+    background-color: $color-bg-light-vivid-low;
+}
+
+.color-bg-light-neutral-high {
+    background-color: $color-bg-light-neutral-high;
+}
+
+.color-bg-light-neutral-mid {
+    background-color: $color-bg-light-neutral-mid;
+}
+
+.color-bg-dark-vivid-high {
+    background-color: $color-bg-dark-vivid-high;
+}
+
+.color-bg-dark-vivid-mid {
+    background-color: $color-bg-dark-vivid-mid;
+}
+
+.color-bg-dark-vivid-low {
+    background-color: $color-bg-dark-vivid-low;
+}
+
+.color-bg-dark-neutral-high {
+    background-color: $color-bg-dark-neutral-high;
+}
+
+.color-bg-dark-neutral-mid {
+    background: $color-bg-dark-neutral-mid;
+}
+
+
+// Accent background colors
+.color-fill-accent-dim-low {
+    background-color: $color-accent-dim-low;
+}
+
+.color-fill-accent-dim-mid {
+    background-color: $color-accent-dim-mid;
+}
+
+.color-fill-accent-dim-high {
+    background-color: $color-accent-dim-high;
+}
+
+.color-fill-accent-neutral-low {
+    background-color: $color-accent-neutral-low;
+}
+
+.color-fill-accent-neutral-mid {
+    background-color: $color-accent-neutral-mid;
+}
+
+.color-fill-accent-neutral-high {
+    background-color: $color-accent-neutral-high;
+}
+
+.color-fill-accent-vivid-low {
+    background-color: $color-accent-vivid-low;
+}
+
+.color-fill-accent-vivid-mid {
+    background-color: $color-accent-vivid-mid;
+}
+
+.color-fill-accent-vivid-high {
+    background-color: $color-accent-vivid-high;
+}
+
+.color-fill-alert {
+    background-color: $color-alert;
+}
+
+
+// Accent line colors
+.color-line-accent-dim-low {
+    border-color: $color-accent-dim-low;
+}
+
+.color-line-accent-dim-mid {
+    border-color: $color-accent-dim-mid;
+}
+
+.color-line-accent-dim-high {
+    border-color: $color-accent-dim-high;
+}
+
+.color-line-accent-neutral-low {
+    border-color: $color-accent-neutral-low;
+}
+
+.color-line-accent-neutral-mid {
+    border-color: $color-accent-neutral-mid;
+}
+
+.color-line-accent-neutral-high {
+    border-color: $color-accent-neutral-high;
+}
+
+.color-line-accent-vivid-low {
+    border-color: $color-accent-vivid-low;
+}
+
+.color-line-accent-vivid-mid {
+    border-color: $color-accent-vivid-mid;
+}
+
+.color-line-accent-vivid-high {
+    border-color: $color-accent-vivid-high;
+}
+
+.color-line-alert {
+    border-color: $color-alert;
+}
+
+
+// Primary brand background colors
+.color-blue {
+    background-color: $color-blue;
+}
+
+.color-purple {
+    background-color: $color-purple;
+}
+
+.color-magenta {
+    background-color: $color-magenta;
+}
+
+.color-red {
+    background-color: $color-red;
+}
+
+.color-orange {
+    background-color: $color-orange;
+}
+
+.color-yellow {
+    background-color: $color-yellow;
+}
+
+.color-green {
+    background-color: $color-green;
+}
+
+.color-teal {
+    background-color: $color-teal;
+}
+
+
+// Brand content accent background colors
+.color-lightblue {
+    background-color: $color-lightblue;
+}
+
+.color-midblue {
+    background-color: $color-midblue;
+}
+
+.color-darkblue {
+    background-color: $color-darkblue;
+}
+
+.color-lightpurple {
+    background-color: $color-lightpurple;
+}
+
+.color-darkpurple {
+    background-color: $color-darkpurple;
+}
+
+.color-lightmagenta {
+    background-color: $color-lightmagenta;
+}
+
+.color-darkmagenta {
+    background-color: $color-darkmagenta;
+}
+
+.color-darkred {
+    background-color: $color-darkred;
+}
+
+.color-lightorange {
+    background-color: $color-lightorange;
+}
+
+.color-lightyellow {
+    background-color: $color-lightyellow;
+}
+
+.color-lightgreen {
+    background-color: $color-lightgreen;
+}
+
+.color-darkgreen {
+    background-color: $color-darkgreen;
+}
+
+.color-lightteal {
+    background-color: $color-lightteal;
+}
+
+.color-darkteal {
+    background-color: $color-darkteal;
+}

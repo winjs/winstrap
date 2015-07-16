@@ -73,7 +73,7 @@
                 }
 
                 &:hover:after {
-                    background-color: rgba($color-dark, 0);
+                    background-color: rgba($color-black, 0);
                 }
             }
         }
@@ -234,7 +234,7 @@
         background: $color-neutral-mid;
 
         &:hover {
-            background: rgba($color-dark, 0);
+            background: rgba($color-black, 0);
         }
     }
 }

@@ -221,7 +221,7 @@ input.form-control::-ms-reveal {
         color: $color-accent;
     }
     &:active {
-        color: $color-light;
+        color: $color-white;
         background-color: $color-accent;
     }
 }
@@ -265,7 +265,7 @@ select.form-control {
             color: $color-type-primary;
         }
         &:checked {
-            color: $color-light;
+            color: $color-white;
             background-color: $color-accent;
         }
     }
@@ -288,7 +288,7 @@ select[multiple].form-control {
         color: $color-type-primary;
     }
     option:checked {
-        color: $color-light;
+        color: $color-white;
         background-color: $color-accent;
     }
 }
