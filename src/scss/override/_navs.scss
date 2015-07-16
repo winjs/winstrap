@@ -1,0 +1,113 @@
+//
+// Static resources
+//
+$pivot-horizontal-padding:                                                      12px;
+$pivot-hover-color:                                                             rgba($win-color-type-primary, 0.8);
+$pivot-hover-color-alt:                                                         rgba($win-color-type-primary-alt, 0.8);
+
+
+//
+// Nav pills
+//
+.page-header .nav-pills {
+    margin-top: 2em;
+
+    > li > a {
+        margin-right: 2.5em;
+        padding: 1em 0;
+        color: black;
+
+        &:hover {
+            color: $brand-primary;
+            text-decoration: underline;
+            background: none;
+        }
+    }
+
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus {
+        background: none;
+        color: $brand-primary;
+        text-decoration: none;
+    }
+}
+
+//
+// Tabs
+// Basel: Pivot control
+//
+.nav-tabs {
+    border-bottom: 0;
+    margin-left: -($pivot-horizontal-padding); // Offsetting padding on the individual tabs
+    margin-right: -($pivot-horizontal-padding); // Offsetting padding on the individual tabs
+
+    > li {
+        margin-bottom: 0;
+
+        // Main tabs
+        // Resetting most of the Bootstrap styles
+        > a {
+            @include win-type-title();
+            border: 0;
+            border-radius: 0;
+            margin: 0;
+            padding-left: $pivot-horizontal-padding;
+            padding-right: $pivot-horizontal-padding;
+
+            &:hover,
+            &:focus {
+                border: 0;
+                background: transparent;
+            }
+        }
+        // Active tab
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                border: 0;
+                background: transparent;
+            }
+        }
+
+    }
+
+    // Default colors
+    > li > a {
+        color: $win-color-type-secondary;
+
+        &:hover,
+        &:focus {
+            color: $pivot-hover-color;
+        }
+    }
+    > li.active > a {
+        color: $win-color-type-primary;
+
+        &:hover,
+        &:focus {
+            color: $pivot-hover-color;
+        }
+    }
+
+    // Alt colors
+    &.win-theme-alt {
+        > li > a {
+            color: $win-color-type-secondary-alt;
+
+            &:hover,
+            &:focus {
+                color: $pivot-hover-color-alt;
+            }
+        }
+        > li.active > a {
+            color: $win-color-type-primary-alt;
+
+            &:hover,
+            &:focus {
+                color: $pivot-hover-color-alt;
+            }
+        }
+    }
+}

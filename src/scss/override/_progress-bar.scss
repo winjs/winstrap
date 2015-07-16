@@ -1,25 +1,28 @@
-﻿.progress {
-  box-shadow: none;
-  background-color: $win-color-fl-30;
-  width: 180px;
-  height: 4px;
+.progress {
+    box-shadow: none;
+    height: 4px;
+    background-color: $win-color-fl-25;
+    margin-bottom: 0; // Might need to look at this for vertical-spacing
 
-  .progress-bar {
-    @include transition(width 2s ease-in-out);
-    background-color: $win-color-fl-accent;
-  }
-}
+    .progress-bar {
+        @include transition(width 2s ease-in-out);
+        background-color: $win-color-fl-accent;
+    }
 
-.progress-sm {
-  height: 4px;
-  margin: 0;
-}
+    &.win-theme-alt, 
+    &.win-theme-on-img-dark {
+        background-color: $win-color-fl-25-alt;
 
-.progress-xs {
-  height: 4px;
-  margin: 0;
-}
+        .progress-bar {
+            background-color: $win-color-fl-accent-alt;
+        }
+    }
 
-.progress-media {
-  height: 5px;
+    &.win-theme-on-color {
+        background-color: $win-color-fl-25-alt;
+
+        .progress-bar {
+            background-color: $win-color-fl-70-alt;
+        }
+    }
 }

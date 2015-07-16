@@ -85,5 +85,8 @@
 
 
     // Tooltips
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+        // Override Bootsrap's default template with one that does not have arrow
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
+    });
 });
