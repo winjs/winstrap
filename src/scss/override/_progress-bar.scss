@@ -11,18 +11,18 @@
 
     &.win-theme-alt,
     &.win-theme-on-img-dark {
-        background-color: $win-color-fl-25-alt;
+        background-color: $color-neutral-low-alt;
 
         .progress-bar {
-            background-color: $win-color-fl-accent-alt;
+            background-color: $color-accent;
         }
     }
 
     &.win-theme-on-color {
-        background-color: $win-color-fl-25-alt;
+        background-color: $color-neitral-low-alt;
 
         .progress-bar {
-            background-color: $win-color-fl-70-alt;
+            background-color: $color-vivid-high-alt;
         }
     }
 }
