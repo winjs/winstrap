@@ -10,15 +10,14 @@
     }
 
     .alert-title {
-        @include win-type-subtitle-alt();
+        @include win-type-subtitle-alt(no-responsive);
         margin-bottom: 4px;
     }
 
     p {
-        @include win-type-caption();
-        display: table-cell;
-        vertical-align: middle;
-        height: 24px;
+        @include win-type-caption(no-responsive);
+        margin-bottom: 0;
+        padding-top: 4px;
     }
 
     .close {
@@ -49,6 +48,7 @@
         height: 24px;
         font-size: 24px;
     }
+
     // Color
     color: $win-color-type-primary;
 
