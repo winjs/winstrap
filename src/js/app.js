@@ -101,10 +101,14 @@
         }).data('bs.popover').tip().addClass($element.data("theme"));
     });
 
-    $('#btn-close').popover({
-        placement: 'right',
-        html: 'true',
-        content: 'This is a flyout with a button. <button type="button" class="btn btn-primary ' + $('#btn-close').data("theme") + '"onclick="$(&quot;#btn-close&quot;).popover(&quot;hide&quot;);">Button</button>',
-        template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
-    }).data('bs.popover').tip().addClass($('#btn-close').data("theme"));
+    if ($('#btn-close').length) {
+        $('#btn-close').popover({
+            placement: 'right',
+            html: 'true',
+            // Set the value of the data-theme attribute as a class name on the button.
+            // That way the button will always be in the correct color theme.
+            content: 'This is a flyout with a button. <button type="button" class="btn btn-primary ' + $('#btn-close').data("theme") + '"onclick="$(&quot;#btn-close&quot;).popover(&quot;hide&quot;);">Button</button>',
+            template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+        }).data('bs.popover').tip().addClass($('#btn-close').data("theme"));
+    }
 });
