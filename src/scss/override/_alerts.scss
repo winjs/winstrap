@@ -1,37 +1,67 @@
 ﻿// Override
 .alert {
-  position: relative;
-  color: $win-color-light;
-  border: none;
+    position: relative;
+    border: none;
+    padding: win-spacer(xxs) win-spacer(xxs) win-spacer(xxs) win-spacer(xs, -4);
+    min-height: 48px;
 
-  &.alert-dismissible {
-    padding-right: 3em;
-  }
+    &.alert-dismissible {
+        padding-right: 3em;
+    }
 
-  .close {
-    position: absolute;
-    top: ($grid-gutter-width / 2);
-    right: ($grid-gutter-width / 2);
-    z-index: 1;
-    @include win-type-headline();
-    line-height: 1;
-    opacity: 1;
-    font-size: 30px;
-  }
+    .alert-title {
+        @include win-type-subtitle-alt();
+        margin-bottom: 4px;
+    }
 
-  a {
-    color: $win-color-light;
-  }
-}
+    p {
+        @include win-type-caption();
+        display: table-cell;
+        vertical-align: middle;
+        height: 24px;
+    }
 
-.alert-info {
-  background-color: $brand-info;
-}
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        line-height: 1;
+        opacity: 1;
+        height: 48px;
+        width: 48px;
+        span {
+            font-size: 16px;
+            top: -3px;
+            position: relative;
+        }
+    }
 
-.alert-warning {
-  background-color: $brand-warning;
-}
+    &.with-icon {
+        padding-left: win-spacer(sm, 4)
+    }
 
-.alert-danger {
-  background-color: $brand-danger;
+    .alert-icon {
+        position: absolute;
+        top: 4px;
+        left: 8px;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+    // Color
+    color: $win-color-type-primary;
+
+    &.alert-info {
+        background-color: $win-color-fl-10;
+        color: $win-color-type-primary;
+    }
+
+    &.alert-warning {
+        background-color: rgba($win-color-tertiary-yellow, .4);
+    }
+
+    &.alert-danger {
+        background-color: rgba($brand-danger, .3);
+    }
 }

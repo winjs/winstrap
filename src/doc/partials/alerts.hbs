@@ -15,7 +15,7 @@
 
     <div class="alert alert-warning alert-dismissible fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
         </button>
 
         <div class="container">
@@ -31,7 +31,7 @@
 </div>
 ```
             {{/markdown}}
-            
+
             <p>The required JavaScript to initialize the <a href="http://getbootstrap.com/javascript/#affix" target="_blank">Affix Boostrap component</a>:</p>
 
             {{#markdown}}
@@ -66,50 +66,51 @@ $(function () {
     <div class="row">
         <div class="col-xs-24">
 
+
             <div class="alert alert-info alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
                 </button>
 
-                <h4>Info alert example</h4>
                 <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
+                    This is an inline alert with no title.
+                    <a href="#">Click here</a> to take some action.
                 </p>
             </div>
 
             <div class="alert alert-warning alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
                 </button>
 
-                <h4>Warning alert example</h4>
+                <div class="alert-title">Warning example</div>
                 <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
+                    This is a warning inline alert without an icon.
+                    <a href="#">Click here</a> to take some action.
                 </p>
             </div>
 
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+            <div class="alert with-icon alert-danger alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
                 </button>
 
-                <h4>Danger alert example</h4>
+                <span class="alert-icon"><i class="win-icon-emoji"></i></span>
+                <div class="alert-title">Danger alert with icon example</div>
                 <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
+                    This is a danger inline alert with an icon. Want to know more about what icons you can use?
+                    <a href="/typography.html#icons">Click here</a> for Icons documentation.
                 </p>
             </div>
 
             {{#markdown}}
 ```xml
-<div class="alert [alert-info] [alert-warning] [alert-danger] alert-dismissible fade in" role="alert">
+<div class="alert [alert-info] [alert-warning] [alert-danger] [with-icon] alert-dismissible fade in" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
     </button>
 
-    <h4>Alert title</h4>
+    <div class="alert-title">Alert title</div>
     <p>Alert message</p>
 </div>
 ```
