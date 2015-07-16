@@ -7,7 +7,7 @@ $toggle-switch-indicator-size:  10px;
 
 // Button filter
 .win-button-filter {
-  border-color: $win-color-fl-50;
+  border-color: $color-vivid-low;
   background: none;
 
   // Clear filter
@@ -27,14 +27,14 @@ $toggle-switch-indicator-size:  10px;
     .open > &.dropdown-toggle{
         color: $btn-on-light-color;
         background-color: $btn-on-light-bg;
-        border-color: $win-color-fl-50-alt;
+        border-color: $color-vivid-low-alt;
     }
 
     &:active,
     &.active,
     .open > &.dropdown-toggle {
         background-image: none;
-        background-color: $win-color-fl-60;
+        background-color: $color-vivid-mid;
         color: $btn-on-light-color;
         border-color: transparent;
     }
@@ -48,8 +48,8 @@ $toggle-switch-indicator-size:  10px;
         &.focus,
         &:active,
         &.active {
-          color: $win-color-type-secondary;
-          background-color: $win-color-fl-40;
+          color: $color-type-secondary;
+          background-color: $color-neutral-high;
           border-color: transparent;
         }
     }
@@ -66,14 +66,14 @@ $toggle-switch-indicator-size:  10px;
     .open > &.dropdown-toggle{
         color: $btn-on-dark-color;
         background-color: $btn-on-dark-bg;
-        border-color: $win-color-fl-accent-medium;
+        border-color: $color-accent-vivid-low;
     }
 
     &:active,
     &.active,
     .open > &.dropdown-toggle {
         background-image: none;
-        background-color: $win-color-fl-60-alt;
+        background-color: $color-vivid-mid-alt;
         color: $btn-on-dark-color;
         border-color: transparent;
     }
@@ -87,8 +87,8 @@ $toggle-switch-indicator-size:  10px;
         &.focus,
         &:active,
         &.active {
-          color: $win-color-type-secondary;
-          background-color: $win-color-fl-40-alt;
+          color: $color-type-secondary;
+          background-color: $color-neutral-high-alt;
           border-color: transparent;
         }
     }
@@ -96,12 +96,12 @@ $toggle-switch-indicator-size:  10px;
 
 a.win-link-on-light {
     text-decoration: underline;
-    color: $win-color-type-primary;
+    color: $color-type-primary;
 }
 
 a.win-link-on-dark {
     text-decoration: underline;
-    color: $win-color-type-primary-alt;
+    color: $color-type-primary-alt;
 }
 
 // Toggle switch button
@@ -160,39 +160,39 @@ a.win-link-on-dark {
     &,
     &.win-theme-on-img-light {
         background-color: transparent;
-        border-color: $win-color-fl-60;
+        border-color: $color-vivid-mid;
 
         &::before {
-            background-color: $win-color-fl-60;
+            background-color: $color-vivid-mid;
         }
 
         .stateLabel {
-            color: $win-color-type-primary;
+            color: $color-type-primary;
         }
 
         &.active {
-            background-color: $win-color-fl-accent;
+            background-color: $color-accent;
             border-color: transparent;
 
             &::before {
-                background-color: $win-color-bg-10;
+                background-color: $color-bg-light-vivid-high;
             }
         }
 
         &:disabled {
-            border-color: $win-color-fl-25;
+            border-color: $color-neutral-low;
 
             &::before {
-                background-color: $win-color-fl-25;
+                background-color: $color-neutral-low;
             }
 
             .stateLabel {
-                color: $win-color-type-disabled;
+                color: $color-type-disabled;
             }
 
             &.active {
                 border-color: transparent;
-                background-color: $win-color-fl-25;
+                background-color: $color-neutral-low;
             }
         }
     }
@@ -201,39 +201,39 @@ a.win-link-on-dark {
     &.win-theme-alt,
     &.win-theme-on-img-dark {
         background-color: transparent;
-        border-color: $win-color-fl-60-alt;
+        border-color: $color-vivid-mid-alt;
 
         &::before {
-            background-color: $win-color-fl-60-alt;
+            background-color: $color-vivid-mid-alt;
         }
 
         .stateLabel {
-            color: $win-color-type-primary-alt;
+            color: $color-type-primary-alt;
         }
 
         &.active {
-            background-color: $win-color-fl-accent;
+            background-color: $color-accent;
             border-color: transparent;
 
             &::before {
-                background-color: $win-color-bg-10;
+                background-color: $color-bg-light-vivid-high;
             }
         }
 
         &:disabled {
-            border-color: $win-color-fl-25-alt;
+            border-color: $color-neutral-low-alt;
 
             &::before {
-                background-color: $win-color-fl-25-alt;
+                background-color: $color-neutral-low-alt;
             }
 
             .stateLabel {
-                color: $win-color-type-disabled-alt;
+                color: $color-type-disabled-alt;
             }
 
             &.active {
                 border-color: transparent;
-                background-color: $win-color-fl-25-alt;
+                background-color: $color-neutral-low-alt;
             }
         }
     }
@@ -241,39 +241,39 @@ a.win-link-on-dark {
     // On colored surface
     &.win-theme-on-color {
         background-color: transparent;
-        border-color: $win-color-fl-60-alt;
+        border-color: $color-vivid-mid-alt;
 
         &::before {
-            background-color: $win-color-fl-60-alt;
+            background-color: $color-vivid-mid-alt;
         }
 
         .stateLabel {
-            color: $win-color-type-primary-alt;
+            color: $color-type-primary-alt;
         }
 
         &.active {
-            background-color: $win-color-bg-10;
+            background-color: $color-bg-light-vivid-high;
             border-color: transparent;
 
             &::before {
-                background-color: $win-color-fl-accent;
+                background-color: $color-accent;
             }
         }
 
         &:disabled {
-            border-color: $win-color-fl-25-alt;
+            border-color: $color-neutral-low-alt;
 
             &::before {
-                background-color: $win-color-fl-25-alt;
+                background-color: $color-neutral-low-alt;
             }
 
             .stateLabel {
-                color: $win-color-type-disabled-alt;
+                color: $color-type-disabled-alt;
             }
 
             &.active {
                 border-color: transparent;
-                background-color: $win-color-fl-25-alt;
+                background-color: $color-neutral-low-alt;
             }
         }
     }

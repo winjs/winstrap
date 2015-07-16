@@ -14,392 +14,422 @@
     padding-bottom: 29px;
 }
 
-// Basel base colors
 
-&.win-color-light {
-    background: $win-color-light;
+// Base colors
+&.color-light {
+    background: $color-light;
 }
 
-&.win-color-dark {
-    background: $win-color-dark;
+&.color-dark {
+    background: $color-dark;
 }
 
-// Basel text colors
-&.win-color-type-primary {
-    color: $win-color-type-primary;
+&.color-accent {
+    background: $color-accent;
 }
 
-&.win-color-type-secondary {
-    color: $win-color-type-secondary;
+&.color-alert {
+    background: $color-alert;
 }
 
-&.win-color-type-disabled {
-    color: $win-color-type-disabled;
+
+// Text colors
+&.color-type-primary {
+    color: $color-type-primary;
+}
+
+&.color-type-secondary {
+    color: $color-type-secondary;
+}
+
+&.color-type-disabled {
+    color: $color-type-disabled;
 }
 
-&.win-color-type-accent {
-    color: $win-color-type-accent;
+&.color-type-accent {
+    color: $color-type-accent;
 }
 
-&.win-color-type-alert {
-    color: $win-color-type-alert;
+&.color-type-alert {
+    color: $color-type-alert;
 }
 
-// Basel fill colors
-&.win-color-fill-10 {
-    background: $win-color-fl-10;
+
+// Alt text colors
+&.color-type-primary-alt {
+    color: $color-type-primary-alt;
+}
+
+&.color-type-secondary-alt {
+    color: $color-type-secondary-alt;
 }
 
-&.win-color-fill-20 {
-    background: $win-color-fl-20;
+&.color-type-disabled-alt {
+    color: $color-type-disabled-alt;
 }
 
-&.win-color-fill-30 {
-    background: $win-color-fl-30;
+&.color-type-accent-alt {
+    color: $color-type-accent-alt;
 }
 
-&.win-color-fill-40 {
-    background: $win-color-fl-40;
+&.color-type-alert-alt {
+    color: $color-type-alert-alt;
 }
 
-&.win-color-fill-50 {
-    background: $win-color-fl-50;
+
+// Fill colors
+&.color-fill-dim-low {
+    background-color: $color-dim-low;
 }
 
-&.win-color-fill-60 {
-    background: $win-color-fl-60;
+&.color-fill-dim-mid {
+    background-color: $color-dim-mid;
 }
 
-&.win-color-fill-70 {
-    background: $win-color-fl-70;
+&.color-fill-neutral-low {
+    background-color: $color-neutral-low;
 }
 
-&.win-color-fill-accent {
-    background: $win-color-fl-accent;
+&.color-fill-neutral-mid {
+    background-color: $color-neutral-mid;
 }
 
-&.win-color-fill-accent-low {
-    background: $win-color-fl-accent-low;
+&.color-fill-neutral-high {
+    background-color: $color-neutral-high;
 }
 
-&.win-color-fill-accent-medium {
-    background: $win-color-fl-accent-medium;
+&.color-fill-vivid-low {
+    background-color: $color-vivid-low;
 }
 
-&.win-color-fill-accent-high {
-    background: $win-color-fl-accent-high;
+&.color-fill-vivid-mid {
+    background-color: $color-vivid-mid;
 }
 
-&.win-color-fill-alert {
-    background: $win-color-fl-alert;
+&.color-fill-vivid-high {
+    background-color: $color-vivid-high;
 }
+
 
-// Basel line colors
-&.win-color-line-10 {
-    border-color: $win-color-fl-10;
+// Alt fill colors
+&.color-fill-dim-mid-alt {
+    background-color: $color-dim-mid-alt;
 }
 
-&.win-color-line-20 {
-    border-color: $win-color-fl-20;
+&.color-fill-dim-high-alt {
+    background-color: $color-dim-high-alt;
 }
 
-&.win-color-line-30 {
-    border-color: $win-color-fl-30;
+&.color-fill-neutral-low-alt {
+    background-color: $color-neutral-low-alt;
 }
 
-&.win-color-line-40 {
-    border-color: $win-color-fl-40;
+&.color-fill-neutral-mid-alt {
+    background-color: $color-neutral-mid-alt;
 }
 
-&.win-color-line-50 {
-    border-color: $win-color-fl-50;
+&.color-fill-neutral-high-alt {
+    background-color: $color-neutral-high-alt;
 }
 
-&.win-color-line-60 {
-    border-color: $win-color-fl-60;
+&.color-fill-vivid-low-alt {
+    background-color: $color-vivid-low-alt;
 }
 
-&.win-color-line-70 {
-    border-color: $win-color-fl-70;
+&.color-fill-vivid-mid-alt {
+    background-color: $color-vivid-mid-alt;
 }
 
-&.win-color-line-accent {
-    border-color: $win-color-fl-accent;
+&.color-fill-vivid-high-alt {
+    background-color: $color-vivid-high-alt;
 }
 
-&.win-color-line-accent-low {
-    border-color: $win-color-fl-accent-low;
+
+// Line colors
+&.color-line-dim-low {
+    border-color: $color-dim-low;
 }
 
-&.win-color-line-accent-medium {
-    border-color: $win-color-fl-accent-medium;
+&.color-line-dim-mid {
+    border-color: $color-dim-mid;
 }
 
-&.win-color-line-accent-high {
-    border-color: $win-color-fl-accent-high;
+&.color-line-neutral-low {
+    border-color: $color-neutral-low;
 }
 
-&.win-color-line-alert {
-    border-color: $win-color-fl-alert;
+&.color-line-neutral-mid {
+    border-color: $color-neutral-mid;
 }
 
+&.color-line-neutral-high {
+    border-color: $color-neutral-high;
+}
 
-// Basel background colors
-&.win-color-bg-10 {
-    background: $win-color-bg-10;
+&.color-line-vivid-low {
+    border-color: $color-vivid-low;
 }
 
-&.win-color-bg-20 {
-    background: $win-color-bg-20;
+&.color-line-vivid-mid {
+    border-color: $color-vivid-mid;
 }
 
-&.win-color-bg-30 {
-    background: $win-color-bg-30;
+&.color-line-vivid-high {
+    border-color: $color-vivid-high;
 }
 
-&.win-color-bg-40 {
-    background: $win-color-bg-40;
+
+// Alt line colors
+&.color-line-dim-mid-alt {
+    border-color: $color-dim-mid-alt;
 }
 
-&.win-color-bg-50 {
-    background: $win-color-bg-50;
+&.color-line-dim-high-alt {
+    border-color: $color-dim-high-alt;
 }
 
+&.color-line-neutral-low-alt {
+    border-color: $color-neutral-low-alt;
+}
 
-// Basel alt text colors
-&.win-color-type-primary-alt {
-    color: $win-color-type-primary-alt;
+&.color-line-neutral-mid-alt {
+    border-color: $color-neutral-mid-alt;
 }
 
-&.win-color-type-secondary-alt {
-    color: $win-color-type-secondary-alt;
+&.color-line-neutral-high-alt {
+    border-color: $color-neutral-high-alt;
 }
 
-&.win-color-type-disabled-alt {
-    color: $win-color-type-disabled-alt;
+&.color-line-vivid-low-alt {
+    border-color: $color-vivid-low-alt;
 }
 
-&.win-color-type-accent-alt {
-    color: $win-color-type-accent-alt;
+&.color-line-vivid-mid-alt {
+    border-color: $color-vivid-mid-alt;
 }
 
-&.win-color-type-alert-alt {
-    color: $win-color-type-alert-alt;
+&.color-line-vivid-high-alt {
+    border-color: $color-vivid-high-alt;
 }
+
 
-// Basel alt fill colors
-&.win-color-fill-10-alt {
-    background: $win-color-fl-10-alt;
+// Background colors
+&.color-bg-light-vivid-high {
+    background-color: $color-bg-light-vivid-high;
 }
 
-&.win-color-fill-20-alt {
-    background: $win-color-fl-20-alt;
+&.color-bg-light-vivid-mid {
+    background-color: $color-bg-light-vivid-mid;
 }
 
-&.win-color-fill-30-alt {
-    background: $win-color-fl-30-alt;
+&.color-bg-light-vivid-low {
+    background-color: $color-bg-light-vivid-low;
 }
 
-&.win-color-fill-40-alt {
-    background: $win-color-fl-40-alt;
+&.color-bg-light-neutral-high {
+    background-color: $color-bg-light-neutral-high;
 }
 
-&.win-color-fill-50-alt {
-    background: $win-color-fl-50-alt;
+&.color-bg-light-neutral-mid {
+    background-color: $color-bg-light-neutral-mid;
 }
 
-&.win-color-fill-60-alt {
-    background: $win-color-fl-60-alt;
+&.color-bg-dark-vivid-high {
+    background-color: $color-bg-dark-vivid-high;
 }
 
-&.win-color-fill-70-alt {
-    background: $win-color-fl-70-alt;
+&.color-bg-dark-vivid-mid {
+    background-color: $color-bg-dark-vivid-mid;
 }
 
-&.win-color-fill-accent-alt {
-    background: $win-color-fl-accent;
+&.color-bg-dark-vivid-low {
+    background-color: $color-bg-dark-vivid-low;
 }
 
-&.win-color-fill-accent-low-alt {
-    background: $win-color-fl-accent-low;
+&.color-bg-dark-neutral-high {
+    background-color: $color-bg-dark-neutral-high;
 }
 
-&.win-color-fill-accent-medium-alt {
-    background: $win-color-fl-accent-medium;
+&.color-bg-dark-neutral-mid {
+    background: $color-bg-dark-neutral-mid;
 }
 
-&.win-color-fill-accent-high-alt {
-    background: $win-color-fl-accent-high;
+
+// Accent background colors
+&.color-fill-accent-dim-low {
+    background-color: $color-accent-dim-low;
 }
 
-&.win-color-fill-alert-alt {
-    background: $win-color-fl-alert;
+&.color-fill-accent-dim-mid {
+    background-color: $color-accent-dim-mid;
 }
 
-// Basel alt line colors
-&.win-color-line-10-alt {
-    border-color: $win-color-fl-10-alt;
+&.color-fill-accent-dim-high {
+    background-color: $color-accent-dim-high;
 }
 
-&.win-color-line-20-alt {
-    border-color: $win-color-fl-20-alt;
+&.color-fill-accent-neutral-low {
+    background-color: $color-accent-neutral-low;
 }
 
-&.win-color-line-30-alt {
-    border-color: $win-color-fl-30-alt;
+&.color-fill-accent-neutral-mid {
+    background-color: $color-accent-neutral-mid;
 }
 
-&.win-color-line-40-alt {
-    border-color: $win-color-fl-40-alt;
+&.color-fill-accent-neutral-high {
+    background-color: $color-accent-neutral-high;
 }
 
-&.win-color-line-50-alt {
-    border-color: $win-color-fl-50-alt;
+&.color-fill-accent-vivid-low {
+    background-color: $color-accent-vivid-low;
 }
 
-&.win-color-line-60-alt {
-    border-color: $win-color-fl-60-alt;
+&.color-fill-accent-vivid-mid {
+    background-color: $color-accent-vivid-mid;
 }
 
-&.win-color-line-70-alt {
-    border-color: $win-color-fl-70-alt;
+&.color-fill-accent-vivid-high {
+    background-color: $color-accent-vivid-high;
 }
 
-&.win-color-line-accent-alt {
-    border-color: $win-color-fl-accent;
+&.color-fill-alert {
+    background-color: $color-alert;
 }
+
 
-&.win-color-line-accent-low-alt {
-    border-color: $win-color-fl-accent-low;
+// Accent line colors
+&.color-line-accent-dim-low {
+    border-color: $color-accent-dim-low;
 }
 
-&.win-color-line-accent-medium-alt {
-    border-color: $win-color-fl-accent-medium;
+&.color-line-accent-dim-mid {
+    border-color: $color-accent-dim-mid;
 }
 
-&.win-color-line-accent-high-alt {
-    border-color: $win-color-fl-accent-high;
+&.color-line-accent-dim-high {
+    border-color: $color-accent-dim-high;
 }
 
-&.win-color-line-alert-alt {
-    border-color: $win-color-fl-alert;
+&.color-line-accent-neutral-low {
+    border-color: $color-accent-neutral-low;
 }
 
+&.color-line-accent-neutral-mid {
+    border-color: $color-accent-neutral-mid;
+}
 
-// Basel alt background colors
-&.win-color-bg-10-alt {
-    background: $win-color-bg-10-alt;
+&.color-line-accent-neutral-high {
+    border-color: $color-accent-neutral-high;
 }
 
-&.win-color-bg-20-alt {
-    background: $win-color-bg-20-alt;
+&.color-line-accent-vivid-low {
+    border-color: $color-accent-vivid-low;
 }
 
-&.win-color-bg-30-alt {
-    background: $win-color-bg-30-alt;
+&.color-line-accent-vivid-mid {
+    border-color: $color-accent-vivid-mid;
 }
 
-&.win-color-bg-40-alt {
-    background: $win-color-bg-40-alt;
+&.color-line-accent-vivid-high {
+    border-color: $color-accent-vivid-high;
 }
 
-&.win-color-bg-50-alt {
-    background: $win-color-bg-50-alt;
+&.color-line-alert {
+    border-color: $color-alert;
 }
 
-// Bootstrap-winjs accent color and variants
-// TODO: Deprecate these, adopt Basel classes
 
-//Core accent colors
-&.core-yellow {
-    background: $win-color-core-yellow;
+// Primary brand background colors
+&.color-bgc-blue {
+    background-color: $color-bgc-blue;
 }
 
-&.core-orange {
-    background: $win-color-core-orange;
+&.color-bgc-purple {
+    background-color: $color-bgc-purple;
 }
 
-&.core-red {
-    background: $win-color-core-red;
+&.color-bgc-magenta {
+    background-color: $color-bgc-magenta;
 }
 
-&.core-magenta {
-    background: $win-color-core-magenta;
+&.color-bgc-red {
+    background-color: $color-bgc-red;
 }
 
-&.core-purple {
-    background: $win-color-core-purple;
+&.color-bgc-orange {
+    background-color: $color-bgc-orange;
 }
 
-&.core-blue {
-    background: $win-color-core-blue;
+&.color-bgc-yellow {
+    background-color: $color-bgc-yellow;
 }
 
-&.core-teal {
-    background: $win-color-core-teal;
+&.color-bgc-green {
+    background-color: $color-bgc-green;
 }
 
-&.core-green {
-    background: $win-color-core-green;
+&.color-bgc-teal {
+    background-color: $color-bgc-teal;
 }
 
-//Secondary accent colors
-&.secondary-magenta {
-    background: $win-color-secondary-magenta;
+
+// Brand content accent background colors
+&.color-bgc-lightblue {
+    background-color: $color-bgc-lightblue;
 }
 
-&.secondary-purple {
-    background: $win-color-secondary-purple;
+&.color-bgc-midblue {
+    background-color: $color-bgc-midblue;
 }
 
-&.secondary-blue {
-    background: $win-color-secondary-blue;
+&.color-bgc-darkblue {
+    background-color: $color-bgc-darkblue;
 }
 
-&.secondary-teal {
-    background: $win-color-secondary-teal;
+&.color-bgc-lightpurple {
+    background-color: $color-bgc-lightpurple;
 }
 
-&.secondary-green {
-    background: $win-color-secondary-green;
+&.color-bgc-darkpurple {
+    background-color: $color-bgc-darkpurple;
 }
 
-//Tertiary accent colors
-&.tertiary-yellow {
-    background: $win-color-tertiary-yellow;
+&.color-bgc-lightmagenta {
+    background-color: $color-bgc-lightmagenta;
 }
 
-&.tertiary-orange {
-    background: $win-color-tertiary-orange;
+&.color-bgc-darkmagenta {
+    background-color: $color-bgc-darkmagenta;
 }
 
-&.tertiary-red {
-    background: $win-color-tertiary-red;
+&.color-bgc-darkred {
+    background-color: $color-bgc-darkred;
 }
 
-&.tertiary-magenta {
-    background: $win-color-tertiary-magenta;
+&.color-bgc-lightorange {
+    background-color: $color-bgc-lightorange;
 }
 
-&.tertiary-purple {
-    background: $win-color-tertiary-purple;
+&.color-bgc-lightyellow {
+    background-color: $color-bgc-lightyellow;
 }
 
-&.tertiary-cyan {
-    background: $win-color-tertiary-cyan;
+&.color-bgc-lightgreen {
+    background-color: $color-bgc-lightgreen;
 }
 
-&.tertiary-blue {
-    background: $win-color-tertiary-blue;
+&.color-bgc-darkgreen {
+    background-color: $color-bgc-darkgreen;
 }
 
-&.tertiary-teal {
-    background: $win-color-tertiary-teal;
+&.color-bgc-lightteal {
+    background-color: $color-bgc-lightteal;
 }
 
-&.tertiary-green {
-    background: $win-color-tertiary-green;
+&.color-bgc-darkteal {
+    background-color: $color-bgc-darkteal;
 }
+
 
 pre {
     max-width: 100%;
@@ -445,7 +475,7 @@ code {
 
 //make it possible to see alt colors in docs
 #alt-colors > .col-sm-6 {
-    background-color: $win-color-type-primary;
+    background-color: $color-type-primary;
 }
 
 //space out buttons in documentation easier

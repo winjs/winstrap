@@ -99,60 +99,60 @@
     // Default colors
     .win-rating-stars {
         .win-icon-ratingstar {
-            color: $win-color-fl-25;
+            color: $color-neutral-low;
         }
     }
 
     .win-rating-stars-value {
         .win-icon-ratingstar {
-            color: $win-color-fl-70;
+            color: $color-vivid-high;
         }
 
         &.win-rating-stars-value-user {
             .win-icon-ratingstar {
-                color: $win-color-fl-accent;
+                color: $color-accent;
             }
         }
     }
 
     .win-rating-btn.active {
         .win-icon-ratingstar {
-            color: $win-color-fl-60;
+            color: $color-vivid-mid;
         }
     }
 
     .win-rating-label {
-        color: $win-color-type-primary;
+        color: $color-type-primary;
     }
 
     // Alt colors
     &.win-color-alt {
         .win-rating-stars {
             .win-icon-ratingstar {
-                color: $win-color-fl-25-alt;
+                color: $color-neutral-low-alt;
             }
         }
 
         .win-rating-stars-value {
             .win-icon-ratingstar {
-                color: $win-color-fl-70-alt;
+                color: $color-vivid-high-alt;
             }
 
             &.win-rating-stars-value-user {
                 .win-icon-ratingstar {
-                    color: $win-color-fl-accent;
+                    color: $color-accent;
                 }
             }
         }
 
         .win-rating-btn.active {
             .win-icon-ratingstar {
-                color: $win-color-fl-60-alt;
+                color: $color-vivid-mid-alt;
             }
         }
 
         .win-rating-label {
-            color: $win-color-type-primary-alt;
+            color: $color-type-primary-alt;
         }
     }
 }

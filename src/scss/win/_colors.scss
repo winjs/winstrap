@@ -2,13 +2,13 @@
 
 // WHEN DEFINING COLORS...
 // Opacity is the primary device used to ensure proper contrast ratio
-// When $win-color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
+// When $color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
 // Use HEX for colors with 100% opacity
 // Use RGBA for colors with < 100% opacity
 // You can convert HEX to RGBA using the rgba($color, opacity) function
 
 
-// Fixed colors
+// Base colors
 $color-light:                       #FFFFFF;
 $color-dark:                        #000000;
 $color-accent:                      #0078D7;
@@ -26,14 +26,14 @@ $color-bgc-green:                   #107C10;
 $color-bgc-teal:                    #008272;
 
 
-// Content accent colors
+// Brand content accent colors
 $color-bgc-lightblue:               #00BCF2;
 $color-bgc-midblue:                 #00188F;
 $color-bgc-darkblue:                #002050;
 $color-bgc-lightpurple:             #B4A0FF;
 $color-bgc-darkpurple:              #32145A;
 $color-bgc-lightmagenta:            #E3008C;
-$color-bgc-darkmegenta:             #5C005C;
+$color-bgc-darkmagenta:             #5C005C;
 $color-bgc-darkred:                 #A80000;
 $color-bgc-lightorange:             #FF8C00;
 $color-bgc-lightyellow:             #FFF100;
@@ -44,13 +44,13 @@ $color-bgc-darkteal:                #004B50;
 
 
 // Background colors
-$color-bg-light-vivid-high:         $win-color-light;
+$color-bg-light-vivid-high:         $color-light;
 $color-bg-light-vivid-mid:          #F2F2F2;
 $color-bg-light-vivid-low:          #E5E5E5;
 $color-bg-light-neutral-high:       #D9D9D9;
 $color-bg-light-neutral-mid:        #CCCCCC;
 
-$color-bg-dark-vivid-high:          $win-color-dark;
+$color-bg-dark-vivid-high:          $color-dark;
 $color-bg-dark-vivid-mid:           #191919;
 $color-bg-dark-vivid-low:           #262626;
 $color-bg-dark-neutral-high:        #333333;
@@ -58,37 +58,37 @@ $color-bg-dark-neutral-mid:         #404040;
 
 
 // Text colors
-$color-type-primary:                $win-color-dark;
-$color-type-secondary:              rgba($win-color-type-primary, 0.6);
-$color-type-disabled:               rgba($win-color-type-primary, 0.2);
+$color-type-primary:                $color-dark;
+$color-type-secondary:              rgba($color-dark, 0.6);
+$color-type-disabled:               rgba($color-dark, 0.2);
 $color-type-accent:                 $color-accent;
 $color-type-alert:                  $color-alert;
 
-$color-type-primary-alt:            $win-color-light;
-$color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
-$color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
+$color-type-primary-alt:            $color-light;
+$color-type-secondary-alt:          rgba($color-light, 0.6);
+$color-type-disabled-alt:           rgba($color-light, 0.2);
 $color-type-accent-alt:             $color-accent;
 $color-type-alert-alt:              $color-alert;
 
 
 // Fills/Lines color & values
-$color-dim-low:                     rgba($win-color-dark, 0.05);
-$color-dim-mid:                     rgba($win-color-dark, 0.1);
-$color-neutral-low:                 rgba($win-color-dark, 0.2);
-$color-neutral-mid:                 rgba($win-color-dark, 0.3);
-$color-neutral-high:                rgba($win-color-dark, 0.4);
-$color-vivid-low:                   rgba($win-color-dark, 0.6);
-$color-vivid-mid:                   rgba($win-color-dark, 0.8);
-$color-vivid-high:                  $win-color-dark;
+$color-dim-low:                     rgba($color-dark, 0.05);
+$color-dim-mid:                     rgba($color-dark, 0.1);
+$color-neutral-low:                 rgba($color-dark, 0.2);
+$color-neutral-mid:                 rgba($color-dark, 0.3);
+$color-neutral-high:                rgba($color-dark, 0.4);
+$color-vivid-low:                   rgba($color-dark, 0.6);
+$color-vivid-mid:                   rgba($color-dark, 0.8);
+$color-vivid-high:                  $color-dark;
 
-$color-dim-mid-alt:                 rgba($win-color-light, 0.1);
-$color-dim-high-alt:                rgba($win-color-light, 0.15);
-$color-neutral-low-alt:             rgba($win-color-light, 0.2);
-$color-neutral-mid-alt:             rgba($win-color-light, 0.3);
-$color-neutral-high-alt:            rgba($win-color-light, 0.4);
-$color-vivid-low-alt:               rgba($win-color-light, 0.6);
-$color-vivid-mid-alt:               rgba($win-color-light, 0.8);
-$color-vivid-high-alt:              $win-color-light;
+$color-dim-mid-alt:                 rgba($color-light, 0.1);
+$color-dim-high-alt:                rgba($color-light, 0.15);
+$color-neutral-low-alt:             rgba($color-light, 0.2);
+$color-neutral-mid-alt:             rgba($color-light, 0.3);
+$color-neutral-high-alt:            rgba($color-light, 0.4);
+$color-vivid-low-alt:               rgba($color-light, 0.6);
+$color-vivid-mid-alt:               rgba($color-light, 0.8);
+$color-vivid-high-alt:              $color-light;
 
 $color-accent-dim-low:              rgba($color-accent, 0.05);
 $color-accent-dim-mid:              rgba($color-accent, 0.1);

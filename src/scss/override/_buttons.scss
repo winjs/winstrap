@@ -10,8 +10,8 @@
 
   &,
   &:focus {
-    color: $win-color-type-primary;
-    background-color: $win-color-fl-20;
+    color: $color-type-primary;
+    background-color: $color-dim-mid;
     border-color: transparent;
   }
 }
@@ -19,30 +19,30 @@
 // Override Bootstrap button settings
 .btn-primary,
 .btn-primary:focus {
-  color: $win-color-type-primary-alt;
-  background-color: $win-color-fl-accent;
+  color: $color-type-primary-alt;
+  background-color: $color-accent;
 }
 .btn-primary:hover,
 .btn-default:hover,
 .btn-primary:focus,
 .btn-default:focus {
-  border-color: $win-color-fl-40;
+  border-color: $color-neutral-high;
 }
 .btn-default:hover {
-  background-color: $win-color-fl-30;
+  background-color: $color-neutral-mid;
 }
 .btn-primary:hover {
-  background-color: $win-color-fl-accent;
+  background-color: $color-accent;
 }
 .btn:active,
 .btn.active {
-  border-color: $win-color-fl-40;
-  background-color: $win-color-fl-40;
+  border-color: $color-neutral-high;
+  background-color: $color-neutral-high;
   @include box-shadow(none);
 }
 .btn:disabled {
-  color: $win-color-type-disabled-alt;
-  background-color: $win-color-fl-30;
+  color: $color-type-disabled-alt;
+  background-color: $color-neutral-mid;
   border-color: transparent;
 }
 
@@ -51,7 +51,7 @@
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
   &:active,
   &.active {
-    background-color: $win-color-fl-40;
+    background-color: $color-neutral-high;
   }
 }
 .btn-primary,
@@ -63,7 +63,7 @@
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
   &:active,
   &.active {
-    background-color: $win-color-fl-40;
+    background-color: $color-neutral-high;
   }
 }
 // Warning appears as orange
@@ -112,14 +112,14 @@
 
   &:disabled,
   &.disabled {
-    color: $win-color-type-disabled;
+    color: $color-type-disabled;
       text-decoration: none;
   }
   &[disabled],
   fieldset[disabled] & {
     &:hover,
     &:focus {
-      color: $win-color-type-disabled;
+      color: $color-type-disabled;
       text-decoration: none;
     }
   }
@@ -128,7 +128,7 @@
 // Dropdown button
 .btn-dropdown {
   background: none;
-  border: 2px solid $win-color-fl-30;
+  border: 2px solid $color-neutral-mid;
 
   .caret {
     margin-left: .5em;
@@ -139,17 +139,17 @@
 // Toggle buttons
 .btn[data-toggle="button"] {
   &.active {
-    background-color: $win-color-fl-accent;
+    background-color: $color-accent;
     border-color: transparent;
-    color: $win-color-light;
+    color: $color-light;
   }
   &.active:active {
-    background-color: darken($win-color-fl-accent, 5%);
+    background-color: darken($color-accent, 5%);
     border-color: transparent;
-    color: $win-color-type-primary;
+    color: $color-type-primary;
   }
   &:hover {
-    border-color: $win-color-fl-accent;
+    border-color: $color-accent;
   }
 }
 

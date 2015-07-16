@@ -15,9 +15,9 @@
     // Colors
     // On light surface (default), on light image
     .tooltip-inner {
-        border-color: $win-color-fl-30;
-        background-color: $win-color-bg-20;
-        color: $win-color-type-primary;
+        border-color: $color-neutral-mid;
+        background-color: $color-bg-light-vivid-mid;
+        color: $color-type-primary;
     }
 
     // On dark surface, on colored background, on dark image
@@ -25,9 +25,9 @@
     .win-theme-on-color + &,
     .win-theme-on-img-dark + & {
         .tooltip-inner {
-            border-color: $win-color-fl-30-alt;
-            background-color: $win-color-bg-20-alt;
-            color: $win-color-type-primary-alt;
+            border-color: $color-neutral-mid-alt;
+            background-color: $color-bg-dark-vivid-mid;
+            color: $color-type-primary-alt;
         }
     }
 }
