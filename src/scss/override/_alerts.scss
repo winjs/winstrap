@@ -13,7 +13,7 @@
     top: ($grid-gutter-width / 2);
     right: ($grid-gutter-width / 2);
     z-index: 1;
-    @include win-type-headline();
+    @include type-headline();
     line-height: 1;
     opacity: 1;
     font-size: 30px;

@@ -1,8 +1,8 @@
 ﻿<div class="row">
     <div class="col-xs-24">
-        <section class="win-section" id="buttons">
-            <header class="win-section-header ">
-                <h1 class="win-section-title ">
+        <section class="section" id="buttons">
+            <header class="section-header ">
+                <h1 class="section-title ">
                     <a href="#buttons">Buttons</a>
                 </h1>
             </header>
@@ -102,21 +102,21 @@
                     <div class="color-fill-accent-vivid-high clearfix" style="padding: 2em; margin-bottom: 1em;">
                         <h4 class="color-type-primary-alt">On dark background</h4>
                         <p>
-                            <a href="" class="btn win-btn-on-dark">Primary</a>
-                            <a href="" class="btn win-btn-on-dark active">Active</a>
-                            <a href="" class="btn win-btn-on-dark disabled">Disabled</a>
+                            <a href="" class="btn btn-on-dark">Primary</a>
+                            <a href="" class="btn btn-on-dark active">Active</a>
+                            <a href="" class="btn btn-on-dark disabled">Disabled</a>
                         </p>
                         <p>
-                            <a href="" class="win-link-on-dark">Hyperlink on dark background</a>
+                            <a href="" class="link-on-dark">Hyperlink on dark background</a>
                         </p>
                     </div>
 
                     {{#markdown}}
 ```xml
-<a href="" class="btn win-btn-on-dark">Primary</a>
-<a href="" class="btn win-btn-on-dark active">Active</a>
-<a href="" class="btn win-btn-on-dark disabled">Disabled</a>
-<a href="" class="win-link-on-dark">Hyperlink on dark background</a>
+<a href="" class="btn btn-on-dark">Primary</a>
+<a href="" class="btn btn-on-dark active">Active</a>
+<a href="" class="btn btn-on-dark disabled">Disabled</a>
+<a href="" class="link-on-dark">Hyperlink on dark background</a>
 ```
                     {{/markdown}}
                 </div>
@@ -125,21 +125,21 @@
                     <div class="color-fill-accent-dim-mid clearfix" style="padding: 2em; margin-bottom: 1em;">
                         <h4 class="color-type-primary">On light background</h4>
                         <p>
-                            <a href="" class="btn win-btn-on-light">Primary</a>
-                            <a href="" class="btn win-btn-on-light active">Active</a>
-                            <a href="" class="btn win-btn-on-light disabled">Disabled</a>
+                            <a href="" class="btn btn-on-light">Primary</a>
+                            <a href="" class="btn btn-on-light active">Active</a>
+                            <a href="" class="btn btn-on-light disabled">Disabled</a>
                         </p>
                         <p>
-                            <a href="" class="win-link-on-light">Hyperlink on light background</a>
+                            <a href="" class="link-on-light">Hyperlink on light background</a>
                         </p>
                     </div>
 
                     {{#markdown}}
 ```xml
-<a href="" class="btn win-btn-on-light">Primary</a>
-<a href="" class="btn win-btn-on-light active">Active</a>
-<a href="" class="btn win-btn-on-light disabled">Disabled</a>
-<a href="" class="win-link-on-light">Hyperlink on light background</a>
+<a href="" class="btn btn-on-light">Primary</a>
+<a href="" class="btn btn-on-light active">Active</a>
+<a href="" class="btn btn-on-light disabled">Disabled</a>
+<a href="" class="link-on-light">Hyperlink on light background</a>
 ```
                     {{/markdown}}
                 </div>
@@ -238,7 +238,7 @@
                 <div class="col-md-6">
                     <h4>Alt</h4>
                     <div class="color-black" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-alt" autocomplete="off" aria-pressed="false">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false">
                             <span class="stateLabel stateLabel-on">On</span>
                             <span class="stateLabel stateLabel-off">Off</span>
                         </button>
@@ -249,7 +249,7 @@
                 <div class="col-md-6">
                     <h4>On solid color</h4>
                     <div class="color-fill-accent-vivid-high" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-color" autocomplete="off" aria-pressed="false">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-color" autocomplete="off" aria-pressed="false">
                             <span class="stateLabel stateLabel-on">On</span>
                             <span class="stateLabel stateLabel-off">Off</span>
                         </button>
@@ -260,7 +260,7 @@
                 <div class="col-md-6">
                     <h4>On light image</h4>
                     <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em; background-position: center;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-img-light" autocomplete="off" aria-pressed="false">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-light" autocomplete="off" aria-pressed="false">
                             <span class="stateLabel stateLabel-on">On</span>
                             <span class="stateLabel stateLabel-off">Off</span>
                         </button>
@@ -271,7 +271,7 @@
                 <div class="col-md-6">
                     <h4>On dark image</h4>
                     <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch win-theme-on-img-dark" autocomplete="off" aria-pressed="false">
+                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-dark" autocomplete="off" aria-pressed="false">
                             <span class="stateLabel stateLabel-on">On</span>
                             <span class="stateLabel stateLabel-off">Off</span>
                         </button>
@@ -283,7 +283,7 @@
                 <div class="col-md-24">
                     {{#markdown}}
 ```xml
-<button type="button" data-toggle="button" class="btn btn-toggle-switch [win-theme-alt] [win-theme-on-color] [win-theme-on-img-light] [win-theme-on-img-dark]" autocomplete="off" aria-pressed="false">
+<button type="button" data-toggle="button" class="btn btn-toggle-switch [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]" autocomplete="off" aria-pressed="false">
     <span class="stateLabel stateLabel-on">On</span>
     <span class="stateLabel stateLabel-off">Off</span>
 </button>

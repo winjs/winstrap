@@ -27,7 +27,7 @@
 }
 
 .dropdown-menu li a {
-  @include win-type-body(no-line-height);
+  @include type-body(no-line-height);
   line-height: 32px;
   height: 32px;
   padding: 0;
@@ -108,7 +108,7 @@ dl.dropdown-menu {
   font-size: 12px;
 
   &::before {
-    content: map-get($win-symbols, flipviewdown);
+    content: map-get($icons, flipviewdown);
     vertical-align: bottom;
   }
 }

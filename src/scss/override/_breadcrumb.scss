@@ -14,7 +14,7 @@
 
   > li + li:before {
     font-family: "winjs-symbols";
-    content: map-get($win-symbols, grouparrowright);
+    content: map-get($icons, grouparrowright);
     display: inline-block;
     padding: 0 4px 0 1px;
     font-size: .8em;

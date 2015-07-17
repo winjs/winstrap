@@ -6,7 +6,7 @@ $toggle-switch-height:          20px;
 $toggle-switch-indicator-size:  10px;
 
 // Button filter
-.win-button-filter {
+.button-filter {
   border-color: $color-vivid-low;
   background: none;
 
@@ -16,7 +16,7 @@ $toggle-switch-indicator-size:  10px;
   }
 }
 
-.win-btn-on-light {
+.btn-on-light {
     color: $btn-on-light-color;
     background-color: $btn-on-light-bg;
     border-color: $btn-on-light-border;
@@ -55,7 +55,7 @@ $toggle-switch-indicator-size:  10px;
     }
 }
 
-.win-btn-on-dark {
+.btn-on-dark {
     color: $btn-on-dark-color;
     background-color: $btn-on-dark-bg;
     border-color: $btn-on-dark-border;
@@ -94,12 +94,12 @@ $toggle-switch-indicator-size:  10px;
     }
 }
 
-a.win-link-on-light {
+a.link-on-light {
     text-decoration: underline;
     color: $color-type-primary;
 }
 
-a.win-link-on-dark {
+a.link-on-dark {
     text-decoration: underline;
     color: $color-type-primary-alt;
 }
@@ -120,7 +120,7 @@ a.win-link-on-dark {
         top: 1px;
         left: 54px;
         line-height: 1;
-        @include win-type-body(no-responsive, no-line-height);
+        @include type-body(no-responsive, no-line-height);
     }
 
     .stateLabel-on {
@@ -158,7 +158,7 @@ a.win-link-on-dark {
 
     // On light surface and on light image
     &,
-    &.win-theme-on-img-light {
+    &.theme-on-img-light {
         background-color: transparent;
         border-color: $color-vivid-mid;
 
@@ -198,8 +198,8 @@ a.win-link-on-dark {
     }
 
     // On dark surface and on dark image
-    &.win-theme-alt,
-    &.win-theme-on-img-dark {
+    &.theme-alt,
+    &.theme-on-img-dark {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
 
@@ -239,7 +239,7 @@ a.win-link-on-dark {
     }
 
     // On colored surface
-    &.win-theme-on-color {
+    &.theme-on-color {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
 
