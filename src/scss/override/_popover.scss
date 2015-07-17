@@ -1,0 +1,47 @@
+//
+// Static resources
+//
+$popover-position: win-spacer(xxs, -4);
+
+.popover {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @include win-type-body(no-responsive, no-line-height);
+
+    &.top       { margin-top: -$popover-position; }
+    &.right     { margin-left: $popover-position; }
+    &.bottom    { margin-top: $popover-position; }
+    &.left      { margin-left: -$popover-position; }
+
+    .arrow,
+    .popover-title {
+        display: none;
+    }
+    .popover-content {
+        padding: win-spacer(xxs, -4) win-spacer(xxs) win-spacer(xxs, -2);
+
+        .btn {
+            margin: win-spacer(xxs, 2) 0 win-spacer(xxs);
+            float: right;
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // On light surface (default), on light image
+    color: $color-type-primary;
+    background-color: $color-bg-light-vivid-mid;
+    border-color: $color-neutral-mid;
+
+    // On dark surface, on colored background, on dark image
+    &.win-theme-alt,
+    &.win-theme-on-color,
+    &.win-theme-on-img-dark {
+        color: $color-type-primary-alt;
+        background-color: $color-bg-dark-vivid-mid;
+        border-color: $color-neutral-mid-alt;
+    }
+}

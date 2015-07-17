@@ -10,7 +10,7 @@
   .open > &.dropdown-toggle {
     color: $color;
     background-color: $background;
-    border-color: $win-color-fl-40;
+    border-color: $color-neutral-high;
   }
 
   //Active and disabled states for all buttons is the same
@@ -32,8 +32,8 @@
     &.focus,
     &:active,
     &.active {
-      color: $win-color-type-secondary;
-      background-color: $win-color-fl-30;
+      color: $color-type-secondary;
+      background-color: $color-neutral-mid;
       border-color: transparent;
     }
   }

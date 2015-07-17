@@ -29,7 +29,7 @@
         opacity: 1;
         height: 48px;
         width: 48px;
-        
+
         span {
             font-size: 16px;
             top: -3px;
@@ -51,18 +51,18 @@
     }
 
     // Color
-    color: $win-color-type-primary;
+    color: $color-type-primary;
 
     &.alert-info {
-        background-color: $win-color-fl-10;
-        color: $win-color-type-primary;
+        background-color: $color-bg-light-vivid-mid;
+        color: $color-type-primary;
     }
 
     &.alert-warning {
-        background-color: rgba($win-color-tertiary-yellow, .4);
+        background-color: rgba($color-lightyellow, .4);
     }
 
     &.alert-danger {
-        background-color: rgba($brand-danger, .3);
+        background-color: rgba($color-alert, .3);
     }
 }

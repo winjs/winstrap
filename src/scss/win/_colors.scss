@@ -1,105 +1,524 @@
-// Microsoft Basel branding color palette
+// Microsoft MDL color palette
 
 // WHEN DEFINING COLORS...
 // Opacity is the primary device used to ensure proper contrast ratio
-// When $win-color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
+// When $color-type-secondary calls for #000000 at 60%, it actually wants some transparency, rather than an opaque 60% grey
 // Use HEX for colors with 100% opacity
 // Use RGBA for colors with < 100% opacity
 // You can convert HEX to RGBA using the rgba($color, opacity) function
 
-// Base
-$win-color-light:                       #FFFFFF;
-$win-color-dark:                        #000000;
+//
+// Color variables
+//
+
+// Base colors
+$color-white:                       #FFFFFF;
+$color-black:                       #000000;
+$color-accent:                      #0078D7;
+$color-alert:                       #D02E00;
 
 
-// Text Colors
-$win-color-type-primary:                $win-color-dark;
-$win-color-type-secondary:              rgba($win-color-type-primary, 0.6);
-$win-color-type-disabled:               rgba($win-color-type-primary, 0.2);
-$win-color-type-accent:                 #0070BC;
-$win-color-type-alert:                  #D02E00;
-
-$win-color-type-primary-alt:            $win-color-light;
-$win-color-type-secondary-alt:          rgba($win-color-type-primary-alt, 0.6);
-$win-color-type-disabled-alt:           rgba($win-color-type-primary-alt, 0.2);
-$win-color-type-accent-alt:             #008EEF;
-$win-color-type-alert-alt:              #D02E00;
+// Primary brand colors
+$color-blue:                        #0078D7;
+$color-purple:                      #5C2D91;
+$color-magenta:                     #B4009E;
+$color-red:                         #E81123;
+$color-orange:                      #D83B01;
+$color-yellow:                      #FFB900;
+$color-green:                       #107C10;
+$color-teal:                        #008272;
 
 
-// Fills/Lines color & values
-$win-color-fl-10:                       rgba($win-color-dark, 0.05);
-$win-color-fl-20:                       rgba($win-color-dark, 0.1);
-$win-color-fl-25:                       rgba($win-color-dark, 0.2);
-$win-color-fl-30:                       rgba($win-color-dark, 0.3);
-$win-color-fl-40:                       rgba($win-color-dark, 0.4);
-$win-color-fl-50:                       rgba($win-color-dark, 0.6);
-$win-color-fl-60:                       rgba($win-color-dark, 0.8);
-$win-color-fl-70:                       $win-color-dark;
-$win-color-fl-accent:                   #0078D7;
-$win-color-fl-accent-low:               rgba($win-color-fl-accent, 0.4); 
-$win-color-fl-accent-medium:            rgba($win-color-fl-accent, 0.6); 
-$win-color-fl-accent-high:              rgba($win-color-fl-accent, 0.7); 
-$win-color-fl-alert:                    #D02E00;
-
-$win-color-fl-10-alt:                   rgba($win-color-light, 0.1);
-$win-color-fl-20-alt:                   rgba($win-color-light, 0.15);
-$win-color-fl-25-alt:                   rgba($win-color-light, 0.2);
-$win-color-fl-30-alt:                   rgba($win-color-light, 0.3);
-$win-color-fl-40-alt:                   rgba($win-color-light, 0.4);
-$win-color-fl-50-alt:                   rgba($win-color-light, 0.6);
-$win-color-fl-60-alt:                   rgba($win-color-light, 0.8);
-$win-color-fl-70-alt:                   $win-color-light;
-$win-color-fl-accent-alt:               $win-color-fl-accent;
-$win-color-fl-accent-low-alt:           $win-color-fl-accent-low;
-$win-color-fl-accent-medium-alt:        $win-color-fl-accent-medium;
-$win-color-fl-accent-high-alt:          $win-color-fl-accent-high;
-$win-color-fl-alert-alt:                $win-color-fl-alert;
+// Brand content accent colors
+$color-lightblue:                   #00BCF2;
+$color-midblue:                     #00188F;
+$color-darkblue:                    #002050;
+$color-lightpurple:                 #B4A0FF;
+$color-darkpurple:                  #32145A;
+$color-lightmagenta:                #E3008C;
+$color-darkmagenta:                 #5C005C;
+$color-darkred:                     #A80000;
+$color-lightorange:                 #FF8C00;
+$color-lightyellow:                 #FFF100;
+$color-lightgreen:                  #BAD80A;
+$color-darkgreen:                   #004B1C;
+$color-lightteal:                   #00B294;
+$color-darkteal:                    #004B50;
 
 
-// Background Colors
-$win-color-bg-10:                       $win-color-light;
-$win-color-bg-20:                       #F2F2F2;
-$win-color-bg-30:                       #E5E5E5;
-$win-color-bg-40:                       #D9D9D9;
-$win-color-bg-50:                       #CCCCCC;
+// Background colors
+$color-bg-light-vivid-high:         $color-white;
+$color-bg-light-vivid-mid:          #F2F2F2;
+$color-bg-light-vivid-low:          #E5E5E5;
+$color-bg-light-neutral-high:       #D9D9D9;
+$color-bg-light-neutral-mid:        #CCCCCC;
 
-$win-color-bg-10-alt:                   $win-color-dark;
-$win-color-bg-20-alt:                   #191919;
-$win-color-bg-30-alt:                   #262626;
-$win-color-bg-40-alt:                   #333333;
-$win-color-bg-50-alt:                   #404040;
+$color-bg-dark-vivid-high:          $color-black;
+$color-bg-dark-vivid-mid:           #191919;
+$color-bg-dark-vivid-low:           #262626;
+$color-bg-dark-neutral-high:        #333333;
+$color-bg-dark-neutral-mid:         #404040;
 
 
-// Core colors
-// TODO: remove
-// These are not used by any components
-$win-color-core-yellow: #FFB900; 
-$win-color-core-orange: #D83B01; 
-$win-color-core-red: #E81123; 
-$win-color-core-magenta: #B4009E; 
-$win-color-core-purple: #5C2D91; 
-$win-color-core-blue: #0078D7;
-$win-color-core-teal: #008272; 
-$win-color-core-green: #107c10; 
+// Type colors
+$color-type-primary:                $color-black;
+$color-type-secondary:              rgba($color-black, 0.6);
+$color-type-disabled:               rgba($color-black, 0.2);
+$color-type-accent:                 $color-accent;
+$color-type-alert:                  $color-alert;
 
-// Secondary colors
-// TODO: remove
-// These are not used by any components
-$win-color-secondary-magenta: #E3008C;
-$win-color-secondary-purple: #32145A;
-$win-color-secondary-blue: #00188F; 
-$win-color-secondary-teal: #004B50; 
-$win-color-secondary-green: #004B1C; 
+$color-type-primary-alt:            $color-white;
+$color-type-secondary-alt:          rgba($color-white, 0.6);
+$color-type-disabled-alt:           rgba($color-white, 0.2);
+$color-type-accent-alt:             $color-accent;
+$color-type-alert-alt:              $color-alert;
 
-// Tertiary color
-// TODO: remove
-// These are not used by any components
-$win-color-tertiary-yellow: #FFF100;
-$win-color-tertiary-orange: #FF8C00;
-$win-color-tertiary-red: #A80000;
-$win-color-tertiary-magenta: #5C005C;
-$win-color-tertiary-purple: #B4A0FF;
-$win-color-tertiary-cyan: #00BCF2; 
-$win-color-tertiary-blue: #002050;
-$win-color-tertiary-teal: #00B294; 
-$win-color-tertiary-green: #BAD80A;
+
+// Fill/line colors
+$color-dim-low:                     rgba($color-black, 0.05);
+$color-dim-mid:                     rgba($color-black, 0.1);
+$color-neutral-low:                 rgba($color-black, 0.2);
+$color-neutral-mid:                 rgba($color-black, 0.3);
+$color-neutral-high:                rgba($color-black, 0.4);
+$color-vivid-low:                   rgba($color-black, 0.6);
+$color-vivid-mid:                   rgba($color-black, 0.8);
+$color-vivid-high:                  $color-black;
+
+$color-dim-mid-alt:                 rgba($color-white, 0.1);
+$color-dim-high-alt:                rgba($color-white, 0.15);
+$color-neutral-low-alt:             rgba($color-white, 0.2);
+$color-neutral-mid-alt:             rgba($color-white, 0.3);
+$color-neutral-high-alt:            rgba($color-white, 0.4);
+$color-vivid-low-alt:               rgba($color-white, 0.6);
+$color-vivid-mid-alt:               rgba($color-white, 0.8);
+$color-vivid-high-alt:              $color-white;
+
+$color-accent-dim-low:              rgba($color-accent, 0.05);
+$color-accent-dim-mid:              rgba($color-accent, 0.1);
+$color-accent-dim-high:             rgba($color-accent, 0.15);
+$color-accent-neutral-low:          rgba($color-accent, 0.2);
+$color-accent-neutral-mid:          rgba($color-accent, 0.3);
+$color-accent-neutral-high:         rgba($color-accent, 0.4);
+$color-accent-vivid-low:            rgba($color-accent, 0.6);
+$color-accent-vivid-mid:            rgba($color-accent, 0.8);
+$color-accent-vivid-high:           $color-accent;
+
+
+//
+// Color classes
+//
+
+// Base colors
+.color-white {
+    background: $color-white;
+}
+
+.color-black {
+    background: $color-black;
+}
+
+.color-accent {
+    background: $color-accent;
+}
+
+.color-alert {
+    background: $color-alert;
+}
+
+
+// Text colors
+.color-type-primary {
+    color: $color-type-primary;
+}
+
+.color-type-secondary {
+    color: $color-type-secondary;
+}
+
+.color-type-disabled {
+    color: $color-type-disabled;
+}
+
+.color-type-accent {
+    color: $color-type-accent;
+}
+
+.color-type-alert {
+    color: $color-type-alert;
+}
+
+
+// Alt text colors
+.color-type-primary-alt {
+    color: $color-type-primary-alt;
+}
+
+.color-type-secondary-alt {
+    color: $color-type-secondary-alt;
+}
+
+.color-type-disabled-alt {
+    color: $color-type-disabled-alt;
+}
+
+.color-type-accent-alt {
+    color: $color-type-accent-alt;
+}
+
+.color-type-alert-alt {
+    color: $color-type-alert-alt;
+}
+
+
+// Fill colors
+.color-fill-dim-low {
+    background-color: $color-dim-low;
+}
+
+.color-fill-dim-mid {
+    background-color: $color-dim-mid;
+}
+
+.color-fill-neutral-low {
+    background-color: $color-neutral-low;
+}
+
+.color-fill-neutral-mid {
+    background-color: $color-neutral-mid;
+}
+
+.color-fill-neutral-high {
+    background-color: $color-neutral-high;
+}
+
+.color-fill-vivid-low {
+    background-color: $color-vivid-low;
+}
+
+.color-fill-vivid-mid {
+    background-color: $color-vivid-mid;
+}
+
+.color-fill-vivid-high {
+    background-color: $color-vivid-high;
+}
+
+
+// Alt fill colors
+.color-fill-dim-mid-alt {
+    background-color: $color-dim-mid-alt;
+}
+
+.color-fill-dim-high-alt {
+    background-color: $color-dim-high-alt;
+}
+
+.color-fill-neutral-low-alt {
+    background-color: $color-neutral-low-alt;
+}
+
+.color-fill-neutral-mid-alt {
+    background-color: $color-neutral-mid-alt;
+}
+
+.color-fill-neutral-high-alt {
+    background-color: $color-neutral-high-alt;
+}
+
+.color-fill-vivid-low-alt {
+    background-color: $color-vivid-low-alt;
+}
+
+.color-fill-vivid-mid-alt {
+    background-color: $color-vivid-mid-alt;
+}
+
+.color-fill-vivid-high-alt {
+    background-color: $color-vivid-high-alt;
+}
+
+
+// Line colors
+.color-line-dim-low {
+    border-color: $color-dim-low;
+}
+
+.color-line-dim-mid {
+    border-color: $color-dim-mid;
+}
+
+.color-line-neutral-low {
+    border-color: $color-neutral-low;
+}
+
+.color-line-neutral-mid {
+    border-color: $color-neutral-mid;
+}
+
+.color-line-neutral-high {
+    border-color: $color-neutral-high;
+}
+
+.color-line-vivid-low {
+    border-color: $color-vivid-low;
+}
+
+.color-line-vivid-mid {
+    border-color: $color-vivid-mid;
+}
+
+.color-line-vivid-high {
+    border-color: $color-vivid-high;
+}
+
+
+// Alt line colors
+.color-line-dim-mid-alt {
+    border-color: $color-dim-mid-alt;
+}
+
+.color-line-dim-high-alt {
+    border-color: $color-dim-high-alt;
+}
+
+.color-line-neutral-low-alt {
+    border-color: $color-neutral-low-alt;
+}
+
+.color-line-neutral-mid-alt {
+    border-color: $color-neutral-mid-alt;
+}
+
+.color-line-neutral-high-alt {
+    border-color: $color-neutral-high-alt;
+}
+
+.color-line-vivid-low-alt {
+    border-color: $color-vivid-low-alt;
+}
+
+.color-line-vivid-mid-alt {
+    border-color: $color-vivid-mid-alt;
+}
+
+.color-line-vivid-high-alt {
+    border-color: $color-vivid-high-alt;
+}
+
+
+// Background colors
+.color-bg-light-vivid-high {
+    background-color: $color-bg-light-vivid-high;
+}
+
+.color-bg-light-vivid-mid {
+    background-color: $color-bg-light-vivid-mid;
+}
+
+.color-bg-light-vivid-low {
+    background-color: $color-bg-light-vivid-low;
+}
+
+.color-bg-light-neutral-high {
+    background-color: $color-bg-light-neutral-high;
+}
+
+.color-bg-light-neutral-mid {
+    background-color: $color-bg-light-neutral-mid;
+}
+
+.color-bg-dark-vivid-high {
+    background-color: $color-bg-dark-vivid-high;
+}
+
+.color-bg-dark-vivid-mid {
+    background-color: $color-bg-dark-vivid-mid;
+}
+
+.color-bg-dark-vivid-low {
+    background-color: $color-bg-dark-vivid-low;
+}
+
+.color-bg-dark-neutral-high {
+    background-color: $color-bg-dark-neutral-high;
+}
+
+.color-bg-dark-neutral-mid {
+    background: $color-bg-dark-neutral-mid;
+}
+
+
+// Accent background colors
+.color-fill-accent-dim-low {
+    background-color: $color-accent-dim-low;
+}
+
+.color-fill-accent-dim-mid {
+    background-color: $color-accent-dim-mid;
+}
+
+.color-fill-accent-dim-high {
+    background-color: $color-accent-dim-high;
+}
+
+.color-fill-accent-neutral-low {
+    background-color: $color-accent-neutral-low;
+}
+
+.color-fill-accent-neutral-mid {
+    background-color: $color-accent-neutral-mid;
+}
+
+.color-fill-accent-neutral-high {
+    background-color: $color-accent-neutral-high;
+}
+
+.color-fill-accent-vivid-low {
+    background-color: $color-accent-vivid-low;
+}
+
+.color-fill-accent-vivid-mid {
+    background-color: $color-accent-vivid-mid;
+}
+
+.color-fill-accent-vivid-high {
+    background-color: $color-accent-vivid-high;
+}
+
+.color-fill-alert {
+    background-color: $color-alert;
+}
+
+
+// Accent line colors
+.color-line-accent-dim-low {
+    border-color: $color-accent-dim-low;
+}
+
+.color-line-accent-dim-mid {
+    border-color: $color-accent-dim-mid;
+}
+
+.color-line-accent-dim-high {
+    border-color: $color-accent-dim-high;
+}
+
+.color-line-accent-neutral-low {
+    border-color: $color-accent-neutral-low;
+}
+
+.color-line-accent-neutral-mid {
+    border-color: $color-accent-neutral-mid;
+}
+
+.color-line-accent-neutral-high {
+    border-color: $color-accent-neutral-high;
+}
+
+.color-line-accent-vivid-low {
+    border-color: $color-accent-vivid-low;
+}
+
+.color-line-accent-vivid-mid {
+    border-color: $color-accent-vivid-mid;
+}
+
+.color-line-accent-vivid-high {
+    border-color: $color-accent-vivid-high;
+}
+
+.color-line-alert {
+    border-color: $color-alert;
+}
+
+
+// Primary brand background colors
+.color-blue {
+    background-color: $color-blue;
+}
+
+.color-purple {
+    background-color: $color-purple;
+}
+
+.color-magenta {
+    background-color: $color-magenta;
+}
+
+.color-red {
+    background-color: $color-red;
+}
+
+.color-orange {
+    background-color: $color-orange;
+}
+
+.color-yellow {
+    background-color: $color-yellow;
+}
+
+.color-green {
+    background-color: $color-green;
+}
+
+.color-teal {
+    background-color: $color-teal;
+}
+
+
+// Brand content accent background colors
+.color-lightblue {
+    background-color: $color-lightblue;
+}
+
+.color-midblue {
+    background-color: $color-midblue;
+}
+
+.color-darkblue {
+    background-color: $color-darkblue;
+}
+
+.color-lightpurple {
+    background-color: $color-lightpurple;
+}
+
+.color-darkpurple {
+    background-color: $color-darkpurple;
+}
+
+.color-lightmagenta {
+    background-color: $color-lightmagenta;
+}
+
+.color-darkmagenta {
+    background-color: $color-darkmagenta;
+}
+
+.color-darkred {
+    background-color: $color-darkred;
+}
+
+.color-lightorange {
+    background-color: $color-lightorange;
+}
+
+.color-lightyellow {
+    background-color: $color-lightyellow;
+}
+
+.color-lightgreen {
+    background-color: $color-lightgreen;
+}
+
+.color-darkgreen {
+    background-color: $color-darkgreen;
+}
+
+.color-lightteal {
+    background-color: $color-lightteal;
+}
+
+.color-darkteal {
+    background-color: $color-darkteal;
+}

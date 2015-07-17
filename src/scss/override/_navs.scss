@@ -2,8 +2,8 @@
 // Static resources
 //
 $pivot-horizontal-padding:                                                      12px;
-$pivot-hover-color:                                                             rgba($win-color-type-primary, 0.8);
-$pivot-hover-color-alt:                                                         rgba($win-color-type-primary-alt, 0.8);
+$pivot-hover-color:                                                             rgba($color-type-primary, 0.8);
+$pivot-hover-color-alt:                                                         rgba($color-type-primary-alt, 0.8);
 
 
 //
@@ -75,7 +75,7 @@ $pivot-hover-color-alt:                                                         
 
     // Default colors
     > li > a {
-        color: $win-color-type-secondary;
+        color: $color-type-secondary;
 
         &:hover,
         &:focus {
@@ -83,7 +83,7 @@ $pivot-hover-color-alt:                                                         
         }
     }
     > li.active > a {
-        color: $win-color-type-primary;
+        color: $color-type-primary;
 
         &:hover,
         &:focus {
@@ -94,7 +94,7 @@ $pivot-hover-color-alt:                                                         
     // Alt colors
     &.win-theme-alt {
         > li > a {
-            color: $win-color-type-secondary-alt;
+            color: $color-type-secondary-alt;
 
             &:hover,
             &:focus {
@@ -102,7 +102,7 @@ $pivot-hover-color-alt:                                                         
             }
         }
         > li.active > a {
-            color: $win-color-type-primary-alt;
+            color: $color-type-primary-alt;
 
             &:hover,
             &:focus {

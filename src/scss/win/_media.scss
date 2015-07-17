@@ -69,11 +69,11 @@
                 }
 
                 &:after {
-                    background-color: $win-color-fl-30;
+                    background-color: $color-neutral-mid;
                 }
 
                 &:hover:after {
-                    background-color: rgba($win-color-dark, 0);
+                    background-color: rgba($color-black, 0);
                 }
             }
         }
@@ -169,7 +169,7 @@
 
     .win-media-subheader {
         @include win-type-caption-alt();
-        color: $win-color-type-primary;
+        color: $color-type-primary;
 
         a {
             color: inherit;
@@ -209,7 +209,7 @@
         min-height: 27%;
         padding: 10% .75em 12%;
         font-size: $font-size-small;
-        background: $win-color-fl-60;
+        background: $color-vivid-mid;
         color: white;
         pointer-events: none;
     }
@@ -231,15 +231,15 @@
         background: none;
         border: none;
         @include transition(background-color .3s);
-        background: $win-color-fl-30;
+        background: $color-neutral-mid;
 
         &:hover {
-            background: rgba($win-color-dark, 0);
+            background: rgba($color-black, 0);
         }
     }
 }
 
 .win-media-info {
     @include win-type-caption-alt();
-    color: $win-color-type-secondary;
+    color: $color-type-secondary;
 }

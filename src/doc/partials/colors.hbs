@@ -5,56 +5,56 @@
                 <h1 class="win-section-title">
                     <a href="#bootstrap-colors">Bootstrap colors</a>
                 </h1>
-            </header>        
-            <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use Basel colors instead of Bootstrap colors.</p>
+            </header>
+            <p>These are the primary colors used throughout various Bootstrap controls. They've been altered to use MDL colors instead of Bootstrap colors.</p>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color win-color-fill-accent"></p>
-                </div> 
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$brand-primary: $win-color-fl-accent;
-```
-                    {{/markdown}}
-                </div>  
-                <div class="col-md-12">
-                    <p class="color win-color-fill-50"></p>
+                    <p class="color color-fill-accent-vivid-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$brand-success: $win-color-fl-50;
+$brand-primary: $color-accent;
 ```
                     {{/markdown}}
                 </div>
                 <div class="col-md-12">
-                    <p class="color win-color-fill-50"></p>
+                    <p class="color color-fill-vivid-low"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$brand-info: $win-color-fl-50;
+$brand-success: $color-vivid-low;
 ```
                     {{/markdown}}
-                </div>      
+                </div>
                 <div class="col-md-12">
-                    <p class="color win-color-fill-alert"></p>
+                    <p class="color color-fill-vivid-low"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$brand-warning: $win-color-fl-alert;
+$brand-info: $color-vivid-low;
 ```
                     {{/markdown}}
-                </div>   
+                </div>
                 <div class="col-md-12">
-                    <p class="color win-color-fill-alert"></p>
+                    <p class="color color-fill-alert"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$brand-danger: $win-color-fl-alert;
+$brand-warning: $color-alert;
+```
+                    {{/markdown}}
+                </div>
+                <div class="col-md-12">
+                    <p class="color color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$brand-danger: $color-alert;
 ```
                     {{/markdown}}
                 </div>
@@ -68,415 +68,626 @@ $brand-danger: $win-color-fl-alert;
         <section class="win-section" id="basel-colors">
             <header class="win-section-header">
                 <h1 class="win-section-title">
-                    <a href="#basel-colors">Basel colors</a>
+                    <a href="#mdl-colors">MDL colors</a>
                 </h1>
             </header>
-            <h3>Base colors</h3> 
+            <h3>Base colors</h3>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color win-color-light"></p>
+                    <p class="color color-white"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-light: #FFFFFF;
+$color-white: #FFFFFF;
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-dark"></p>
+                    <p class="color color-black"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-dark: #000000;
+$color-black: #000000;
 ```
                     {{/markdown}}
-                </div>        
-            </div>
+                </div>
 
-            <h3>Background colors</h3> 
-            <div class="row">
                 <div class="col-md-12">
-                    <p class="color win-color-bg-10"></p>
+                    <p class="color color-accent"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-bg-10: $win-color-light;
+$color-accent: #0078D7;
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-bg-20"></p>
+                    <p class="color color-alert"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-bg-20: #F2F2F2;
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-bg-30"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-bg-30: #E5E5E5;
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-bg-40"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-bg-40: #D9D9D9;
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-bg-50"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-bg-50: #CCCCCC;
+$color-alert: #D02E00;
 ```
                     {{/markdown}}
                 </div>
             </div>
 
-            <h3>Fill colors</h3> 
+            <h3>Background colors</h3>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color win-color-fill-accent"></p>
+                    <p class="color color-bg-light-vivid-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent: #0078D7;
+$color-bg-light-vivid-high: $color-white;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-fill-accent-low"></p>
+                    <p class="color color-bg-light-vivid-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent-low: rgba($win-color-fl-accent, 0.4); 
-```
-                    {{/markdown}}
-                </div>  
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-accent-medium"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-medium: rgba($win-color-fl-accent, 0.6);
-```
-                    {{/markdown}}
-                </div>   
-               
-                <div class="col-md-12">
-                    <p class="color win-color-fill-accent-high"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-high: rgba($win-color-fl-accent, 0.7);
+$color-bg-light-vivid-mid: #F2F2F2;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-fill-alert"></p>
+                    <p class="color color-bg-light-vivid-low"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-alert: #D02E00;
+$color-bg-light-vivid-low: #E5E5E5;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-fill-10"></p>
+                    <p class="color color-bg-light-neutral-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-10: rgba($win-color-dark, 0.05);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-20"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-20: rgba($win-color-dark, 0.1);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-30"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-30: rgba($win-color-dark, 0.2);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-40"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-40: rgba($win-color-dark, 0.4);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-50"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-50: rgba($win-color-dark, 0.6);
+$color-bg-light-neutral-high: #D9D9D9;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-fill-60"></p>
+                    <p class="color color-bg-light-neutral-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-60: rgba($win-color-dark, 0.8);
-```
-                    {{/markdown}}
-                </div>
-
-                <div class="col-md-12">
-                    <p class="color win-color-fill-70"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-70: $win-color-dark;
+$color-bg-light-neutral-mid: #CCCCCC;
 ```
                     {{/markdown}}
                 </div>
             </div>
 
-            <h3>Line colors</h3> 
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color line win-color-line-accent"></p>
+                    <p class="color color-bg-dark-vivid-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent: #0078D7;
+$color-bg-dark-vivid-high: $color-black;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color line win-color-line-accent-low"></p>
+                    <p class="color color-bg-dark-vivid-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent-low: rgba($win-color-fl-accent, 0.4); 
-```
-                    {{/markdown}}
-                </div>  
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-accent-medium"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-medium: rgba($win-color-fl-accent, 0.6);
-```
-                    {{/markdown}}
-                </div>   
-               
-                <div class="col-md-12">
-                    <p class="color line win-color-line-accent-high"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-high: rgba($win-color-fl-accent, 0.7);
+$color-bg-dark-vivid-mid: #191919;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color line win-color-line-alert"></p>
+                    <p class="color color-bg-dark-vivid-low"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-alert: #D02E00;
+$color-bg-dark-vivid-low: #262626;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color line win-color-line-10"></p>
+                    <p class="color color-bg-dark-neutral-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-10: rgba($win-color-dark, 0.05);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-20"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-20: rgba($win-color-dark, 0.1);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-30"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-30: rgba($win-color-dark, 0.2);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-40"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-40: rgba($win-color-dark, 0.4);
-```
-                    {{/markdown}}
-                </div>        
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-50"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-50: rgba($win-color-dark, 0.6);
+$color-bg-dark-neutral-high: #333333;
 ```
                     {{/markdown}}
                 </div>
 
                 <div class="col-md-12">
-                    <p class="color line win-color-line-60"></p>
+                    <p class="color color-bg-dark-neutral-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-60: rgba($win-color-dark, 0.8);
-```
-                    {{/markdown}}
-                </div>
-
-                <div class="col-md-12">
-                    <p class="color line win-color-line-70"></p>
-                </div>
-                <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-70: $win-color-dark;
+$color-bg-dark-neutral-mid: #404040;
 ```
                     {{/markdown}}
                 </div>
             </div>
 
-            <h3>Text colors</h3> 
+            <h3>Fill colors</h3>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="color win-color-type-primary">Primary</p>
+                    <p class="color color-fill-accent-vivid-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-type-primary: $win-color-dark;
+$color-fill-accent-vivid-high: $color-accent;
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-type-secondary">Secondary</p>
+                    <p class="color color-fill-accent-vivid-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-type-secondary: rgba($win-color-type-primary, 0.6);
+$color-fill-accent-vivid-mid: rgba($color-accent, 0.8);
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-type-disabled">Disabled</p>
+                    <p class="color color-fill-accent-vivid-low"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-type-disabled: rgba($win-color-type-primary, 0.2);
+$color-fill-accent-vivid-low: rgba($color-accent, 0.6);
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-type-accent">Accent</p>
+                    <p class="color color-fill-accent-neutral-high"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-type-accent: #0078D7;
+$color-fill-accent-neutral-high: rgba($color-accent, 0.4);
 ```
                     {{/markdown}}
-                </div>        
+                </div>
 
                 <div class="col-md-12">
-                    <p class="color win-color-type-alert">Alert</p>
+                    <p class="color color-fill-accent-neutral-mid"></p>
                 </div>
                 <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-type-alert: #D02E00;
+$color-fill-accent-neutral-mid: rgba($color-accent, 0.3);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-accent-neutral-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-accent-neutral-low: rgba($color-accent, 0.2);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-accent-dim-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-accent-dim-high: rgba($color-accent, 0.15);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-accent-dim-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-accent-dim-mid: rgba($color-accent, 0.1);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-accent-dim-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-accent-dim-low: rgba($color-accent, 0.05);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-alert: $color-alert;
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-dim-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-dim-low: rgba($color-black, 0.05);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-dim-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-dim-mid: rgba($color-black, 0.1);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-neutral-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-neutral-low: rgba($color-black, 0.2);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-neutral-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-neutral-mid: rgba($color-black, 0.3);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-neutral-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-neutral-high: rgba($color-black, 0.4);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-vivid-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-vivid-low: rgba($color-black, 0.6);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-vivid-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-vivid-mid: rgba($color-black, 0.8);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-fill-vivid-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-fill-vivid-high: $color-black;
+```
+                    {{/markdown}}
+                </div>
+            </div>
+
+            <h3>Line colors</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-vivid-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-vivid-high: $color-accent;
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-vivid-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-vivid-mid: rgba($color-accent, 0.8);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-vivid-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-vivid-low: rgba($color-accent, 0.6);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-neutral-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-neutral-high: rgba($color-accent, 0.4);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-neutral-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-neutral-mid: rgba($color-accent, 0.3);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-neutral-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-neutral-low: rgba($color-accent, 0.2);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-dim-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-dim-high: rgba($color-accent, 0.15);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-dim-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-dim-mid: rgba($color-accent, 0.1);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-accent-dim-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-accent-dim-low: rgba($color-accent, 0.05);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-alert"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-alert: $color-alert;
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-dim-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-dim-low: rgba($color-black, 0.05);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-dim-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-dim-mid: rgba($color-black, 0.1);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-neutral-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-neutral-low: rgba($color-black, 0.2);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-neutral-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-neutral-mid: rgba($color-black, 0.3);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-neutral-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-neutral-high: rgba($color-black, 0.4);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-vivid-low"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-vivid-low: rgba($color-black, 0.6);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-vivid-mid"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-vivid-mid: rgba($color-black, 0.8);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color line color-line-vivid-high"></p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-line-vivid-high: $color-black;
+```
+                    {{/markdown}}
+                </div>
+            </div>
+
+            <h3>Text colors</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="color color-type-primary">Primary</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-type-primary: $color-black;
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-type-secondary">Secondary</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-type-secondary: rgba($color-black, 0.6);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-type-disabled">Disabled</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-type-disabled: rgba($color-black, 0.2);
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-type-accent">Accent</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-type-accent: $color-accent;
+```
+                    {{/markdown}}
+                </div>
+
+                <div class="col-md-12">
+                    <p class="color color-type-alert">Alert</p>
+                </div>
+                <div class="col-md-12">
+                    {{#markdown}}
+```scss
+$color-type-alert: $color-alert;
 ```
                     {{/markdown}}
                 </div>
@@ -490,391 +701,245 @@ $win-color-type-alert: #D02E00;
         <section class="win-section" id="basel-alt-colors">
             <header class="win-section-header">
                 <h1 class="win-section-title">
-                    <a href="#basel-alt-colors">Basel alt colors</a>
+                    <a href="#mdl-alt-colors">MDL alt colors</a>
                 </h1>
             </header>
-            <div class="win-section-body win-color-bg-10-alt"  style="padding: 11.5px 11.5px 0 11.5px">
-                <h3 class="win-color-primary-type-alt">Alt background colors</h3> 
+            <div class="win-section-body color-bg-dark-vivid-high"  style="padding: 11.5px 11.5px 0 11.5px">
+                <h3 class="color-type-primary-alt">Alt fill colors</h3>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="color win-color-bg-10-alt"></p>
+                        <p class="color color-fill-dim-mid-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-bg-10-alt: $win-color-dark;
+$color-fill-dim-mid-alt: rgba($color-white, 0.1);
 ```
-                    {{/markdown}}
-                    </div>        
+                        {{/markdown}}
+                    </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-bg-20-alt"></p>
+                        <p class="color color-fill-dim-high-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-bg-20-alt: #191919;
+$color-fill-dim-high-alt: rgba($color-white, 0.15);
 ```
-                    {{/markdown}}
-                    </div>        
+                        {{/markdown}}
+                    </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-bg-30-alt"></p>
+                        <p class="color color-fill-neutral-low-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-bg-30-alt: #262626;
+$color-fill-neutral-low-alt: rgba($color-white, 0.2);
 ```
-                    {{/markdown}}
-                    </div>        
+                        {{/markdown}}
+                    </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-bg-40-alt"></p>
+                        <p class="color color-fill-neutral-mid-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-bg-40-alt: #333333;
+$color-fill-neutral-mid-alt: rgba($color-white, 0.3);
 ```
-                    {{/markdown}}
-                    </div>        
+                        {{/markdown}}
+                    </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-bg-50-alt"></p>
+                        <p class="color color-fill-neutral-high-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-bg-50-alt: #404040;
+$color-fill-neutral-high-alt: rgba($color-white, 0.4);
 ```
-                    {{/markdown}}
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color color-fill-vivid-low-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                        {{#markdown}}
+```scss
+$color-fill-vivid-low-alt: rgba($color-white, 0.6);
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color color-fill-vivid-mid-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                        {{#markdown}}
+```scss
+$color-fill-vivid-mid-alt: rgba($color-white, 0.8);
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color color-fill-vivid-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                        {{#markdown}}
+```scss
+$color-fill-vivid-high-alt: $color-white;
+```
+                        {{/markdown}}
                     </div>
                 </div>
 
-                <h3 class="win-color-primary-type-alt">Alt fill colors</h3> 
+                <h3 class="color-type-primary-alt">Alt line colors</h3>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="color win-color-fill-accent-alt"></p>
+                        <p class="color line color-line-dim-mid-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-accent-alt: $win-color-fl-accent;
+$color-line-dim-mid-alt: rgba($color-white, 0.1);
 ```
-                    {{/markdown}}
+                        {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-fill-accent-low-alt"></p>
+                        <p class="color line color-line-dim-high-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-accent-low-alt: rgba($win-color-fl-accent, 0.4); 
+$color-line-dim-high-alt: rgba($color-white, 0.15);
 ```
-                    {{/markdown}}
-                    </div>  
-
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-accent-medium-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-medium-alt: rgba($win-color-fl-accent, 0.6);
-```
-                    {{/markdown}}
-                    </div>   
-                   
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-accent-high-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-high-alt: rgba($win-color-fl-accent, 0.7);
-```
-                    {{/markdown}}
+                        {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-fill-alert-alt"></p>
+                        <p class="color line color-line-neutral-low-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-alert-alt: #D02E00;
+$color-line-neutral-low-alt: rgba($color-white, 0.2);
 ```
-                    {{/markdown}}
+                        {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-fill-10-alt"></p>
+                        <p class="color line color-line-neutral-mid-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-10-alt: rgba(255,255,255,.1);
+$color-line-neutral-mid-alt: rgba($color-white, 0.3);
 ```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-20-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-20-alt: rgba(255,255,255,.15);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-30-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-30-alt: rgba(255,255,255,.3);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-40-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-40-alt: rgba(255,255,255,.4);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-fill-50-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-50-alt: rgba(255,255,255,.6);
-```
-                    {{/markdown}}
+                        {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-fill-60-alt"></p>
+                        <p class="color line color-line-neutral-high-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-60-alt: rgba(255,255,255,.8);
+$color-line-neutral-high-alt: rgba($color-white, 0.4);
 ```
-                    {{/markdown}}
+                        {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color win-color-fill-70-alt"></p>
+                        <p class="color line color-line-vivid-low-alt"></p>
                     </div>
                     <div class="col-md-12">
-                    {{#markdown}}
+                        {{#markdown}}
 ```scss
-$win-color-fl-70-alt: #FFFFFF;
+$color-line-vivid-low-alt: rgba($color-white, 0.6);
 ```
-                    {{/markdown}}
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line color-line-vivid-mid-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                        {{#markdown}}
+```scss
+$color-line-vivid-mid-alt: rgba($color-white, 0.8);
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="color line color-line-vivid-high-alt"></p>
+                    </div>
+                    <div class="col-md-12">
+                        {{#markdown}}
+```scss
+$color-line-vivid-high-alt: $color-white;
+```
+                        {{/markdown}}
                     </div>
                 </div>
 
-                <h3 class="win-color-primary-type-alt">Alt line colors</h3> 
+                <h3 class="color-type-primary-alt">Alt text colors</h3>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="color line win-color-line-accent-alt"></p>
+                        <p class="color color-type-primary-alt">Primary</p>
                     </div>
                     <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent-alt: #0078D7;
+$color-type-primary-alt: $color-white;
 ```
                     {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color line win-color-line-accent-low-alt"></p>
+                        <p class="color color-type-secondary-alt">Secondary</p>
                     </div>
                     <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-accent-low-alt: rgba($win-color-fl-accent, 0.4); 
-```
-                    {{/markdown}}
-                    </div>  
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-accent-medium-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-medium-alt: rgba($win-color-fl-accent, 0.6);
-```
-                    {{/markdown}}
-                    </div>   
-                   
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-accent-high-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-accent-high-alt: rgba($win-color-fl-accent, 0.7);
+$color-type-secondary-alt: rgba($color-white, 0.6);
 ```
                     {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color line win-color-line-alert-alt"></p>
+                        <p class="color color-type-disabled-alt">Disabled</p>
                     </div>
                     <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-alert-alt: #D02E00;
+$color-type-disabled-alt: rgba($color-white, 0.2);
 ```
                     {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color line win-color-line-10-alt"></p>
+                        <p class="color color-type-accent-alt">Accent</p>
                     </div>
                     <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-10-alt: rgba($win-color-light, 0.1);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-20-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-20-alt: rgba($win-color-light, 0.15);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-30-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-30-alt: rgba($win-color-light, 0.2);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-40-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-40-alt: rgba($win-color-light, 0.4);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-50-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-50-alt: rgba($win-color-light, 0.6);
+$color-type-accent-alt: $color-accent;
 ```
                     {{/markdown}}
                     </div>
 
                     <div class="col-md-12">
-                        <p class="color line win-color-line-60-alt"></p>
+                        <p class="color color-type-alert-alt">Alert</p>
                     </div>
                     <div class="col-md-12">
                     {{#markdown}}
 ```scss
-$win-color-fl-60-alt: rgba($win-color-light, 0.8);
-```
-                    {{/markdown}}
-                    </div>
-
-                    <div class="col-md-12">
-                        <p class="color line win-color-line-70-alt"></p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-fl-70-alt: $win-color-light;
-```
-                    {{/markdown}}
-                    </div>
-                </div>
-
-                <h3 class="win-color-type-primary-alt">Alt text colors</h3> 
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="color win-color-type-primary-alt">Primary</p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-type-primary-alt: $win-color-light;
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-type-secondary-alt">Secondary</p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-type-secondary-alt: rgba($win-color-type-primary-alt, 0.6);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-type-disabled-alt">Disabled</p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-type-disabled-alt: rgba($win-color-type-primary-alt, 0.2);
-```
-                    {{/markdown}}
-                    </div>        
-
-                    <div class="col-md-12">
-                        <p class="color win-color-type-accent-alt">Accent</p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-type-accent-alt: #0078D7;
-```
-                    {{/markdown}}
-                    </div>
-
-                    <div class="col-md-12">
-                        <p class="color win-color-type-alert-alt">Alert</p>
-                    </div>
-                    <div class="col-md-12">
-                    {{#markdown}}
-```scss
-$win-color-type-alert-alt: #D02E00;
+$color-type-alert-alt: $color-alert;
 ```
                     {{/markdown}}
                     </div>
@@ -883,4 +948,3 @@ $win-color-type-alert-alt: #D02E00;
         </section>
     </div>
 </div>
-

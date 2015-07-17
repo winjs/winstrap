@@ -89,4 +89,26 @@
         // Override Bootsrap's default template with one that does not have arrow
         template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
     });
+
+    // Flyouts
+    // Provide data-theme attribute to set flyout's color theme.
+    $('[data-toggle="popover"]').each(function () {
+        var $element = $(this);
+
+        $element.popover({
+            // Override Bootsrap's default template with one that does not have arrow and title
+            template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+        }).data('bs.popover').tip().addClass($element.data("theme"));
+    });
+
+    if ($('#btn-close').length) {
+        $('#btn-close').popover({
+            placement: 'right',
+            html: 'true',
+            // Set the value of the data-theme attribute as a class name on the button.
+            // That way the button will always be in the correct color theme.
+            content: 'This is a flyout with a button. <button type="button" class="btn btn-primary ' + $('#btn-close').data("theme") + '"onclick="$(&quot;#btn-close&quot;).popover(&quot;hide&quot;);">Button</button>',
+            template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+        }).data('bs.popover').tip().addClass($('#btn-close').data("theme"));
+    }
 });
