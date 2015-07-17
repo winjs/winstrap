@@ -16,7 +16,8 @@
     }
 
     .modal-body {
-        padding: spacer(xxs, -4) 0 0;
+        padding: 0;
+        margin: spacer(xxs, -4) 0 0;
         @include type-body(no-responsive);
     }
 
@@ -30,13 +31,18 @@
         justify-content: flex-end;
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: spacer(sm, -4) 0 0;
+        padding: 0;
+        margin: spacer(sm, -4) 0 0;
 
         .btn {
-            -webkit-flex: 1 1 49%;
-            -ms-flex: 1 1 49%;
-            flex: 1 1 49%;
-            max-width: 100%;
+            -webkit-flex: 1 1 50%;
+            -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+            margin: 0;
+
+            & + .btn {
+                margin-top: spacer(xxs, -8);
+            }
         }
 
         @media (min-width: $screen-sm-min) {
@@ -45,6 +51,11 @@
 
             .btn {
                 max-width: 50%;
+
+                & + .btn {
+                    margin-top: 0;
+                    margin-left: spacer(xxs, -8);
+                }
             }
         }
     }
