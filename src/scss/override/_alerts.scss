@@ -1,9 +1,14 @@
-﻿// Override
+//
+// Static Resources
+//
+$alert-icon-base: 48px;
+
+// Override
 .alert {
     position: relative;
     border: none;
     padding: win-spacer(xxs) win-spacer(xxs) win-spacer(xxs) win-spacer(xs, -4);
-    min-height: 48px;
+    min-height: $alert-icon-base;
 
     &.alert-dismissible {
         padding-right: 3em;
@@ -11,13 +16,13 @@
 
     .alert-title {
         @include win-type-subtitle-alt(no-responsive);
-        margin-bottom: 4px;
+        margin-bottom: win-spacer(xxs, -8);
     }
 
     p {
         @include win-type-caption(no-responsive);
         margin-bottom: 0;
-        padding-top: 4px;
+        padding-top: win-spacer(xxs, -8);
     }
 
     .close {
@@ -27,8 +32,8 @@
         z-index: 1;
         line-height: 1;
         opacity: 1;
-        height: 48px;
-        width: 48px;
+        height: $alert-icon-base;
+        width: $alert-icon-base;
 
         span {
             font-size: 16px;
@@ -43,11 +48,11 @@
 
     .alert-icon {
         position: absolute;
-        top: 4px;
-        left: 8px;
-        width: 24px;
-        height: 24px;
-        font-size: 24px;
+        top: win-spacer(xxs, -8);
+        left: win-spacer(xxs, -4);
+        width: $alert-icon-base / 2;
+        height: $alert-icon-base /2;
+        font-size: $alert-icon-base / 2;
     }
 
     // Color

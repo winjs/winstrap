@@ -15,7 +15,7 @@
         border-left: none;
 
         p {
-            @include win-type-caption();
+            @include win-type-caption(no-responsive);
             margin-bottom: 0;
             padding-top: 4px;
         }
