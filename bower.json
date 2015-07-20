@@ -1,12 +1,12 @@
 {
   "name": "Winstrap",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "homepage": "https://github.com/winjs/winstrap",
   "authors": "",
-  "description": "Microsoft Bootstrap Theme for Basel",
+  "description": "Microsoft Bootstrap Theme for Modern design language",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-sass": "~3.3.4",
-    "jquery": "~2.1.4"
+    "bootstrap-sass": "3.3.4",
+    "jquery": "2.1.4"
   }
 }
