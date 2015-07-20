@@ -1,4 +1,4 @@
-﻿.win-refine-list {
+﻿.refine-list {
     .panel {
         box-shadow: none;
     }
@@ -23,21 +23,21 @@
 
     [aria-expanded="false"] {
         .icon-collapse,
-        .win-refine-list-less {
+        .refine-list-less {
             display: none;
         }
     }
 
     [aria-expanded="true"] {
         .icon-expand,
-        .win-refine-list-more {
+        .refine-list-more {
             display: none;
         }
     }
 
     .panel-title {
         font-size: 1em;
-        font-family: $win-font-bold;
+        font-family: $font-bold;
 
         a {
             text-decoration: none;
@@ -90,10 +90,10 @@
     }
 }
 
-.win-refine-list-title {
+.refine-list-title {
     margin-top: 0;
 }
 
-.win-refine-list-clear {
+.refine-list-clear {
     margin-bottom: 1em;
 }

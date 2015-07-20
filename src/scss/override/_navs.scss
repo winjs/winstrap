@@ -48,7 +48,7 @@ $pivot-hover-color-alt:                                                         
         // Main tabs
         // Resetting most of the Bootstrap styles
         > a {
-            @include win-type-title();
+            @include type-title();
             border: 0;
             border-radius: 0;
             margin: 0;
@@ -92,7 +92,7 @@ $pivot-hover-color-alt:                                                         
     }
 
     // Alt colors
-    &.win-theme-alt {
+    &.theme-alt {
         > li > a {
             color: $color-type-secondary-alt;
 

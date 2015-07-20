@@ -1,6 +1,6 @@
 ﻿// Add color transitions to buttons
 .btn {
-  @include win-type-body(no-line-height);
+  @include type-body(no-line-height);
   min-width: 120px;
   line-height: 1.66667em;
   border-style: solid;
@@ -155,18 +155,18 @@
 
 // Button which collapses or expands an element
 .btn[data-toggle="collapse"] {
-  i[class*="win-icon-"] {
+  i[class*="icon-"] {
     font-size: .9em;
   }
 
   &[aria-expanded="true"] {
-    .win-button-label-collapsed {
+    .button-label-collapsed {
       display: none;
     }
   }
 
   &[aria-expanded="false"] {
-    .win-button-label-expanded {
+    .button-label-expanded {
       display: none;
     }
   }

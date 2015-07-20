@@ -1,7 +1,7 @@
 ﻿$(function () {
     // Alert stack
     (function () {
-        var alertStack = $('.win-alert-stack');
+        var alertStack = $('.alert-stack');
 
         if (alertStack.length === 0) {
             return;
@@ -17,7 +17,7 @@
 
     // Back to top
     (function () {
-        var backToTop = $('.win-back-to-top'),
+        var backToTop = $('.back-to-top'),
         threshold = 2 * $(window).height();
 
         // Displayed when we've scrolled 2x the viewport height
@@ -46,7 +46,7 @@
 
     // Smooth scroll with page header links
     (function () {
-        $('[data-win-scroll="smooth"] a[href*=#]:not([href=#])').on('click', function () {
+        $('[data-scroll="smooth"] a[href*=#]:not([href=#])').on('click', function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
                 location.hostname === this.hostname) {
 
@@ -66,20 +66,20 @@
 
     // Star rating
     (function () {
-        $('.win-rating-btn').on('mouseenter', function () {
+        $('.rating-btn').on('mouseenter', function () {
             var active = $(this);
 
             // Highlight the hovered star and the previous stars
-            $(this).prevAll('.win-rating-btn').addClass('active');
+            $(this).prevAll('.rating-btn').addClass('active');
             $(this).addClass('active');
 
             // Remove highlighting of the following stars
-            $(this).nextAll('.win-rating-btn').removeClass('active');
+            $(this).nextAll('.rating-btn').removeClass('active');
         });
 
         // Remove highlight of all stars when leaving the container
-        $('.win-rating-stars-input').on('mouseleave', function () {
-            $(this).find('.win-rating-btn').removeClass('active');
+        $('.rating-stars-input').on('mouseleave', function () {
+            $(this).find('.rating-btn').removeClass('active');
         });
     })();
 

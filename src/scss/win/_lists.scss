@@ -1,4 +1,4 @@
-﻿.win-list-items {
+﻿.list-items {
     @include list-unstyled();
     margin: 1em 0;
 
@@ -12,7 +12,7 @@
     }
 
     // Container for clickable header and collapsible details
-    .win-list-items-row {
+    .list-items-row {
         margin: 0;
         padding: 0;
         border-top: 1px solid $color-dim-low;
@@ -31,17 +31,17 @@
         }
     }
 
-    .win-icon-add,
-    .win-icon-remove {
+    .icon-add,
+    .icon-remove {
         font-size: .75em;
         height: 1.25em;
     }
 
-    [aria-expanded="false"] .win-icon-remove {
+    [aria-expanded="false"] .icon-remove {
         display: none;
     }
 
-    [aria-expanded="true"] .win-icon-add {
+    [aria-expanded="true"] .icon-add {
         display: none;
     }
 
@@ -53,12 +53,12 @@
     }
 }
 
-.win-list-quick-links {
+.list-quick-links {
     @include list-unstyled();
     margin-bottom: 2em;
 
     li {
-        @include win-type-title();
+        @include type-title();
         margin-bottom: 2 * ($grid-gutter-width-sm / 2);
     }
 

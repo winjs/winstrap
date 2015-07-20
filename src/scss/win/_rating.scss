@@ -1,22 +1,22 @@
 ﻿// Rating component with stars
-.win-rating {
-    .win-rating-label {
-        @include win-type-title(no-line-height);
+.rating {
+    .rating-label {
+        @include type-title(no-line-height);
         line-height: 44px;
         margin-bottom: 1px;
         vertical-align: bottom;
 
-        &.win-rating-label-left {
+        &.rating-label-left {
             display: inline-block;
             margin-right: 16px;
         }
 
-        &.win-rating-label-right {
+        &.rating-label-right {
             display: inline-block;
         }
     }
 
-    .win-rating-stars {
+    .rating-stars {
         position: relative;
         display: inline-block;
         font-size: 24px;
@@ -35,50 +35,50 @@
             }
         }
 
-        .win-rating-stars-value {
+        .rating-stars-value {
             position: absolute;
             top: 0;
             left: 0;
             overflow: hidden;
         }
 
-        .win-rating-stars-input {
+        .rating-stars-input {
             position: absolute;
             top: 0;
             left: 0;
 
-            .win-rating-btn {
+            .rating-btn {
                 padding: 6px 10px 10px;
                 border: none;
                 line-height: 1;
                 background: none;
 
-                .win-icon-ratingstar {
+                .icon-ratingstar {
                     visibility: hidden;
                 }
 
-                &.active .win-icon-ratingstar {
+                &.active .icon-ratingstar {
                     visibility: visible;
                 }
             }
         }
     }
 
-    &.win-rating-small {
-        .win-rating-label {
-            @include win-type-caption(no-line-height);
+    &.rating-small {
+        .rating-label {
+            @include type-caption(no-line-height);
             line-height: 16px;
 
-            &.win-rating-label-left {
+            &.rating-label-left {
                 margin-right: 5px;
             }
 
-            &.win-rating-label-right {
+            &.rating-label-right {
                 margin-left: 3px;
             }
         }
 
-        .win-rating-stars {
+        .rating-stars {
             font-size: 12px;
             margin-left: -2px;
 
@@ -88,8 +88,8 @@
                 }
             }
 
-            .win-rating-stars-input {
-                .win-rating-btn {
+            .rating-stars-input {
+                .rating-btn {
                     padding: 0px 2px 2px;
                 }
             }
@@ -97,61 +97,61 @@
     }
 
     // Default colors
-    .win-rating-stars {
-        .win-icon-ratingstar {
+    .rating-stars {
+        .icon-ratingstar {
             color: $color-neutral-low;
         }
     }
 
-    .win-rating-stars-value {
-        .win-icon-ratingstar {
+    .rating-stars-value {
+        .icon-ratingstar {
             color: $color-vivid-high;
         }
 
-        &.win-rating-stars-value-user {
-            .win-icon-ratingstar {
+        &.rating-stars-value-user {
+            .icon-ratingstar {
                 color: $color-accent;
             }
         }
     }
 
-    .win-rating-btn.active {
-        .win-icon-ratingstar {
+    .rating-btn.active {
+        .icon-ratingstar {
             color: $color-vivid-mid;
         }
     }
 
-    .win-rating-label {
+    .rating-label {
         color: $color-type-primary;
     }
 
     // Alt colors
-    &.win-color-alt {
-        .win-rating-stars {
-            .win-icon-ratingstar {
+    &.color-alt {
+        .rating-stars {
+            .icon-ratingstar {
                 color: $color-neutral-low-alt;
             }
         }
 
-        .win-rating-stars-value {
-            .win-icon-ratingstar {
+        .rating-stars-value {
+            .icon-ratingstar {
                 color: $color-vivid-high-alt;
             }
 
-            &.win-rating-stars-value-user {
-                .win-icon-ratingstar {
+            &.rating-stars-value-user {
+                .icon-ratingstar {
                     color: $color-accent;
                 }
             }
         }
 
-        .win-rating-btn.active {
-            .win-icon-ratingstar {
+        .rating-btn.active {
+            .icon-ratingstar {
                 color: $color-vivid-mid-alt;
             }
         }
 
-        .win-rating-label {
+        .rating-label {
             color: $color-type-primary-alt;
         }
     }

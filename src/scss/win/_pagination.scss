@@ -1,7 +1,7 @@
-﻿.win-pagination {
+﻿.pagination {
     @include clearfix();
 
-    li.win-pagination-ellipsis {
+    li.pagination-ellipsis {
         > span {
             border-color: transparent;
             background: none;
@@ -9,9 +9,9 @@
         }
     }
 
-    li.win-pagination-prev,
-    li.win-pagination-next {
-        i[class*="win-icon"] {
+    li.pagination-prev,
+    li.pagination-next {
+        i[class*="icon"] {
             margin: 0 2px;
             font-size: .9em;
             vertical-align: -.2em;
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: $screen-sm) {
-    .win-pagination-prev {
+    .pagination-prev {
         > a, > span {
             &:after {
                 content: attr(aria-label);
@@ -37,7 +37,7 @@
         }
     }
 
-    .win-pagination-next {
+    .pagination-next {
         > a, > span {
             &:before {
                 content: attr(aria-label);

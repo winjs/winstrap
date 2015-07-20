@@ -1,7 +1,7 @@
 // Extend the Bootstrap grid with a small gutter option
 $grid-gutter-width-sm: $grid-gutter-width / 5;
 
-.row.win-row-sm {
+.row.row-sm {
     margin-left: (-.5 * $grid-gutter-width-sm);
     margin-right: (-.5 * $grid-gutter-width-sm);
 
@@ -17,4 +17,3 @@ $grid-gutter-width-sm: $grid-gutter-width / 5;
         padding-right: ($grid-gutter-width-sm / 2);
     }
 }
-
