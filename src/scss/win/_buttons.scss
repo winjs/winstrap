@@ -104,6 +104,128 @@ a.link-on-dark {
     color: $color-type-primary-alt;
 }
 
+.btn[data-toggle="button"] {
+
+  //
+  // Colors
+  //
+
+  // On light surface and on light image
+  &,
+  &.theme-on-img-light {
+      background-color: transparent;
+      border-color: $color-vivid-mid;
+
+      &::before {
+          background-color: $color-vivid-mid;
+      }
+
+      .stateLabel {
+          color: $color-type-primary;
+      }
+
+      &.active {
+          background-color: $color-accent;
+          border-color: transparent;
+
+          &::before {
+              background-color: $color-bg-light-vivid-high;
+          }
+      }
+
+      &:disabled {
+          border-color: $color-neutral-low;
+
+          &::before {
+              background-color: $color-neutral-low;
+          }
+
+          .stateLabel {
+              color: $color-type-disabled;
+          }
+
+          &.active {
+              border-color: transparent;
+              background-color: $color-neutral-low;
+          }
+      }
+  }
+
+  // On dark surface and on dark image
+  &.theme-alt,
+  &.theme-on-img-dark {
+      background-color: transparent;
+      border-color: $color-neutral-high-alt;
+      color: $color-neutral-high-alt;
+
+
+      &:hover {
+        border-color: $color-vivid-mid-alt;
+        color: $color-type-primary-alt;
+      }
+
+      &:focus {
+          border-color: $color-accent-vivid-high;
+          color: $color-type-primary-alt;
+      }
+
+      &.active {
+          background-color: $color-vivid-high;
+          border: 2px solid $color-vivid-high-alt;
+          color: $color-type-primary-alt;
+
+
+          &::before {
+              background-color: $color-bg-light-vivid-high;
+          }
+      }
+
+      &:disabled {
+          border-color: $color-neutral-low-alt;
+
+          &::before {
+              background-color: $color-neutral-low-alt;
+          }
+
+          .stateLabel {
+              color: $color-type-disabled-alt;
+          }
+
+          &.active {
+              border-color: transparent;
+              background-color: $color-neutral-low-alt;
+          }
+      }
+  }
+
+  // On colored surface
+  &.theme-on-color {
+      background-color: transparent;
+      border-color: $color-neutral-high-alt;
+      color: $color-type-primary-alt;
+
+      &:hover {
+        border-color: $color-vivid-high-alt;
+      }
+
+      &:focus {
+          background-color: $color-neutral-high-alt;
+          border-color: $color-accent-vivid-high;
+          color: $color-type-primary-alt;
+      }
+
+      &.active {
+        background-color: transparent;
+        border-color: $color-vivid-high-alt;
+      }
+
+      &:disabled {
+          border-color: $color-neutral-low-alt;
+          color: $color-type-disabled-alt;
+      }
+  }
+}
+
 // Toggle switch button
 .btn[data-toggle="button"].btn-toggle-switch {
     position: relative;
