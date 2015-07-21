@@ -1,5 +1,5 @@
 .tooltip {
-    @include win-type-caption(no-responsive);
+    @include type-caption(no-responsive);
 
     .tooltip-inner {
         padding: 7px 8px 9px 8px;
@@ -21,9 +21,9 @@
     }
 
     // On dark surface, on colored background, on dark image
-    .win-theme-alt + &,
-    .win-theme-on-color + &,
-    .win-theme-on-img-dark + & {
+    .theme-alt + &,
+    .theme-on-color + &,
+    .theme-on-img-dark + & {
         .tooltip-inner {
             border-color: $color-neutral-mid-alt;
             background-color: $color-bg-dark-vivid-mid;

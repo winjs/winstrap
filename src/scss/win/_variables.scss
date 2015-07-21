@@ -1,16 +1,16 @@
 // Responsive Type Ramp
 
 // Font Variables
-$win-font-fallbacks:                "Arial", sans-serif !default;
-$win-font-light:                    "Segoe UI Light", "Segoe UI", "Selawik Light", $win-font-fallbacks !default;
-$win-font-semilight:                "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $win-font-fallbacks !default;
-$win-font-normal:                   "Segoe UI", "Selawik", $win-font-fallbacks !default;
-$win-font-semibold:                 "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $win-font-fallbacks !default;
-$win-font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $win-font-fallbacks !default;;
-$win-font-symbols:                  "winjs-symbols";
+$font-fallbacks:                "Arial", sans-serif !default;
+$font-light:                    "Segoe UI Light", "Segoe UI", "Selawik Light", $font-fallbacks !default;
+$font-semilight:                "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $font-fallbacks !default;
+$font-normal:                   "Segoe UI", "Selawik", $font-fallbacks !default;
+$font-semibold:                 "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $font-fallbacks !default;
+$font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $font-fallbacks !default;;
+$font-symbols:                  "winjs-symbols";
 
 // Responsive Type Ramp key:value
-$win-fonts: (
+$fonts: (
     headline: (
         size-xs:                  46px,
         size-md:                  62px,
@@ -19,7 +19,7 @@ $win-fonts: (
         line-height-md:           80px,
         line-height-xl:           88px,
         font-weight-xs:           200,
-        font-family:              $win-font-light
+        font-family:              $font-light
     ),
     header: (
         size-xs:                  34px,
@@ -29,7 +29,7 @@ $win-fonts: (
         line-height-md:           56px,
         line-height-xl:           72px,
         font-weight-xs:           200,
-        font-family:              $win-font-light
+        font-family:              $font-light
     ),
     subheader: (
         size-xs:                  28px,
@@ -39,7 +39,7 @@ $win-fonts: (
         line-height-md:           40px,
         line-height-xl:           56px,
         font-weight-xs:           200,
-        font-family:              $win-font-light
+        font-family:              $font-light
     ),
     title: (
         size-xs:                  20px,
@@ -49,7 +49,7 @@ $win-fonts: (
         line-height-md:           28px,
         line-height-xl:           40px,
         font-weight-xs:           300,
-        font-family:              $win-font-semilight
+        font-family:              $font-semilight
     ),
     subtitle: (
         size-xs:                  18px,
@@ -59,7 +59,7 @@ $win-fonts: (
         line-height-md:           24px,
         line-height-xl:           28px,
         font-weight-xs:           300,
-        font-family:              $win-font-semilight
+        font-family:              $font-semilight
     ),
     subtitle-alt: (
         size-xs:                  16px,
@@ -69,7 +69,7 @@ $win-fonts: (
         line-height-md:           22px,
         line-height-xl:           24px,
         font-weight-xs:           300,
-        font-family:              $win-font-semilight
+        font-family:              $font-semilight
     ),
     base: (
         size-xs:                  14px,
@@ -79,7 +79,7 @@ $win-fonts: (
         line-height-md:           20px,
         line-height-xl:           22px,
         font-weight-xs:           500,
-        font-family:              $win-font-semibold
+        font-family:              $font-semibold
     ),
     body: (
         size-xs:                  14px,
@@ -89,7 +89,7 @@ $win-fonts: (
         line-height-md:           20px,
         line-height-xl:           22px,
         font-weight-xs:           400,
-        font-family:              $win-font-normal
+        font-family:              $font-normal
     ),
     caption: (
         size-xs:                  12px,
@@ -99,7 +99,7 @@ $win-fonts: (
         line-height-md:           16px,
         line-height-xl:           20px,
         font-weight-xs:           400,
-        font-family:              $win-font-normal
+        font-family:              $font-normal
     ),
     caption-alt: (
         size-xs:                  10px,
@@ -109,12 +109,12 @@ $win-fonts: (
         line-height-md:           14px,
         line-height-xl:           16px,
         font-weight-xs:           400,
-        font-family:              $win-font-normal
+        font-family:              $font-normal
     ),
 
 );
 
-$win-spacer-sizes: (
+$spacer-sizes: (
     xxl:    84px,
     xl:     72px,
     lg:     64px,

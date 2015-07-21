@@ -4,7 +4,7 @@
             <div class="col-xs-24">
                 <h1>Layout</h1>
 
-                <ul class="nav nav-pills" data-win-scroll="smooth">
+                <ul class="nav nav-pills" data-scroll="smooth">
                     <li role="presentation">
                         <a href="#page-header">Page header</a>
                     </li>
@@ -28,9 +28,9 @@
 
 <div class="container">
 
-    <section class="win-section">
-        <header class="win-section-header row">
-            <h1 class="win-section-title col-xs-24">
+    <section class="section">
+        <header class="section-header row">
+            <h1 class="section-title col-xs-24">
                 <a href="#page-header">Page header</a>
             </h1>
         </header>
@@ -51,12 +51,12 @@
                 <p>With some content</p>
 
                 <!--
-                    Add data-win-scroll="smooth" attribute
+                    Add data-scroll="smooth" attribute
                     and the following JS code
                     to enable smooth scrolling
                 -->
                 <ul class="nav nav-pills"
-                    [data-win-scroll="smooth" ]>
+                    [data-scroll="smooth" ]>
                     <li role="presentation" class="active">
                         <a href="#nav-item-1">Nav item 1</a>
                     </li>
@@ -83,7 +83,7 @@
                 {{#markdown}}
 ```javascript
 $(function () {
-    $('[data-win-scroll="smooth"] a[href*=#]:not([href=#])').click(function () {
+    $('[data-scroll="smooth"] a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
             location.hostname === this.hostname) {
 

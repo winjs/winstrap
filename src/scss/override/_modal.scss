@@ -19,11 +19,11 @@
 }
 
 .modal-header {
-  @include win-type-subtitle();
+  @include type-subtitle();
 }
 
 .modal-body {
-  @include win-type-body();
+  @include type-body();
 }
 
 .modal-backdrop {
@@ -31,7 +31,7 @@
 }
 
 // Center the Bootstrap Modal vertically
-.win-modal-center {
+.modal-center {
   text-align: center;
 
   &:before {

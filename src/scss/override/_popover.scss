@@ -1,13 +1,13 @@
 //
 // Static resources
 //
-$popover-position: win-spacer(xxs, -4);
+$popover-position: spacer(xxs, -4);
 
 .popover {
     padding: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    @include win-type-body(no-responsive, no-line-height);
+    @include type-body(no-responsive, no-line-height);
 
     &.top       { margin-top: -$popover-position; }
     &.right     { margin-left: $popover-position; }
@@ -19,10 +19,10 @@ $popover-position: win-spacer(xxs, -4);
         display: none;
     }
     .popover-content {
-        padding: win-spacer(xxs, -4) win-spacer(xxs) win-spacer(xxs, -2);
+        padding: spacer(xxs, -4) spacer(xxs) spacer(xxs, -2);
 
         .btn {
-            margin: win-spacer(xxs, 2) 0 win-spacer(xxs);
+            margin: spacer(xxs, 2) 0 spacer(xxs);
             float: right;
         }
     }
@@ -37,9 +37,9 @@ $popover-position: win-spacer(xxs, -4);
     border-color: $color-neutral-mid;
 
     // On dark surface, on colored background, on dark image
-    &.win-theme-alt,
-    &.win-theme-on-color,
-    &.win-theme-on-img-dark {
+    &.theme-alt,
+    &.theme-on-color,
+    &.theme-on-img-dark {
         color: $color-type-primary-alt;
         background-color: $color-bg-dark-vivid-mid;
         border-color: $color-neutral-mid-alt;

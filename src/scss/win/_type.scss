@@ -56,36 +56,36 @@
         }
     }
 
-    font-family:            map-deep-get($win-fonts, $font, "font-family");
-    font-weight:            map-deep-get($win-fonts, $font, "font-weight-xs");
+    font-family:            map-deep-get($fonts, $font, "font-family");
+    font-weight:            map-deep-get($fonts, $font, "font-weight-xs");
 
     @if (#{$responsive} == "true") {
-        font-size:          map-deep-get($win-fonts, $font, "size-xs");
+        font-size:          map-deep-get($fonts, $font, "size-xs");
     } @else {
-        font-size:          map-deep-get($win-fonts, $font, "size-md");
+        font-size:          map-deep-get($fonts, $font, "size-md");
     }
 
     @if (#{$set-line-height} == "true") {
-        line-height:        (map-deep-get($win-fonts, $font, "line-height-xs") / map-deep-get($win-fonts, $font, "size-xs"));
+        line-height:        (map-deep-get($fonts, $font, "line-height-xs") / map-deep-get($fonts, $font, "size-xs"));
     }
 
     @media (min-width: $screen-md-min) {
         @if (#{$responsive} == "true") {
-            font-size:      map-deep-get($win-fonts, $font, "size-md");
+            font-size:      map-deep-get($fonts, $font, "size-md");
         }
 
         @if (#{$set-line-height} == "true") {
-            line-height:    (map-deep-get($win-fonts, $font, "line-height-md") / map-deep-get($win-fonts, $font, "size-md"));
+            line-height:    (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
         }
     }
 
     @media (min-width: $screen-xl-min) {
         @if (#{$responsive} == "true") {
-            font-size:      map-deep-get($win-fonts, $font, "size-xl");
+            font-size:      map-deep-get($fonts, $font, "size-xl");
         }
 
         @if (#{$set-line-height} == "true") {
-            line-height:    (map-deep-get($win-fonts, $font, "line-height-xl") / map-deep-get($win-fonts, $font, "size-xl"));
+            line-height:    (map-deep-get($fonts, $font, "line-height-xl") / map-deep-get($fonts, $font, "size-xl"));
         }
     }
 
@@ -96,67 +96,67 @@
 // Optional arguments:
 // no-line-height   (does not set line height)
 // no-responsive    (fixes the size to the md breakpoint)
-@mixin win-type-headline($options...) {
+@mixin type-headline($options...) {
     letter-spacing: -0.01em;
     @include responsive-type(headline, $options);
 }
-@mixin win-type-header($options...) {
+@mixin type-header($options...) {
     letter-spacing: -0.01em;
     @include responsive-type(header, $options);
 }
-@mixin win-type-subheader($options...) {
+@mixin type-subheader($options...) {
     @include responsive-type(subheader, $options);
 }
-@mixin win-type-title($options...) {
+@mixin type-title($options...) {
     @include responsive-type(title, $options);
 }
-@mixin win-type-subtitle($options...) {
+@mixin type-subtitle($options...) {
     @include responsive-type(subtitle, $options);
 }
-@mixin win-type-subtitle-alt($options...) {
+@mixin type-subtitle-alt($options...) {
     @include responsive-type(subtitle-alt, $options);
 }
-@mixin win-type-base($options...) {
+@mixin type-base($options...) {
     @include responsive-type(base, $options);
 }
-@mixin win-type-body($options...) {
+@mixin type-body($options...) {
     @include responsive-type(body, $options);
 }
-@mixin win-type-caption($options...) {
+@mixin type-caption($options...) {
     @include responsive-type(caption, $options);
 }
-@mixin win-type-caption-alt($options...) {
+@mixin type-caption-alt($options...) {
     @include responsive-type(caption-alt, $options);
 }
 
 // Apply mixins to typography classes
-.win-type-headline, .text-headline {
-    @include win-type-headline();
+.type-headline, .text-headline {
+    @include type-headline();
 }
-h1, .h1, .win-type-header, .text-header {
-    @include win-type-header();
+h1, .h1, .type-header, .text-header {
+    @include type-header();
 }
-h2, .h2, .win-type-subheader, .text-subheader {
-    @include win-type-subheader();
+h2, .h2, .type-subheader, .text-subheader {
+    @include type-subheader();
 }
-h3, .h3, .win-type-title, .text-title {
-    @include win-type-title();
+h3, .h3, .type-title, .text-title {
+    @include type-title();
 }
-.win-type-subtitle, .text-subtitle {
-    @include win-type-subtitle();
+.type-subtitle, .text-subtitle {
+    @include type-subtitle();
 }
-h4, .h4, .win-type-subtitle-alt, .text-subtitle-alt {
-    @include win-type-subtitle-alt();
+h4, .h4, .type-subtitle-alt, .text-subtitle-alt {
+    @include type-subtitle-alt();
 }
-h5, .h5, .win-type-base, .text-base {
-    @include win-type-base();
+h5, .h5, .type-base, .text-base {
+    @include type-base();
 }
-p, .win-type-body, .text-body {
-    @include win-type-body();
+p, .type-body, .text-body {
+    @include type-body();
 }
-h6, .h6, .win-type-caption, .text-caption {
-    @include win-type-caption();
+h6, .h6, .type-caption, .text-caption {
+    @include type-caption();
 }
-.win-type-caption-alt, .text-caption-alt {
-    @include win-type-caption-alt();
+.type-caption-alt, .text-caption-alt {
+    @include type-caption-alt();
 }

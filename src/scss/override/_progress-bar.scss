@@ -9,8 +9,8 @@
         background-color: $color-accent;
     }
 
-    &.win-theme-alt,
-    &.win-theme-on-img-dark {
+    &.theme-alt,
+    &.theme-on-img-dark {
         background-color: $color-neutral-low-alt;
 
         .progress-bar {
@@ -18,7 +18,7 @@
         }
     }
 
-    &.win-theme-on-color {
+    &.theme-on-color {
         background-color: $color-neutral-low-alt;
 
         .progress-bar {

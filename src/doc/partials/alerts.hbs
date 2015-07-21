@@ -1,6 +1,6 @@
-﻿<section class="win-section">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+﻿<section class="section">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#stack">Alert stack</a>
         </h1>
     </header>
@@ -14,11 +14,11 @@
             {{#markdown}}
 ```xml
 <!-- This tag should be a child of the body -->
-<div class="win-alert-stack">
+<div class="alert-stack">
 
     <div class="alert alert-warning alert-dismissible fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
+            <span aria-hidden="true"><i class="icon-cancel"></i></span>
         </button>
 
         <div class="container">
@@ -46,7 +46,7 @@
             {{#markdown}}
 ```javascript
 $(function () {
-    var alertStack = $('.win-alert-stack');
+    var alertStack = $('.alert-stack');
 
     if (alertStack.length == 0) {
         return;
@@ -65,9 +65,9 @@ $(function () {
     </div>
 </section>
 
-<section class="win-section" id="inline">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+<section class="section" id="inline">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#inline">Inline alert</a>
         </h1>
     </header>
@@ -81,7 +81,7 @@ $(function () {
 
             <div class="alert alert-info alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
                 <div class="row">
                     <div class="col-md-18">
@@ -98,7 +98,7 @@ $(function () {
 
             <div class="alert alert-warning alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
                 <div class="alert-title">Warning example</div>
                 <div class="row">
@@ -116,9 +116,9 @@ $(function () {
 
             <div class="alert with-icon alert-danger alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true"><i class="win-icon-cancel"></i></span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
-                <span class="alert-icon"><i class="win-icon-info"></i></span>
+                <span class="alert-icon"><i class="icon-info"></i></span>
                 <div class="alert-title">Danger alert with icon example</div>
                 <div class="row">
                     <div class="col-md-18">
@@ -138,11 +138,11 @@ $(function () {
 <div class="alert [alert-info] [alert-warning] [alert-danger] [with-icon] alert-dismissible fade in" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">
-            <i class="win-icon-cancel"></i>
+            <i class="icon-cancel"></i>
         </span>
     </button>
     <span class="alert-icon">
-        <i class="win-icon-info"></i>
+        <i class="icon-info"></i>
     </span>
     <div class="alert-title">Danger alert with icon example</div>
     <div class="row">

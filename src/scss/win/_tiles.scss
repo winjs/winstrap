@@ -1,4 +1,4 @@
-.win-tile {
+.tile {
     display: block;
     cursor: pointer;
     min-width: 75px;
@@ -10,21 +10,21 @@
     border: 2px rgba(0,0,0,0) solid;
 
 
-    &.win-tile-medium {
+    &.tile-medium {
         height: 150px;
         width: 150px;
     }
 
-    &.win-tile-small {
+    &.tile-small {
         height: 70px;
         width: 70px;
 
-        & .win-tile-icon {
+        & .tile-icon {
             margin-top: 6px;
         }
     }
 
-    &.win-tile-wide {
+    &.tile-wide {
         height: 150px;
         width: 310px;
     }
@@ -37,7 +37,7 @@
         border: 2px $color-vivid-mid solid;
     }
 
-    .win-tile-icon {
+    .tile-icon {
         font-size: 4em;
         margin-top: 23px;
     }
@@ -51,12 +51,12 @@
         margin-top: 1em;
     }
 
-    .win-tile-title {
+    .tile-title {
         float: left;
         padding-left: 16px;
     }
 
-    .win-tile-notification {
+    .tile-notification {
         float: right;
         padding-right: 16px;
     }

@@ -15,14 +15,14 @@ $alert-icon-base: 48px;
     }
 
     .alert-title {
-        @include win-type-subtitle-alt(no-responsive);
+        @include type-subtitle-alt(no-responsive);
         margin-bottom: win-spacer(xxs, -8);
     }
 
     p {
-        @include win-type-caption(no-responsive);
+        @include type-caption(no-responsive);
         margin-bottom: 0;
-        padding-top: win-spacer(xxs, -8);
+        padding-top: spacer(xxs, -8);
     }
 
     .close {
@@ -43,13 +43,13 @@ $alert-icon-base: 48px;
     }
 
     &.with-icon {
-        padding-left: win-spacer(sm, 4)
+        padding-left: spacer(sm, 4)
     }
 
     .alert-icon {
         position: absolute;
-        top: win-spacer(xxs, -8);
-        left: win-spacer(xxs, -4);
+        top: spacer(xxs, -8);
+        left: spacer(xxs, -4);
         width: $alert-icon-base / 2;
         height: $alert-icon-base /2;
         font-size: $alert-icon-base / 2;
