@@ -66,6 +66,10 @@ code {
 #buttons .btn {
     margin: 5px 0px;
 }
+//override spacing in documentation for radio and checkbox toggle buttons
+#buttons .btn-group[data-toggle="buttons"] .btn {
+  margin: 0 8px 8px 0;
+}
 
 .nav a, .section-title a {
     text-decoration: none;
