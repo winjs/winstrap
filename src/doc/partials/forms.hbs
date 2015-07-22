@@ -218,7 +218,7 @@
 
     <div class="row">
         <!-- Alt -->
-        <div class="col-xs-6">
+        <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>Alt</h4>
             <form class="theme-alt color-fill-vivid-high" style="padding: 12px;">
                 <div class="form-group">
@@ -233,7 +233,7 @@
         </div>
 
         <!-- On Color -->
-        <div class="col-xs-6">
+        <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On solid color</h4>
             <form class="theme-on-color color-fill-accent-vivid-high" style="padding: 12px;">
                 <div class="form-group">
@@ -248,7 +248,7 @@
         </div>
 
         <!-- On light image -->
-        <div class="col-xs-6">
+        <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On light image</h4>
             <form class="theme-on-img-light example-light-image-bg" style="padding: 12px;">
                 <div class="form-group">
@@ -263,7 +263,7 @@
         </div>
 
         <!-- On dark image -->
-        <div class="col-xs-6">
+        <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On dark image</h4>
             <form class="theme-on-img-dark example-dark-image-bg" style="padding: 12px;">
                 <div class="form-group">
@@ -296,197 +296,140 @@
 
     <div class="row">
         <div class="col-xs-24">
-
             <h2>Select</h2>
-            <select class='form-control'>
-                <option>option a</option>
-                <option>option b</option>
-                <option>option c</option>
-                <option>option d</option>
-                <option>option e</option>
-                <option>option f</option>
-                <option>option g</option>
-            </select>
-
-            <select multiple="true" class="form-control">
-                <option>a</option>
-                <option>b</option>
-                <option>c</option>
-                <option>d</option>
-                <option>e</option>
-                <option>f</option>
-                <option>g</option>
-            </select>
-
-            <select class="form-control">
-                <option>a</option>
-                <option>b</option>
-                <option>c</option>
-                <option>d</option>
-            </select>
-
-            <select disabled="true" class="form-control">
-                <option>a</option>
-                <option>b</option>
-                <option>c</option>
-                <option>d</option>
-            </select>
-
-            <select class="form-control">
-                <optgroup label="A">
-                    <option>Alabama</option>
-                    <option>Alaska</option>
-                    <option>Arizona</option>
-                    <option>Arkansas</option>
-                </optgroup>
-                <optgroup label="C">
-                    <option>California</option>
-                    <option>Colorado</option>
-                    <option>Connecticut</option>
-                </optgroup>
-                <optgroup label="D" disabled="">
-                    <option>Delaware</option>
-                </optgroup>
-                <option>Florida</option>
-                <option>Georgia</option>
-                <option>Hawaii</option>
-                <option>Idaho</option>
-                <option>Illinois</option>
-                <option>Indiana</option>
-                <option>Iowa</option>
-                <option>Kansas</option>
-                <option>Kentucky</option>
-                <option>Louisiana</option>
-                <option>Maine</option>
-                <option>Maryland</option>
-                <option>Massachusetts</option>
-                <option>Michigan</option>
-                <option>Minnesota</option>
-                <option>Mississippi</option>
-                <option>Missouri</option>
-                <option>Montana</option>
-                <option>Nebraska</option>
-                <option>Nevada</option>
-                <option>New Hampshire</option>
-                <option>New Jersey</option>
-                <option>New Mexico</option>
-                <option>New York</option>
-                <option>North Carolina</option>
-                <option>North Dakota</option>
-                <option>Ohio</option>
-                <option>Oklahoma</option>
-                <option>Oregon</option>
-                <option>Pennsylvania</option>
-                <option>Rhode Island</option>
-                <option>South Carolina</option>
-                <option>South Dakota</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Utah</option>
-                <option>Vermont</option>
-                <option>Virginia</option>
-                <option>Washington</option>
-                <option>West Virginia</option>
-                <option>Wisconsin</option>
-                <option>Wyoming</option>
-            </select>
-
-            {{#markdown}}
-```xml
-<select class='form-control'>
-    <option>option a</option>
-    <option>option b</option>
-    <option>option c</option>
-    <option>option d</option>
-    <option>option e</option>
-    <option>option f</option>
-    <option>option g</option>
-</select>
-
-<select multiple="true" class="form-control">
-    <option>a</option>
-    <option>b</option>
-    <option>c</option>
-    <option>d</option>
-    <option>e</option>
-    <option>f</option>
-    <option>g</option>
-</select>
-
-<select class="form-control">
-    <option>a</option>
-    <option>b</option>
-    <option>c</option>
-    <option>d</option>
-</select>
-
-<select disabled="true" class="form-control">
-    <option>a</option>
-    <option>b</option>
-    <option>c</option>
-    <option>d</option>
-</select>
-
-<select class="form-control">
-    <optgroup label="A">
-        <option>Alabama</option>
-        <option>Alaska</option>
-        <option>Arizona</option>
-        <option>Arkansas</option>
-    </optgroup>
-    <optgroup label="C">
-        <option>California</option>
-        <option>Colorado</option>
-        <option>Connecticut</option>
-    </optgroup>
-    <optgroup label="D" disabled="">
-        <option>Delaware</option>
-    </optgroup>
-    <option>Florida</option>
-    <option>Georgia</option>
-    <option>Hawaii</option>
-    <option>Idaho</option>
-    <option>Illinois</option>
-    <option>Indiana</option>
-    <option>Iowa</option>
-    <option>Kansas</option>
-    <option>Kentucky</option>
-    <option>Louisiana</option>
-    <option>Maine</option>
-    <option>Maryland</option>
-    <option>Massachusetts</option>
-    <option>Michigan</option>
-    <option>Minnesota</option>
-    <option>Mississippi</option>
-    <option>Missouri</option>
-    <option>Montana</option>
-    <option>Nebraska</option>
-    <option>Nevada</option>
-    <option>New Hampshire</option>
-    <option>New Jersey</option>
-    <option>New Mexico</option>
-    <option>New York</option>
-    <option>North Carolina</option>
-    <option>North Dakota</option>
-    <option>Ohio</option>
-    <option>Oklahoma</option>
-    <option>Oregon</option>
-    <option>Pennsylvania</option>
-    <option>Rhode Island</option>
-    <option>South Carolina</option>
-    <option>South Dakota</option>
-    <option>Tennessee</option>
-    <option>Texas</option>
-    <option>Utah</option>
-    <option>Vermont</option>
-    <option>Virginia</option>
-    <option>Washington</option>
-    <option>West Virginia</option>
-    <option>Wisconsin</option>
-    <option>Wyoming</option>
-</select>
-```
-            {{/markdown}}
         </div>
     </div>
+    <div class="row">
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>Default Select</h4>
+            <form style="padding:12px;">
+                <div class="form-group">
+                    <div class="combobox">
+                        <select class="form-control">
+                            <option>Lorem</option>
+                            <option>ipsum</option>
+                            <option>dolor</option>
+                            <option>sit</option>
+                            <option>amet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Lorem</option>
+                        <option>ipsum</option>
+                        <option>dolor</option>
+                        <option>sit</option>
+                        <option>amet</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>Alt</h4>
+            <form class="theme-alt color-fill-vivid-high" style="padding:12px;">
+                <div class="form-group">
+                    <div class="combobox">
+                        <select class="form-control">
+                            <option>Lorem</option>
+                            <option>ipsum</option>
+                            <option>dolor</option>
+                            <option>sit</option>
+                            <option>amet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Lorem</option>
+                        <option>ipsum</option>
+                        <option>dolor</option>
+                        <option>sit</option>
+                        <option>amet</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On solid color</h4>
+            <form class="theme-on-color color-fill-accent-vivid-high" style="padding:12px;">
+                <div class="form-group">
+                    <div class="combobox">
+                        <select class="form-control">
+                            <option>Lorem</option>
+                            <option>ipsum</option>
+                            <option>dolor</option>
+                            <option>sit</option>
+                            <option>amet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Lorem</option>
+                        <option>ipsum</option>
+                        <option>dolor</option>
+                        <option>sit</option>
+                        <option>amet</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On light image</h4>
+            <form class="theme-on-img-light example-light-image-bg" style="padding:12px;">
+                <div class="form-group">
+                    <div class="combobox">
+                        <select class="form-control">
+                            <option>Lorem</option>
+                            <option>ipsum</option>
+                            <option>dolor</option>
+                            <option>sit</option>
+                            <option>amet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Lorem</option>
+                        <option>ipsum</option>
+                        <option>dolor</option>
+                        <option>sit</option>
+                        <option>amet</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On dark image</h4>
+            <form class="theme-on-img-dark example-dark-image-bg" style="padding:12px;">
+                <div class="form-group">
+                    <div class="combobox">
+                        <select class="form-control">
+                            <option>Lorem</option>
+                            <option>ipsum</option>
+                            <option>dolor</option>
+                            <option>sit</option>
+                            <option>amet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Lorem</option>
+                        <option>ipsum</option>
+                        <option>dolor</option>
+                        <option>sit</option>
+                        <option>amet</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </section>
