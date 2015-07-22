@@ -104,119 +104,107 @@ a.link-on-dark {
     color: $color-type-primary-alt;
 }
 
-.btn[data-toggle="button"] {
-
+.btn[data-toggle="button"], .btn-group[data-toggle="buttons"] .btn  {
   //
   // Colors
   //
 
   // On light surface and on light image
-  &,
   &.theme-on-img-light {
-      background-color: transparent;
-      border-color: $color-vivid-mid;
+      color: $color-type-secondary;
+      background-color: $color-vivid-high-alt;
+      border-color: $color-neutral-high;
 
-      &::before {
-          background-color: $color-vivid-mid;
+      &:hover {
+        color: $color-type-primary;
+        background-color: $color-vivid-high-alt;
+        border-color: $color-vivid-mid;
       }
 
-      .stateLabel {
-          color: $color-type-primary;
+      &:focus {
+        color: $color-type-primary;
+        background-color: $color-vivid-high-alt;
+        border-color: $color-accent-vivid-high;
       }
 
       &.active {
-          background-color: $color-accent;
-          border-color: transparent;
+          color: $color-type-primary;
+          background-color: $color-vivid-high-alt;
+          border-color: $color-vivid-high;
+          box-shadow:0px 0px 0px 1px $color-vivid-high inset;
 
-          &::before {
-              background-color: $color-bg-light-vivid-high;
+          &:hover {
+            color: $color-type-primary;
+            background-color: $color-vivid-high-alt;
+            border-color: $color-accent-vivid-high;
+            box-shadow:0px 0px 0px 2px $color-neutral-high inset;
           }
       }
 
       &:disabled {
+          color: $color-type-disabled;
+          background-color: $color-neutral-low-alt;
           border-color: $color-neutral-low;
-
-          &::before {
-              background-color: $color-neutral-low;
-          }
-
-          .stateLabel {
-              color: $color-type-disabled;
-          }
-
-          &.active {
-              border-color: transparent;
-              background-color: $color-neutral-low;
-          }
       }
   }
 
   // On dark surface and on dark image
   &.theme-alt,
   &.theme-on-img-dark {
-      background-color: transparent;
-      border-color: $color-neutral-high-alt;
       color: $color-neutral-high-alt;
-
+      background-color: $color-vivid-high;
+      border-color: $color-neutral-high-alt;
 
       &:hover {
-        border-color: $color-vivid-mid-alt;
         color: $color-type-primary-alt;
+        border-color: $color-vivid-mid-alt;
       }
 
-      &:focus {
-          border-color: $color-accent-vivid-high;
+      &:active, &:focus {
           color: $color-type-primary-alt;
+          border-color: $color-accent-vivid-high;
       }
 
       &.active {
-          background-color: $color-vivid-high;
-          border: 2px solid $color-vivid-high-alt;
           color: $color-type-primary-alt;
+          background-color: $color-vivid-high;
+          border-color: $color-vivid-high-alt;
+          box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
 
-
-          &::before {
-              background-color: $color-bg-light-vivid-high;
+          &:hover {
+            border-color: $color-accent-vivid-high;
+            box-shadow:0px 0px 0px 2px $color-neutral-high-alt inset;
           }
       }
 
       &:disabled {
+          color: $color-type-disabled-alt;
+          background-color: $color-neutral-low;
           border-color: $color-neutral-low-alt;
-
-          &::before {
-              background-color: $color-neutral-low-alt;
-          }
-
-          .stateLabel {
-              color: $color-type-disabled-alt;
-          }
-
-          &.active {
-              border-color: transparent;
-              background-color: $color-neutral-low-alt;
-          }
       }
   }
 
   // On colored surface
   &.theme-on-color {
+      color: $color-type-primary-alt;
       background-color: transparent;
       border-color: $color-neutral-high-alt;
-      color: $color-type-primary-alt;
 
       &:hover {
         border-color: $color-vivid-high-alt;
       }
 
       &:focus {
+          color: $color-type-primary-alt;
           background-color: $color-neutral-high-alt;
           border-color: $color-accent-vivid-high;
-          color: $color-type-primary-alt;
       }
 
       &.active {
+        color: $color-type-primary-alt;
         background-color: transparent;
         border-color: $color-vivid-high-alt;
+        box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
       }
 
       &:disabled {
