@@ -22,39 +22,21 @@
     }
 
     .modal-footer {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        justify-content: flex-end;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
         padding: 0;
-        margin: spacer(sm, -4) 0 0;
+        margin: spacer(sm, -8) 0 0;
 
         .btn {
-            -webkit-flex: 1 1 50%;
-            -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-            margin: 0;
-
-            & + .btn {
-                margin-top: spacer(xxs, -8);
-            }
+            width: 100%;
+            margin: spacer(xxs, -8) 0 0 -5px;
         }
 
         @media (min-width: $screen-sm-min) {
-            -webkit-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-
             .btn {
-                max-width: 50%;
+                max-width: 50%; // IE8
+                max-width: calc(50% - 2px); // IE9+ (compensate button margins)
 
                 & + .btn {
-                    margin-top: 0;
-                    margin-left: spacer(xxs, -8);
+                    margin-left: 0;
                 }
             }
         }
