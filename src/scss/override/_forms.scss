@@ -53,7 +53,7 @@ textarea.form-control {
     }
 }
 select {
-    @extend .text-body;
+    @include type-body(no-responsive);
 
     &.form-control {
         width: 100%;
