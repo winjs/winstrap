@@ -1,0 +1,83 @@
+.jumbotron {
+	.img-container,
+	.jumbotron-content {
+		padding: 28px 0;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 28px;
+	}
+	img,
+	video {
+		max-width: 100%;
+	}
+	a {
+		display: block;
+		margin-bottom: 20px;
+	}
+	@media screen and (max-width: 1083px) {
+		.img-container {
+			padding-bottom: 0;
+		}
+	}
+
+	/*------------------------------------------
+	------------ COLORS ------------------------
+	-------------------------------------------*/
+
+	//
+	// Jumbotron - highlight bar
+	//
+	&.highlight-bar {
+		background-color: $color-bg-light-vivid-low;
+		button {
+			background-color: $color-vivid-high;
+			border-color: $color-vivid-high;
+		}
+		.btn {
+			background-color: transparent;
+			border-color: $color-vivid-high;
+			color: $color-type-primary;
+
+			&.btn-primary {
+				background-color: $color-vivid-high;
+				color: $color-type-primary-alt;
+			}
+		}
+	}
+	//
+	// Jumbotron - theme on color
+	// TODO - discuss btn-primary text color. Design spec is color matching
+	// how do we want to achieve this?
+	&.theme-on-color {
+		color: $color-vivid-high-alt;
+
+		button {
+			background-color: $color-vivid-high-alt;
+			border-color: $color-vivid-high-alt;
+			color: $color-type-primary;
+		}
+		.btn {
+			background-color: transparent;
+			color: $color-vivid-high-alt;
+
+			&.btn-primary{
+				background-color: $color-vivid-high-alt;
+				color: $color-type-primary;
+			} 
+		}
+	}
+	&.hyperlinks {
+		button,
+		.btn,
+		.btn.btn-primary {
+			border-color: $color-accent-vivid-high;
+			background-color: $color-accent-vivid-high;
+			color: $color-type-primary-alt;
+		}
+	}
+}
