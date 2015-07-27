@@ -1,0 +1,139 @@
+.jumbotron {
+	position: relative;
+
+	> .container-wrap {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		> .container {
+			height: 100%;
+
+			> .row {
+				height: 100%;
+
+				> .jumbotron-content-wrap {
+					@extend .col-xs-24;
+					height: 100%;
+
+					> .jumbotron-content {
+						position: absolute;
+						bottom: 60px;
+					}
+				}
+			}
+		}
+	}
+
+	.jumbotron-background,
+	.container-wrap {
+		top: 0;
+	}
+	.jumbotron-background {
+		position: relative;
+		left: 0;
+	}
+
+	&.highlight-bar {
+		.img-container,
+		.jumbotron-content {
+			padding: 28px 0;
+		}
+		h1 {
+			margin-top: 0;
+			margin-bottom: 24px;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 28px;
+		}
+		img,
+		video {
+			max-width: 100%;
+		}
+		a {
+			display: block;
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: 1083px) {
+			.img-container {
+				padding-bottom: 0;
+			}
+		}
+
+		/*------------------------------------------
+		------------ COLORS ------------------------
+		-------------------------------------------*/
+
+		//
+		// Jumbotron - highlight bar
+		//
+		background-color: $color-bg-light-vivid-low;
+		button {
+			background-color: $color-vivid-high;
+			border-color: $color-vivid-high;
+		}
+		.btn {
+			background-color: transparent;
+			border-color: $color-vivid-high;
+			color: $color-type-primary;
+
+			&.btn-primary {
+				background-color: $color-vivid-high;
+				color: $color-type-primary-alt;
+			}
+		}
+		//
+		// Jumbotron - theme on color
+		// TODO - discuss btn-primary text color. Design spec is color matching
+		// how do we want to achieve this?
+		&.theme-on-color {
+			color: $color-vivid-high-alt;
+			background-color: inherit;
+			button {
+				background-color: $color-vivid-high-alt;
+				border-color: $color-vivid-high-alt;
+				color: $color-type-primary;
+			}
+			.btn {
+				background-color: transparent;
+				color: $color-vivid-high-alt;
+
+				&.btn-primary{
+					background-color: $color-vivid-high-alt;
+					color: $color-type-primary;
+				} 
+			}
+		}
+		&.hyperlinks {
+			button,
+			.btn,
+			.btn.btn-primary {
+				border-color: $color-accent-vivid-high;
+				background-color: $color-accent-vivid-high;
+				color: $color-type-primary-alt;
+			}
+		}
+	}
+
+	//
+	// Jumbotron primary
+	//
+	&.theme-on-img-dark {
+		color: $color-vivid-high-alt;
+	}
+	.jumbotron-background {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* Standard syntax */
+		}
+	}
+}
