@@ -170,7 +170,7 @@
         border-color: $color-vivid-mid;
       }
 
-      &:focus:active {
+      &:active {
         color: $color-type-primary;
         background-color: $color-vivid-high-alt;
         border-color: $color-accent-vivid-high;
@@ -208,7 +208,7 @@
         border-color: $color-vivid-mid-alt;
       }
 
-      &:focus:active {
+      &:active {
           color: $color-type-primary-alt;
           background-color: $color-vivid-high;
           border-color: $color-accent-vivid-high;
@@ -243,7 +243,7 @@
         border-color: $color-vivid-high-alt;
       }
 
-      &:focus:active {
+      &:active {
           color: $color-type-primary-alt;
           background-color: $color-neutral-high-alt;
           border-color: $color-accent-vivid-high;
