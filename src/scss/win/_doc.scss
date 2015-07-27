@@ -62,14 +62,11 @@ code {
     background-color: $color-type-primary;
 }
 
-//space out buttons in documentation easier
-#buttons .btn {
+//space out buttons in documentation easier (added button space class so it doesn't affect checkboxes)
+#buttons .button-space .btn {
     margin: 5px 0px;
 }
-//override spacing in documentation for radio and checkbox toggle buttons
-#buttons .btn-group[data-toggle="buttons"] .btn {
-  margin: 0 8px 8px 0;
-}
+
 
 .nav a, .section-title a {
     text-decoration: none;

@@ -7,7 +7,7 @@
                 </h1>
             </header>
 
-            <div class="row">
+            <div class="row button-space">
                 <div class="col-md-24">
                     <p>The colors used for the background and text of buttons have been vetted to meet a minimum color contrast ratio of 4.5:1 for accesibility purposes.</p>
                 </div>
@@ -187,10 +187,13 @@
                 {{/markdown}}
                 </div>
             </div>
+
+
             <!-- Toggle Buttons -->
             <div class="row">
               <div class="col-xs-24">
                 <h2>Toggle Button</h2>
+                <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
                 <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
                 <script>
                   window.addEventListener('onload', function()
@@ -203,7 +206,7 @@
 ```xml
 <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
 <script>
-  $("[data-toggle='button']").button("toggle");
+    $("[data-toggle='button']").button("toggle");
 </script>
 ```
                 {{/markdown}}
@@ -250,7 +253,7 @@
 ```xml
 <button type="button" autocomplete="off" class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]" data-toggle="button" aria-pressed="false">Toggle Button</button>
 <script>
-  $("[data-toggle='button']").button("toggle");
+    $("[data-toggle='button']").button("toggle");
 </script>
 ```
                     {{/markdown}}
@@ -426,13 +429,13 @@
                 <h4>On light image</h4>
                 <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
                 <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-default theme-alt active">
+                  <label class="btn btn-default theme-on-img-light active">
                     <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
                   </label>
-                  <label class="btn btn-default theme-alt">
+                  <label class="btn btn-default theme-on-img-light">
                     <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
                   </label>
-                  <label class="btn btn-default theme-alt">
+                  <label class="btn btn-default theme-on-img-light">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
                   </label>
                 </div>
