@@ -131,7 +131,7 @@
                 color: $color-type-disabled-alt;
                 background-color: $color-neutral-low-alt;
                 border-color: transparent;
-  opacity: 1;
+                opacity: 1;
             }
         }
 
@@ -326,7 +326,7 @@
 
   // On light surface and on light image
   &, &.theme-on-img-light {
-      color: $color-type-secondary;
+      color: $color-type-primary;
       background-color: $color-vivid-high-alt;
       border-color: $color-neutral-high;
       margin: 0 spacer(xxs, -4) spacer(xxs, -4) 0;
@@ -365,7 +365,7 @@
   // On dark surface and on dark image
   &.theme-alt,
   &.theme-on-img-dark {
-      color: $color-type-secondary-alt;
+      color: $color-type-primary-alt;
       background-color: $color-vivid-high;
       border-color: $color-neutral-high-alt;
 
