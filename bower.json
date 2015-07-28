@@ -1,9 +1,9 @@
 {
   "name": "Winstrap",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "homepage": "https://github.com/winjs/winstrap",
   "authors": "",
-  "description": "Microsoft Bootstrap Theme for Modern design language",
+  "description": "Bootstrap Theme for Microsoft Modern design language",
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "3.3.4",
