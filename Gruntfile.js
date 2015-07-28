@@ -119,6 +119,7 @@ module.exports = function (grunt) {
         }
       },
       options: {
+        livereload: true,
         tasks: ['notify:assemble']
       }
     },
@@ -127,7 +128,8 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: './dist/'
+          base: './dist/',
+          livereload: true
         }
       }
     },
@@ -177,6 +179,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-file-exists');
   grunt.loadNpmTasks('grunt-bump');
