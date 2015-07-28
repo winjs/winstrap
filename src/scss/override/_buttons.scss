@@ -44,6 +44,7 @@
   color: $color-type-disabled-alt;
   background-color: $color-neutral-mid;
   border-color: transparent;
+  opacity: 1;
 }
 
 // Override Bootstrap alternate buttons
@@ -153,7 +154,7 @@
   }
 }
 
-.btn[data-toggle="button"]:not(.btn-toggle-switch), .btn-group[data-toggle="buttons"] .btn {
+.btn[data-toggle="button"]:not(.btn-toggle-switch), .btn-group[data-toggle="buttons"] .btn:not(.btn-toggle-switch) {
   //
   // Colors
   //
@@ -199,7 +200,7 @@
   // On dark surface and on dark image
   &.theme-alt,
   &.theme-on-img-dark {
-      color: $color-neutral-high-alt;
+      color: $color-type-secondary-alt;
       background-color: $color-vivid-high;
       border-color: $color-neutral-high-alt;
 
@@ -246,7 +247,7 @@
       &:active {
           color: $color-type-primary-alt;
           background-color: $color-neutral-high-alt;
-          border-color: $color-accent-vivid-high;
+          border-color: $color-vivid-high-alt;
       }
 
       &.active {
