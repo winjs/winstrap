@@ -70,10 +70,11 @@ code {
     background-color: $color-type-primary;
 }
 
-//space out buttons in documentation easier
-#buttons .btn {
+//space out buttons in documentation easier (added button space class so it doesn't affect checkboxes)
+#buttons .button-space .btn {
     margin: 5px 0px;
 }
+
 
 .nav a, .section-title a {
     text-decoration: none;
