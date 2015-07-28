@@ -1,10 +1,29 @@
 .table {
   //Sortable table
   &.table-sortable {
+    thead {
+      th {
+        border-bottom: 1px solid black(10%);
+      }
+      th {
+        font-size: 11px;
+        font-weight: normal;
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
     tr {
+
+    td {
+      &:last-child {
+        text-align: right;
+      }
+    }
       &:hover {
         td {
           background: black(10%);
+
         }
       }
     }
