@@ -1,6 +1,7 @@
 .jumbotron {
 	position: relative;
 
+	// set height to 100% for layout issues
 	> .container-wrap {
 		position: absolute;
 		width: 100%;
@@ -13,6 +14,7 @@
 				height: 100%;
 
 				> .jumbotron-content-wrap {
+					@extend .col-xs-24;
 					height: 100%;
 
 					> .jumbotron-content {
@@ -22,7 +24,20 @@
 				}
 			}
 		}
+
 	}
+
+	// vertical alignment for highlight bands
+		> .container {
+			height: 100%;
+
+			> .row {
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+		}
 
 	.jumbotron-background,
 	.container-wrap {
@@ -52,7 +67,7 @@
 		}
 		a {
 			display: block;
-			margin-bottom: 20px;
+			margin-bottom: 14px;
 		}
 		@media screen and (max-width: 1083px) {
 			.img-container {
@@ -129,10 +144,10 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Safari 5.1 to 6.0 */
-			background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Opera 11.1 to 12.0 */
-			background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* For Firefox 3.6 to 15 */
-			background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 1) ); /* Standard syntax */
+			background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* Standard syntax */
 		}
 	}
 }
