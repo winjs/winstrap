@@ -7,6 +7,71 @@
 
     <div class="row">
         <div class="col-xs-24">
+            <p>Sorted Table with actions and title label</p>
+
+            <table class="table table-sortable">
+                <tbody>
+                    <tr>
+                      <th>Item</th>
+                      <th>Description</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Gadget Alpha</td>
+                        <td>This is the amazing new Gadget Alpha.</td>
+                        <td>$0.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Bravo</td>
+                        <td>Also available is the Gadget Bravo which provides B.</td>
+                        <td>$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Charlie</td>
+                        <td>This is the lorem ipsumist Gadget Charlie.</td>
+                        <td>$1.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Delta</td>
+                        <td>Also available is the Gadget Bravo which provides B.</td>
+                        <td>$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Echo</td>
+                        <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+                        <td>$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Foxtrot</td>
+                        <td>Gadget Echo provides solor dit for professionals.</td>
+                        <td>$1.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            {{#markdown}}
+```xml
+<table class="table table-striped">
+    <tbody>
+        <tr>
+            <th>First line</th>
+            <td>First item</td>
+            <td>Second item</td>
+        </tr>
+        <tr>
+            <th>Second line</th>
+            <td>First item</td>
+            <td>Second item</td>
+        </tr>
+    </tbody>
+</table>
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
             <p>A generic table. The zebra striping is made automatically with the stylesheet, no specific classes.</p>
 
             <table class="table table-striped">

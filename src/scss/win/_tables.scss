@@ -1,0 +1,12 @@
+.table {
+  //Sortable table
+  &.table-sortable {
+    tr {
+      &:hover {
+        td {
+          background: black(10%);
+        }
+      }
+    }
+  }
+}
