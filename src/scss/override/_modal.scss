@@ -1,53 +1,93 @@
-﻿// Bootstrap Modal
-.modal-header .close {
-  position: absolute;
-  top: -27px;
-  right: 0;
-  color: white;
-  opacity: 1;
-  font-size: 20px;
-}
-
 .modal-content {
-  margin-top: 20px;
-  padding: 24px;
-  box-shadow: none;
+    margin-top: 20px;
+    padding: spacer(xs, -4) spacer(xs) spacer(xs, -4);
+    box-shadow: none;
 
-  background-color: $color-bg-light-vivid-mid;
-  border-color: $color-accent;
-  color: $color-type-primary;
-}
+    .modal-header {
+        padding: 0;
 
-.modal-header {
-  @include type-subtitle();
-}
+        .modal-title {
+            @include type-subtitle(no-responsive);
+        }
 
-.modal-body {
-  @include type-body();
-}
-
-.modal-backdrop {
-  background-color: $color-white;
-}
-
-// Center the Bootstrap Modal vertically
-.modal-center {
-  text-align: center;
-
-  &:before {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-
-    // The modal is vertically centered on medium devices and up
-    @media (min-width: $screen-sm-min) {
-      content: "";
+        .close {
+            display: none;
+        }
     }
-  }
 
-  .modal-dialog {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-  }
+    .modal-body {
+        padding: 0;
+        margin: spacer(xxs, -4) 0 0;
+        @include type-body(no-responsive);
+    }
+
+    .modal-footer {
+        padding: 0;
+        margin: spacer(sm, -8) 0 0;
+
+        .btn {
+            width: 100%;
+            margin: spacer(xxs, -8) 0 0 -5px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            .btn {
+                max-width: 50%; // IE8
+                max-width: calc(50% - 2px); // IE9+ (compensate button margins)
+
+                & + .btn {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Center modal vertically
+.modal-center-vertical {
+    text-align: center;
+
+    &:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+
+        // The modal is vertically centered on medium devices and up
+        @media (min-width: $screen-sm-min) {
+            content: "";
+        }
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+}
+
+
+//
+// Colors
+//
+.modal-backdrop {
+    background-color: transparent;
+}
+
+.modal {
+    background-color: $color-vivid-low-alt;
+
+    .modal-content {
+        background-color: $color-bg-light-vivid-mid;
+        border-color: $color-accent-vivid-high;
+        color: $color-type-primary;
+    }
+
+    &.theme-alt {
+        background-color: $color-vivid-low;
+
+        .modal-content {
+            background-color: $color-bg-dark-vivid-low;
+            color: $color-type-primary-alt;
+        }
+    }
 }
