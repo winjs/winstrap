@@ -131,6 +131,7 @@
                 color: $color-type-disabled-alt;
                 background-color: $color-neutral-low-alt;
                 border-color: transparent;
+  opacity: 1;
             }
         }
 
@@ -315,6 +316,121 @@
   }
   &:hover {
     border-color: $color-accent;
+  }
+}
+
+.btn[data-toggle="button"]:not(.btn-toggle-switch), .btn-group[data-toggle="buttons"] .btn:not(.btn-toggle-switch) {
+  //
+  // Colors
+  //
+
+  // On light surface and on light image
+  &, &.theme-on-img-light {
+      color: $color-type-secondary;
+      background-color: $color-vivid-high-alt;
+      border-color: $color-neutral-high;
+      margin: 0 spacer(xxs, -4) spacer(xxs, -4) 0;
+
+      &:hover {
+        color: $color-type-primary;
+        border-color: $color-vivid-mid;
+      }
+
+      &:active {
+        color: $color-type-primary;
+        background-color: $color-vivid-high-alt;
+        border-color: $color-accent-vivid-high;
+      }
+
+      &.active {
+          color: $color-type-primary;
+          border-color: $color-vivid-high;
+          box-shadow:0px 0px 0px 1px $color-vivid-high inset;
+
+          &:hover {
+            color: $color-type-primary;
+            border-color: shade($color-accent-vivid-high, 40%);
+            box-shadow:0px 0px 0px 1px shade($color-accent-vivid-high, 40%) inset;
+          }
+
+      }
+
+      &:disabled {
+          color: $color-type-disabled;
+          background-color: $color-neutral-low-alt;
+          border-color: $color-neutral-low;
+      }
+  }
+
+  // On dark surface and on dark image
+  &.theme-alt,
+  &.theme-on-img-dark {
+      color: $color-type-secondary-alt;
+      background-color: $color-vivid-high;
+      border-color: $color-neutral-high-alt;
+
+      &:hover {
+        color: $color-type-primary-alt;
+        border-color: $color-vivid-mid-alt;
+      }
+
+      &:active {
+          color: $color-type-primary-alt;
+          background-color: $color-vivid-high;
+          border-color: $color-accent-vivid-high;
+      }
+
+      &.active {
+          color: $color-type-primary-alt;
+          background-color: $color-vivid-high;
+          border-color: $color-vivid-high-alt;
+          box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
+
+          &:hover {
+            border-color: tint($color-accent-vivid-high, 40%);
+            box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
+          }
+      }
+
+      &:disabled {
+          color: $color-type-disabled-alt;
+          background-color: $color-neutral-low;
+          border-color: $color-neutral-low-alt;
+      }
+  }
+
+  // On colored surface
+  &.theme-on-color {
+      color: $color-type-primary-alt;
+      background-color: transparent;
+      border-color: $color-neutral-high-alt;
+
+      &:hover {
+        border-color: $color-vivid-high-alt;
+      }
+
+      &:active {
+          color: $color-type-primary-alt;
+          background-color: $color-neutral-high-alt;
+          border-color: $color-vivid-high-alt;
+      }
+
+      &.active {
+        color: $color-type-primary-alt;
+        background-color: transparent;
+        border-color: $color-vivid-high-alt;
+        box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
+
+        &:hover {
+          border-color: tint($color-accent-vivid-high, 40%);
+          box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
+        }
+      }
+
+      &:disabled {
+          border-color: $color-neutral-low-alt;
+          color: $color-type-disabled-alt;
+      }
   }
 }
 
