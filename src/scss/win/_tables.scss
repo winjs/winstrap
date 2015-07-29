@@ -3,11 +3,9 @@
   &.table-sortable {
     thead {
       th {
-        border-bottom: 1px solid black(10%);
-      }
-      th {
         font-size: 11px;
         font-weight: normal;
+        border-bottom: 1px solid black(10%);
         &:last-child {
           text-align: right;
         }
@@ -16,6 +14,9 @@
     tr {
 
     td {
+      .icon-more {
+        float: right;
+      }
       &:last-child {
         text-align: right;
       }
