@@ -1,5 +1,9 @@
 ﻿// Add color transitions to buttons
 
+.btn-group {
+    @include set-spacing();
+}
+
 .btn {
     @include type-body(no-line-height, no-responsive);
     min-width: 120px;
@@ -8,6 +12,7 @@
     border-width: 1px;
     text-decoration: none;
     padding: 9px 12px 10px;
+    margin: 12px 8px 0 0;
 
     //
     // Color

@@ -29,7 +29,8 @@ pre {
     overflow-y: hidden;
     border: none;
     border-left: 8px solid $pre-border-color;
-    font-size: $font-size-small;
+    @include set-spacing();
+    @include type-caption(no-responsive);
 }
 
 code {
@@ -68,11 +69,6 @@ code {
 //make it possible to see alt colors in docs
 #alt-colors > .col-sm-6 {
     background-color: $color-type-primary;
-}
-
-//space out buttons in documentation easier (added button space class so it doesn't affect checkboxes)
-#buttons .button-space .btn {
-    margin: 5px 0px;
 }
 
 

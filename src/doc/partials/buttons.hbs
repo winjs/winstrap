@@ -7,20 +7,24 @@
                 </h1>
             </header>
 
-            <div class="row button-space">
+            <div class="row">
                 <div class="col-md-24">
                     <p>A button gives thes user a way to trigger an immediate action. The colors used for the bakground and text of buttons have been vetted to meet a minimum color contrast ratio of 4.5:1 for accesibility purposes. Use the button classes on <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> elements.</p>
                 </div>
                 <div class="col-md-24">
-                    <a class="btn btn-primary">Primary</a>
-                    <a class="btn btn-default">Secondary</a>
-                    <a class="btn btn-link">Button link</a>
+                    <div class="btn-group">
+                        <a class="btn btn-primary">Primary</a>
+                        <a class="btn btn-default">Secondary</a>
+                        <a class="btn btn-link">Button link</a>
+                    </div>
 
                     {{#markdown}}
 ```xml
-<a class="btn [btn-primary] [btn-secondary] [btn-success] [btn-info] [btn-warning] [btn-danger] [disabled] [active]">
-    Button link
-</a>
+<div class="btn-group">
+    <a class="btn [btn-primary] [btn-secondary] [btn-success] [btn-info] [btn-warning] [btn-danger] [disabled] [active]">
+        Button link
+    </a>
+</div>
 ```
                     {{/markdown}}
                 </div>
@@ -31,44 +35,54 @@
 
                 <div class="col-md-6">
                     <h4>Alt</h4>
-                    <div class="color-black" style="padding: 2em; margin-bottom: 1em;">
-                        <a class="btn btn-block btn-primary theme-alt">Primary</a>
-                        <a class="btn btn-block btn-secondary theme-alt">Secondary</a>
-                        <a class="btn btn-block btn-link theme-alt">Button link</a>
+                    <div class="color-black" style="padding: 0 2em 2em; margin-bottom: 1em;">
+                        <div class="btn-group">
+                            <a class="btn btn-block btn-primary theme-alt">Primary</a>
+                            <a class="btn btn-block btn-secondary theme-alt">Secondary</a>
+                            <a class="btn btn-block btn-link theme-alt">Button link</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <h4>On solid color</h4>
-                    <div class="color-fill-accent-vivid-high" style="padding: 2em; margin-bottom: 1em;">
-                        <a class="btn btn-block btn-primary theme-on-color">Primary</a>
-                        <a class="btn btn-block btn-secondary theme-on-color">Secondary</a>
-                        <a class="btn btn-block btn-link theme-on-color">Button link</a>
+                    <div class="color-fill-accent-vivid-high" style="padding: 0 2em 2em; margin-bottom: 1em;">
+                        <div class="btn-group">
+                            <a class="btn btn-block btn-primary theme-on-color">Primary</a>
+                            <a class="btn btn-block btn-secondary theme-on-color">Secondary</a>
+                            <a class="btn btn-block btn-link theme-on-color">Button link</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <h4>On light image</h4>
-                    <div class="example-light-image-bg" style="padding: 2em; margin-bottom: 1em;">
-                        <a class="btn btn-block btn-primary theme-on-img-light">Primary</a>
-                        <a class="btn btn-block btn-secondary theme-on-img-light">Secondary</a>
-                        <a class="btn btn-block btn-link theme-on-img-light">Button link</a>
+                    <div class="example-light-image-bg" style="padding: 0 2em 2em; margin-bottom: 1em;">
+                        <div class="btn-group">
+                            <a class="btn btn-block btn-primary theme-on-img-light">Primary</a>
+                            <a class="btn btn-block btn-secondary theme-on-img-light">Secondary</a>
+                            <a class="btn btn-block btn-link theme-on-img-light">Button link</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <h4>On dark image</h4>
-                    <div class="example-dark-image-bg" style="padding: 2em; margin-bottom: 1em;">
-                        <a class="btn btn-block btn-primary theme-on-img-dark">Primary</a>
-                        <a class="btn btn-block btn-secondary theme-on-img-dark">Secondary</a>
-                        <a class="btn btn-block btn-link theme-on-img-dark">Button link</a>
+                    <div class="example-dark-image-bg" style="padding: 0 2em 2em; margin-bottom: 1em;">
+                        <div class="btn-group">
+                            <a class="btn btn-block btn-primary theme-on-img-dark">Primary</a>
+                            <a class="btn btn-block btn-secondary theme-on-img-dark">Secondary</a>
+                            <a class="btn btn-block btn-link theme-on-img-dark">Button link</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-xs-24">
                     {{#markdown}}
 ```xml
-<a class="btn [btn-primary] [btn-secondary] [btn-link] [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">Button</a>
+<div class="btn-group">
+    <a class="btn [btn-primary] [btn-secondary] [btn-link] [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">Button</a>
+</div>
 ```
                     {{/markdown}}
                 </div>
@@ -84,8 +98,10 @@
             <div class="row">
               <div class="col-xs-24">
                 <h4>Normal</h4>
-                <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
-                <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button"  disabled aria-pressed="false">Disabled</button>
+                <div class="btn-group">
+                    <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
+                    <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button"  disabled aria-pressed="false">Disabled</button>
+                </div>
 
                 <script>
                   window.addEventListener('onload', function()
@@ -96,7 +112,9 @@
 
                 {{#markdown}}
 ```xml
-<button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
+<div class="btn-group">
+    <button type="button" autocomplete="off" class="btn btn-default" data-toggle="button" aria-pressed="false">Toggle Button</button>
+</div>
 <script>
     $("[data-toggle='button']").button("toggle");
 </script>
@@ -109,36 +127,44 @@
                 <!-- On dark background -->
                 <div class="col-md-6">
                     <h4>Alt</h4>
-                    <div class="color-black" style="padding: 1em; margin-bottom: 0.5em;">
-                      <button type="button" autocomplete="off" class="btn btn-default btn-toggle theme-alt" data-toggle="button" aria-pressed="false">Toggle Button</button>
-                      <button type="button" autocomplete="off" class="btn btn-default btn-toggle theme-alt" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                    <div class="color-black" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" autocomplete="off" class="btn btn-default btn-toggle theme-alt" data-toggle="button" aria-pressed="false">Toggle Button</button>
+                            <button type="button" autocomplete="off" class="btn btn-default btn-toggle theme-alt" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On colored background -->
                 <div class="col-md-6">
                     <h4>On solid color</h4>
-                    <div class="color-fill-accent-vivid-high" style="padding: 1em; margin-bottom: 0.5em;">
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-color" data-toggle="button" aria-pressed="false">Toggle Button</button>
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-color" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                    <div class="color-fill-accent-vivid-high" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-color" data-toggle="button" aria-pressed="false">Toggle Button</button>
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-color" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On light image -->
                 <div class="col-md-6">
                     <h4>On light image</h4>
-                    <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em; background-position: center;">
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-img-light" data-toggle="button" aria-pressed="false">Toggle Button</button>
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-img-light" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                    <div class="example-light-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em; background-position: center;">
+                        <div class="btn-group">
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-img-light" data-toggle="button" aria-pressed="false">Toggle Button</button>
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-img-light" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On dark image -->
                 <div class="col-md-6">
                     <h4>On dark image</h4>
-                    <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-img-dark" data-toggle="button" aria-pressed="false">Toggle Button</button>
-                      <button type="button" autocomplete="off" class="btn btn-default theme-on-img-dark" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                    <div class="example-dark-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-img-dark" data-toggle="button" aria-pressed="false">Toggle Button</button>
+                            <button type="button" autocomplete="off" class="btn btn-default theme-on-img-dark" data-toggle="button" aria-pressed="false" disabled>Disabled</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,250 +182,254 @@
                 </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <h2>Checkbox Toggle Button</h2>
-              </div>
+                <div class="col-md-12">
+                    <h2>Checkbox Toggle Button</h2>
+                </div>
             </div>
 
             <div class="row">
-              <div class="col-md-12">
-                <h4>Default</h4>
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-default active">
-                    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-                  </label>
-                  <label class="btn btn-default">
-                    <input type="checkbox" autocomplete="off"> Checkbox 2
-                  </label>
-                  <label class="btn btn-default">
-                    <input type="checkbox" autocomplete="off"> Checkbox 3
-                  </label>
+                <div class="col-md-12">
+                    <h4>Default</h4>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="checkbox" autocomplete="off"> Checkbox 2
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="checkbox" autocomplete="off"> Checkbox 3
+                        </label>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <h4>Alt</h4>
-                <div class="color-black" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-alt active">
-                      <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-                    </label>
-                    <label class="btn btn-default theme-alt">
-                      <input type="checkbox" autocomplete="off"> Checkbox 2
-                    </label>
-                    <label class="btn btn-default theme-alt">
-                      <input type="checkbox" autocomplete="off"> Checkbox 3
-                    </label>
-                  </div>
+                <div class="col-md-12">
+                    <h4>Alt</h4>
+                    <div class="color-black" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default theme-alt active">
+                                <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                            </label>
+                            <label class="btn btn-default theme-alt">
+                                <input type="checkbox" autocomplete="off"> Checkbox 2
+                            </label>
+                            <label class="btn btn-default theme-alt">
+                                <input type="checkbox" autocomplete="off"> Checkbox 3
+                            </label>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <h4>On solid color</h4>
-                <div class="color-fill-accent-vivid-high" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-on-color active">
-                      <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-                    </label>
-                    <label class="btn btn-default theme-on-color">
-                      <input type="checkbox" autocomplete="off"> Checkbox 2
-                    </label>
-                    <label class="btn btn-default theme-on-color">
-                      <input type="checkbox" autocomplete="off"> Checkbox 3
-                    </label>
-                  </div>
+                <div class="col-md-12">
+                    <h4>On solid color</h4>
+                    <div class="color-fill-accent-vivid-high" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default theme-on-color active">
+                                <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                            </label>
+                            <label class="btn btn-default theme-on-color">
+                                <input type="checkbox" autocomplete="off"> Checkbox 2
+                            </label>
+                            <label class="btn btn-default theme-on-color">
+                                <input type="checkbox" autocomplete="off"> Checkbox 3
+                            </label>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <h4>On light image</h4>
-                <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-on-img-light active">
-                      <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-                    </label>
-                    <label class="btn btn-default theme-on-img-light">
-                      <input type="checkbox" autocomplete="off"> Checkbox 2
-                    </label>
-                    <label class="btn btn-default theme-on-img-light">
-                      <input type="checkbox" autocomplete="off"> Checkbox 3
-                    </label>
-                  </div>
+                <div class="col-md-12">
+                    <h4>On light image</h4>
+                    <div class="example-light-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default theme-on-img-light active">
+                                <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                            </label>
+                            <label class="btn btn-default theme-on-img-light">
+                                <input type="checkbox" autocomplete="off"> Checkbox 2
+                            </label>
+                            <label class="btn btn-default theme-on-img-light">
+                                <input type="checkbox" autocomplete="off"> Checkbox 3
+                            </label>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <h4>On dark image</h4>
-                <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-on-img-dark active">
-                      <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-                    </label>
-                    <label class="btn btn-default theme-on-img-dark">
-                      <input type="checkbox" autocomplete="off"> Checkbox 2
-                    </label>
-                    <label class="btn btn-default theme-on-img-dark">
-                      <input type="checkbox" autocomplete="off"> Checkbox 3
-                    </label>
-                  </div>
+                <div class="col-md-12">
+                    <h4>On dark image</h4>
+                    <div class="example-dark-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default theme-on-img-dark active">
+                                <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+                            </label>
+                            <label class="btn btn-default theme-on-img-dark">
+                                <input type="checkbox" autocomplete="off"> Checkbox 2
+                            </label>
+                            <label class="btn btn-default theme-on-img-dark">
+                                <input type="checkbox" autocomplete="off"> Checkbox 3
+                            </label>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="row">
-              <div class="col-xs-24">
-                {{#markdown}}
+                <div class="col-xs-24">
+                    {{#markdown}}
 ```xml
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-default active [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-  </label>
-  <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="checkbox" autocomplete="off"> Checkbox 2
-  </label>
-  <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="checkbox" autocomplete="off"> Checkbox 3
-  </label>
+    <label class="btn btn-default active [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+    </label>
+    <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="checkbox" autocomplete="off"> Checkbox 2
+    </label>
+    <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="checkbox" autocomplete="off"> Checkbox 3
+    </label>
 </div>
 ```
                 {{/markdown}}
-              </div>
             </div>
+        </div>
 
-            <div class="row">
-              <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h2>Radio Toggle Buttons</h2>
-              </div>
             </div>
+        </div>
 
-            <div class="row">
-              <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h4>Default</h4>
                 <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-default active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                  </label>
-                  <label class="btn btn-default">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                  </label>
-                  <label class="btn btn-default">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                  </label>
+                    <label class="btn btn-default active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                    </label>
                 </div>
-              </div>
-              <div class="col-md-12">
+            </div>
+            <div class="col-md-12">
                 <h4>Alt</h4>
-                <div class="color-black" style="padding: 1em; margin-bottom: 0.5em;">
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-primary theme-alt active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                  </label>
-                  <label class="btn btn-primary theme-alt">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                  </label>
-                  <label class="btn btn-primary theme-alt">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                  </label>
+                <div class="color-black" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary theme-alt active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-primary theme-alt">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                        </label>
+                        <label class="btn btn-primary theme-alt">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                        </label>
+                    </div>
                 </div>
-                </div>
-              </div>
             </div>
+        </div>
 
-            <div class="row">
-              <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h4>On Solid Color</h4>
-                <div class="color-fill-accent-vivid-high" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-on-color active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                    </label>
-                    <label class="btn btn-default theme-on-color">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                    </label>
-                    <label class="btn btn-default theme-on-color">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                    </label>
-                  </div>
+                <div class="color-fill-accent-vivid-high" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default theme-on-color active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-default theme-on-color">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                        </label>
+                        <label class="btn btn-default theme-on-color">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                        </label>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-12">
+            </div>
+            <div class="col-md-12">
                 <h4>On light image</h4>
-                <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-default theme-on-img-light active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                  </label>
-                  <label class="btn btn-default theme-on-img-light">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                  </label>
-                  <label class="btn btn-default theme-on-img-light">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                  </label>
+                <div class="example-light-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default theme-on-img-light active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-default theme-on-img-light">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                        </label>
+                        <label class="btn btn-default theme-on-img-light">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                        </label>
+                    </div>
                 </div>
-                </div>
-              </div>
             </div>
+        </div>
 
-            <div class="row">
-              <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
                 <h4>On Dark Image</h4>
-                <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default theme-on-img-dark active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                    </label>
-                    <label class="btn btn-default theme-on-img-dark">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                    </label>
-                    <label class="btn btn-default theme-on-img-dark">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                    </label>
-                  </div>
+                <div class="example-dark-image-bg" style="padding: 0 1em 1em; margin-bottom: 0.5em;">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default theme-on-img-dark active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-default theme-on-img-dark">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                        </label>
+                        <label class="btn btn-default theme-on-img-dark">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                        </label>
+                    </div>
                 </div>
-
-              </div>
 
             </div>
 
-            <div class="row">
-              <div class="col-xs-24">
+        </div>
+
+        <div class="row">
+            <div class="col-xs-24">
                 {{#markdown}}
 ```xml
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-default active [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-  </label>
-  <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-  </label>
-  <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
-    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-  </label>
+    <label class="btn btn-default active [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+    </label>
+    <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+    </label>
+    <label class="btn btn-default [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+    </label>
 </div>
 ```
                 {{/markdown}}
-              </div>
             </div>
+        </div>
 
 
 
-            <!-- Toggle switch -->
-            <div class="row">
-                <div class="col-md-24">
-                    <h2>Toggle Switch Button</h2>
-                    <!-- On light background -->
-                    <div style="padding: 1em; margin-bottom: 0.5em;">
+        <!-- Toggle switch -->
+        <div class="row">
+            <div class="col-md-24">
+                <h2>Toggle Switch Button</h2>
+                <!-- On light background -->
+                <div style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                    <div class="btn-group">
                         <button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
                             <span class="stateLabel stateLabel-on">On</span>
                             <span class="stateLabel stateLabel-off">Off</span>
                         </button>
                     </div>
+                </div>
 
-                    {{#markdown}}
+                {{#markdown}}
 ```xml
-<button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
-    <span class="stateLabel stateLabel-on">On</span>
-    <span class="stateLabel stateLabel-off">Off</span>
-</button>
+<div class="btn-group">
+    <button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
+        <span class="stateLabel stateLabel-on">On</span>
+        <span class="stateLabel stateLabel-off">Off</span>
+    </button>
+</div>
 ```
                     {{/markdown}}
                 </div>
@@ -409,44 +439,52 @@
                 <!-- On dark background -->
                 <div class="col-md-6">
                     <h4>Alt</h4>
-                    <div class="color-black" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false">
-                            <span class="stateLabel stateLabel-on">On</span>
-                            <span class="stateLabel stateLabel-off">Off</span>
-                        </button>
+                    <div class="color-black" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On colored background -->
                 <div class="col-md-6">
                     <h4>On solid color</h4>
-                    <div class="color-fill-accent-vivid-high" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-color" autocomplete="off" aria-pressed="false">
-                            <span class="stateLabel stateLabel-on">On</span>
-                            <span class="stateLabel stateLabel-off">Off</span>
-                        </button>
+                    <div class="color-fill-accent-vivid-high" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-color" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On light image -->
                 <div class="col-md-6">
                     <h4>On light image</h4>
-                    <div class="example-light-image-bg" style="padding: 1em; margin-bottom: 0.5em; background-position: center;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-light" autocomplete="off" aria-pressed="false">
-                            <span class="stateLabel stateLabel-on">On</span>
-                            <span class="stateLabel stateLabel-off">Off</span>
-                        </button>
+                    <div class="example-light-image-bg" style="padding: 0 2em 2em; margin-bottom: 0.5em; background-position: center;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-light" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- On dark image -->
                 <div class="col-md-6">
                     <h4>On dark image</h4>
-                    <div class="example-dark-image-bg" style="padding: 1em; margin-bottom: 0.5em;">
-                        <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-dark" autocomplete="off" aria-pressed="false">
-                            <span class="stateLabel stateLabel-on">On</span>
-                            <span class="stateLabel stateLabel-off">Off</span>
-                        </button>
+                    <div class="example-dark-image-bg" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-dark" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,10 +493,12 @@
                 <div class="col-md-24">
                     {{#markdown}}
 ```xml
-<button type="button" data-toggle="button" class="btn btn-toggle-switch [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]" autocomplete="off" aria-pressed="false">
-    <span class="stateLabel stateLabel-on">On</span>
-    <span class="stateLabel stateLabel-off">Off</span>
-</button>
+<div class="btn-group">
+    <button type="button" data-toggle="button" class="btn btn-toggle-switch [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]" autocomplete="off" aria-pressed="false">
+        <span class="stateLabel stateLabel-on">On</span>
+        <span class="stateLabel stateLabel-off">Off</span>
+    </button>
+</div>
 ```
                     {{/markdown}}
                 </div>

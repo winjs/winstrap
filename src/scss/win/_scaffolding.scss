@@ -1,14 +1,12 @@
 p {
-    margin: spacer(xxs) 0 0;
     padding: 0 spacer(xs) 0 0;
+    @include set-spacing();
 
     @media (min-width: $screen-md-min) {
-        margin: spacer(xs) 0 0;
         padding: 0 spacer(xs) 0 0;
     }
 
     @media (min-width: $screen-xl-min) {
-        margin: spacer(xs) 0 0;
         padding: 0 spacer(xxs) 0 0;
     }
 }

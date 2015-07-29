@@ -5,41 +5,49 @@
         </h1>
     </header>
 
-    <div class="row" style="margin-bottom: 1em;">
-        <div class="col-md-24" style="margin-bottom: 2em;">
+    <div class="row">
+        <div class="col-md-24">
             <p>Flyouts, referred to as Popovers by Bootstrap, expose small overlays of content when an element is selected.</p>
-            <button type="button" class="btn btn-primary" data-toggle="popover" data-content="Flyout content">Toggle flyout</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-content="Flyout content">Toggle flyout</button>
+            </div>
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
+        <div class="col-md-24">
             <p>Four flyout directions are available: left, top, bottom, and right aligned. Indicate the direction in the <code>data-placement</code> attribute.</p>
-            <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="Flyout content">Flyout on left</button>
-            <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="top" data-content="Flyout content">Flyout on top</button>
-            <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="bottom" data-content="Flyout content">Flyout on bottom</button>
-            <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="right" data-content="Flyout content">Flyout on right</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="Flyout content">Flyout on left</button>
+                <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="top" data-content="Flyout content">Flyout on top</button>
+                <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="bottom" data-content="Flyout content">Flyout on bottom</button>
+                <button type="button" class="btn btn-primary" data-toggle="popover"  data-placement="right" data-content="Flyout content">Flyout on right</button>
+            </div>
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
+        <div class="col-md-24">
             <p>Indicate the flyout's color theme in the <code>data-theme</code> attribute.</p>
-            <button type="button" class="btn btn-primary" data-toggle="popover" data-theme="theme-alt" data-content="Flyout content">Flyout in alt theme</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-theme="theme-alt" data-content="Flyout content">Flyout in alt theme</button>
+            </div>
         </div>
 
         <div class="col-md-24">
             {{#markdown}}
 ```xml
-<button type="button"
-        class="btn btn-primary"
-        data-toggle="popover"
-        data-content="Flyout content"
-       [data-placement="top|right|bottom|left"]
-       [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
-    Toggle flyout
-</button>
+<div class="btn-group">
+    <button type="button"
+            class="btn btn-primary"
+            data-toggle="popover"
+            data-content="Flyout content"
+           [data-placement="top|right|bottom|left"]
+           [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
+        Toggle flyout
+    </button>
+</div>
 ```
             {{/markdown}}
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
+        <div class="col-md-24">
             {{#markdown}}
 ```javascript
 $(function () {
@@ -55,31 +63,35 @@ $(function () {
             {{/markdown}}
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
-            <h3 style="margin-bottom: 0.5em;">Dismissible flyout</h3>
+        <div class="col-md-24">
+            <h3>Dismissible flyout</h3>
             <p>To dismiss flyouts on the next click, use the focus trigger.</p>
             <p>Dismissible flyouts also require use of the &lt;a&gt; tag, not the &lt;button&gt; tag, and must include the <code>role="button"</code> and <code>tabindex</code> attributes.</p>
-            <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="This is a dismissible flyout. The next click outside of the button dismisses this flyout.">Dismissible flyout</a>
+            <div class="btn-group">
+                <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="This is a dismissible flyout. The next click outside of the button dismisses this flyout.">Dismissible flyout</a>
+            </div>
         </div>
 
         <div class="col-md-24">
             {{#markdown}}
 ```xml
-<a role="button"
-   class="btn btn-primary"
-   tabindex="0"
-   data-toggle="popover"
-   data-trigger="focus"
-   data-content="Flyout content"
-  [data-placement="top|right|bottom|left"]
-  [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
-   Dismissible flyout
-</a>
+<div class="btn-group">
+    <a role="button"
+       class="btn btn-primary"
+       tabindex="0"
+       data-toggle="popover"
+       data-trigger="focus"
+       data-content="Flyout content"
+      [data-placement="top|right|bottom|left"]
+      [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
+       Dismissible flyout
+    </a>
+</div>
 ```
             {{/markdown}}
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
+        <div class="col-md-24">
             {{#markdown}}
 ```javascript
 $(function () {
@@ -95,23 +107,27 @@ $(function () {
             {{/markdown}}
         </div>
 
-        <div class="col-md-24" style="margin-bottom: 2em;">
-            <h3 style="margin-bottom: 0.5em;">Closing button</h3>
+        <div class="col-md-24">
+            <h3>Closing button</h3>
             <p>Adding a button inside of a flyout can be triggered with JavaScript. Insert <code>id="#btn-close"</code> within the html to call the flyout content specified in the script tags.</p>
             <p>To add a button that doesn't close the flyout when clicked, remove the <code>onclick="$("#btn-close").popover("hide");"</code> element.</p>
-            <button type="button" id="btn-close" class="btn btn-primary" role="button">Flyout with button</button>
+            <div class="btn-group">
+                <button type="button" id="btn-close" class="btn btn-primary" role="button">Flyout with button</button>
+            </div>
         </div>
 
         <div class="col-md-24">
             {{#markdown}}
 ```xml
-<button type="button"
-        role="button"
-        id="btn-close"
-        class="btn btn-primary"
-       [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
-    Flyout with button
-</button>
+<div class="btn-group">
+    <button type="button"
+            role="button"
+            id="btn-close"
+            class="btn btn-primary"
+           [data-theme="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]"]>
+        Flyout with button
+    </button>
+</div>
 ```
             {{/markdown}}
         </div>

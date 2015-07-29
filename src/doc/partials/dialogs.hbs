@@ -6,13 +6,15 @@
     </header>
 
     <div class="row">
-        <div class="col-xs-24" style="margin-bottom: 1.5em;">
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample">
-                Launch demo dialog
-            </button>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample-alt">
-                Launch dialog in alt theme
-            </button>
+        <div class="col-xs-24">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample">
+                    Launch demo dialog
+                </button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample-alt">
+                    Launch dialog in alt theme
+                </button>
+            </div>
         </div>
     </div>
 
@@ -55,11 +57,13 @@
 
             {{#markdown}}
 ```xml
-<button type="button" class="btn btn-primary btn-lg"
-        data-toggle="modal"
-        data-target="#modal-sample">
-    Launch demo dialog
-</button>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary btn-lg"
+            data-toggle="modal"
+            data-target="#modal-sample">
+        Launch demo dialog
+    </button>
+</div>
 ```
             {{/markdown}}
 
