@@ -1,139 +1,305 @@
 ﻿// Add color transitions to buttons
+
 .btn {
-  @include type-body(no-line-height);
-  min-width: 120px;
-  line-height: 1.66667em;
-  border-style: solid;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 6px 18px;
+    @include type-body(no-line-height, no-responsive);
+    min-width: 120px;
+    line-height: 1;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 9px 12px 10px;
 
-  &,
-  &:focus {
-    color: $color-type-primary;
-    background-color: $color-dim-mid;
-    border-color: transparent;
-  }
+    //
+    // Color
+    //
+    &.btn-primary {
+        color: $color-type-primary-alt;
+        background-color: $color-accent;
+        border-color: transparent;
+        &:hover {
+            color: $color-type-primary-alt;
+            background-color: darken($color-accent-vivid-high, 5%);
+            border-color: $color-neutral-high;
+        }
+        &:focus,
+        &:active,
+        &.active {
+            background-color: darken($color-accent-vivid-high, 10%);
+            border-color: transparent;
+            @include box-shadow(none);
+        }
+        &:disabled,
+        &.disabled {
+            color: $color-type-disabled;
+            background-color: $color-accent-neutral-low;
+        }
+
+        // Alt theme
+        &.theme-alt {
+            &:hover {
+                background-color: lighten($color-accent-vivid-high, 5%);
+                border-color: $color-neutral-high-alt;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: lighten($color-accent-vivid-high, 10%);
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled-alt;
+            }
+        }
+
+        // On solid color
+        &.theme-on-color,
+        &.theme-on-img-dark {
+            color: $color-type-primary;
+            background-color: $color-vivid-high-alt;
+            &:hover {
+                background-color: $color-vivid-mid-alt;
+                border-color: $color-vivid-high-alt;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color-vivid-low-alt;
+                border-color: transparent;
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled-alt;
+                background-color: $color-neutral-low-alt;
+            }
+        }
+
+        // On light images
+        &.theme-on-img-light {
+            color: $color-type-primary-alt;
+            background-color: $color-vivid-high;
+            &:hover {
+                background-color: $color-vivid-mid;
+                border-color: $color-neutral-high;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color-vivid-low;
+                border-color: transparent;
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled;
+                background-color: $color-neutral-low;
+            }
+        }
+    }
+
+    // Map Bootstrap's .btn-default to our .btn-secondary
+    &.btn-secondary,
+    &.btn-default {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+        &:hover {
+            background-color: $color-neutral-mid;
+        }
+        &:focus,
+        &:active,
+        &.active {
+            background-color: $color-neutral-high;
+            @include box-shadow(none);
+        }
+        &:disabled,
+        &.disabled {
+            color: $color-type-disabled;
+            background-color: $color-neutral-low;
+        }
+
+        // Alt theme
+        &.theme-alt {
+            color: $color-type-primary-alt;
+            background-color: $color-neutral-low-alt;
+            &:hover {
+                border-color: $color-neutral-high-alt;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color-neutral-high-alt;
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled-alt;
+                background-color: $color-neutral-low-alt;
+                border-color: transparent;
+                opacity: 1;
+            }
+        }
+
+        // On solid color
+        &.theme-on-color,
+        &.theme-on-img-dark {
+            color: $color-type-primary-alt;
+            background-color: transparent;
+            border-color: $color-vivid-high-alt;
+            &:hover {
+                color: $color-vivid-mid-alt;
+                background-color: $color-neutral-low-alt;
+                border-color: $color-vivid-high-alt;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color-neutral-high-alt;
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled-alt;
+                background-color: $color-neutral-low-alt;
+                border-color: $color-neutral-low-alt;
+            }
+        }
+
+        // On light images
+        &.theme-on-img-light {
+            color: $color-type-primary;
+            background-color: transparent;
+            border-color: $color-vivid-high;
+            &:hover {
+                background-color: $color-neutral-low;
+                border-color: $color-neutral-high;
+            }
+            &:focus,
+            &:active,
+            &.active {
+                background-color: $color-neutral-high;
+            }
+            &:disabled,
+            &.disabled {
+                color: $color-type-disabled;
+                background-color: $color-neutral-low;
+                border-color: $color-neutral-high;
+            }
+        }
+    }
+
+    // Override Bootstrap alternate buttons
+    &.btn-success {
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+    }
+
+    &.btn-info {
+        @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+        &:active,
+        &.active {
+            background-color: $color-neutral-high;
+            @include box-shadow(none);
+        }
+    }
+    // Warning appears as orange
+    &.btn-warning {
+        @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+    }
+    // Danger and error appear as red
+    &.btn-danger {
+        @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+    }
 }
 
-// Override Bootstrap button settings
-.btn-primary,
-.btn-primary:focus {
-  color: $color-type-primary-alt;
-  background-color: $color-accent;
-}
-.btn-primary:hover,
-.btn-default:hover,
-.btn-primary:focus,
-.btn-default:focus {
-  border-color: $color-neutral-high;
-}
-.btn-default:hover {
-  background-color: $color-neutral-mid;
-}
-.btn-primary:hover {
-  background-color: $color-accent;
-}
-.btn:active,
-.btn.active {
-  border-color: $color-neutral-high;
-  background-color: $color-neutral-high;
-  @include box-shadow(none);
-}
-.btn:disabled {
-  color: $color-type-disabled-alt;
-  background-color: $color-neutral-mid;
-  border-color: transparent;
-}
 
-// Override Bootstrap alternate buttons
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-  &:active,
-  &.active {
-    background-color: $color-neutral-high;
-  }
-}
-.btn-primary,
-.btn-success {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-}
 
-.btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
-  &:active,
-  &.active {
-    background-color: $color-neutral-high;
-  }
-}
-// Warning appears as orange
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-}
-// Danger and error appear as red
-.btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
-}
+
 
 //Override Bootstrap link buttons
 // Make a button look and behave like a link
 .btn-link {
-  color: $link-color;
-  font-weight: normal;
-  border-radius: 0;
-  padding: 6px 10px;
+    @include type-body(no-line-height, no-responsive);
+    min-width: 120px;
+    line-height: 1;
+    font-weight: normal;
+    border: none;
+    border-radius: 0;
+    padding: 9px 12px 10px;
 
-  &,
-  &:active,
-  &.active,
-  &[disabled],
-  fieldset[disabled] & {
-    background-color: transparent;
-    @include box-shadow(none);
-  }
-  &,
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-  }
-  &:hover,
-  &:focus {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    background-color: transparent;
-  }
-  &:active,
-  &.active {
-    color: darken($link-color, 10%);
-    border-color: transparent;
-    text-decoration: none;
-  }
+    //
+    // Color
+    //
+    color: $color-accent-vivid-high;
 
-  &:disabled,
-  &.disabled {
-    color: $color-type-disabled;
-      text-decoration: none;
-  }
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus {
-      color: $color-type-disabled;
-      text-decoration: none;
+    &:focus,
+    &:active {
+        color: darken($color-accent-vivid-high, 5%);
+        border-color: transparent;
     }
-  }
+
+    &:disabled,
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] {
+        color: $color-type-disabled;
+        background-color: transparent;
+        @include box-shadow(none);
+    }
+
+    // Alt theme
+    &.theme-alt {
+
+        &:disabled,
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] {
+            color: $color-type-disabled-alt;
+            background-color: transparent;
+            @include box-shadow(none);
+        }
+    }
+
+    // On solid color
+    &.theme-on-color,
+    &.theme-on-img-dark {
+
+        color: $color-type-primary-alt;
+
+        &:focus,
+        &:active {
+            color: $color-vivid-low-alt;
+        }
+
+        &:disabled,
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] {
+            color: $color-type-disabled-alt;
+        }
+    }
+
+    // On light image
+    &.theme-on-img-light {
+
+        color: $color-type-primary;
+
+        &:focus,
+        &:active {
+            color: $color-vivid-low;
+        }
+
+        &:disabled,
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] {
+            color: $color-type-disabled;
+        }
+    }
 }
 
 // Dropdown button
 .btn-dropdown {
-  background: none;
-  border: 2px solid $color-neutral-mid;
+    background: none;
+    border: 2px solid $color-neutral-mid;
 
-  .caret {
-    margin-left: .5em;
-    border-top-width: 7px;
-  }
+    .caret {
+        margin-left: .5em;
+        border-top-width: 7px;
+    }
 }
 
 // Toggle buttons
@@ -150,6 +316,121 @@
   }
   &:hover {
     border-color: $color-accent;
+  }
+}
+
+.btn[data-toggle="button"]:not(.btn-toggle-switch), .btn-group[data-toggle="buttons"] .btn:not(.btn-toggle-switch) {
+  //
+  // Colors
+  //
+
+  // On light surface and on light image
+  &, &.theme-on-img-light {
+      color: $color-type-primary;
+      background-color: $color-vivid-high-alt;
+      border-color: $color-neutral-high;
+      margin: 0 spacer(xxs, -4) spacer(xxs, -4) 0;
+
+      &:hover {
+        color: $color-type-primary;
+        border-color: $color-vivid-mid;
+      }
+
+      &:active {
+        color: $color-type-primary;
+        background-color: $color-vivid-high-alt;
+        border-color: $color-accent-vivid-high;
+      }
+
+      &.active {
+          color: $color-type-primary;
+          border-color: $color-vivid-high;
+          box-shadow:0px 0px 0px 1px $color-vivid-high inset;
+
+          &:hover {
+            color: $color-type-primary;
+            border-color: shade($color-accent-vivid-high, 40%);
+            box-shadow:0px 0px 0px 1px shade($color-accent-vivid-high, 40%) inset;
+          }
+
+      }
+
+      &:disabled {
+          color: $color-type-disabled;
+          background-color: $color-neutral-low-alt;
+          border-color: $color-neutral-low;
+      }
+  }
+
+  // On dark surface and on dark image
+  &.theme-alt,
+  &.theme-on-img-dark {
+      color: $color-type-primary-alt;
+      background-color: $color-vivid-high;
+      border-color: $color-neutral-high-alt;
+
+      &:hover {
+        color: $color-type-primary-alt;
+        border-color: $color-vivid-mid-alt;
+      }
+
+      &:active {
+          color: $color-type-primary-alt;
+          background-color: $color-vivid-high;
+          border-color: $color-accent-vivid-high;
+      }
+
+      &.active {
+          color: $color-type-primary-alt;
+          background-color: $color-vivid-high;
+          border-color: $color-vivid-high-alt;
+          box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
+
+          &:hover {
+            border-color: tint($color-accent-vivid-high, 40%);
+            box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
+          }
+      }
+
+      &:disabled {
+          color: $color-type-disabled-alt;
+          background-color: $color-neutral-low;
+          border-color: $color-neutral-low-alt;
+      }
+  }
+
+  // On colored surface
+  &.theme-on-color {
+      color: $color-type-primary-alt;
+      background-color: transparent;
+      border-color: $color-neutral-high-alt;
+
+      &:hover {
+        border-color: $color-vivid-high-alt;
+      }
+
+      &:active {
+          color: $color-type-primary-alt;
+          background-color: $color-neutral-high-alt;
+          border-color: $color-vivid-high-alt;
+      }
+
+      &.active {
+        color: $color-type-primary-alt;
+        background-color: transparent;
+        border-color: $color-vivid-high-alt;
+        box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
+
+        &:hover {
+          border-color: tint($color-accent-vivid-high, 40%);
+          box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
+        }
+      }
+
+      &:disabled {
+          border-color: $color-neutral-low-alt;
+          color: $color-type-disabled-alt;
+      }
   }
 }
 

@@ -13,5 +13,11 @@
         border-top: none;
         border-right: none;
         border-left: none;
+
+        p {
+            @include type-caption(no-responsive);
+            margin-bottom: 0;
+            padding-top: 4px;
+        }
     }
 }
