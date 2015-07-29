@@ -3,28 +3,37 @@
   &.table-sortable {
     thead {
       th {
-        font-size: 11px;
+        @include type-caption-alt();
+        color: $color-type-secondary;
         font-weight: normal;
         border-bottom: 1px solid black(10%);
-        &:last-child {
-          text-align: right;
-        }
+
       }
     }
     tr {
 
-    td {
-      .icon-more {
-        float: right;
+      td {
+        .icon-more {
+          &:before {
+            vertical-align: middle;
+            line-height: 1.5;
+            color: $color-accent;
+          }
+        }
       }
-      &:last-child {
-        text-align: right;
-      }
-    }
       &:hover {
         td {
           background: black(10%);
-
+        }
+      }
+    }
+    &.theme-alt {
+      background: $color-bg-dark-vivid-low;
+      color: $color-type-primary-alt;
+      thead {
+        th {
+          color: $color-type-primary-alt;
+          border-bottom: 1px solid $color-type-secondary-alt;
         }
       }
     }
