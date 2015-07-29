@@ -2,17 +2,27 @@
   padding: 10px 12px;
 }
 .table {
-  //Sortable table
-  &.table-sortable {
+  thead {
+    tr th {
+      @include type-caption-alt();
+      color: $color-type-secondary;
+      font-weight: normal;
+      border-bottom: 1px solid black(10%);
+      padding-bottom: 13px;
+    }
+  }
+  &.theme-alt {
+    background: $color-bg-dark-vivid-low;
+    color: $color-type-primary-alt;
     thead {
-      th {
-        @include type-caption-alt();
-        color: $color-type-secondary;
-        font-weight: normal;
-        border-bottom: 1px solid black(10%);
-
+      tr th {
+        color: $color-type-secondary-alt;
+        border-bottom: 1px solid $color-neutral-low-alt;
       }
     }
+  }
+  //Sortable table
+  &.table-sortable {
     tr {
       &:hover {
         td {
@@ -21,18 +31,10 @@
       }
     }
     &.theme-alt {
-      background: $color-bg-dark-vivid-low;
-      color: $color-type-primary-alt;
-      thead {
-        th {
-          color: $color-type-secondary-alt;
-          border-bottom: 1px solid $color-neutral-low-alt;
-        }
-      }
       tr {
         &:hover {
           td {
-            background: $color-dim-high-alt; 
+            background: $color-dim-mid-alt;
           }
         }
       }
