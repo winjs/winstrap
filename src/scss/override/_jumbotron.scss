@@ -1,5 +1,33 @@
+// avoid repeating nesting for each breakpoint
+@mixin set-bottom-jumbotron-content($bottom) {
+	// heavy nesting for isolation to full-width image component
+	> .container-wrap {
+		> .container {
+			> .row {
+				> .jumbotron-content-wrap {
+					> .jumbotron-content {
+						bottom: $bottom;
+					}
+				}
+			}
+		}
+	}
+}
+
 .jumbotron {
 	position: relative;
+
+	// set positioning of jumbotron image gradient overlay
+	.jumbotron-background {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
 
 	// set height to 100% for layout issues
 	> .container-wrap {
@@ -20,11 +48,61 @@
 					> .jumbotron-content {
 						position: absolute;
 						bottom: 60px;
+
+						&.centered {
+							text-align: center;
+							width: 100%;
+						}
 					}
 				}
 			}
 		}
-
+	}
+	// set text sizes
+	.jumbotron-header,
+	h1 {
+		@include type-headline();
+	}
+	.jumbotron-subheader,
+	p {
+		@include type-title();
+	}
+	@media (max-width: $screen-lg-max) {
+		.jumbotron-header,
+		h1 {
+			@include type-header();
+		}
+		.jumbotron-subheader,
+		p {
+			@include type-title();
+		}
+		@include set-bottom-jumbotron-content(30px);
+	}
+	@media (max-width: $screen-md-max) {
+		.jumbotron-header,
+		h1 {
+			@include type-subheader();
+		}
+		.jumbotron-subheader,
+		p {
+			@include type-subtitle();
+		}
+		@include set-bottom-jumbotron-content(15px);
+	}
+	@media (max-width: $screen-sm-max) {
+		.jumbotron-header,
+		h1 {
+			margin-bottom: 6px;
+			@include type-title();
+		}
+		.jumbotron-subheader,
+		p {
+			margin-top: 0;
+			@include type-body();
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		@include set-bottom-jumbotron-content(5px);
 	}
 
 	// vertical alignment for highlight bands
@@ -69,7 +147,15 @@
 			display: block;
 			margin-bottom: 14px;
 		}
-		@media screen and (max-width: 1083px) {
+		@media (max-width: $screen-md) {
+			// allow columns at break point
+			> .container {
+			height: 100%;
+
+				> .row {
+					flex-direction: column;
+				}
+			}
 			.img-container {
 				padding-bottom: 0;
 			}
@@ -83,18 +169,13 @@
 		// Jumbotron - highlight bar
 		//
 		background-color: $color-bg-light-vivid-low;
-		button {
-			background-color: $color-vivid-high;
-			border-color: $color-vivid-high;
-		}
+
+		button,
 		.btn {
-			background-color: transparent;
-			border-color: $color-vivid-high;
-			color: $color-type-primary;
+			@extend .btn-secondary.theme-on-img-light;
 
 			&.btn-primary {
-				background-color: $color-vivid-high;
-				color: $color-type-primary-alt;
+				@extend .btn-primary.theme-on-img-light;
 			}
 		}
 		//
@@ -104,28 +185,56 @@
 		&.theme-on-color {
 			color: $color-vivid-high-alt;
 			background-color: inherit;
-			button {
-				background-color: $color-vivid-high-alt;
-				border-color: $color-vivid-high-alt;
-				color: $color-type-primary;
-			}
+			button,
 			.btn {
-				background-color: transparent;
-				color: $color-vivid-high-alt;
+				@extend .btn-secondary.theme-on-img-dark;
 
 				&.btn-primary{
-					background-color: $color-vivid-high-alt;
-					color: $color-type-primary;
+					@extend .btn-primary.theme-on-img-dark;
 				} 
 			}
 		}
 		&.hyperlinks {
+			// Have to be a little heavy handed here and repeat .btn rules to override default highlight bar btn use of Sass @extend
 			button,
-			.btn,
+			.btn {
+				@include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+		        &:hover {
+		            background-color: $color-neutral-mid;
+		        }
+		        &:focus,
+		        &:active,
+		        &.active {
+		            background-color: $color-neutral-high;
+		            @include box-shadow(none);
+		        }
+		        &:disabled,
+		        &.disabled {
+		            color: $color-type-disabled;
+		            background-color: $color-neutral-low;
+		        } 
+			}
 			.btn.btn-primary {
-				border-color: $color-accent-vivid-high;
-				background-color: $color-accent-vivid-high;
 				color: $color-type-primary-alt;
+				background-color: $color-accent;
+				border-color: transparent;
+				&:hover {
+				    color: $color-type-primary-alt;
+				    background-color: darken($color-accent-vivid-high, 5%);
+				    border-color: $color-neutral-high;
+				}
+				&:focus,
+				&:active,
+				&.active {
+				    background-color: darken($color-accent-vivid-high, 10%);
+				    border-color: transparent;
+				    @include box-shadow(none);
+				}
+				&:disabled,
+				&.disabled {
+				    color: $color-type-disabled;
+				    background-color: $color-accent-neutral-low;
+				}
 			}
 		}
 	}
@@ -135,19 +244,28 @@
 	//
 	&.theme-on-img-dark {
 		color: $color-vivid-high-alt;
+
+		.jumbotron-background {
+			&:before {
+				// colors for the image gradient overlay
+				background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* Standard syntax */
+			}
+		}
 	}
-	.jumbotron-background {
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Safari 5.1 to 6.0 */
-			background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Opera 11.1 to 12.0 */
-			background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Firefox 3.6 to 15 */
-			background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* Standard syntax */
+	&.theme-on-img-light {
+		color: $color-vivid-high;
+
+		.jumbotron-background {
+			&:before {
+				// colors for the image gradient overlay
+				background: -webkit-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* Standard syntax */
+			}
 		}
 	}
 }
