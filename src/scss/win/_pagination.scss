@@ -6,6 +6,9 @@
             border-color: transparent;
             background: none;
             color: $text-color;
+            margin: 5px 0;
+            padding: 4px 0 5px;
+            min-width: 18px;
         }
     }
 
@@ -13,8 +16,8 @@
     li.pagination-next {
         i[class*="icon"] {
             margin: 0 2px;
-            font-size: .9em;
-            vertical-align: -.2em;
+            font-size: .813em;
+            vertical-align: -.1em;
         }
 
         &.disabled {
@@ -24,6 +27,36 @@
         > a, > span {
             background: none;
             border-color: transparent;
+            margin: 0 5px;
+            &:hover {
+                background-color: $color-dim-mid;
+            }
+            &:focus {
+                background-color: $color-neutral-mid;
+            }
+        }
+    }
+    li.pagination-prev {
+        > a, > span {
+            padding: 10px 10px 10px 0;
+        }
+    }
+    li.pagination-next {
+        > a, > span {
+            padding: 10px 7px 10px 10px;
+        }
+    }
+    &.theme-alt {
+        > li {
+            > a, > span {
+                color: $color-type-primary-alt;
+                &:hover {
+                    background-color: $color-dim-mid-alt;
+                }
+                &:focus {
+                    background-color: $color-neutral-mid-alt;
+                }
+            }
         }
     }
 }
