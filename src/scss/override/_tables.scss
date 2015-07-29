@@ -1,23 +1,45 @@
+//override default bootstrap padding on table elements
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-  padding: 10px 12px;
+  padding: spacer(xxs, -2) spacer(xxs);
 }
 .table {
+  tr th {
+    font-weight: normal;
+    color: $color-type-secondary;
+  }
   thead {
     tr th {
-      @include type-caption-alt();
+      @include type-caption-alt(no-responsive);
       color: $color-type-secondary;
       font-weight: normal;
       border-bottom: 1px solid black(10%);
-      padding-bottom: 13px;
+      padding-bottom: spacer(xxs, +1);
     }
   }
   &.theme-alt {
     background: $color-bg-dark-vivid-low;
     color: $color-type-primary-alt;
+    tr th {
+      color: $color-type-secondary-alt;
+    }
     thead {
       tr th {
-        color: $color-type-secondary-alt;
         border-bottom: 1px solid $color-neutral-low-alt;
+      }
+    }
+  }
+  //Default Striped table
+  &.table-striped {
+    > tbody {
+       > tr:nth-of-type(odd) {
+       }
+    }
+    //Alt theme
+    &.theme-alt {
+      > tbody {
+         > tr:nth-of-type(odd) {
+           background: $color-dim-mid-alt;
+         }
       }
     }
   }
@@ -30,6 +52,7 @@
         }
       }
     }
+    //Alt Theme
     &.theme-alt {
       tr {
         &:hover {
@@ -39,5 +62,12 @@
         }
       }
     }
+  }
+}
+
+//Add margin bottom for IE scrollbar
+@media (max-width: $screen-sm-min) {
+  &.table-responsive {
+    padding-bottom: spacer(xxs, +5);
   }
 }
