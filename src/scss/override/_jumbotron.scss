@@ -29,9 +29,9 @@
 .jumbotron {
 	position: relative;
 
-	// set positioning of jumbotron image gradient overlay
 	.jumbotron-background {
 
+		// set positioning of jumbotron image gradient overlay
 		&:before {
 			content: '';
 			position: absolute;
@@ -72,7 +72,7 @@
 			}
 		}
 	}
-	// set break point styles
+	
 	.jumbotron-header,
 	h1 {
 		@include type-headline();
@@ -93,7 +93,7 @@
 			max-width: 100%;
 		}
 	}
-
+	// set break point styles
 	@media (max-width: $screen-lg-max) {
 		.jumbotron-header,
 		h1 {
@@ -145,10 +145,10 @@
 						> .jumbotron-content {
 							position: relative;
 
-							//match top margin from h1
 							p,
 							.jumbotron-subheader {
 								bottom: auto;
+								//match responsive top margin from h1
 								margin-bottom: 23px;
 							}
 						}
@@ -186,21 +186,24 @@
 
 			> .row {
 				height: 100%;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
+				// would love to use this, but breaks columns in IE
+				// display: flex;
+				// flex-direction: row;
+				// align-items: center;
 			}
 		}
 		@media (max-width: $screen-md) {
-			// allow columns at break point
-			> .container {
-			height: 100%;
+			// // allow columns at break point
+			// > .container {
+			// 	> .row {
+			// 		// would love to use this but breaks columns in IE
+			// 		flex-direction: column;
+			// 	}
+			// }
 
-				> .row {
-					flex-direction: column;
-				}
-			}
+			//
 			.img-container {
+				// looks better without the bottom padding at this screen size
 				padding-bottom: 0;
 			}
 		}
