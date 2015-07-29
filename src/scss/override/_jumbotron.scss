@@ -13,12 +13,25 @@
 		}
 	}
 }
+// gradient for background image overlay
+@mixin jumbotron-gradient-overlay($color-overlay) {
+	.jumbotron-background {
+		&:before {
+			// colors for the image gradient overlay
+			background: -webkit-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* Standard syntax */
+		}
+	}
+}
 
 .jumbotron {
 	position: relative;
 
 	// set positioning of jumbotron image gradient overlay
 	.jumbotron-background {
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -51,6 +64,7 @@
 
 						&.centered {
 							text-align: center;
+							left: 0;
 							width: 100%;
 						}
 					}
@@ -58,7 +72,7 @@
 			}
 		}
 	}
-	// set text sizes
+	// set break point styles
 	.jumbotron-header,
 	h1 {
 		@include type-headline();
@@ -67,6 +81,19 @@
 	p {
 		@include type-title();
 	}
+	.jumbotron-background,
+	.container-wrap {
+		top: 0;
+	}
+	.jumbotron-background {
+		position: relative;
+		left: 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
 	@media (max-width: $screen-lg-max) {
 		.jumbotron-header,
 		h1 {
@@ -103,27 +130,32 @@
 	}
 	@media (max-width: $screen-xs-max) {
 		@include set-bottom-jumbotron-content(5px);
-	}
 
-	// vertical alignment for highlight bands
-		> .container {
-			height: 100%;
+		> .jumbotron-background {
+			position: relative;
+		}
+		> .container-wrap {
+			position: relative;
 
-			> .row {
-				height: 100%;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
+			> .container {
+				> .row {
+					> .jumbotron-content-wrap {
+						position: relative;
+
+						> .jumbotron-content {
+							position: relative;
+
+							//match top margin from h1
+							p,
+							.jumbotron-subheader {
+								bottom: auto;
+								margin-bottom: 23px;
+							}
+						}
+					}
+				}
 			}
 		}
-
-	.jumbotron-background,
-	.container-wrap {
-		top: 0;
-	}
-	.jumbotron-background {
-		position: relative;
-		left: 0;
 	}
 
 	&.highlight-bar {
@@ -146,6 +178,18 @@
 		a {
 			display: block;
 			margin-bottom: 14px;
+		}
+
+		// vertical alignment for highlight bands
+		> .container {
+			height: 100%;
+
+			> .row {
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
 		}
 		@media (max-width: $screen-md) {
 			// allow columns at break point
@@ -244,27 +288,35 @@
 	//
 	&.theme-on-img-dark {
 		color: $color-vivid-high-alt;
+		@include jumbotron-gradient-overlay($color-vivid-high);
 
-		.jumbotron-background {
-			&:before {
-				// colors for the image gradient overlay
-				background: -webkit-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Safari 5.1 to 6.0 */
-				background: -o-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Opera 11.1 to 12.0 */
-				background: -moz-linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* For Firefox 3.6 to 15 */
-				background: linear-gradient(rgba($color-vivid-high, 0), rgba($color-vivid-high, 0.5) ); /* Standard syntax */
+		// different layout for smallest viewport
+		@media (max-width: $screen-xs-max) {
+			> .container-wrap {
+				> .container {
+					> .row {
+						> .jumbotron-content-wrap {
+							background-color: $color-bg-dark-vivid-low;
+						}
+					}
+				}
 			}
 		}
 	}
 	&.theme-on-img-light {
 		color: $color-vivid-high;
+		@include jumbotron-gradient-overlay($color-vivid-high-alt);
 
-		.jumbotron-background {
-			&:before {
-				// colors for the image gradient overlay
-				background: -webkit-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Safari 5.1 to 6.0 */
-				background: -o-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Opera 11.1 to 12.0 */
-				background: -moz-linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* For Firefox 3.6 to 15 */
-				background: linear-gradient(rgba($color-vivid-high-alt, 0), rgba($color-vivid-high-alt, 0.5) ); /* Standard syntax */
+		// different layout for smallest viewport
+		@media (max-width: $screen-xs-max) {
+			> .container-wrap {
+				> .container {
+					> .row {
+						> .jumbotron-content-wrap {
+							background-color: $color-bg-light-vivid-low;
+						}
+					}
+				}
 			}
 		}
 	}
