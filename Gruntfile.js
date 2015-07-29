@@ -112,14 +112,23 @@ module.exports = function (grunt) {
         files: ['src/doc/**/*', 'src/js/*.js'],
         tasks: ['jshint', 'assemble', 'copy:doc']
       },
+
       configFiles: {
         files: ['gruntfile.js'],
         options: {
           reload: true
         }
       },
+
+      livereload: {
+        files: ['dist/**/*.{html,css,jpg,png,gif}'],
+        options: {
+          livereload: true
+        }
+      },
+
       options: {
-        livereload: true,
+
         tasks: ['notify:assemble']
       }
     },
@@ -130,8 +139,7 @@ module.exports = function (grunt) {
           port: 9001,
           base: './dist/',
           hostname: 'localhost',
-          livereload: true,
-          open: true
+          livereload: true
         }
       }
     },
@@ -181,7 +189,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-file-exists');
   grunt.loadNpmTasks('grunt-bump');
