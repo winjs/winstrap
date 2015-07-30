@@ -95,3 +95,26 @@ code {
     background-position: top right;
     background-size: cover;
 }
+
+//
+// Spacers
+//
+
+@each $tshirt, $size in $spacer-sizes {
+    .spacer-mt-#{$tshirt} {
+        margin-top: $size;
+    }
+
+    .spacer-mb-#{$tshirt} {
+        margin-bottom: $size;
+    }
+
+    .spacer-pt-#{$tshirt} {
+        padding-top: $size;
+    }
+
+    .spacer-pb-#{$tshirt} {
+        padding-bottom: $size;
+    }
+
+}
