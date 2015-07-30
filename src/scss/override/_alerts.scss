@@ -16,14 +16,14 @@ $alert-icon-base: 48px;
 
     .alert-title {
         @include type-subtitle-alt(no-responsive);
-        margin-bottom: spacer(xxs, -6);
+        margin-bottom: spacer(xxs, -7);
         margin-top: spacer(xxs, -11);
     }
 
     p {
         @include type-caption(no-responsive);
         margin: 0;
-        padding: spacer(xxs, -10) 0 0;
+        padding: spacer(xxs, -8) 0 0;
     }
 
     .close {
