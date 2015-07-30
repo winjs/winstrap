@@ -7,22 +7,23 @@ $alert-icon-base: 48px;
 .alert {
     position: relative;
     border: none;
-    padding: win-spacer(xxs) win-spacer(xxs) win-spacer(xxs) win-spacer(xs, -4);
+    padding: spacer(xxs) spacer(xxs) spacer(xxs) spacer(xs, -4);
     min-height: $alert-icon-base;
 
     &.alert-dismissible {
-        padding-right: 3em;
+        padding-right: spacer(md);
     }
 
     .alert-title {
         @include type-subtitle-alt(no-responsive);
-        margin-bottom: win-spacer(xxs, -8);
+        margin-bottom: spacer(xxs, -7);
+        margin-top: spacer(xxs, -11);
     }
 
     p {
         @include type-caption(no-responsive);
-        margin-bottom: 0;
-        padding-top: spacer(xxs, -8);
+        margin: 0;
+        padding: spacer(xxs, -8) 0 0;
     }
 
     .close {
@@ -37,19 +38,19 @@ $alert-icon-base: 48px;
 
         span {
             font-size: 16px;
-            top: -3px;
+            top: -5px;
             position: relative;
         }
     }
 
     &.with-icon {
-        padding-left: spacer(sm, 4)
+        padding-left: spacer(md)
     }
 
     .alert-icon {
         position: absolute;
         top: spacer(xxs, -8);
-        left: spacer(xxs, -4);
+        left: spacer(xxs);
         width: $alert-icon-base / 2;
         height: $alert-icon-base /2;
         font-size: $alert-icon-base / 2;
