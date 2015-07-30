@@ -119,6 +119,7 @@ module.exports = function (grunt) {
         }
       },
       options: {
+        livereload: true,
         tasks: ['notify:assemble']
       }
     },
@@ -127,7 +128,10 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: './dist/'
+          base: './dist/',
+          hostname: 'localhost',
+          livereload: true,
+          open: true
         }
       }
     },

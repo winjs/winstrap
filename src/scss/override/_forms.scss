@@ -40,30 +40,53 @@ textarea.form-control {
 //
 // Select
 //
-select.form-control {
-    min-width: 56px;
-    max-width: 368px;
-    min-height: 32px;
-    margin: 8px 0;
-    padding: 0;
-    border-style: solid;
-    border-width: 2px;
-    background-clip: border-box;
-    background-image: none;
-    box-sizing: border-box;
-    border-radius: 0;
-    @include type-body();
+.combobox {
+    position: relative;
 
-    &::-ms-value {
-        padding: 5px 12px 7px 12px;
-        margin: 0;
+    &:after {
+        font-family: "winjs-symbols";
+        content: map-get($icons, scrolldown);
+        position: absolute;
+        font-size: 1rem;
+        top: 13px;
+        right: 9px;
     }
-    &::-ms-expand {
-        border: none;
-        margin-right: 5px;
-        margin-left: 3px;
-        margin-bottom: -2px;
-        font-size: 20px;
+}
+select {
+    @include type-body(no-responsive);
+
+    &.form-control {
+        width: 100%;
+        min-width: 67px;
+        max-width: 368px;
+        min-height: 36px;
+
+        // remove browser generated icon on 
+        // Chrome, Safari, Opera, and Firefox
+        padding: 4px 42px 4px 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+
+        //remove default browser icon for IE
+        &::-ms-expand {
+            display: none;
+        }
+
+        &[multiple] {
+            padding: 0;
+
+            option {
+                padding-left: 1em;
+                // top and bottom only works in chrome
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+        }
+
+        option {
+            padding-left: 1em;
+        }
     }
 }
 
@@ -226,70 +249,43 @@ input.form-control::-ms-reveal {
     }
 }
 
-select.form-control {
-    @include box-shadow(none);
-    @include transition(none);
-    color: $color-type-primary;
-    background-color: $color-dim-mid;
-    border-color: $color-neutral-high;
+// Combo Box Colors
+select {
 
-    &::-ms-expand {
+    &.form-control {
         color: $color-type-primary;
-        background-color: transparent;
-    }
-
-    &:focus,
-    &:active {
-        @include box-shadow(none);
         border-color: $color-vivid-low;
-    }
-    &:hover {
-        background-color: $color-dim-low;
-        border-color: $color-vivid-low;
-    }
-    &:disabled {
-        color: $color-type-disabled-alt;
-        background-color: $color-neutral-mid;
-    }
-    &:disabled::-ms-expand {
-        color: $color-type-disabled-alt;
-        border-color: $color-neutral-mid;
-    }
+        background-color: $color-vivid-mid-alt;
 
-    option {
-        color: $color-type-primary;
-        background-color: $color-dim-low;
-
-        &:hover, &:active {
-            background-color: fade(#000, 20%);
-            color: $color-type-primary;
+        &:hover {
+            background-color: $color-dim-mid;
         }
-        &:checked {
-            color: $color-white;
-            background-color: $color-accent;
+
+        &:active {
+            background-color: $color-neutral-low;
         }
-    }
-    optgroup {
-        color: $color-type-primary;
-        background-color: $color-dim-low;
-    }
-    optgroup:disabled {
-        color: $color-type-disabled-alt;
-    }
-}
 
-select[multiple].form-control {
-    background-color: $color-dim-low;
+        &:after {
+            color: $color-vivid-low;
+        }
 
-    option {
-        color: $color-type-primary;
-    }
-    option:hover {
-        color: $color-type-primary;
-    }
-    option:checked {
-        color: $color-white;
-        background-color: $color-accent;
+        &:focus {
+            color: $color-type-primary-alt;
+            background-color: $color-accent-vivid-high;
+            @include box-shadow(none);
+
+            option {
+                background-color: $color-bg-light-vivid-mid;
+                color: $color-type-primary;
+            }
+        }
+        option {
+
+            &:checked {
+                color: $color-type-primary-alt;
+                background-color: $color-accent-vivid-high;
+            }  
+        }
     }
 }
 
@@ -420,6 +416,61 @@ form .theme-on-img-dark {
             background-color: $color-neutral-low;
         }
     }
+
+    // Combo Box Alt Colors
+    .combobox {
+        &:after {
+            color: $color-vivid-low-alt;
+        }
+    }
+    select {
+        color: $color-type-primary-alt;
+
+        &.form-control {
+            border-color: $color-vivid-low-alt;
+            background-color: $color-vivid-mid;
+
+            &:hover {
+                border-color: $color-vivid-mid-alt;
+                background-color: $color-bg-dark-vivid-mid;
+            }
+
+            &:active {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-neutral-mid-alt;            
+            }
+
+            &:after {
+                color: $color-vivid-low-alt;
+            }
+
+            &:focus {
+                color: $color-type-primary-alt;
+                background-color: $color-accent-vivid-high;
+
+                option {
+                    background-color: $color-bg-dark-vivid-mid;
+                    color: $color-type-primary-alt;
+                }
+            }
+            option {
+
+                &:checked {
+                    color: $color-type-primary-alt;
+                    background-color: $color-accent-vivid-high;
+                }  
+            }
+
+            &[multiple] {
+                option {
+                    &:checked {
+                        color: $color-type-primary-alt;
+                        background-color: $color-accent-vivid-high;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // On Solid Color
@@ -461,6 +512,56 @@ form .theme-on-color {
             border-color: $color-neutral-low-alt;
             color: $color-type-disabled-alt;
             background-color: $color-neutral-low-alt;
+        }
+    }
+
+    // Combo Box Colored BG Colors
+    select {
+        color: $color-type-primary;
+
+        &.form-control {
+            border-color: $color-vivid-high-alt;
+            background-color: $color-vivid-low-alt;
+
+            &:hover {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-vivid-mid-alt;
+            }
+
+            &:active {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-vivid-high-alt;            
+            }
+
+            &:after {
+                color: $color-vivid-low;
+            }
+
+            &:focus {
+                color: $color-vivid-high-alt;
+                background-color: $color-vivid-high;
+
+                option {
+                    background-color: $color-bg-light-vivid-mid;
+                    color: $color-type-primary;
+                }
+            }
+            option {
+
+                &:checked {
+                    color: $color-vivid-high-alt;
+                    background-color: $color-vivid-high;
+                }  
+            }
+
+            &[multiple] {
+                option {
+                    &:checked {
+                        color: $color-vivid-high-alt;
+                        background-color: $color-vivid-high;
+                    }
+                }
+            }
         }
     }
 }
@@ -509,4 +610,45 @@ form .theme-on-img-light {
             background-color: $color-dim-mid-alt;
         }
     }
+
+    // Combo Box Colors
+    select {
+        color: $color-type-primary;
+
+        &.form-control {
+            border-color: $color-vivid-low;
+            background-color: $color-vivid-mid-alt;
+
+            &:hover {
+                background-color: $color-dim-mid;
+            }
+
+            &:active {
+                background-color: $color-neutral-low;
+            }
+
+            &:after {
+                color: $color-vivid-low;
+            }
+
+            &:focus {
+                color: $color-type-primary-alt;
+                background-color: $color-accent-vivid-high;
+                @include box-shadow(none);
+
+                option {
+                    background-color: $color-bg-light-vivid-mid;
+                    color: $color-type-primary;
+                }
+            }
+            option {
+
+                &:checked {
+                    color: $color-type-primary-alt;
+                    background-color: $color-accent-vivid-high;
+                }  
+            }
+        }
+    }
+
 }
