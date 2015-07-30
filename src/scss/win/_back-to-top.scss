@@ -7,7 +7,7 @@ $button-size:  48px;
     visibility: hidden;
     width: $button-size;
     height: $button-size;
-    padding: spacer(xxs);
+    padding: spacer(xxs, -2) spacer(xxs) spacer(xxs);
     opacity: 0;
     @include translate(0, ($button-size / 2));
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
@@ -29,8 +29,11 @@ $button-size:  48px;
     //
     // Colors
     //
-    color: $color-vivid-low;
-    background: $color-dim-mid;
+    &,
+    &:focus {
+        color: $color-vivid-low;
+        background: $color-dim-mid;
+    }
 
     &:hover {
         color: $color-vivid-high;
@@ -39,8 +42,11 @@ $button-size:  48px;
 
     // On dark surface
     &.theme-alt {
-        color: $color-vivid-low-alt;
-        background: $color-dim-mid-alt;
+        &,
+        &:focus {
+            color: $color-vivid-low-alt;
+            background: $color-dim-mid-alt;
+        }
 
         &:hover {
             color: $color-vivid-high-alt;
