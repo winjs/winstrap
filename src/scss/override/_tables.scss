@@ -12,7 +12,7 @@
       @include type-caption-alt(no-responsive);
       color: $color-type-secondary;
       font-weight: normal;
-      border-bottom: 1px solid black(10%);
+      border-bottom: 1px solid $color-neutral-low;
       padding-bottom: spacer(xxs, +1);
     }
   }
@@ -31,15 +31,19 @@
   //Default Striped table
   &.table-striped {
     > tbody {
-       > tr:nth-of-type(odd) {
-       }
+      > tr td, > tr th {
+        border-bottom: 1px solid $color-neutral-low;
+      }
+      > tr:nth-of-type(odd) {
+        background: transparent;
+      }
     }
     //Alt theme
     &.theme-alt {
       > tbody {
-         > tr:nth-of-type(odd) {
-           background: $color-dim-mid-alt;
-         }
+        > tr td, > tr th {
+          border-bottom: 1px solid $color-neutral-low-alt;
+        }
       }
     }
   }
