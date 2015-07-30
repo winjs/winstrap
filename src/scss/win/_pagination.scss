@@ -58,6 +58,14 @@
                 }
             }
         }
+        > .active > a,
+        > .active > span {
+            &:hover,
+            &:focus {
+              color: $color-type-primary-alt;
+              background-color: $pagination-active-bg;
+            }
+        }
     }
 }
 
