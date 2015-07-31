@@ -2,32 +2,25 @@
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
   padding: spacer(xxs, -2) spacer(xxs);
 }
+
 .table {
+
   tr th {
-    font-weight: normal;
+    @include type-body(no-responsive);
     color: $color-type-secondary;
   }
+
   thead {
+
     tr th {
       @include type-caption-alt(no-responsive);
       color: $color-type-secondary;
-      font-weight: normal;
       border-bottom: 1px solid $color-neutral-low;
       padding-bottom: spacer(xxs, +1);
     }
+
   }
-  &.theme-alt {
-    background: $color-bg-dark-vivid-low;
-    color: $color-type-primary-alt;
-    tr th {
-      color: $color-type-secondary-alt;
-    }
-    thead {
-      tr th {
-        border-bottom: 1px solid $color-neutral-low-alt;
-      }
-    }
-  }
+
   //Default Striped table
   &.table-striped {
     > tbody {
@@ -38,8 +31,25 @@
         background: transparent;
       }
     }
-    //Alt theme
-    &.theme-alt {
+  }
+
+
+  //Alt theme
+  &.theme-alt {
+    background: $color-bg-dark-vivid-low;
+    color: $color-type-primary-alt;
+
+    tr th {
+      color: $color-type-secondary-alt;
+    }
+
+    thead {
+      tr th {
+        border-bottom: 1px solid $color-neutral-low-alt;
+      }
+    }
+
+    &.table-striped {
       > tbody {
         > tr td, > tr th {
           border-bottom: 1px solid $color-neutral-low-alt;
@@ -47,31 +57,17 @@
       }
     }
   }
-  //Sortable table
-  &.table-sortable {
-    tr {
-      &:hover {
-        td {
-          background: black(10%);
-        }
-      }
-    }
-    //Alt Theme
-    &.theme-alt {
-      tr {
-        &:hover {
-          td {
-            background: $color-dim-mid-alt;
-          }
-        }
-      }
-    }
-  }
+
 }
 
+.table-responsive {
+  padding-bottom: spacer(xxs, +5);
+}
 //Add margin bottom for IE scrollbar
-@media (max-width: $screen-sm-min) {
-  &.table-responsive {
-    padding-bottom: spacer(xxs, +5);
+@media (min-width: $screen-md-min) {
+
+  .table-responsive {
+    padding-bottom: 0;
   }
+
 }
