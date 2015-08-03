@@ -24,8 +24,8 @@
   //Default Striped table
   &.table-striped {
     > tbody {
-      > tr td, > tr th {
-        border-bottom: 1px solid $color-neutral-low;
+      tr td, tr th {
+        border-bottom: 1px solid $color-dim-mid;
       }
       > tr:nth-of-type(odd) {
         background: transparent;
@@ -51,8 +51,8 @@
 
     &.table-striped {
       > tbody {
-        > tr td, > tr th {
-          border-bottom: 1px solid $color-neutral-low-alt;
+        tr td, tr th {
+          border-bottom: 1px solid $color-dim-mid-alt;
         }
       }
     }
