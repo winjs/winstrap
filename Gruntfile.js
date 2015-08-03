@@ -112,21 +112,12 @@ module.exports = function (grunt) {
         files: ['src/doc/**/*', 'src/js/*.js'],
         tasks: ['jshint', 'assemble', 'copy:doc']
       },
-
       configFiles: {
         files: ['gruntfile.js'],
         options: {
           reload: true
         }
       },
-
-      livereload: {
-        files: ['dist/**/*.{html,css,jpg,png,gif}'],
-        options: {
-          livereload: true
-        }
-      },
-
       options: {
         livereload: true,
         tasks: ['notify:assemble']
@@ -138,7 +129,9 @@ module.exports = function (grunt) {
         options: {
           port: 9001,
           base: './dist/',
-          hostname: 'localhost'
+          hostname: 'localhost',
+          livereload: true,
+          open: true
         }
       }
     },
