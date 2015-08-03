@@ -3,9 +3,7 @@
 
     li.pagination-ellipsis {
         > span {
-            border-color: transparent;
             background: none;
-            color: $text-color;
             margin: spacer(xxs, -7) 0;
             padding: spacer(xxs, -8) 0 spacer(xxs, -7);
             min-width: 18px;
