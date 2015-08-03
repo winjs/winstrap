@@ -1,3 +1,6 @@
+/*--------------------------- MIXINS ----------------------------------------
+---------------------------------------------------------------------------*/
+
 // avoid repeating nesting for each breakpoint
 @mixin set-bottom-jumbotron-content($bottom) {
 	// heavy nesting for isolation to full-width image component
@@ -26,6 +29,8 @@
 	}
 }
 
+/*--------------------------- Start Component Layout ------------------------
+---------------------------------------------------------------------------*/
 .jumbotron {
 	position: relative;
 
@@ -75,11 +80,11 @@
 	
 	.jumbotron-header,
 	h1 {
-		@include type-headline();
+		@include type-headline(no-responsive);
 	}
 	.jumbotron-subheader,
 	p {
-		@include type-title();
+		@include type-title(no-responsive);
 	}
 	.jumbotron-background,
 	.container-wrap {
@@ -94,38 +99,38 @@
 		}
 	}
 	// set break point styles
-	@media (max-width: $screen-lg-max) {
+	@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
 		.jumbotron-header,
 		h1 {
-			@include type-header();
+			@include type-header(no-responsive);
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-title();
+			@include type-title(no-responsive);
 		}
 		@include set-bottom-jumbotron-content(30px);
 	}
 	@media (max-width: $screen-md-max) {
 		.jumbotron-header,
 		h1 {
-			@include type-subheader();
+			@include type-subheader(no-responsive);
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-subtitle();
+			@include type-subtitle(no-responsive);
 		}
 		@include set-bottom-jumbotron-content(15px);
 	}
 	@media (max-width: $screen-sm-max) {
 		.jumbotron-header,
 		h1 {
-			margin-bottom: 6px;
-			@include type-title();
+			margin-bottom: spacer("xxs", -6px);
+			@include type-title(no-responsive);
 		}
 		.jumbotron-subheader,
 		p {
-			margin-top: 0;
-			@include type-body();
+			margin-top: spacer("n", 0);
+			@include type-body(no-responsive);
 		}
 	}
 	@media (max-width: $screen-xs-max) {
@@ -149,7 +154,7 @@
 							.jumbotron-subheader {
 								bottom: auto;
 								//match responsive top margin from h1
-								margin-bottom: 23px;
+								margin-bottom: spacer("xs", -1px);
 							}
 						}
 					}
@@ -161,15 +166,15 @@
 	&.highlight-bar {
 		.img-container,
 		.jumbotron-content {
-			padding: 28px 0;
+			padding: spacer("xs", 4px) spacer("n", 0);
 		}
 		h1 {
-			margin-top: 0;
-			margin-bottom: 24px;
+			margin-top: spacer("n", 0);
+			margin-bottom: spacer("xs", 0);
 		}
 		p {
 			margin-top: 0;
-			margin-bottom: 28px;
+			margin-bottom: spacer("xs", 4px);
 		}
 		img,
 		video {
@@ -177,7 +182,7 @@
 		}
 		a {
 			display: block;
-			margin-bottom: 14px;
+			margin-bottom: spacer("xxs", 2px);
 		}
 
 		// vertical alignment for highlight bands
@@ -204,32 +209,22 @@
 			//
 			.img-container {
 				// looks better without the bottom padding at this screen size
-				padding-bottom: 0;
+				padding-bottom: spacer("n", 0);
 			}
 		}
 
-		/*------------------------------------------
-		------------ COLORS ------------------------
-		-------------------------------------------*/
+		/*--------------------------- Start Colors ----------------------------------
+		---------------------------------------------------------------------------*/
 
 		//
 		// Jumbotron - highlight bar
 		//
 		background-color: $color-bg-light-vivid-low;
 
-		button,
-		.btn {
-			@extend .btn-secondary.theme-on-img-light;
-
-			&.btn-primary {
-				@extend .btn-primary.theme-on-img-light;
-			}
-		}
 		//
 		// Jumbotron - theme on color
-		// TODO - discuss btn-primary text color. Design spec is color matching
-		// how do we want to achieve this?
-		&.theme-on-color {
+		//
+		&.theme-on-img-dark {
 			color: $color-vivid-high-alt;
 			background-color: inherit;
 			button,
@@ -241,82 +236,41 @@
 				} 
 			}
 		}
-		&.hyperlinks {
-			// Have to be a little heavy handed here and repeat .btn rules to override default highlight bar btn use of Sass @extend
+		&.theme-on-img-light {
 			button,
 			.btn {
-				@include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-		        &:hover {
-		            background-color: $color-neutral-mid;
-		        }
-		        &:focus,
-		        &:active,
-		        &.active {
-		            background-color: $color-neutral-high;
-		            @include box-shadow(none);
-		        }
-		        &:disabled,
-		        &.disabled {
-		            color: $color-type-disabled;
-		            background-color: $color-neutral-low;
-		        } 
-			}
-			.btn.btn-primary {
-				color: $color-type-primary-alt;
-				background-color: $color-accent;
-				border-color: transparent;
-				&:hover {
-				    color: $color-type-primary-alt;
-				    background-color: darken($color-accent-vivid-high, 5%);
-				    border-color: $color-neutral-high;
-				}
-				&:focus,
-				&:active,
-				&.active {
-				    background-color: darken($color-accent-vivid-high, 10%);
-				    border-color: transparent;
-				    @include box-shadow(none);
-				}
-				&:disabled,
-				&.disabled {
-				    color: $color-type-disabled;
-				    background-color: $color-accent-neutral-low;
+				@extend .btn-secondary.theme-on-img-light;
+
+				&.btn-primary {
+					@extend .btn-primary.theme-on-img-light;
 				}
 			}
 		}
 	}
 
-	//
-	// Jumbotron primary
-	//
+	/*--------------------------- Jumbotron Primary Colors ----------------------
+	---------------------------------------------------------------------------*/
 	&.theme-on-img-dark {
 		color: $color-vivid-high-alt;
 		@include jumbotron-gradient-overlay($color-vivid-high);
-
-		// different layout for smallest viewport
-		@media (max-width: $screen-xs-max) {
-			> .container-wrap {
-				> .container {
-					> .row {
-						> .jumbotron-content-wrap {
-							background-color: $color-bg-dark-vivid-low;
-						}
+		> .container-wrap {
+			> .container {
+				> .row {
+					> .jumbotron-content-wrap {
+						background-color: $color-bg-dark-vivid-low;
 					}
 				}
 			}
 		}
-	}
-	&.theme-on-img-light {
-		color: $color-vivid-high;
-		@include jumbotron-gradient-overlay($color-vivid-high-alt);
+
 
 		// different layout for smallest viewport
-		@media (max-width: $screen-xs-max) {
+		@media (min-width: $screen-sm) {
 			> .container-wrap {
 				> .container {
 					> .row {
 						> .jumbotron-content-wrap {
-							background-color: $color-bg-light-vivid-low;
+							background-color: transparent;
 						}
 					}
 				}
