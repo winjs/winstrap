@@ -70,10 +70,11 @@ code {
     background-color: $color-type-primary;
 }
 
-//space out buttons in documentation easier
-#buttons .btn {
+//space out buttons in documentation easier (added button space class so it doesn't affect checkboxes)
+#buttons .button-space .btn {
     margin: 5px 0px;
 }
+
 
 .nav a, .section-title a {
     text-decoration: none;
@@ -93,4 +94,27 @@ code {
     background-image: url('../images/example_light.jpg');
     background-position: top right;
     background-size: cover;
+}
+
+//
+// Spacers
+//
+
+@each $tshirt, $size in $spacer-sizes {
+    .spacer-mt-#{$tshirt} {
+        margin-top: $size;
+    }
+
+    .spacer-mb-#{$tshirt} {
+        margin-bottom: $size;
+    }
+
+    .spacer-pt-#{$tshirt} {
+        padding-top: $size;
+    }
+
+    .spacer-pb-#{$tshirt} {
+        padding-bottom: $size;
+    }
+
 }
