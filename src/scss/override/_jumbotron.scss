@@ -28,6 +28,18 @@
 		}
 	}
 }
+// set background colors for jumbotron text on smallest size
+@mixin jumbotron-background-color($bg-color) {
+	> .container-wrap {
+		> .container {
+			> .row {
+				> .jumbotron-content-wrap {
+					background-color: $bg-color;
+				}
+			}
+		}
+	}
+}
 
 /*--------------------------- Start Component Layout ------------------------
 ---------------------------------------------------------------------------*/
@@ -35,6 +47,10 @@
 	position: relative;
 
 	.jumbotron-background {
+
+		img {
+			vertical-align: bottom;
+		}
 
 		// set positioning of jumbotron image gradient overlay
 		&:before {
@@ -48,8 +64,11 @@
 	}
 
 	// set height to 100% for layout issues
+	> .jumbotron-background {
+		position: relative;
+	}
 	> .container-wrap {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: 100%;
 
@@ -62,10 +81,17 @@
 				> .jumbotron-content-wrap {
 					@extend .col-xs-24;
 					height: 100%;
+					position: relative;
 
 					> .jumbotron-content {
-						position: absolute;
-						bottom: 60px;
+						position: relative;
+
+						p,
+						.jumbotron-subheader {
+							bottom: auto;
+							//match responsive top margin from h1
+							margin-bottom: spacer("xs", -1px);
+						}
 
 						&.centered {
 							text-align: center;
@@ -80,14 +106,12 @@
 	
 	.jumbotron-header,
 	h1 {
-		// @include type-headline(no-responsive);
 		margin-bottom: spacer("xxs", -6px);
 		@include type-title(no-responsive);
 
 	}
 	.jumbotron-subheader,
 	p {
-		// @include type-title(no-responsive);
 		margin-top: spacer("n", 0);
 		@include type-body(no-responsive);
 	}
@@ -140,37 +164,7 @@
 		}
 	}
 
-	// set global break point styles
-	@media (max-width: $screen-xs-max) {
-		@include set-bottom-jumbotron-content(5px);
-
-		> .jumbotron-background {
-			position: relative;
-		}
-		> .container-wrap {
-			position: relative;
-
-			> .container {
-				> .row {
-					> .jumbotron-content-wrap {
-						position: relative;
-
-						> .jumbotron-content {
-							position: relative;
-
-							p,
-							.jumbotron-subheader {
-								bottom: auto;
-								//match responsive top margin from h1
-								margin-bottom: spacer("xs", -1px);
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	
+	// set global break point styles	
 	@media (min-width: $screen-sm) {
 		.jumbotron-header,
 		h1 {
@@ -181,6 +175,23 @@
 		p {
 			margin-top: spacer("n", 0);
 			@include type-body(no-responsive);
+		}
+		> .container-wrap {
+			position: absolute;
+
+			> .container {
+
+				> .row {
+
+					> .jumbotron-content-wrap {
+
+						> .jumbotron-content {
+							position: absolute;
+							bottom: spacer("n", 5px);
+						}
+					}
+				}
+			}
 		}
 	}
 	@media (min-width: $screen-md) {
@@ -219,6 +230,7 @@
 		p {
 			@include type-title(no-responsive);
 		}
+		@include set-bottom-jumbotron-content(60px);
 	}
 
 
@@ -231,9 +243,6 @@
 	&.highlight-bar {
 		background-color: $color-bg-light-vivid-low;
 
-		//
-		// Jumbotron - theme on color
-		//
 		&.theme-on-img-dark {
 			color: $color-vivid-high-alt;
 			background-color: inherit;
@@ -263,52 +272,18 @@
 	&.theme-on-img-dark {
 		color: $color-vivid-high-alt;
 		@include jumbotron-gradient-overlay($color-vivid-high);
-		> .container-wrap {
-			> .container {
-				> .row {
-					> .jumbotron-content-wrap {
-						background-color: $color-bg-dark-vivid-low;
-					}
-				}
-			}
-		}
+		@include jumbotron-background-color($color-bg-dark-vivid-low);
 	}
 	&.theme-on-img-light {
 		color: $color-vivid-high;
 		@include jumbotron-gradient-overlay($color-vivid-high-alt);
-		> .container-wrap {
-			> .container {
-				> .row {
-					> .jumbotron-content-wrap {
-						background-color: $color-bg-light-vivid-low;
-					}
-				}
-			}
-		}
+		@include jumbotron-background-color($color-bg-light-vivid-low);
 	}
 	// different colors for all but the smallest viewport
-		@media (min-width: $screen-sm) {
-			&.theme-on-img-dark {
-				> .container-wrap {
-					> .container {
-						> .row {
-							> .jumbotron-content-wrap {
-								background-color: transparent;
-							}
-						}
-					}
-				}
-			}
-			&.theme-on-img-light {
-				> .container-wrap {
-					> .container {
-						> .row {
-							> .jumbotron-content-wrap {
-								background-color: transparent;
-							}
-						}
-					}
-				}
-			}
+	@media (min-width: $screen-sm) {
+		&.theme-on-img-dark,
+		&.theme-on-img-light {
+			@include jumbotron-background-color(transparent);
 		}
+	}
 }
