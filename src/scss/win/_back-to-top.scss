@@ -1,15 +1,15 @@
 //
 // Static resources
 //
-$button-size:  48px;
+$backtotop-button-size:  48px;
 
 .back-to-top {
     visibility: hidden;
-    width: $button-size;
-    height: $button-size;
+    width: $backtotop-button-size;
+    height: $backtotop-button-size;
     padding: spacer(xxs, -2) spacer(xxs) spacer(xxs);
     opacity: 0;
-    @include translate(0, ($button-size / 2));
+    @include translate(0, ($backtotop-button-size / 2));
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
 
     // Added by Bootstrap Affix when scrolling
@@ -23,7 +23,7 @@ $button-size:  48px;
     }
 
     [class*="icon"] {
-        font-size: ($button-size / 2);
+        font-size: ($backtotop-button-size / 2);
     }
 
     //
