@@ -6,8 +6,8 @@
             border-color: transparent;
             background: none;
             color: $text-color;
-            margin: 5px 0;
-            padding: 4px 0 5px;
+            margin: spacer(xxs, -7) 0;
+            padding: spacer(xxs, -8) 0 spacer(xxs, -7);
             min-width: 18px;
         }
     }
@@ -15,19 +15,36 @@
     li.pagination-prev,
     li.pagination-next {
         i[class*="icon"] {
-            margin: 0 2px;
+            margin: 0 spacer(xxs, -10);
             font-size: .813em;
             vertical-align: -.1em;
         }
-
         &.disabled {
             display: none;
         }
+    }
+    li.pagination-prev {
+        > a, > span {
+            padding: spacer(xxs, -7) spacer(xxs, -2) spacer(xxs, -7) spacer(xxs, -6);
+            margin-left: spacer(n, -6);
+        }
+    }
+    li.pagination-next {
+        > a, > span {
+            padding: spacer(xxs, -7) spacer(xxs, -6) spacer(xxs, -7) spacer(xxs, -2);
+        }
+    }
 
+    // 
+    // Colors 
+    //
+
+    // Default colors
+    li.pagination-prev,
+    li.pagination-next {
         > a, > span {
             background: none;
             border-color: transparent;
-            margin: 0 5px;
             &:hover {
                 background-color: $color-dim-mid;
             }
@@ -36,16 +53,8 @@
             }
         }
     }
-    li.pagination-prev {
-        > a, > span {
-            padding: 10px 10px 10px 0;
-        }
-    }
-    li.pagination-next {
-        > a, > span {
-            padding: 10px 7px 10px 10px;
-        }
-    }
+
+    // Alt theme
     &.theme-alt {
         > li {
             > a, > span {
