@@ -29,8 +29,16 @@ pre {
     overflow-y: hidden;
     border: none;
     border-left: 8px solid $pre-border-color;
-    @include set-spacing();
+    margin: spacer(xxs) 0 0;
     @include type-caption(no-responsive);
+
+    @media (min-width: $screen-md-min) {
+        margin: spacer(xs) 0 0;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        margin: spacer(xs) 0 0;
+    }
 }
 
 code {

@@ -1,7 +1,15 @@
 ﻿// Add color transitions to buttons
 
 .btn-group {
-    @include set-spacing();
+    margin: spacer(xxs) 0 0;
+
+    @media (min-width: $screen-md-min) {
+        margin: spacer(xs) 0 0;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        margin: spacer(xs) 0 0;
+    }
 }
 
 .btn {
