@@ -1,18 +1,3 @@
 @function spacer($size, $shim: 0) {
     @return (map-get($spacer-sizes, $size) + $shim);
 }
-
-// This is temporary until we have a holistic solution to address spacing
-@mixin set-spacing( $spacing-sm: spacer(xxs) 0 0,
-                    $spacing-md: spacer(xs) 0 0,
-                    $spacing-xl: spacer(xs) 0 0) {
-    margin: $spacing-sm;
-
-    @media (min-width: $screen-md-min) {
-        margin: $spacing-md;
-    }
-
-    @media (min-width: $screen-xl-min) {
-        margin: $spacing-xl;
-    }
-}
