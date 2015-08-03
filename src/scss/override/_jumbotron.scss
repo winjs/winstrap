@@ -80,11 +80,16 @@
 	
 	.jumbotron-header,
 	h1 {
-		@include type-headline(no-responsive);
+		// @include type-headline(no-responsive);
+		margin-bottom: spacer("xxs", -6px);
+		@include type-title(no-responsive);
+
 	}
 	.jumbotron-subheader,
 	p {
-		@include type-title(no-responsive);
+		// @include type-title(no-responsive);
+		margin-top: spacer("n", 0);
+		@include type-body(no-responsive);
 	}
 	.jumbotron-background,
 	.container-wrap {
@@ -98,41 +103,7 @@
 			max-width: 100%;
 		}
 	}
-	// set break point styles
-	@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
-		.jumbotron-header,
-		h1 {
-			@include type-header(no-responsive);
-		}
-		.jumbotron-subheader,
-		p {
-			@include type-title(no-responsive);
-		}
-		@include set-bottom-jumbotron-content(30px);
-	}
-	@media (max-width: $screen-md-max) {
-		.jumbotron-header,
-		h1 {
-			@include type-subheader(no-responsive);
-		}
-		.jumbotron-subheader,
-		p {
-			@include type-subtitle(no-responsive);
-		}
-		@include set-bottom-jumbotron-content(15px);
-	}
-	@media (max-width: $screen-sm-max) {
-		.jumbotron-header,
-		h1 {
-			margin-bottom: spacer("xxs", -6px);
-			@include type-title(no-responsive);
-		}
-		.jumbotron-subheader,
-		p {
-			margin-top: spacer("n", 0);
-			@include type-body(no-responsive);
-		}
-	}
+	// set global break point styles
 	@media (max-width: $screen-xs-max) {
 		@include set-bottom-jumbotron-content(5px);
 
@@ -160,6 +131,50 @@
 					}
 				}
 			}
+		}
+	}
+	
+	@media (min-width: $screen-sm) {
+		.jumbotron-header,
+		h1 {
+			margin-bottom: spacer("xxs", -6px);
+			@include type-title(no-responsive);
+		}
+		.jumbotron-subheader,
+		p {
+			margin-top: spacer("n", 0);
+			@include type-body(no-responsive);
+		}
+	}@media (min-width: $screen-md) {
+		.jumbotron-header,
+		h1 {
+			@include type-subheader(no-responsive);
+		}
+		.jumbotron-subheader,
+		p {
+			@include type-subtitle(no-responsive);
+		}
+		@include set-bottom-jumbotron-content(15px);
+	}
+	@media (min-width: $screen-lg) {
+		.jumbotron-header,
+		h1 {
+			@include type-header(no-responsive);
+		}
+		.jumbotron-subheader,
+		p {
+			@include type-title(no-responsive);
+		}
+		@include set-bottom-jumbotron-content(30px);
+	}
+	@media (min-width: $screen-xl) {
+		.jumbotron-header,
+		h1 {
+			@include type-headline(no-responsive);
+		}
+		.jumbotron-subheader,
+		p {
+			@include type-title(no-responsive);
 		}
 	}
 
