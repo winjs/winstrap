@@ -8,7 +8,8 @@
     &:before {
         display: block;
         width: 1em; height: 1em;
-        font-family: "winjs-symbols";
+        // font-family: "winjs-symbols";
+        font-family: "WinJS MDL2 Symbols";
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -29,7 +30,7 @@ $icons: (
     checkbox: "\E081",
     ratingstar: "\E082",
     magnifier: "\E094",
-    magnifiertool: "\E0B8",
+    semanticzoom: "\E0B8",
     backarrow: "\E0D5",
     forwardarrow: "\E0AE",
     flipviewleft: "\E0E2",
@@ -40,7 +41,6 @@ $icons: (
     ratingstaroutline: "\E224",
     grouparrowright: "\E26B",
     grouparrowleft: "\E26C",
-
     previous: "\E100",
     next: "\E101",
     play: "\E102",
@@ -93,10 +93,10 @@ $icons: (
     bookmarks: "\E12F",
     document: "\E130",
     protecteddocument: "\E131",
-    page: "\E132",
-    bullets: "\E133",
+    pagefill: "\E132",
+    multiselect: "\E133",
     comment: "\E134",
-    mail2: "\E135",
+    mailfill: "\E135",
     contactinfo: "\E136",
     hangup: "\E137",
     viewall: "\E138",
@@ -133,7 +133,7 @@ $icons: (
     volume: "\E15D",
     repair: "\E15E",
     message: "\E15F",
-    page2: "\E160",
+    page: "\E160",
     calendarday: "\E161",
     calendarweek: "\E162",
     calendar: "\E163",
@@ -212,7 +212,7 @@ $icons: (
     solidstar: "\E1CF",
     calculator: "\E1D0",
     directions: "\E1D1",
-    target: "\E1D2",
+    location: "\E1D2",
     library: "\E1D3",
     phonebook: "\E1D4",
     memo: "\E1D5",
@@ -237,7 +237,22 @@ $icons: (
     fourbars: "\E1E9",
     scan: "\E294",
     preview: "\E295",
-    hamburger: "\E700"
+    hamburger: "\E700",
+    checkboxcomposite: "\E73A",
+    checkboxindeterminate: "\E73C",
+    warning: "\E7BA",
+    shoppingcart: "\E7BF",
+    flag2: "\E7C1",
+    completed: "\E930",
+    musicalbum: "\E93C",
+    info: "\E946",
+    devices3: "\EA6C",
+    expand: "\ECC8",
+    collapse: "\ECC9",
+    radiobtnoff: "\ECCA",
+    radiobtnon: "\ECCB",
+    radiobullet2: "\ECCC",
+    mediabrowse: "\ECCD",
 );
 
 @each $glyph, $code in $icons {
