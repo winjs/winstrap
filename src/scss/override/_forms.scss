@@ -45,7 +45,7 @@ textarea.form-control {
 
     &:after {
         font-family: "winjs-symbols";
-        content: "\E019";
+        content: map-get($icons, scrolldown);
         position: absolute;
         font-size: 1rem;
         top: 13px;
@@ -53,7 +53,7 @@ textarea.form-control {
     }
 }
 select {
-    @extend .text-body;
+    @include type-body(no-responsive);
 
     &.form-control {
         width: 100%;
@@ -251,9 +251,9 @@ input.form-control::-ms-reveal {
 
 // Combo Box Colors
 select {
-    color: $color-type-primary;
 
     &.form-control {
+        color: $color-type-primary;
         border-color: $color-vivid-low;
         background-color: $color-vivid-mid-alt;
 

@@ -1,28 +1,56 @@
-﻿.back-to-top {
+//
+// Static resources
+//
+$backtotop-button-size:  48px;
+
+.back-to-top {
     visibility: hidden;
-    padding: (($grid-gutter-width / 2) / 2);
-    color: $color-type-primary;
-    background: $color-dim-mid;
+    width: $backtotop-button-size;
+    height: $backtotop-button-size;
+    padding: spacer(xxs, -2) spacer(xxs) spacer(xxs);
     opacity: 0;
-    @include translate(0, 20px);
+    @include translate(0, ($backtotop-button-size / 2));
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
 
     // Added by Bootstrap Affix when scrolling
     &.affix {
         visibility: visible;
-        z-index: $zindex-navbar-fixed; // same level as a fixed nav bar
-        right: (($grid-gutter-width / 2) * 2);
-        bottom: ($grid-gutter-width / 2);
         opacity: 1;
+        z-index: $zindex-navbar-fixed; // same level as a fixed nav bar
+        right: spacer(xs);
+        bottom: spacer(xxs);
         @include translate(0, 0);
     }
 
-    &:hover {
-        color: $color-type-primary;
+    [class*="icon"] {
+        font-size: ($backtotop-button-size / 2);
+    }
+
+    //
+    // Colors
+    //
+    &,
+    &:focus {
+        color: $color-vivid-low;
         background: $color-dim-mid;
     }
 
-    [class*="icon"] {
-        font-size: $font-size-h2;
+    &:hover {
+        color: $color-vivid-high;
+        background: $color-neutral-mid;
+    }
+
+    // On dark surface
+    &.theme-alt {
+        &,
+        &:focus {
+            color: $color-vivid-low-alt;
+            background: $color-dim-mid-alt;
+        }
+
+        &:hover {
+            color: $color-vivid-high-alt;
+            background: $color-neutral-mid-alt;
+        }
     }
 }

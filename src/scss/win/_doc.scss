@@ -29,7 +29,16 @@ pre {
     overflow-y: hidden;
     border: none;
     border-left: 8px solid $pre-border-color;
-    font-size: $font-size-small;
+    margin: spacer(xxs) 0 0;
+    @include type-caption(no-responsive);
+
+    @media (min-width: $screen-md-min) {
+        margin: spacer(xs) 0 0;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        margin: spacer(xs) 0 0;
+    }
 }
 
 code {
@@ -70,10 +79,6 @@ code {
     background-color: $color-type-primary;
 }
 
-//space out buttons in documentation easier
-#buttons .btn {
-    margin: 5px 0px;
-}
 
 .nav a, .section-title a {
     text-decoration: none;
@@ -93,4 +98,27 @@ code {
     background-image: url('../images/example_light.jpg');
     background-position: top right;
     background-size: cover;
+}
+
+//
+// Spacers
+//
+
+@each $tshirt, $size in $spacer-sizes {
+    .spacer-mt-#{$tshirt} {
+        margin-top: $size;
+    }
+
+    .spacer-mb-#{$tshirt} {
+        margin-bottom: $size;
+    }
+
+    .spacer-pt-#{$tshirt} {
+        padding-top: $size;
+    }
+
+    .spacer-pb-#{$tshirt} {
+        padding-bottom: $size;
+    }
+
 }
