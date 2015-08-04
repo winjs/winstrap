@@ -458,13 +458,13 @@ $pagination-color:                     $text-color !default;
 $pagination-bg:                        transparent !default;
 $pagination-border:                    transparent !default;
 
-$pagination-hover-color:               $link-color !default;
-$pagination-hover-bg:                  $color-bg-light-vivid-mid !default;
-$pagination-hover-border:              $color-bg-light-vivid-mid !default;
+$pagination-hover-color:               $text-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              transparent !default;
 
-$pagination-active-color:              $color-white !default;
-$pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              $text-color !default;
+$pagination-active-bg:                 transparent !default;
+$pagination-active-border:             $link-color !default;
 
 $pagination-disabled-color:            $color-vivid-low !default;
 $pagination-disabled-bg:               transparent !default;
