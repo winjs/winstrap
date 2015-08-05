@@ -55,4 +55,37 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-xs-24">
+            <h2>Pager</h2>
+            {{> pagination-pager }}
+
+            {{#markdown}}
+```xml
+{{> pagination-pager }}
+```
+            {{/markdown}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>Alt</h4>
+            <div class="color-black">
+                <nav>
+                    <ul class="pager theme-alt">
+                        <li class="pager-prev">
+                            <a href="#" aria-label="Previous">
+                                <i aria-hidden="true" class="icon-grouparrowleft"></i>
+                            </a>
+                        </li>
+                        <li class="pager-next">
+                            <a href="#" aria-label="Next">
+                                <i aria-hidden="true" class="icon-grouparrowright"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </section>
