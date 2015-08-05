@@ -13,8 +13,7 @@ external/
 *.suo
 *.user
 *.sln.docstates
-*.sublime-workspace
-*.sublime-project
+proj/
 .DS_Store
 
 .jshintrc
