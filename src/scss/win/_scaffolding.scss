@@ -12,3 +12,18 @@ p {
         padding: 0 spacer(xxs) 0 0;
     }
 }
+
+hr {
+
+    // 
+    // Colors 
+    //
+
+    // Default colors
+    border-color: $color-neutral-low;
+
+    // Alt theme
+    &.theme-alt {
+        border-color:  $color-neutral-low-alt;
+    }
+}
