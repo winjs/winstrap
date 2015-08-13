@@ -1,11 +1,3 @@
-.no-outline {
-    &:focus,
-    &:focus:active,
-    &:active {
-        outline: none !important;
-    }
-}
-
 ﻿#icons {
     i[class*="icon-"] {
         font-size: 2em;

@@ -1,3 +1,11 @@
+.no-outline {
+    &:focus,
+    &:focus:active,
+    &:active {
+        outline: none !important;
+    }
+}
+
 ﻿.inline-block {
     display: inline-block;
 }
