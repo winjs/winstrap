@@ -14,8 +14,6 @@
 
 .dropdown-menu {
   box-shadow: none;
-  background-color: $color-bg-light-vivid-mid;
-  color: $color-type-primary;
   border: none;
   padding-top: 5px;
   padding-bottom: 7px;
@@ -33,6 +31,52 @@
   padding: 0;
   padding-left: 12px;
   text-decoration: none;
+}
+
+dl.dropdown-menu {
+  min-width: 300px;
+  padding: 10px;
+}
+
+.btn-dropdown {
+  height: 36px;
+  padding: 0 12px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+  }
+
+  &:active:focus {
+    outline: 0;
+  }
+}
+
+.btn-dropdown .caret {
+  border: none;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  font-family: "winjs-symbols";
+  font-size: 12px;
+
+  &::before {
+    content: map-get($icons, flipviewdown);
+    vertical-align: bottom;
+  }
+}
+
+//
+// Colors
+//
+.dropdown-menu {
+  background-color: $color-bg-light-vivid-mid;
+  color: $color-type-primary;
+}
+.dropdown-menu li a {
 
   &:hover {
     background-color: $color-dim-mid;
@@ -53,22 +97,13 @@
   }
 }
 
-dl.dropdown-menu {
-  min-width: 300px;
-  padding: 10px;
-}
-
 .btn-dropdown {
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 10px;
   background-color: $color-neutral-high-alt;
   border-color: $color-neutral-high;
 
   &:focus {
     background-color: $color-accent-neutral-high;
     border-color: $color-neutral-high;
-    outline: 0;
   }
 
   &:hover {
@@ -78,7 +113,6 @@ dl.dropdown-menu {
 
   &:active {
     background-color: $color-neutral-mid;
-    outline: 0;
   }
 
   &:active:focus {
@@ -99,18 +133,7 @@ dl.dropdown-menu {
 }
 
 .btn-dropdown .caret {
-  border: none;
-  width: auto;
-  height: auto;
-  line-height: 1;
   color: $color-type-primary;
-  font-family: "winjs-symbols";
-  font-size: 12px;
-
-  &::before {
-    content: map-get($icons, flipviewdown);
-    vertical-align: bottom;
-  }
 }
 
 .btn-dropdown:disabled .caret {

@@ -7,21 +7,7 @@
 
     <div class="row">
         <div class="col-xs-24">
-            <p>
-                <div class="dropdown">
-                    <button id="dropdown-example" class="btn btn-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                        Dropdown sample
-                        <span class="caret"></span>
-                    </button>
-
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-example">
-                        <li class="active"><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </div>
-            </p>
-
+                {{> dropdown-primary }}
             <p>
                 This is a simple dropdown menu with links inside.
                 The dropdown code has specific accessibility settings.
@@ -29,143 +15,16 @@
 
             {{#markdown}}
 ```xml
-<div class="dropdown">
-    <button id="dropdownSample" class="btn btn-dropdown"
-            type="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" role="button">
-        Dropdown sample
-        <span class="caret"></span>
-    </button>
-
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownSample">
-        <li class="active"><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-    </ul>
-</div>
+{{> dropdown-primary }}
 ```
             {{/markdown}}
         </div>
         <div class="col-xs-24">
             <p>This is the browser select control. Refer to the <a href="#forms">forms</a> sections for all intrinsic controls. This is here for convenenience.</p></p>
-                <select class="form-control">
-                    <optgroup label="A">
-                      <option>Alabama</option>
-                      <option>Alaska</option>
-                      <option>Arizona</option>
-                      <option>Arkansas</option>
-                    </optgroup>
-                    <optgroup label="C">
-                      <option>California</option>
-                      <option>Colorado</option>
-                      <option>Connecticut</option>
-                    </optgroup>
-                    <optgroup label="D" disabled="">
-                        <option>Delaware</option>
-                    </optgroup>
-                  <option>Florida</option>
-                  <option>Georgia</option>
-                  <option>Hawaii</option>
-                  <option>Idaho</option>
-                  <option>Illinois</option>
-                  <option>Indiana</option>
-                  <option>Iowa</option>
-                  <option>Kansas</option>
-                  <option>Kentucky</option>
-                  <option>Louisiana</option>
-                  <option>Maine</option>
-                  <option>Maryland</option>
-                  <option>Massachusetts</option>
-                  <option>Michigan</option>
-                  <option>Minnesota</option>
-                  <option>Mississippi</option>
-                  <option>Missouri</option>
-                  <option>Montana</option>
-                  <option>Nebraska</option>
-                  <option>Nevada</option>
-                  <option>New Hampshire</option>
-                  <option>New Jersey</option>
-                  <option>New Mexico</option>
-                  <option>New York</option>
-                  <option>North Carolina</option>
-                  <option>North Dakota</option>
-                  <option>Ohio</option>
-                  <option>Oklahoma</option>
-                  <option>Oregon</option>
-                  <option>Pennsylvania</option>
-                  <option>Rhode Island</option>
-                  <option>South Carolina</option>
-                  <option>South Dakota</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Utah</option>
-                  <option>Vermont</option>
-                  <option>Virginia</option>
-                  <option>Washington</option>
-                  <option>West Virginia</option>
-                  <option>Wisconsin</option>
-                  <option>Wyoming</option>
-                </select>
+                {{> browser-select }}
             {{#markdown}}
 ```xml
-<select class="form-control">
-    <optgroup label="A">
-      <option>Alabama</option>
-      <option>Alaska</option>
-      <option>Arizona</option>
-      <option>Arkansas</option>
-    </optgroup>
-    <optgroup label="C">
-      <option>California</option>
-      <option>Colorado</option>
-      <option>Connecticut</option>
-    </optgroup>
-    <optgroup label="D" disabled="">
-        <option>Delaware</option>
-    </optgroup>
-  <option>Florida</option>
-  <option>Georgia</option>
-  <option>Hawaii</option>
-  <option>Idaho</option>
-  <option>Illinois</option>
-  <option>Indiana</option>
-  <option>Iowa</option>
-  <option>Kansas</option>
-  <option>Kentucky</option>
-  <option>Louisiana</option>
-  <option>Maine</option>
-  <option>Maryland</option>
-  <option>Massachusetts</option>
-  <option>Michigan</option>
-  <option>Minnesota</option>
-  <option>Mississippi</option>
-  <option>Missouri</option>
-  <option>Montana</option>
-  <option>Nebraska</option>
-  <option>Nevada</option>
-  <option>New Hampshire</option>
-  <option>New Jersey</option>
-  <option>New Mexico</option>
-  <option>New York</option>
-  <option>North Carolina</option>
-  <option>North Dakota</option>
-  <option>Ohio</option>
-  <option>Oklahoma</option>
-  <option>Oregon</option>
-  <option>Pennsylvania</option>
-  <option>Rhode Island</option>
-  <option>South Carolina</option>
-  <option>South Dakota</option>
-  <option>Tennessee</option>
-  <option>Texas</option>
-  <option>Utah</option>
-  <option>Vermont</option>
-  <option>Virginia</option>
-  <option>Washington</option>
-  <option>West Virginia</option>
-  <option>Wisconsin</option>
-  <option>Wyoming</option>
-</select>
+{{> browser-select }}
 ```
             {{/markdown}}        
         </div>
