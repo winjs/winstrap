@@ -14,4 +14,16 @@ a {
 hr {
     margin-top: spacer(md);
     margin-bottom: 0;
+
+    // 
+    // Colors 
+    //
+
+    // Default colors
+    border-color: $color-neutral-low;
+
+    // Alt theme
+    &.theme-alt {
+        border-color:  $color-neutral-low-alt;
+    }
 }
