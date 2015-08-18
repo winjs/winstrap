@@ -1,141 +1,282 @@
+.dropdown {
+    display: inline-block;
+}
 .dropdown-picker {
-  margin: 0 0 2em 0;
+    margin: 0 0 2em 0;
 
-  .dropdown-label {
-    display: inline-block;
-  }
+    .dropdown-label {
+        display: inline-block;
+    }
 
-  .dropdown {
-    display: inline-block;
-    margin: 0 .5em;
-    vertical-align: bottom;
-  }
+    .dropdown {
+        display: inline-block;
+        margin: 0 .5em;
+        vertical-align: bottom;
+    }
 }
 
 .dropdown-menu {
-  box-shadow: none;
-  border: none;
-  padding-top: 5px;
-  padding-bottom: 7px;
+    box-shadow: none;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    width: 100%;
+    top: 34px;
 }
 
 .dropdown-menu li {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown-menu li a {
-  @include type-body(no-line-height);
-  line-height: 32px;
-  height: 32px;
-  padding: 0;
-  padding-left: 12px;
-  text-decoration: none;
+    @include type-body(no-line-height);
+    line-height: 32px;
+    height: 32px;
+    padding: 0;
+    padding-left: 12px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 dl.dropdown-menu {
-  min-width: 300px;
-  padding: 10px;
+    min-width: 300px;
+    padding: 10px;
 }
 
 .btn-dropdown {
-  height: 36px;
-  padding: 0 12px;
+    height: 36px;
+    padding: 0 12px;
+    margin: 0;
 
-  &:focus {
-    outline: 0;
-  }
+    &:focus {
+        outline: 0;
+    }
 
-  &:active {
-    outline: 0;
-  }
+    &:active {
+        outline: 0;
+    }
 
-  &:active:focus {
-    outline: 0;
-  }
+    &:active:focus {
+        outline: 0;
+    }
 }
 
 .btn-dropdown .caret {
-  border: none;
-  width: auto;
-  height: auto;
-  line-height: 1;
-  font-family: "winjs-symbols";
-  font-size: 12px;
+    border: none;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    font-family: "winjs-symbols";
+    font-size: 12px;
 
-  &::before {
-    content: map-get($icons, flipviewdown);
-    vertical-align: bottom;
-  }
+    &::before {
+        content: map-get($icons, flipviewdown);
+        vertical-align: bottom;
+    }
 }
 
 //
 // Colors
 //
 .dropdown-menu {
-  background-color: $color-bg-light-vivid-mid;
-  color: $color-type-primary;
+    background-color: $color-bg-light-vivid-mid;
+    color: $color-type-primary;
 }
 .dropdown-menu li a {
 
-  &:hover {
-    background-color: $color-dim-mid;
-  }
+    &:hover {
+        background-color: $color-accent-vivid-high;
+        color: $color-type-primary-alt;
+    }
 
-  &:active {
-    background-color: $color-neutral-mid;
-  }
+    &:active {
+        background-color: $color-accent-vivid-high;
+        color: $color-type-primary-alt;
+    }
 }
 
 .dropdown-menu li.active a {
-  color: $color-type-primary;
-  background-color: $color-accent-neutral-high;
+    background-color: $color-accent-vivid-high;
+    color: $color-type-primary-alt;
 
-  &:hover, &:focus {
-    color: $color-type-primary;
-    background-color: $color-accent-vivid-low;
-  }
+    &:hover, &:focus {
+        background-color: $color-accent-vivid-high;
+        color: $color-type-primary-alt;
+    }
 }
 
 .btn-dropdown {
-  background-color: $color-neutral-high-alt;
-  border-color: $color-neutral-high;
-
-  &:focus {
-    background-color: $color-accent-neutral-high;
+    background-color: $color-neutral-high-alt;
     border-color: $color-neutral-high;
-  }
 
-  &:hover {
-    background-color: $color-vivid-low-alt;
-    border-color: $color-neutral-high;
-  }
+    &:focus {
+        background-color: $color-accent-neutral-high;
+        border-color: $color-neutral-high;
+    }
 
-  &:active {
-    background-color: $color-neutral-mid;
-  }
+    &:hover {
+        background-color: $color-vivid-low-alt;
+        border-color: $color-neutral-high;
+    }
 
-  &:active:focus {
-    outline: 0;
-  }
+    &:active {
+        background-color: $color-neutral-mid;
+    }
 
-  &:disabled {
-    color: $color-type-disabled-alt;
-    border-color: $color-neutral-high;
-    background-color: $color-neutral-high;
-  }
+    &:active:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        color: $color-type-disabled-alt;
+        border-color: $color-neutral-high;
+        background-color: $color-neutral-high;
+    }
 }
 
 .dropdown.open .btn-dropdown {
-  &:focus {
-    background-color: $color-neutral-high-alt;
-  }
+    &:focus {
+        background-color: $color-neutral-high-alt;
+    }
 }
 
 .btn-dropdown .caret {
-  color: $color-type-primary;
+    color: $color-type-primary;
 }
 
 .btn-dropdown:disabled .caret {
-  color: $color-neutral-high;
+    color: $color-neutral-high;
+}
+
+// Theme on color
+.dropdown {
+    &.theme-on-color {
+
+        .btn-dropdown {
+            border-color: $color-vivid-high-alt;
+            background-color: $color-vivid-low-alt;
+
+            .caret {
+                color: $color-vivid-low;
+            }
+
+            &:hover {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-vivid-mid-alt;
+
+                .caret {
+                    color: $color-vivid-mid;
+                }
+            }
+
+            &:active {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-vivid-high-alt;
+
+                .caret {
+                    color: $color-vivid-mid;
+                }
+            }
+
+            &:disabled {
+                border-color: $color-neutral-low-alt;
+                background-color: $color-neutral-low-alt;
+
+                .caret {
+                    color: $color-type-disabled-alt;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            background-color: $color-vivid-high-alt;
+
+            li {
+                background-color: $color-vivid-high-alt;
+
+                &.active {
+                    a {
+                       background-color: $color-vivid-high;
+                       color: $color-vivid-high-alt; 
+                    }
+                }
+                a {
+                    &:hover {
+                        background-color: $color-vivid-high;
+                        color: $color-vivid-high-alt;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Theme alt and image dark
+.dropdown {
+    &.theme-alt,
+    &.theme-on-img-dark {
+
+        .btn-dropdown {
+            border-color: $color-vivid-low-alt;
+            background-color: $color-vivid-mid;
+            color: $color-vivid-high-alt;
+
+            .caret {
+                color: $color-vivid-low-alt;
+            }
+
+            &:hover {
+                border-color: $color-vivid-mid-alt;
+                background-color: $color-bg-dark-vivid-mid;
+
+                .caret {
+                    color: $color-vivid-mid-alt;
+                }
+            }
+
+            &:active {
+                border-color: $color-vivid-high-alt;
+                background-color: $color-neutral-mid-alt;
+
+                .caret {
+                    color: $color-neutral-mid-alt;
+                }
+            }
+
+            &:disabled {
+                border-color: $color-neutral-low-alt;
+                background-color: $color-neutral-low;
+
+                .caret {
+                    color: $color-neutral-low-alt;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            background-color: $color-bg-dark-vivid-mid;
+
+            li {
+                background-color: $color-bg-dark-vivid-mid;
+                
+                a {
+                    color: $color-type-primary-alt;
+                }
+
+                &.active {
+                    a {
+                       background-color: $color-accent-vivid-high;
+                       color: $color-type-primary-alt; 
+                    }
+                }
+                a {
+                    &:hover {
+                        background-color: $color-accent-vivid-high;
+                        color: $color-type-primary-alt;
+                    }
+                }
+            }
+        }
+    }
 }
