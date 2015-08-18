@@ -18,36 +18,36 @@
 .dropdown-menu {
     box-shadow: none;
     border: none;
-    padding-top: 5px;
-    padding-bottom: 7px;
+    padding-top: spacer("n", 5px);
+    padding-bottom: spacer("n", 7px);
     width: 100%;
-    top: 34px;
+    top: spacer("sm", -2px);
 }
 
 .dropdown-menu li {
-    padding: 0;
-    margin: 0;
+    padding: spacer("n");
+    margin: spacer("n");
 }
 
 .dropdown-menu li a {
     @include type-body(no-line-height);
-    line-height: 32px;
-    height: 32px;
-    padding: 0;
-    padding-left: 12px;
+    line-height: spacer("sm", -4px);
+    height: spacer("sm", -4px);
+    padding: spacer("n");
+    padding-left: spacer("xxs");
     text-decoration: none;
     cursor: pointer;
 }
 
 dl.dropdown-menu {
     min-width: 300px;
-    padding: 10px;
+    padding: spacer("xxs", -2px);
 }
 
 .btn-dropdown {
     height: 36px;
-    padding: 0 12px;
-    margin: 0;
+    padding: spacer("n") spacer("xxs");
+    margin: spacer("n");
 
     &:focus {
         outline: 0;

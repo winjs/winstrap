@@ -124,3 +124,5 @@ $spacer-sizes: (
     xxs:    12px,
     n:      0px
 );
+
+.spacer-24-bottom { margin-bottom: map-get($spacer-sizes, "xs") };
