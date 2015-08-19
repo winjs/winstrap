@@ -1,6 +1,6 @@
-﻿<section class="win-section" id="back-to-top">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+﻿<section class="section" id="back-to-top">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#back-to-top">Back to top</a>
         </h1>
     </header>
@@ -13,8 +13,8 @@
 
             {{#markdown}}
 ```xml
-<a href="#top" class="win-back-to-top">
-    <i class="win-icon-up"></i>
+<a href="#top" class="back-to-top [theme-alt]">
+    <i class="icon-up"></i>
     <span class="sr-only">Back to top</span>
 </a>
 ```
@@ -30,7 +30,7 @@
             {{#markdown}}
 ```javascript
 $(function () {
-    var backToTop = $('.win-back-to-top'),
+    var backToTop = $('.back-to-top'),
         threshold = 2 * $(window).height();
 
     // Displayed when we've scrolled 2x the viewport height

@@ -1,62 +1,295 @@
-﻿<section class="win-section" id="tables">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+﻿<section class="section" id="tables">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#tables">Tables</a>
         </h1>
     </header>
-
     <div class="row">
         <div class="col-xs-24">
-            <p>A generic table. The zebra striping is made automatically with the stylesheet, no specific classes.</p>
-
-            <table class="table table-striped">
+            <h4>Generic Table with Subtitle label</h4>
+            <div class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th class="text-right">Price</th>
+                  </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <th>First line</th>
-                        <td>First item</td>
-                        <td>Second item</td>
+                        <td>Gadget Alpha</td>
+                        <td>This is the amazing new Gadget Alpha.</td>
+                        <td class="text-right">$0.99</td>
                     </tr>
                     <tr>
-                        <th>Second line</th>
-                        <td>First item</td>
-                        <td>Second item</td>
+                        <td>Gadget Bravo</td>
+                        <td>Also available is the Gadget Bravo which provides B.</td>
+                        <td class="text-right">$2.99</td>
                     </tr>
                     <tr>
-                        <th>Third line</th>
-                        <td>First item</td>
-                        <td>Second item</td>
+                        <td>Gadget Charlie</td>
+                        <td>This is the lorem ipsumist Gadget Charlie.</td>
+                        <td class="text-right">$1.99</td>
                     </tr>
                     <tr>
-                        <th>Fourth line</th>
-                        <td>First item</td>
-                        <td>Second item</td>
+                        <td>Gadget Delta</td>
+                        <td>Also available is the Gadget Bravo which provides B.</td>
+                        <td class="text-right">$2.99</td>
                     </tr>
                     <tr>
-                        <th>Fifth line</th>
-                        <td>First item</td>
-                        <td>Second item</td>
+                        <td>Gadget Echo</td>
+                        <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+                        <td class="text-right">$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Gadget Foxtrot</td>
+                        <td>Gadget Echo provides solor dit for professionals.</td>
+                        <td class="text-right">$1.99</td>
                     </tr>
                 </tbody>
             </table>
+          </div>
+
+            <div class="row">
+                <div class="col-xs-24">
+                    <h4>Generic Table with Subtitle label (alt theme)</h4>
+                    <div class="table-responsive">
+                    <table class="table theme-alt">
+                        <thead>
+                          <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th class="text-right">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gadget Alpha</td>
+                                <td>This is the amazing new Gadget Alpha.</td>
+                                <td class="text-right">$0.99</td>
+                            </tr>
+                            <tr>
+                                <td>Gadget Bravo</td>
+                                <td>Also available is the Gadget Bravo which provides B.</td>
+                                <td class="text-right">$2.99</td>
+                            </tr>
+                            <tr>
+                                <td>Gadget Charlie</td>
+                                <td>This is the lorem ipsumist Gadget Charlie.</td>
+                                <td class="text-right">$1.99</td>
+                            </tr>
+                            <tr>
+                                <td>Gadget Delta</td>
+                                <td>Also available is the Gadget Bravo which provides B.</td>
+                                <td class="text-right">$2.99</td>
+                            </tr>
+                            <tr>
+                                <td>Gadget Echo</td>
+                                <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+                                <td class="text-right">$2.99</td>
+                            </tr>
+                            <tr>
+                                <td>Gadget Foxtrot</td>
+                                <td>Gadget Echo provides solor dit for professionals.</td>
+                                <td class="text-right">$1.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
             {{#markdown}}
 ```xml
-<table class="table table-striped">
+<div class="table-responsive">
+<table class="table [theme-alt]">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th class="text-right">Price</th>
+      </tr>
+    </thead>
     <tbody>
         <tr>
-            <th>First line</th>
-            <td>First item</td>
-            <td>Second item</td>
+            <td>Gadget Alpha</td>
+            <td>This is the amazing new Gadget Alpha.</td>
+            <td class="text-right">$0.99</td>
         </tr>
         <tr>
-            <th>Second line</th>
-            <td>First item</td>
-            <td>Second item</td>
+            <td>Gadget Bravo</td>
+            <td>Also available is the Gadget Bravo which provides B.</td>
+            <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+            <td>Gadget Charlie</td>
+            <td>This is the lorem ipsumist Gadget Charlie.</td>
+            <td class="text-right">$1.99</td>
+        </tr>
+        <tr>
+            <td>Gadget Delta</td>
+            <td>Also available is the Gadget Bravo which provides B.</td>
+            <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+            <td>Gadget Echo</td>
+            <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+            <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+            <td>Gadget Foxtrot</td>
+            <td>Gadget Echo provides solor dit for professionals.</td>
+            <td class="text-right">$1.99</td>
         </tr>
     </tbody>
 </table>
+</div>
 ```
             {{/markdown}}
+
+                  </div>
+
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>A generic table with bottom borders.</h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Item</th>
+                      <th>Description</th>
+                      <th class="text-right">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Gadget Alpha</td>
+                          <td>This is the amazing new Gadget Alpha.</td>
+                          <td class="text-right">$0.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Bravo</td>
+                          <td>Also available is the Gadget Bravo which provides B.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Charlie</td>
+                          <td>This is the lorem ipsumist Gadget Charlie.</td>
+                          <td class="text-right">$1.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Delta</td>
+                          <td>Also available is the Gadget Bravo which provides B.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Echo</td>
+                          <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Foxtrot</td>
+                          <td>Gadget Echo provides solor dit for professionals.</td>
+                          <td class="text-right">$1.99</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>A generic table with bottom borders. With Alternate Theme</h4>
+            <div class="table-responsive">
+              <table class="table table-striped theme-alt">
+                  <thead>
+                    <tr>
+                      <th>Item</th>
+                      <th>Description</th>
+                      <th class="text-right">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Gadget Alpha</td>
+                          <td>This is the amazing new Gadget Alpha.</td>
+                          <td class="text-right">$0.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Bravo</td>
+                          <td>Also available is the Gadget Bravo which provides B.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Charlie</td>
+                          <td>This is the lorem ipsumist Gadget Charlie.</td>
+                          <td class="text-right">$1.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Delta</td>
+                          <td>Also available is the Gadget Bravo which provides B.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Echo</td>
+                          <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+                          <td class="text-right">$2.99</td>
+                      </tr>
+                      <tr>
+                          <td>Gadget Foxtrot</td>
+                          <td>Gadget Echo provides solor dit for professionals.</td>
+                          <td class="text-right">$1.99</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+{{#markdown}}
+```xml
+  <div class="table-responsive">
+    <table class="table table-striped [theme-alt]">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th class="text-right">Price</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+          <td>Gadget Alpha</td>
+          <td>This is the amazing new Gadget Alpha.</td>
+          <td class="text-right">$0.99</td>
+          </tr>
+        <tr>
+          <td>Gadget Bravo</td>
+          <td>Also available is the Gadget Bravo which provides B.</td>
+          <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+          <td>Gadget Charlie</td>
+          <td>This is the lorem ipsumist Gadget Charlie.</td>
+          <td class="text-right">$1.99</td>
+        </tr>
+        <tr>
+          <td>Gadget Delta</td>
+          <td>Also available is the Gadget Bravo which provides B.</td>
+          <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+          <td>Gadget Echo</td>
+          <td>Gadget Delta is a solor dit lipsum for consumers.</td>
+          <td class="text-right">$2.99</td>
+        </tr>
+        <tr>
+          <td>Gadget Foxtrot</td>
+          <td>Gadget Echo provides solor dit for professionals.</td>
+          <td class="text-right">$1.99</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+```
+{{/markdown}}
         </div>
     </div>
 </section>

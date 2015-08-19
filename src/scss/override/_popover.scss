@@ -1,0 +1,47 @@
+//
+// Static resources
+//
+$popover-position: spacer(xxs, -4);
+
+.popover {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @include type-body(no-responsive, no-line-height);
+
+    &.top       { margin-top: -$popover-position; }
+    &.right     { margin-left: $popover-position; }
+    &.bottom    { margin-top: $popover-position; }
+    &.left      { margin-left: -$popover-position; }
+
+    .arrow,
+    .popover-title {
+        display: none;
+    }
+    .popover-content {
+        padding: spacer(xxs, -4) spacer(xxs) spacer(xxs, -2);
+
+        .btn {
+            margin: spacer(xxs, 2) 0 spacer(xxs);
+            float: right;
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // On light surface (default), on light image
+    color: $color-type-primary;
+    background-color: $color-bg-light-vivid-mid;
+    border-color: $color-neutral-mid;
+
+    // On dark surface, on colored background, on dark image
+    &.theme-alt,
+    &.theme-on-color,
+    &.theme-on-img-dark {
+        color: $color-type-primary-alt;
+        background-color: $color-bg-dark-vivid-mid;
+        border-color: $color-neutral-mid-alt;
+    }
+}

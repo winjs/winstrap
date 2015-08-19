@@ -1,0 +1,3 @@
+@function spacer($size, $shim: 0) {
+    @return (map-get($spacer-sizes, $size) + $shim);
+}

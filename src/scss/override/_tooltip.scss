@@ -1,17 +1,33 @@
 .tooltip {
-  word-wrap: break-word;
-  @include win-type-caption();
-}
+    @include type-caption(no-responsive);
 
-.tooltip-inner {
-  padding: 4px 7px 6px 7px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $win-color-fl-30;
-  background-color: $win-color-bg-20;
-  color: $win-color-type-primary;
-}
+    .tooltip-inner {
+        padding: 7px 8px 9px 8px;
+        border-style: solid;
+        border-width: 1px;
+        text-align: left;
+    }
 
-.tooltip-arrow {
-  display: none;
+    .tooltip-arrow {
+        display: none;
+    }
+
+    // Colors
+    // On light surface (default), on light image
+    .tooltip-inner {
+        border-color: $color-neutral-mid;
+        background-color: $color-bg-light-vivid-mid;
+        color: $color-type-primary;
+    }
+
+    // On dark surface, on colored background, on dark image
+    .theme-alt + &,
+    .theme-on-color + &,
+    .theme-on-img-dark + & {
+        .tooltip-inner {
+            border-color: $color-neutral-mid-alt;
+            background-color: $color-bg-dark-vivid-mid;
+            color: $color-type-primary-alt;
+        }
+    }
 }

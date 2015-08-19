@@ -1,4 +1,4 @@
-﻿.win-list-items {
+﻿.list-items {
     @include list-unstyled();
     margin: 1em 0;
 
@@ -12,10 +12,10 @@
     }
 
     // Container for clickable header and collapsible details
-    .win-list-items-row {
+    .list-items-row {
         margin: 0;
         padding: 0;
-        border-top: 1px solid $win-color-fl-10;
+        border-top: 1px solid $color-dim-low;
     }
 
     // Clickable header
@@ -27,45 +27,45 @@
 
         &[aria-expanded="true"],
         &:hover {
-            background: $win-color-fl-10;
+            background: $color-dim-low;
         }
     }
 
-    .win-icon-add,
-    .win-icon-remove {
+    .icon-add,
+    .icon-remove {
         font-size: .75em;
         height: 1.25em;
     }
 
-    [aria-expanded="false"] .win-icon-remove {
+    [aria-expanded="false"] .icon-remove {
         display: none;
     }
 
-    [aria-expanded="true"] .win-icon-add {
+    [aria-expanded="true"] .icon-add {
         display: none;
     }
 
     // Collapsible details
     .collapse,
     .collapsing {
-        border-left: 1px solid $win-color-fl-10;
-        border-right: 1px solid $win-color-fl-10;
+        border-left: 1px solid $color-dim-low;
+        border-right: 1px solid $color-dim-low;
     }
 }
 
-.win-list-quick-links {
+.list-quick-links {
     @include list-unstyled();
     margin-bottom: 2em;
 
     li {
-        @include win-type-title();
+        @include type-title();
         margin-bottom: 2 * ($grid-gutter-width-sm / 2);
     }
 
     a {
         display: block;
         padding: .5em .25em;
-        background: $win-color-fl-10;
+        background: $color-dim-low;
         text-align: center;
 
         @media (min-width: $screen-sm) {

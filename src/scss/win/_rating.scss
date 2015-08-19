@@ -1,84 +1,158 @@
 ﻿// Rating component with stars
-.win-rating {
-    margin: 0;
+.rating {
+    .rating-label {
+        @include type-title(no-line-height);
+        line-height: 44px;
+        margin-bottom: 1px;
+        vertical-align: bottom;
 
-    ul {
-        list-style: none;
+        &.rating-label-left {
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        &.rating-label-right {
+            display: inline-block;
+        }
+    }
+
+    .rating-stars {
+        position: relative;
         display: inline-block;
-        vertical-align: text-bottom;
-        margin: 0;
-        padding: 0;
-        white-space: nowrap;
+        font-size: 24px;
+        line-height: 1;
+        margin-left: -10px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+
+            li {
+                display: inline-block;
+                padding: 6px 10px 10px;
+            }
+        }
+
+        .rating-stars-value {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .rating-stars-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            .rating-btn {
+                padding: 6px 10px 10px;
+                border: none;
+                line-height: 1;
+                background: none;
+
+                .icon-ratingstar {
+                    visibility: hidden;
+                }
+
+                &.active .icon-ratingstar {
+                    visibility: visible;
+                }
+            }
+        }
     }
 
-    li {
-        display: inline-block;
-    }
-}
+    &.rating-small {
+        .rating-label {
+            @include type-caption(no-line-height);
+            line-height: 16px;
 
-// Inline rating
-.win-rating-inline {
-    display: inline-block;
-}
+            &.rating-label-left {
+                margin-right: 5px;
+            }
 
-// Stars
-.win-rating-stars {
-    position: relative;
-    display: inline-block;
-    letter-spacing: 10px;
-    font-size: 24px;
-    line-height: 1;
+            &.rating-label-right {
+                margin-left: 3px;
+            }
+        }
 
-    .win-icon-ratingstar {
-        color: $win-color-fl-30;
-    }
-}
+        .rating-stars {
+            font-size: 12px;
+            margin-left: -2px;
 
-.win-rating-stars-value {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+            ul {
+                li {
+                    padding: 0px 2px 2px;
+                }
+            }
 
-    .win-icon-ratingstar {
-        color: $win-color-fl-accent;
-    }
-}
-
-// Rating numbers
-.win-rating-numbers {
-    @include win-type-caption-alt();
-    margin-left: .15em;
-    line-height: 24px;
-}
-
-// Clickable rating
-.win-rating-label {
-    display: inline-block;
-    margin-right: .5em;
-}
-
-.win-rating-stars-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.win-rating-btn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    line-height: 1;
-    background: none;
-
-    .win-icon-ratingstar {
-        visibility: hidden;
+            .rating-stars-input {
+                .rating-btn {
+                    padding: 0px 2px 2px;
+                }
+            }
+        }
     }
 
-    &.active {
-        .win-icon-ratingstar {
-            visibility: visible;
-            color: $win-color-type-primary;
+    // Default colors
+    .rating-stars {
+        .icon-ratingstar {
+            color: $color-neutral-low;
+        }
+    }
+
+    .rating-stars-value {
+        .icon-ratingstar {
+            color: $color-vivid-high;
+        }
+
+        &.rating-stars-value-user {
+            .icon-ratingstar {
+                color: $color-accent;
+            }
+        }
+    }
+
+    .rating-btn.active {
+        .icon-ratingstar {
+            color: $color-vivid-mid;
+        }
+    }
+
+    .rating-label {
+        color: $color-type-primary;
+    }
+
+    // Alt colors
+    &.color-alt {
+        .rating-stars {
+            .icon-ratingstar {
+                color: $color-neutral-low-alt;
+            }
+        }
+
+        .rating-stars-value {
+            .icon-ratingstar {
+                color: $color-vivid-high-alt;
+            }
+
+            &.rating-stars-value-user {
+                .icon-ratingstar {
+                    color: $color-accent;
+                }
+            }
+        }
+
+        .rating-btn.active {
+            .icon-ratingstar {
+                color: $color-vivid-mid-alt;
+            }
+        }
+
+        .rating-label {
+            color: $color-type-primary-alt;
         }
     }
 }

@@ -1,11 +1,11 @@
-.win-panel-clean {
+.panel-clean {
     border: none;
 
     .panel-heading,
     .panel-footer {
         @include clearfix();
         padding: 15px 20px;
-        background: $win-color-fl-20;
+        background: $color-dim-mid;
 
         p {
             margin-bottom: 0;
@@ -27,8 +27,8 @@
 
     .nav-pills > li > a {
         padding: 0 1em;
-        border-left: 1px solid $win-color-fl-60;
-        color: $win-color-type-primary;
+        border-left: 1px solid $color-vivid-mid;
+        color: $color-type-primary;
         background: none;
 
         &:hover {
@@ -50,10 +50,10 @@
     }
 }
 
-.win-panel-line {
+.panel-line {
     margin: 0 0 15px 0;
     border: none;
-    border-top: 1px solid $win-color-fl-30;
+    border-top: 1px solid $color-neutral-mid;
 
     .panel-heading,
     .panel-footer {
@@ -80,12 +80,12 @@
 
             &.active {
                 a {
-                    color: $win-color-type-secondary;
+                    color: $color-type-secondary;
                 }
             }
 
             .icon-completed {
-                color: $win-color-type-primary;
+                color: $color-type-primary;
             }
         }
 

@@ -1,14 +1,14 @@
 ﻿// Section
-.win-section {
+.section {
     margin-bottom: 1.5em;
 }
 
-.win-section-header {
+.section-header {
     position: relative;
     margin-bottom: 1.5em;
 
-    .win-section-title {
-        @include win-type-header();
+    .section-title {
+        @include type-header();
         margin-bottom: 0;
         color: $headings-color;
 
@@ -24,13 +24,13 @@
     }
 }
 
-.win-section-header-aside {
+.section-header-aside {
     position: absolute;
     top: .25em;
     right: ($grid-gutter-width / 2);
 }
 
-.win-section-header-more {
+.section-header-more {
     margin-left: .5em;
 
     &.btn-link {
@@ -38,12 +38,12 @@
     }
 }
 
-.win-section-body {
+.section-body {
     margin-bottom: 1.5em;
 }
 
-.win-section-gallery {
-    .win-media {
+.section-gallery {
+    .media {
         margin-bottom: 2 * ($grid-gutter-width / 2);
     }
 }

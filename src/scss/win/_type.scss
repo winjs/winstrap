@@ -1,4 +1,4 @@
-﻿// Icon font
+// Icon font
 @font-face {
     font-family: "winjs-symbols";
     src: url("#{$icon-font-path}/winjs-symbols.eot");
@@ -41,93 +41,127 @@
          url("../fonts/selawksl.ttf") format("truetype");
 }
 
-@mixin responsive-type($font, $lh) {
-    // Produce the proper responsive type attributes with optional argument for no line height
-    font-family:        map-deep-get($win-fonts, $font, "font-family");
-    font-size:          map-deep-get($win-fonts, $font, "size-xs");
-    font-weight:        map-deep-get($win-fonts, $font, "font-weight-xs");
-    @if not ("#{$lh}" == "no-line-height") {
-        line-height:    (map-deep-get($win-fonts, $font, "line-height-xs") / map-deep-get($win-fonts, $font, "size-xs"));
-    }
+// Produce the proper responsive type attributes with optional arguments for no line height and no responsive font size.
+@mixin responsive-type($font, $options) {
+    $responsive: "true";
+    $set-line-height: "true";
 
-    @media (min-width: $screen-md-min) {
-        font-size:      map-deep-get($win-fonts, $font, "size-md");
-        @if not ("#{$lh}" == "no-line-height") {
-            line-height:    (map-deep-get($win-fonts, $font, "line-height-md") / map-deep-get($win-fonts, $font, "size-md"));
+    @each $option in $options {
+        @if ($option == "no-responsive") {
+            $responsive: "false";
         }
-    }
-    @media (min-width: $screen-xl-min) {
-        font-size:      map-deep-get($win-fonts, $font, "size-xl");
-        @if not ("#{$lh}" == "no-line-height") {
-            line-height:    (map-deep-get($win-fonts, $font, "line-height-xl") / map-deep-get($win-fonts, $font, "size-xl"));
+
+        @if ($option == "no-line-height") {
+            $set-line-height: "false";
         }
     }
 
+    font-family:                map-deep-get($fonts, $font, "font-family");
+    font-weight:                map-deep-get($fonts, $font, "font-weight-xs");
+
+    @if (#{$responsive} == "true") {
+        font-size:              map-deep-get($fonts, $font, "size-xs");
+
+        // responsive-type() - set responsive font size and line height
+        @if (#{$set-line-height} == "true") {
+            line-height:       (map-deep-get($fonts, $font, "line-height-xs") / map-deep-get($fonts, $font, "size-xs"));
+
+            @media (min-width: $screen-md-min) {
+                font-size:      map-deep-get($fonts, $font, "size-md");
+                line-height:   (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+            }
+
+            @media (min-width: $screen-xl-min) {
+                font-size:      map-deep-get($fonts, $font, "size-xl");
+                line-height:   (map-deep-get($fonts, $font, "line-height-xl") / map-deep-get($fonts, $font, "size-xl"));
+            }
+
+        // responsive-type(no-line-height) - set responsive font size only
+        } @else {
+            @media (min-width: $screen-md-min) {
+                font-size:      map-deep-get($fonts, $font, "size-md");
+            }
+
+            @media (min-width: $screen-xl-min) {
+                font-size:      map-deep-get($fonts, $font, "size-xl");
+            }
+        }
+    } @else {
+        font-size:              map-deep-get($fonts, $font, "size-md");
+
+        // responsive-type(no-responsive) - set font size and line height to the md breakpoint
+        @if (#{$set-line-height} == "true") {
+            line-height:       (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+        }
+    }
 }
 
 // Responsive Typography mixins
-@mixin win-type-headline($lh...) {
+//
+// Optional arguments:
+// no-responsive    (fixes font size and line-height to the md breakpoint)
+// no-line-height   (does not set line height)
+@mixin type-headline($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(headline, $lh);
+    @include responsive-type(headline, $options);
 }
-@mixin win-type-header($lh...) {
+@mixin type-header($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(header, $lh);
+    @include responsive-type(header, $options);
 }
-@mixin win-type-subheader($lh...) {
-    @include responsive-type(subheader, $lh);
+@mixin type-subheader($options...) {
+    @include responsive-type(subheader, $options);
 }
-@mixin win-type-title($lh...) {
-    @include responsive-type(title, $lh);
+@mixin type-title($options...) {
+    @include responsive-type(title, $options);
 }
-@mixin win-type-subtitle($lh...) {
-    @include responsive-type(subtitle, $lh);
+@mixin type-subtitle($options...) {
+    @include responsive-type(subtitle, $options);
 }
-@mixin win-type-subtitle-alt($lh...) {
-    @include responsive-type(subtitle-alt, $lh);
+@mixin type-subtitle-alt($options...) {
+    @include responsive-type(subtitle-alt, $options);
 }
-@mixin win-type-base($lh...) {
-    @include responsive-type(base, $lh);
+@mixin type-base($options...) {
+    @include responsive-type(base, $options);
 }
-@mixin win-type-body($lh...) {
-    @include responsive-type(body, $lh);
+@mixin type-body($options...) {
+    @include responsive-type(body, $options);
 }
-@mixin win-type-caption($lh...) {
-    @include responsive-type(caption, $lh);
+@mixin type-caption($options...) {
+    @include responsive-type(caption, $options);
 }
-@mixin win-type-caption-alt($lh...) {
-    @include responsive-type(caption-alt, $lh);
+@mixin type-caption-alt($options...) {
+    @include responsive-type(caption-alt, $options);
 }
 
 // Apply mixins to typography classes
-.win-type-headline, .text-headline {
-    @include win-type-headline();
+.type-headline, .text-headline {
+    @include type-headline();
 }
-h1, .h1, .win-type-header, .text-header {
-    @include win-type-header();
+h1, .h1, .type-header, .text-header {
+    @include type-header();
 }
-h2, .h2, .win-type-subheader, .text-subheader {
-    @include win-type-subheader();
+h2, .h2, .type-subheader, .text-subheader {
+    @include type-subheader();
 }
-h3, .h3, .win-type-title, .text-title {
-    @include win-type-title();
+h3, .h3, .type-title, .text-title {
+    @include type-title();
 }
-.win-type-subtitle, .text-subtitle {
-    @include win-type-subtitle();
+.type-subtitle, .text-subtitle {
+    @include type-subtitle();
 }
-h4, .h4, .win-type-subtitle-alt, .text-subtitle-alt {
-    @include win-type-subtitle-alt();
+h4, .h4, .type-subtitle-alt, .text-subtitle-alt {
+    @include type-subtitle-alt();
 }
-h5, .h5, .win-type-base, .text-base {
-    @include win-type-base();
+h5, .h5, .type-base, .text-base {
+    @include type-base();
 }
-p, .win-type-body, .text-body {
-    @include win-type-body();
+p, .type-body, .text-body {
+    @include type-body();
 }
-h6, .h6, .win-type-caption, .text-caption {
-    @include win-type-caption();
+h6, .h6, .type-caption, .text-caption {
+    @include type-caption();
 }
-.win-type-caption-alt, .text-caption-alt {
-    @include win-type-caption-alt();
+.type-caption-alt, .text-caption-alt {
+    @include type-caption-alt();
 }
-

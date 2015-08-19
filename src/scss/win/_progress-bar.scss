@@ -1,22 +1,22 @@
-.win-progress-bar {
+.progress-bar {
   position: relative;
   width: 180px;
   height: 4px;
 
-  .win-circle {
+  .progress-circle {
     position: absolute;
     top: 0;
     left: 0;
     width: 4px;
     height: 4px;
     opacity: 0;
-    @include animation(win-progress-bar-animation 3s infinite);
+    @include animation(progress-bar-animation 3s infinite);
 
     &:after {
       content: "\2022";
       position: absolute;
       font-size: 10px;
-      color: $win-color-fl-accent;
+      color: $color-accent;
     }
 
     &:nth-child(2) { @include animation-delay(200ms); }
@@ -25,17 +25,17 @@
     &:nth-child(5) { @include animation-delay(800ms); }
   }
 
-  &.win-medium {
+  &.progress-medium {
     width: 296px;
   }
 
-  &.win-large {
+  &.progress-large {
     width: 100%;
   }
 }
 
 
-@include keyframes(win-progress-bar-animation) {
+@include keyframes(progress-bar-animation) {
   0% {
     @include translate(0px, 0px);
     @include animation-timing-function(ease-in);

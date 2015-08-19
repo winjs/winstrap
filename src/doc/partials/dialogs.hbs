@@ -1,0 +1,122 @@
+﻿<section class="section" id="dialogs">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
+            <a href="#dialogs">Dialogs</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample">
+                    Launch demo dialog
+                </button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sample-alt">
+                    Launch dialog in alt theme
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-center-vertical" id="modal-sample" tabindex="-1" role="dialog" aria-labelledby="modal-sample-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-sample-label">Dialog title</h4>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Button</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-center-vertical theme-alt" id="modal-sample-alt" tabindex="-1" role="dialog" aria-labelledby="modal-sample-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-sample-label">Dialog in alt theme</h4>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <p>Example with a button to launch the dialog:</p>
+
+            {{#markdown}}
+```xml
+<div class="btn-group">
+    <button type="button" class="btn btn-primary btn-lg"
+            data-toggle="modal"
+            data-target="#modal-sample">
+        Launch demo dialog
+    </button>
+</div>
+```
+            {{/markdown}}
+
+            <p>Launching the dialog with the <a href="http://getbootstrap.com/javascript/#modals-methods" target="_blank">JavaScript API</a>:</p>
+
+            {{#markdown}}
+```javascript
+$('#modal-sample').modal('show');
+```
+            {{/markdown}}
+
+            <p>Closing the dialog with the <a href="http://getbootstrap.com/javascript/#modals-methods" target="_blank">JavaScript API</a>:</p>
+
+            {{#markdown}}
+```javascript
+$('#modal-sample').modal('hide');
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-14">
+            <p>By default the dialog is already in the DOM:</p>
+
+            {{#markdown}}
+```xml
+<!-- Add modal-center-vertical class to center the modal vertically -->
+<div class="modal [modal-center-vertical] [theme-alt]" id="modal-sample"
+     tabindex="-1" role="dialog"
+     aria-labelledby="modal-sample-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-sample-label">
+                    Dialog title
+                </h4>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+                <button type="button" class="btn btn-info"
+                        data-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-xs-24">
+        <section class="section" id="toggle-switch">
+            <header class="section-header ">
+                <h1 class="section-title ">
+                    <a href="#toggle-switch">Toggle Switch</a>
+                </h1>
+            </header>
+
+            <div class="row">
+                <div class="col-md-24">
+                    
+                    <!-- On light background -->
+                    <div style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    {{#markdown}}
+```xml
+<div class="btn-group">
+    <button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false">
+        <span class="stateLabel stateLabel-on">On</span>
+        <span class="stateLabel stateLabel-off">Off</span>
+    </button>
+</div>
+```
+                    {{/markdown}}
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- On dark background -->
+                <div class="col-md-6">
+                    <h4>Alt</h4>
+                    <div class="color-black" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- On colored background -->
+                <div class="col-md-6">
+                    <h4>On solid color</h4>
+                    <div class="color-fill-accent-vivid-high" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-color" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- On light image -->
+                <div class="col-md-6">
+                    <h4>On light image</h4>
+                    <div class="example-light-image-bg" style="padding: 0 2em 2em; margin-bottom: 0.5em; background-position: center;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-light" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- On dark image -->
+                <div class="col-md-6">
+                    <h4>On dark image</h4>
+                    <div class="example-dark-image-bg" style="padding: 0 2em 2em; margin-bottom: 0.5em;">
+                        <div class="btn-group">
+                            <button type="button" data-toggle="button" class="btn btn-toggle-switch theme-on-img-dark" autocomplete="off" aria-pressed="false">
+                                <span class="stateLabel stateLabel-on">On</span>
+                                <span class="stateLabel stateLabel-off">Off</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-24">
+                    {{#markdown}}
+```xml
+<div class="btn-group">
+    <button type="button" data-toggle="button" class="btn btn-toggle-switch [theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]" autocomplete="off" aria-pressed="false">
+        <span class="stateLabel stateLabel-on">On</span>
+        <span class="stateLabel stateLabel-off">Off</span>
+    </button>
+</div>
+```
+                    {{/markdown}}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

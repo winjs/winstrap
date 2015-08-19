@@ -1,5 +1,5 @@
 // Stacked alerts on top of the screen
-.win-alert-stack {
+.alert-stack {
     // Added by Bootstrap Affix when scrolling
     &.affix {
         top: 0; // position is fixed
@@ -13,5 +13,19 @@
         border-top: none;
         border-right: none;
         border-left: none;
+
+        p {
+            @include type-caption(no-responsive);
+            margin-bottom: 0;
+            padding-top: 4px;
+        }
     }
+
+    //
+    // Color
+    //
+
+    // ensure background is not transparent
+    background-color: $color-white;
+    
 }

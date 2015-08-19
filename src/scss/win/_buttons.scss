@@ -1,6 +1,13 @@
+//
+// Static resources
+//
+$toggle-switch-width:           44px;
+$toggle-switch-height:          20px;
+$toggle-switch-indicator-size:  10px;
+
 // Button filter
-.win-button-filter {
-  border-color: $win-color-fl-50;
+.button-filter {
+  border-color: $color-vivid-low;
   background: none;
 
   // Clear filter
@@ -9,90 +16,187 @@
   }
 }
 
-.win-btn-on-light {
-    color: $btn-on-light-color;
-    background-color: $btn-on-light-bg;
-    border-color: $btn-on-light-border;
+a.link-on-light {
+    text-decoration: underline;
+    color: $color-type-primary;
+}
 
-    &:hover,
-    &:focus,
-    &.focus, 
-    .open > &.dropdown-toggle{
-        color: $btn-on-light-color;
-        background-color: $btn-on-light-bg;
-        border-color: $win-color-fl-50-alt;
+a.link-on-dark {
+    text-decoration: underline;
+    color: $color-type-primary-alt;
+}
+
+// Toggle switch button
+.btn[data-toggle="button"].btn-toggle-switch {
+    position: relative;
+    width: $toggle-switch-width;
+    min-width: $toggle-switch-width;
+    max-width: $toggle-switch-width;
+    height: $toggle-switch-height;
+    border-radius: $toggle-switch-height / 2;
+    border-width: 1px;
+    border-style: solid;
+
+    .stateLabel {
+        position: absolute;
+        top: 1px;
+        left: 54px;
+        line-height: 1;
+        @include type-body(no-responsive, no-line-height);
     }
 
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-        background-image: none;
-        background-color: $win-color-fl-60;
-        color: $btn-on-light-color;
-        border-color: transparent;
+    .stateLabel-on {
+        display: none;
     }
 
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &,
-        &:hover,
-        &:focus,
-        &.focus,
-        &:active,
-        &.active {
-          color: $win-color-type-secondary;
-          background-color: $win-color-fl-40;
-          border-color: transparent;
+    // Indicator circle
+    &::before {
+        content: '';
+        position: absolute;
+        width: $toggle-switch-indicator-size;
+        height: $toggle-switch-indicator-size;
+        top: 4px;
+        left: 4px;
+        border-radius: $toggle-switch-indicator-size / 2;
+    }
+
+    &.active {
+        &::before {
+            left: 28px;
+        }
+
+        .stateLabel-on {
+            display: block;
+        }
+
+        .stateLabel-off {
+            display: none;
         }
     }
-}
 
-.win-btn-on-dark {
-    color: $btn-on-dark-color;
-    background-color: $btn-on-dark-bg;
-    border-color: $btn-on-dark-border;
+    //
+    // Colors
+    //
 
-    &:hover,
-    &:focus,
-    &.focus, 
-    .open > &.dropdown-toggle{
-        color: $btn-on-dark-color;
-        background-color: $btn-on-dark-bg;
-        border-color: $win-color-fl-accent-medium;
-    }
+    // On light surface and on light image
+    &,
+    &.theme-on-img-light {
+        background-color: transparent;
+        border-color: $color-vivid-mid;
 
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-        background-image: none;
-        background-color: $win-color-fl-60-alt;
-        color: $btn-on-dark-color;
-        border-color: transparent;
-    }
+        &::before {
+            background-color: $color-vivid-mid;
+        }
 
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &,
-        &:hover,
-        &:focus,
-        &.focus,
-        &:active,
+        .stateLabel {
+            color: $color-type-primary;
+        }
+
         &.active {
-          color: $win-color-type-secondary;
-          background-color: $win-color-fl-40-alt;
-          border-color: transparent;
+            background-color: $color-accent;
+            border-color: transparent;
+
+            &::before {
+                background-color: $color-bg-light-vivid-high;
+            }
+        }
+
+        &:disabled {
+            border-color: $color-neutral-low;
+
+            &::before {
+                background-color: $color-neutral-low;
+            }
+
+            .stateLabel {
+                color: $color-type-disabled;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $color-neutral-low;
+            }
         }
     }
-}
 
-a.win-link-on-light {
-    text-decoration: underline;
-    color: $win-color-type-primary;
-}
+    // On dark surface and on dark image
+    &.theme-alt,
+    &.theme-on-img-dark {
+        background-color: transparent;
+        border-color: $color-vivid-mid-alt;
 
-a.win-link-on-dark {
-    text-decoration: underline;
-    color: $win-color-type-primary-alt;
+        &::before {
+            background-color: $color-vivid-mid-alt;
+        }
+
+        .stateLabel {
+            color: $color-type-primary-alt;
+        }
+
+        &.active {
+            background-color: $color-accent;
+            border-color: transparent;
+
+            &::before {
+                background-color: $color-bg-light-vivid-high;
+            }
+        }
+
+        &:disabled {
+            border-color: $color-neutral-low-alt;
+
+            &::before {
+                background-color: $color-neutral-low-alt;
+            }
+
+            .stateLabel {
+                color: $color-type-disabled-alt;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $color-neutral-low-alt;
+            }
+        }
+    }
+
+    // On colored surface
+    &.theme-on-color {
+        background-color: transparent;
+        border-color: $color-vivid-mid-alt;
+
+        &::before {
+            background-color: $color-vivid-mid-alt;
+        }
+
+        .stateLabel {
+            color: $color-type-primary-alt;
+        }
+
+        &.active {
+            background-color: $color-bg-light-vivid-high;
+            border-color: transparent;
+
+            &::before {
+                background-color: $color-accent;
+            }
+        }
+
+        &:disabled {
+            border-color: $color-neutral-low-alt;
+
+            &::before {
+                background-color: $color-neutral-low-alt;
+            }
+
+            .stateLabel {
+                color: $color-type-disabled-alt;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $color-neutral-low-alt;
+            }
+        }
+    }
 }

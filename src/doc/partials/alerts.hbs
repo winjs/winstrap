@@ -1,27 +1,36 @@
-﻿<section class="win-section">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+﻿<section class="section">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#stack">Alert stack</a>
         </h1>
     </header>
 
     <div class="row">
         <div class="col-xs-24">
+            <p>These are the full width alerts you see stacked above.</p>
+        </div>
+        <div class="col-xs-24">
 
             {{#markdown}}
 ```xml
 <!-- This tag should be a child of the body -->
-<div class="win-alert-stack">
+<div class="alert-stack">
 
     <div class="alert alert-warning alert-dismissible fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true"><i class="icon-cancel"></i></span>
         </button>
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-24">
-                    Alert example, <a href="#">click here</a>.
+                <div class="col-md-20">
+                    <p>Alert example. If your playback didn’t start, it’s likely because you don’t have the Video app installed.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <a href="#" class="pull-right hidden-xs hidden-sm">Click here</a>
+                        <a href="#" class="visible-xs-inline visible-sm-inline hidden-md">Click here</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -31,13 +40,13 @@
 </div>
 ```
             {{/markdown}}
-            
+
             <p>The required JavaScript to initialize the <a href="http://getbootstrap.com/javascript/#affix" target="_blank">Affix Boostrap component</a>:</p>
 
             {{#markdown}}
 ```javascript
 $(function () {
-    var alertStack = $('.win-alert-stack');
+    var alertStack = $('.alert-stack');
 
     if (alertStack.length == 0) {
         return;
@@ -56,61 +65,97 @@ $(function () {
     </div>
 </section>
 
-<section class="win-section" id="inline">
-    <header class="win-section-header row">
-        <h1 class="win-section-title col-xs-24">
+<section class="section" id="inline">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
             <a href="#inline">Inline alert</a>
         </h1>
     </header>
 
     <div class="row">
         <div class="col-xs-24">
+            <p>Caption row uses two columns to ensure action link is right aligned at md viewport and up. It stacks at sm and below.</p>
+            <p>Action link needs to float right on large viewports and float left on small ones, hence the hiding and showing.</p>
+        </div>
+        <div class="col-xs-24">
 
-            <div class="alert alert-info alert-dismissible fade in" role="alert">
+            <div class="alert alert-info alert-dismissible spacer-mt-xs fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
-
-                <h4>Info alert example</h4>
-                <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
-                </p>
+                <div class="row">
+                    <div class="col-md-20">
+                        <p>This is an inline alert with no title.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <a href="#" class="pull-right hidden-xs hidden-sm">Click here</a>
+                            <a href="#" class="visible-xs-inline visible-sm-inline hidden-md">Click here</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="alert alert-warning alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
-
-                <h4>Warning alert example</h4>
-                <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
-                </p>
+                <div class="alert-title">Warning example</div>
+                <div class="row">
+                    <div class="col-md-20">
+                        <p>This is a warning inline alert without an icon.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <a href="#" class="pull-right hidden-xs hidden-sm">Click here</a>
+                            <a href="#" class="visible-xs-inline visible-sm-inline hidden-md">Click here</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+            <div class="alert with-icon alert-danger alert-dismissible fade in" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="icon-cancel"></i></span>
                 </button>
-
-                <h4>Danger alert example</h4>
-                <p>
-                    If your playback didn’t start, it’s likely because you don’t have the Video app installed,
-                    <a href="#">click here</a> to install it from the store.
-                </p>
+                <span class="alert-icon"><i class="icon-info"></i></span>
+                <div class="alert-title">Danger alert with icon example</div>
+                <div class="row">
+                    <div class="col-md-20">
+                        <p>This is a danger inline alert with an icon. Want to know more about what icons you can use?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <a href="#" class="pull-right hidden-xs hidden-sm">Click here</a>
+                            <a href="#" class="visible-xs-inline visible-sm-inline hidden-md">Click here</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {{#markdown}}
 ```xml
-<div class="alert [alert-info] [alert-warning] [alert-danger] alert-dismissible fade in" role="alert">
+<div class="alert [alert-info] [alert-warning] [alert-danger] [with-icon] alert-dismissible fade in" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true">
+            <i class="icon-cancel"></i>
+        </span>
     </button>
-
-    <h4>Alert title</h4>
-    <p>Alert message</p>
+    <span class="alert-icon">
+        <i class="icon-info"></i>
+    </span>
+    <div class="alert-title">Danger alert with icon example</div>
+    <div class="row">
+        <div class="col-md-20">
+            <p>This is a danger inline alert with an icon. Want to know more about what icons you can use?</p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <a href="#" class="pull-right hidden-xs hidden-sm">Click here</a>
+                <a href="#" class="visible-xs-inline visible-sm-inline hidden-md">Click here</a>
+            </p>
+        </div>
+    </div>
 </div>
 ```
             {{/markdown}}

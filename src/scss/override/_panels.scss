@@ -8,7 +8,7 @@
             padding: 0;
         }
 
-        i[class*="win-icon-"] {
+        i[class*="icon-"] {
             font-size: 1.7em;
         }
     }
@@ -17,8 +17,7 @@
         border-left: none;
         margin: 0 25px;
         padding: 0;
-        color: $win-color-type-primary;
+        color: $color-type-primary;
         background: none;
     }
 }
-

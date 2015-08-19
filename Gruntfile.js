@@ -17,7 +17,10 @@ module.exports = function (grunt) {
       options: {
         outputStyle: 'nested',
         sourceMap: true,
-        precision: 5
+        precision: 5,
+        includePaths: [
+            "bower_components"
+        ]
       },
       dist: {
         files: {
@@ -116,6 +119,7 @@ module.exports = function (grunt) {
         }
       },
       options: {
+        livereload: true,
         tasks: ['notify:assemble']
       }
     },
@@ -124,7 +128,10 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: './dist/'
+          base: './dist/',
+          hostname: 'localhost',
+          livereload: true,
+          open: true
         }
       }
     },
@@ -157,7 +164,7 @@ module.exports = function (grunt) {
       watch: {
         options: {
           title: 'Winstrap',
-          message: 'assemble completed', //required 
+          message: 'assemble completed', //required
         }
       }
     },

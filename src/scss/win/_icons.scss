@@ -1,5 +1,5 @@
 ﻿// Generic icon placeholder
-%win-icon {
+%icon {
     display: inline-block;
     width: 1em; height: 1em;
     vertical-align: middle;
@@ -17,13 +17,13 @@
     }
 }
 
-// Use the tag <i class="win-icon-..."> to display icons
-i[class*="win-icon-"] {
-    @extend %win-icon;
+// Use the tag <i class="icon-..."> to display icons
+i[class*="icon-"] {
+    @extend %icon;
 }
 
 // List of icons with their associated UTF-8 private space
-$win-symbols: (
+$icons: (
     scrollup: "\E018",
     scrolldown: "\E019",
     checkbox: "\E081",
@@ -240,6 +240,23 @@ $win-symbols: (
     hamburger: "\E700"
 );
 
-@each $glyph, $code in $win-symbols {
-    .win-icon-#{$glyph}:before { content: $code; }
+@each $glyph, $code in $icons {
+    .icon-#{$glyph}:before { content: $code; }
+}
+
+
+// Checkbox & Radio Buttons
+.checkbox label {
+    input:checked ~ span::before {
+        content: map-get($icons, checkbox);
+    }
+    input:indeterminate ~ span::before {
+        content: "■"; // Use "\E73C" when we get MDL Symbols font
+    }
+}
+
+.radio label {
+    input:checked ~ span::before {
+        content: "•"; // Replace this when we get MDL Symbols font
+    }
 }

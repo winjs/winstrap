@@ -1,35 +1,83 @@
-﻿.win-pagination {
+﻿.pagination {
     @include clearfix();
 
-    li.win-pagination-ellipsis {
+    li.pagination-ellipsis {
         > span {
-            border-color: transparent;
             background: none;
-            color: $text-color;
+            margin: spacer(xxs, -7) 0;
+            padding: spacer(xxs, -8) 0 spacer(xxs, -7);
+            min-width: 18px;
         }
     }
 
-    li.win-pagination-prev,
-    li.win-pagination-next {
-        i[class*="win-icon"] {
-            margin: 0 2px;
-            font-size: .9em;
-            vertical-align: -.2em;
+    li.pagination-prev,
+    li.pagination-next {
+        i[class*="icon"] {
+            margin: 0 spacer(xxs, -10);
+            font-size: .813em;
+            vertical-align: -.1em;
         }
-
         &.disabled {
             display: none;
         }
+    }
+    li.pagination-prev {
+        > a, > span {
+            padding: spacer(xxs, -7) spacer(xxs, -2) spacer(xxs, -7) spacer(xxs, -6);
+            margin-left: spacer(n, -6);
+        }
+    }
+    li.pagination-next {
+        > a, > span {
+            padding: spacer(xxs, -7) spacer(xxs, -6) spacer(xxs, -7) spacer(xxs, -2);
+        }
+    }
 
+    // 
+    // Colors 
+    //
+
+    // Default colors
+    li.pagination-prev,
+    li.pagination-next {
         > a, > span {
             background: none;
             border-color: transparent;
+            &:hover {
+                background-color: $color-dim-mid;
+            }
+            &:focus {
+                background-color: $color-neutral-mid;
+            }
+        }
+    }
+
+    // Alt theme
+    &.theme-alt {
+        > li {
+            > a, > span {
+                color: $color-type-primary-alt;
+                &:hover {
+                    background-color: $color-dim-mid-alt;
+                }
+                &:focus {
+                    background-color: $color-neutral-mid-alt;
+                }
+            }
+        }
+        > .active > a,
+        > .active > span {
+            &:hover,
+            &:focus {
+              color: $color-type-primary-alt;
+              background-color: $pagination-active-bg;
+            }
         }
     }
 }
 
 @media (min-width: $screen-sm) {
-    .win-pagination-prev {
+    .pagination-prev {
         > a, > span {
             &:after {
                 content: attr(aria-label);
@@ -37,7 +85,7 @@
         }
     }
 
-    .win-pagination-next {
+    .pagination-next {
         > a, > span {
             &:before {
                 content: attr(aria-label);

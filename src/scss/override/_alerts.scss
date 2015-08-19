@@ -1,37 +1,74 @@
-﻿// Override
+//
+// Static Resources
+//
+$alert-icon-base: 48px;
+
+// Override
 .alert {
-  position: relative;
-  color: $win-color-light;
-  border: none;
+    position: relative;
+    border: none;
+    padding: spacer(xxs) spacer(xxs) spacer(xxs) spacer(xs, -4);
+    min-height: $alert-icon-base;
 
-  &.alert-dismissible {
-    padding-right: 3em;
-  }
+    &.alert-dismissible {
+        padding-right: spacer(md);
+    }
 
-  .close {
-    position: absolute;
-    top: ($grid-gutter-width / 2);
-    right: ($grid-gutter-width / 2);
-    z-index: 1;
-    @include win-type-headline();
-    line-height: 1;
-    opacity: 1;
-    font-size: 30px;
-  }
+    .alert-title {
+        @include type-subtitle-alt(no-responsive);
+        margin-bottom: spacer(xxs, -7);
+        margin-top: spacer(xxs, -11);
+    }
 
-  a {
-    color: $win-color-light;
-  }
-}
+    p {
+        @include type-caption(no-responsive);
+        margin: 0;
+        padding: spacer(xxs, -8) 0 0;
+    }
 
-.alert-info {
-  background-color: $brand-info;
-}
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        line-height: 1;
+        opacity: 1;
+        height: $alert-icon-base;
+        width: $alert-icon-base;
 
-.alert-warning {
-  background-color: $brand-warning;
-}
+        span {
+            font-size: 16px;
+            top: -5px;
+            position: relative;
+        }
+    }
 
-.alert-danger {
-  background-color: $brand-danger;
+    &.with-icon {
+        padding-left: spacer(md)
+    }
+
+    .alert-icon {
+        position: absolute;
+        top: spacer(xxs, -8);
+        left: spacer(xxs);
+        width: $alert-icon-base / 2;
+        height: $alert-icon-base /2;
+        font-size: $alert-icon-base / 2;
+    }
+
+    // Color
+    color: $color-type-primary;
+
+    &.alert-info {
+        background-color: $color-bg-light-vivid-mid;
+        color: $color-type-primary;
+    }
+
+    &.alert-warning {
+        background-color: rgba($color-lightyellow, .4);
+    }
+
+    &.alert-danger {
+        background-color: rgba($color-alert, .3);
+    }
 }
