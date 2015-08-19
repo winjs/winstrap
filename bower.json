@@ -1,11 +1,11 @@
 {
-  "name": "Winstrap",
-  "version": "0.4.4",
-  "homepage": "https://github.com/winjs/winstrap",
-  "authors": "",
-  "description": "Microsoft Bootstrap Theme for Basel",
-  "license": "MIT",
-  "dependencies": {
-    "bootstrap-sass": "~3.3.4"
-  }
+    "name": "Winstrap",
+    "version": "0.4.4",
+    "homepage": "https://github.com/winjs/winstrap",
+    "authors": "",
+    "description": "Microsoft Bootstrap Theme for Basel",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap-sass": "~3.3.4"
+    }
 }
