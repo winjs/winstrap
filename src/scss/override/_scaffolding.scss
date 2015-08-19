@@ -12,8 +12,11 @@ a {
 }
 
 hr {
-    margin-top: spacer(md);
+    margin-top: spacer(sm);
     margin-bottom: 0;
+    @media (min-width: $screen-sm) {
+        margin-top: spacer(md);
+    }
 
     // 
     // Colors 
