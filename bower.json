@@ -6,7 +6,6 @@
     "description": "Bootstrap Theme for Microsoft Modern design language",
     "license": "MIT",
     "dependencies": {
-        "bootstrap-sass": "3.3.4",
-        "jquery": "2.1.4"
+        "bootstrap-sass": "3.3.4"
     }
 }
