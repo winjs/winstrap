@@ -71,11 +71,11 @@
 
         <div class="row">
             <div class="col-sm-24">
-                <h3>Classes and mixins</h3>
-                <p>By default, all the Bootstrap classes are all available. You may also use the MDL classes if you would like to more explicitly be connected to the MDL style guide. The MDL classes are type-*.</p>
+                <h2>Classes and mixins</h2>
+                <p>All the Bootstrap classes are all available. You may also use the MDL classes if you would like to more explicitly be connected to the MDL style guide. The MDL classes are type-*.</p>
             </div>
-            <div class="col-sm-12">
-                <h4>CSS classes</h4>
+            <div class="col-sm-24">
+                <h3>CSS classes</h3>
 
             {{#markdown}}
 ```xml
@@ -113,52 +113,51 @@
             {{/markdown}}
         </div>
 
-        <div class="col-sm-12">
-            <h4>Sass mixins</h4>
+        <div class="col-sm-24">
+            <h3>Sass mixins</h3>
+            <p>By default, line-height is not set by the mixins below. If you want to set the MDL line-height, you can pass the <code>set-line-height</code> argument. You can also pass the <code>responsive</code> argument to make the text responsive.</p>
 
             {{#markdown}}
 ```scss
 .selector {
-    @include type-headline();
+    @include type-headline([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-header();
+    @include type-header([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subheader();
+    @include type-subheader([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-title();
+    @include type-title([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subtitle();
+    @include type-subtitle([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subtitle-alt();
-}
-
-
-.selector {
-    @include type-base();
+    @include type-subtitle-alt([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-body();
+    @include type-base([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-caption();
+    @include type-body([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-caption-alt();
+    @include type-caption([set-line-height] [responsive]);
 }
 
+.selector {
+    @include type-caption-alt([set-line-height] [responsive]);
+}
 ```
             {{/markdown}}
             </div>
