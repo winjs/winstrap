@@ -1,0 +1,156 @@
+<section class="section" id="forms">
+  <header class="section-header">
+    <h1 class="section-title">
+      <a href="#forms">Forms</a>
+    </h1>
+    <p>Individual form controls automatically receive some global styling. By default, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to a recommended width of 296px by setting <code>max-width: 296px</code>. Wrap labels and controls in <code>.form-group</code> for optimum spacing.
+  </header>
+    <div class="row">
+
+        <!-- On light surface -->
+        <div class="col-xs-24 col-lg-8">
+            <h4>Default theme</h4>
+            <form style="padding: 1em;">
+                {{> form-elements }}
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+
+        <!-- On dark surface -->
+        <div class="col-xs-24 col-lg-8">
+            <h4>Alt theme</h4>
+            <form class="theme-alt color-fill-vivid-high" style="padding: 1em;">
+                {{> form-elements }}
+                <button type="submit" class="btn btn-default theme-alt">Submit</button>
+            </form>
+        </div>
+
+        <!-- On colored surface -->
+        <div class="col-xs-24 col-lg-8">
+            <h4>On color</h4>
+            <form class="theme-on-color color-fill-accent-vivid-high" style="padding: 1em;">
+                {{> form-elements }}
+                <button type="submit" class="btn btn-default theme-on-color">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+<form class="[theme-alt] [theme-on-color]">
+    {{> form-elements snippet=true }}
+
+    <button type="submit" class="btn btn-default [theme-alt] [theme-on-color]">Submit</button>
+</form>
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em;">
+        <div class="col-xs-24">
+            <form>
+                {{> form-elements-text }}
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Alt -->
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>Alt</h4>
+            <form class="theme-alt color-fill-vivid-high" style="padding: 12px;">
+                {{> form-elements-text }}
+            </form>
+        </div>
+
+        <!-- On Color -->
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On solid color</h4>
+            <form class="theme-on-color color-fill-accent-vivid-high" style="padding: 12px;">
+                {{> form-elements-text }}
+            </form>
+        </div>
+
+        <!-- On light image -->
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On light image</h4>
+            <form class="theme-on-img-light example-light-image-bg" style="padding: 12px;">
+                {{> form-elements-text }}
+            </form>
+        </div>
+
+        <!-- On dark image -->
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On dark image</h4>
+            <form class="theme-on-img-dark example-dark-image-bg" style="padding: 12px;">
+                {{> form-elements-text }}
+            </form>
+        </div>
+
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+<form class="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+    {{> form-elements-text }}
+</form>
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h2>Select</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>Default Select</h4>
+            <form style="padding:12px;">
+                {{> form-select }}
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>Alt</h4>
+            <form class="theme-alt color-fill-vivid-high" style="padding:12px;">
+                {{> form-select }}
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On solid color</h4>
+            <form class="theme-on-color color-fill-accent-vivid-high" style="padding:12px;">
+                {{> form-select }}
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On light image</h4>
+            <form class="theme-on-img-light example-light-image-bg" style="padding:12px;">
+                {{> form-select }}
+            </form>
+        </div>
+
+        <div class="col-xs-24 col-sm-12 col-md-6">
+            <h4>On dark image</h4>
+            <form class="theme-on-img-dark example-dark-image-bg" style="padding:12px;">
+                {{> form-select }}
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+<form class="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+    {{> form-select }}
+</form>
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

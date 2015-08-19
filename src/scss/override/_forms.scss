@@ -38,63 +38,6 @@ textarea.form-control {
 }
 
 //
-// Select
-//
-.combobox {
-    position: relative;
-
-    &:after {
-        font-family: "winjs-symbols";
-        content: map-get($icons, scrolldown);
-        position: absolute;
-        font-size: 1rem;
-        top: 13px;
-        right: 9px;
-    }
-}
-select {
-    @include type-body(no-responsive);
-
-    &.form-control {
-        width: 100%;
-        min-width: 67px;
-        max-width: 368px;
-        min-height: 36px;
-
-        // remove browser generated icon on 
-        // Chrome, Safari, Opera, and Firefox
-        padding: 4px 42px 4px 12px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -o-appearance: none;
-
-        //remove default browser icon for IE
-        &::-ms-expand {
-            display: none;
-        }
-
-        &[multiple] {
-            padding: 0;
-
-            option {
-                padding-left: 1em;
-                // top and bottom only works in chrome
-                padding-top: 11px;
-                padding-bottom: 11px;
-            }
-        }
-
-        option {
-            padding-left: 1em;
-        }
-    }
-}
-
-select[multiple].form-control {
-    border: none;
-}
-
-//
 // Checkbox / Radio
 //
 .form-group {
@@ -197,13 +140,77 @@ select[multiple].form-control {
     }
 }
 
+//
+// Select
+//
+.combobox {
+    position: relative;
+
+    &:after {
+        font-family: "winjs-symbols";
+        content: map-get($icons, scrolldown);
+        position: absolute;
+        font-size: 1rem;
+        top: 13px;
+        right: 9px;
+    }
+}
+select {
+    @include type-body(no-responsive);
+
+    &.form-control {
+        width: 100%;
+        min-width: 67px;
+        max-width: 368px;
+        min-height: 36px;
+
+        // remove browser generated icon on
+        // Chrome, Safari, Opera, and Firefox
+        padding: 4px 42px 4px 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+
+        //remove default browser icon for IE
+        &::-ms-expand {
+            display: none;
+        }
+
+        &[multiple] {
+            padding: 0;
+
+            option {
+                padding-left: 1em;
+                // top and bottom only works in chrome
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+        }
+
+        option {
+            padding-left: 1em;
+        }
+    }
+}
+
+select[multiple].form-control {
+    border: none;
+}
+
 
 /////////////
 /// COLOR ///
 /////////////
-// Color is abstracted for themes
 
-// Default: Primary (White background)
+// Default (on light surface)
+form {
+    &,
+    p,
+    label {
+        color: $color-type-primary;
+    }
+}
+
 input.form-control,
 textarea.form-control {
     @include box-shadow(none);
@@ -219,73 +226,34 @@ textarea.form-control {
     &::-moz-placeholder             {color: $color-type-secondary;}
 
     &:hover {
-        border-color: $color-vivid-high;
+        border-color: $color-vivid-mid;
     }
 
     &:focus {
         color: $color-type-primary;
         background-color: $color-vivid-high-alt;
-        border-color: $color-accent;
+        border-color: $color-accent-vivid-high;
         @include box-shadow(none);
     }
 
     &:disabled,
     &[disabled], {
-        border-color: $color-neutral-low;
         color: $color-type-disabled;
-        background-color: $color-dim-high-alt;
+        border-color: $color-neutral-low;
+        background-color: $color-neutral-low-alt;
     }
 }
 
 input.form-control::-ms-clear,
 input.form-control::-ms-reveal {
     color: $color-vivid-low;
+
     &:hover {
-        color: $color-accent;
+        color: $color-accent-vivid-high;
     }
     &:active {
         color: $color-white;
-        background-color: $color-accent;
-    }
-}
-
-// Combo Box Colors
-select {
-
-    &.form-control {
-        color: $color-type-primary;
-        border-color: $color-vivid-low;
-        background-color: $color-vivid-mid-alt;
-
-        &:hover {
-            background-color: $color-dim-mid;
-        }
-
-        &:active {
-            background-color: $color-neutral-low;
-        }
-
-        &:after {
-            color: $color-vivid-low;
-        }
-
-        &:focus {
-            color: $color-type-primary-alt;
-            background-color: $color-accent-vivid-high;
-            @include box-shadow(none);
-
-            option {
-                background-color: $color-bg-light-vivid-mid;
-                color: $color-type-primary;
-            }
-        }
-        option {
-
-            &:checked {
-                color: $color-type-primary-alt;
-                background-color: $color-accent-vivid-high;
-            }  
-        }
+        background-color: $color-accent-vivid-high;
     }
 }
 
@@ -326,13 +294,13 @@ select {
 
     & label {
         input:checked ~ span::before {
-            background-color: $color-accent;
-            border-color: $color-accent;
+            background-color: $color-accent-vivid-high;
+            border-color: $color-accent-vivid-high;
             color: $color-vivid-high-alt;
         }
 
         input:indeterminate ~ span::before {
-            border-color: $color-accent;
+            border-color: $color-accent-vivid-high;
             color: $color-vivid-mid;
         }
     }
@@ -353,7 +321,7 @@ select {
 
     & label {
         input:checked ~ span::before {
-            border-color: $color-accent;
+            border-color: $color-accent-vivid-high;
             color: $color-vivid-high;
         }
     }
@@ -361,7 +329,7 @@ select {
     &:hover {
         span::before,
         input:checked ~ span::before {
-            border-color: $color-accent;
+            border-color: $color-accent-vivid-high;
             color: $color-vivid-mid;
         }
 
@@ -371,13 +339,55 @@ select {
     }
 }
 
-// Alt (Black background)
+// Combo Box Colors
+select {
+
+    &.form-control {
+        color: $color-type-primary;
+        border-color: $color-vivid-low;
+        background-color: $color-vivid-mid-alt;
+
+        &:hover {
+            background-color: $color-dim-mid;
+        }
+
+        &:active {
+            background-color: $color-neutral-low;
+        }
+
+        &:after {
+            color: $color-vivid-low;
+        }
+
+        &:focus {
+            color: $color-type-primary-alt;
+            background-color: $color-accent-vivid-high;
+            @include box-shadow(none);
+
+            option {
+                background-color: $color-bg-light-vivid-mid;
+                color: $color-type-primary;
+            }
+        }
+        option {
+
+            &:checked {
+                color: $color-type-primary-alt;
+                background-color: $color-accent-vivid-high;
+            }
+        }
+    }
+}
+
+// Alt (on dark surface)
 // Currently Alt and on-img-dark are identical
 form.theme-alt,
 form .theme-alt,
 form.theme-on-img-dark,
 form .theme-on-img-dark {
 
+    &,
+    p,
     label {
         color: $color-type-primary-alt;
     }
@@ -405,7 +415,7 @@ form .theme-on-img-dark {
         &:focus {
             color: $color-type-primary;
             background-color: $color-vivid-high-alt;
-            border-color: $color-accent;
+            border-color: $color-accent-vivid-high;
             @include box-shadow(none);
         }
 
@@ -414,6 +424,83 @@ form .theme-on-img-dark {
             border-color: $color-neutral-low-alt;
             color: $color-type-disabled-alt;
             background-color: $color-neutral-low;
+        }
+    }
+
+    .form-group {
+        label.disabled,
+        .form-group-label.disabled {
+            color: $color-type-disabled-alt;
+        }
+    }
+
+    .checkbox,
+    .radio {
+
+        & label {
+            span::before {
+                border-color: $color-vivid-mid-alt;
+            }
+
+            input:disabled {
+                ~ span {
+                    color: $color-type-disabled-alt;
+                }
+
+                ~ span::before {
+                    border-color: $color-neutral-low-alt;
+                    color: $color-type-disabled-alt;
+                }
+            }
+        }
+    }
+
+    .checkbox {
+
+        & label {
+            input:checked ~ span::before {
+                background-color: $color-accent-vivid-high;
+                border-color: $color-accent-vivid-high;
+                color: $color-vivid-high-alt;
+            }
+
+            input:indeterminate ~ span::before {
+                border-color: $color-accent-vivid-high;
+                color: $color-vivid-mid-alt;
+            }
+        }
+
+        &:hover {
+            span::before,
+            input:checked ~ span::before {
+                border-color: $color-vivid-high-alt;
+            }
+
+            input:indeterminate ~ span::before {
+                color: $color-vivid-high-alt;
+            }
+        }
+    }
+
+    .radio {
+
+        & label {
+            input:checked ~ span::before {
+                border-color: $color-accent-vivid-high;
+                color: $color-vivid-high-alt;
+            }
+        }
+
+        &:hover {
+            span::before,
+            input:checked ~ span::before {
+                border-color: $color-accent-vivid-high;
+                color: $color-vivid-mid-alt;
+            }
+
+            input:disabled ~ span::before {
+                border-color: $color-neutral-low-alt;
+            }
         }
     }
 
@@ -437,7 +524,7 @@ form .theme-on-img-dark {
 
             &:active {
                 border-color: $color-vivid-high-alt;
-                background-color: $color-neutral-mid-alt;            
+                background-color: $color-neutral-mid-alt;
             }
 
             &:after {
@@ -458,7 +545,7 @@ form .theme-on-img-dark {
                 &:checked {
                     color: $color-type-primary-alt;
                     background-color: $color-accent-vivid-high;
-                }  
+                }
             }
 
             &[multiple] {
@@ -473,10 +560,12 @@ form .theme-on-img-dark {
     }
 }
 
-// On Solid Color
+// On colored surface
 form.theme-on-color,
 form .theme-on-color {
 
+    &,
+    p,
     label {
         color: $color-type-primary-alt;
     }
@@ -503,7 +592,7 @@ form .theme-on-color {
         &:focus {
             color: $color-type-primary;
             background-color: $color-vivid-high-alt;
-            border-color: rgba($color-accent, .6);
+            border-color: rgba($color-accent-vivid-high, .6);
             @include box-shadow(none);
         }
 
@@ -512,6 +601,83 @@ form .theme-on-color {
             border-color: $color-neutral-low-alt;
             color: $color-type-disabled-alt;
             background-color: $color-neutral-low-alt;
+        }
+    }
+
+    .form-group {
+        label.disabled,
+        .form-group-label.disabled {
+            color: $color-type-disabled-alt;
+        }
+    }
+
+    .checkbox,
+    .radio {
+
+        & label {
+            span::before {
+                border-color: $color-vivid-high-alt;
+            }
+
+            input:disabled {
+                ~ span {
+                    color: $color-type-disabled;
+                }
+
+                ~ span::before {
+                    border-color: $color-neutral-low;
+                    color: $color-type-disabled;
+                }
+            }
+        }
+    }
+
+    .checkbox {
+
+        & label {
+            input:checked ~ span::before {
+                background-color: $color-vivid-high-alt;
+                border-color: rgba($color-accent-vivid-high, .4);
+                color: $color-accent-vivid-high;
+            }
+
+            input:indeterminate ~ span::before {
+                border-color: $color-vivid-high-alt;
+                color: $color-type-primary-alt;
+            }
+        }
+
+        &:hover {
+            span::before,
+            input:checked ~ span::before {
+                border-color: $color-vivid-high-alt;
+            }
+
+            input:indeterminate ~ span::before {
+                color: $color-vivid-high-alt;
+            }
+        }
+    }
+
+    .radio {
+
+        & label {
+            input:checked ~ span::before {
+                border-color: $color-vivid-high-alt;
+                color: $color-type-primary-alt;
+            }
+        }
+
+        &:hover {
+            span::before,
+            input:checked ~ span::before {
+                border-color: $color-vivid-mid-alt;
+                color: $color-type-primary-alt;
+            }
+
+            input:disabled ~ span::before {
+                border-color: $color-neutral-low;
+            }
         }
     }
 
@@ -530,7 +696,7 @@ form .theme-on-color {
 
             &:active {
                 border-color: $color-vivid-high-alt;
-                background-color: $color-vivid-high-alt;            
+                background-color: $color-vivid-high-alt;
             }
 
             &:after {
@@ -551,7 +717,7 @@ form .theme-on-color {
                 &:checked {
                     color: $color-vivid-high-alt;
                     background-color: $color-vivid-high;
-                }  
+                }
             }
 
             &[multiple] {
@@ -566,50 +732,9 @@ form .theme-on-color {
     }
 }
 
-// On light image background
+// On light image
 form.theme-on-img-light,
 form .theme-on-img-light {
-
-    label {
-        color: $color-type-primary;
-    }
-
-    label.disabled,
-    .form-group-label.disabled {
-        color: $color-type-disabled;
-    }
-
-    input.form-control,
-    textarea.form-control {
-        color: $color-type-primary;
-        background-color: $color-vivid-mid-alt;
-        border-color: $color-vivid-low;
-
-        // Hint text color
-        // Single colon on -ms not a typo
-        &:-ms-input-placeholder         {color: $color-type-secondary;}
-        &::-webkit-input-placeholder    {color: $color-type-secondary;}
-        &:-moz-placeholder              {color: $color-type-secondary;}
-        &::-moz-placeholder             {color: $color-type-secondary;}
-
-        &:hover {
-            border-color: $color-vivid-high;
-        }
-
-        &:focus {
-            color: $color-type-primary;
-            background-color: $color-vivid-high-alt;
-            border-color: $color-accent;
-            @include box-shadow(none);
-        }
-
-        &:disabled,
-        &[disabled], {
-            border-color: $color-neutral-low;
-            color: $color-type-disabled;
-            background-color: $color-dim-mid-alt;
-        }
-    }
 
     // Combo Box Colors
     select {
@@ -646,9 +771,8 @@ form .theme-on-img-light {
                 &:checked {
                     color: $color-type-primary-alt;
                     background-color: $color-accent-vivid-high;
-                }  
+                }
             }
         }
     }
-
 }

@@ -81,6 +81,13 @@
         });
     })();
 
+
+    // Forms
+    (function () {
+        $(".checkbox-indeterminate").prop("indeterminate", true);
+    })();
+
+
     // Star rating
     (function () {
         $('.rating-btn').on('mouseenter', function () {
