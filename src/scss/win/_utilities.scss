@@ -1,8 +1,12 @@
 .no-outline {
     &:focus,
     &:focus:active,
-    &:active {
-        outline: none !important;
+    &:active,
+    &.focus,
+    &.focus.active,
+    &.active,
+    &.active:focus {
+        outline: none;
     }
 }
 
