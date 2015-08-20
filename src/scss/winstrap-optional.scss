@@ -1,0 +1,69 @@
+﻿@charset "UTF-8";
+
+// New mixins and mixins that completely replace
+// bootstrap mixins
+@import "win/mixins/colors";
+@import "win/mixins/animations";
+@import "win/mixins/triangle";
+@import "win/mixins/spacer";
+@import "override/mixins/tab-focus";
+
+// Settings
+@import "win/resources";
+@import "win/colors";
+@import "win/variables";
+@import "override/variables";
+
+// Base
+@import "win/grid";
+
+//optional bootstrap configuration without grid as example.
+@import "override/bootstrap-optional";
+@import "win/icons";
+@import "win/utilities";
+@import "win/type";
+
+// Mixins that override bootstrap mixins
+@import "override/mixins/buttons";
+
+// Overridden components
+@import "override/grid";
+@import "override/scaffolding";
+@import "override/labels";
+@import "override/navs";
+@import "override/breadcrumb";
+@import "override/alerts";
+@import "override/navbar";
+@import "override/modal";
+@import "override/buttons";
+@import "override/dropdown";
+@import "override/tooltip";
+@import "override/popover";
+@import "override/progress-bar";
+@import "override/panels";
+@import "override/forms";
+@import "override/pagination";
+@import "override/tables";
+@import "override/jumbotron";
+
+// New components
+@import "win/scaffolding";
+@import "win/buttons";
+@import "win/rating";
+@import "win/media";
+@import "win/section";
+@import "win/lists";
+@import "win/back-to-top";
+@import "win/progress-ring";
+@import "win/progress-bar";
+@import "win/panels";
+@import "win/alerts";
+@import "win/pager";
+@import "win/pagination";
+
+// Layout
+@import "win/main";
+@import "override/page";
+
+// Pages
+@import "win/doc";
