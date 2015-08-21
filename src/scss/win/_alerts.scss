@@ -15,7 +15,7 @@
         border-left: none;
 
         p {
-            @include type-caption(no-responsive);
+            @include type-caption();
             margin-bottom: 0;
             padding-top: 4px;
         }
@@ -27,5 +27,5 @@
 
     // ensure background is not transparent
     background-color: $color-white;
-    
+
 }

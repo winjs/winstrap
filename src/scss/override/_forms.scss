@@ -156,7 +156,7 @@ textarea.form-control {
     }
 }
 select {
-    @include type-body(no-responsive);
+    @include type-body();
 
     &.form-control {
         width: 100%;
