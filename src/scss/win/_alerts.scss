@@ -8,7 +8,7 @@
     }
 
     .alert {
-        margin: 0;
+        margin: 0 0 1px 0;
         padding-right: ($grid-gutter-width / 2); // space for the close icon
         border-top: none;
         border-right: none;
@@ -27,5 +27,5 @@
 
     // ensure background is not transparent
     background-color: $color-white;
-    
+
 }
