@@ -1,0 +1,74 @@
+﻿@charset "UTF-8";
+
+// New mixins and mixins that completely replace
+// bootstrap mixins
+@import "win/mixins/colors";
+@import "win/mixins/animations";
+@import "win/mixins/triangle";
+@import "win/mixins/spacer";
+@import "override/mixins/tab-focus";
+
+// Settings
+@import "win/resources";
+@import "win/colors";
+@import "win/variables";
+@import "override/variables";
+
+// Base
+@import "win/grid";
+
+//optional bootstrap configuration without grid as example.
+/* when a project includes winstrap, it might want to pick and choose what parts of bootstrap 
+to include instead of the default set of bootstrap components winstrap selects automatically. 
+This demonstrates how to do this for a project that happens to override the bootstrap grid in 
+order to substitute it with another grid. instead of @import "winstrap/src/scss/winstrap", use
+@import "winstrap/src/scss/winstrap-optional" in your project's scss */
+@import "override/bootstrap-optional";
+@import "win/icons";
+@import "win/utilities";
+@import "win/type";
+
+// Mixins that override bootstrap mixins
+@import "override/mixins/buttons";
+
+// Overridden components
+@import "override/grid";
+@import "override/scaffolding";
+@import "override/labels";
+@import "override/navs";
+@import "override/breadcrumb";
+@import "override/alerts";
+@import "override/navbar";
+@import "override/modal";
+@import "override/buttons";
+@import "override/dropdown";
+@import "override/tooltip";
+@import "override/popover";
+@import "override/progress-bar";
+@import "override/panels";
+@import "override/forms";
+@import "override/pagination";
+@import "override/tables";
+@import "override/jumbotron";
+
+// New components
+@import "win/scaffolding";
+@import "win/buttons";
+@import "win/rating";
+@import "win/media";
+@import "win/section";
+@import "win/lists";
+@import "win/back-to-top";
+@import "win/progress-ring";
+@import "win/progress-bar";
+@import "win/panels";
+@import "win/alerts";
+@import "win/pager";
+@import "win/pagination";
+
+// Layout
+@import "win/main";
+@import "override/page";
+
+// Pages
+@import "win/doc";
