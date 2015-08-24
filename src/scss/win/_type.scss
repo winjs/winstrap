@@ -80,13 +80,16 @@
         @if (#{$set-line-height} == "true") {
 
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+            padding:            (map-deep-get($fonts, $font, "padding-md"));
 
             @media (max-width: $screen-sm-max) {
                 line-height:    (map-deep-get($fonts, $font, "line-height-sm") / map-deep-get($fonts, $font, "size-sm"));
+                padding:        (map-deep-get($fonts, $font, "padding-sm"));
             }
 
             @media (min-width: $screen-xxl-min) {
                 line-height:    (map-deep-get($fonts, $font, "line-height-xxl") / map-deep-get($fonts, $font, "size-xxl"));
+                padding:        (map-deep-get($fonts, $font, "padding-xxl"));
             }
         }
     } @else {
@@ -95,6 +98,7 @@
 
             // set-type(set-line-height)
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+            padding:            (map-deep-get($fonts, $font, "padding-md"));
         }
     }
 }
@@ -143,33 +147,33 @@
 }
 
 // Apply mixins to typography classes
-.type-headline, .text-headline {
-    @include type-headline();
+h1, .h1, .type-headline, .text-headline {
+    @include type-headline(responsive, set-line-height);
 }
-h1, .h1, .type-header, .text-header {
-    @include type-header();
+h2, .h2, .type-header, .text-header {
+    @include type-header(responsive, set-line-height);
 }
-h2, .h2, .type-subheader, .text-subheader {
-    @include type-subheader();
+h3, .h3, .type-subheader, .text-subheader {
+    @include type-subheader(responsive, set-line-height);
 }
-h3, .h3, .type-title, .text-title {
-    @include type-title();
+h4, .h4, .type-title, .text-title {
+    @include type-title(responsive, set-line-height);
 }
-.type-subtitle, .text-subtitle {
-    @include type-subtitle();
+h5, .h5, .type-subtitle, .text-subtitle {
+    @include type-subtitle(responsive, set-line-height);
 }
-h4, .h4, .type-subtitle-alt, .text-subtitle-alt {
-    @include type-subtitle-alt();
+.type-subtitle-alt, .text-subtitle-alt {
+    @include type-subtitle-alt(responsive, set-line-height);
 }
-h5, .h5, .type-base, .text-base {
-    @include type-base();
+.type-base, .text-base {
+    @include type-base(responsive, set-line-height);
 }
 p, .type-body, .text-body {
-    @include type-body();
+    @include type-body(responsive, set-line-height);
 }
 h6, .h6, .type-caption, .text-caption {
-    @include type-caption();
+    @include type-caption(responsive, set-line-height);
 }
 .type-caption-alt, .text-caption-alt {
-    @include type-caption-alt();
+    @include type-caption-alt(responsive, set-line-height);
 }

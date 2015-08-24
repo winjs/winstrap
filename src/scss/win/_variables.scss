@@ -16,14 +16,17 @@ $fonts: (
         size-md:                62px,
         size-xxl:               80px,
         line-height-sm:         56px,
-        line-height-md:         80px,
+        line-height-md:         72px,
         line-height-xxl:        88px,
         weight-sm:              200,
         weight-md:              200,
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        padding-sm:             1px 0 3px 0,
+        padding-md:             2px 0 6px 0,
+        padding-xxl:            3px 0 5px 0
     ),
     header: (
         size-sm:                34px,
@@ -37,13 +40,16 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        padding-sm:             2px 0 2px 0,
+        padding-md:             1px 0 3px 0,
+        padding-xxl:            0 0 4px 0
     ),
     subheader: (
         size-sm:                26px,
         size-md:                34px,
         size-xxl:               46px,
-        line-height-sm:         34px,
+        line-height-sm:         32px,
         line-height-md:         40px,
         line-height-xxl:        56px,
         weight-sm:              200,
@@ -51,7 +57,10 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        padding-sm:             1px 0 3px 0,
+        padding-md:             2px 0 2px 0,
+        padding-xxl:            0 0 4px 0
     ),
     title: (
         size-sm:                20px,
@@ -65,13 +74,16 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        padding-sm:             0 0 4px 0,
+        padding-md:             0 0 4px 0,
+        padding-xxl:            2px 0 2px 0
     ),
     subtitle: (
         size-sm:                18px,
         size-md:                20px,
         size-xxl:               24px,
-        line-height-sm:         22px,
+        line-height-sm:         24px,
         line-height-md:         24px,
         line-height-xxl:        28px,
         weight-sm:              300,
@@ -79,55 +91,67 @@ $fonts: (
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight
+        family-xxl:             $font-semilight,
+        padding-sm:             1px 0 3px 0,
+        padding-md:             0 0 4px 0,
+        padding-xxl:            0 0 4px 0
     ),
     subtitle-alt: (
         size-sm:                16px,
         size-md:                18px,
         size-xxl:               20px,
-        line-height-sm:         21px,
-        line-height-md:         22px,
+        line-height-sm:         20px,
+        line-height-md:         24px,
         line-height-xxl:        24px,
         weight-sm:              300,
         weight-md:              300,
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight
+        family-xxl:             $font-semilight,
+        padding-sm:             3px 0 1px 0,
+        padding-md:             1px 0 3px 0,
+        padding-xxl:            4px 0 4px 0
     ),
     base: (
         size-sm:                15px,
         size-md:                15px,
         size-xxl:               18px,
-        line-height-sm:         18px,
+        line-height-sm:         20px,
         line-height-md:         20px,
-        line-height-xxl:        22px,
+        line-height-xxl:        24px,
         weight-sm:              500,
         weight-md:              500,
         weight-xxl:             500,
         family-sm:              $font-semibold,
         family-md:              $font-semibold,
-        family-xxl:             $font-semibold
+        family-xxl:             $font-semibold,
+        padding-sm:             0,
+        padding-md:             0,
+        padding-xxl:            1px 0 3px 0
     ),
     body: (
         size-sm:                15px,
         size-md:                15px,
         size-xxl:               18px,
-        line-height-sm:         18px,
+        line-height-sm:         20px,
         line-height-md:         20px,
-        line-height-xxl:        22px,
+        line-height-xxl:        24px,
         weight-sm:              400,
         weight-md:              400,
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        padding-sm:             0,
+        padding-md:             0,
+        padding-xxl:            1px 0 3px 0
     ),
     caption: (
         size-sm:                12px,
         size-md:                13px,
         size-xxl:               15px,
-        line-height-sm:         15px,
+        line-height-sm:         16px,
         line-height-md:         16px,
         line-height-xxl:        20px,
         weight-sm:              400,
@@ -135,21 +159,27 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        padding-sm:             3px 0 1px 0,
+        padding-md:             3px 0 1px 0,
+        padding-xxl:            4px 0 0 0
     ),
     caption-alt: (
         size-sm:                10px,
         size-md:                11px,
         size-xxl:               13px,
-        line-height-sm:         13px,
-        line-height-md:         14px,
+        line-height-sm:         12px,
+        line-height-md:         16px,
         line-height-xxl:        16px,
         weight-sm:              400,
         weight-md:              400,
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        padding-sm:             3px 0 1px 0,
+        padding-md:             2px 0 2px 0,
+        padding-xxl:            3px 0 5px 0
     ),
 
 );
@@ -162,5 +192,6 @@ $spacer-sizes: (
     sm:     36px,
     xs:     24px,
     xxs:    12px,
+    xxxs:   8px,
     n:      0px
 );
