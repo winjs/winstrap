@@ -162,7 +162,7 @@ h4, .h4, .type-title, .text-title {
 h5, .h5, .type-subtitle, .text-subtitle {
     @include type-subtitle(responsive, set-line-height);
 }
-.type-subtitle-alt, .text-subtitle-alt {
+h6, .h6, .type-subtitle-alt, .text-subtitle-alt {
     @include type-subtitle-alt(responsive, set-line-height);
 }
 .type-base, .text-base {
@@ -171,7 +171,7 @@ h5, .h5, .type-subtitle, .text-subtitle {
 p, .type-body, .text-body {
     @include type-body(responsive, set-line-height);
 }
-h6, .h6, .type-caption, .text-caption {
+.type-caption, .text-caption {
     @include type-caption(responsive, set-line-height);
 }
 .type-caption-alt, .text-caption-alt {
