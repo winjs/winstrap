@@ -1,14 +1,14 @@
 ﻿// Add color transitions to buttons
 
 .btn-group {
-    margin: spacer(xxs) 0 0;
+    margin: spacing(xxs) 0 0;
 
     @media (min-width: $screen-md-min) {
-        margin: spacer(xs) 0 0;
+        margin: spacing(xs) 0 0;
     }
 
     @media (min-width: $screen-xl-min) {
-        margin: spacer(xs) 0 0;
+        margin: spacing(xs) 0 0;
     }
 }
 
@@ -342,7 +342,7 @@
       color: $color-type-primary;
       background-color: $color-vivid-high-alt;
       border-color: $color-neutral-high;
-      margin: 0 spacer(xxxs) spacer(xxxs) 0;
+      margin: 0 spacing(xxxs) spacing(xxxs) 0;
 
       &:hover {
         color: $color-type-primary;

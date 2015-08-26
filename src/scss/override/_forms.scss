@@ -7,14 +7,14 @@ textarea.form-control {
     border-style: solid;
     border-width: 1px;
     border-radius: $border-radius-base;
-    margin-top: spacer(xxs, -10);
-    margin-bottom: spacer(xs, -4);
+    margin-top: spacing(xxs, -10);
+    margin-bottom: spacing(xs, -4);
     max-width: 296px;
     min-width: 88px;
     min-height: 36px;
     background-clip: border-box;
     box-sizing: border-box;
-    padding-left: spacer(xxs, -1);
+    padding-left: spacing(xxs, -1);
     vertical-align: top;
     outline: 0;
 }
@@ -43,12 +43,12 @@ textarea.form-control {
 .form-group {
     .checkbox:first-of-type,
     .radio:first-of-type {
-        margin-top: spacer(xs, -2)
+        margin-top: spacing(xs, -2)
     }
 
     .checkbox:last-of-type,
     .radio:last-of-type {
-        margin-bottom: spacer(xs, 3);
+        margin-bottom: spacing(xs, 3);
     }
 
     label,
@@ -60,7 +60,7 @@ textarea.form-control {
         vertical-align: top;
     }
 
-    margin-bottom: spacer(xs, -2);
+    margin-bottom: spacing(xs, -2);
 
 }
 
@@ -72,7 +72,7 @@ textarea.form-control {
 
 .checkbox,
 .radio {
-    margin: spacer(xs, -2) 0;
+    margin: spacing(xs, -2) 0;
 
     & input[type=checkbox],
     & input[type=radio] {

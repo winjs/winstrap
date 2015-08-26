@@ -1,27 +1,27 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    margin-top: spacer(sm);
+    margin-top: spacing(sm);
     margin-bottom: 0;
 
     // Set smaller margin-top to <h*> that is directly after another <h*>
     @for $i from 1 through 6 {
         & + h#{$i},
         & + .h#{$i} {
-            margin-top: spacer(xxxs);
+            margin-top: spacing(xxxs);
         }
     }
 }
 
 p {
-    margin: spacer(xxs) 0 0;
-    padding: 0 spacer(xs) 0 0;
+    margin: spacing(xxs) 0 0;
+    padding: 0 spacing(xs) 0 0;
 
     @media (min-width: $screen-md-min) {
-        margin: spacer(xs) 0 0;
-        padding: 0 spacer(xs) 0 0;
+        margin: spacing(xs) 0 0;
+        padding: 0 spacing(xs) 0 0;
     }
 
     @media (min-width: $screen-xl-min) {
-        margin: spacer(xs) 0 0;
-        padding: 0 spacer(xxs) 0 0;
+        margin: spacing(xs) 0 0;
+        padding: 0 spacing(xxs) 0 0;
     }
 }

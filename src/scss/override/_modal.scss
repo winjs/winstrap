@@ -1,6 +1,6 @@
 .modal-content {
     margin-top: 20px;
-    padding: spacer(xs, -4) spacer(xs) spacer(xs, -4);
+    padding: spacing(xs, -4) spacing(xs) spacing(xs, -4);
     box-shadow: none;
 
     .modal-header {
@@ -17,17 +17,17 @@
 
     .modal-body {
         padding: 0;
-        margin: spacer(xxxs) 0 0;
+        margin: spacing(xxxs) 0 0;
         @include type-body();
     }
 
     .modal-footer {
         padding: 0;
-        margin: spacer(sm, -8) 0 0;
+        margin: spacing(sm, -8) 0 0;
 
         .btn {
             width: 100%;
-            margin: spacer(xxs, -8) 0 0 -5px;
+            margin: spacing(xxs, -8) 0 0 -5px;
         }
 
         @media (min-width: $screen-sm-min) {

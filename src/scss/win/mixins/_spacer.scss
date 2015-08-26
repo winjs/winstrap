@@ -1,3 +1,39 @@
-@function spacer($size, $shim: 0) {
+// Spacer function
+@function spacing($size, $shim: 0) {
     @return (map-get($spacer-sizes, $size) + $shim);
+}
+
+// Spacer mixin
+@mixin spacer($prop: margin, $direction: vertical, $size: xxs) {
+
+    @if $direction == vertical {
+        #{$prop}-top:           spacing($size);
+        #{$prop}-bottom:        spacing($size);
+
+    } @else if $direction == horizontal {
+        #{$prop}-left:          spacing($size);
+        #{$prop}-right:         spacing($size);
+
+    } @else {
+        #{$prop}-#{$direction}: spacing($size);
+    }
+}
+
+// Spacer classes
+@each $size, $value in $spacer-sizes {
+    // Margins
+    .m-v-#{$size} { @include spacer(margin, vertical, $size); }
+    .m-h-#{$size} { @include spacer(margin, horizontal, $size); }
+    .m-t-#{$size} { @include spacer(margin, top, $size); }
+    .m-r-#{$size} { @include spacer(margin, right, $size); }
+    .m-b-#{$size} { @include spacer(margin, bottom, $size); }
+    .m-l-#{$size} { @include spacer(margin, left, $size); }
+
+    // Paddings
+    .p-v-#{$size} { @include spacer(padding, vertical, $size); }
+    .p-h-#{$size} { @include spacer(padding, horizontal, $size); }
+    .p-t-#{$size} { @include spacer(padding, top, $size); }
+    .p-r-#{$size} { @include spacer(padding, right, $size); }
+    .p-b-#{$size} { @include spacer(padding, bottom, $size); }
+    .p-l-#{$size} { @include spacer(padding, left, $size); }
 }
