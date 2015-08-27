@@ -13,7 +13,7 @@
 }
 
 .btn {
-    @include type-body(no-line-height, no-responsive);
+    @include type-body();
     min-width: 120px;
     line-height: 1;
     border-style: solid;
@@ -225,7 +225,7 @@
 //Override Bootstrap link buttons
 // Make a button look and behave like a link
 .btn-link {
-    @include type-body(no-line-height, no-responsive);
+    @include type-body();
     min-width: 120px;
     line-height: 1;
     font-weight: normal;
@@ -342,7 +342,7 @@
       color: $color-type-primary;
       background-color: $color-vivid-high-alt;
       border-color: $color-neutral-high;
-      margin: 0 spacer(xxs, -4) spacer(xxs, -4) 0;
+      margin: 0 spacer(xxxs) spacer(xxxs) 0;
 
       &:hover {
         color: $color-type-primary;

@@ -42,7 +42,7 @@ a.link-on-dark {
         top: 1px;
         left: 54px;
         line-height: 1;
-        @include type-body(no-responsive, no-line-height);
+        @include type-body();
     }
 
     .stateLabel-on {

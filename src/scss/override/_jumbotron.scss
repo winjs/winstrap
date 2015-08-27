@@ -99,16 +99,16 @@
 			}
 		}
 	}
-	
+
 	.jumbotron-header,
 	h1 {
 		margin-bottom: spacer("xxs", -6px);
-		@include type-title(no-responsive);
+		@include type-title();
 	}
 	.jumbotron-subheader,
 	p {
 		margin-top: spacer("n");
-		@include type-body(no-responsive);
+		@include type-body();
 	}
 	.jumbotron-background,
 	.container-wrap {
@@ -123,7 +123,7 @@
 			max-width: 100%;
 		}
 	}
-	
+
 	&.highlight-bar {
 
 		.jumbotron-content {
@@ -159,17 +159,17 @@
 		}
 	}
 
-	// set global break point styles	
+	// set global break point styles
 	@media (min-width: $screen-sm) {
 		.jumbotron-header,
 		h1 {
 			margin-bottom: spacer("xxs", -6px);
-			@include type-title(no-responsive);
+			@include type-title();
 		}
 		.jumbotron-subheader,
 		p {
 			margin-top: spacer("n");
-			@include type-body(no-responsive);
+			@include type-body();
 		}
 		> .container-wrap {
 			position: absolute;
@@ -192,11 +192,11 @@
 	@media (min-width: $screen-md) {
 		.jumbotron-header,
 		h1 {
-			@include type-subheader(no-responsive);
+			@include type-subheader();
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-subtitle(no-responsive);
+			@include type-subtitle();
 		}
 		&.highlight-bar {
 			.img-container {
@@ -208,22 +208,22 @@
 	@media (min-width: $screen-lg) {
 		.jumbotron-header,
 		h1 {
-			@include type-header(no-responsive);
+			@include type-header();
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-title(no-responsive);
+			@include type-title();
 		}
 		@include set-bottom-jumbotron-content(30px);
 	}
 	@media (min-width: $screen-xl) {
 		.jumbotron-header,
 		h1 {
-			@include type-headline(no-responsive);
+			@include type-headline();
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-title(no-responsive);
+			@include type-title();
 		}
 		@include set-bottom-jumbotron-content(60px);
 	}
@@ -247,7 +247,7 @@
 
 				&.btn-primary{
 					@extend .btn-primary.theme-on-img-dark;
-				} 
+				}
 			}
 		}
 		&.theme-on-img-light {

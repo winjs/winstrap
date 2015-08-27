@@ -15,13 +15,13 @@ $alert-icon-base: 48px;
     }
 
     .alert-title {
-        @include type-subtitle-alt(no-responsive);
+        @include type-subtitle-alt(set-line-height);
         margin-bottom: spacer(xxs, -7);
         margin-top: spacer(xxs, -11);
     }
 
     p {
-        @include type-caption(no-responsive);
+        @include type-caption(set-line-height);
         margin: 0;
         padding: spacer(xxs, -8) 0 0;
     }

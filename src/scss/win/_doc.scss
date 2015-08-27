@@ -22,7 +22,7 @@ pre {
     border: none;
     border-left: 8px solid $pre-border-color;
     margin: spacer(xxs) 0 0;
-    @include type-caption(no-responsive);
+    @include type-caption();
 
     @media (min-width: $screen-md-min) {
         margin: spacer(xs) 0 0;

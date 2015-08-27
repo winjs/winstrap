@@ -2,7 +2,7 @@
     > a, > span {
         min-width: 34px;
         margin: spacer(xxs, -7);
-        padding: spacer(xxs, -8) spacer(xxs, -4) spacer(xxs, -7);
+        padding: spacer(xxs, -8) spacer(xxxs) spacer(xxs, -7);
         text-align: center;
         &:focus {
             background-color: rgba($color-black, .3);

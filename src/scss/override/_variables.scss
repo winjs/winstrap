@@ -311,12 +311,17 @@ $screen-xl:                  1400px !default;
 $screen-xl-min:              $screen-xl !default;
 $screen-xl-desktop:          $screen-xl-min !default;
 
+// Extra extra large screen / wide desktop
+$screen-xxl:                  2048px !default;
+$screen-xxl-min:              $screen-xxl !default;
+$screen-xxl-desktop:          $screen-xxl-min !default;
+
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 $screen-lg-max:              ($screen-xl-min - 1) !default;
-$screen-xl-max:              1778px !default;
+$screen-xl-max:              ($screen-xxl-min - 1) !default;
 
 
 //== Grid system

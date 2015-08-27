@@ -6,14 +6,14 @@
 .table {
 
   tr th {
-    @include type-body(no-responsive);
+    @include type-body();
     color: $color-type-secondary;
   }
 
   thead {
 
     tr th {
-      @include type-caption-alt(no-responsive);
+      @include type-caption-alt();
       color: $color-type-secondary;
       border-bottom: 1px solid $color-neutral-low;
       padding-bottom: spacer(xxs, +1);
