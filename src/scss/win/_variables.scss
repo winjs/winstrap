@@ -23,10 +23,7 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light,
-        padding-sm:             1px 0 3px 0,
-        padding-md:             2px 0 6px 0,
-        padding-xxl:            3px 0 5px 0
+        family-xxl:             $font-light
     ),
     header: (
         size-sm:                34px,
@@ -40,10 +37,7 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light,
-        padding-sm:             2px 0 2px 0,
-        padding-md:             1px 0 3px 0,
-        padding-xxl:            0 0 4px 0
+        family-xxl:             $font-light
     ),
     subheader: (
         size-sm:                26px,
@@ -57,10 +51,7 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light,
-        padding-sm:             1px 0 3px 0,
-        padding-md:             2px 0 2px 0,
-        padding-xxl:            0 0 4px 0
+        family-xxl:             $font-light
     ),
     title: (
         size-sm:                20px,
@@ -74,10 +65,7 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-light,
-        padding-sm:             0 0 4px 0,
-        padding-md:             0 0 4px 0,
-        padding-xxl:            2px 0 2px 0
+        family-xxl:             $font-light
     ),
     subtitle: (
         size-sm:                18px,
@@ -91,10 +79,7 @@ $fonts: (
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight,
-        padding-sm:             1px 0 3px 0,
-        padding-md:             0 0 4px 0,
-        padding-xxl:            0 0 4px 0
+        family-xxl:             $font-semilight
     ),
     subtitle-alt: (
         size-sm:                16px,
@@ -108,10 +93,7 @@ $fonts: (
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight,
-        padding-sm:             3px 0 1px 0,
-        padding-md:             1px 0 3px 0,
-        padding-xxl:            4px 0 4px 0
+        family-xxl:             $font-semilight
     ),
     base: (
         size-sm:                15px,
@@ -125,10 +107,7 @@ $fonts: (
         weight-xxl:             500,
         family-sm:              $font-semibold,
         family-md:              $font-semibold,
-        family-xxl:             $font-semibold,
-        padding-sm:             0,
-        padding-md:             0,
-        padding-xxl:            1px 0 3px 0
+        family-xxl:             $font-semibold
     ),
     body: (
         size-sm:                15px,
@@ -142,10 +121,7 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal,
-        padding-sm:             0,
-        padding-md:             0,
-        padding-xxl:            1px 0 3px 0
+        family-xxl:             $font-normal
     ),
     caption: (
         size-sm:                12px,
@@ -159,10 +135,7 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal,
-        padding-sm:             3px 0 1px 0,
-        padding-md:             3px 0 1px 0,
-        padding-xxl:            4px 0 0 0
+        family-xxl:             $font-normal
     ),
     caption-alt: (
         size-sm:                10px,
@@ -176,10 +149,7 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal,
-        padding-sm:             3px 0 1px 0,
-        padding-md:             2px 0 2px 0,
-        padding-xxl:            3px 0 5px 0
+        family-xxl:             $font-normal
     ),
 
 );
