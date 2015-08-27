@@ -80,16 +80,13 @@
         @if (#{$set-line-height} == "true") {
 
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
-            padding:            (map-deep-get($fonts, $font, "padding-md"));
 
             @media (max-width: $screen-sm-max) {
                 line-height:    (map-deep-get($fonts, $font, "line-height-sm") / map-deep-get($fonts, $font, "size-sm"));
-                padding:        (map-deep-get($fonts, $font, "padding-sm"));
             }
 
             @media (min-width: $screen-xxl-min) {
                 line-height:    (map-deep-get($fonts, $font, "line-height-xxl") / map-deep-get($fonts, $font, "size-xxl"));
-                padding:        (map-deep-get($fonts, $font, "padding-xxl"));
             }
         }
     } @else {
@@ -98,7 +95,6 @@
 
             // set-type(set-line-height)
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
-            padding:            (map-deep-get($fonts, $font, "padding-md"));
         }
     }
 }
