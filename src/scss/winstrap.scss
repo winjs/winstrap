@@ -1,5 +1,11 @@
 ﻿@charset "UTF-8";
 
+// Settings
+@import "win/resources";
+@import "win/colors";
+@import "win/variables";
+@import "override/variables";
+
 // New mixins and mixins that completely replace
 // bootstrap mixins
 @import "win/mixins/colors";
@@ -7,12 +13,6 @@
 @import "win/mixins/triangle";
 @import "win/mixins/spacer";
 @import "override/mixins/tab-focus";
-
-// Settings
-@import "win/resources";
-@import "win/colors";
-@import "win/variables";
-@import "override/variables";
 
 // Base
 @import "win/grid";

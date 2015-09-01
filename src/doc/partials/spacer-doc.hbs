@@ -1,0 +1,193 @@
+<section class="section" id="spacers">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
+            <a href="#spacers">Spacers</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <p>By default, all controls and HTML elements have responsive top margins. If you need to add or modify the spacing between elements, use the following utility classes, mixin, or function. We recommend you don't add bottom margins or padding to an element. Instead, add a top margin or padding to the element below it.</p>
+        </div>
+
+        <div class="col-xs-24">
+            <h3>Spacer classes</h3>
+            {{#markdown}}
+```xml
+<element class="property-direction-size"></element>
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-xs-24">
+            <p>A spacer class must be constructed using the following available arguments:</p>
+
+            <div class="col-xs-12">
+                <p>Properties</p>
+                <ul>
+                    <li><code>m</code> margin</li>
+                    <li><code>p</code> padding</li>
+                </ul>
+
+                <p>Directions</p>
+                <ul>
+                    <li><code>v</code> vertical: top and bottom</li>
+                    <li><code>h</code> horizontal: left and right</li>
+                    <li><code>t</code> top</li>
+                    <li><code>r</code> right</li>
+                    <li><code>b</code> bottom</li>
+                    <li><code>l</code> left</li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12">
+                <p>Sizes</p>
+                {{> spacer-sizes showPixelValues=true }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>Examples</h4>
+        </div>
+
+        <div class="col-md-12">
+            <p>Add medium size right margin:</p>
+            {{#markdown}}
+```xml
+<element class="m-r-md"></element>
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-12">
+            <p>Remove top padding:</p>
+            {{#markdown}}
+```xml
+<element class="p-t-n"></element>
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h3>Sass mixin</h3>
+            <p>This mixin is used to generate the spacer classes above. You can use it to set margins and padding in Sass.</p>
+            {{#markdown}}
+```scss
+.selector {
+    @include spacer( property, direction, size );
+}
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <p>A mixin class must be constructed using the following available arguments:</p>
+
+            <div class="col-xs-12">
+                <p>Properties</p>
+                <ul>
+                    <li><code>margin</code></li>
+                    <li><code>padding</code></li>
+                </ul>
+
+                <p>Directions</p>
+                <ul>
+                    <li><code>vertical</code></li>
+                    <li><code>horizontal</code></li>
+                    <li><code>top</code></li>
+                    <li><code>right</code></li>
+                    <li><code>bottom</code></li>
+                    <li><code>left</code></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12">
+                <p>Sizes</p>
+                {{> spacer-sizes }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>Examples</h4>
+        </div>
+
+        <div class="col-md-12">
+            <p>Add a medium size top margin:</p>
+            {{#markdown}}
+```scss
+.selector {
+    @include spacer( margin, top, md );
+}
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-12">
+            <p>Add extra small top and bottom padding:</p>
+            {{#markdown}}
+```scss
+.selector {
+    @include spacer( padding, vertical, xs );
+}
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h3>Sass function</h3>
+            <p>This function is used by the above mixin to get the correct spacing value for each size. The <code>size</code> argument is required. <code>shim</code> is optional.</p>
+            {{#markdown}}
+```scss
+.selector {
+    property: spacing( size, shim );
+}
+```
+            {{/markdown}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <p><code>size</code> must be one of the following:</p>
+            {{> spacer-sizes }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <h4>Examples</h4>
+        </div>
+
+        <div class="col-md-12">
+            <p>Set a small size top padding:</p>
+            {{#markdown}}
+```scss
+.selector {
+    padding-top: spacing( sm );
+}
+```
+            {{/markdown}}
+        </div>
+
+        <div class="col-md-12">
+            <p>Set large left and right margins:</p>
+            {{#markdown}}
+```scss
+.selector {
+    margin: 0 spacing( lg );
+}
+```
+            {{/markdown}}
+        </div>
+    </div>
+</section>

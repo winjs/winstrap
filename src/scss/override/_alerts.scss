@@ -7,23 +7,23 @@ $alert-icon-base: 48px;
 .alert {
     position: relative;
     border: none;
-    padding: spacer(xxs) spacer(xxs) spacer(xxs) spacer(xs, -4);
+    padding: spacing(xxs) spacing(xxs) spacing(xxs) spacing(xs, -4);
     min-height: $alert-icon-base;
 
     &.alert-dismissible {
-        padding-right: spacer(md);
+        padding-right: spacing(md);
     }
 
     .alert-title {
         @include type-subtitle-alt(set-line-height);
-        margin-bottom: spacer(xxs, -7);
-        margin-top: spacer(xxs, -11);
+        margin-bottom: spacing(xxs, -7);
+        margin-top: spacing(xxs, -11);
     }
 
     p {
         @include type-caption(set-line-height);
         margin: 0;
-        padding: spacer(xxs, -8) 0 0;
+        padding: spacing(xxs, -8) 0 0;
     }
 
     .close {
@@ -44,13 +44,13 @@ $alert-icon-base: 48px;
     }
 
     &.with-icon {
-        padding-left: spacer(md)
+        padding-left: spacing(md)
     }
 
     .alert-icon {
         position: absolute;
-        top: spacer(xxs, -8);
-        left: spacer(xxs);
+        top: spacing(xxs, -8);
+        left: spacing(xxs);
         width: $alert-icon-base / 2;
         height: $alert-icon-base /2;
         font-size: $alert-icon-base / 2;

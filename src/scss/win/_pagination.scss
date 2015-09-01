@@ -4,8 +4,8 @@
     li.pagination-ellipsis {
         > span {
             background: none;
-            margin: spacer(xxs, -7) 0;
-            padding: spacer(xxs, -8) 0 spacer(xxs, -7);
+            margin: spacing(xxs, -7) 0;
+            padding: spacing(xxs, -8) 0 spacing(xxs, -7);
             min-width: 18px;
         }
     }
@@ -13,7 +13,7 @@
     li.pagination-prev,
     li.pagination-next {
         i[class*="icon"] {
-            margin: 0 spacer(xxs, -10);
+            margin: 0 spacing(xxs, -10);
             font-size: .813em;
             vertical-align: -.1em;
         }
@@ -23,18 +23,18 @@
     }
     li.pagination-prev {
         > a, > span {
-            padding: spacer(xxs, -7) spacer(xxs, -2) spacer(xxs, -7) spacer(xxs, -6);
-            margin-left: spacer(n, -6);
+            padding: spacing(xxs, -7) spacing(xxs, -2) spacing(xxs, -7) spacing(xxs, -6);
+            margin-left: spacing(n, -6);
         }
     }
     li.pagination-next {
         > a, > span {
-            padding: spacer(xxs, -7) spacer(xxs, -6) spacer(xxs, -7) spacer(xxs, -2);
+            padding: spacing(xxs, -7) spacing(xxs, -6) spacing(xxs, -7) spacing(xxs, -2);
         }
     }
 
-    // 
-    // Colors 
+    //
+    // Colors
     //
 
     // Default colors
