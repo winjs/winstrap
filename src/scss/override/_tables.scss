@@ -1,22 +1,22 @@
 //override default bootstrap padding on table elements
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-  padding: spacer(xxs, -2) spacer(xxs);
+  padding: spacing(xxs, -2) spacing(xxs);
 }
 
 .table {
 
   tr th {
-    @include type-body(no-responsive);
+    @include type-body();
     color: $color-type-secondary;
   }
 
   thead {
 
     tr th {
-      @include type-caption-alt(no-responsive);
+      @include type-caption-alt();
       color: $color-type-secondary;
       border-bottom: 1px solid $color-neutral-low;
-      padding-bottom: spacer(xxs, +1);
+      padding-bottom: spacing(xxs, +1);
     }
 
   }
@@ -61,7 +61,7 @@
 }
 
 .table-responsive {
-  padding-bottom: spacer(xxs, +5);
+  padding-bottom: spacing(xxs, +5);
 }
 //Add margin bottom for IE scrollbar
 @media (min-width: $screen-md-min) {

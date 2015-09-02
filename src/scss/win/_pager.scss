@@ -1,0 +1,22 @@
+﻿.pager {
+    @extend .pagination;
+    .pager-prev {
+        @extend .pagination-prev;
+        > a, > span {
+            &:after {
+                content: attr(aria-label);
+            }
+        }
+    }
+    .pager-next {
+        @extend .pagination-next;
+        > a, > span {
+            &:before {
+                content: attr(aria-label);
+            }
+        }
+    }
+    li:first-child a {
+        margin-left: spacing(n, -10);
+    }
+}

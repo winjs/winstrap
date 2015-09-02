@@ -21,13 +21,13 @@
                         <hr />
                     </header>
                     <div class="section-body">
-                        <h1 class="type-headline">Headline</h1>
-                        <h1>Header</h1>
-                        <h2>Subheader</h2>
-                        <h3>Title</h3>
-                        <p class="type-subtitle">Subtitle</p>
-                        <h4>Subtitle Alt</h4>
-                        <h5>Base</h5>
+                        <h1>Headline</h1>
+                        <h2>Header</h2>
+                        <h3>Subheader</h3>
+                        <h4>Title</h4>
+                        <h5>Subtitle</h5>
+                        <h6>Subtitle Alt</h6>
+                        <p class="type-base">Base</p>
                         <p>Body</p>
                         <p class="type-caption">Caption</p>
                         <p class="type-caption-alt">Caption Alt</p>
@@ -47,16 +47,16 @@
                         <hr />
                     </header>
                     <div class="section-body">
-                        <h1 class="type-headline" style="font-family: 'Selawik Light';">Headline</h1>
-                        <h1 style="font-family: 'Selawik Light';">Header</h1>
-                        <h2 style="font-family: 'Selawik Light';">Subheader</h2>
-                        <h3 style="font-family: 'Selawik Semilight';">Title</h3>
-                        <p class="type-subtitle" style="font-family: 'Selawik Semilight';">Subtitle</p>
-                        <h4 style="font-family: 'Selawik Semilight';">Subtitle Alt</h4>
-                        <h5 style="font-family: 'Selawik Semibold';">Base</h5>
-                        <p style="font-family: 'Selawik';">Body</p>
-                        <p class="type-caption" style="font-family: 'Selawik';">Caption</p>
-                        <p class="type-caption-alt" style="font-family: 'Selawik';">CaptionAlt</p>
+                        <h1 style="font-family: 'Selawik Light'">Headline</h1>
+                        <h2 style="font-family: 'Selawik Light'">Header</h2>
+                        <h3 style="font-family: 'Selawik Light'">Subheader</h3>
+                        <h4 style="font-family: 'Selawik Semilight'">Title</h4>
+                        <h5 style="font-family: 'Selawik Semilight'">Subtitle</h5>
+                        <h6 style="font-family: 'Selawik Semilight'">Subtitle Alt</h6>
+                        <p style="font-family: 'Selawik Semibold'" class="type-base">Base</p>
+                        <p style="font-family: 'Selawik'">Body</p>
+                        <p style="font-family: 'Selawik'" class="type-caption">Caption</p>
+                        <p style="font-family: 'Selawik'" class="type-caption-alt">Caption Alt</p>
 
                         <p style="font-family: 'Selawik';">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -71,33 +71,33 @@
 
         <div class="row">
             <div class="col-sm-24">
-                <h3>Classes and mixins</h3>
-                <p>By default, all the Bootstrap classes are all available. You may also use the MDL classes if you would like to more explicitly be connected to the MDL style guide. The MDL classes are type-*.</p>
+                <h2>Classes and mixins</h2>
+                <p>All the Bootstrap classes are all available. You may also use the MDL classes if you would like to more explicitly be connected to the MDL style guide. The MDL classes are type-*.</p>
             </div>
-            <div class="col-sm-12">
-                <h4>CSS classes</h4>
+            <div class="col-sm-24">
+                <h3>CSS classes</h3>
 
             {{#markdown}}
 ```xml
-<h1 class="type-headline">Headline</h1>
+<h1>Headline</h1>
 <div class="type-headline">...</div>
 
-<h1>Header</h1>
+<h2>Header</h2>
 <div class="type-header">...</div>
 
-<h2>Subheader</h2>
+<h3>Subheader</h3>
 <div class="type-subheader">...</div>
 
-<h3>Title</h3>
+<h4>Title</h4>
 <div class="type-title">...</div>
 
-<p class="type-subtitle">Subtitle</p>
+<h5>Subtitle</h5>
 <div class="type-subtitle">...</div>
 
-<h4>Subtitle Alt</h4>
+<h6>Subtitle Alt</h6>
 <div class="type-subtitle-alt">...</div>
 
-<h5>Base</h5>
+<p class="type-base">Base</p>
 <div class="type-base">...</div>
 
 <p>Body</p>
@@ -113,52 +113,51 @@
             {{/markdown}}
         </div>
 
-        <div class="col-sm-12">
-            <h4>Sass mixins</h4>
+        <div class="col-sm-24">
+            <h3>Sass mixins</h3>
+            <p>By default, line-height is not set by the mixins below. If you want to apply the MDL line-height, you can pass the <code>set-line-height</code> argument. You can also pass the <code>responsive</code> argument to make the text responsive.</p>
 
             {{#markdown}}
 ```scss
 .selector {
-    @include type-headline();
+    @include type-headline([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-header();
+    @include type-header([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subheader();
+    @include type-subheader([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-title();
+    @include type-title([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subtitle();
+    @include type-subtitle([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-subtitle-alt();
-}
-
-
-.selector {
-    @include type-base();
+    @include type-subtitle-alt([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-body();
+    @include type-base([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-caption();
+    @include type-body([set-line-height] [responsive]);
 }
 
 .selector {
-    @include type-caption-alt();
+    @include type-caption([set-line-height] [responsive]);
 }
 
+.selector {
+    @include type-caption-alt([set-line-height] [responsive]);
+}
 ```
             {{/markdown}}
             </div>

@@ -266,12 +266,12 @@ $icons: (
         content: map-get($icons, checkbox);
     }
     input:indeterminate ~ span::before {
-        content: "■"; // Use "\E73C" when we get Basel Symbols font
+        content: "■"; // Use "\E73C" when we get MDL Symbols font
     }
 }
 
 .radio label {
     input:checked ~ span::before {
-        content: "•"; // Replace this when we get Basel Symbols font
+        content: "•"; // Replace this when we get MDL Symbols font
     }
 }

@@ -1,0 +1,80 @@
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+</div>
+
+<div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+<div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+</div>
+
+<div class="form-group">
+    <p class="form-group-label">Checkbox</p>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"></input>
+            <span>Rest</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" checked></input>
+            <span>Checked</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" disabled="true"></input>
+            <span>Disabled</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        {{#if snippet}}
+        <label>
+            <input type="checkbox" id="foo"></input>
+            <span>Indeterminate</span>
+        </label>
+        <script type="text/javascript">
+            (function () {
+                $("#foo").prop("indeterminate", true);
+            })();
+        </script>
+        {{else}}
+        <label>
+            <input type="checkbox" class="checkbox-indeterminate"></input>
+            <span>Indeterminate</span>
+        </label>
+        {{/if}}
+    </div>
+</div>
+
+<div class="form-group">
+    <p class="form-group-label">Radio buttons</p>
+    <div class="radio">
+        <label>
+            <input type="radio" name='radio1'>
+            <span>Radio</span>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name='radio1' checked="checked">
+            <span>Checked</span>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name='radio1' disabled="true">
+            <span>Disabled</span>
+        </label>
+    </div>
+</div>

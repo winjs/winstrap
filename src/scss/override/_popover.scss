@@ -1,13 +1,13 @@
 //
 // Static resources
 //
-$popover-position: spacer(xxs, -4);
+$popover-position: spacing(xxxs);
 
 .popover {
     padding: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    @include type-body(no-responsive, no-line-height);
+    @include type-body();
 
     &.top       { margin-top: -$popover-position; }
     &.right     { margin-left: $popover-position; }
@@ -19,10 +19,10 @@ $popover-position: spacer(xxs, -4);
         display: none;
     }
     .popover-content {
-        padding: spacer(xxs, -4) spacer(xxs) spacer(xxs, -2);
+        padding: spacing(xxxs) spacing(xxs) spacing(xxs, -2);
 
         .btn {
-            margin: spacer(xxs, 2) 0 spacer(xxs);
+            margin: spacing(xxs, 2) 0 spacing(xxs);
             float: right;
         }
     }

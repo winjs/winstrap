@@ -41,127 +41,135 @@
          url("../fonts/selawksl.ttf") format("truetype");
 }
 
-// Produce the proper responsive type attributes with optional arguments for no line height and no responsive font size.
-@mixin responsive-type($font, $options) {
-    $responsive: "true";
-    $set-line-height: "true";
+// Sets font-size and font-weight to the md breakpoint with optional arguments to set line-height, or to fully set all the proper responsive attributes.
+@mixin set-type($font, $options) {
+    $responsive: "false";
+    $set-line-height: "false";
 
     @each $option in $options {
-        @if ($option == "no-responsive") {
-            $responsive: "false";
+        @if ($option == "responsive") {
+            $responsive: "true";
         }
 
-        @if ($option == "no-line-height") {
-            $set-line-height: "false";
+        @if ($option == "set-line-height") {
+            $set-line-height: "true";
         }
     }
 
-    font-family:                map-deep-get($fonts, $font, "font-family");
-    font-weight:                map-deep-get($fonts, $font, "font-weight-xs");
+    // set-type()
+    font-size:                  map-deep-get($fonts, $font, "size-md");
+    font-weight:                map-deep-get($fonts, $font, "weight-md");
+    font-family:                map-deep-get($fonts, $font, "family-md");
 
     @if (#{$responsive} == "true") {
-        font-size:              map-deep-get($fonts, $font, "size-xs");
 
-        // responsive-type() - set responsive font size and line height
+        // set-type(responsive)
+        @media (max-width: $screen-sm-max) {
+            font-size:          map-deep-get($fonts, $font, "size-sm");
+            font-weight:        map-deep-get($fonts, $font, "weight-sm");
+            font-family:        map-deep-get($fonts, $font, "family-sm");
+        }
+
+        @media (min-width: $screen-xxl-min) {
+            font-size:          map-deep-get($fonts, $font, "size-xxl");
+            font-weight:        map-deep-get($fonts, $font, "weight-xxl");
+            font-family:        map-deep-get($fonts, $font, "family-xxl");
+        }
+
+        // set-type(responsive, set-line-height)
         @if (#{$set-line-height} == "true") {
-            line-height:       (map-deep-get($fonts, $font, "line-height-xs") / map-deep-get($fonts, $font, "size-xs"));
 
-            @media (min-width: $screen-md-min) {
-                font-size:      map-deep-get($fonts, $font, "size-md");
-                line-height:   (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+            line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+
+            @media (max-width: $screen-sm-max) {
+                line-height:    (map-deep-get($fonts, $font, "line-height-sm") / map-deep-get($fonts, $font, "size-sm"));
             }
 
-            @media (min-width: $screen-xl-min) {
-                font-size:      map-deep-get($fonts, $font, "size-xl");
-                line-height:   (map-deep-get($fonts, $font, "line-height-xl") / map-deep-get($fonts, $font, "size-xl"));
-            }
-
-        // responsive-type(no-line-height) - set responsive font size only
-        } @else {
-            @media (min-width: $screen-md-min) {
-                font-size:      map-deep-get($fonts, $font, "size-md");
-            }
-
-            @media (min-width: $screen-xl-min) {
-                font-size:      map-deep-get($fonts, $font, "size-xl");
+            @media (min-width: $screen-xxl-min) {
+                line-height:    (map-deep-get($fonts, $font, "line-height-xxl") / map-deep-get($fonts, $font, "size-xxl"));
             }
         }
     } @else {
-        font-size:              map-deep-get($fonts, $font, "size-md");
 
-        // responsive-type(no-responsive) - set font size and line height to the md breakpoint
         @if (#{$set-line-height} == "true") {
-            line-height:       (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
+
+            // set-type(set-line-height)
+            line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
         }
     }
 }
+
 
 // Responsive Typography mixins
 //
 // Optional arguments:
-// no-responsive    (fixes font size and line-height to the md breakpoint)
-// no-line-height   (does not set line height)
+//
+// set-line-height
+// Sets line-height. If "responsive" is passed, line-height will be responsive. Otherwise, line-height is fixed to the md breakpoint.
+//
+// responsive
+// Sets font size, weight, family to be responsive. Also sets responsive line-height if "set-line-height" is passed.
 @mixin type-headline($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(headline, $options);
+    @include set-type(headline, $options);
 }
 @mixin type-header($options...) {
     letter-spacing: -0.01em;
-    @include responsive-type(header, $options);
+    @include set-type(header, $options);
 }
 @mixin type-subheader($options...) {
-    @include responsive-type(subheader, $options);
+    @include set-type(subheader, $options);
 }
 @mixin type-title($options...) {
-    @include responsive-type(title, $options);
+    @include set-type(title, $options);
 }
 @mixin type-subtitle($options...) {
-    @include responsive-type(subtitle, $options);
+    @include set-type(subtitle, $options);
 }
 @mixin type-subtitle-alt($options...) {
-    @include responsive-type(subtitle-alt, $options);
+    @include set-type(subtitle-alt, $options);
 }
 @mixin type-base($options...) {
-    @include responsive-type(base, $options);
+    @include set-type(base, $options);
 }
 @mixin type-body($options...) {
-    @include responsive-type(body, $options);
+    @include set-type(body, $options);
 }
 @mixin type-caption($options...) {
-    @include responsive-type(caption, $options);
+    @include set-type(caption, $options);
 }
 @mixin type-caption-alt($options...) {
-    @include responsive-type(caption-alt, $options);
+    @include set-type(caption-alt, $options);
 }
 
 // Apply mixins to typography classes
-.type-headline, .text-headline {
-    @include type-headline();
+h1, .h1, .type-headline, .text-headline {
+    @include type-headline(responsive, set-line-height);
 }
-h1, .h1, .type-header, .text-header {
-    @include type-header();
+h2, .h2, .type-header, .text-header {
+    @include type-header(responsive, set-line-height);
 }
-h2, .h2, .type-subheader, .text-subheader {
-    @include type-subheader();
+h3, .h3, .type-subheader, .text-subheader {
+    @include type-subheader(responsive, set-line-height);
 }
-h3, .h3, .type-title, .text-title {
-    @include type-title();
+h4, .h4, .type-title, .text-title {
+    @include type-title(responsive, set-line-height);
 }
-.type-subtitle, .text-subtitle {
-    @include type-subtitle();
+h5, .h5, .type-subtitle, .text-subtitle {
+    @include type-subtitle(responsive, set-line-height);
 }
-h4, .h4, .type-subtitle-alt, .text-subtitle-alt {
-    @include type-subtitle-alt();
+h6, .h6, .type-subtitle-alt, .text-subtitle-alt {
+    @include type-subtitle-alt(responsive, set-line-height);
 }
-h5, .h5, .type-base, .text-base {
-    @include type-base();
+.type-base, .text-base {
+    @include type-base(responsive, set-line-height);
 }
 p, .type-body, .text-body {
-    @include type-body();
+    @include type-body(responsive, set-line-height);
 }
-h6, .h6, .type-caption, .text-caption {
-    @include type-caption();
+.type-caption, .text-caption {
+    @include type-caption(responsive, set-line-height);
 }
 .type-caption-alt, .text-caption-alt {
-    @include type-caption-alt();
+    @include type-caption-alt(responsive, set-line-height);
 }

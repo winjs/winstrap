@@ -11,7 +11,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap
-// Override wwith Basel color definitions
+// Override with MDL color definitions
 
 $gray-base:              $color-black !default;
 $gray-darker:            rgba($color-black, .8) !default;
@@ -311,12 +311,17 @@ $screen-xl:                  1400px !default;
 $screen-xl-min:              $screen-xl !default;
 $screen-xl-desktop:          $screen-xl-min !default;
 
+// Extra extra large screen / wide desktop
+$screen-xxl:                  2048px !default;
+$screen-xxl-min:              $screen-xxl !default;
+$screen-xxl-desktop:          $screen-xxl-min !default;
+
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 $screen-lg-max:              ($screen-xl-min - 1) !default;
-$screen-xl-max:              1778px !default;
+$screen-xl-max:              ($screen-xxl-min - 1) !default;
 
 
 //== Grid system
@@ -836,14 +841,14 @@ $close-text-shadow:           none !default;
 //##
 
 $code-color:                  $text-color !default;
-$code-bg:                     shade(white, 3%) !default;
+$code-bg:                     $color-bg-light-vivid-mid !default;
 
 $kbd-color:                   $color-white !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      $code-bg !default;
 $pre-color:                   $code-color !default;
-$pre-border-color:            shade(white, 6%) !default;
+$pre-border-color:            $color-bg-light-vivid-low !default;
 $pre-scrollable-max-height:   340px !default;
 
 

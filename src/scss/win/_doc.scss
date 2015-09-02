@@ -1,11 +1,3 @@
-.no-outline {
-    &:focus,
-    &:focus:active,
-    &:active {
-        outline: none !important;
-    }
-}
-
 ﻿#icons {
     i[class*="icon-"] {
         font-size: 2em;
@@ -29,15 +21,15 @@ pre {
     overflow-y: hidden;
     border: none;
     border-left: 8px solid $pre-border-color;
-    margin: spacer(xxs) 0 0;
-    @include type-caption(no-responsive);
+    margin: spacing(xxs) 0 0;
+    @include type-caption();
 
     @media (min-width: $screen-md-min) {
-        margin: spacer(xs) 0 0;
+        margin: spacing(xs) 0 0;
     }
 
     @media (min-width: $screen-xl-min) {
-        margin: spacer(xs) 0 0;
+        margin: spacing(xs) 0 0;
     }
 }
 
@@ -98,27 +90,4 @@ code {
     background-image: url('../images/example_light.jpg');
     background-position: top right;
     background-size: cover;
-}
-
-//
-// Spacers
-//
-
-@each $tshirt, $size in $spacer-sizes {
-    .spacer-mt-#{$tshirt} {
-        margin-top: $size;
-    }
-
-    .spacer-mb-#{$tshirt} {
-        margin-bottom: $size;
-    }
-
-    .spacer-pt-#{$tshirt} {
-        padding-top: $size;
-    }
-
-    .spacer-pb-#{$tshirt} {
-        padding-bottom: $size;
-    }
-
 }

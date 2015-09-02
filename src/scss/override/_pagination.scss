@@ -1,8 +1,8 @@
 ﻿.pagination > li {
     > a, > span {
         min-width: 34px;
-        margin: spacer(xxs, -7);
-        padding: spacer(xxs, -8) spacer(xxs, -4) spacer(xxs, -7);
+        margin: spacing(xxs, -7);
+        padding: spacing(xxs, -8) spacing(xxxs) spacing(xxs, -7);
         text-align: center;
         &:focus {
             background-color: rgba($color-black, .3);

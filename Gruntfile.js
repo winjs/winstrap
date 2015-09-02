@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         {
           expand: true,
           cwd: 'src/js/',
-          src: 'app.js',
+          src: '*.js',
           dest: 'dist/js/'
         },
         {
@@ -176,7 +176,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-assemble');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
