@@ -13,7 +13,7 @@
 }
 
 .btn {
-    @include type-body();
+    @include type(t7);
     min-width: 120px;
     line-height: 1;
     border-style: solid;
@@ -225,7 +225,7 @@
 //Override Bootstrap link buttons
 // Make a button look and behave like a link
 .btn-link {
-    @include type-body();
+    @include type(t7);
     min-width: 120px;
     line-height: 1;
     font-weight: normal;

@@ -15,7 +15,7 @@
         border-left: none;
 
         p {
-            @include type-caption();
+            @include type(t8);
             margin-bottom: 0;
             padding-top: 4px;
         }

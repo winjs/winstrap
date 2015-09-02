@@ -103,12 +103,12 @@
 	.jumbotron-header,
 	h1 {
 		margin-bottom: spacing(xxs, -6px);
-		@include type-title();
+		@include type(t4);
 	}
 	.jumbotron-subheader,
 	p {
 		margin-top: spacing(n);
-		@include type-body();
+		@include type(t7);
 	}
 	.jumbotron-background,
 	.container-wrap {
@@ -164,12 +164,12 @@
 		.jumbotron-header,
 		h1 {
 			margin-bottom: spacing(xxs, -6px);
-			@include type-title();
+			@include type(t4);
 		}
 		.jumbotron-subheader,
 		p {
 			margin-top: spacing(n);
-			@include type-body();
+			@include type(t7);
 		}
 		> .container-wrap {
 			position: absolute;
@@ -192,11 +192,11 @@
 	@media (min-width: $screen-md) {
 		.jumbotron-header,
 		h1 {
-			@include type-subheader();
+			@include type(t3);
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-subtitle();
+			@include type(t5);
 		}
 		&.highlight-bar {
 			.img-container {
@@ -208,22 +208,22 @@
 	@media (min-width: $screen-lg) {
 		.jumbotron-header,
 		h1 {
-			@include type-header();
+			@include type(t2);
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-title();
+			@include type(t4);
 		}
 		@include set-bottom-jumbotron-content(30px);
 	}
 	@media (min-width: $screen-xl) {
 		.jumbotron-header,
 		h1 {
-			@include type-headline();
+			@include type(t1);
 		}
 		.jumbotron-subheader,
 		p {
-			@include type-title();
+			@include type(t4);
 		}
 		@include set-bottom-jumbotron-content(60px);
 	}

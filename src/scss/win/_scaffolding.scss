@@ -1,14 +1,3 @@
 p {
-    margin: spacing(xxs) 0 0;
-    padding: 0 spacing(xs) 0 0;
-
-    @media (min-width: $screen-md-min) {
-        margin: spacing(xs) 0 0;
-        padding: 0 spacing(xs) 0 0;
-    }
-
-    @media (min-width: $screen-xl-min) {
-        margin: spacing(xs) 0 0;
-        padding: 0 spacing(xxs) 0 0;
-    }
+    margin: 0;
 }

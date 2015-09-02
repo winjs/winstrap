@@ -8,7 +8,7 @@
     margin-bottom: 1.5em;
 
     .section-title {
-        @include type-header();
+        @include type(t2);
         margin-bottom: 0;
         color: $headings-color;
 

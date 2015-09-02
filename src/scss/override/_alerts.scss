@@ -15,13 +15,13 @@ $alert-icon-base: 48px;
     }
 
     .alert-title {
-        @include type-subtitle-alt(set-line-height);
+        @include type(t6, set-line-height);
         margin-bottom: spacing(xxs, -7);
         margin-top: spacing(xxs, -11);
     }
 
     p {
-        @include type-caption(set-line-height);
+        @include type(t8, set-line-height);
         margin: 0;
         padding: spacing(xxs, -8) 0 0;
     }

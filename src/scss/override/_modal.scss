@@ -7,7 +7,7 @@
         padding: 0;
 
         .modal-title {
-            @include type-subtitle();
+            @include type(t5);
         }
 
         .close {
@@ -18,7 +18,7 @@
     .modal-body {
         padding: 0;
         margin: spacing(xxxs) 0 0;
-        @include type-body();
+        @include type(t7);
     }
 
     .modal-footer {

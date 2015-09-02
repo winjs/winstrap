@@ -1,5 +1,5 @@
 .tooltip {
-    @include type-caption();
+    @include type(t8);
 
     .tooltip-inner {
         padding: 7px 8px 9px 8px;

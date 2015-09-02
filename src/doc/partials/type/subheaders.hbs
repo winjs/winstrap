@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-xs-24">
+        <section class="section" id="subheaders">
+            <header class="section-header ">
+                <h2 class="section-title ">
+                    <a href="#subheaders">Subheaders</a>
+                </h2>
+                <p>There are six Winstrap subheader controls. We recommend pairing  <code>type-header1</code> with <code>type-subheader1</code>, <code>type-header2</code> with <code>type-subheader2</code>, etc.</p>
+                <p>You can also apply subheaders using the Sass mixin. Subheaders applied using the mixin are not responsive by default. Pass the <code>responsive</code> argument to make them responsive.</p>
+            </header>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="type-sh1">Subheader 1</div>
+                    <div class="type-sh2">Subheader 2</div>
+                    <div class="type-sh3">Subheader 3</div>
+                    <div class="type-sh4">Subheader 4</div>
+                    <div class="type-sh5">Subheader 5</div>
+                    <div class="type-sh6">Subheader 6</div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-24">
+                            {{#markdown}}
+```xml
+<div class="type-sh1">Subheader 1</div>
+<div class="type-subheader1">...</div>
+
+<div class="type-sh2">Subheader 2</div>
+<div class="type-subheader2">...</div>
+
+<div class="type-sh3">Subheader 3</div>
+<div class="type-subheader3">...</div>
+
+<div class="type-sh4">Subheader 4</div>
+<div class="type-subheader4">...</div>
+
+<div class="type-sh5">Subheader 5</div>
+<div class="type-subheader5">...</div>
+
+<div class="type-sh6">Subheader 6</div>
+<div class="type-subheader6">...</div>
+```
+                            {{/markdown}}
+                        </div>
+
+                        <div class="col-sm-24">
+                            {{#markdown}}
+```scss
+.selector {
+    @include type-control(sh[1-6], [responsive]);
+}
+```
+                            {{/markdown}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
