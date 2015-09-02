@@ -369,7 +369,7 @@ $container-xl:                 $container-extra-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    70px !default;
+$navbar-height:                    50px !default;
 $navbar-margin-bottom:             0 !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -383,9 +383,9 @@ $navbar-default-border:            $color-neutral-mid !default;
 // Navbar links
 $navbar-default-link-color:                $color-type-primary !default;
 $navbar-default-link-hover-color:          $brand-primary !default;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-hover-bg:             $color-dim-low !default;
+$navbar-default-link-active-color:         #000 !default;
+$navbar-default-link-active-bg:            $color-dim-low !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
@@ -431,7 +431,7 @@ $navbar-inverse-toggle-border-color:        transparent !default;
 //##
 
 //=== Shared nav styles
-$nav-link-padding:                          10px 15px !default;
+$nav-link-padding:                          0 20px !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
