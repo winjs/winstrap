@@ -262,9 +262,10 @@
   // margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
+
     // padding-top:    10px;
     // padding-bottom: 10px;
-    // line-height: $line-height-computed;
+    //line-height: $line-height-computed;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -274,7 +275,7 @@
         background-color: $color-dim-low;
 
       > li > a {
-          height: auto;
+        //   height: auto;
       }
       > li > a {
         // line-height: $line-height-computed;
@@ -438,7 +439,6 @@
 
   .navbar-nav {
     > li > a {
-        padding: 10px 20px;
     //   color: $navbar-default-link-color;
 
       &:hover,
@@ -499,6 +499,8 @@
       .open .dropdown-menu {
         > li > a {
             padding: 10px 20px;
+            line-height: inherit;
+            height: auto;
         //   color: $navbar-default-link-color;
           &:hover,
           &:focus {
