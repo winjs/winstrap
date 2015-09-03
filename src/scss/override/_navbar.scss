@@ -88,6 +88,21 @@
     // overflow-y: auto;
   }
 
+  @media (max-width: $grid-float-breakpoint) {
+      .navbar-nav {
+          > li > a {
+              padding: 13px 10px;
+              line-height: 1.5;
+              border-bottom: 1px solid $color-dim-mid;
+
+              .icon-flipviewdown {
+                  float: right;
+                  margin-top: 8px;
+              }
+          }
+      }
+  }
+
   @media (min-width: $grid-float-breakpoint) {
     // width: auto;
     // border-top: 0;
@@ -189,6 +204,10 @@
 // Brand/project name
 
 .navbar-brand {
+    padding: 0 $navbar-padding-horizontal;
+    line-height: $navbar-height;
+    vertical-align: middle;
+    font-size: 0;
   // float: left;
   // padding: $navbar-padding-vertical $navbar-padding-horizontal;
   // font-size: $font-size-large;
@@ -202,6 +221,7 @@
 
   > img {
     // display: block;
+    display: inline-block;
   }
 
   @media (min-width: $grid-float-breakpoint) {
@@ -219,6 +239,7 @@
 // JavaScript plugin.
 
 .navbar-toggle {
+  margin-right: 0;
   // position: relative;
   // float: right;
   // margin-right: $navbar-padding-horizontal;
@@ -352,6 +373,9 @@
 .navbar-nav > li > .dropdown-menu {
   // margin-top: 0;
   // @include border-top-radius(0);
+  width: 240px;
+  padding-top: 0;
+  padding-bottom: 8px;
 }
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
@@ -441,6 +465,7 @@
     > li > a {
     //   color: $navbar-default-link-color;
 
+
       &:hover,
       &:focus {
         // color: $navbar-default-link-hover-color;
@@ -494,13 +519,26 @@
       }
     }
 
+    .open .dropdown-menu {
+        > li > a {
+            padding: 17px 24px;
+            height: auto;
+            line-height: 1.5;
+
+            &:hover {
+                background-color: $color-dim-low;
+            }
+        }
+    }
+
     @media (max-width: $grid-float-breakpoint-max) {
+
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
-            padding: 10px 20px;
-            line-height: inherit;
+            padding: 13px 10px;
             height: auto;
+
         //   color: $navbar-default-link-color;
           &:hover,
           &:focus {
