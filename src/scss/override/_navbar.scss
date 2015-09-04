@@ -341,7 +341,7 @@
   // margin-right: -$navbar-padding-horizontal;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 10px $navbar-padding-horizontal;
+    padding: 20px $navbar-padding-horizontal;
     border-bottom: 0;
   // border-top: 1px solid transparent;
   // border-bottom: 1px solid transparent;
@@ -547,6 +547,9 @@
                 background-color: $color-dim-low;
             }
         }
+        .divider {
+            margin: 0 0;
+        }
     }
 
     @media (max-width: $grid-float-breakpoint-max) {
@@ -699,6 +702,7 @@
         //   border-color: $navbar-inverse-border;
         }
         .divider {
+
         //   background-color: $navbar-inverse-border;
         }
         > li > a {
