@@ -207,7 +207,6 @@
     padding: 0 $navbar-padding-horizontal;
     line-height: $navbar-height;
     vertical-align: middle;
-    font-size: 0;
   // float: left;
   // padding: $navbar-padding-vertical $navbar-padding-horizontal;
   // font-size: $font-size-large;
@@ -311,7 +310,7 @@
   // Uncollapse the nav
   @media (min-width: $grid-float-breakpoint) {
     // float: left;
-    // margin: 0;
+    margin: 0;
 
     > li {
     //   float: left;
@@ -340,6 +339,12 @@
 
   // Mixin behavior for optimum display
   // @include form-inline;
+
+
+    input.form-control {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 
   .form-group {
     @media (max-width: $grid-float-breakpoint-max) {
@@ -576,6 +581,11 @@
     &:hover {
     //   color: $navbar-default-link-hover-color;
     }
+  }
+
+  .btn {
+      margin-top: 0;
+      vertical-align: top;
   }
 
   .btn-link {
