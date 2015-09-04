@@ -64,7 +64,7 @@
 
         &.media-img-has-play {
             a {
-                i[class*="icon-"] {
+                i[class*="glyph-"] {
                     z-index: 1;
                 }
 
@@ -93,7 +93,7 @@
             }
         }
 
-        i[class*="icon-"] {
+        i[class*="glyph-"] {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -196,7 +196,7 @@
             vertical-align: top;
         }
 
-        i[class*="icon-"] {
+        i[class*="glyph-"] {
             top: 36%;
         }
     }
@@ -222,7 +222,7 @@
     bottom: 0;
     left: 0;
 
-    .btn-icon {
+    .btn-glyph {
         position: absolute;
         top: 0;
         left: 0;

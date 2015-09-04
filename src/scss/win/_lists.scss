@@ -31,17 +31,17 @@
         }
     }
 
-    .icon-add,
-    .icon-remove {
+    .glyph-addLegacy,
+    .glyph-removeLegacy {
         font-size: .75em;
         height: 1.25em;
     }
 
-    [aria-expanded="false"] .icon-remove {
+    [aria-expanded="false"] .glyph-removeLegacy {
         display: none;
     }
 
-    [aria-expanded="true"] .icon-add {
+    [aria-expanded="true"] .glyph-addLegacy {
         display: none;
     }
 
