@@ -1,4 +1,4 @@
-﻿.navbar {
+.navbar {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -23,36 +23,27 @@
     }
 }
 
-
-
-//
-// Navbars
-// --------------------------------------------------
-
 // Navbar collapse (body)
 .navbar-collapse {
-
     border-top: 0;
 
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li {
+                border-top: 1px solid $color-dim-mid;
+            }
+            > li > a {
+                padding: 13px 10px;
+                line-height: 1.5;
 
-  @media (max-width: $grid-float-breakpoint) {
-      .navbar-nav {
-          > li {
-              border-top: 1px solid $color-dim-mid;
-          }
-          > li > a {
-              padding: 13px 10px;
-              line-height: 1.5;
-
-              .icon-flipviewdown {
-                  float: right;
-                  margin-top: 8px;
-                  margin-right: 10px;
-              }
-          }
-      }
-  }
-
+                .icon-flipviewdown {
+                    float: right;
+                    margin-top: 8px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -63,10 +54,9 @@
     line-height: $navbar-height;
     vertical-align: middle;
 
-
-  > img {
-    display: inline-block;
-  }
+    > img {
+        display: inline-block;
+    }
 
 }
 
@@ -76,20 +66,18 @@
 .navbar-nav {
     margin: 0 (-$navbar-padding-horizontal);
 
-  @media (max-width: $grid-float-breakpoint-max) {
-
-
-    // Dropdowns get custom display when collapsed
-    .open .dropdown-menu {
-        padding: 0 0;
-        background-color: $color-dim-low;
+    @media (max-width: $grid-float-breakpoint-max) {
+        // Dropdowns get custom display when collapsed
+        .open .dropdown-menu {
+            padding: 0 0;
+            background-color: $color-dim-low;
+        }
     }
-  }
 
-  // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
-    margin: 0;
-  }
+    // Uncollapse the nav
+    @media (min-width: $grid-float-breakpoint) {
+        margin: 0;
+    }
 }
 
 
@@ -105,20 +93,20 @@
         margin-top: 0;
     }
 
-  .form-group {
-    @media (max-width: $grid-float-breakpoint-max) {
+    .form-group {
+        @media (max-width: $grid-float-breakpoint-max) {
 
+        }
     }
-  }
 
-  // Vertically center in expanded, horizontal navbar
+    // Vertically center in expanded, horizontal navbar
 
-  // Undo 100% width for pull classes
-  @media (min-width: $grid-float-breakpoint) {
-    @include navbar-vertical-align($input-height-base);
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+    // Undo 100% width for pull classes
+    @media (min-width: $grid-float-breakpoint) {
+        @include navbar-vertical-align($input-height-base);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 
@@ -126,13 +114,10 @@
 
 // Menu position and menu carets
 .navbar-nav > li > .dropdown-menu {
-  width: 240px;
-  padding-top: 0;
-  padding-bottom: 8px;
+    width: 240px;
+    padding-top: 0;
+    padding-bottom: 8px;
 }
-
-
-
 
 // Alternate navbars
 // --------------------------------------------------
@@ -141,42 +126,42 @@
 .navbar-default {
     border-color: $color-dim-mid;
 
-  .navbar-collapse,
-  .navbar-form {
-      border-color: $color-dim-mid;
-  }
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $color-dim-mid;
+    }
 
-  // Dropdown menu items
-  .navbar-nav {
-    .open .dropdown-menu {
-        > li > a {
-            padding: 17px 24px;
-            height: auto;
-            line-height: 1.5;
+    // Dropdown menu items
+    .navbar-nav {
+        .open .dropdown-menu {
+            > li > a {
+                padding: 17px 24px;
+                height: auto;
+                line-height: 1.5;
 
-            &:hover {
-                background-color: $color-dim-low;
+                &:hover {
+                    background-color: $color-dim-low;
+                }
+            }
+            .divider {
+                margin: 0 0;
             }
         }
-        .divider {
-            margin: 0 0;
+
+        @media (max-width: $grid-float-breakpoint-max) {
+
+            // Dropdowns get custom display when collapsed
+            .open .dropdown-menu {
+                > li > a {
+                    padding: 13px 10px;
+                    height: auto;
+                }
+            }
         }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
-
-      // Dropdowns get custom display when collapsed
-      .open .dropdown-menu {
-        > li > a {
-            padding: 13px 10px;
-            height: auto;
-        }
-      }
+    .btn {
+        margin-top: 0;
+        vertical-align: top;
     }
-  }
-
-  .btn {
-      margin-top: 0;
-      vertical-align: top;
-  }
 }
