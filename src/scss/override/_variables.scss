@@ -841,14 +841,14 @@ $close-text-shadow:           none !default;
 //##
 
 $code-color:                  $text-color !default;
-$code-bg:                     shade(white, 3%) !default;
+$code-bg:                     $color-bg-light-vivid-mid !default;
 
 $kbd-color:                   $color-white !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      $code-bg !default;
 $pre-color:                   $code-color !default;
-$pre-border-color:            shade(white, 6%) !default;
+$pre-border-color:            $color-bg-light-vivid-low !default;
 $pre-scrollable-max-height:   340px !default;
 
 

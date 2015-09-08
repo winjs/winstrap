@@ -12,14 +12,14 @@ a {
 }
 
 hr {
-    margin-top: spacer(sm);
+    margin-top: spacing(sm);
     margin-bottom: 0;
     @media (min-width: $screen-sm) {
-        margin-top: spacer(md);
+        margin-top: spacing(md);
     }
 
-    // 
-    // Colors 
+    //
+    // Colors
     //
 
     // Default colors

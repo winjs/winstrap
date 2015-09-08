@@ -7,7 +7,7 @@ $backtotop-button-size:  48px;
     visibility: hidden;
     width: $backtotop-button-size;
     height: $backtotop-button-size;
-    padding: spacer(xxs, -2) spacer(xxs) spacer(xxs);
+    padding: spacing(xxs, -2) spacing(xxs) spacing(xxs);
     opacity: 0;
     @include translate(0, ($backtotop-button-size / 2));
     @include transition(opacity .3s, transform .3s, -webkit-transform .3s);
@@ -17,8 +17,8 @@ $backtotop-button-size:  48px;
         visibility: visible;
         opacity: 1;
         z-index: $zindex-navbar-fixed; // same level as a fixed nav bar
-        right: spacer(xs);
-        bottom: spacer(xxs);
+        right: spacing(xs);
+        bottom: spacing(xxs);
         @include translate(0, 0);
     }
 
