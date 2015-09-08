@@ -18,8 +18,9 @@
         padding: 4px 10px;
     }
 
-    .navbar-brand {
-        margin-right: 15px;
+    .btn {
+        margin-top: 0;
+        vertical-align: top;
     }
 }
 
@@ -48,16 +49,15 @@
 
 
 // Brand/project name
-
 .navbar-brand {
     padding: 0 $navbar-padding-horizontal;
     line-height: $navbar-height;
     vertical-align: middle;
+    margin-right: 15px;
 
     > img {
         display: inline-block;
     }
-
 }
 
 
@@ -66,17 +66,41 @@
 .navbar-nav {
     margin: 0 (-$navbar-padding-horizontal);
 
-    @media (max-width: $grid-float-breakpoint-max) {
-        // Dropdowns get custom display when collapsed
-        .open .dropdown-menu {
-            padding: 0 0;
-            background-color: $color-dim-low;
+    .open .dropdown-menu {
+        padding: 0 0;
+
+        > li > a {
+            padding: 13px 10px;
+            height: auto;
+            line-height: 1.5;
+        }
+
+        .divider {
+            margin: 0 0;
         }
     }
 
     // Uncollapse the nav
     @media (min-width: $grid-float-breakpoint) {
         margin: 0;
+
+        .open .dropdown-menu {
+            padding: 0 0 8px;
+            border-left: 1px solid $color-dim-low;
+            border-bottom: 1px solid $color-dim-mid;
+
+            > li > a {
+                padding: 17px 24px;
+                height: auto;
+                line-height: 1.5;
+            }
+        }
+
+        > li > .dropdown-menu {
+            width: 240px;
+            padding-top: 0;
+            padding-bottom: 8px;
+        }
     }
 }
 
@@ -93,15 +117,6 @@
         margin-top: 0;
     }
 
-    .form-group {
-        @media (max-width: $grid-float-breakpoint-max) {
-
-        }
-    }
-
-    // Vertically center in expanded, horizontal navbar
-
-    // Undo 100% width for pull classes
     @media (min-width: $grid-float-breakpoint) {
         @include navbar-vertical-align($input-height-base);
         padding-top: 0;
@@ -110,58 +125,26 @@
 }
 
 
-// Dropdown menus
-
-// Menu position and menu carets
-.navbar-nav > li > .dropdown-menu {
-    width: 240px;
-    padding-top: 0;
-    padding-bottom: 8px;
-}
-
-// Alternate navbars
-// --------------------------------------------------
-
-// Default navbar
+// Default navbar color
 .navbar-default {
     border-color: $color-dim-mid;
+
+    .divider {
+        background: $color-dim-mid;
+    }
 
     .navbar-collapse,
     .navbar-form {
         border-color: $color-dim-mid;
     }
 
-    // Dropdown menu items
     .navbar-nav {
         .open .dropdown-menu {
             > li > a {
-                padding: 17px 24px;
-                height: auto;
-                line-height: 1.5;
-
                 &:hover {
                     background-color: $color-dim-low;
                 }
             }
-            .divider {
-                margin: 0 0;
-            }
         }
-
-        @media (max-width: $grid-float-breakpoint-max) {
-
-            // Dropdowns get custom display when collapsed
-            .open .dropdown-menu {
-                > li > a {
-                    padding: 13px 10px;
-                    height: auto;
-                }
-            }
-        }
-    }
-
-    .btn {
-        margin-top: 0;
-        vertical-align: top;
     }
 }
