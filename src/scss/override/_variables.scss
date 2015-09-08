@@ -384,7 +384,7 @@ $navbar-default-border:            $color-neutral-mid !default;
 $navbar-default-link-color:                $color-type-primary !default;
 $navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             $color-dim-low !default;
-$navbar-default-link-active-color:         #000 !default;
+$navbar-default-link-active-color:         $color-type-primary !default;
 $navbar-default-link-active-bg:            $color-dim-low !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;

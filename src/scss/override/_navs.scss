@@ -5,6 +5,21 @@ $pivot-horizontal-padding:                                                      
 $pivot-hover-color:                                                             rgba($color-type-primary, 0.8);
 $pivot-hover-color-alt:                                                         rgba($color-type-primary-alt, 0.8);
 
+//
+// Navbar
+//
+.navbar {
+    .nav {
+      // Open dropdowns
+      .open > a {
+        &,
+        &:hover,
+        &:focus {
+            border: none;
+        }
+      }
+    }
+}
 
 //
 // Nav pills
@@ -109,18 +124,5 @@ $pivot-hover-color-alt:                                                         
                 color: $pivot-hover-color-alt;
             }
         }
-    }
-}
-
-.navbar {
-    .nav {
-      // Open dropdowns
-      .open > a {
-        &,
-        &:hover,
-        &:focus {
-            border: none;
-        }
-      }
     }
 }

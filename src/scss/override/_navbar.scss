@@ -5,7 +5,7 @@
 
     .icon-flipviewdown {
         font-size: 6px;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 spacing(xxxs, -3);
         color: $color-vivid-low;
     }
 
@@ -15,7 +15,7 @@
     }
 
     .navbar-toggle {
-        padding: 4px 10px;
+        padding: spacing(xxxs, -4) spacing(xxs, -2);
     }
 
     .btn {
@@ -34,12 +34,12 @@
                 border-top: 1px solid $color-dim-mid;
             }
             > li > a {
-                padding: 13px 10px;
+                padding: spacing(xxs, 1) spacing(xxs, -2);
                 line-height: 1.5;
 
                 .icon-flipviewdown {
                     float: right;
-                    margin: 8px 15px 0 0;
+                    margin: spacing(xxxs) spacing(xxs, 3) 0 0;
                 }
             }
         }
@@ -52,7 +52,7 @@
     padding: 0 $navbar-padding-horizontal;
     line-height: $navbar-height;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: spacing(xxs, 3);
 
     > img {
         display: inline-block;
@@ -69,7 +69,7 @@
         padding: 0 0;
 
         > li > a {
-            padding: 13px 10px;
+            padding: spacing(xxs, 1) spacing(xxxs, -2);
             height: auto;
             line-height: 1.5;
         }
@@ -84,12 +84,12 @@
         margin: 0;
 
         .open .dropdown-menu {
-            padding: 0 0 8px;
+            padding: 0 0 spacing(xxxs);
             border-left: 1px solid $color-dim-low;
             border-bottom: 1px solid $color-dim-mid;
 
             > li > a {
-                padding: 17px 24px;
+                padding: spacing(xxs, 5) spacing(xs);
                 height: auto;
                 line-height: 1.5;
             }
@@ -98,7 +98,7 @@
         > li > .dropdown-menu {
             width: 240px;
             padding-top: 0;
-            padding-bottom: 8px;
+            padding-bottom: spacing(xxxs);
         }
     }
 }
@@ -108,7 +108,7 @@
 .navbar-form {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 20px $navbar-padding-horizontal;
+    padding: spacing(xs, -4) $navbar-padding-horizontal;
     border-bottom: 0;
 
     input.form-control {
