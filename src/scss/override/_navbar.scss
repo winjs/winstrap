@@ -1,4 +1,4 @@
-.navbar {
+.navbar, .navbar-form {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -6,12 +6,10 @@
     .icon-flipviewdown {
         font-size: 6px;
         margin: 0 0 0 spacing(xxxs, -3);
-        color: $color-vivid-low;
     }
 
     .icon-hamburger {
         font-size: 20px;
-        color: $color-vivid-low;
     }
 
     .navbar-toggle {
@@ -19,8 +17,12 @@
     }
 
     .btn {
-        margin-top: 0;
+        margin: spacing(xxxs, -1) 0;
         vertical-align: top;
+    }
+
+    .navbar-text {
+        line-height: 1.5;
     }
 }
 
@@ -30,9 +32,6 @@
 
     @media (max-width: $grid-float-breakpoint) {
         .navbar-nav {
-            > li {
-                border-top: 1px solid $color-dim-mid;
-            }
             > li > a {
                 padding: spacing(xxs, 1) spacing(xxs, -2);
                 line-height: 1.5;
@@ -69,7 +68,7 @@
         padding: 0 0;
 
         > li > a {
-            padding: spacing(xxs, 1) spacing(xxxs, -2);
+            padding: spacing(xxs, 1) spacing(xxxs, 2);
             height: auto;
             line-height: 1.5;
         }
@@ -82,6 +81,10 @@
     // Uncollapse the nav
     @media (min-width: $grid-float-breakpoint) {
         margin: 0;
+
+        > li > a {
+            padding: $navbar-padding-vertical spacing(xs);
+        }
 
         .open .dropdown-menu {
             padding: 0 0 spacing(xxxs);
@@ -116,6 +119,10 @@
         margin-top: 0;
     }
 
+    .btn {
+        margin: 0 0;
+    }
+
     @media (min-width: $grid-float-breakpoint) {
         @include navbar-vertical-align($input-height-base);
         padding-top: 0;
@@ -132,6 +139,10 @@
         background: $color-dim-mid;
     }
 
+    .icon-hamburger {
+        color: $color-vivid-low;
+    }
+
     .navbar-collapse,
     .navbar-form {
         border-color: $color-dim-mid;
@@ -139,10 +150,60 @@
 
     .navbar-nav {
         .open .dropdown-menu {
+            background-color: $color-bg-light-vivid-mid;
             > li > a {
                 &:hover {
                     background-color: $color-dim-low;
                 }
+            }
+        }
+    }
+
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li {
+                border-top: 1px solid $color-dim-mid;
+            }
+        }
+    }
+}
+
+
+.navbar.theme-alt {
+  @extend .navbar-inverse;
+}
+
+.navbar-inverse, .navbar.theme-alt {
+    .icon-flipviewdown {
+        color: $navbar-inverse-color;
+    }
+    .icon-hamburger {
+        color: $navbar-inverse-color;
+    }
+    .divider {
+        background: $navbar-inverse-bg;
+    }
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $color-bg-dark-neutral-mid;
+    }
+
+    .navbar-nav {
+        .open .dropdown-menu {
+            background-color: $color-bg-dark-neutral-mid;
+            > li > a {
+                color: $navbar-inverse-color;
+                &:hover {
+                    background-color: $color-bg-dark-neutral-high;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li {
+                border-top: 1px solid $color-bg-dark-neutral-mid;
             }
         }
     }

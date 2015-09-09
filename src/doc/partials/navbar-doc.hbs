@@ -3,16 +3,103 @@
         <section class="section" id="buttons">
             <header class="section-header ">
                 <h1 class="section-title ">
-                    <a href="#buttons">Navbar</a>
+                    <a name="navs">Navbar</a>
                 </h1>
+                <p>The Winstrap navbar supports all of the options from the Bootstrap navbar.</p>
+
+                <p>Align nav links, forms, buttons, or text, using the .navbar-left or .navbar-right utility classes.</p>
             </header>
             {{> navbar-example }}
-
             {{#markdown}}
 ```xml
 {{> navbar-example }}
 ```
             {{/markdown}}
+            <h2>Brand Image</h2>
+            <p>Replace the navbar brand with your own image by swapping the text for an <img>. Since the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.</p>
+
+            {{> navbar-brand-image }}
+            {{#markdown}}
+```xml
+{{> navbar-brand-image }}
+```
+            {{/markdown}}
+
+            <h2>Forms</h2>
+            <p>Place form content within .navbar-form for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.<br /><br /></p>
+
+            {{> navbar-forms }}
+            {{#markdown}}
+```xml
+{{> navbar-forms }}
+```
+            {{/markdown}}
+
+            <h2>Buttons</h2>
+            <p>Add the .navbar-btn class to button elements not residing in a form to vertically center them in the navbar.<br /><br /></p>
+            {{> navbar-buttons }}
+            {{#markdown}}
+```xml
+{{> navbar-buttons }}
+```
+            {{/markdown}}
+
+            <h2>Text</h2>
+            <p>Wrap strings of text in an element with .navbar-text, usually on a p tag for proper leading and color.<br /><br /></p>
+
+            {{> navbar-text }}
+            {{#markdown}}
+```xml
+{{> navbar-text }}
+```
+            {{/markdown}}
+
+            <h2>Non-nav links</h2>
+            <p>For folks using standard links that are not within the regular navbar navigation component, use the .navbar-link class to add the proper colors for the default and inverse navbar options.<br /><br /></p>
+            {{> navbar-nonnav-links }}
+            {{#markdown}}
+```xml
+{{> navbar-nonnav-links }}
+```
+            {{/markdown}}
+
+
+            <h2>Fixed to top</h2>
+            <p>Add .navbar-fixed-top and include a .container or .container-fluid to center and pad navbar content.</p>
+            {{#markdown}}
+```xml
+{{> navbar-fixed-top }}
+```
+            {{/markdown}}
+
+
+            <h2>Fixed to bottom</h2>
+            <p>Add .navbar-fixed-bottom and include a .container or .container-fluid to center and pad navbar content.</p>
+            {{#markdown}}
+```xml
+{{> navbar-fixed-bottom }}
+```
+            {{/markdown}}
+
+            <h2>Static top</h2>
+            <p>Create a full-width navbar that scrolls away with the page by adding .navbar-static-top and include a .container or .container-fluid to center and pad navbar content.</p>
+            {{#markdown}}
+```xml
+{{> navbar-static-top }}
+```
+            {{/markdown}}
+
+            <h2>Inverted navbar</h2>
+
+            <p>Modify the look of the navbar by adding .navbar-inverse.<br /><br /></p>
+
+            {{> navbar-inverted }}
+            {{#markdown}}
+```xml
+{{> navbar-inverted }}
+```
+            {{/markdown}}
+
         </section>
     </div>
 </div>
