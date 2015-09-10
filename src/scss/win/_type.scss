@@ -182,24 +182,24 @@
 // Typography classes (.type-t*, .text-t*)
 @include generate-type-class(t, 1, 9, type-t, text-t);
 
-// Header classes (.h*, .type-h*, type-header*)
-@include generate-type-class(h, 1, 6, h, type-h, type-header);
+// Header classes (.h*, .type-h*)
+@include generate-type-class(h, 1, 6, h, type-h);
 
-// Subheader classes (.type-sh*, .type-subheader*)
-@include generate-type-class(sh, 1, 6, type-sh, type-subheader);
+// Subheader classes (.type-sh*)
+@include generate-type-class(sh, 1, 6, type-sh);
 
-// Paragraph classes (.type-p*, .type-paragraph*)
-@include generate-type-class(p, 1, 4, type-p, type-paragraph);
+// Paragraph classes (.type-p*)
+@include generate-type-class(p, 1, 4, type-p);
 
-// Caption classes (.type-c* .type-caption*)
-@include generate-type-class(c, 1, 2, type-c, type-caption);
+// Caption classes (.type-c*)
+@include generate-type-class(c, 1, 2, type-c);
 
 
-h1 { @extend .h1; }
-h2 { @extend .h2; }
-h3 { @extend .h3; }
-h4 { @extend .h4; }
-h5 { @extend .h5; }
-h6 { @extend .h6; }
+h1 { @extend .type-h1; }
+h2 { @extend .type-h2; }
+h3 { @extend .type-h3; }
+h4 { @extend .type-h4; }
+h5 { @extend .type-h5; }
+h6 { @extend .type-h6; }
 
-p { @extend .type-paragraph3; }
+p { @extend .type-p3; }
