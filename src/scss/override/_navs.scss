@@ -10,14 +10,14 @@ $pivot-hover-color-alt:                                                         
 //
 .navbar {
     .nav {
-      // Open dropdowns
-      .open > a {
-        &,
-        &:hover,
-        &:focus {
-            border: none;
+        // Open dropdowns
+        .open > a {
+            &,
+            &:hover,
+            &:focus {
+                border: none;
+            }
         }
-      }
     }
 }
 

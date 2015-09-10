@@ -65,7 +65,7 @@
     margin: 0 (-$navbar-padding-horizontal);
 
     .open .dropdown-menu {
-        padding: 0 0;
+        padding: 0;
 
         > li > a {
             padding: spacing(xxs, 1) spacing(xxxs, 2);
@@ -74,7 +74,7 @@
         }
 
         .divider {
-            margin: 0 0;
+            margin: 0;
         }
     }
 
@@ -174,10 +174,7 @@
 }
 
 .navbar-inverse, .navbar.theme-alt {
-    .icon-flipviewdown {
-        color: $navbar-inverse-color;
-    }
-    .icon-hamburger {
+    .icon-flipviewdown, .icon-hamburger {
         color: $navbar-inverse-color;
     }
     .divider {
