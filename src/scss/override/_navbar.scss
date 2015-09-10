@@ -1,20 +1,207 @@
-﻿.navbar {
+.navbar, .navbar-form {
     border-top: none;
     border-left: none;
     border-right: none;
 
     .glyph-chevronFlipDownLegacy {
         font-size: 6px;
-        margin: 0 0 0 5px;
-        color: $color-vivid-low;
+        margin: 0 0 0 spacing(xxxs, -3);
     }
 
     .glyph-globalNavButton {
         font-size: 20px;
-        color: $color-vivid-low;
     }
 
     .navbar-toggle {
-        padding: 4px 10px;
+        padding: spacing(xxxs, -4) spacing(xxs, -2);
+    }
+
+    .btn {
+        margin: spacing(xxxs, -1) 0;
+        vertical-align: top;
+    }
+
+    .navbar-text {
+        line-height: 1.5;
+    }
+}
+
+// Navbar collapse (body)
+.navbar-collapse {
+    border-top: 0;
+
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li > a {
+                padding: spacing(xxs, 1) spacing(xxs, -2);
+                line-height: 1.5;
+
+                .icon-flipviewdown {
+                    float: right;
+                    margin: spacing(xxxs) spacing(xxs, 3) 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Brand/project name
+.navbar-brand {
+    padding: 0 $navbar-padding-horizontal;
+    line-height: $navbar-height;
+    vertical-align: middle;
+    margin-right: spacing(xxs, 3);
+
+    > img {
+        display: inline-block;
+    }
+}
+
+
+
+// Navbar nav links
+.navbar-nav {
+    margin: 0 (-$navbar-padding-horizontal);
+
+    .open .dropdown-menu {
+        padding: 0;
+
+        > li > a {
+            padding: spacing(xxs, 1) spacing(xxxs, 2);
+            height: auto;
+            line-height: 1.5;
+        }
+
+        .divider {
+            margin: 0;
+        }
+    }
+
+    // Uncollapse the nav
+    @media (min-width: $grid-float-breakpoint) {
+        margin: 0;
+
+        > li > a {
+            padding: $navbar-padding-vertical spacing(xs);
+        }
+
+        .open .dropdown-menu {
+            padding: 0 0 spacing(xxxs);
+            border-left: 1px solid $color-dim-low;
+            border-bottom: 1px solid $color-dim-mid;
+
+            > li > a {
+                padding: spacing(xxs, 5) spacing(xs);
+                height: auto;
+                line-height: 1.5;
+            }
+        }
+
+        > li > .dropdown-menu {
+            width: 240px;
+            padding-top: 0;
+            padding-bottom: spacing(xxxs);
+        }
+    }
+}
+
+
+// Navbar form
+.navbar-form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: spacing(xs, -4) $navbar-padding-horizontal;
+    border-bottom: 0;
+
+    input.form-control {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .btn {
+        margin: 0 0;
+    }
+
+    @media (min-width: $grid-float-breakpoint) {
+        @include navbar-vertical-align($input-height-base);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+// Default navbar color
+.navbar-default {
+    border-color: $color-dim-mid;
+
+    .divider {
+        background: $color-dim-mid;
+    }
+
+    .icon-hamburger {
+        color: $color-vivid-low;
+    }
+
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $color-dim-mid;
+    }
+
+    .navbar-nav {
+        .open .dropdown-menu {
+            background-color: $color-bg-light-vivid-mid;
+            > li > a {
+                &:hover {
+                    background-color: $color-dim-low;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li {
+                border-top: 1px solid $color-dim-mid;
+            }
+        }
+    }
+}
+
+
+.navbar.theme-alt {
+  @extend .navbar-inverse;
+}
+
+.navbar-inverse, .navbar.theme-alt {
+    .icon-flipviewdown, .icon-hamburger {
+        color: $navbar-inverse-color;
+    }
+    .divider {
+        background: $navbar-inverse-bg;
+    }
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $color-bg-dark-neutral-mid;
+    }
+
+    .navbar-nav {
+        .open .dropdown-menu {
+            background-color: $color-bg-dark-neutral-mid;
+            > li > a {
+                color: $navbar-inverse-color;
+                &:hover {
+                    background-color: $color-bg-dark-neutral-high;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $grid-float-breakpoint) {
+        .navbar-nav {
+            > li {
+                border-top: 1px solid $color-bg-dark-neutral-mid;
+            }
+        }
     }
 }
