@@ -1,151 +1,141 @@
 .dropdown {
     display: inline-block;
-}
-.dropdown-picker {
-    margin: 0 0 2em 0;
 
-    .dropdown-label {
-        display: inline-block;
+    .btn-dropdown {
+        height: 36px;
+        padding: spacing("n") spacing("xxs");
+        margin: spacing("n");
+        min-width: 80px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:active {
+            outline: 0;
+        }
+
+        &:active:focus {
+            outline: 0;
+        }
+
+        .caret {
+            border: none;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-family: "winjs-symbols";
+            font-size: 12px;
+
+            &::before {
+                content: map-get($icons, flipviewdown);
+                vertical-align: bottom;
+            }
+        }
     }
+    .dropdown-menu {
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding: spacing("n");
+        top: spacing("sm", -2px);
 
-    .dropdown {
-        display: inline-block;
-        margin: 0 .5em;
-        vertical-align: bottom;
-    }
-}
+        li {
+            padding: spacing("n");
+            margin: spacing("n");
 
-.dropdown-menu {
-    box-shadow: none;
-    border: none;
-    padding-top: spacer("n", 5px);
-    padding-bottom: spacer("n", 7px);
-    width: 100%;
-    top: spacer("sm", -2px);
-}
-
-.dropdown-menu li {
-    padding: spacer("n");
-    margin: spacer("n");
-}
-
-.dropdown-menu li a {
-    @include type-body(no-line-height);
-    line-height: spacer("sm", -4px);
-    height: spacer("sm", -4px);
-    padding: spacer("n");
-    padding-left: spacer("xxs");
-    text-decoration: none;
-    cursor: pointer;
-}
-
-dl.dropdown-menu {
-    padding: spacer("xxs", -2px);
-}
-
-.btn-dropdown {
-    height: 36px;
-    padding: spacer("n") spacer("xxs");
-    margin: spacer("n");
-
-    &:focus {
-        outline: 0;
-    }
-
-    &:active {
-        outline: 0;
-    }
-
-    &:active:focus {
-        outline: 0;
-    }
-}
-
-.btn-dropdown .caret {
-    border: none;
-    width: auto;
-    height: auto;
-    line-height: 1;
-    font-family: "winjs-symbols";
-    font-size: 12px;
-
-    &::before {
-        content: map-get($icons, flipviewdown);
-        vertical-align: bottom;
+            a {
+                @include type-body(no-line-height);
+                line-height: spacing("sm", -4px);
+                height: spacing("sm", -4px);
+                padding: spacing("n");
+                padding-left: spacing("xxs");
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
     }
 }
 
 //
 // Colors
 //
-.dropdown-menu {
-    background-color: $color-bg-light-vivid-mid;
-    color: $color-type-primary;
-}
-.dropdown-menu li a {
+.dropdown {
+    .btn-dropdown {
+        background-color: $color-vivid-mid-alt;
+        border-color: $color-vivid-low;
+        
+        .caret {
+            color: $color-vivid-low;
+        }
 
-    &:hover {
+        &:focus {
+            background-color: $color-vivid-mid-alt;
+            border-color: $color-vivid-low;
+
+            .caret {
+                color: $color-vivid-low;
+            }
+        }
+
+        &:hover {
+            background-color: $color-dim-mid;
+            border-color: $color-vivid-mid;
+
+            .caret {
+                color: $color-vivid-mid;
+            }
+        }
+
+        &:active {
+            background-color: $color-neutral-low;
+            border-color: $color-vivid-high;
+
+            .caret{
+                color: $color-vivid-high;
+            }
+        }
+
+        &:active:focus {
+            outline: 0;
+        }
+
+        &.disabled {
+            color: $color-type-disabled;
+            border-color: $color-neutral-high;
+            background-color: $color-neutral-high;
+        }
+    }
+    .dropdown-menu {
+        background-color: $color-bg-light-vivid-mid;
+        color: $color-type-primary;
+    }
+    .dropdown-menu li a {
+
+        &:hover {
+            background-color: $color-accent-vivid-high;
+            color: $color-type-primary-alt;
+        }
+
+        &:active {
+            background-color: $color-accent-vivid-high;
+            color: $color-type-primary-alt;
+        }
+    }
+    .dropdown-menu li.active a {
         background-color: $color-accent-vivid-high;
         color: $color-type-primary-alt;
+
+        &:hover, &:focus {
+            background-color: $color-accent-vivid-high;
+            color: $color-type-primary-alt;
+        }
     }
-
-    &:active {
-        background-color: $color-accent-vivid-high;
-        color: $color-type-primary-alt;
+    .dropdown.open .btn-dropdown {
+        &:focus {
+            background-color: $color-neutral-high-alt;
+        }
     }
-}
-
-.dropdown-menu li.active a {
-    background-color: $color-accent-vivid-high;
-    color: $color-type-primary-alt;
-
-    &:hover, &:focus {
-        background-color: $color-accent-vivid-high;
-        color: $color-type-primary-alt;
-    }
-}
-
-.btn-dropdown {
-    background-color: $color-neutral-high-alt;
-    border-color: $color-neutral-high;
-
-    &:focus {
-        background-color: $color-accent-neutral-high;
-        border-color: $color-neutral-high;
-    }
-
-    &:hover {
-        background-color: $color-vivid-low-alt;
-        border-color: $color-neutral-high;
-    }
-
-    &:active {
-        background-color: $color-neutral-mid;
-    }
-
-    &:active:focus {
-        outline: 0;
-    }
-
-    &:disabled {
-        color: $color-type-disabled-alt;
-        border-color: $color-neutral-high;
-        background-color: $color-neutral-high;
-    }
-}
-
-.dropdown.open .btn-dropdown {
-    &:focus {
-        background-color: $color-neutral-high-alt;
-    }
-}
-
-.btn-dropdown .caret {
-    color: $color-type-primary;
-}
-
-.btn-dropdown:disabled .caret {
-    color: $color-neutral-high;
 }
 
 // Theme on color
@@ -187,7 +177,6 @@ dl.dropdown-menu {
                 }
             }
         }
-
         .dropdown-menu {
             background-color: $color-vivid-high-alt;
 
@@ -252,7 +241,6 @@ dl.dropdown-menu {
                 }
             }
         }
-
         .dropdown-menu {
             background-color: $color-bg-dark-vivid-mid;
 
