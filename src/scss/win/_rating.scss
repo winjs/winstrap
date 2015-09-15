@@ -53,11 +53,11 @@
                 line-height: 1;
                 background: none;
 
-                .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+                .glyph-star {
                     visibility: hidden;
                 }
 
-                &.active .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+                &.active .glyph-star {
                     visibility: visible;
                 }
             }
@@ -98,25 +98,25 @@
 
     // Default colors
     .rating-stars {
-        .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+        .glyph-star {
             color: $color-neutral-low;
         }
     }
 
     .rating-stars-value {
-        .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+        .glyph-star {
             color: $color-vivid-high;
         }
 
         &.rating-stars-value-user {
-            .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+            .glyph-star {
                 color: $color-accent;
             }
         }
     }
 
     .rating-btn.active {
-        .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+        .glyph-star {
             color: $color-vivid-mid;
         }
     }
@@ -128,25 +128,25 @@
     // Alt colors
     &.color-alt {
         .rating-stars {
-            .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+            .glyph-star {
                 color: $color-neutral-low-alt;
             }
         }
 
         .rating-stars-value {
-            .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+            .glyph-star {
                 color: $color-vivid-high-alt;
             }
 
             &.rating-stars-value-user {
-                .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+                .glyph-star {
                     color: $color-accent;
                 }
             }
         }
 
         .rating-btn.active {
-            .glyph-ratingStarFillReducedPaddingHTMLLegacy {
+            .glyph-star {
                 color: $color-vivid-mid-alt;
             }
         }

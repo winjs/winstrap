@@ -14,7 +14,7 @@
 
   > li + li:before {
     font-family: "winjs-symbols";
-    content: map-get($glyphs, chevronRightSmLegacy);
+    content: glyph(chevron-right-2);
     display: inline-block;
     padding: 0 4px 0 1px;
     font-size: .8em;

@@ -148,7 +148,7 @@ textarea.form-control {
 
     &:after {
         font-family: "winjs-symbols";
-        content: map-get($glyphs, scrollChevronDownBoldLegacy);
+        content: glyph(chevron-down);
         position: absolute;
         font-size: 1rem;
         top: 13px;

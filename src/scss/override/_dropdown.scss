@@ -108,7 +108,7 @@ dl.dropdown-menu {
   font-size: 12px;
 
   &::before {
-    content: map-get($glyphs, chevronFlipDownLegacy);
+    content: glyph(chevron-down-2);
     vertical-align: bottom;
   }
 }
