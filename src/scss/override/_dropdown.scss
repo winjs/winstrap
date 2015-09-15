@@ -8,10 +8,6 @@
         margin: spacing("n");
         min-width: 80px;
 
-        &:focus,
-        &:active {
-            outline: 0;
-        }
         .caret {
             border: none;
             width: auto;
@@ -66,14 +62,7 @@
             .caret {
                 color: $color-vivid-low;
             }
-            &:focus {
-                background-color: $color-vivid-mid-alt;
-                border-color: $color-vivid-low;
-
-                .caret {
-                    color: $color-vivid-low;
-                }
-            }
+            &:focus,
             &:hover {
                 background-color: $color-dim-mid;
                 border-color: $color-vivid-mid;
@@ -92,8 +81,8 @@
             }
             &.disabled {
                 color: $color-type-disabled;
-                background-color: $color-neutral-high;
-                border-color: $color-neutral-high;
+                background-color: $color-neutral-low-alt;
+                border-color: $color-neutral-low;
 
                 .caret {
                     color: $color-neutral-low;
@@ -123,7 +112,8 @@
                     }
                 }
                 &.active a,
-                a:hover {
+                a:hover,
+                a:focus {
                     color: $color-vivid-high-alt;
                     background-color: $color-accent-vivid-high;
 
@@ -145,14 +135,7 @@
             .caret {
                 color: $color-vivid-low-alt;
             }
-            &:focus {
-                background-color: $color-vivid-mid;
-                border-color: $color-vivid-low-alt;
-
-                .caret {
-                    color: $color-vivid-low-alt;
-                }
-            }
+            &:focus,
             &:hover {
                 background-color: $color-dim-mid-alt;
                 border-color: $color-vivid-mid-alt;
@@ -170,7 +153,7 @@
                 }
             }
             &.disabled {
-                color: $color-type-disabled;
+                color: $color-type-disabled-alt;
                 background-color: $color-neutral-low;
                 border-color: $color-neutral-low-alt;
 
@@ -213,14 +196,7 @@
             .caret {
                 color: $color-vivid-low;
             }
-            &:focus {
-                background-color: $color-vivid-low-alt;
-                border-color: $color-vivid-high-alt;
-
-                .caret {
-                    color: $color-vivid-low;
-                }
-            }
+            &:focus,
             &:hover {
                 background-color: $color-vivid-mid-alt;
                 border-color: $color-vivid-high-alt;
@@ -271,7 +247,8 @@
                    }
                 }
                 &.active a,
-                a:hover  {
+                a:hover,
+                a:focus  {
                     color: $color-vivid-high-alt;
                     background-color: $color-vivid-high;
 
