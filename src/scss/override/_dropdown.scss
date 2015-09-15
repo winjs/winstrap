@@ -117,15 +117,19 @@
             li {
                 a {
                    color: $color-type-primary;
+                    
+                    &.disabled {
+                        color: $color-type-disabled;
+                    }
                 }
                 &.active a,
                 a:hover {
                     color: $color-vivid-high-alt;
                     background-color: $color-accent-vivid-high;
 
-                   &.disabled {
-                        color: $color-type-disabled;
-                   }
+                    &.disabled {
+                        color: $color-type-disabled-alt;
+                    }
                 }
             }
         }
@@ -194,7 +198,7 @@
                    color: $color-type-primary-alt;
 
                    &.disabled {
-                        color: $color-type-disabled-alt;
+                        color: $color-neutral-mid-alt;
                    }
                 }
             }
@@ -261,6 +265,10 @@
 
                 a {
                    color: $color-type-primary;
+
+                   &.disabled {
+                        color: $color-type-disabled;
+                   }
                 }
                 &.active a,
                 a:hover  {
@@ -268,11 +276,7 @@
                     background-color: $color-vivid-high;
 
                    &.disabled {
-                        color: $color-type-disabled;
-
-                        &:hover {
-                            color: $color-type-disabled-alt;
-                        }
+                        color: $color-type-disabled-alt;
                    }
                 }
             }
