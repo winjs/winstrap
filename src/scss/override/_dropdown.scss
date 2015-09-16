@@ -8,6 +8,10 @@
         margin: spacing(n);
         min-width: 80px;
 
+        &:active {
+            box-shadow: none;
+        }
+
         .caret {
             border: none;
             width: auto;
