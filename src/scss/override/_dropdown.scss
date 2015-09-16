@@ -4,8 +4,8 @@
 
     .btn-dropdown {
         height: 36px;
-        padding: spacing("n") spacing("n") spacing("n") spacing("xxs");
-        margin: spacing("n");
+        padding: spacing(n) spacing(n) spacing(n) spacing(xxs);
+        margin: spacing(n);
         min-width: 80px;
 
         .caret {
@@ -15,8 +15,8 @@
             line-height: 1;
             font-family: "winjs-symbols";
             font-size: 12px;
-            padding: spacing("xxs") spacing("xxs", -1);
-            margin-left: spacing("xxxs");
+            padding: spacing(xxs) spacing(xxs, -1);
+            margin-left: spacing(xxxs);
 
             &::before {
                 content: map-get($icons, flipviewdown);
@@ -28,19 +28,18 @@
         box-shadow: none;
         border: none;
         width: 100%;
-        padding: spacing("n");
-        top: spacing("sm", -2px);
+        padding: spacing(n);
+        top: spacing(sm, -2px);
 
         li {
-            padding: spacing("n");
-            margin: spacing("n");
+            padding: spacing(n);
+            margin: spacing(n);
 
             a {
                 @include type-body(no-line-height);
-                line-height: spacing("md", -4px);
-                height: spacing("md", -4px);
-                padding: spacing("n");
-                padding-left: spacing("xxs");
+                line-height: spacing(md, -4px);
+                height: spacing(md, -4px);
+                padding: spacing(n) spacing(n) spacing(n) spacing(xxs);
                 text-decoration: none;
                 cursor: pointer;
             }
@@ -225,11 +224,11 @@
         }
         &.open {
             .btn-dropdown {
-                background-color: $color-vivid-high-alt !important;
-                border-color: $color-vivid-high-alt !important;
+                background-color: $color-vivid-high-alt;
+                border-color: $color-vivid-high-alt;
 
                 .caret {
-                    color: $color-vivid-mid !important;
+                    color: $color-vivid-mid;
                 }
             }
         }
