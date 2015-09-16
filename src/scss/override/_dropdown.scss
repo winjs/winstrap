@@ -8,6 +8,10 @@
         margin: spacing(n);
         min-width: 80px;
 
+        &:active {
+            box-shadow: none;
+        }
+
         .caret {
             border: none;
             width: auto;
@@ -36,7 +40,7 @@
             margin: spacing(n);
 
             a {
-                @include type-body(no-line-height);
+                @include type(t7);
                 line-height: spacing(md, -4px);
                 height: spacing(md, -4px);
                 padding: spacing(n) spacing(n) spacing(n) spacing(xxs);
@@ -57,7 +61,7 @@
         .btn-dropdown {
             background-color: $color-vivid-mid-alt;
             border-color: $color-vivid-low;
-            
+
             .caret {
                 color: $color-vivid-low;
             }
@@ -105,7 +109,7 @@
             li {
                 a {
                    color: $color-type-primary;
-                    
+
                     &.disabled {
                         color: $color-type-disabled;
                     }
@@ -259,4 +263,3 @@
         }
     }
 }
-    

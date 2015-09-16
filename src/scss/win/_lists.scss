@@ -58,7 +58,7 @@
     margin-bottom: 2em;
 
     li {
-        @include type-title();
+        @include type(t4);
         margin-bottom: 2 * ($grid-gutter-width-sm / 2);
     }
 

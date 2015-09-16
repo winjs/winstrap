@@ -7,7 +7,7 @@ $popover-position: spacing(xxxs);
     padding: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    @include type-body();
+    @include type(t7);
 
     &.top       { margin-top: -$popover-position; }
     &.right     { margin-left: $popover-position; }

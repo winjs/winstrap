@@ -41,8 +41,22 @@
          url("../fonts/selawksl.ttf") format("truetype");
 }
 
-// Sets font-size and font-weight to the md breakpoint with optional arguments to set line-height, or to fully set all the proper responsive attributes.
-@mixin set-type($font, $options) {
+// Responsive Typography mixin
+//// Sets font-size and font-weight to the md breakpoint with optional arguments to set line-height, or to fully set all the proper responsive attributes.
+//
+// Required argument:
+//
+// type size (t1 - t9)
+//
+// Optional arguments:
+//
+// responsive
+// Sets font size, weight, family to be responsive. Also sets responsive line-height if "set-line-height" is passed.
+//
+// set-line-height
+// Sets line-height. If "responsive" is passed, line-height will be responsive. Otherwise, line-height is fixed to the md breakpoint.
+//
+@mixin type($font, $options...) {
     $responsive: "false";
     $set-line-height: "false";
 
@@ -56,14 +70,15 @@
         }
     }
 
-    // set-type()
+    // type($font)
     font-size:                  map-deep-get($fonts, $font, "size-md");
     font-weight:                map-deep-get($fonts, $font, "weight-md");
     font-family:                map-deep-get($fonts, $font, "family-md");
+    letter-spacing:             map-deep-get($fonts, $font, "letter-spacing");
 
     @if (#{$responsive} == "true") {
 
-        // set-type(responsive)
+        // type($font, responsive)
         @media (max-width: $screen-sm-max) {
             font-size:          map-deep-get($fonts, $font, "size-sm");
             font-weight:        map-deep-get($fonts, $font, "weight-sm");
@@ -76,7 +91,7 @@
             font-family:        map-deep-get($fonts, $font, "family-xxl");
         }
 
-        // set-type(responsive, set-line-height)
+        // type($font, responsive, set-line-height)
         @if (#{$set-line-height} == "true") {
 
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
@@ -93,83 +108,98 @@
 
         @if (#{$set-line-height} == "true") {
 
-            // set-type(set-line-height)
+            // type($font, set-line-height)
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
         }
     }
 }
 
 
-// Responsive Typography mixins
+// Type control mixin
+// Sets headers, subheaders, paragraphs, and captions type attributes AND padding to make sure they land on the vertical grid. Defaults to the md breakpoint with optional argument to make the control responsive.
 //
-// Optional arguments:
+// Required argument:
 //
-// set-line-height
-// Sets line-height. If "responsive" is passed, line-height will be responsive. Otherwise, line-height is fixed to the md breakpoint.
+// control
+// One of the following:
+// h[1-6]
+// sh[1-6]
+// p[1-4]
+// c[1-2]
+//
+// Optional argument:
 //
 // responsive
-// Sets font size, weight, family to be responsive. Also sets responsive line-height if "set-line-height" is passed.
-@mixin type-headline($options...) {
-    letter-spacing: -0.01em;
-    @include set-type(headline, $options);
-}
-@mixin type-header($options...) {
-    letter-spacing: -0.01em;
-    @include set-type(header, $options);
-}
-@mixin type-subheader($options...) {
-    @include set-type(subheader, $options);
-}
-@mixin type-title($options...) {
-    @include set-type(title, $options);
-}
-@mixin type-subtitle($options...) {
-    @include set-type(subtitle, $options);
-}
-@mixin type-subtitle-alt($options...) {
-    @include set-type(subtitle-alt, $options);
-}
-@mixin type-base($options...) {
-    @include set-type(base, $options);
-}
-@mixin type-body($options...) {
-    @include set-type(body, $options);
-}
-@mixin type-caption($options...) {
-    @include set-type(caption, $options);
-}
-@mixin type-caption-alt($options...) {
-    @include set-type(caption-alt, $options);
+// Sets type and spacing to be responsive.
+//
+@mixin type-control($control, $responsive: "not-responsive") {
+    $type-size:         map-deep-get($fonts-spacing, $control, "type-size");
+    @include type($type-size, $responsive, set-line-height);
+
+    padding:            map-deep-get($fonts-spacing, $control, "space-md");
+
+    @if (#{$responsive} == "responsive") {
+        @media (max-width: $screen-sm-max) {
+            padding:    map-deep-get($fonts-spacing, $control, "space-sm");
+        }
+
+        @media (min-width: $screen-xxl-min) {
+            padding:    map-deep-get($fonts-spacing, $control, "space-xxl");
+        }
+    }
 }
 
-// Apply mixins to typography classes
-h1, .h1, .type-headline, .text-headline {
-    @include type-headline(responsive, set-line-height);
+// Generates comma-separated selectors to produce less duplicated CSS.
+@function generate-selectors($i, $classes...) {
+    $dot: ".";
+    $comma: ",";
+    $selectors: "";
+
+    @each $class in $classes {
+        @if (#{$selectors} == "") {
+            $selectors: #{$dot}#{$class}#{$i};
+        } @else {
+            $selectors: #{$selectors} #{$comma} #{$dot}#{$class}#{$i};
+        }
+    }
+
+    @return $selectors;
 }
-h2, .h2, .type-header, .text-header {
-    @include type-header(responsive, set-line-height);
+
+// Generates type classes
+@mixin generate-type-class($control, $from, $through, $classes...) {
+    @for $i from $from through $through {
+        #{generate-selectors($i, $classes...)} {
+            @if ($control == "t") {
+                @include type(#{$control}#{$i}, responsive, set-line-height);
+            } @else {
+                @include type-control(#{$control}#{$i}, responsive);
+            }
+        }
+    }
 }
-h3, .h3, .type-subheader, .text-subheader {
-    @include type-subheader(responsive, set-line-height);
-}
-h4, .h4, .type-title, .text-title {
-    @include type-title(responsive, set-line-height);
-}
-h5, .h5, .type-subtitle, .text-subtitle {
-    @include type-subtitle(responsive, set-line-height);
-}
-h6, .h6, .type-subtitle-alt, .text-subtitle-alt {
-    @include type-subtitle-alt(responsive, set-line-height);
-}
-.type-base, .text-base {
-    @include type-base(responsive, set-line-height);
-}
-p, .type-body, .text-body {
-    @include type-body(responsive, set-line-height);
-}
-.type-caption, .text-caption {
-    @include type-caption(responsive, set-line-height);
-}
-.type-caption-alt, .text-caption-alt {
-    @include type-caption-alt(responsive, set-line-height);
-}
+
+// Typography classes (.type-t*, .text-t*)
+@include generate-type-class(t, 1, 9, type-t, text-t);
+
+// Header classes (.h*, .type-h*)
+@include generate-type-class(h, 1, 6, h, type-h);
+
+// Subheader classes (.type-sh*)
+@include generate-type-class(sh, 1, 6, type-sh);
+
+// Paragraph classes (.type-p*)
+@include generate-type-class(p, 1, 4, type-p);
+
+// Caption classes (.type-c*)
+@include generate-type-class(c, 1, 2, type-c);
+
+
+h1 { @extend .type-h1; }
+h2 { @extend .type-h2; }
+h3 { @extend .type-h3; }
+h4 { @extend .type-h4; }
+h5 { @extend .type-h5; }
+h6 { @extend .type-h6; }
+
+p { @extend .type-p3; }

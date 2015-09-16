@@ -65,6 +65,7 @@
     margin: 0 (-$navbar-padding-horizontal);
 
     .open .dropdown-menu {
+        top: 100%;
         padding: 0;
 
         > li > a {
