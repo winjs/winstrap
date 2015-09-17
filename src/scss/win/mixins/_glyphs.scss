@@ -1,0 +1,4 @@
+// Function to get glyph unicode value
+@function glyph($name) {
+    @return map-deep-get($glyphs, $name, unicode);
+}

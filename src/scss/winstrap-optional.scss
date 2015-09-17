@@ -12,19 +12,20 @@
 @import "win/mixins/animations";
 @import "win/mixins/triangle";
 @import "win/mixins/spacer";
+@import "win/mixins/glyphs";
 @import "override/mixins/tab-focus";
 
 // Base
 @import "win/grid";
 
 //optional bootstrap configuration without grid as example.
-/* when a project includes winstrap, it might want to pick and choose what parts of bootstrap 
-to include instead of the default set of bootstrap components winstrap selects automatically. 
-This demonstrates how to do this for a project that happens to override the bootstrap grid in 
+/* when a project includes winstrap, it might want to pick and choose what parts of bootstrap
+to include instead of the default set of bootstrap components winstrap selects automatically.
+This demonstrates how to do this for a project that happens to override the bootstrap grid in
 order to substitute it with another grid. instead of @import "winstrap/src/scss/winstrap", use
 @import "winstrap/src/scss/winstrap-optional" in your project's scss */
 @import "override/bootstrap-optional";
-@import "win/icons";
+@import "win/glyphs";
 @import "win/utilities";
 @import "win/type";
 

@@ -1,0 +1,54 @@
+<div class="row" id="subheadings">
+    <div class="col-xs-24">
+        <div class="row">
+            <div class="col-xs-24">
+                <h2>Subheadings</h2>
+                <p>There are six Winstrap subheading controls. We recommend pairing  <code>type-h1</code> with <code>type-sh1</code>, <code>type-h2</code> with <code>type-sh2</code>, etc.</p>
+                <p>You can also apply subheadings using the Sass mixin. Subheadings applied using the mixin are not responsive by default. Pass the <code>responsive</code> argument to make them responsive.</p>
+            </div>
+        </div>
+
+        <div class="row m-t-sm">
+            <div class="col-md-12">
+                <div class="type-sh1">Subheading 1</div>
+                <div class="type-sh2">Subheading 2</div>
+                <div class="type-sh3">Subheading 3</div>
+                <div class="type-sh4">Subheading 4</div>
+                <div class="type-sh5">Subheading 5</div>
+                <div class="type-sh6">Subheading 6</div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```xml
+<div class="type-sh1">Subheading 1</div>
+
+<div class="type-sh2">Subheading 2</div>
+
+<div class="type-sh3">Subheading 3</div>
+
+<div class="type-sh4">Subheading 4</div>
+
+<div class="type-sh5">Subheading 5</div>
+
+<div class="type-sh6">Subheading 6</div>
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```scss
+.selector {
+    @include type-control(sh[1-6], [responsive]);
+}
+```
+                        {{/markdown}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

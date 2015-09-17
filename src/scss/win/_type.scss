@@ -1,4 +1,4 @@
-// Icon font
+// Glyph font
 @font-face {
     font-family: "winjs-symbols";
     src: url("#{$icon-font-path}/winjs-symbols.eot");
@@ -116,7 +116,7 @@
 
 
 // Type control mixin
-// Sets headers, subheaders, paragraphs, and captions type attributes AND padding to make sure they land on the vertical grid. Defaults to the md breakpoint with optional argument to make the control responsive.
+// Sets headings, subheadings, paragraphs, and captions type attributes AND padding to make sure they land on the vertical grid. Defaults to the md breakpoint with optional argument to make the control responsive.
 //
 // Required argument:
 //
@@ -182,10 +182,10 @@
 // Typography classes (.type-t*, .text-t*)
 @include generate-type-class(t, 1, 9, type-t, text-t);
 
-// Header classes (.h*, .type-h*)
+// Heading classes (.h*, .type-h*)
 @include generate-type-class(h, 1, 6, h, type-h);
 
-// Subheader classes (.type-sh*)
+// Subheading classes (.type-sh*)
 @include generate-type-class(sh, 1, 6, type-sh);
 
 // Paragraph classes (.type-p*)

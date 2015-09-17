@@ -1,0 +1,950 @@
+﻿// Generic glyph placeholder
+.glyph {
+    display: inline-block;
+    width: 1em; height: 1em;
+    vertical-align: middle;
+    overflow: hidden;
+
+    &:before {
+        display: block;
+        width: 1em; height: 1em;
+        font-family: "winjs-symbols";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+// List of glyphs with their associated UTF-8 private spaces and original names in WinJS Symbols
+$glyphs: (
+    chevron-up: (
+        unicode:        "\E018",
+        original-name:  "scrollChevronUpBoldLegacy"
+    ),
+    chevron-down: (
+        unicode:        "\E019",
+        original-name:  "scrollChevronDownBoldLegacy"
+    ),
+    checkmark: (
+        unicode:        "\E081",
+        original-name:  "checkmarkListviewLegacy"
+    ),
+    star: (
+        unicode:        "\E082",
+        original-name:  "ratingStarFillReducedPaddingHTMLLegacy"
+    ),
+    magnifier: (
+        unicode:        "\E094",
+        original-name:  "searchboxLegacy"
+    ),
+    semantic-zoom: (
+        unicode:        "\E0B8",
+        original-name:  "semanticZoomLegacy"
+    ),
+    arrow-left: (
+        unicode:        "\E0D5",
+        original-name:  "arrowHTMLLegacy"
+    ),
+    arrow-right: (
+        unicode:        "\E0AE",
+        original-name:  "arrowHTMLMirroredLegacy"
+    ),
+    chevron-left: (
+        unicode:        "\E0E2",
+        original-name:  "chevronFlipLeftLegacy"
+    ),
+    chevron-right: (
+        unicode:        "\E0E3",
+        original-name:  "chevronFlipRightLegacy"
+    ),
+    chevron-up-2: (
+        unicode:        "\E0E4",
+        original-name:  "ChevronFlipUpLegacy"
+    ),
+    chevron-down-2: (
+        unicode:        "\E0E5",
+        original-name:  "chevronFlipDownLegacy"
+    ),
+    checkmark-2: (
+        unicode:        "\E0E7",
+        original-name:  "checkmarkMenuLegacy"
+    ),
+    star-outline: (
+        unicode:        "\E224",
+        original-name:  "ratingStarLegacy"
+    ),
+    chevron-right-2: (
+        unicode:        "\E26B",
+        original-name:  "chevronRightSmLegacy"
+    ),
+    chevron-left-2: (
+        unicode:        "\E26C",
+        original-name:  "chevronLeftSmLegacy"
+    ),
+    previous: (
+        unicode:        "\E100",
+        original-name:  "previousLegacy"
+    ),
+    next: (
+        unicode:        "\E101",
+        original-name:  "nextLegacy"
+    ),
+    play: (
+        unicode:        "\E102",
+        original-name:  "playLegacy"
+    ),
+    pause: (
+        unicode:        "\E103",
+        original-name:  "pauseLegacy"
+    ),
+    edit: (
+        unicode:        "\E104",
+        original-name:  "editLegacy"
+    ),
+    save: (
+        unicode:        "\E105",
+        original-name:  "saveLegacy"
+    ),
+    clear: (
+        unicode:        "\E106",
+        original-name:  "clearLegacy"
+    ),
+    delete: (
+        unicode:        "\E107",
+        original-name:  "deleteLegacy"
+    ),
+    remove: (
+        unicode:        "\E108",
+        original-name:  "removeLegacy"
+    ),
+    add: (
+        unicode:        "\E109",
+        original-name:  "addLegacy"
+    ),
+    cancel: (
+        unicode:        "\E10A",
+        original-name:  "cancelLegacy"
+    ),
+    accept: (
+        unicode:        "\E10B",
+        original-name:  "acceptLegacy"
+    ),
+    more: (
+        unicode:        "\E10C",
+        original-name:  "moreLegacy"
+    ),
+    redo: (
+        unicode:        "\E10D",
+        original-name:  "redoLegacy"
+    ),
+    undo: (
+        unicode:        "\E10E",
+        original-name:  "undoLegacy"
+    ),
+    home: (
+        unicode:        "\E10F",
+        original-name:  "homeLegacy"
+    ),
+    up: (
+        unicode:        "\E110",
+        original-name:  "upLegacy"
+    ),
+    forward: (
+        unicode:        "\E111",
+        original-name:  "forwardLegacy"
+    ),
+    back: (
+        unicode:        "\E112",
+        original-name:  "backLegacy"
+    ),
+    favorite: (
+        unicode:        "\E113",
+        original-name:  "favoriteLegacy"
+    ),
+    camera: (
+        unicode:        "\E114",
+        original-name:  "cameraLegacy"
+    ),
+    settings: (
+        unicode:        "\E115",
+        original-name:  "settingsLegacy"
+    ),
+    video: (
+        unicode:        "\E116",
+        original-name:  "videoLegacy"
+    ),
+    sync: (
+        unicode:        "\E117",
+        original-name:  "syncLegacy"
+    ),
+    download: (
+        unicode:        "\E118",
+        original-name:  "downloadLegacy"
+    ),
+    mail: (
+        unicode:        "\E119",
+        original-name:  "mailLegacy"
+    ),
+    magnifier-2: (
+        unicode:        "\E11A",
+        original-name:  "findLegacy"
+    ),
+    help: (
+        unicode:        "\E11B",
+        original-name:  "helpLegacy"
+    ),
+    upload: (
+        unicode:        "\E11C",
+        original-name:  "uploadLegacy"
+    ),
+    emoji: (
+        unicode:        "\E11D",
+        original-name:  "emojiLegacy"
+    ),
+    two-page: (
+        unicode:        "\E11E",
+        original-name:  "twoPageLegacy"
+    ),
+    leave-chat: (
+        unicode:        "\E11F",
+        original-name:  "leaveChatLegacy"
+    ),
+    mail-forward: (
+        unicode:        "\E120",
+        original-name:  "mailForwardLegacy"
+    ),
+    clock: (
+        unicode:        "\E121",
+        original-name:  "clockLegacy"
+    ),
+    send: (
+        unicode:        "\E122",
+        original-name:  "sendLegacy"
+    ),
+    crop: (
+        unicode:        "\E123",
+        original-name:  "cropLegacy"
+    ),
+    rotate-camera: (
+        unicode:        "\E124",
+        original-name:  "rotateCameraLegacy"
+    ),
+    people: (
+        unicode:        "\E125",
+        original-name:  "peopleLegacy"
+    ),
+    close-pane: (
+        unicode:        "\E126",
+        original-name:  "closePaneLegacy"
+    ),
+    open-pane: (
+        unicode:        "\E127",
+        original-name:  "openPaneLegacy"
+    ),
+    world: (
+        unicode:        "\E128",
+        original-name:  "worldLegacy"
+    ),
+    flag: (
+        unicode:        "\E129",
+        original-name:  "flagLegacy"
+    ),
+    preview-link: (
+        unicode:        "\E12A",
+        original-name:  "previewLinkLegacy"
+    ),
+    globe: (
+        unicode:        "\E12B",
+        original-name:  "globeLegacy"
+    ),
+    trim: (
+        unicode:        "\E12C",
+        original-name:  "trimLegacy"
+    ),
+    attach-camera: (
+        unicode:        "\E12D",
+        original-name:  "attachCameraLegacy"
+    ),
+    zoom-in: (
+        unicode:        "\E12E",
+        original-name:  "zoomInLegacy"
+    ),
+    bookmarks: (
+        unicode:        "\E12F",
+        original-name:  "bookmarksLegacy"
+    ),
+    document: (
+        unicode:        "\E130",
+        original-name:  "documentLegacy"
+    ),
+    protected-document: (
+        unicode:        "\E131",
+        original-name:  "protecteddocumentLegacy"
+    ),
+    page: (
+        unicode:        "\E132",
+        original-name:  "pageFillLegacy"
+    ),
+    multi-select: (
+        unicode:        "\E133",
+        original-name:  "multiSelectLegacy"
+    ),
+    comment: (
+        unicode:        "\E134",
+        original-name:  "commentLegacy"
+    ),
+    mail-2: (
+        unicode:        "\E135",
+        original-name:  "mailFillLegacy"
+    ),
+    contact-info: (
+        unicode:        "\E136",
+        original-name:  "contactInfoLegacy"
+    ),
+    hang-up: (
+        unicode:        "\E137",
+        original-name:  "hangUpLegacy"
+    ),
+    view-all: (
+        unicode:        "\E138",
+        original-name:  "viewAllLegacy"
+    ),
+    map-pin: (
+        unicode:        "\E139",
+        original-name:  "mapPinLegacy"
+    ),
+    phone: (
+        unicode:        "\E13A",
+        original-name:  "phoneLegacy"
+    ),
+    video-chat: (
+        unicode:        "\E13B",
+        original-name:  "videoChatLegacy"
+    ),
+    switch: (
+        unicode:        "\E13C",
+        original-name:  "switchLegacy"
+    ),
+    contact: (
+        unicode:        "\E13D",
+        original-name:  "contactLegacy"
+    ),
+    rename: (
+        unicode:        "\E13E",
+        original-name:  "renameLegacy"
+    ),
+    pin: (
+        unicode:        "\E141",
+        original-name:  "pinLegacy"
+    ),
+    music-info: (
+        unicode:        "\E142",
+        original-name:  "musicInfoLegacy"
+    ),
+    go: (
+        unicode:        "\E143",
+        original-name:  "goLegacy"
+    ),
+    keyboard: (
+        unicode:        "\E144",
+        original-name:  "keyBoardLegacy"
+    ),
+    dock-left: (
+        unicode:        "\E145",
+        original-name:  "dockLeftLegacy"
+    ),
+    dock-right: (
+        unicode:        "\E146",
+        original-name:  "dockRightLegacy"
+    ),
+    dock-bottom: (
+        unicode:        "\E147",
+        original-name:  "dockBottomLegacy"
+    ),
+    remote: (
+        unicode:        "\E148",
+        original-name:  "remoteLegacy"
+    ),
+    refresh: (
+        unicode:        "\E149",
+        original-name:  "refreshLegacy"
+    ),
+    rotate: (
+        unicode:        "\E14A",
+        original-name:  "rotateLegacy"
+    ),
+    shuffle: (
+        unicode:        "\E14B",
+        original-name:  "shuffleLegacy"
+    ),
+    list: (
+        unicode:        "\E14C",
+        original-name:  "listLegacy"
+    ),
+    shop: (
+        unicode:        "\E14D",
+        original-name:  "shopLegacy"
+    ),
+    select-all: (
+        unicode:        "\E14E",
+        original-name:  "selectAllLegacy"
+    ),
+    orientation: (
+        unicode:        "\E14F",
+        original-name:  "orientationLegacy"
+    ),
+    import: (
+        unicode:        "\E150",
+        original-name:  "importLegacy"
+    ),
+    import-all: (
+        unicode:        "\E151",
+        original-name:  "importAllLegacy"
+    ),
+    browse-photos: (
+        unicode:        "\E155",
+        original-name:  "browsePhotosLegacy"
+    ),
+    webcam: (
+        unicode:        "\E156",
+        original-name:  "webcamLegacy"
+    ),
+    picture: (
+        unicode:        "\E158",
+        original-name:  "pictureLegacy"
+    ),
+    save-local: (
+        unicode:        "\E159",
+        original-name:  "saveLocalLegacy"
+    ),
+    caption: (
+        unicode:        "\E15A",
+        original-name:  "captionLegacy"
+    ),
+    stop: (
+        unicode:        "\E15B",
+        original-name:  "stopLegacy"
+    ),
+    show-results: (
+        unicode:        "\E15C",
+        original-name:  "showResultsLegacy"
+    ),
+    volume: (
+        unicode:        "\E15D",
+        original-name:  "volumeLegacy"
+    ),
+    repair: (
+        unicode:        "\E15E",
+        original-name:  "repairLegacy"
+    ),
+    message: (
+        unicode:        "\E15F",
+        original-name:  "messageLegacy"
+    ),
+    page-outline: (
+        unicode:        "\E160",
+        original-name:  "pageLegacy"
+    ),
+    calendar-day: (
+        unicode:        "\E161",
+        original-name:  "calendarDayLegacy"
+    ),
+    calendar-week: (
+        unicode:        "\E162",
+        original-name:  "calendarWeekLegacy"
+    ),
+    calendar: (
+        unicode:        "\E163",
+        original-name:  "calendarLegacy"
+    ),
+    characters: (
+        unicode:        "\E164",
+        original-name:  "charactersLegacy"
+    ),
+    mail-reply-all: (
+        unicode:        "\E165",
+        original-name:  "mailReplyAllLegacy"
+    ),
+    mail-read: (
+        unicode:        "\E166",
+        original-name:  "readLegacy"
+    ),
+    link: (
+        unicode:        "\E167",
+        original-name:  "linkLegacy"
+    ),
+    accounts: (
+        unicode:        "\E168",
+        original-name:  "accountsLegacy"
+    ),
+    show-bcc: (
+        unicode:        "\E169",
+        original-name:  "showBccLegacy"
+    ),
+    hide-bcc: (
+        unicode:        "\E16A",
+        original-name:  "hideBccLegacy"
+    ),
+    cut: (
+        unicode:        "\E16B",
+        original-name:  "cutLegacy"
+    ),
+    attach: (
+        unicode:        "\E16C",
+        original-name:  "attachLegacy"
+    ),
+    paste: (
+        unicode:        "\E16D",
+        original-name:  "pasteLegacy"
+    ),
+    filter: (
+        unicode:        "\E16E",
+        original-name:  "filterLegacy"
+    ),
+    copy: (
+        unicode:        "\E16F",
+        original-name:  "copyLegacy"
+    ),
+    emoji-2: (
+        unicode:        "\E170",
+        original-name:  "emoji2Legacy"
+    ),
+    important: (
+        unicode:        "\E171",
+        original-name:  "importantLegacy"
+    ),
+    mail-reply: (
+        unicode:        "\E172",
+        original-name:  "mailReplyLegacy"
+    ),
+    slideshow: (
+        unicode:        "\E173",
+        original-name:  "slideshowLegacy"
+    ),
+    sort: (
+        unicode:        "\E174",
+        original-name:  "sortLegacy"
+    ),
+    manage: (
+        unicode:        "\E178",
+        original-name:  "manageLegacy"
+    ),
+    all-apps: (
+        unicode:        "\E179",
+        original-name:  "allAppsLegacy"
+    ),
+    disconnect-drive: (
+        unicode:        "\E17A",
+        original-name:  "disconnectDriveLegacy"
+    ),
+    map-drive: (
+        unicode:        "\E17B",
+        original-name:  "mapDriveLegacy"
+    ),
+    new-window: (
+        unicode:        "\E17C",
+        original-name:  "newWindowLegacy"
+    ),
+    open-with: (
+        unicode:        "\E17D",
+        original-name:  "openWithLegacy"
+    ),
+    contact-presence: (
+        unicode:        "\E181",
+        original-name:  "contactPresenceLegacy"
+    ),
+    priority: (
+        unicode:        "\E182",
+        original-name:  "priorityLegacy"
+    ),
+    upload-2: (
+        unicode:        "\E183",
+        original-name:  "uploadSkyDriveLegacy"
+    ),
+    go-to-today: (
+        unicode:        "\E184",
+        original-name:  "gotoTodayLegacy"
+    ),
+    font: (
+        unicode:        "\E185",
+        original-name:  "fontLegacy"
+    ),
+    font-color: (
+        unicode:        "\E186",
+        original-name:  "fontColorLegacy"
+    ),
+    contact-2: (
+        unicode:        "\E187",
+        original-name:  "contact2Legacy"
+    ),
+    folder: (
+        unicode:        "\E188",
+        original-name:  "folderLegacy"
+    ),
+    audio: (
+        unicode:        "\E189",
+        original-name:  "audioLegacy"
+    ),
+    placeholder: (
+        unicode:        "\E18A",
+        original-name:  "placeholderLegacy"
+    ),
+    view: (
+        unicode:        "\E18B",
+        original-name:  "viewLegacy"
+    ),
+    set-lockscreen: (
+        unicode:        "\E18C",
+        original-name:  "setlockScreenLegacy"
+    ),
+    set-tile: (
+        unicode:        "\E18D",
+        original-name:  "setTileLegacy"
+    ),
+    cc: (
+        unicode:        "\E190",
+        original-name:  "ccLegacy"
+    ),
+    stop-slideshow: (
+        unicode:        "\E191",
+        original-name:  "stopSlideshowLegacy"
+    ),
+    permissions: (
+        unicode:        "\E192",
+        original-name:  "permissionsLegacy"
+    ),
+    highlight: (
+        unicode:        "\E193",
+        original-name:  "highlightLegacy"
+    ),
+    disable-updates: (
+        unicode:        "\E194",
+        original-name:  "disableUpdatesLegacy"
+    ),
+    unfavorite: (
+        unicode:        "\E195",
+        original-name:  "unfavoriteLegacy"
+    ),
+    unpin: (
+        unicode:        "\E196",
+        original-name:  "unpinLegacy"
+    ),
+    open-local: (
+        unicode:        "\E197",
+        original-name:  "openLocalLegacy"
+    ),
+    mute: (
+        unicode:        "\E198",
+        original-name:  "muteLegacy"
+    ),
+    italic: (
+        unicode:        "\E199",
+        original-name:  "italicLegacy"
+    ),
+    underline: (
+        unicode:        "\E19A",
+        original-name:  "underlineLegacy"
+    ),
+    bold: (
+        unicode:        "\E19B",
+        original-name:  "boldLegacy"
+    ),
+    move-to-folder: (
+        unicode:        "\E19C",
+        original-name:  "moveToFolderLegacy"
+    ),
+    like-dislike: (
+        unicode:        "\E19D",
+        original-name:  "likeDislikeLegacy"
+    ),
+    dislike: (
+        unicode:        "\E19E",
+        original-name:  "dislikeLegacy"
+    ),
+    like: (
+        unicode:        "\E19F",
+        original-name:  "likeLegacy"
+    ),
+    align-right: (
+        unicode:        "\E1A0",
+        original-name:  "alignRightLegacy"
+    ),
+    align-center: (
+        unicode:        "\E1A1",
+        original-name:  "alignCenterLegacy"
+    ),
+    align-left: (
+        unicode:        "\E1A2",
+        original-name:  "alignLeftLegacy"
+    ),
+    magnifier-3: (
+        unicode:        "\E1A3",
+        original-name:  "zoomLegacy"
+    ),
+    zoom-out: (
+        unicode:        "\E1A4",
+        original-name:  "zoomOutLegacy"
+    ),
+    open-file: (
+        unicode:        "\E1A5",
+        original-name:  "openFileLegacy"
+    ),
+    other-user: (
+        unicode:        "\E1A6",
+        original-name:  "otherUserLegacy"
+    ),
+    admin: (
+        unicode:        "\E1A7",
+        original-name:  "adminLegacy"
+    ),
+    street: (
+        unicode:        "\E1C3",
+        original-name:  "streetLegacy"
+    ),
+    map: (
+        unicode:        "\E1C4",
+        original-name:  "mapLegacy"
+    ),
+    clear-selection: (
+        unicode:        "\E1C5",
+        original-name:  "clearSelectionLegacy"
+    ),
+    font-decrease: (
+        unicode:        "\E1C6",
+        original-name:  "fontDecreaseLegacy"
+    ),
+    font-increase: (
+        unicode:        "\E1C7",
+        original-name:  "fontIncreaseLegacy"
+    ),
+    font-size: (
+        unicode:        "\E1C8",
+        original-name:  "fontSizeLegacy"
+    ),
+    cellphone: (
+        unicode:        "\E1C9",
+        original-name:  "cellPhoneLegacy"
+    ),
+    reshare: (
+        unicode:        "\E1CA",
+        original-name:  "reshareLegacy"
+    ),
+    tag: (
+        unicode:        "\E1CB",
+        original-name:  "tagLegacy"
+    ),
+    repeat-once: (
+        unicode:        "\E1CC",
+        original-name:  "repeatOneLegacy"
+    ),
+    repeat-all: (
+        unicode:        "\E1CD",
+        original-name:  "repeatAllLegacy"
+    ),
+    star-outline-2: (
+        unicode:        "\E1CE",
+        original-name:  "outlineStarLegacy"
+    ),
+    star-2: (
+        unicode:        "\E1CF",
+        original-name:  "solidStarLegacy"
+    ),
+    calculator: (
+        unicode:        "\E1D0",
+        original-name:  "calculatorLegacy"
+    ),
+    directions: (
+        unicode:        "\E1D1",
+        original-name:  "directionsLegacy"
+    ),
+    location: (
+        unicode:        "\E1D2",
+        original-name:  "locationLegacy"
+    ),
+    library: (
+        unicode:        "\E1D3",
+        original-name:  "libraryLegacy"
+    ),
+    phonebook: (
+        unicode:        "\E1D4",
+        original-name:  "phoneBookLegacy"
+    ),
+    memo: (
+        unicode:        "\E1D5",
+        original-name:  "memoLegacy"
+    ),
+    microphone: (
+        unicode:        "\E1D6",
+        original-name:  "microphoneLegacy"
+    ),
+    post-update: (
+        unicode:        "\E1D7",
+        original-name:  "postUpdateLegacy"
+    ),
+    back-to-window: (
+        unicode:        "\E1D8",
+        original-name:  "backToWindowLegacy"
+    ),
+    fullscreen: (
+        unicode:        "\E1D9",
+        original-name:  "fullScreenLegacy"
+    ),
+    new-folder: (
+        unicode:        "\E1DA",
+        original-name:  "newFolderLegacy"
+    ),
+    calendar-reply: (
+        unicode:        "\E1DB",
+        original-name:  "calendarReplyLegacy"
+    ),
+    unsync-folder: (
+        unicode:        "\E1DD",
+        original-name:  "unsyncFolderLegacy"
+    ),
+    report-hacked: (
+        unicode:        "\E1DE",
+        original-name:  "reportHackedLegacy"
+    ),
+    sync-folder: (
+        unicode:        "\E1DF",
+        original-name:  "syncFolderLegacy"
+    ),
+    block-contact: (
+        unicode:        "\E1E0",
+        original-name:  "blockContactLegacy"
+    ),
+    switch-apps: (
+        unicode:        "\E1E1",
+        original-name:  "switchAppsLegacy"
+    ),
+    add-friend: (
+        unicode:        "\E1E2",
+        original-name:  "addFriendLegacy"
+    ),
+    touch-pointer: (
+        unicode:        "\E1E3",
+        original-name:  "touchPointerLegacy"
+    ),
+    go-to-start: (
+        unicode:        "\E1E4",
+        original-name:  "goToStartLegacy"
+    ),
+    zero-bar: (
+        unicode:        "\E1E5",
+        original-name:  "zeroBarsLegacy"
+    ),
+    one-bar: (
+        unicode:        "\E1E6",
+        original-name:  "oneBarLegacy"
+    ),
+    two-bars: (
+        unicode:        "\E1E7",
+        original-name:  "twoBarsLegacy"
+    ),
+    three-bars: (
+        unicode:        "\E1E8",
+        original-name:  "threeBarsLegacy"
+    ),
+    four-bars: (
+        unicode:        "\E1E9",
+        original-name:  "fourBarsLegacy"
+    ),
+    scan: (
+        unicode:        "\E294",
+        original-name:  "scanLegacy"
+    ),
+    preview: (
+        unicode:        "\E295",
+        original-name:  "previewLegacy"
+    ),
+    hamburger: (
+        unicode:        "\E700",
+        original-name:  "globalNavButton"
+    ),
+    checkbox-composite: (
+        unicode:        "\E73A",
+        original-name:  "checkboxComposite"
+    ),
+    checkbox-indeterminate: (
+        unicode:        "\E73C",
+        original-name:  "checkboxIndeterminate"
+    ),
+    warning: (
+        unicode:        "\E7BA",
+        original-name:  "warning"
+    ),
+    shopping-cart: (
+        unicode:        "\E7BF",
+        original-name:  "shoppingCart"
+    ),
+    flag-2: (
+        unicode:        "\E7C1",
+        original-name:  "flag2"
+    ),
+    completed: (
+        unicode:        "\E930",
+        original-name:  "completed"
+    ),
+    music-album: (
+        unicode:        "\E93C",
+        original-name:  "musicAlbum"
+    ),
+    info: (
+        unicode:        "\E946",
+        original-name:  "info"
+    ),
+    devices: (
+        unicode:        "\EA6C",
+        original-name:  "devices3"
+    ),
+    expand: (
+        unicode:        "\ECC8",
+        original-name:  "expand"
+    ),
+    collapse: (
+        unicode:        "\ECC9",
+        original-name:  "collapse"
+    ),
+    radio-btn-off: (
+        unicode:        "\ECCA",
+        original-name:  "radioBtnOff"
+    ),
+    radio-btn-on: (
+        unicode:        "\ECCB",
+        original-name:  "radioBtnOn"
+    ),
+    radio-bullet: (
+        unicode:        "\ECCC",
+        original-name:  "radioBullet2"
+    ),
+    media-browse: (
+        unicode:        "\ECCD",
+        original-name:  "mediaBrowse"
+    )
+);
+
+// Generate glyph-* classes
+@each $glyph, $values in $glyphs {
+    .glyph-#{$glyph}::before {
+        content: "#{map-get($values, unicode)}";
+    }
+}
+
+
+// Checkbox & Radio Buttons
+.checkbox label {
+    input:checked ~ span::before {
+        content: glyph(checkmark);
+    }
+    input:indeterminate ~ span::before {
+        content: "■"; // Use "\E73C" when we get MDL Symbols font
+    }
+}
+
+.radio label {
+    input:checked ~ span::before {
+        content: "•"; // Replace this when we get MDL Symbols font
+    }
+}

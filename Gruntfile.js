@@ -89,6 +89,7 @@ module.exports = function (grunt) {
         partials: ['src/doc/partials/**/*.hbs'],
         layout: ['src/doc/layouts/default.hbs'],
         flatten: true,
+        data: 'src/doc/data/*.json',
 
         // Set the version number
         version: '<%= pkg.version %>',

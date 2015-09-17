@@ -53,11 +53,11 @@
                 line-height: 1;
                 background: none;
 
-                .icon-ratingstar {
+                .glyph-star {
                     visibility: hidden;
                 }
 
-                &.active .icon-ratingstar {
+                &.active .glyph-star {
                     visibility: visible;
                 }
             }
@@ -98,25 +98,25 @@
 
     // Default colors
     .rating-stars {
-        .icon-ratingstar {
+        .glyph-star {
             color: $color-neutral-low;
         }
     }
 
     .rating-stars-value {
-        .icon-ratingstar {
+        .glyph-star {
             color: $color-vivid-high;
         }
 
         &.rating-stars-value-user {
-            .icon-ratingstar {
+            .glyph-star {
                 color: $color-accent;
             }
         }
     }
 
     .rating-btn.active {
-        .icon-ratingstar {
+        .glyph-star {
             color: $color-vivid-mid;
         }
     }
@@ -128,25 +128,25 @@
     // Alt colors
     &.color-alt {
         .rating-stars {
-            .icon-ratingstar {
+            .glyph-star {
                 color: $color-neutral-low-alt;
             }
         }
 
         .rating-stars-value {
-            .icon-ratingstar {
+            .glyph-star {
                 color: $color-vivid-high-alt;
             }
 
             &.rating-stars-value-user {
-                .icon-ratingstar {
+                .glyph-star {
                     color: $color-accent;
                 }
             }
         }
 
         .rating-btn.active {
-            .icon-ratingstar {
+            .glyph-star {
                 color: $color-vivid-mid-alt;
             }
         }

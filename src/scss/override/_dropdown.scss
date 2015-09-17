@@ -23,7 +23,7 @@
             margin-left: spacing(xxxs);
 
             &::before {
-                content: map-get($icons, flipviewdown);
+                content: glyph(chevron-down-2);
                 vertical-align: bottom;
             }
         }

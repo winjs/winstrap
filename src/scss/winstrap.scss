@@ -12,12 +12,13 @@
 @import "win/mixins/animations";
 @import "win/mixins/triangle";
 @import "win/mixins/spacer";
+@import "win/mixins/glyphs";
 @import "override/mixins/tab-focus";
 
 // Base
 @import "win/grid";
 @import "override/bootstrap";
-@import "win/icons";
+@import "win/glyphs";
 @import "win/utilities";
 @import "win/type";
 

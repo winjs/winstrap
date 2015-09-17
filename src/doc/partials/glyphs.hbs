@@ -1,0 +1,41 @@
+﻿<section class="section" id="glyphs">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
+            <a href="#glyphs">Glyphs</a>
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-24">
+            <p>There are 211 free and open source glyphs included in Winstrap. Here are the available glyphs with their respective names. To display a glyph, add the <code>glyph</code> base class and the individual <code>glyph-*</code> class.</p>
+
+            {{#markdown}}
+```xml
+<span class="glyph glyph-[name]" aria-hidden="true"></span>
+```
+            {{/markdown}}
+
+            <p>Glyphs can also be displayed using the <code>glyph</code> Sass function:</p>
+
+            {{#markdown}}
+```scss
+.selector {
+    font-family: "winjs-symbols";
+
+    &::before {
+        content: glyph( [name] );
+    }
+}
+```
+            {{/markdown}}
+        </div>
+
+        {{#each glyphs.names}}
+        <div class="col-xs-6">
+            <p><span class="glyph glyph-{{name}}"></span></p>
+            <p><code>{{name}}</code></p>
+        </div>
+        {{/each}}
+
+    </div>
+</section>
