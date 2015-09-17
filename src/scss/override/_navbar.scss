@@ -65,6 +65,7 @@
     margin: 0 (-$navbar-padding-horizontal);
 
     .open .dropdown-menu {
+        top: 100%;
         padding: 0;
 
         > li > a {
@@ -152,7 +153,9 @@
         .open .dropdown-menu {
             background-color: $color-bg-light-vivid-mid;
             > li > a {
-                &:hover {
+                &:hover,
+                &:focus {
+                    color: $color-type-primary;
                     background-color: $color-dim-low;
                 }
             }

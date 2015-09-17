@@ -1,0 +1,64 @@
+<div class="row" id="sizes">
+    <div class="col-xs-24">
+        <div class="row">
+            <div class="col-xs-24">
+                <h2>Sizes</h2>
+                <p>There are nine type sizes in Winstrap. T1 is the largest, and T9 is the smallest. Winstrap type sizes are responsive.</p>
+            </div>
+
+            <div class="col-xs-24 col-md-12 m-t-xxs">
+                <div class="type-t1 inline-block">T1</div>
+                <div class="type-t2 inline-block m-l-xs">T2</div>
+                <div class="type-t3 inline-block m-l-xs">T3</div>
+                <div class="type-t4 inline-block m-l-xs">T4</div>
+                <div class="type-t5 inline-block m-l-xs">T5</div>
+                <div class="type-t6 inline-block m-l-xs">T6</div>
+                <div class="type-t7 inline-block m-l-xs">T7</div>
+                <div class="type-t8 inline-block m-l-xs">T8</div>
+                <div class="type-t9 inline-block m-l-xs">T9</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-24">
+                <h3>Type classes</h3>
+                <p>All Bootstrap classes are available. You may also use Winstrap type classes if you would like to more explicitly be connected to Microsoft design language. Responsive font-size, font-weight, and line-height are set by these classes. The Winstrap type classes are <code>type-*</code>.</p>
+
+                {{#markdown}}
+```xml
+<div class="type-t1">T1</div>
+
+<div class="type-t2">T2</div>
+
+<div class="type-t3">T3</div>
+
+<div class="type-t4">T4</div>
+
+<div class="type-t5">T5</div>
+
+<div class="type-t6">T6</div>
+
+<div class="type-t7">T7</div>
+
+<div class="type-t8">T8</div>
+
+<div class="type-t9">T9</div>
+```
+                {{/markdown}}
+            </div>
+
+            <div class="col-sm-24">
+                <h3>Type mixins</h3>
+                <p>By default, line-height is not set by the mixins below. If you want to apply the MDL line-height, you can pass the <code>set-line-height</code> argument. You can also pass the <code>responsive</code> argument to make the text responsive.</p>
+
+                {{#markdown}}
+```scss
+.selector {
+    @include type(t[1-9], [set-line-height] [responsive]);
+}
+```
+                {{/markdown}}
+            </div>
+        </div>
+    </div>
+</div>

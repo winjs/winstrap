@@ -6,12 +6,12 @@ $font-light:                    "Segoe UI Light", "Segoe UI", "Selawik Light", $
 $font-semilight:                "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $font-fallbacks !default;
 $font-normal:                   "Segoe UI", "Selawik", $font-fallbacks !default;
 $font-semibold:                 "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $font-fallbacks !default;
-$font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $font-fallbacks !default;;
+$font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $font-fallbacks !default;
 $font-symbols:                  "winjs-symbols";
 
 // Responsive Type Ramp key:value
 $fonts: (
-    headline: (
+    t1: (
         size-sm:                46px,
         size-md:                62px,
         size-xxl:               80px,
@@ -23,9 +23,10 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        letter-spacing:         -0.01em
     ),
-    header: (
+    t2: (
         size-sm:                34px,
         size-md:                46px,
         size-xxl:               58px,
@@ -37,9 +38,10 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        letter-spacing:         -0.01em
     ),
-    subheader: (
+    t3: (
         size-sm:                26px,
         size-md:                34px,
         size-xxl:               46px,
@@ -51,9 +53,10 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-light,
         family-md:              $font-light,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        letter-spacing:         normal
     ),
-    title: (
+    t4: (
         size-sm:                20px,
         size-md:                24px,
         size-xxl:               34px,
@@ -65,9 +68,10 @@ $fonts: (
         weight-xxl:             200,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-light
+        family-xxl:             $font-light,
+        letter-spacing:         normal
     ),
-    subtitle: (
+    t5: (
         size-sm:                18px,
         size-md:                20px,
         size-xxl:               24px,
@@ -79,9 +83,10 @@ $fonts: (
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight
+        family-xxl:             $font-semilight,
+        letter-spacing:         normal
     ),
-    subtitle-alt: (
+    t6: (
         size-sm:                16px,
         size-md:                18px,
         size-xxl:               20px,
@@ -93,23 +98,10 @@ $fonts: (
         weight-xxl:             300,
         family-sm:              $font-semilight,
         family-md:              $font-semilight,
-        family-xxl:             $font-semilight
+        family-xxl:             $font-semilight,
+        letter-spacing:         normal
     ),
-    base: (
-        size-sm:                15px,
-        size-md:                15px,
-        size-xxl:               18px,
-        line-height-sm:         20px,
-        line-height-md:         20px,
-        line-height-xxl:        24px,
-        weight-sm:              500,
-        weight-md:              500,
-        weight-xxl:             500,
-        family-sm:              $font-semibold,
-        family-md:              $font-semibold,
-        family-xxl:             $font-semibold
-    ),
-    body: (
+    t7: (
         size-sm:                15px,
         size-md:                15px,
         size-xxl:               18px,
@@ -121,9 +113,10 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        letter-spacing:         normal
     ),
-    caption: (
+    t8: (
         size-sm:                12px,
         size-md:                13px,
         size-xxl:               15px,
@@ -135,9 +128,10 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        letter-spacing:         normal
     ),
-    caption-alt: (
+    t9: (
         size-sm:                10px,
         size-md:                11px,
         size-xxl:               13px,
@@ -149,9 +143,123 @@ $fonts: (
         weight-xxl:             400,
         family-sm:              $font-normal,
         family-md:              $font-normal,
-        family-xxl:             $font-normal
+        family-xxl:             $font-normal,
+        letter-spacing:         normal
     ),
 
+);
+
+// Responsive typography control spacing key:value
+// These are padding values to make sure headers, subheaders, paragraphs, and captions land on the vertical grid.
+$fonts-spacing: (
+    h1: (
+        type-size:      "t1",
+        space-sm:       37px 0 3px,
+        space-md:       38px 0 6px,
+        space-xxl:      39px 0 5px
+    ),
+    h2: (
+        type-size:      "t2",
+        space-sm:       38px 0 2px,
+        space-md:       37px 0 3px,
+        space-xxl:      36px 0 4px
+    ),
+    h3: (
+        type-size:      "t3",
+        space-sm:       38px 0 2px,
+        space-md:       38px 0 2px,
+        space-xxl:      37px 0 3px
+    ),
+    h4: (
+        type-size:      "t4",
+        space-sm:       36px 0 4px,
+        space-md:       36px 0 4px,
+        space-xxl:      38px 0 2px
+    ),
+    h5: (
+        type-size:      "t5",
+        space-sm:       37px 0 3px,
+        space-md:       35px 0 5px,
+        space-xxl:      37px 0 3px
+    ),
+    h6: (
+        type-size:      "t6",
+        space-sm:       39px 0 1px,
+        space-md:       37px 0 3px,
+        space-xxl:      40px 0 4px
+    ),
+    sh1: (
+        type-size:      "t3",
+        space-sm:       9px 0 3px,
+        space-md:       2px 0 2px,
+        space-xxl:      9px 0 3px
+    ),
+    sh2: (
+        type-size:      "t4",
+        space-sm:       8px 0 4px,
+        space-md:       4px 0 8px,
+        space-xxl:      10px 0 2px
+    ),
+    sh3: (
+        type-size:      "t5",
+        space-sm:       4px 0 4px,
+        space-md:       8px 0 4px,
+        space-xxl:      8px 0 4px
+    ),
+    sh4: (
+        type-size:      "t6",
+        space-sm:       7px 0 5px,
+        space-md:       9px 0 3px,
+        space-xxl:      12px 0 4px
+    ),
+    sh5: (
+        type-size:      "t7",
+        space-sm:       8px 0 0,
+        space-md:       8px 0 0px,
+        space-xxl:      9px 0 3px
+    ),
+    sh6: (
+        type-size:      "t7",
+        space-sm:       8px 0 0,
+        space-md:       8px 0 0px,
+        space-xxl:      9px 0 3px
+    ),
+    p1: (
+        type-size:      "t5",
+        space-sm:       24px 0 4px,
+        space-md:       24px 0 4px,
+        space-xxl:      24px 0 4px
+    ),
+    p2: (
+        type-size:      "t6",
+        space-sm:       27px 0 1px,
+        space-md:       25px 0 3px,
+        space-xxl:      28px 0 4px
+    ),
+    p3: (
+        type-size:      "t7",
+        space-sm:       24px 0 0,
+        space-md:       24px 0 0,
+        space-xxl:      25px 0 3px
+    ),
+    p4: (
+        type-size:      "t7",
+        space-sm:       24px 0 0,
+        space-md:       24px 0 0,
+        space-xxl:      25px 0 3px
+    ),
+    c1: (
+        type-size:      "t8",
+        space-sm:       3px 0 1px,
+        space-md:       3px 0 1px,
+        space-xxl:      4px 0 0
+    ),
+    c2: (
+        type-size:      "t9",
+        space-sm:       2px 0 2px,
+        space-md:       4px 0 4px,
+        space-xxl:      3px 0 1px
+    ),
 );
 
 $spacer-sizes: (

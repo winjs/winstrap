@@ -1,0 +1,61 @@
+<div class="row" id="paragraphs">
+    <div class="col-xs-24">
+        <div class="row">
+            <div class="col-xs-24">
+                <h2>Paragraphs</h2>
+                <p>There are four paragraph controls in Winstrap. <code>&lt;p&gt;</code> is mapped to <code>type-p3</code>.</p>
+                <p>You can also apply paragraphs using the Sass mixin. Paragraphs applied using the mixin are not responsive by default. Pass the <code>responsive</code> argument to make them responsive.</p>
+            </div>
+        </div>
+
+        <div class="row m-t-sm">
+            <div class="col-md-12">
+                <p class="type-p1">Paragraph 1</p>
+                <p class="type-p1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="type-p2">Paragraph 2</p>
+                <p class="type-p2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>Paragraph 3</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="type-p4">Paragraph 4</p>
+                <p class="type-p4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```xml
+<p class="type-p1">Paragraph 1</p>
+
+<p class="type-p2">Paragraph 2</p>
+
+<p>Paragraph 3</p>
+<p class="type-p3">...</p>
+
+<p class="type-p4">Paragraph 4</p>
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```scss
+.selector {
+    @include type-control(p[1-4], [responsive]);
+}
+```
+                        {{/markdown}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

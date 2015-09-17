@@ -7,6 +7,7 @@
 .color {
     height: 0;
     padding-bottom: 39px;
+    margin: spacing(xxs) 0 0;
 }
 
 .line {
@@ -22,15 +23,7 @@ pre {
     border: none;
     border-left: 8px solid $pre-border-color;
     margin: spacing(xxs) 0 0;
-    @include type-caption();
-
-    @media (min-width: $screen-md-min) {
-        margin: spacing(xs) 0 0;
-    }
-
-    @media (min-width: $screen-xl-min) {
-        margin: spacing(xs) 0 0;
-    }
+    @include type(t8);
 }
 
 code {

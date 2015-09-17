@@ -6,14 +6,14 @@
 .table {
 
   tr th {
-    @include type-body();
+    @include type(t7);
     color: $color-type-secondary;
   }
 
   thead {
 
     tr th {
-      @include type-caption-alt();
+      @include type(t9);
       color: $color-type-secondary;
       border-bottom: 1px solid $color-neutral-low;
       padding-bottom: spacing(xxs, +1);

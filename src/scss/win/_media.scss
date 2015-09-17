@@ -129,7 +129,9 @@
     }
 
     .media-header {
-        @include type-base();
+        @include type(t7);
+        font-family: $font-semibold;
+        font-weight: 500;
         margin: .5em 0 .25em;
         color: $headings-color;
 
@@ -168,7 +170,7 @@
     }
 
     .media-subheader {
-        @include type-caption-alt();
+        @include type(t9);
         color: $color-type-primary;
 
         a {
@@ -240,6 +242,6 @@
 }
 
 .media-info {
-    @include type-caption-alt();
+    @include type(t9);
     color: $color-type-secondary;
 }

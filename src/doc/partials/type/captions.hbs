@@ -1,0 +1,41 @@
+<div class="row" id="captions">
+    <div class="col-xs-24">
+        <div class="row">
+            <div class="col-xs-24">
+                <h2>Captions</h2>
+                <p>Like other Winstrap type controls, captions can be applied using the type classes or the Sass mixin. Captions applied using the mixin are not responsive by default. Pass the <code>responsive</code> argument to make them responsive.</p>
+            </div>
+        </div>
+
+        <div class="row m-t-sm">
+            <div class="col-md-12">
+                <p class="type-c1">Caption 1</p>
+                <p class="type-c2">Caption 2</p>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```xml
+<p class="type-c1">Caption 1</p>
+
+<p class="type-c2">Caption 2</p>
+```
+                        {{/markdown}}
+                    </div>
+
+                    <div class="col-sm-24">
+                        {{#markdown}}
+```scss
+.selector {
+    @include type-control(c[1-2], [responsive]);
+}
+```
+                        {{/markdown}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

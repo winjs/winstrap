@@ -1,7 +1,7 @@
 ﻿// Rating component with stars
 .rating {
     .rating-label {
-        @include type-title();
+        @include type(t4);
         line-height: 44px;
         margin-bottom: 1px;
         vertical-align: bottom;
@@ -66,7 +66,7 @@
 
     &.rating-small {
         .rating-label {
-            @include type-caption();
+            @include type(t8);
             line-height: 16px;
 
             &.rating-label-left {

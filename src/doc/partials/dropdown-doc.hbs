@@ -1,0 +1,49 @@
+﻿<section class="section row" id="dropdown">
+    <header class="section-header">
+        <h1 class="section-title col-xs-24">
+            <a href="#dropdown">Dropdown</a>
+        </h1>
+    </header>
+    <div class="col-xs-24">
+        <p>
+            This is a simple dropdown menu with links inside. The dropdown code has specific accessibility settings.
+        </p>
+        <p>
+            You can change the styling of the dropdown component by adding the theme-on-color, theme-alt, theme-on-img-light, or theme-on-img-dark classes to the dropdown divider.
+        </p>
+        <div class="btn-group">
+            {{> dropdown id="dropdown-1" }}
+        </div>
+    </div>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+        <h4>On color</h4>
+        <div class="color-blue p-v-xxs p-h-xxs">
+            {{> dropdown id="dropdown-2" theme="theme-on-color" }}
+        </div>
+    </div>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+        <h4>Alt-theme</h4>
+        <div class="color-black p-v-xxs p-h-xxs">
+            {{> dropdown id="dropdown-3" theme="theme-alt" }}
+        </div>
+    </div>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+        <h4>On light image</h4>
+        <div class="example-light-image-bg p-v-xxs p-h-xxs">
+            {{> dropdown id="dropdown-4" theme="theme-on-img-light" }}
+        </div>
+    </div>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+        <h4>On dark image</h4>
+        <div class="example-dark-image-bg p-v-xxs p-h-xxs">
+            {{> dropdown id="dropdown-5" theme="theme-on-img-dark" }}
+        </div>
+    </div>
+    <div class="col-xs-24">
+        {{#markdown}}
+```xml
+{{> dropdown id="example-dropdown" }}
+```
+        {{/markdown}}
+    </div>
+</section>

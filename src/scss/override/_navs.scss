@@ -63,7 +63,7 @@ $pivot-hover-color-alt:                                                         
         // Main tabs
         // Resetting most of the Bootstrap styles
         > a {
-            @include type-title();
+            @include type(t4);
             border: 0;
             border-radius: 0;
             margin: 0;
