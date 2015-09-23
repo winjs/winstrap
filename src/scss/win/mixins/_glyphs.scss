@@ -3,7 +3,6 @@
     @return map-deep-get($glyphs, $name, unicode);
 }
 
-
 // Mixin to display a glyph
 @mixin glyph($name) {
     & {
