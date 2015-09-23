@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-xs-24">
-            <p>A spacer class must be constructed using the following available arguments:</p>
+            <p>A spacer class is constructed using the following available arguments:</p>
 
             <div class="col-xs-12">
                 <p>Properties</p>
@@ -31,12 +31,13 @@
 
                 <p>Directions</p>
                 <ul>
-                    <li><code>v</code> vertical: top and bottom</li>
-                    <li><code>h</code> horizontal: left and right</li>
                     <li><code>t</code> top</li>
                     <li><code>r</code> right</li>
                     <li><code>b</code> bottom</li>
                     <li><code>l</code> left</li>
+                    <li><code>v</code> vertical: top and bottom</li>
+                    <li><code>h</code> horizontal: left and right</li>
+                    <li><code>[empty]</code> all: top, right, bottom, and left</li>
                 </ul>
             </div>
 
@@ -62,10 +63,10 @@
         </div>
 
         <div class="col-md-12">
-            <p>Remove top padding:</p>
+            <p>Add small padding to all sides:</p>
             {{#markdown}}
 ```xml
-<element class="p-t-n"></element>
+<element class="p-sm"></element>
 ```
             {{/markdown}}
         </div>
@@ -98,12 +99,13 @@
 
                 <p>Directions</p>
                 <ul>
-                    <li><code>vertical</code></li>
-                    <li><code>horizontal</code></li>
                     <li><code>top</code></li>
                     <li><code>right</code></li>
                     <li><code>bottom</code></li>
                     <li><code>left</code></li>
+                    <li><code>vertical</code></li>
+                    <li><code>horizontal</code></li>
+                    <li><code>all</code></li>
                 </ul>
             </div>
 

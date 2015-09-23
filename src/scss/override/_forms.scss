@@ -107,7 +107,7 @@ textarea.form-control {
 
     & label {
         input:checked ~ span::before {
-            font-family: $font-symbols;
+            @include glyph(checkmark);
             text-indent: 2px;
             line-height: 1em;
             padding-top: 2px;
@@ -147,8 +147,7 @@ textarea.form-control {
     position: relative;
 
     &:after {
-        font-family: "winjs-symbols";
-        content: glyph(chevron-down);
+        @include glyph(chevron-down);
         position: absolute;
         font-size: 1rem;
         top: 13px;
