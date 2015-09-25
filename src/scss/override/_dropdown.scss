@@ -17,13 +17,12 @@
             width: auto;
             height: auto;
             line-height: 1;
-            font-family: "winjs-symbols";
             font-size: 12px;
             padding: spacing(xxs) spacing(xxs, -1);
             margin-left: spacing(xxxs);
 
             &::before {
-                content: glyph(chevron-down-2);
+                @include glyph(chevron-down-2);
                 vertical-align: bottom;
             }
         }
