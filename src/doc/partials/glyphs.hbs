@@ -11,11 +11,23 @@
 
             {{#markdown}}
 ```xml
-<span class="glyph glyph-[name]" aria-hidden="true"></span>
+<span class="glyph glyph-[glyph-name]" aria-hidden="true"></span>
 ```
             {{/markdown}}
 
-            <p>Glyphs can also be displayed using the <code>glyph</code> Sass function:</p>
+            <p>Glyphs can also be displayed using the <code>glyph</code> Sass mixin:</p>
+
+            {{#markdown}}
+```scss
+.selector {
+    &::before {
+        @include glyph( [glyph-name] );
+    }
+}
+```
+            {{/markdown}}
+
+            <p>If you only need to get a glyph's unicode value, you can use the Sass function:</p>
 
             {{#markdown}}
 ```scss
@@ -23,7 +35,7 @@
     font-family: "winjs-symbols";
 
     &::before {
-        content: glyph( [name] );
+        content: glyph( [glyph-name] );
     }
 }
 ```

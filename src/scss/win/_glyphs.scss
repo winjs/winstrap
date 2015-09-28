@@ -935,9 +935,6 @@ $glyphs: (
 
 // Checkbox & Radio Buttons
 .checkbox label {
-    input:checked ~ span::before {
-        content: glyph(checkmark);
-    }
     input:indeterminate ~ span::before {
         content: "■"; // Use "\E73C" when we get MDL Symbols font
     }
