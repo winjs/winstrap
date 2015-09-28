@@ -329,11 +329,13 @@
         background-color: $color-accent;
         border-color: transparent;
         color: $color-white;
+        @include box-shadow(none);
     }
     &.active:active {
         background-color: darken($color-accent, 5%);
         border-color: transparent;
         color: $color-type-primary;
+        @include box-shadow(none);
     }
     &:hover {
         border-color: $color-accent;
@@ -389,11 +391,17 @@
     }
 
     &.theme-light {
+        background-color: $color-vivid-high-alt;
 
+        &:hover,
+        &:active,
+        &.active {
+            background-color: $color-vivid-high-alt;
+        }
     }
 
     // On dark surface and on dark image
-    &.theme-dark {
+    &.theme-alt {
         color: $color-type-primary-alt;
         background-color: $color-vivid-high;
         border-color: $color-neutral-high-alt;
