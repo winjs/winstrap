@@ -54,9 +54,11 @@
 // Colors
 //
 .dropdown {
-    // default and theme-on-img-light
+    // default and theme-light
     &,
-    &.theme-on-img-light {
+    &.theme-default,
+    &.theme-on-img-light,
+    &.theme-light {
         .btn-dropdown {
             background-color: $color-vivid-mid-alt;
             border-color: $color-vivid-low;
@@ -128,7 +130,8 @@
     }
     // Theme-alt, and theme-on-img-dark
     &.theme-alt,
-    &.theme-on-img-dark {
+    &.theme-on-img-dark ,
+    &.theme-dark {
         .btn-dropdown {
             color: $color-type-primary-alt;
             background-color: $color-vivid-mid;
@@ -189,7 +192,7 @@
             }
         }
     }
-    // Theme-on-color
+    // ***** REVIEW WITH DESIGN *****
     &.theme-on-color {
         .btn-dropdown {
             background-color: $color-vivid-low-alt;

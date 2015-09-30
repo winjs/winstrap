@@ -238,25 +238,27 @@
 	&.highlight-bar {
 		background-color: $color-bg-light-vivid-low;
 
-		&.theme-on-img-dark {
+		&.theme-on-img-dark,
+		&.theme-dark {
 			color: $color-vivid-high-alt;
 			background-color: inherit;
 			button,
 			.btn {
-				@extend .btn-secondary.theme-on-img-dark;
+				@extend .btn-secondary.theme-dark;
 
 				&.btn-primary{
-					@extend .btn-primary.theme-on-img-dark;
+					@extend .btn-primary.theme-dark;
 				}
 			}
 		}
-		&.theme-on-img-light {
+		&.theme-on-img-light,
+    	&.theme-light {
 			button,
 			.btn {
-				@extend .btn-secondary.theme-on-img-light;
+				@extend .btn-secondary.theme-light;
 
 				&.btn-primary {
-					@extend .btn-primary.theme-on-img-light;
+					@extend .btn-primary.theme-light;
 				}
 			}
 		}
@@ -264,12 +266,14 @@
 
 	/*--------------------------- Jumbotron Primary Colors ----------------------
 	---------------------------------------------------------------------------*/
-	&.theme-on-img-dark {
+	&.theme-on-img-dark,
+	&.theme-dark{
 		color: $color-vivid-high-alt;
 		@include jumbotron-gradient-overlay($color-vivid-high);
 		@include jumbotron-background-color($color-bg-dark-vivid-low);
 	}
-	&.theme-on-img-light {
+	&.theme-on-img-light,
+	&.theme-light {
 		color: $color-vivid-high;
 		@include jumbotron-gradient-overlay($color-vivid-high-alt);
 		@include jumbotron-background-color($color-bg-light-vivid-low);
@@ -277,7 +281,9 @@
 	// different colors for all but the smallest viewport
 	@media (min-width: $screen-sm) {
 		&.theme-on-img-dark,
-		&.theme-on-img-light {
+		&.theme-dark,
+		&.theme-on-img-light,
+    	&.theme-light {
 			@include jumbotron-background-color(transparent);
 		}
 	}

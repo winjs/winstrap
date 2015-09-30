@@ -204,6 +204,7 @@ select[multiple].form-control {
 // Default (on light surface)
 form {
     &,
+    &.theme-default,
     p,
     label {
         color: $color-type-primary;
@@ -383,7 +384,9 @@ select {
 form.theme-alt,
 form .theme-alt,
 form.theme-on-img-dark,
-form .theme-on-img-dark {
+form .theme-on-img-dark,
+form.theme-dark,
+form .theme-dark {
 
     &,
     p,
@@ -559,7 +562,7 @@ form .theme-on-img-dark {
     }
 }
 
-// On colored surface
+// ***** REVIEW WITH DESIGN *****
 form.theme-on-color,
 form .theme-on-color {
 
@@ -733,7 +736,9 @@ form .theme-on-color {
 
 // On light image
 form.theme-on-img-light,
-form .theme-on-img-light {
+form .theme-on-img-light,
+form.theme-light,
+form .theme-light {
 
     // Combo Box Colors
     select {

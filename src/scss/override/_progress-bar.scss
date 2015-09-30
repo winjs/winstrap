@@ -10,6 +10,7 @@
     }
 
     &.theme-alt,
+    &.theme-dark,
     &.theme-on-img-dark {
         background-color: $color-neutral-low-alt;
 
@@ -18,6 +19,7 @@
         }
     }
 
+    // ***** REVIEW WITH DESIGN *****
     &.theme-on-color {
         background-color: $color-neutral-low-alt;
 

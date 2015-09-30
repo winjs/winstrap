@@ -80,7 +80,9 @@ a.link-on-dark {
 
     // On light surface and on light image
     &,
-    &.theme-on-img-light {
+    &.theme-default,
+    &.theme-on-img-light,
+    &.theme-light {
         background-color: transparent;
         border-color: $color-vivid-mid;
 
@@ -121,7 +123,8 @@ a.link-on-dark {
 
     // On dark surface and on dark image
     &.theme-alt,
-    &.theme-on-img-dark {
+    &.theme-on-img-dark,
+    &.theme-dark {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
 
@@ -160,7 +163,7 @@ a.link-on-dark {
         }
     }
 
-    // On colored surface
+    // ***** REVIEW WITH DESIGN *****
     &.theme-on-color {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
