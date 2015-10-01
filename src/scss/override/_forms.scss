@@ -384,9 +384,7 @@ select {
 form.theme-alt,
 form .theme-alt,
 form.theme-on-img-dark,
-form .theme-on-img-dark,
-form.theme-dark,
-form .theme-dark {
+form .theme-on-img-dark {
 
     &,
     p,
@@ -564,7 +562,9 @@ form .theme-dark {
 
 // ***** REVIEW WITH DESIGN *****
 form.theme-on-color,
-form .theme-on-color {
+form .theme-on-color,
+form.theme-dark,
+form .theme-dark {
 
     &,
     p,

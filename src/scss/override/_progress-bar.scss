@@ -10,7 +10,6 @@
     }
 
     &.theme-alt,
-    &.theme-dark,
     &.theme-on-img-dark {
         background-color: $color-neutral-low-alt;
 
@@ -18,9 +17,8 @@
             background-color: $color-accent;
         }
     }
-
-    // ***** REVIEW WITH DESIGN *****
-    &.theme-on-color {
+    &.theme-on-color,
+    &.theme-dark {
         background-color: $color-neutral-low-alt;
 
         .progress-bar {

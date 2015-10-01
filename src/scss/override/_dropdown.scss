@@ -130,8 +130,7 @@
     }
     // Theme-alt, and theme-on-img-dark
     &.theme-alt,
-    &.theme-on-img-dark ,
-    &.theme-dark {
+    &.theme-on-img-dark, {
         .btn-dropdown {
             color: $color-type-primary-alt;
             background-color: $color-vivid-mid;
@@ -192,8 +191,7 @@
             }
         }
     }
-    // ***** REVIEW WITH DESIGN *****
-    &.theme-on-color {
+    &.theme-dark {
         .btn-dropdown {
             background-color: $color-vivid-low-alt;
             border-color: $color-vivid-high-alt;
