@@ -130,7 +130,7 @@
 
     .media-header {
         @include type(t7);
-        font-family: $font-semibold;
+        font-family: $font-family-semibold;
         font-weight: 500;
         margin: .5em 0 .25em;
         color: $headings-color;

@@ -1,13 +1,13 @@
 // Responsive Type Ramp
 
 // Font Variables
-$font-fallbacks:                "Arial", sans-serif !default;
-$font-light:                    "Segoe UI Light", "Segoe UI", "Selawik Light", $font-fallbacks !default;
-$font-semilight:                "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $font-fallbacks !default;
-$font-normal:                   "Segoe UI", "Selawik", $font-fallbacks !default;
-$font-semibold:                 "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $font-fallbacks !default;
-$font-bold:                     "Segoe UI Bold", "Segoe UI", "Selawik Bold", $font-fallbacks !default;
-$font-symbols:                  "winjs-symbols";
+$font-family-fallbacks:     Tahoma, Verdana, Arial, sans-serif !default;
+$font-family-light:         "Segoe UI Light", "Segoe UI", "Selawik Light", $font-family-fallbacks !default;
+$font-family-semilight:     "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", $font-family-fallbacks !default;
+$font-family-normal:        "Segoe UI", "Selawik", $font-family-fallbacks !default;
+$font-family-semibold:      "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", $font-family-fallbacks !default;
+$font-family-bold:          "Segoe UI Bold", "Segoe UI", "Selawik Bold", $font-family-fallbacks !default;
+$font-family-symbols:       "winjs-symbols";
 
 // Responsive Type Ramp key:value
 $fonts: (
@@ -21,9 +21,9 @@ $fonts: (
         weight-sm:              200,
         weight-md:              200,
         weight-xxl:             200,
-        family-sm:              $font-light,
-        family-md:              $font-light,
-        family-xxl:             $font-light,
+        family-sm:              $font-family-light,
+        family-md:              $font-family-light,
+        family-xxl:             $font-family-light,
         letter-spacing:         -0.01em
     ),
     t2: (
@@ -36,9 +36,9 @@ $fonts: (
         weight-sm:              200,
         weight-md:              200,
         weight-xxl:             200,
-        family-sm:              $font-light,
-        family-md:              $font-light,
-        family-xxl:             $font-light,
+        family-sm:              $font-family-light,
+        family-md:              $font-family-light,
+        family-xxl:             $font-family-light,
         letter-spacing:         -0.01em
     ),
     t3: (
@@ -51,9 +51,9 @@ $fonts: (
         weight-sm:              200,
         weight-md:              200,
         weight-xxl:             200,
-        family-sm:              $font-light,
-        family-md:              $font-light,
-        family-xxl:             $font-light,
+        family-sm:              $font-family-light,
+        family-md:              $font-family-light,
+        family-xxl:             $font-family-light,
         letter-spacing:         normal
     ),
     t4: (
@@ -66,9 +66,9 @@ $fonts: (
         weight-sm:              300,
         weight-md:              300,
         weight-xxl:             200,
-        family-sm:              $font-semilight,
-        family-md:              $font-semilight,
-        family-xxl:             $font-light,
+        family-sm:              $font-family-semilight,
+        family-md:              $font-family-semilight,
+        family-xxl:             $font-family-light,
         letter-spacing:         normal
     ),
     t5: (
@@ -81,9 +81,9 @@ $fonts: (
         weight-sm:              300,
         weight-md:              300,
         weight-xxl:             300,
-        family-sm:              $font-semilight,
-        family-md:              $font-semilight,
-        family-xxl:             $font-semilight,
+        family-sm:              $font-family-semilight,
+        family-md:              $font-family-semilight,
+        family-xxl:             $font-family-semilight,
         letter-spacing:         normal
     ),
     t6: (
@@ -96,9 +96,9 @@ $fonts: (
         weight-sm:              300,
         weight-md:              300,
         weight-xxl:             300,
-        family-sm:              $font-semilight,
-        family-md:              $font-semilight,
-        family-xxl:             $font-semilight,
+        family-sm:              $font-family-semilight,
+        family-md:              $font-family-semilight,
+        family-xxl:             $font-family-semilight,
         letter-spacing:         normal
     ),
     t7: (
@@ -111,9 +111,9 @@ $fonts: (
         weight-sm:              400,
         weight-md:              400,
         weight-xxl:             400,
-        family-sm:              $font-normal,
-        family-md:              $font-normal,
-        family-xxl:             $font-normal,
+        family-sm:              $font-family-normal,
+        family-md:              $font-family-normal,
+        family-xxl:             $font-family-normal,
         letter-spacing:         normal
     ),
     t8: (
@@ -126,9 +126,9 @@ $fonts: (
         weight-sm:              400,
         weight-md:              400,
         weight-xxl:             400,
-        family-sm:              $font-normal,
-        family-md:              $font-normal,
-        family-xxl:             $font-normal,
+        family-sm:              $font-family-normal,
+        family-md:              $font-family-normal,
+        family-xxl:             $font-family-normal,
         letter-spacing:         normal
     ),
     t9: (
@@ -141,9 +141,9 @@ $fonts: (
         weight-sm:              400,
         weight-md:              400,
         weight-xxl:             400,
-        family-sm:              $font-normal,
-        family-md:              $font-normal,
-        family-xxl:             $font-normal,
+        family-sm:              $font-family-normal,
+        family-md:              $font-family-normal,
+        family-xxl:             $font-family-normal,
         letter-spacing:         normal
     ),
 
