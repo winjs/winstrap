@@ -51,7 +51,6 @@
             }
         }
 
-
         // Alt theme
         &.theme-alt {
             &:hover {
@@ -70,6 +69,8 @@
         }
 
         // On solid color
+        &.theme-on-color,
+        &.theme-on-img-dark,
         &.theme-dark {
             color: $color-type-primary;
             background-color: $color-vivid-high-alt;
@@ -91,6 +92,7 @@
         }
 
         // On light images
+        &.theme-on-img-light,
         &.theme-light {
             color: $color-type-primary-alt;
             background-color: $color-vivid-high;
@@ -157,6 +159,8 @@
         }
 
         // Dark background
+        &.theme-on-color,
+        &.theme-on-img-dark,
         &.theme-dark {
             color: $color-type-primary-alt;
             background-color: transparent;
@@ -180,6 +184,7 @@
         }
 
         // Light background
+        &.theme-on-img-light,
         &.theme-light {
             color: $color-type-primary;
             background-color: transparent;
@@ -224,7 +229,6 @@
         @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
     }
 }
-
 
 // Override Bootstrap link buttons
 // Make a button look and behave like a link
@@ -275,6 +279,8 @@
     }
 
     // Dark background
+    &.theme-on-color,
+    &.theme-on-img-dark,
     &.theme-dark {
 
         color: $color-type-primary-alt;
@@ -293,6 +299,7 @@
     }
 
     // Light background
+    &.theme-on-img-light,
     &.theme-light {
 
         color: $color-type-primary;
@@ -390,6 +397,7 @@
         }
     }
 
+    &.theme-on-img-light,
     &.theme-light {
         background-color: $color-vivid-high-alt;
 
@@ -401,6 +409,7 @@
     }
 
     // On dark surface and on dark image
+    &.theme-on-img-dark,
     &.theme-alt {
         color: $color-type-primary-alt;
         background-color: $color-vivid-high;
@@ -437,6 +446,7 @@
     }
 
     // On colored surface
+    &.theme-on-color
     &.theme-dark {
         color: $color-type-primary-alt;
         background-color: transparent;

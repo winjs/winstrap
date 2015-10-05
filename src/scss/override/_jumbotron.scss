@@ -246,7 +246,7 @@
 			.btn {
 				@extend .btn-secondary.theme-dark;
 
-				&.btn-primary{
+				&.btn-primary {
 					@extend .btn-primary.theme-dark;
 				}
 			}
@@ -267,7 +267,7 @@
 	/*--------------------------- Jumbotron Primary Colors ----------------------
 	---------------------------------------------------------------------------*/
 	&.theme-on-img-dark,
-	&.theme-dark{
+	&.theme-dark {
 		color: $color-vivid-high-alt;
 		@include jumbotron-gradient-overlay($color-vivid-high);
 		@include jumbotron-background-color($color-bg-dark-vivid-low);
