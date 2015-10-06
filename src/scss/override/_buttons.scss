@@ -399,8 +399,7 @@
 
     &.theme-on-img-light,
     &.theme-light {
-        background-color: $color-vivid-high-alt;
-
+        &,
         &:hover,
         &:active,
         &.active {
