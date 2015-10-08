@@ -47,7 +47,7 @@
         "grunt-contrib-watch": "^0.6.1",
         "grunt-file-exists": "^0.1.2",
         "grunt-notify": "^0.4.1",
-        "grunt-sass": "^0.18.0",
+        "grunt-sass": "^1.0.0",
         "jshint-stylish": "^2.0.0"
     },
     "scripts": {
