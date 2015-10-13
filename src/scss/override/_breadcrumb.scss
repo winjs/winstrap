@@ -3,11 +3,14 @@
   @include type(t8);
 
   a {
-    color: $color-accent-vivid-high;
     text-decoration: none;
 
+    &,
     &:hover {
       color: $color-accent-vivid-high;
+    }
+
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -21,7 +24,6 @@
   }
 
   &.theme-alt {
-    color: $color-type-secondary-alt;
 
     a {
       color: $color-white;
@@ -37,11 +39,14 @@
   }
 
   &.theme-on-color, &.theme-on-img-dark {
-    color: $color-type-secondary-alt;
 
     a {
       color: $color-vivid-high-alt;
     }
+  }
+
+  &.theme-alt, &.theme-on-color, &.theme-on-img-dark {
+    color: $color-type-secondary-alt;
 
     > li + li:before {
       color: $color-vivid-low-alt;
