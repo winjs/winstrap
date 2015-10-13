@@ -84,35 +84,3 @@ code {
     background-position: top right;
     background-size: cover;
 }
-
-.guidance {
-    border-left: 5px solid;
-
-    &.guidance-example:before {
-        position: absolute;
-        top: 10px;
-        left: 13px;
-    }
-
-    &.guidance-usage:before
-	{
-        padding-left: spacing(xs, -3);
-        @include type(t7, set-line-height);
-        font-weight: 500;
-        font-family: $font-family-semibold;
-    }
-
-    // Deal with repetitive content here instead of in the markup
-    // so if these ever change it's really easy to update
-    &.guidance-usage:before {
-        content: "Options";
-    }
-
-    //
-    // Colors
-    //
-    &.guidance-usage {
-        border-color: $color-dim-mid;
-    }
-
-}
