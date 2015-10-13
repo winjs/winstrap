@@ -17,8 +17,8 @@
             background-color: $color-accent;
         }
     }
-
-    &.theme-on-color {
+    &.theme-on-color,
+    &.theme-dark {
         background-color: $color-neutral-low-alt;
 
         .progress-bar {
