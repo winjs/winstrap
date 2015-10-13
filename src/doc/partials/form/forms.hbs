@@ -27,7 +27,7 @@
 
         <!-- On colored surface -->
         <div class="col-xs-24 col-lg-8">
-            <h4>On color</h4>
+            <h4>Dark Theme</h4>
             <form class="theme-on-color color-fill-accent-vivid-high" style="padding: 1em;">
                 {{> form-elements }}
                 <button type="submit" class="btn btn-default theme-on-color">Submit</button>
@@ -59,7 +59,7 @@
         <!-- Alt -->
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>Alt</h4>
-            <form class="theme-alt color-fill-vivid-high" style="padding: 12px;">
+            <form class="theme-alt color-fill-vivid-high p-xxs">
                 {{> form-elements-text }}
             </form>
         </div>
@@ -67,7 +67,7 @@
         <!-- On Color -->
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On solid color</h4>
-            <form class="theme-on-color color-fill-accent-vivid-high" style="padding: 12px;">
+            <form class="theme-on-color color-fill-accent-vivid-high p-xxs">
                 {{> form-elements-text }}
             </form>
         </div>
@@ -75,7 +75,7 @@
         <!-- On light image -->
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On light image</h4>
-            <form class="theme-on-img-light example-light-image-bg" style="padding: 12px;">
+            <form class="theme-light example-light-image-bg p-xxs">
                 {{> form-elements-text }}
             </form>
         </div>
@@ -83,7 +83,7 @@
         <!-- On dark image -->
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On dark image</h4>
-            <form class="theme-on-img-dark example-dark-image-bg" style="padding: 12px;">
+            <form class="theme-dark example-dark-image-bg p-xxs">
                 {{> form-elements-text }}
             </form>
         </div>
@@ -91,7 +91,7 @@
         <div class="col-xs-24">
             {{#markdown}}
 ```xml
-<form class="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+<form class="[theme-alt] [theme-on-color] [theme-light] [theme-dark]">
     {{> form-elements-text }}
 </form>
 ```
@@ -115,28 +115,28 @@
     <div class="row">
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>Alt</h4>
-            <form class="theme-alt color-fill-vivid-high" style="padding:12px;">
+            <form class="theme-alt color-fill-vivid-high p-xxs">
                 {{> form-select }}
             </form>
         </div>
 
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On solid color</h4>
-            <form class="theme-on-color color-fill-accent-vivid-high" style="padding:12px;">
+            <form class="theme-on-color color-fill-accent-vivid-high p-xxs">
                 {{> form-select }}
             </form>
         </div>
 
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On light image</h4>
-            <form class="theme-on-img-light example-light-image-bg" style="padding:12px;">
+            <form class="theme-light example-light-image-bg p-xxs">
                 {{> form-select }}
             </form>
         </div>
 
         <div class="col-xs-24 col-sm-12 col-md-6">
             <h4>On dark image</h4>
-            <form class="theme-on-img-dark example-dark-image-bg" style="padding:12px;">
+            <form class="theme-dark example-dark-image-bg p-xxs">
                 {{> form-select }}
             </form>
         </div>
@@ -146,7 +146,7 @@
         <div class="col-xs-24">
             {{#markdown}}
 ```xml
-<form class="[theme-alt] [theme-on-color] [theme-on-img-light] [theme-on-img-dark]">
+<form class="[theme-alt] [theme-on-color] [theme-light] [theme-dark]">
     {{> form-select }}
 </form>
 ```
