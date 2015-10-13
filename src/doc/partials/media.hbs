@@ -358,19 +358,6 @@
   <div class="row">
     <div class="col-xs-24">
       <h2 id="media-image-ratio">Forcing image ratio in media elements</h2>
-
-      {{#markdown}}
-```xml
-<figure class="media">
-<!-- Here are the different classes to set the ratio -->
-<div class="media-img [ratio-movie] [ratio-1-1] [ratio-16-9] [ratio-2-1]">
-    <a href="#">
-    <img src="#" alt="" />
-    </a>
-</div>
-</figure>
-```
-      {{/markdown}}
     </div>
 
     <div class="col-md-6">
@@ -408,6 +395,30 @@
           </a>
         </div>
       </figure>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-24">
+{{#markdown}}
+```xml
+<figure class="media">
+  <div class="media-img">
+      <a href="#">
+        <img src="#" alt="" />
+      </a>
+  </div>
+</figure>
+```
+{{/markdown}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-24">
+      <div class="guidance guidance-usage m-t-xs">
+{{#markdown}}
+{{> media-ratio-guidance.md}}
+{{/markdown}}
+      </div>
     </div>
   </div>
 </section>
