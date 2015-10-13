@@ -1,22 +1,54 @@
 ﻿.breadcrumb {
   margin: 20px 0 25px;
-  font-size: $font-size-small;
+  font-size: 14px;
 
   a {
-    color: $text-color;
+    color: $color-accent-vivid-high;
     text-decoration: none;
 
     &:hover {
-      color: $link-color;
+      color: $color-accent-vivid-high;
       text-decoration: underline;
     }
   }
 
   > li + li:before {
-    @include glyph(chevron-right-2);
+    content: '\005c';
+    color: $color-vivid-low;
     display: inline-block;
-    padding: 0 4px 0 1px;
-    font-size: .8em;
-    vertical-align: -0.15em;
+    padding: 0 8px 0 4px;
+    vertical-align: baseline;
+  }
+
+  &.theme-alt {
+    color: $color-type-secondary-alt;
+
+    a {
+      color: $color-white;
+    }
+
+    > li + li:before {
+      color: $color-vivid-low-alt;
+    }
+
+    > li.active {
+      color: $color-type-secondary-alt;
+    }
+  }
+
+  &.theme-on-color, &.theme-on-img-dark {
+    color: $color-type-secondary-alt;
+
+    a {
+      color: $color-vivid-high-alt;
+    }
+
+    > li + li:before {
+      color: $color-vivid-low-alt;
+    }
+
+    > li.active {
+      color: $color-type-secondary-alt;
+    }
   }
 }
