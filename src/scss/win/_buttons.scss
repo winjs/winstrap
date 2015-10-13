@@ -80,7 +80,9 @@ a.link-on-dark {
 
     // On light surface and on light image
     &,
-    &.theme-on-img-light {
+    &.theme-default,
+    &.theme-on-img-light,
+    &.theme-light {
         background-color: transparent;
         border-color: $color-vivid-mid;
 
@@ -121,7 +123,9 @@ a.link-on-dark {
 
     // On dark surface and on dark image
     &.theme-alt,
-    &.theme-on-img-dark {
+    &.theme-on-img-dark,
+    &.theme-on-color,
+    &.theme-dark {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
 
@@ -139,46 +143,6 @@ a.link-on-dark {
 
             &::before {
                 background-color: $color-bg-light-vivid-high;
-            }
-        }
-
-        &:disabled {
-            border-color: $color-neutral-low-alt;
-
-            &::before {
-                background-color: $color-neutral-low-alt;
-            }
-
-            .stateLabel {
-                color: $color-type-disabled-alt;
-            }
-
-            &.active {
-                border-color: transparent;
-                background-color: $color-neutral-low-alt;
-            }
-        }
-    }
-
-    // On colored surface
-    &.theme-on-color {
-        background-color: transparent;
-        border-color: $color-vivid-mid-alt;
-
-        &::before {
-            background-color: $color-vivid-mid-alt;
-        }
-
-        .stateLabel {
-            color: $color-type-primary-alt;
-        }
-
-        &.active {
-            background-color: $color-bg-light-vivid-high;
-            border-color: transparent;
-
-            &::before {
-                background-color: $color-accent;
             }
         }
 

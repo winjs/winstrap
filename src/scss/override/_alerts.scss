@@ -49,7 +49,7 @@ $alert-glyph-base: 48px;
 
     .alert-glyph {
         position: absolute;
-        top: spacing(xxs, -8);
+        top: spacing(xxs);
         left: spacing(xxs);
         width: $alert-glyph-base / 2;
         height: $alert-glyph-base /2;
