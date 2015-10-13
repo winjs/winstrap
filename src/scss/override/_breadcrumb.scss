@@ -5,11 +5,6 @@
   a {
     text-decoration: none;
 
-    &,
-    &:hover {
-      color: $color-accent-vivid-high;
-    }
-
     &:hover {
       text-decoration: underline;
     }
@@ -17,42 +12,42 @@
 
   > li + li:before {
     content: '\005c';
-    color: $color-vivid-low;
     display: inline-block;
     padding: 0 spacing(xxxs) 0 spacing(xxxs, -4);
     vertical-align: baseline;
   }
 
-  &.theme-alt {
+  &,
+  &.theme-default,
+  &.theme-light {
 
     a {
-      color: $color-white;
+      &,
+      &:hover {
+        color: $color-accent-vivid-high;
+      }
     }
 
     > li + li:before {
-      color: $color-vivid-low-alt;
+      color: $color-vivid-low;
     }
 
-    > li.active {
-      color: $color-type-secondary-alt;
+    &, > li.active {
+      color: $color-type-primary;
     }
   }
 
-  &.theme-on-color, &.theme-on-img-dark {
+  &.theme-alt, &.theme-dark {
 
     a {
       color: $color-vivid-high-alt;
     }
-  }
-
-  &.theme-alt, &.theme-on-color, &.theme-on-img-dark {
-    color: $color-type-secondary-alt;
 
     > li + li:before {
       color: $color-vivid-low-alt;
     }
 
-    > li.active {
+    &, > li.active {
       color: $color-type-secondary-alt;
     }
   }
