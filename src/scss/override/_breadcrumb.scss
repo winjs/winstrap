@@ -32,12 +32,14 @@
       color: $color-vivid-low;
     }
 
-    &, > li.active {
+    &,
+    > li.active {
       color: $color-type-primary;
     }
   }
 
-  &.theme-alt, &.theme-dark {
+  &.theme-alt,
+  &.theme-dark {
 
     a {
       &,
@@ -50,7 +52,8 @@
       color: $color-vivid-low-alt;
     }
 
-    &, > li.active {
+    &,
+    > li.active {
       color: $color-type-secondary-alt;
     }
   }
