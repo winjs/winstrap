@@ -40,7 +40,10 @@
   &.theme-alt, &.theme-dark {
 
     a {
-      color: $color-vivid-high-alt;
+      &,
+      &:hover {
+        color: $color-vivid-high-alt;
+      }
     }
 
     > li + li:before {
