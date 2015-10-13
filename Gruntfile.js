@@ -63,18 +63,6 @@ module.exports = function (grunt) {
         },
         {
           expand: true,
-          cwd: 'bower_components/html5shiv/dist/',
-          src: 'html5shiv.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/respond.js/dest/',
-          src: 'respond.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
           cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
           src: 'bootstrap.min.js',
           dest: 'dist/js/vendor/'
