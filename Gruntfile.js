@@ -29,6 +29,19 @@ module.exports = function (grunt) {
       }
     },
 
+    cssmin: {
+        options: {
+            roundingPrecision: -1,
+            shorthandCompacting: false
+        },
+        dist: {
+            files: [{
+                src: './dist/css/winstrap.css',
+                dest: './dist/css/winstrap.min.css'
+            }]
+        }
+    },
+
     // Copy doc files
     copy: {
       assets: {
@@ -155,6 +168,7 @@ module.exports = function (grunt) {
         regExp: false
       }
     },
+
     notify: {
       server: {
         options: {
@@ -169,11 +183,21 @@ module.exports = function (grunt) {
         }
       }
     },
+
     jshint: {
       options: {
         reporter: require('jshint-stylish')
       },
       all: ['gruntfile.js', 'src/js/**/*']
+    },
+
+    uglify: {
+        dist: {
+            files: [{
+                src: './dist/js/app.js',
+                dest: './dist/js/app.min.js'
+            }]
+        }
     }
   });
 
@@ -187,8 +211,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists', 'cssmin', 'uglify', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 
 };

@@ -4,7 +4,6 @@
 ## Added for OneUI project
 [Nn]ode_modules/*
 [Bb]ower_components/*
-dist/
 
 # External requirements aren't versioned
 external/
