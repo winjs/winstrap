@@ -157,9 +157,9 @@
 
     @each $class in $classes {
         @if ($selectors == null) {
-            $selectors: #{$dot}#{$class}#{$i};
+            $selectors: $class + $i;
         } @else {
-            $selectors: #{$selectors}#{$comma} #{$dot}#{$class}#{$i};
+            $selectors: $selectors + $comma + $dot + $class + $i;
         }
     }
 
@@ -169,7 +169,7 @@
 // Generates type classes
 @mixin generate-type-class($control, $from, $through, $classes...) {
     @for $i from $from through $through {
-        #{generate-selectors($i, $classes...)} {
+        .#{generate-selectors($i, $classes...)} {
             @if ($control == "t") {
                 @include type(#{$control}#{$i}, responsive, set-line-height);
             } @else {
