@@ -23,7 +23,8 @@
     // On dark surface, on colored background, on dark image
     .theme-alt + &,
     .theme-on-color + &,
-    .theme-on-img-dark + & {
+    .theme-on-img-dark + &,
+    .theme-dark + & {
         .tooltip-inner {
             border-color: $color-neutral-mid-alt;
             background-color: $color-bg-dark-vivid-mid;
