@@ -153,13 +153,13 @@
 @function generate-selectors($i, $classes...) {
     $dot: ".";
     $comma: ",";
-    $selectors: "";
+    $selectors: null;
 
     @each $class in $classes {
-        @if (#{$selectors} == "") {
+        @if ($selectors == null) {
             $selectors: #{$dot}#{$class}#{$i};
         } @else {
-            $selectors: #{$selectors} #{$comma} #{$dot}#{$class}#{$i};
+            $selectors: #{$selectors}#{$comma} #{$dot}#{$class}#{$i};
         }
     }
 
