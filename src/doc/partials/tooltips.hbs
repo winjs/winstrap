@@ -8,10 +8,10 @@
     <div class="row">
         <div class="col-xs-24" style="margin-bottom: 1em;">
             <p>
-                This is <a href="" data-toggle="tooltip" title="Tooltip content">a simple tooltip</a> on top (default).
-                On the <a href="" data-toggle="tooltip" data-placement="left" title="Tooltip content">left</a>.
-                On the <a href="" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">bottom</a>.
-                On the <a href="" data-toggle="tooltip" data-placement="right" title="Tooltip content">right</a>.
+                This is <a href="javascript:void(0)" data-toggle="tooltip" title="Tooltip content">a simple tooltip</a> on top (default).
+                On the <a href="javascript:void(0)" data-toggle="tooltip" data-placement="left" title="Tooltip content">left</a>.
+                On the <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Tooltip content">bottom</a>.
+                On the <a href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Tooltip content">right</a>.
             </p>
         </div>
 
@@ -33,15 +33,19 @@
 
             {{#markdown}}
 ```xml
-<span data-toggle="tooltip"
-     [data-placement="top|right|bottom|left"]
-      title="Tooltip content"
-      class="[theme-alt] [theme-on-color] [theme-light] [theme-dark]">
+<span data-toggle="tooltip" title="Tooltip content">
     Has a tooltip
 </span>
 ```
             {{/markdown}}
         </div>
+        <div class="col-md-24">
+        <div class="guidance guidance-usage m-t-xs">
+{{#markdown}}
+{{> tooltip-guidance.md}}
+{{/markdown}}
+        </div>
+    </div>
 
         <div class="col-md-24">
             <p>And the required JavaScript initialization:</p>
