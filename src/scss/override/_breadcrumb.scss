@@ -1,22 +1,60 @@
 ﻿.breadcrumb {
-  margin: 20px 0 25px;
-  font-size: $font-size-small;
+  margin: spacing(xs, -4) 0 spacing(xs, +1);
+  @include type(t8);
 
   a {
-    color: $text-color;
     text-decoration: none;
 
     &:hover {
-      color: $link-color;
       text-decoration: underline;
     }
   }
 
   > li + li:before {
-    @include glyph(chevron-right-2);
+    content: '\005c';
     display: inline-block;
-    padding: 0 4px 0 1px;
-    font-size: .8em;
-    vertical-align: -0.15em;
+    padding: 0 spacing(xxxs) 0 spacing(xxxs, -4);
+    vertical-align: baseline;
+  }
+
+  &,
+  &.theme-default,
+  &.theme-light {
+
+    a {
+      &,
+      &:hover {
+        color: $color-accent-vivid-high;
+      }
+    }
+
+    > li + li:before {
+      color: $color-vivid-low;
+    }
+
+    &,
+    > li.active {
+      color: $color-type-primary;
+    }
+  }
+
+  &.theme-alt,
+  &.theme-dark {
+
+    a {
+      &,
+      &:hover {
+        color: $color-vivid-high-alt;
+      }
+    }
+
+    > li + li:before {
+      color: $color-vivid-low-alt;
+    }
+
+    &,
+    > li.active {
+      color: $color-type-secondary-alt;
+    }
   }
 }
