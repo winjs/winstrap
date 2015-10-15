@@ -58,19 +58,7 @@ module.exports = function (grunt) {
         {
           expand: true,
           cwd: 'bower_components/jquery/dist/',
-          src: 'jquery.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/html5shiv/dist/',
-          src: 'html5shiv.min.js',
-          dest: 'dist/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/respond.js/dest/',
-          src: 'respond.min.js',
+          src: ['jquery.min.js', 'jquery.min.map'],
           dest: 'dist/js/vendor/'
         },
         {
@@ -129,7 +117,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: './dist/',
+          base: ['./', './dist/'],
           hostname: 'localhost',
           livereload: true,
           open: true
