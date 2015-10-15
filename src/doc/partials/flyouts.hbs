@@ -30,13 +30,19 @@
 <button type="button"
         class="btn btn-primary"
         data-toggle="popover"
-        data-content="Flyout content"
-       [data-placement="top|right|bottom|left"]
-       [data-theme="[theme-alt] [theme-on-color] [theme-light] [theme-dark]"]>
+        data-content="Flyout content">
     Toggle flyout
 </button>
 ```
             {{/markdown}}
+        </div>
+
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+    {{#markdown}}
+{{> flyout-guidance.md}}
+    {{/markdown}}
+            </div>
         </div>
 
         <div class="col-md-24">
@@ -70,14 +76,21 @@ $(function () {
    tabindex="0"
    data-toggle="popover"
    data-trigger="focus"
-   data-content="Flyout content"
-  [data-placement="top|right|bottom|left"]
-  [data-theme="[theme-alt] [theme-on-color] [theme-light] [theme-dark]"]>
+   data-content="Flyout content">
    Dismissible flyout
 </a>
 ```
             {{/markdown}}
         </div>
+
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+    {{#markdown}}
+{{> dismissible-flyout-guidance.md}}
+    {{/markdown}}
+            </div>
+        </div>
+
 
         <div class="col-md-24">
             {{#markdown}}
@@ -108,13 +121,21 @@ $(function () {
 <button type="button"
         role="button"
         id="btn-close"
-        class="btn btn-primary"
-       [data-theme="[theme-alt] [theme-on-color] [theme-light] [theme-dark]"]>
+        class="btn btn-primary">
     Flyout with button
 </button>
 ```
             {{/markdown}}
         </div>
+
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+    {{#markdown}}
+{{> flyout-closing-button-guidance.md}}
+    {{/markdown}}
+            </div>
+        </div>
+
 
         <div class="col-md-24">
             {{#markdown}}
