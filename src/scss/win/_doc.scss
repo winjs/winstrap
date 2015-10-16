@@ -94,19 +94,19 @@ code {
         left: 13px;
     }
 
+    // Deal with repetitive content here instead of in the markup
+    // so if these ever change it's really easy to update
     &.guidance-usage:before
 	{
+        content: "Options";
         padding-left: spacing(xs, -3);
-        @include type(t7, set-line-height);
+        @include type(t7, set-line-height, responsive);
         font-weight: 500;
         font-family: $font-family-semibold;
     }
 
-    // Deal with repetitive content here instead of in the markup
-    // so if these ever change it's really easy to update
-    &.guidance-usage:before {
-        content: "Options";
-    }
+    
+    
 
     //
     // Colors
