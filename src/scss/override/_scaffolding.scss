@@ -23,10 +23,24 @@ hr {
     //
 
     // Default colors
-    border-color: $color-neutral-low;
+    &,
+    &.theme-default {
+        border-color: $color-neutral-low;
+    }
 
     // Alt theme
     &.theme-alt {
         border-color:  $color-neutral-low-alt;
+    }
+
+    // On light image
+    &.theme-light {
+        border-color: $color-vivid-high;
+    }
+
+    // On dark image or any color
+    &.theme-dark,
+    &.theme-on-color {
+        border-color: $color-vivid-high-alt;
     }
 }
