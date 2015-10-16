@@ -2,7 +2,7 @@
     "name": "Winstrap",
     "description": "Winstrap is the official Bootstrap theme for Microsoft Modern design language.",
     "repository": "https://github.com/winjs/winstrap.git",
-    "version": "0.4.10",
+    "version": "0.4.11",
     "author": {
         "name": "Microsoft"
     },
