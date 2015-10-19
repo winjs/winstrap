@@ -8,9 +8,8 @@
         <p>
             This is a simple dropdown menu with links inside. The dropdown code has specific accessibility settings.
         </p>
-        <p>
-            You can change the styling of the dropdown component by adding the theme-on-color, theme-alt, theme-light, or theme-dark classes to the dropdown divider.
-        </p>
+
+        <h4>Default</h4>
         <div class="btn-group">
             {{> dropdown id="dropdown-1" }}
         </div>
@@ -45,5 +44,12 @@
 {{> dropdown id="example-dropdown" }}
 ```
         {{/markdown}}
+    </div>
+    <div class="col-md-24">
+        <div class="guidance guidance-usage m-t-xs">
+            {{#markdown}}
+{{> dropdown-guidance.md}}
+            {{/markdown}}
+        </div>
     </div>
 </section>

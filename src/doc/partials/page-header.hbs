@@ -47,13 +47,7 @@
                 <h1>This is a page header</h1>
                 <p>With some content</p>
 
-                <!--
-                    Add data-scroll="smooth" attribute
-                    and the following JS code
-                    to enable smooth scrolling
-                -->
-                <ul class="nav nav-pills"
-                    [data-scroll="smooth" ]>
+                <ul class="nav nav-pills">
                     <li role="presentation" class="active">
                         <a href="#nav-item-1">Nav item 1</a>
                     </li>
@@ -101,6 +95,18 @@ $(function () {
                 {{/markdown}}
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="guidance guidance-usage m-t-xs">
+                    {{#markdown}}
+{{> page-header-guidance.md}}
+                    {{/markdown}}
+                </div>
+            </div>
+        </div>
+
     </section>
+    <hr/>
 
 </div>

@@ -7,7 +7,7 @@
 
     <div class="row">
         <div class="col-sm-24">
-            <p>Grid system in Winstrap scales up to 24 columns. Add <code>section-gallery</code> to add vertical spacing below <code>media</code> elements.</p>
+            <p>Grid system in Winstrap scales up to 24 columns.</p>
         </div>
     </div>
 
@@ -528,21 +528,21 @@
             {{#markdown}}
 ```xml
 <!-- Row with 12 elements -->
-<div class="row [section-gallery]">
+<div class="row section-gallery">
     <div class="col-md-2">
         …
     </div>
 </div>
 
 <!-- Row with 8 elements -->
-<div class="row [section-gallery]">
+<div class="row section-gallery">
     <div class="col-md-3">
         …
     </div>
 </div>
 
 <!-- Row with 4 elements -->
-<div class="row [section-gallery]">
+<div class="row section-gallery">
     <div class="col-md-6">
         …
     </div>
@@ -550,5 +550,14 @@
 ```
             {{/markdown}}
         </div>
+
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
+{{> grid-guidance.md}}
+                {{/markdown}}
+            </div>
+        </div>
+
     </div>
 </section>

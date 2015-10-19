@@ -97,10 +97,10 @@
                         </tbody>
                     </table>
 
-            {{#markdown}}
+                    {{#markdown}}
 ```xml
 <div class="table-responsive">
-<table class="table [theme-alt]">
+<table class="table">
     <thead>
       <tr>
         <th>Item</th>
@@ -143,10 +143,19 @@
 </table>
 </div>
 ```
-            {{/markdown}}
+                  {{/markdown}}
 
                   </div>
 
+    <div class="row">
+      <div class="col-md-24">
+        <div class="guidance guidance-usage m-t-xs">
+          {{#markdown}}
+{{> table-guidance.md}}
+          {{/markdown}}
+        </div>
+      </div>
+    </div>
 
     <div class="row">
         <div class="col-xs-24">
@@ -243,10 +252,10 @@
                   </tbody>
               </table>
             </div>
-{{#markdown}}
+            {{#markdown}}
 ```xml
   <div class="table-responsive">
-    <table class="table table-striped [theme-alt]">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th>Item</th>
@@ -289,7 +298,17 @@
     </table>
   </div>
 ```
-{{/markdown}}
+          {{/markdown}}
         </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-24">
+        <div class="guidance guidance-usage m-t-xs">
+          {{#markdown}}
+{{> table-with-borders-guidance.md}}
+          {{/markdown}}
+        </div>
+      </div>
     </div>
 </section>

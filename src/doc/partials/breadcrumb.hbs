@@ -11,7 +11,7 @@
                 <li><a href="#">Parent page</a></li>
                 <li><a href="#">Child page</a></li>
                 <li><a href="#">Section</a></li>
-                <li class="active">Current</li>
+                <li class="active">Current</li>          
             </ol>
 
             {{#markdown}}
@@ -24,6 +24,14 @@
 </ol>
 ```
             {{/markdown}}
+        </div>
+
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
+{{> breadcrumb-guidance.md}}
+                {{/markdown}}
+            </div>
         </div>
     </div>
 </section>

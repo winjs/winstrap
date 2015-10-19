@@ -89,8 +89,7 @@ $('#modal-sample').modal('hide');
 
             {{#markdown}}
 ```xml
-<!-- Add modal-center-vertical class to center the modal vertically -->
-<div class="modal [modal-center-vertical] [theme-alt]" id="modal-sample"
+<div class="modal" id="modal-sample"
      tabindex="-1" role="dialog"
      aria-labelledby="modal-sample-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -117,6 +116,15 @@ $('#modal-sample').modal('hide');
 </div>
 ```
             {{/markdown}}
+
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
+{{> dialog-guidance.md}}
+                {{/markdown}}
+            </div>
+            
         </div>
+
+        
     </div>
 </section>
