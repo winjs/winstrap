@@ -7,26 +7,9 @@
 
     <div class="row">
         <div class="col-xs-24">
+            <h4>Default</h4>
             {{> pagination-base }}
 
-            {{#markdown}}
-```xml
-{{> pagination-base }}
-```
-            {{/markdown}}
-        </div>
-    </div>
-    <div class="row">
-    <div class="col-md-24">
-        <div class="guidance guidance-usage m-t-xs">
-            {{#markdown}}
-{{> pagination-guidance.md}}
-            {{/markdown}}
-        </div>
-    </div>
-</div>
-    <div class="row">
-        <div class="col-xs-24">
             <h4>Alt</h4>
             <div class="color-black">
                 <nav>
@@ -62,31 +45,30 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-24">
-            <h2>Pager</h2>
-            {{> pagination-pager }}
 
             {{#markdown}}
 ```xml
-{{> pagination-pager }}
+{{> pagination-base }}
 ```
             {{/markdown}}
         </div>
     </div>
     <div class="row">
-    <div class="col-md-24">
-        <div class="guidance guidance-usage m-t-xs">
-            {{#markdown}}
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
 {{> pagination-guidance.md}}
-            {{/markdown}}
+                {{/markdown}}
+            </div>
         </div>
     </div>
-</div>
+
     <div class="row">
         <div class="col-xs-24">
+            <h2>Pager</h2>
+            <h4>Default</h4>
+            {{> pagination-pager }}
+
             <h4>Alt</h4>
             <div class="color-black">
                 <nav>
@@ -104,6 +86,23 @@
                     </ul>
                 </nav>
             </div>
+
+            {{#markdown}}
+```xml
+{{> pagination-pager }}
+```
+            {{/markdown}}
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
+{{> pagination-guidance.md}}
+                {{/markdown}}
+            </div>
+        </div>
+    </div>
+
+
 </section>

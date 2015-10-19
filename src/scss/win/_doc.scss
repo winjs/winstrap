@@ -90,8 +90,8 @@ code {
 
     &.guidance-example:before {
         position: absolute;
-        top: 10px;
-        left: 13px;
+        top: spacing(xxs, -2);
+        left: spacing(xxs, +1);
     }
 
     // Deal with repetitive content here instead of in the markup
