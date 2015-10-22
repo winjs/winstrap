@@ -1,13 +1,60 @@
 // Override Bootstrap Link syles
 a {
-    color: $link-color;
-
     &:hover {
         text-decoration: underline;
     }
 
+    &:active {
+        text-decoration: none;
+    }
+
     &:focus {
         @include tab-focus;
+    }
+
+    //
+    // Colors
+    //
+
+    &,
+    &.theme-default {
+        &:active {
+            // $color-type-accent with overlay of $color-dim-mid
+            color: mix($color-type-accent, $color-black, 90%);
+        }
+    }
+
+    &.theme-alt {
+        &:active {
+            // $color-type-accent with overlay of $color-dim-high-alt
+            color: mix($color-type-accent, $color-white, 85%);
+        }
+    }
+
+    &.theme-light {
+        color: $color-vivid-high;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-vivid-mid;
+        }
+
+        &:active {
+            color: $color-vivid-low;
+        }
+    }
+
+    &.theme-dark {
+        color: $color-vivid-high-alt;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-vivid-mid-alt;
+        }
+
+        &:active {
+            color: $color-vivid-low-alt;
+        }
     }
 }
 

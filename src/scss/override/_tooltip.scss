@@ -2,7 +2,8 @@
     @include type(t8);
 
     .tooltip-inner {
-        padding: 7px 8px 9px 8px;
+        min-width: 104px;
+        padding: spacing(xxxs, -1) spacing(xxxs) spacing(xxxs);
         border-style: solid;
         border-width: 1px;
         text-align: left;
@@ -12,15 +13,21 @@
         display: none;
     }
 
+    //
     // Colors
-    // On light surface (default), on light image
-    .tooltip-inner {
-        border-color: $color-neutral-mid;
-        background-color: $color-bg-light-vivid-mid;
-        color: $color-type-primary;
+    //
+
+    // Default theme and on light surface
+    &,
+    .theme-default + & {
+        .tooltip-inner {
+            border-color: $color-neutral-mid;
+            background-color: $color-bg-light-vivid-mid;
+            color: $color-type-primary;
+        }
     }
 
-    // On dark surface, on colored background, on dark image
+    // Alt theme and on dark surface
     .theme-alt + &,
     .theme-on-color + &,
     .theme-on-img-dark + &,
