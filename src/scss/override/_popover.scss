@@ -5,9 +5,8 @@ $popover-position: spacing(xxxs);
 
 .popover {
     padding: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    @include type(t7);
+    @include box-shadow(none);
+    @include type(t7, set-line-height);
 
     &.top       { margin-top: -$popover-position; }
     &.right     { margin-left: $popover-position; }
@@ -18,11 +17,13 @@ $popover-position: spacing(xxxs);
     .popover-title {
         display: none;
     }
+
     .popover-content {
-        padding: spacing(xxxs) spacing(xxs) spacing(xxs, -2);
+        min-width: 128px;
+        padding: spacing(xxs, -2) spacing(xxs) spacing(xxs);
 
         .btn {
-            margin: spacing(xxs, 2) 0 spacing(xxs);
+            margin: spacing(xxs, 5) 0 spacing(xxs);
             float: right;
         }
     }
@@ -31,16 +32,20 @@ $popover-position: spacing(xxxs);
     // Colors
     //
 
-    // On light surface (default), on light image
-    color: $color-type-primary;
-    background-color: $color-bg-light-vivid-mid;
-    border-color: $color-neutral-mid;
+    // Default theme and on light surface
+    &,
+    &.theme-default,
+    &.theme-light {
+        color: $color-type-primary;
+        background-color: $color-bg-light-vivid-mid;
+        border-color: $color-neutral-mid;
+    }
 
-    // On dark surface, on colored background, on dark image
+    // Alt theme and on dark surface
     &.theme-alt,
+    &.theme-dark,
     &.theme-on-color,
-    &.theme-on-img-dark,
-    &.theme-dark {
+    &.theme-on-img-dark {
         color: $color-type-primary-alt;
         background-color: $color-bg-dark-vivid-mid;
         border-color: $color-neutral-mid-alt;

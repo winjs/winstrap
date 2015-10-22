@@ -60,6 +60,10 @@ a.link-on-dark {
         border-radius: $toggle-switch-indicator-size / 2;
     }
 
+    &:active {
+        @include box-shadow(none);
+    }
+
     &.active {
         &::before {
             left: 28px;
@@ -78,11 +82,9 @@ a.link-on-dark {
     // Colors
     //
 
-    // On light surface and on light image
+    // Default theme
     &,
-    &.theme-default,
-    &.theme-on-img-light,
-    &.theme-light {
+    &.theme-default {
         background-color: transparent;
         border-color: $color-vivid-mid;
 
@@ -94,12 +96,24 @@ a.link-on-dark {
             color: $color-type-primary;
         }
 
+        &:hover {
+            border-color: $color-vivid-high;
+
+            &::before {
+                background-color: $color-vivid-high;
+            }
+        }
+
         &.active {
             background-color: $color-accent;
             border-color: transparent;
 
             &::before {
                 background-color: $color-bg-light-vivid-high;
+            }
+
+            &:hover {
+                background-color: lighten($color-accent-vivid-high, 10%);
             }
         }
 
@@ -121,11 +135,8 @@ a.link-on-dark {
         }
     }
 
-    // On dark surface and on dark image
-    &.theme-alt,
-    &.theme-on-img-dark,
-    &.theme-on-color,
-    &.theme-dark {
+    // Alt theme
+    &.theme-alt {
         background-color: transparent;
         border-color: $color-vivid-mid-alt;
 
@@ -137,12 +148,141 @@ a.link-on-dark {
             color: $color-type-primary-alt;
         }
 
+        &:hover {
+            border-color: $color-vivid-high-alt;
+
+            &::before {
+                background-color: $color-vivid-high-alt;
+            }
+        }
+
         &.active {
-            background-color: $color-accent;
+            background-color: $color-accent-vivid-high;
             border-color: transparent;
 
             &::before {
                 background-color: $color-bg-light-vivid-high;
+            }
+
+            &:hover {
+                background-color: lighten($color-accent-vivid-high, 10%);
+            }
+        }
+
+        &:disabled {
+            border-color: $color-neutral-low-alt;
+
+            &::before {
+                background-color: $color-neutral-low-alt;
+            }
+
+            .stateLabel {
+                color: $color-type-disabled-alt;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $color-neutral-low-alt;
+            }
+        }
+    }
+
+    // On light surface
+    &.theme-light,
+    &.theme-on-img-light {
+        background-color: transparent;
+        border-color: $color-vivid-mid;
+
+        &::before {
+            background-color: $color-vivid-mid;
+        }
+
+        .stateLabel {
+            color: $color-type-primary;
+        }
+
+        &:hover {
+            border-color: $color-vivid-high;
+
+            &::before {
+                background-color: $color-vivid-high;
+            }
+        }
+
+        &.active {
+            background-color: $color-neutral-high;
+            border-color: $color-vivid-high;
+
+            &::before {
+                background-color: $color-bg-dark-vivid-high;
+            }
+
+            &:hover {
+                background-color: lighten($color-neutral-high, 10%);
+                border-color: lighten($color-vivid-high, 10%);
+
+                &::before {
+                    background-color: lighten($color-bg-dark-vivid-high, 10%);
+                }
+            }
+        }
+
+        &:disabled {
+            border-color: $color-neutral-low;
+
+            &::before {
+                background-color: $color-neutral-low;
+            }
+
+            .stateLabel {
+                color: $color-type-disabled;
+            }
+
+            &.active {
+                border-color: transparent;
+                background-color: $color-neutral-low;
+            }
+        }
+    }
+
+    // On dark surface
+    &.theme-dark,
+    &.theme-on-img-dark,
+    &.theme-on-color {
+        background-color: transparent;
+        border-color: $color-vivid-mid-alt;
+
+        &::before {
+            background-color: $color-vivid-mid-alt;
+        }
+
+        .stateLabel {
+            color: $color-type-primary-alt;
+        }
+
+        &:hover {
+            border-color: $color-vivid-high-alt;
+
+            &::before {
+                background-color: $color-vivid-high-alt;
+            }
+        }
+
+        &.active {
+            background-color: $color-neutral-high-alt;
+            border-color: $color-vivid-high-alt;
+
+            &::before {
+                background-color: $color-bg-light-vivid-high;
+            }
+
+            &:hover {
+                background-color: darken($color-neutral-high-alt, 10%);
+                border-color: darken($color-vivid-high-alt, 10%);
+
+                &::before {
+                    background-color: darken($color-bg-light-vivid-high, 10%);
+                }
             }
         }
 

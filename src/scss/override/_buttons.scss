@@ -22,6 +22,13 @@
     padding: 9px 12px 10px;
     margin: 12px 8px 0 0;
 
+    &.theme-light,
+    &.theme-dark {
+        // <a> with .theme-light or .theme-dark is always underlined by default.
+        // This overrides that default style.
+        text-decoration: none;
+    }
+
     //
     // Color
     //
@@ -232,7 +239,6 @@
 
 // Override Bootstrap link buttons
 // Make a button look and behave like a link
-.btn-lightweight,
 .btn-link {
     @include type(t7);
     min-width: 120px;
@@ -241,6 +247,16 @@
     border: none;
     border-radius: 0;
     padding: 9px 12px 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus,
+    &:active,
+    &.active {
+        text-decoration: none;
+    }
 
     //
     // Color
@@ -282,7 +298,6 @@
     &.theme-on-color,
     &.theme-on-img-dark,
     &.theme-dark {
-
         color: $color-type-primary-alt;
 
         &:focus,
@@ -301,7 +316,6 @@
     // Light background
     &.theme-on-img-light,
     &.theme-light {
-
         color: $color-type-primary;
 
         &:focus,
@@ -316,6 +330,12 @@
             color: $color-type-disabled;
         }
     }
+}
+
+// .btn-lightweight is the MDL name for .btn-link
+// Using @extend here to make sure .btn-lightweight picks up all the styles set by Bootstrap
+.btn-lightweight {
+    @extend .btn-link;
 }
 
 // Dropdown button
