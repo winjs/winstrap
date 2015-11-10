@@ -19,9 +19,10 @@
   ],
   "homepage": "http://winstrap.azurewebsites.net",
   "dependencies": {
-    "bower": ""
+    "bootstrap-sass": "3.3.4"
   },
   "devDependencies": {
+    "bower": "",
     "grunt": "^0.4.5",
     "grunt-assemble": "^0.4.0",
     "grunt-bump": "^0.3.1",
