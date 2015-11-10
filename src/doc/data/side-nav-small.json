@@ -1,0 +1,162 @@
+{
+    "sections": [{
+        "label": "Deftones",
+        "pages": [{
+            "label": "Adrenaline",
+            "href": "adrenaline"
+        }, {
+            "label": "Around the Fur",
+            "href": "around-the-fur"
+        }, {
+            "label": "White Pony",
+            "href": "white-pony"
+        }, {
+            "label": "Deftones",
+            "href": "deftones"
+        }, {
+            "label": "Saturday Night Wrist",
+            "href": "saturday-night-wrist"
+        }, {
+            "label": "Diamond Eyes",
+            "href": "diamond-eyes"
+        }, {
+            "label": "Koi No Yokan",
+            "href": "koi-no-yokan"
+        }]
+    }, {
+        "label": "Radiohead",
+        "pages":[{
+            "label": "Pablo Honey",
+            "href": "pablo-honey"
+        }, {
+            "label": "The Bends",
+            "href": "the-bends"
+        }, {
+            "label": "OK Computer",
+            "href": "ok-computer"
+        }, {
+            "label": "Kid A",
+            "href": "kid-a"
+        }, {
+            "label": "Amnesiac",
+            "href": "amnesiac"
+        }, {
+            "label": "Hail to the Thief",
+            "href": "hail-to-the-thief"
+        }, {
+            "label": "In Rainbows",
+            "href": "in-rainbows"
+        }, {
+            "label": "The King of Limbs",
+            "href": "the-king-of-limbs"
+        }]
+    }, {
+        "label": "The Roots",
+        "pages":[{
+            "label": "Organix",
+            "href": "organix"
+        }, {
+            "label": "Do You Want More?!!!??!",
+            "href": "do-you-want-more"
+        }, {
+            "label": "Illadelph Halflife",
+            "href": "illadelp-halflife"
+        }, {
+            "label": "Things Fall Apart",
+            "href": "things-fall-apart"
+        }, {
+            "label": "Phrenology",
+            "href": "phrenology"
+        }, {
+            "label": "The Tipping Point",
+            "href": "the-tipping-point"
+        }, {
+            "label": "Game Theory",
+            "href": "game-theory"
+        }, {
+            "label": "Rising Down",
+            "href": "rising-down"
+        }, {
+            "label": "How I Got Over",
+            "href": "how-i-got-over"
+        }, {
+            "label": "Wake Up!",
+            "href": "wake-up"
+        }, {
+            "label": "Betty Wright: The Movie",
+            "href": "betty-wright-the-movie"
+        }, {
+            "label": "Undun",
+            "href": "undun"
+        }, {
+            "label": "Wise Up Ghost",
+            "href": "wise-up-ghost"
+        }, {
+            "label": "…And Then You Shoot Your Cousin",
+            "href": "and-then-you-shoot-your-cousin"
+        }]
+    }, {
+        "label": "Father John Misty",
+        "pages":[{
+            "label": "Fear Fun",
+            "href": "fear-fun"
+        }, {
+            "label": "I Love You Honeybear",
+            "href": "i-love-you-honeybear"
+        }]
+    }, {
+        "label": "The National",
+        "pages":[{
+            "label": "The National",
+            "href": "the-national"
+        }, {
+            "label": "Songs for Dirty Lovers",
+            "href": "songs-for-dirty-lovers"
+        }, {
+            "label": "Alligator",
+            "href": "alligator"
+        }, {
+            "label": "Boxer",
+            "href": "boxer"
+        }, {
+            "label": "High Violet",
+            "href": "high-violet"
+        }, {
+            "label": "Trouble Will Find Me",
+            "href": "trouble-will-find-me"
+        }]
+    }, {
+        "label": "The Strokes",
+        "pages":[{
+            "label": "Is this it?",
+            "href": "is-this-it"
+        }, {
+            "label": "Room on Fire",
+            "href": "room-on-fire"
+        }, {
+            "label": "First Impressions of Earth",
+            "href": "first-impressions-of-earth"
+        }, {
+            "label": "Angels",
+            "href": "angels"
+        }, {
+            "label": "Comedown Machine",
+            "href": "comedown-machine"
+        }]
+    }, {
+        "label": "Glass Animals",
+        "pages":[{
+            "label": "Zaba",
+            "href": "zaba"
+        }]
+    }, {
+        "label": "Imagine Dragons",
+        "pages":[{
+            "label": "Night Vision",
+            "href": "night-vision"
+        }, {
+            "label": "Smoke + Mirrors",
+            "href": "smoke-mirrors"
+        }]
+    }]
+}

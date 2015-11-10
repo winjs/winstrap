@@ -1,0 +1,12 @@
+{{#with side-nav-large}}
+<nav role="navigation" id="sidenav" class="nav side-navigation side-navigation-large">
+    <div class="navigation-label">{{label}}</div>
+    <ul>
+        {{#each pages}}
+        <li>
+            <a href="{{href}}.html" {{#compare ../../../basename href}} class="active" {{/compare}}>{{label}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>
+{{/with}}

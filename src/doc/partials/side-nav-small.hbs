@@ -1,0 +1,21 @@
+{{#with side-nav-small}}
+<ul role="navigation" id="sidenav" class="nav side-navigation side-navigation-small">
+    {{#each sections}}
+    {{!-- a few notes about how the following lines function:
+    1. inArrayJson checks to see if a string exists in the stringified version of an array of JSON
+    2. pages is the list of c3 pages in the each section, (not the assemble.io build-time variable pages). Checking to see if basename (i.e., current page we're assembling) is in the array of pages under the current c2 section, then we want to draw their side-nav as expanded.
+    3. 'In Rainbows' is merely a page name under Radiohead, but you can imagine you might a basename or url or something for comparison
+    --}}
+    <li class="{{#inArrayJson pages 'In Rainbows'}}active expanded {{else}}collapsed {{/inArrayJson}}side-nav-c2">
+        <a>{{label}}</a>
+        <ul class="nav">
+            {{#each pages}}
+            <li>
+                <a href="{{href}}.html" {{#compare pages 'In Rainbows'}} class="active" {{/compare}}>{{label}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+{{/with}}

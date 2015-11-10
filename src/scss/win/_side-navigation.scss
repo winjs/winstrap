@@ -1,0 +1,195 @@
+.side-navigation {
+    &.side-navigation-large {
+        display: none;
+        cursor: text;
+        @media (min-width: $screen-md) {
+            display: block;
+            max-width: 225px;
+        }
+        .navigation-label {
+            position: relative;
+            margin-top: spacing(xs);
+            @include type(t4);
+            &:after {
+                position: absolute;
+                right: spacing(n);
+                bottom: spacing(n);
+                font-family: "winjs-symbols";
+                content: glyph(cancel);
+                font-size: 16px;
+                // This may change depending on the decided method for RTL
+                [dir="rtl"] & {
+                    right: auto;
+                    left: spacing(n);
+                }
+            }
+            @media (min-width: $screen-md) {
+                margin-top: spacing(md);
+                pointer-events: none;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &.navigation-modal {
+            @extend .modal;
+            padding: spacing(n) spacing(xxs);
+            width: 100% !important;
+            overflow: auto;
+        }
+        &.side-navigation-affix {
+            @media (min-width: $screen-md) {
+                &.affix {
+                    top: spacing(n);
+                }
+                &.affix-bottom {
+                    position: absolute;
+                }
+            }
+        }
+        ul {
+            padding: spacing(n);
+            li {
+                padding: spacing(xxs) spacing(n);
+                word-wrap: break-word;
+                word-break: normal;
+                list-style-type: none;
+                .active {
+                    @extend .text-base;
+                }
+            }
+        }
+    }
+
+    &.side-navigation-small {
+        word-wrap: break-word;
+        word-break: normal;
+        display: block;
+        margin-top: spacing(lg);
+        &.affix {
+            margin-top: spacing(n);
+            top: spacing(xxs);
+            position: fixed;
+        }
+        &.affix-bottom {
+            position: absolute;
+        }
+        &.nav {
+            >li a {
+                padding-top: spacing(xxxs)/3;
+                padding-bottom: spacing(xxxs)/3;
+                cursor: pointer;
+            }
+            .side-nav-c2 {
+                position: relative;
+                a {
+                    padding-left: spacing(n);
+                }
+                &.with-icon {
+                    a {
+                        padding-left: spacing(xxs);
+                    }
+                    &:before {
+                        position: absolute;
+                        top: 7px;
+                        font-size: 10px;
+                        font-family: "winjs-symbols";
+                        content: glyph(add);
+                    }
+                    &.active {
+                        &.with-icon:before {
+                            content: glyph(remove);
+                        }
+                    }
+                }
+            }
+            .nav {
+                display: none;
+                margin: spacing(n);
+                padding-left: spacing(xxs);
+                li a {
+                    padding-top: spacing(xxxs)/4;
+                    padding-bottom: spacing(xxxs)/4;
+                }
+            }
+            &.nav li.active .nav {
+                display: block;
+            }
+        }
+    }
+
+    .navigation-btn {
+        position: relative;
+        margin: spacing(n);
+        padding-left: spacing(sm);
+        [dir="rtl"] & {
+            padding-right: spacing(sm);
+        }
+        &:before {
+            position: absolute;
+            left: spacing(n);
+            font-family: "winjs-symbols";
+            content: glyph(back);
+            // This may change depending on the decided method for RTL
+            [dir="rtl"] & {
+                left: auto;
+                right: spacing(n);
+                content: glyph(forward);
+            }
+        }
+        @media (min-width: $screen-md) {
+            display: none;
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // Default
+    &.navigation-modal {
+        background-color: $color-bg-light-vivid-high;
+    }
+    a {
+        color: $color-type-secondary;
+    }
+    .active {
+        color: $color-type-primary;
+    }
+
+    // Alt Theme
+    &.theme-alt {
+        &.navigation-modal {
+            background-color: $color-bg-dark-vivid-high;
+        }
+        .navigation-label {
+            color: $color-type-primary-alt;
+            &:after {
+                color: $color-vivid-low-alt;
+            }
+        }
+        a {
+            color: $color-type-secondary-alt;
+        }
+        .active {
+            color: $color-type-primary-alt;
+        }
+    }
+
+    .side-nav-c2 {
+        // Default
+        a {
+            color: $color-type-secondary;
+        }
+        &:hover {
+            color: $color-type-secondary;
+        }
+        .active {
+            background-color: $color-bg-light-vivid-low;
+        }
+        // Alt Theme
+        &.theme-alt {
+            color: $color-type-secondary-alt;
+        }
+    }
+}
