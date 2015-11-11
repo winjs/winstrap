@@ -42,7 +42,7 @@
   "bugs": {
     "url": "https://github.com/winjs/winstrap/issues"
   },
-  "main": "index.js",
+  "main": "src/scss/winstrap.scss",
   "keywords": [
     "microsoft",
     "windows",
