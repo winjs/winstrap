@@ -1,4 +1,5 @@
 .side-navigation {
+
     &.side-navigation-large {
         display: none;
         cursor: text;
@@ -10,6 +11,7 @@
             position: relative;
             margin-top: spacing(xs);
             @include type(t4);
+            font-weight: 400;
             &:after {
                 position: absolute;
                 right: spacing(n);
@@ -76,12 +78,13 @@
         }
         &.nav {
             >li a {
-                padding-top: spacing(xxxs)/3;
-                padding-bottom: spacing(xxxs)/3;
+                padding-top: spacing(n);
+                padding-bottom: spacing(n);
                 cursor: pointer;
             }
             .side-nav-c2 {
                 position: relative;
+                @include type(t7);
                 a {
                     padding-left: spacing(n);
                 }
@@ -103,13 +106,19 @@
                     }
                 }
             }
+
+            .side-nav-c2:not(:first-of-type) {
+                margin-top: spacing(xxs);
+            }
+
             .nav {
                 display: none;
                 margin: spacing(n);
-                padding-left: spacing(xxs);
+                padding-left: spacing(xs);
                 li a {
                     padding-top: spacing(xxxs)/4;
                     padding-bottom: spacing(xxxs)/4;
+                    @include type(t8);
                 }
             }
             &.nav li.active .nav {
@@ -146,15 +155,34 @@
     // Colors
     //
 
-    // Default
+    // Default Theme
     &.navigation-modal {
-        background-color: $color-bg-light-vivid-high;
+        background-color: transparent;
     }
     a {
         color: $color-type-secondary;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     .active {
         color: $color-type-primary;
+        font-weight: 400;
+    }
+
+    .side-nav-c2 {
+        a {
+            color: $color-type-secondary;
+            &:hover {
+                text-decoration: underline;
+                background-color: transparent;
+            }
+        }
+        &.active > a,
+        .active {
+            color: $color-type-primary;
+            background-color: transparent;
+        }
     }
 
     // Alt Theme
@@ -174,22 +202,14 @@
         .active {
             color: $color-type-primary-alt;
         }
-    }
-
-    .side-nav-c2 {
-        // Default
-        a {
-            color: $color-type-secondary;
-        }
-        &:hover {
-            color: $color-type-secondary;
-        }
-        .active {
-            background-color: $color-bg-light-vivid-low;
-        }
-        // Alt Theme
-        &.theme-alt {
-            color: $color-type-secondary-alt;
+        .side-nav-c2 {
+            a {
+                color: $color-type-secondary-alt;
+            }
+            &.active > a,
+            .active {
+                color: $color-type-primary-alt;
+            }
         }
     }
 }

@@ -4,7 +4,8 @@
     <ul>
         {{#each pages}}
         <li>
-            <a href="{{href}}.html" {{#compare ../../../basename href}} class="active" {{/compare}}>{{label}}</a>
+            {{!-- using dumb links, but you can easily pass in data via JSON or some other method --}}
+            <a href="#"{{#if active}} class="active"{{/if}}>{{label}}</a>
         </li>
         {{/each}}
     </ul>

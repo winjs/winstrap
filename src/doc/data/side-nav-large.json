@@ -5,7 +5,8 @@
         "href": "cascades"
     }, {
         "label": "The Olympic Mountains",
-        "href": "olympic-mountains"
+        "href": "olympic-mountains",
+        "active": true
     }, {
         "label": "The Sierra Nevadas",
         "href": "sierra-nevadas"
