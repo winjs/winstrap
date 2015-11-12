@@ -21,17 +21,15 @@
     //
 
     if ($('.side-navigation').length) {
-        var sideAffix = $('.side-navigation-affix');
-        var sideSection = $('.navigation-section');
         var closeBtn = $('.close');
-        var sideNav;
+        var sideAffix = $('.side-navigation-affix');
         var sideBtn = $('a.navigation-btn');
+        var sideNav = $('.side-navigation-large');
+        var sideSection = $('.navigation-section');
         var sideTopSpacing = 48;
 
         if ($('.side-navigation-small').length) {
             sideNav = $('.side-navigation-small');
-        } else {
-            sideNav = $('.side-navigation-large');
         }
 
         var topOffset = sideSection.offset().top - sideTopSpacing;

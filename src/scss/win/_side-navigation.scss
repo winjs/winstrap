@@ -21,7 +21,7 @@ a.navigation-btn {
         }
     }
     @media (min-width: $screen-md) {
-        // Have to use !important because show/hide behavior via javascript is styled inline
+        // Have to use !important because show/hide behavior via JavaScript is styled inline
         display: none !important;
     }
 
