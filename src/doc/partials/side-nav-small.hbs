@@ -6,7 +6,7 @@
     2. pages is the list of c3 pages in the each section, (not the assemble.io build-time variable pages). Checking to see if basename (i.e., current page we're assembling) is in the array of pages under the current c2 section, then we want to draw their side-nav as expanded.
     3. 'active' is merely a boolean value in the page object in side-nav-small.json
     --}}
-    <li class="{{#inArrayJson pages 'active'}}active {{/inArrayJson}}side-nav-c2">
+    <li class="panel {{#inArrayJson pages 'active'}}active {{/inArrayJson}}side-nav-c2">
         <a data-toggle="collapse" data-parent="#sidenav-small" href="#{{id}}" aria-expanded="{{#inArrayJson pages 'active'}}true{{else}}false{{/inArrayJson}}" aria-controls="#{{id}}">{{label}}</a>
         <ul class="nav collapse{{#inArrayJson pages 'active'}} in{{/inArrayJson}}" id="{{id}}">
             {{#each pages}}

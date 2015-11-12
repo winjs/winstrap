@@ -119,9 +119,16 @@
                     @include type(t8);
                 }
             }
-            // &.nav li.active .nav {
-            //     display: block;
-            // }
+
+            // Override Panel settings
+            // Panel is required for Bootstrap's accordion
+            .panel {
+                margin: initial;
+                background: transparent;
+                border: 0;
+                border-color: transparent;
+                box-shadow: none;
+            }
         }
     }
 
