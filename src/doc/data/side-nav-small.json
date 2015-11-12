@@ -1,6 +1,6 @@
 {
     "sections": [{
-        "label": "Father John Misty",
+        "category": "Father John Misty",
         "id": "father-john-misty",
         "pages":[{
             "label": "Fear Fun",
@@ -11,7 +11,7 @@
             "active": true
         }]
     }, {
-        "label": "The National",
+        "category": "The National",
         "id": "the-national",
         "pages":[{
             "label": "The National",
@@ -33,7 +33,7 @@
             "href": "trouble-will-find-me"
         }]
     }, {
-        "label": "The Strokes",
+        "category": "The Strokes",
         "id": "the-strokes",
         "pages":[{
             "label": "Is this it?",
@@ -52,14 +52,14 @@
             "href": "comedown-machine"
         }]
     }, {
-        "label": "Glass Animals",
+        "category": "Glass Animals",
         "id": "glass-animals",
         "pages":[{
             "label": "Zaba",
             "href": "zaba"
         }]
     }, {
-        "label": "Imagine Dragons",
+        "category": "Imagine Dragons",
         "id": "imagine-dragons",
         "pages":[{
             "label": "Night Vision",

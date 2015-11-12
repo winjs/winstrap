@@ -1,3 +1,46 @@
+// This is for viewports 1 & 2 and lives outside the .side-navigation structure to be visible when .side-navigation is not
+a.navigation-btn {
+    position: relative;
+    margin-top: spacing(xs);
+    padding-left: spacing(sm);
+    [dir="rtl"] & {
+        padding-right: spacing(sm);
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:before {
+        position: absolute;
+        left: spacing(n);
+        @include glyph(back);
+        // This may change depending on the decided method for RTL
+        [dir="rtl"] & {
+            left: auto;
+            right: spacing(n);
+            content: glyph(forward);
+        }
+    }
+    @media (min-width: $screen-md) {
+        // Have to use !important because show/hide behavior via javascript is styled inline
+        display: none !important;
+    }
+
+    //
+    // Color
+    //
+    &,
+    &.theme-default,
+    &.btn-lightweight:hover {
+        color: $color-type-secondary;
+    }
+    &.theme-alt {
+        color: $color-type-secondary-alt;
+        &.btn-lightweight:hover {
+            color: $color-type-secondary-alt;
+        }
+    }
+}
+
 .side-navigation {
 
     &.side-navigation-large {
@@ -6,37 +49,6 @@
         @media (min-width: $screen-md) {
             display: block;
             max-width: 225px;
-        }
-        .navigation-label {
-            position: relative;
-            margin-top: spacing(xs);
-            @include type(t4);
-            font-weight: 400;
-            &:after {
-                position: absolute;
-                right: spacing(n);
-                bottom: spacing(n);
-                @include glyph(cancel);
-                font-size: 16px;
-                // This may change depending on the decided method for RTL
-                [dir="rtl"] & {
-                    right: auto;
-                    left: spacing(n);
-                }
-            }
-            @media (min-width: $screen-md) {
-                margin-top: spacing(md);
-                pointer-events: none;
-                &:after {
-                    display: none;
-                }
-            }
-        }
-        &.navigation-modal {
-            @extend .modal;
-            padding: spacing(n) spacing(xxs);
-            width: 100% !important;
-            overflow: auto;
         }
         &.side-navigation-affix {
             @media (min-width: $screen-md) {
@@ -60,13 +72,24 @@
                 }
             }
         }
+        .close {
+            position: absolute;
+            top: 23px;
+            right: 9px;
+            font-size: 18px;
+            padding: spacing(xxxs, 1);
+            @media (min-width: $screen-md) {
+                display: none;
+            }
+        }
     }
 
     &.side-navigation-small {
         word-wrap: break-word;
         word-break: normal;
-        display: block;
+        display:  none;
         margin-top: spacing(lg);
+        max-width: calc(100% - 32px); // make space for .close on $vp1 & $vp2
         &.affix {
             margin-top: spacing(n);
             top: spacing(xxs);
@@ -74,6 +97,10 @@
         }
         &.affix-bottom {
             position: absolute;
+        }
+        @media (min-width: $screen-md) {
+            display: block;
+            max-width: initial; // then let it be full-width on $vp3 and higher
         }
         &.nav {
             >li a {
@@ -130,28 +157,26 @@
                 box-shadow: none;
             }
         }
-    }
-
-    .navigation-btn {
-        position: relative;
-        margin: spacing(n);
-        padding-left: spacing(sm);
-        [dir="rtl"] & {
-            padding-right: spacing(sm);
-        }
-        &:before {
+        .close {
             position: absolute;
-            left: spacing(n);
-            @include glyph(back);
-            // This may change depending on the decided method for RTL
-            [dir="rtl"] & {
-                left: auto;
-                right: spacing(n);
-                content: glyph(forward);
+            top: -8px;
+            right: 10px;
+            font-size: 15px;
+            padding: spacing(xxxs);
+            @media (min-width: $screen-md) {
+                display: none;
             }
         }
+    }
+
+    .navigation-label {
+        // position: relative;
+        margin-top: spacing(xs);
+        @include type(t4);
+        font-weight: 400;
         @media (min-width: $screen-md) {
-            display: none;
+            margin-top: spacing(md);
+            pointer-events: none;
         }
     }
 
@@ -163,7 +188,7 @@
     &,
     &.theme-default {
         &.navigation-modal {
-            background-color: transparent;
+            background-color: $color-vivid-high-alt;
         }
         a {
             color: $color-type-secondary;

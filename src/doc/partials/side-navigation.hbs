@@ -16,7 +16,7 @@
                     <div class="col-md-6">
                         {{> side-nav-large }}
                     </div>
-                    <div class="col-xs-24 col-md-18">
+                    <div class="col-xs-24 col-md-18 navigation-section">
                         {{#markdown}}
 ```xml
 {{> side-nav-large }}
@@ -24,9 +24,14 @@
                         {{/markdown}}
                         <div class="guidance guidance-usage m-t-xs">
                             {{#markdown}}
-{{> side-nav-guidance.md}}
+{{> side-nav-large-guidance.md}}
                             {{/markdown}}
                         </div>
+                        {{#markdown}}
+```js
+{{> side-nav.js }}
+```
+                        {{/markdown}}
                     </div>
                 </div>
             </section>
@@ -48,7 +53,7 @@
                         {{/markdown}}
                         <div class="guidance guidance-usage m-t-xs">
                             {{#markdown}}
-{{> side-nav-guidance.md}}
+{{> side-nav-small-guidance.md}}
                             {{/markdown}}
                         </div>
                     </div>
