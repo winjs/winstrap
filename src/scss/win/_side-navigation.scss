@@ -16,8 +16,7 @@
                 position: absolute;
                 right: spacing(n);
                 bottom: spacing(n);
-                font-family: "winjs-symbols";
-                content: glyph(cancel);
+                @include glyph(cancel);
                 font-size: 16px;
                 // This may change depending on the decided method for RTL
                 [dir="rtl"] & {
@@ -96,8 +95,7 @@
                         position: absolute;
                         top: 7px;
                         font-size: 10px;
-                        font-family: "winjs-symbols";
-                        content: glyph(add);
+                        @include glyph(add);
                     }
                     &.active {
                         &.with-icon:before {
@@ -112,7 +110,7 @@
             }
 
             .nav {
-                display: none;
+                // display: none;
                 margin: spacing(n);
                 padding-left: spacing(xs);
                 li a {
@@ -121,9 +119,9 @@
                     @include type(t8);
                 }
             }
-            &.nav li.active .nav {
-                display: block;
-            }
+            // &.nav li.active .nav {
+            //     display: block;
+            // }
         }
     }
 
@@ -137,8 +135,7 @@
         &:before {
             position: absolute;
             left: spacing(n);
-            font-family: "winjs-symbols";
-            content: glyph(back);
+            @include glyph(back);
             // This may change depending on the decided method for RTL
             [dir="rtl"] & {
                 left: auto;
@@ -156,32 +153,35 @@
     //
 
     // Default Theme
-    &.navigation-modal {
-        background-color: transparent;
-    }
-    a {
-        color: $color-type-secondary;
-        &:hover {
-            text-decoration: underline;
+    &,
+    &.theme-default {
+        &.navigation-modal {
+            background-color: transparent;
         }
-    }
-    .active {
-        color: $color-type-primary;
-        font-weight: 400;
-    }
-
-    .side-nav-c2 {
         a {
             color: $color-type-secondary;
             &:hover {
                 text-decoration: underline;
-                background-color: transparent;
             }
         }
-        &.active > a,
         .active {
             color: $color-type-primary;
-            background-color: transparent;
+            font-weight: 400;
+        }
+
+        .side-nav-c2 {
+            a {
+                color: $color-type-secondary;
+                &:hover {
+                    text-decoration: underline;
+                    background-color: transparent;
+                }
+            }
+            &.active > a,
+            .active {
+                color: $color-type-primary;
+                background-color: transparent;
+            }
         }
     }
 
