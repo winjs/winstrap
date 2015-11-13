@@ -1,0 +1,72 @@
+{
+    "sections": [{
+        "category": "Father John Misty",
+        "id": "father-john-misty",
+        "pages":[{
+            "label": "Fear Fun",
+            "href": "fear-fun"
+        }, {
+            "label": "I Love You Honeybear",
+            "href": "i-love-you-honeybear",
+            "active": true
+        }]
+    }, {
+        "category": "The National",
+        "id": "the-national",
+        "pages":[{
+            "label": "The National",
+            "href": "the-national"
+        }, {
+            "label": "Songs for Dirty Lovers",
+            "href": "songs-for-dirty-lovers"
+        }, {
+            "label": "Alligator",
+            "href": "alligator"
+        }, {
+            "label": "Boxer",
+            "href": "boxer"
+        }, {
+            "label": "High Violet",
+            "href": "high-violet"
+        }, {
+            "label": "Trouble Will Find Me",
+            "href": "trouble-will-find-me"
+        }]
+    }, {
+        "category": "The Strokes",
+        "id": "the-strokes",
+        "pages":[{
+            "label": "Is this it?",
+            "href": "is-this-it"
+        }, {
+            "label": "Room on Fire",
+            "href": "room-on-fire"
+        }, {
+            "label": "First Impressions of Earth",
+            "href": "first-impressions-of-earth"
+        }, {
+            "label": "Angels",
+            "href": "angels"
+        }, {
+            "label": "Comedown Machine",
+            "href": "comedown-machine"
+        }]
+    }, {
+        "category": "Glass Animals",
+        "id": "glass-animals",
+        "pages":[{
+            "label": "Zaba",
+            "href": "zaba"
+        }]
+    }, {
+        "category": "Imagine Dragons",
+        "id": "imagine-dragons",
+        "pages":[{
+            "label": "Night Vision",
+            "href": "night-vision"
+        }, {
+            "label": "Smoke + Mirrors",
+            "href": "smoke-mirrors"
+        }]
+    }]
+}

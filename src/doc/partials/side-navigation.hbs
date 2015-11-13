@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-xs-24">
+        <section class="section" id="side-nav">
+            <header class="section-header ">
+                <h1 class="section-title ">
+                    <a name="navs">Side navigation</a>
+                </h1>
+            </header>
+
+            <section class="section">
+                <h3>Large side navigation</h3>
+                <p>
+                    {{> side-nav-large-about.md }}
+                </p>
+                <div class="row m-t-md">
+                    <div class="col-md-6">
+                        {{> side-nav-large }}
+                    </div>
+                    <div class="col-xs-24 col-md-18 navigation-section">
+                        {{#markdown}}
+```xml
+{{> side-nav-large }}
+```
+                        {{/markdown}}
+                        <div class="guidance guidance-usage m-t-xs">
+                            {{#markdown}}
+{{> side-nav-large-guidance.md}}
+                            {{/markdown}}
+                        </div>
+                        {{#markdown}}
+```javascript
+{{> side-nav.js }}
+```
+                        {{/markdown}}
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>Small side navigation</h3>
+                <p>
+                    {{> side-nav-small-about.md }}
+                </p>
+                <div class="row m-t-md">
+                    <div class="col-md-6">
+                        {{> side-nav-small }}
+                    </div>
+                    <div class="col-xs-24 col-md-18">
+                        {{#markdown}}
+```xml
+{{> side-nav-small }}
+```
+                        {{/markdown}}
+                        <div class="guidance guidance-usage m-t-xs">
+                            {{#markdown}}
+{{> side-nav-small-guidance.md}}
+                            {{/markdown}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</div>

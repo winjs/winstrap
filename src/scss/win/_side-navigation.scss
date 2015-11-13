@@ -1,0 +1,247 @@
+// This is for viewports 1 & 2 and lives outside the .side-navigation structure to be visible when .side-navigation is not
+a.navigation-btn {
+    position: relative;
+    margin-top: spacing(xs);
+    padding-left: spacing(sm);
+    [dir="rtl"] & {
+        padding-right: spacing(sm);
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:before {
+        position: absolute;
+        left: spacing(n);
+        @include glyph(back);
+        // This may change depending on the decided method for RTL
+        [dir="rtl"] & {
+            left: auto;
+            right: spacing(n);
+            content: glyph(forward);
+        }
+    }
+    @media (min-width: $screen-md) {
+        // Have to use !important because show/hide behavior via JavaScript is styled inline
+        display: none !important;
+    }
+
+    //
+    // Color
+    //
+    &,
+    &.theme-default,
+    &.btn-lightweight:hover {
+        color: $color-type-secondary;
+    }
+    &.theme-alt {
+        color: $color-type-secondary-alt;
+        &.btn-lightweight:hover {
+            color: $color-type-secondary-alt;
+        }
+    }
+}
+
+.side-navigation {
+
+    &.side-navigation-large {
+        display: none;
+        cursor: text;
+        @media (min-width: $screen-md) {
+            display: block;
+            max-width: 225px;
+        }
+        &.side-navigation-affix {
+            @media (min-width: $screen-md) {
+                &.affix {
+                    top: spacing(n);
+                }
+                &.affix-bottom {
+                    position: absolute;
+                }
+            }
+        }
+        ul {
+            padding: spacing(n);
+            li {
+                padding: spacing(xxs) spacing(n);
+                word-wrap: break-word;
+                word-break: normal;
+                list-style-type: none;
+                .active {
+                    @extend .text-base;
+                }
+            }
+        }
+        .close {
+            position: absolute;
+            top: 23px;
+            right: 9px;
+            font-size: 18px;
+            padding: spacing(xxxs, 1);
+            @media (min-width: $screen-md) {
+                display: none;
+            }
+        }
+    }
+
+    &.side-navigation-small {
+        word-wrap: break-word;
+        word-break: normal;
+        display:  none;
+        margin-top: spacing(lg);
+        max-width: calc(100% - 32px); // make space for .close on $vp1 & $vp2
+        &.affix {
+            margin-top: spacing(n);
+            top: spacing(xxs);
+            position: fixed;
+        }
+        &.affix-bottom {
+            position: absolute;
+        }
+        @media (min-width: $screen-md) {
+            display: block;
+            max-width: initial; // then let it be full-width on $vp3 and higher
+        }
+        &.nav {
+            >li a {
+                padding-top: spacing(n);
+                padding-bottom: spacing(n);
+                cursor: pointer;
+            }
+            .side-nav-c2 {
+                position: relative;
+                @include type(t7);
+                a {
+                    padding-left: spacing(n);
+                }
+                &.with-icon {
+                    a {
+                        padding-left: spacing(xxs);
+                    }
+                    &:before {
+                        position: absolute;
+                        top: 7px;
+                        font-size: 10px;
+                        @include glyph(add);
+                    }
+                    &.active {
+                        &.with-icon:before {
+                            content: glyph(remove);
+                        }
+                    }
+                }
+            }
+
+            .side-nav-c2:not(:first-of-type) {
+                margin-top: spacing(xxs);
+            }
+
+            .nav {
+                // display: none;
+                margin: spacing(n);
+                padding-left: spacing(xs);
+                li a {
+                    padding-top: spacing(xxxs)/4;
+                    padding-bottom: spacing(xxxs)/4;
+                    @include type(t8);
+                }
+            }
+
+            // Override Panel settings
+            // Panel is required for Bootstrap's accordion
+            .panel {
+                margin: initial;
+                background: transparent;
+                border: 0;
+                border-color: transparent;
+                box-shadow: none;
+            }
+        }
+        .close {
+            position: absolute;
+            top: -8px;
+            right: 10px;
+            font-size: 15px;
+            padding: spacing(xxxs);
+            @media (min-width: $screen-md) {
+                display: none;
+            }
+        }
+    }
+
+    .navigation-label {
+        // position: relative;
+        margin-top: spacing(xs);
+        @include type(t4);
+        font-weight: 400;
+        @media (min-width: $screen-md) {
+            margin-top: spacing(md);
+            pointer-events: none;
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // Default Theme
+    &,
+    &.theme-default {
+        &.navigation-modal {
+            background-color: $color-vivid-high-alt;
+        }
+        a {
+            color: $color-type-secondary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .active {
+            color: $color-type-primary;
+            font-weight: 400;
+        }
+
+        .side-nav-c2 {
+            a {
+                color: $color-type-secondary;
+                &:hover {
+                    text-decoration: underline;
+                    background-color: transparent;
+                }
+            }
+            &.active > a,
+            .active {
+                color: $color-type-primary;
+                background-color: transparent;
+            }
+        }
+    }
+
+    // Alt Theme
+    &.theme-alt {
+        &.navigation-modal {
+            background-color: $color-bg-dark-vivid-high;
+        }
+        .navigation-label {
+            color: $color-type-primary-alt;
+            &:after {
+                color: $color-vivid-low-alt;
+            }
+        }
+        a {
+            color: $color-type-secondary-alt;
+        }
+        .active {
+            color: $color-type-primary-alt;
+        }
+        .side-nav-c2 {
+            a {
+                color: $color-type-secondary-alt;
+            }
+            &.active > a,
+            .active {
+                color: $color-type-primary-alt;
+            }
+        }
+    }
+}
