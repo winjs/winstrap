@@ -36,9 +36,6 @@
     "grunt-sass": "^1.0.0",
     "jshint-stylish": "^2.0.0"
   },
-  "scripts": {
-    "postinstall": "bower install"
-  },
   "bugs": {
     "url": "https://github.com/winjs/winstrap/issues"
   },

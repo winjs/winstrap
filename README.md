@@ -11,10 +11,11 @@ http://nodejs.org/download/
 
 Make sure Node.js is available in your path.
 
-### Install Grunt
+### Install Grunt and Bower
 
 ```
 npm install -g grunt-cli
+npm install -g bower
 ```
 
 ### Clone the repo
@@ -32,6 +33,7 @@ To install the required `npm` packages:
 ```
 cd winstrap
 npm install
+bower install
 ```
 
 ## Building Winstrap
