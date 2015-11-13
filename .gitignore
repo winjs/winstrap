@@ -6,9 +6,6 @@
 [Bb]ower_components/*
 dist/
 
-# External requirements aren't versioned
-external/
-
 # User-specific files
 *.suo
 *.user
