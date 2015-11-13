@@ -1,0 +1,20 @@
+{
+    "category": "Mountain Ranges",
+    "pages": [{
+        "label": "The Cascades",
+        "href": "cascades"
+    }, {
+        "label": "The Olympic Mountains",
+        "href": "olympic-mountains",
+        "active": true
+    }, {
+        "label": "The Sierra Nevadas",
+        "href": "sierra-nevadas"
+    }, {
+        "label": "The Rocky Mountains",
+        "href": "rocky-mountains"
+    }, {
+        "label": "Appalachian Mountains",
+        "href": "appalachain-mountains"
+    }]
+}

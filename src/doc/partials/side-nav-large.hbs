@@ -1,0 +1,15 @@
+{{#with side-nav-large}}
+<a class="btn btn-lightweight no-outline navigation-btn">{{category}}</a>
+<nav role="navigation" id="sidenav" class="nav side-navigation side-navigation-large theme-default">
+    <div class="navigation-label">{{category}}</div>
+    <button type="button" class="close" data-dismiss="side-navigation" aria-label="close">
+        <i class="glyph glyph-cancel"></i>
+    </button>
+    <ul>
+        {{#each pages}}
+        {{!-- using dumb links, but you can easily pass in data via JSON or some other method --}}
+        <li><a href="#"{{#if active}} class="active"{{/if}}>{{label}}</a></li>
+        {{/each}}
+    </ul>
+</nav>
+{{/with}}

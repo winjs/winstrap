@@ -21,6 +21,15 @@ $pivot-hover-color-alt:                                                         
     }
 }
 
+// Need to get real specific to override Bootstrap here, hence descendant child selectors
+// Without this .side-navigation gets ugly backgrounds on hover & focus
+.nav > li {
+    > a:hover,
+    > a:focus {
+        background-color: transparent;
+    }
+}
+
 //
 // Nav pills
 //

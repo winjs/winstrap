@@ -76,6 +76,7 @@ module.exports = function (grunt) {
       options: {
         partials: ['src/doc/partials/**/*.hbs'],
         layout: ['src/doc/layouts/default.hbs'],
+        helpers: ['handlebars-helpers/*.js'],
         flatten: true,
         data: 'src/doc/data/*.json',
 

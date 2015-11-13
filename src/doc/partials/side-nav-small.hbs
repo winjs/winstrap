@@ -1,0 +1,29 @@
+{{#with side-nav-small}}
+{{#each sections}}
+{{#inArrayJson pages 'active'}}
+<a class="btn btn-lightweight no-outline navigation-btn">{{category}}</a>
+{{/inArrayJson}}
+{{/each}}
+<ul role="navigation" id="sidenav-small" class="nav side-navigation side-navigation-small theme-default">
+    <button type="button" class="close" data-dismiss="side-navigation" aria-label="close">
+        <i class="glyph glyph-cancel"></i>
+    </button>
+
+    {{#each sections}}
+    {{!-- a few notes about how the following lines function:
+    1. inArrayJson checks to see if a string exists in the stringified version of an array of JSON
+    2. pages is the list of c3 pages in the each section, (not the assemble.io build-time variable pages). Checking to see if basename (i.e., current page we're assembling) is in the array of pages under the current c2 section, then we want to draw their side-nav as expanded.
+    3. 'active' is merely a boolean value in the page object in side-nav-small.json
+    --}}
+    <li class="{{#inArrayJson pages 'active'}}active {{/inArrayJson}}side-nav-c2">
+        <a data-toggle="collapse" data-parent="#sidenav-small" href="#{{id}}" aria-expanded="{{#inArrayJson pages 'active'}}true{{else}}false{{/inArrayJson}}" aria-controls="#{{id}}">{{category}}</a>
+        <ul class="nav collapse{{#inArrayJson pages 'active'}} in{{/inArrayJson}}" id="{{id}}">
+            {{#each pages}}
+            {{!-- using dumb links, but you can easily pass in data via JSON or some other method --}}
+            <li><a href="#sidenav-small"{{#if active}} class="active"{{/if}}>{{label}}</a></li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+{{/with}}
