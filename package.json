@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/winjs/winstrap.git"
   },
-  "version": "0.4.14",
+  "version": "0.5.0",
   "author": "Microsoft",
   "contributors": [
     "Frederic Perrin",
