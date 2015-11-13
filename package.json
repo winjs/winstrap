@@ -1,56 +1,52 @@
 {
-    "name": "Winstrap",
-    "description": "Winstrap is the official Bootstrap theme for Microsoft Modern design language.",
-    "repository": "https://github.com/winjs/winstrap.git",
-    "version": "0.4.12",
-    "author": {
-        "name": "Microsoft"
-    },
-    "contributors": [
-        {
-            "name": "Frederic Perrin"
-        },
-        {
-            "name": "Mathias Wendlinger"
-        },
-        {
-            "name": "Romain Hottlet"
-        },
-        {
-            "name": "Andy Seres"
-        },
-        {
-            "name": "Rachel Nizhnikova"
-        },
-        {
-            "name": "Miles Grover"
-        },
-        {
-            "name": "Joe Day"
-        },
-        {
-            "name": "Martin Lijanto"
-        }
-    ],
-    "homepage": "",
-    "dependencies": {
-        "bower": ""
-    },
-    "devDependencies": {
-        "grunt": "^0.4.5",
-        "grunt-assemble": "^0.4.0",
-        "grunt-bump": "^0.3.1",
-        "grunt-contrib-clean": "^0.6.0",
-        "grunt-contrib-connect": "^0.9.0",
-        "grunt-contrib-copy": "^0.7.0",
-        "grunt-contrib-jshint": "^0.11.2",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-file-exists": "^0.1.2",
-        "grunt-notify": "^0.4.1",
-        "grunt-sass": "^1.0.0",
-        "jshint-stylish": "^2.0.0"
-    },
-    "scripts": {
-        "postinstall": "node_modules/.bin/bower install"
-    }
+  "name": "winstrap",
+  "description": "Winstrap is the official Bootstrap theme for Microsoft design language.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winjs/winstrap.git"
+  },
+  "version": "0.4.13",
+  "author": "Microsoft",
+  "contributors": [
+    "Frederic Perrin",
+    "Mathias Wendlinger",
+    "Romain Hottlet",
+    "Andy Seres",
+    "Rachel Nizhnikova",
+    "Miles Grover",
+    "Joe Day",
+    "Martin Lijanto"
+  ],
+  "homepage": "http://winstrap.azurewebsites.net",
+  "dependencies": {
+    "bower": ""
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-assemble": "^0.4.0",
+    "grunt-bump": "^0.3.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-file-exists": "^0.1.2",
+    "grunt-notify": "^0.4.1",
+    "grunt-sass": "^1.0.0",
+    "jshint-stylish": "^2.0.0"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "bugs": {
+    "url": "https://github.com/winjs/winstrap/issues"
+  },
+  "main": "index.js",
+  "keywords": [
+    "microsoft",
+    "windows",
+    "bootstrap",
+    "theme"
+  ],
+  "license": "MIT"
 }

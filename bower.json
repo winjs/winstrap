@@ -1,6 +1,6 @@
 {
     "name": "Winstrap",
-    "version": "0.4.12",
+    "version": "0.4.13",
     "main": [
         "src/scss/winstrap.scss"
     ],
@@ -11,7 +11,7 @@
         "dist"
     ],
     "authors": "",
-    "description": "Bootstrap Theme for Microsoft Modern design language",
+    "description": "Bootstrap Theme for Microsoft design language",
     "license": "MIT",
     "dependencies": {
         "bootstrap-sass": "3.3.4"
