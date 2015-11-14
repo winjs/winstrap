@@ -48,14 +48,9 @@
 
 // Brand/project name
 .navbar-brand {
-    padding: 0 $navbar-padding-horizontal;
-    line-height: $navbar-height;
-    vertical-align: middle;
+    padding: spacing(xxs, .5) spacing(xxs, 3);
     margin-right: spacing(xxs, 3);
-
-    > img {
-        display: inline-block;
-    }
+    height: 48px;
 }
 
 
@@ -84,7 +79,7 @@
         margin: 0;
 
         > li > a {
-            padding: $navbar-padding-vertical spacing(xs);
+            padding: spacing(xxs, .5) spacing(xs);
         }
 
         .open .dropdown-menu {
@@ -131,44 +126,97 @@
     }
 }
 
-
-// Default navbar color
-.navbar-default {
-    border-color: $color-dim-mid;
-
-    .divider {
-        background: $color-dim-mid;
-    }
-
-    .icon-hamburger {
-        color: $color-vivid-low;
-    }
-
-    .navbar-collapse,
-    .navbar-form {
-        border-color: $color-dim-mid;
-    }
-
+.navbar-local {
     .navbar-nav {
         .open .dropdown-menu {
-            background-color: $color-bg-light-vivid-mid;
             > li > a {
-                &:hover,
-                &:focus {
-                    color: $color-type-primary;
-                    background-color: $color-dim-low;
+                padding: spacing(xxxs, 1) spacing(xxxs, 2);
+                height: auto;
+                line-height: 1.5;
+            }
+        }
+
+        // Uncollapse the nav
+        @media (min-width: $grid-float-breakpoint) {
+            margin: 0;
+
+            > li > a {
+                padding: spacing(xs, .5) spacing(xs);
+            }
+        }
+    }
+
+    .navbar-brand {
+        padding: spacing(xs) spacing(xxs, 3);
+        height: 72px;
+    }
+}
+
+//
+// Colors
+//
+
+// A note on colors:
+// Themes will be connected to the .navbar-global & .navbar-local classes since these require operating independently of each other.
+// When using a standard Bootstrap navbar implementation, add .navbar-global between .navbar and .container and then apply
+// whichever theme you intend to use. Themes will work as they do everywhere else, if you do nothing, you'll get the default
+// black text on white bg or you can use the appropriate theme for your situation.
+// In the default global/local implementation, .navbar-global will have .theme-default and .navbar-local will have .theme-dark.
+// It will also have .color-blue to give it the standard blue background
+.navbar-global,
+.navbar-local {
+
+    &,
+    &.theme-default {
+        border-color: $color-dim-mid;
+
+        .divider {
+            background: $color-dim-mid;
+        }
+
+        .icon-hamburger {
+            color: $color-vivid-low;
+        }
+
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid;
+        }
+
+        .navbar-nav {
+            .open .dropdown-menu {
+                background-color: $color-bg-light-vivid-mid;
+                > li > a {
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary;
+                        background-color: $color-dim-low;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $grid-float-breakpoint) {
+            .navbar-nav {
+                > li {
+                    border-top: 1px solid $color-dim-mid;
                 }
             }
         }
     }
 
-    @media (max-width: $grid-float-breakpoint) {
-        .navbar-nav {
-            > li {
-                border-top: 1px solid $color-dim-mid;
-            }
-        }
+    &.theme-light {
+
     }
+
+    &.theme-dark {
+
+    }
+
+    &.theme-alt {
+
+    }
+
 }
 
 
