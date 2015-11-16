@@ -1,7 +1,5 @@
 .navbar, .navbar-form {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
 
     .glyph-chevron-down-2 {
         font-size: 6px;
@@ -59,6 +57,11 @@
 .navbar-nav {
     margin: 0 (-$navbar-padding-horizontal);
 
+    > li {
+        max-width: initial;
+    }
+
+
     .open .dropdown-menu {
         top: 100%;
         padding: 0;
@@ -83,9 +86,7 @@
         }
 
         .open .dropdown-menu {
-            padding: 0 0 spacing(xxxs);
-            border-left: 1px solid $color-dim-low;
-            border-bottom: 1px solid $color-dim-mid;
+            padding: 0;
 
             > li > a {
                 padding: spacing(xxs, 5) spacing(xs);
@@ -130,7 +131,7 @@
     .navbar-nav {
         .open .dropdown-menu {
             > li > a {
-                padding: spacing(xxxs, 1) spacing(xxxs, 2);
+                padding: spacing(xxs, 3) spacing(xs);
                 height: auto;
                 line-height: 1.5;
             }
@@ -150,6 +151,12 @@
         padding: spacing(xs) spacing(xxs, 3);
         height: 72px;
     }
+
+    .navbar-toggle {
+        margin-top: spacing(xs, -4.5);
+        margin-bottom: spacing(xs, -4.5);
+    }
+
 }
 
 //
@@ -167,14 +174,15 @@
 .navbar-local {
 
     &,
-    &.theme-default {
+    &.theme-default,
+    &.theme-light {
         border-color: $color-dim-mid;
 
         .divider {
             background: $color-dim-mid;
         }
 
-        .icon-hamburger {
+        .glyph-hamburger {
             color: $color-vivid-low;
         }
 
@@ -205,53 +213,97 @@
         }
     }
 
-    &.theme-light {
 
-    }
-
+    // This is designed to work with $color-accent. Will work with any color, just override $color-accent
+    // Please note, our default $color-accent is designed to pass contrast ratio rules for accessibility
+    // It is not recommended to use ligher colors for $color-accent as a result
     &.theme-dark {
+        .glyph-hamburger {
+            color: $color-type-primary-alt;
+        }
 
-    }
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid-alt;
+        }
 
-    &.theme-alt {
-
-    }
-
-}
-
-
-.navbar.theme-alt {
-  @extend .navbar-inverse;
-}
-
-.navbar-inverse, .navbar.theme-alt {
-    .icon-flipviewdown, .icon-hamburger {
-        color: $navbar-inverse-color;
-    }
-    .divider {
-        background: $navbar-inverse-bg;
-    }
-    .navbar-collapse,
-    .navbar-form {
-        border-color: $color-bg-dark-neutral-mid;
-    }
-
-    .navbar-nav {
-        .open .dropdown-menu {
-            background-color: $color-bg-dark-neutral-mid;
+        .navbar-nav {
             > li > a {
-                color: $navbar-inverse-color;
+                color: $color-type-primary-alt;
                 &:hover {
-                    background-color: $color-bg-dark-neutral-high;
+                    background-color: $color-dim-mid;
+                }
+            }
+
+            .open > a {
+                &,
+                &:hover,
+                &:active {
+                    background-color: $color-neutral-low;
+                    color: $color-type-primary-alt;
+                }
+            }
+
+            .open .dropdown-menu {
+                background-color: $color-accent;
+                > li {
+                    background-color:  $color-neutral-low;
+                    &.divider {
+                        background: $color-neutral-mid;
+                    }
+                }
+                > li > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary-alt;
+                    }
                 }
             }
         }
     }
 
-    @media (max-width: $grid-float-breakpoint) {
+    &.theme-alt {
+        .glyph-hamburger {
+            color: $color-type-primary-alt;
+        }
+
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid-alt;
+        }
         .navbar-nav {
-            > li {
-                border-top: 1px solid $color-bg-dark-neutral-mid;
+            > li > a {
+                color: $color-type-primary-alt;
+                &:hover {
+                    background-color: $color-bg-dark-neutral-high;
+                }
+            }
+
+            .open > a {
+                &,
+                &:hover,
+                &:active {
+                    background-color: $color-bg-dark-neutral-mid;
+                    color: $color-type-primary-alt;
+                }
+            }
+
+            .open .dropdown-menu {
+                background-color: $color-bg-dark-neutral-mid;
+                > li {
+                    &.divider {
+                        background: $color-neutral-mid-alt;
+                    }
+                }
+                > li > a {
+                    color: $color-type-primary-alt;
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary-alt;
+                        background: transparentize($color-white, .95);
+                    }
+                }
             }
         }
     }
