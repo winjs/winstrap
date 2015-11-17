@@ -70,6 +70,10 @@
             padding: spacing(xxs, 1) spacing(xxxs, 2);
             height: auto;
             line-height: 1.5;
+            @include transition(background-color, ease-out, .5s);
+            &:hover {
+                @include transition(background-color, 0s);
+            }
         }
 
         .divider {
@@ -83,6 +87,10 @@
 
         > li > a {
             padding: spacing(xxs, .5) spacing(xs);
+            @include transition(background-color, ease-out, .5s);
+            &:hover {
+                @include transition(background-color, 0s);
+            }
         }
 
         .open .dropdown-menu {
@@ -257,6 +265,9 @@
                     &:hover,
                     &:focus {
                         color: $color-type-primary-alt;
+                    }
+                    &:hover {
+                        background-color: $color-dim-mid;
                     }
                 }
             }
