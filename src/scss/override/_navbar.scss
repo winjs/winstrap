@@ -122,10 +122,25 @@
     input.form-control {
         margin-bottom: 0;
         margin-top: 0;
+        border-right: none;
     }
 
-    .btn {
-        margin: 0 0;
+    .btn.btn-default {
+        margin: 0;
+        border: 1px solid;
+        border-left: none;
+        margin-left: -4px;
+        min-width: initial;
+        padding: spacing(n);
+
+        &::before {
+            @include glyph(magnifier);
+            padding: spacing(xxxs, 1) spacing(xxxs, 1) spacing(xxxs, 2);
+            font-size: 15px;
+            line-height: 1;
+            display: block;
+        }
+
     }
 
     @media (min-width: $grid-float-breakpoint) {
@@ -197,9 +212,22 @@
         .navbar-collapse,
         .navbar-form {
             border-color: $color-dim-mid;
+
+            .btn.btn-default {
+                background: $color-vivid-mid-alt;
+                border-color: $color-vivid-low;
+                &:hover {
+                    background: $color-vivid-mid-alt;
+                }
+            }
+
+
         }
 
         .navbar-nav {
+            .active > a {
+                background-color: $color-bg-light-vivid-mid;
+            }
             .open .dropdown-menu {
                 background-color: $color-bg-light-vivid-mid;
                 > li > a {
@@ -236,6 +264,13 @@
         }
 
         .navbar-nav {
+            .active > a {
+                background-color: $color-neutral-low;
+                &:hover {
+                    color: $color-type-primary-alt;
+                }
+            }
+
             > li > a {
                 color: $color-type-primary-alt;
                 &:hover {
