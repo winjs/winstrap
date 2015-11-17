@@ -220,8 +220,10 @@
                     background: $color-vivid-mid-alt;
                 }
             }
+        }
 
-
+        .navbar-brand {
+            color: $color-type-primary;
         }
 
         .navbar-nav {
@@ -261,6 +263,10 @@
         .navbar-collapse,
         .navbar-form {
             border-color: $color-dim-mid-alt;
+        }
+
+        .navbar-brand {
+            color: $color-type-primary-alt;
         }
 
         .navbar-nav {
@@ -318,6 +324,11 @@
         .navbar-form {
             border-color: $color-dim-mid-alt;
         }
+
+        .navbar-brand {
+            color: $color-type-primary-alt;
+        }
+
         .navbar-nav {
             > li > a {
                 color: $color-type-primary-alt;
