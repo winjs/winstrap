@@ -1,7 +1,14 @@
+//
+// Static resources
+//
+$navbar-transition-in: 0s;
+$navbar-transition-out: .5s;
+
+//
+// Navbar styles
+//
 .navbar, .navbar-form {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
 
     .glyph-chevron-down-2 {
         font-size: 6px;
@@ -48,14 +55,9 @@
 
 // Brand/project name
 .navbar-brand {
-    padding: 0 $navbar-padding-horizontal;
-    line-height: $navbar-height;
-    vertical-align: middle;
+    padding: spacing(xxs, .5) spacing(xxs, 3);
     margin-right: spacing(xxs, 3);
-
-    > img {
-        display: inline-block;
-    }
+    height: $navbar-height;
 }
 
 
@@ -63,6 +65,11 @@
 // Navbar nav links
 .navbar-nav {
     margin: 0 (-$navbar-padding-horizontal);
+
+    > li {
+        max-width: initial;
+    }
+
 
     .open .dropdown-menu {
         top: 100%;
@@ -72,6 +79,10 @@
             padding: spacing(xxs, 1) spacing(xxxs, 2);
             height: auto;
             line-height: 1.5;
+            @include transition(background-color, ease-out, $navbar-transition-out);
+            &:hover {
+                @include transition(background-color, $navbar-transition-in);
+            }
         }
 
         .divider {
@@ -84,13 +95,15 @@
         margin: 0;
 
         > li > a {
-            padding: $navbar-padding-vertical spacing(xs);
+            padding: spacing(xxs, .5) spacing(xs);
+            @include transition(background-color, ease-out, $navbar-transition-out);
+            &:hover {
+                @include transition(background-color, $navbar-transition-in);
+            }
         }
 
         .open .dropdown-menu {
-            padding: 0 0 spacing(xxxs);
-            border-left: 1px solid $color-dim-low;
-            border-bottom: 1px solid $color-dim-mid;
+            padding: 0;
 
             > li > a {
                 padding: spacing(xxs, 5) spacing(xs);
@@ -118,10 +131,25 @@
     input.form-control {
         margin-bottom: 0;
         margin-top: 0;
+        border-right: none;
     }
 
-    .btn {
-        margin: 0 0;
+    .btn.btn-default {
+        margin: 0;
+        border: 1px solid;
+        border-left: none;
+        margin-left: -4px;
+        min-width: initial;
+        padding: spacing(n);
+
+        &::before {
+            @include glyph(magnifier);
+            padding: spacing(xxxs, 1) spacing(xxxs, 1) spacing(xxxs, 2);
+            font-size: 15px;
+            line-height: 1;
+            display: block;
+        }
+
     }
 
     @media (min-width: $grid-float-breakpoint) {
@@ -131,79 +159,217 @@
     }
 }
 
-
-// Default navbar color
-.navbar-default {
-    border-color: $color-dim-mid;
-
-    .divider {
-        background: $color-dim-mid;
-    }
-
-    .icon-hamburger {
-        color: $color-vivid-low;
-    }
-
-    .navbar-collapse,
-    .navbar-form {
-        border-color: $color-dim-mid;
-    }
-
+.navbar-local {
     .navbar-nav {
         .open .dropdown-menu {
-            background-color: $color-bg-light-vivid-mid;
             > li > a {
-                &:hover,
-                &:focus {
-                    color: $color-type-primary;
-                    background-color: $color-dim-low;
+                padding: spacing(xxs, 3) spacing(xs);
+                height: auto;
+                line-height: 1.5;
+            }
+        }
+
+        // Uncollapse the nav
+        @media (min-width: $grid-float-breakpoint) {
+            margin: 0;
+
+            > li > a {
+                padding: spacing(xs, .5) spacing(xs);
+            }
+        }
+    }
+
+    .navbar-brand {
+        padding: spacing(xs) spacing(xxs, 3);
+        height: 72px;
+    }
+
+    .navbar-toggle {
+        margin-top: spacing(xs, -4.5);
+        margin-bottom: spacing(xs, -4.5);
+    }
+
+}
+
+//
+// Colors
+//
+
+// A note on colors:
+// Themes will be connected to the .navbar-global & .navbar-local classes since these require operating independently of each other.
+// When using a standard Bootstrap navbar implementation, add .navbar-global between .navbar and .container and then apply
+// whichever theme you intend to use. Themes will work as they do everywhere else, if you do nothing, you'll get the default
+// black text on white bg or you can use the appropriate theme for your situation.
+// In the default global/local implementation, .navbar-global will have .theme-default and .navbar-local will have .theme-dark.
+// It will also have .color-blue to give it the standard blue background
+.navbar-global,
+.navbar-local {
+
+    &,
+    &.theme-default,
+    &.theme-light {
+        border-color: $color-dim-mid;
+
+        .divider {
+            background: $color-dim-mid;
+        }
+
+        .glyph-hamburger {
+            color: $color-vivid-low;
+        }
+
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid;
+
+            .btn.btn-default {
+                background: $color-vivid-mid-alt;
+                border-color: $color-vivid-low;
+                &:hover {
+                    background: $color-vivid-mid-alt;
+                }
+            }
+        }
+
+        .navbar-brand {
+            color: $color-type-primary;
+        }
+
+        .navbar-nav {
+            .active > a {
+                background-color: $color-bg-light-vivid-mid;
+            }
+            .open .dropdown-menu {
+                background-color: $color-bg-light-vivid-mid;
+                > li > a {
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary;
+                        background-color: $color-dim-low;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $grid-float-breakpoint) {
+            .navbar-nav {
+                > li {
+                    border-top: 1px solid $color-dim-mid;
                 }
             }
         }
     }
 
-    @media (max-width: $grid-float-breakpoint) {
+
+    // This is designed to work with $color-accent. Will work with any color, just override $color-accent
+    // Please note, our default $color-accent is designed to pass contrast ratio rules for accessibility
+    // It is not recommended to use ligher colors for $color-accent as a result
+    &.theme-dark {
+        .glyph-hamburger {
+            color: $color-type-primary-alt;
+        }
+
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid-alt;
+        }
+
+        .navbar-brand {
+            color: $color-type-primary-alt;
+        }
+
         .navbar-nav {
-            > li {
-                border-top: 1px solid $color-dim-mid;
+            .active > a {
+                background-color: $color-neutral-low;
+                &:hover {
+                    color: $color-type-primary-alt;
+                }
+            }
+
+            > li > a {
+                color: $color-type-primary-alt;
+                &:hover {
+                    background-color: $color-dim-mid;
+                }
+            }
+
+            .open > a {
+                &,
+                &:hover,
+                &:active {
+                    background-color: $color-neutral-low;
+                    color: $color-type-primary-alt;
+                }
+            }
+
+            .open .dropdown-menu {
+                background-color: $color-accent;
+                > li {
+                    background-color:  $color-neutral-low;
+                    &.divider {
+                        background: $color-neutral-mid;
+                    }
+                }
+                > li > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary-alt;
+                    }
+                    &:hover {
+                        background-color: $color-dim-mid;
+                    }
+                }
             }
         }
     }
-}
 
+    &.theme-alt {
+        .glyph-hamburger {
+            color: $color-type-primary-alt;
+        }
 
-.navbar.theme-alt {
-  @extend .navbar-inverse;
-}
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $color-dim-mid-alt;
+        }
 
-.navbar-inverse, .navbar.theme-alt {
-    .icon-flipviewdown, .icon-hamburger {
-        color: $navbar-inverse-color;
-    }
-    .divider {
-        background: $navbar-inverse-bg;
-    }
-    .navbar-collapse,
-    .navbar-form {
-        border-color: $color-bg-dark-neutral-mid;
-    }
+        .navbar-brand {
+            color: $color-type-primary-alt;
+        }
 
-    .navbar-nav {
-        .open .dropdown-menu {
-            background-color: $color-bg-dark-neutral-mid;
+        .navbar-nav {
             > li > a {
-                color: $navbar-inverse-color;
+                color: $color-type-primary-alt;
                 &:hover {
                     background-color: $color-bg-dark-neutral-high;
                 }
             }
-        }
-    }
 
-    @media (max-width: $grid-float-breakpoint) {
-        .navbar-nav {
-            > li {
-                border-top: 1px solid $color-bg-dark-neutral-mid;
+            .open > a {
+                &,
+                &:hover,
+                &:active {
+                    background-color: $color-bg-dark-neutral-mid;
+                    color: $color-type-primary-alt;
+                }
+            }
+
+            .open .dropdown-menu {
+                background-color: $color-bg-dark-neutral-mid;
+                > li {
+                    &.divider {
+                        background: $color-neutral-mid-alt;
+                    }
+                }
+                > li > a {
+                    color: $color-type-primary-alt;
+                    &:hover,
+                    &:focus {
+                        color: $color-type-primary-alt;
+                        background: transparentize($color-white, .95);
+                    }
+                }
             }
         }
     }

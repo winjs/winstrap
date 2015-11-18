@@ -1,2 +1,6 @@
 * The Winstrap navbar supports all of the options from the Bootstrap navbar.
 * Align nav links, forms, buttons, or text, using the `.navbar-left` or `.navbar-right` utility classes.
+* To use global and local navigation bars together (as seen above and on Microsoft web sites) use the standard bootstrap markup, wrapping `.container` or `.container-fluid` in `.navbar-global` or `.navbar-local`.
+* When using a single navigation bar, `.navigation-global` will give you a 48px navbar and `.navigation-local` will give you a 72px navbar.
+* Themes require `.navbar-global` and `.navbar-local` and are applied as siblings (ex: `.navbar-global.theme-default`)
+* `.theme-dark` works with `$color-accent` and applies all the right interactive states accordingly.
