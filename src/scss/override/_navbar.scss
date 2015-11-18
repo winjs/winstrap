@@ -1,3 +1,12 @@
+//
+// Static resources
+//
+$navbar-transition-in: 0s;
+$navbar-transition-out: .5s;
+
+//
+// Navbar styles
+//
 .navbar, .navbar-form {
     border: none;
 
@@ -48,7 +57,7 @@
 .navbar-brand {
     padding: spacing(xxs, .5) spacing(xxs, 3);
     margin-right: spacing(xxs, 3);
-    height: 48px;
+    height: $navbar-height;
 }
 
 
@@ -70,9 +79,9 @@
             padding: spacing(xxs, 1) spacing(xxxs, 2);
             height: auto;
             line-height: 1.5;
-            @include transition(background-color, ease-out, .5s);
+            @include transition(background-color, ease-out, $navbar-transition-out);
             &:hover {
-                @include transition(background-color, 0s);
+                @include transition(background-color, $navbar-transition-in);
             }
         }
 
@@ -87,9 +96,9 @@
 
         > li > a {
             padding: spacing(xxs, .5) spacing(xs);
-            @include transition(background-color, ease-out, .5s);
+            @include transition(background-color, ease-out, $navbar-transition-out);
             &:hover {
-                @include transition(background-color, 0s);
+                @include transition(background-color, $navbar-transition-in);
             }
         }
 
