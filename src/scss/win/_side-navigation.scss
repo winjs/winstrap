@@ -1,9 +1,11 @@
 // This is for viewports 1 & 2 and lives outside the .side-navigation structure to be visible when .side-navigation is not
 a.navigation-btn {
     position: relative;
+    text-align: left;
     margin-top: spacing(xs);
     padding-left: spacing(sm);
     [dir="rtl"] & {
+        text-align: right;
         padding-right: spacing(sm);
     }
     &:hover {

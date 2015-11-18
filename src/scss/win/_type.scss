@@ -8,37 +8,37 @@
 
 @font-face {
     font-family: "Selawik";
-    src: url("../fonts/selawk.eot");
-    src: url("../fonts/selawk.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawk.ttf") format("truetype");
+    src: url("#{$font-path}/selawk.eot");
+    src: url("#{$font-path}/selawk.eot#iefix") format("embedded-opentype"),
+         url("#{$font-path}/selawk.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Selawik Bold";
-    src: url("../fonts/selawkb.eot");
-    src: url("../fonts/selawkb.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawkb.ttf") format("truetype");
+    src: url("#{$font-path}/selawkb.eot");
+    src: url("#{$font-path}/selawkb.eot#iefix") format("embedded-opentype"),
+         url("#{$font-path}/selawkb.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Selawik Light";
-    src: url("../fonts/selawkl.eot");
-    src: url("../fonts/selawkl.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawkl.ttf") format("truetype");
+    src: url("#{$font-path}/selawkl.eot");
+    src: url("#{$font-path}/selawkl.eot#iefix") format("embedded-opentype"),
+         url("#{$font-path}/selawkl.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Selawik Semibold";
-    src: url("../fonts/selawksb.eot");
-    src: url("../fonts/selawksb.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawksb.ttf") format("truetype");
+    src: url("#{$font-path}/selawksb.eot");
+    src: url("#{$font-path}/selawksb.eot#iefix") format("embedded-opentype"),
+         url("#{$font-path}/selawksb.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Selawik Semilight";
-    src: url("../fonts/selawksl.eot");
-    src: url("../fonts/selawksl.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawksl.ttf") format("truetype");
+    src: url("#{$font-path}/selawksl.eot");
+    src: url("#{$font-path}/selawksl.eot#iefix") format("embedded-opentype"),
+         url("#{$font-path}/selawksl.ttf") format("truetype");
 }
 
 // Responsive Typography mixin
@@ -203,3 +203,5 @@ h5 { @extend .type-h5; }
 h6 { @extend .type-h6; }
 
 p { @extend .type-p3; }
+
+figcaption { @extend .type-c1 }

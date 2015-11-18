@@ -1,1 +1,2 @@
-﻿$icon-font-path: "../fonts/glyphs";
+$font-path:         "../fonts" !default;
+$icon-font-path:    "#{$font-path}/glyphs" !default;
