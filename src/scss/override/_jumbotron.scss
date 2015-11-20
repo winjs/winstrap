@@ -1,290 +1,51 @@
-/*--------------------------- MIXINS ----------------------------------------
----------------------------------------------------------------------------*/
-
-// avoid repeating nesting for each breakpoint
-@mixin set-bottom-jumbotron-content($bottom) {
-    // heavy nesting for isolation to full-width image component
-    > .container-wrap {
-        > .container {
-            > .row {
-                > .jumbotron-content-wrap {
-                    > .jumbotron-content {
-                        bottom: $bottom;
-                    }
-                }
-            }
-        }
-    }
-}
-// gradient for background image overlay
-@mixin jumbotron-gradient-overlay($color-overlay) {
-    .jumbotron-background {
-        &:before {
-            // colors for the image gradient overlay
-            background: -webkit-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(rgba($color-overlay, 0), rgba($color-overlay, 0.5) ); /* Standard syntax */
-        }
-    }
-}
-// set background colors for jumbotron text on smallest size
-@mixin jumbotron-background-color($bg-color) {
-    > .container-wrap {
-        > .container {
-            > .row {
-                > .jumbotron-content-wrap {
-                    background-color: $bg-color;
-                }
-            }
-        }
-    }
+.hero {
+    @extend .jumbotron;
 }
 
-/*--------------------------- Start Component Layout ------------------------
----------------------------------------------------------------------------*/
 .jumbotron {
-    position: relative;
-
-    .jumbotron-background {
-        position: relative;
-
-        img {
-            vertical-align: bottom;
-        }
-
-        // set positioning of jumbotron image gradient overlay
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-    }
-    > .container-wrap {
-        position: relative;
-        width: 100%;
-        height: 100%;
-
-        > .container {
-            height: 100%;
-
-            > .row {
-                height: 100%;
-
-                > .jumbotron-content-wrap {
-                    @extend .col-xs-24;
-                    height: 100%;
-                    position: relative;
-
-                    > .jumbotron-content {
-                        position: relative;
-
-                        p,
-                        .jumbotron-subheader {
-                            bottom: auto;
-                            //match responsive top margin from h1
-                            margin-bottom: spacing(xs, -1px);
-                        }
-
-                        &.centered {
-                            text-align: center;
-                            left: 0;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .jumbotron-header,
-    h1 {
-        margin-bottom: spacing(xxs, -6px);
-        @include type(t4);
-    }
-    .jumbotron-subheader,
+    padding: spacing(xxs);
+    margin-bottom: initial;
+    
     p {
-        margin-top: spacing(n);
-        @include type(t7);
+        margin-bottom: initial;
+        @include type-control(p3);
     }
-    .jumbotron-background,
-    .container-wrap {
-        top: 0;
-        position: relative;
+    
+    .container &,
+    .container-fluid & {
+        border-radius: 0; // no rounded corners
     }
-    .jumbotron-background {
-        position: relative;
-        left: 0;
-
-        img {
-            max-width: 100%;
-        }
-    }
-
-    &.highlight-bar {
-
-        .jumbotron-content {
-            padding: spacing(xs, 4px) spacing(n);
-        }
-        .img-container {
-            padding: spacing(xs, 4px) spacing(n) spacing(n) spacing(n);
-        }
-        h1 {
-            margin-top: spacing(n);
-            margin-bottom: spacing(xs);
-        }
-        p {
-            margin-top: 0;
-            margin-bottom: spacing(xs, 4px);
-        }
-        img,
-        video {
-            max-width: 100%;
-        }
-        a {
-            display: block;
-            margin-bottom: spacing(xxs, 2px);
-        }
-
-        // vertical alignment for highlight bands
-        > .container {
-            height: 100%;
-
-            > .row {
-                height: 100%;
-            }
-        }
-    }
-
-    // set global break point styles
-    @media (min-width: $screen-sm) {
-        .jumbotron-header,
-        h1 {
-            margin-bottom: spacing(xxs, -6px);
-            @include type(t4);
-        }
-        .jumbotron-subheader,
-        p {
-            margin-top: spacing(n);
-            @include type(t7);
-        }
-        > .container-wrap {
-            position: absolute;
-
-            > .container {
-
-                > .row {
-
-                    > .jumbotron-content-wrap {
-
-                        > .jumbotron-content {
-                            position: absolute;
-                            bottom: spacing(n, 5px);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    @media (min-width: $screen-md) {
-        .jumbotron-header,
-        h1 {
-            @include type(t3);
-        }
-        .jumbotron-subheader,
-        p {
-            @include type(t5);
-        }
-        &.highlight-bar {
-            .img-container {
-                padding: spacing(xs, 4px) spacing(n) spacing(xs, 4px) spacing(n);
-            }
-        }
-        @include set-bottom-jumbotron-content(15px);
-    }
-    @media (min-width: $screen-lg) {
-        .jumbotron-header,
-        h1 {
-            @include type(t2);
-        }
-        .jumbotron-subheader,
-        p {
-            @include type(t4);
-        }
-        @include set-bottom-jumbotron-content(30px);
-    }
-    @media (min-width: $screen-xl) {
-        .jumbotron-header,
-        h1 {
+    
+    @media screen and (min-width: $screen-sm-min) {
+        padding: spacing(md);
+        h1,
+        .h1 {
             @include type(t1);
         }
-        .jumbotron-subheader,
-        p {
-            @include type(t4);
-        }
-        @include set-bottom-jumbotron-content(60px);
     }
-
-
-    /*--------------------------- Start Colors ----------------------------------
-    ---------------------------------------------------------------------------*/
-
+    
     //
-    // Jumbotron - highlight bar
+    // Colors
     //
-    &.highlight-bar {
-        background-color: $color-bg-light-vivid-low;
-
-        &.theme-on-img-dark,
-        &.theme-dark {
-            color: $color-vivid-high-alt;
-            background-color: inherit;
-            button,
-            .btn {
-                @extend .btn-secondary.theme-dark;
-
-                &.btn-primary {
-                    @extend .btn-primary.theme-dark;
-                }
-            }
-        }
-        &.theme-on-img-light,
-        &.theme-light {
-            button,
-            .btn {
-                @extend .btn-secondary.theme-light;
-
-                &.btn-primary {
-                    @extend .btn-primary.theme-light;
-                }
-            }
-        }
-    }
-
-    /*--------------------------- Jumbotron Primary Colors ----------------------
-    ---------------------------------------------------------------------------*/
-    &.theme-on-img-dark,
-    &.theme-dark {
-        color: $color-vivid-high-alt;
-        @include jumbotron-gradient-overlay($color-vivid-high);
-        @include jumbotron-background-color($color-bg-dark-vivid-low);
-    }
-    &.theme-on-img-light,
+    
+    // Ordinarily, we do not add background color to color themes, but because Bootstrap applies a background color to .jumbotron, we have do here as well.
+    &,
+    &.theme-default,
     &.theme-light {
-        color: $color-vivid-high;
-        @include jumbotron-gradient-overlay($color-vivid-high-alt);
-        @include jumbotron-background-color($color-bg-light-vivid-low);
-    }
-    // different colors for all but the smallest viewport
-    @media (min-width: $screen-sm) {
-        &.theme-on-img-dark,
-        &.theme-dark,
-        &.theme-on-img-light,
-        &.theme-light {
-            @include jumbotron-background-color(transparent);
+        color: $color-type-primary;
+        background-color: $color-dim-mid;
+        > hr {
+            border-top-color: darken($jumbotron-bg, 10%);
         }
+    }
+    
+    &.theme-dark {
+        color: $color-type-primary-alt;
+        background-color: $color-accent;
+    }
+    
+    &.theme-alt {
+        color: $color-type-primary-alt;
+        background-color: $color-vivid-high;
     }
 }
