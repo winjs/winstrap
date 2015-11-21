@@ -30,8 +30,7 @@
     
     // Ordinarily, we do not add background color to color themes, but because Bootstrap applies a background color to .jumbotron, we have do here as well.
     &,
-    &.theme-default,
-    &.theme-light {
+    &.theme-default {
         color: $color-type-primary;
         background-color: $color-dim-mid;
         > hr {
@@ -39,13 +38,59 @@
         }
     }
     
+    &.theme-light {
+        color: $color-type-primary;
+        background-color: $color-dim-mid;
+        
+        .btn.btn-primary {
+            @extend .btn.btn-primary.theme-light;
+        }
+        
+        .btn.btn-secondary {
+            @extend .btn.btn-secondary.theme-light;
+        }
+        
+        .btn.btn-lightweight,
+        .btn.btn-link {
+            @extend .btn-lightweight.theme-light;
+        }
+        
+    }
+    
     &.theme-dark {
         color: $color-type-primary-alt;
         background-color: $color-accent;
+        
+        .btn.btn-primary {
+            @extend .btn.btn-primary.theme-dark;
+        }
+        
+        .btn.btn-secondary {
+            @extend .btn.btn-secondary.theme-dark;
+        }
+        
+        .btn.btn-lightweight,
+        .btn.btn-link {
+            @extend .btn-lightweight.theme-dark;
+        }
+        
     }
     
     &.theme-alt {
         color: $color-type-primary-alt;
         background-color: $color-vivid-high;
+        
+        .btn.btn-primary {
+            @extend .btn.btn-primary.theme-alt;
+        }
+        
+        .btn.btn-secondary {
+            @extend .btn.btn-secondary.theme-alt;
+        }
+        
+        .btn.btn-lightweight,
+        .btn.btn-link {
+            @extend .btn-lightweight.theme-alt;
+        }
     }
 }
