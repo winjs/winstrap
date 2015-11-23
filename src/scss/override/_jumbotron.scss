@@ -6,6 +6,11 @@
     padding: spacing(xxs);
     margin-bottom: initial;
     
+    h1,
+    .h1 {
+        @include type(t1);
+    }
+    
     p {
         margin-bottom: initial;
         @include type-control(p3);
@@ -17,11 +22,13 @@
     }
     
     @media screen and (min-width: $screen-sm-min) {
+        padding: spacing(xs);
+    }
+    @media screen and (min-width: $screen-md-min) {
         padding: spacing(md);
-        h1,
-        .h1 {
-            @include type(t1);
-        }
+    }
+    @media screen and (min-width: $screen-lg-min) {
+        padding: spacing(lg, -4);
     }
     
     //
