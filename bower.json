@@ -2,7 +2,7 @@
     "name": "Winstrap",
     "version": "0.5.5",
     "main": [
-        "src/scss/winstrap.scss"
+        "dist/*"
     ],
     "homepage": "https://github.com/winjs/winstrap",
     "ignore": [
@@ -10,7 +10,16 @@
         "node_modules",
         "dist"
     ],
-    "authors": "",
+    "authors": [
+        "Frederic Perrin",
+        "Mathias Wendlinger",
+        "Romain Hottlet",
+        "Andy Seres",
+        "Rachel Nizhnikova",
+        "Miles Grover",
+        "Joe Day",
+        "Martin Lijanto"
+    ],
     "description": "Bootstrap Theme for Microsoft design language",
     "license": "MIT",
     "dependencies": {

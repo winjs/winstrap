@@ -10,12 +10,12 @@ module.exports = function (grunt) {
     },
 
     fileExists: {
-      css: ['dist/css/winstrap.css']
+      css: ['dist/css/winstrap.min.css']
     },
 
     sass: {
       options: {
-        outputStyle: 'nested',
+        outputStyle: 'compressed',
         sourceMap: true,
         precision: 5,
         includePaths: [
@@ -24,10 +24,18 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/css/winstrap.css': 'src/scss/winstrap.scss'
+          'dist/css/winstrap.min.css': 'src/scss/winstrap.scss'
         }
       }
     },
+    
+    //  Uglify winstrap.js
+    uglify: {
+      winstrapjs:{
+      files: {
+        'dist/js/winstrap.min.js':'src/js/winstrap.js'
+      }
+    }},
 
     // Copy doc files
     copy: {
@@ -49,12 +57,12 @@ module.exports = function (grunt) {
       },
       doc: {
         files: [
-        {
-          expand: true,
-          cwd: 'src/js/',
-          src: '*.js',
-          dest: 'dist/js/'
-        },
+        // {
+        //   expand: true,
+        //   cwd: 'src/js/',
+        //   src: '*.js',
+        //   dest: 'dist/js/'
+        // },
         {
           expand: true,
           cwd: 'bower_components/jquery/dist/',
@@ -172,12 +180,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-file-exists');
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass', 'assemble', 'copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass', 'assemble','uglify', 'copy', 'fileExists', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 
 };
