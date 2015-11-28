@@ -6,11 +6,11 @@ module.exports = function (grunt) {
       options: {
         force: true
       },
-      all: ['dist/']
+      all: ['dist/', 'www/']
     },
 
     fileExists: {
-      css: ['dist/css/winstrap.min.css']
+      css: ['www/css/winstrap.min.css']
     },
 
     sass: {
@@ -24,7 +24,8 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'dist/css/winstrap.min.css': 'src/scss/winstrap.scss'
+          'dist/css/winstrap.min.css': 'src/scss/winstrap.scss',
+          'dist/css/winstrap.css': 'src/scss/winstrap.scss'
         }
       }
     },
@@ -37,46 +38,82 @@ module.exports = function (grunt) {
       }
     }},
 
-    // Copy doc files
+    // Copy deployment files
     copy: {
+      //  Copy distribution files from src folder
+      dist:{
+        files:[
+          {
+            expand: true,
+            cwd: 'src/fonts/',
+            src: '**',
+            dest: './dist/fonts/'
+          },
+          {
+            expand: true,
+            cwd: 'src/images/',
+            src: '*',
+            dest: './dist/images/'
+          },
+          {
+            expand: true,
+            cwd:'src/css',
+            src: '*.css',
+            dest: './dist/css/'
+          },
+          {
+            expand: true,
+            cwd: 'src/js/',
+            src: '*.js',
+            dest: './dist/js/'
+          }
+        ]
+      },
+      //  Copy deployment files from dist folder
       assets: {
         files: [
         {
           expand: true,
-          cwd: 'src/fonts/',
+          cwd: 'dist/fonts/',
           src: '**',
-          dest: 'dist/fonts/'
+          dest: './www/fonts/'
         },
         {
           expand: true,
-          cwd: 'src/images/',
+          cwd: 'dist/images/',
           src: '*',
-          dest: 'dist/images/'
+          dest: './www/images/'
         }
         ]
       },
       doc: {
         files: [
-        // {
-        //   expand: true,
-        //   cwd: 'src/js/',
-        //   src: '*.js',
-        //   dest: 'dist/js/'
-        // },
+        {
+          expand: true,
+          cwd:'dist/css',
+          src: '*',
+          dest: './www/css/'
+        },
+        {
+          expand: true,
+          cwd: 'dist/js/',
+          src: '*.js',
+          dest: './www/js/'
+        },
         {
           expand: true,
           cwd: 'bower_components/jquery/dist/',
           src: ['jquery.min.js', 'jquery.min.map'],
-          dest: 'dist/js/vendor/'
+          dest: './www/js/vendor/'
         },
         {
           expand: true,
           cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
           src: 'bootstrap.min.js',
-          dest: 'dist/js/vendor/'
+          dest: './www/js/vendor/'
         }
         ]
-      }
+      }      
     },
 
     // Build the main HTML file of the style guide
@@ -96,16 +133,15 @@ module.exports = function (grunt) {
       },
       pages: {
         src: ['src/doc/*.hbs'],
-        dest: './dist/'
+        dest: './www/'
       }
     },
-
+    // Watch the javascript and css of the style guide
     watch: {
       sass: {
         files: 'src/scss/**/*.scss',
         tasks: ['sass']
       },
-
       doc: {
         files: ['src/doc/**/*', 'src/js/*.js'],
         tasks: ['jshint', 'assemble', 'copy:doc']
@@ -126,7 +162,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: ['./', './dist/'],
+          base: ['./', './www/'],
           hostname: 'localhost',
           livereload: true,
           open: true
@@ -186,7 +222,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass', 'assemble','uglify', 'copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass', 'assemble','uglify','copy', 'fileExists', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
-
 };

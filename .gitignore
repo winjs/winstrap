@@ -3,7 +3,7 @@
 
 ## Added for OneUI project
 
-/dist/js/vendor/
+/www/
 
 [Nn]ode_modules/*
 [Bb]ower_components/*
