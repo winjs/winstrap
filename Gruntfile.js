@@ -1,16 +1,16 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('./package.json'),
 
     clean: {
       options: {
         force: true
       },
-      all: ['dist/', 'www/']
+      all: ['./dist/', './www/']
     },
 
     fileExists: {
-      css: ['www/css/winstrap.min.css']
+      css: ['./www/css/winstrap.min.css']
     },
 
     sass: {
@@ -19,13 +19,13 @@ module.exports = function (grunt) {
         sourceMap: true,
         precision: 5,
         includePaths: [
-            "bower_components"
+            "node_modules"
         ]
       },
       dist: {
         files: {
-          'dist/css/winstrap.min.css': 'src/scss/winstrap.scss',
-          'dist/css/winstrap.css': 'src/scss/winstrap.scss'
+          './dist/css/winstrap.min.css': './src/scss/winstrap.scss',
+          './dist/css/winstrap.css': './src/scss/winstrap.scss'
         }
       }
     },
@@ -37,19 +37,19 @@ module.exports = function (grunt) {
           beautify: true
         },
         files:{
-          'dist/js/winstrap.js': [
-            'bower_components/jquery/dist/jquery.js',
-            'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-            'src/js/winstrap.js'
+          './dist/js/winstrap.js': [
+            './node_modules/jquery/dist/jquery.js',
+            './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            './src/js/winstrap.js'
           ]
         }
       },
       winstrapjs_min:{
         files: {
-          'dist/js/winstrap.min.js': [
-            'bower_components/jquery/dist/jquery.js',
-            'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-            'src/js/winstrap.js'
+          './dist/js/winstrap.min.js': [
+            './node_modules/jquery/dist/jquery.js',
+            './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            './src/js/winstrap.js'
           ]
         }
       }
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
         files:[
           {
             expand: true,
-            cwd: 'src/fonts/',
+            cwd: './src/fonts/',
             src: '**',
             dest: './dist/fonts/'
           }
@@ -73,13 +73,13 @@ module.exports = function (grunt) {
         files: [
         {
           expand: true,
-          cwd: 'src/fonts/',
+          cwd: './src/fonts/',
           src: '**',
           dest: './www/fonts/'
         },
         {
           expand: true,
-          cwd: 'src/images/',
+          cwd: './src/images/',
           src: '*',
           dest: './www/images/'
         }
@@ -90,13 +90,13 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd:'dist/css',
+            cwd:'./dist/css',
             src: ['*.min.css', '*.min.css.map'],
             dest: './www/css/'
           },
           {
             expand: true,
-            cwd: 'dist/js/',
+            cwd: './dist/js/',
             src: '*.min.js',
             dest: './www/js/'
           }
@@ -107,11 +107,11 @@ module.exports = function (grunt) {
     // Build the main HTML files of the style guide
     assemble: {
       options: {
-        partials: ['src/doc/partials/**/*.hbs'],
-        layout: ['src/doc/layouts/default.hbs'],
-        helpers: ['handlebars-helpers/*.js'],
+        partials: ['./src/doc/partials/**/*.hbs'],
+        layout: ['./src/doc/layouts/default.hbs'],
+        helpers: ['./handlebars-helpers/*.js'],
         flatten: true,
-        data: 'src/doc/data/*.json',
+        data: './src/doc/data/*.json',
 
         // Set the version number
         version: '<%= pkg.version %>',
@@ -120,18 +120,18 @@ module.exports = function (grunt) {
         name: '<%= pkg.name %>',
       },
       pages: {
-        src: ['src/doc/*.hbs'],
+        src: ['./src/doc/*.hbs'],
         dest: './www/'
       }
     },
     // Watch javascript and css files of the style guide
     watch: {
       sass: {
-        files: 'src/scss/**/*.scss',
+        files: './src/scss/**/*.scss',
         tasks: ['sass']
       },
       doc: {
-        files: ['src/doc/**/*', 'src/js/*.js'],
+        files: ['./src/doc/**/*', './src/js/*.js'],
         tasks: ['jshint', 'assemble', 'copy:doc']
       },
       configFiles: {
@@ -160,7 +160,7 @@ module.exports = function (grunt) {
 
     bump: {
       options: {
-        files: ['package.json'],
+        files: ['./package.json'],
         commit: true,
         commitMessage: 'Release version %VERSION%',
         commitFiles: ['package.json'],
@@ -194,7 +194,7 @@ module.exports = function (grunt) {
       options: {
         reporter: require('jshint-stylish')
       },
-      all: ['gruntfile.js', 'src/js/**/*']
+      all: ['./gruntfile.js', './src/js/**/*']
     }
   });
 
