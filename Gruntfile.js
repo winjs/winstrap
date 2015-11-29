@@ -34,7 +34,11 @@ module.exports = function (grunt) {
     uglify: {
       winstrapjs:{
       files: {
-        'dist/js/winstrap.min.js':'src/js/winstrap.js'
+        'dist/js/winstrap.min.js':[
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+          'src/js/winstrap.js'
+          ]
       }
     }},
 
@@ -48,12 +52,6 @@ module.exports = function (grunt) {
             cwd: 'src/fonts/',
             src: '**',
             dest: './dist/fonts/'
-          },
-          {
-            expand: true,
-            cwd: 'src/images/',
-            src: '*',
-            dest: './dist/images/'
           },
           {
             expand: true,
@@ -116,7 +114,7 @@ module.exports = function (grunt) {
       }      
     },
 
-    // Build the main HTML file of the style guide
+    // Build the main HTML files of the style guide
     assemble: {
       options: {
         partials: ['src/doc/partials/**/*.hbs'],
@@ -136,7 +134,7 @@ module.exports = function (grunt) {
         dest: './www/'
       }
     },
-    // Watch the javascript and css of the style guide
+    // Watch javascript and css files of the style guide
     watch: {
       sass: {
         files: 'src/scss/**/*.scss',
