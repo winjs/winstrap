@@ -55,9 +55,9 @@ module.exports = function (grunt) {
       }
     },
 
-    // Copy deployment files
+    // Copy files
     copy: {
-      //  Copy distribution files from src folder
+      //  Copy distribution assets from src folder to dist
       dist:{
         files:[
           {
@@ -65,22 +65,10 @@ module.exports = function (grunt) {
             cwd: 'src/fonts/',
             src: '**',
             dest: './dist/fonts/'
-          },
-          {
-            expand: true,
-            cwd:'src/css',
-            src: '*.css',
-            dest: './dist/css/'
-          },
-          {
-            expand: true,
-            cwd: 'src/js/',
-            src: '*.js',
-            dest: './dist/js/'
           }
         ]
       },
-      //  Copy deployment files from dist folder
+      //  Copy assets from src folder to www
       assets: {
         files: [
         {
@@ -97,32 +85,21 @@ module.exports = function (grunt) {
         }
         ]
       },
+      //  Copy css and js from dist to www
       doc: {
         files: [
-        {
-          expand: true,
-          cwd:'dist/css',
-          src: '*',
-          dest: './www/css/'
-        },
-        {
-          expand: true,
-          cwd: 'dist/js/',
-          src: '*.js',
-          dest: './www/js/'
-        },
-        // {
-        //   expand: true,
-        //   cwd: 'bower_components/jquery/dist/',
-        //   src: ['jquery.min.js', 'jquery.min.map'],
-        //   dest: './www/js/vendor/'
-        // },
-        // {
-        //   expand: true,
-        //   cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
-        //   src: 'bootstrap.min.js',
-        //   dest: './www/js/vendor/'
-        // }
+          {
+            expand: true,
+            cwd:'dist/css',
+            src: ['*.min.css', '*.min.css.map'],
+            dest: './www/css/'
+          },
+          {
+            expand: true,
+            cwd: 'dist/js/',
+            src: '*.min.js',
+            dest: './www/js/'
+          }
         ]
       }      
     },
