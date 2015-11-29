@@ -32,15 +32,28 @@ module.exports = function (grunt) {
     
     //  Uglify winstrap.js
     uglify: {
-      winstrapjs:{
-      files: {
-        'dist/js/winstrap.min.js':[
-          'bower_components/jquery/dist/jquery.js',
-          'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-          'src/js/winstrap.js'
+      winstrapjs: {
+        options: {
+          beautify: true
+        },
+        files:{
+          'dist/js/winstrap.js': [
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'src/js/winstrap.js'
           ]
+        }
+      },
+      winstrapjs_min:{
+        files: {
+          'dist/js/winstrap.min.js': [
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'src/js/winstrap.js'
+          ]
+        }
       }
-    }},
+    },
 
     // Copy deployment files
     copy: {
@@ -72,13 +85,13 @@ module.exports = function (grunt) {
         files: [
         {
           expand: true,
-          cwd: 'dist/fonts/',
+          cwd: 'src/fonts/',
           src: '**',
           dest: './www/fonts/'
         },
         {
           expand: true,
-          cwd: 'dist/images/',
+          cwd: 'src/images/',
           src: '*',
           dest: './www/images/'
         }
@@ -98,18 +111,18 @@ module.exports = function (grunt) {
           src: '*.js',
           dest: './www/js/'
         },
-        {
-          expand: true,
-          cwd: 'bower_components/jquery/dist/',
-          src: ['jquery.min.js', 'jquery.min.map'],
-          dest: './www/js/vendor/'
-        },
-        {
-          expand: true,
-          cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
-          src: 'bootstrap.min.js',
-          dest: './www/js/vendor/'
-        }
+        // {
+        //   expand: true,
+        //   cwd: 'bower_components/jquery/dist/',
+        //   src: ['jquery.min.js', 'jquery.min.map'],
+        //   dest: './www/js/vendor/'
+        // },
+        // {
+        //   expand: true,
+        //   cwd: 'bower_components/bootstrap-sass/assets/javascripts/',
+        //   src: 'bootstrap.min.js',
+        //   dest: './www/js/vendor/'
+        // }
         ]
       }      
     },
