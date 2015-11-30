@@ -182,6 +182,12 @@ $navbar-transition-out: .5s;
             > li > a {
                 padding: spacing(xs, .5) spacing(xs);
             }
+            
+            &.compressed {
+                > li > a {
+                    padding: spacing(xs, .5) spacing(xxs);
+                }
+            }
         }
     }
     
