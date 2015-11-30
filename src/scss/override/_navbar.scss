@@ -21,6 +21,7 @@ $navbar-transition-out: .5s;
 
     .navbar-toggle {
         padding: spacing(xxxs, -4) spacing(xxs, -2);
+        float: left;
     }
 
     .btn {
@@ -55,9 +56,13 @@ $navbar-transition-out: .5s;
 
 // Brand/project name
 .navbar-brand {
-    padding: spacing(xxs, .5) spacing(xxs, 3);
+    padding: spacing(xxs, .5) spacing(xxs, 3) spacing(xxs, .5) spacing(xxxs, 2);
     margin-right: spacing(xxs, 3);
     height: $navbar-height;
+    
+    @media (min-width: $grid-float-breakpoint) {
+        padding-left: spacing(n);
+    }
 }
 
 
@@ -168,7 +173,8 @@ $navbar-transition-out: .5s;
                 line-height: 1.5;
             }
         }
-
+        
+        
         // Uncollapse the nav
         @media (min-width: $grid-float-breakpoint) {
             margin: 0;
@@ -176,17 +182,43 @@ $navbar-transition-out: .5s;
             > li > a {
                 padding: spacing(xs, .5) spacing(xs);
             }
+            
+            &.compressed {
+                > li > a {
+                    padding: spacing(xs, .5) spacing(xxs, 6);
+                }
+            }
+        }
+        
+        @media (min-width: $screen-xl-min) {
+            &.compressed {
+                > li > a {
+                    padding: spacing(xs, .5) spacing(xs);
+                }
+            }
         }
     }
-
+    
     .navbar-brand {
-        padding: spacing(xs) spacing(xxs, 3);
-        height: 72px;
+        padding: spacing(xxxs, 2.5) spacing(xxs, 1) spacing(xxxs, 2.5) spacing(xxxs, 2);
     }
-
+    
     .navbar-toggle {
-        margin-top: spacing(xs, -4.5);
-        margin-bottom: spacing(xs, -4.5);
+        @extend .navbar-brand;
+        margin: 0;
+        line-height: 0;
+    }
+    
+    @media (min-width: $grid-float-breakpoint) {
+        .navbar-brand {
+            padding: spacing(xs) spacing(xxs, 3) spacing(xs) spacing(n);
+            height: 72px;
+        }
+    
+        .navbar-toggle {
+            margin-top: spacing(xs, -4.5);
+            margin-bottom: spacing(xs, -4.5);
+        }
     }
 
 }
@@ -212,6 +244,10 @@ $navbar-transition-out: .5s;
 
         .divider {
             background: $color-dim-mid;
+        }
+        
+        .navbar-toggle {
+            background-color: transparent;
         }
 
         .glyph-hamburger {
