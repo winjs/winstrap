@@ -185,7 +185,15 @@ $navbar-transition-out: .5s;
             
             &.compressed {
                 > li > a {
-                    padding: spacing(xs, .5) spacing(xxs);
+                    padding: spacing(xs, .5) spacing(xxs, 6);
+                }
+            }
+        }
+        
+        @media (min-width: $screen-xl-min) {
+            &.compressed {
+                > li > a {
+                    padding: spacing(xs, .5) spacing(xs);
                 }
             }
         }
