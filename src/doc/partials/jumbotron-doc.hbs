@@ -1,0 +1,51 @@
+<div class="container">
+    <section class="section" id="jumbotron">
+        <header class="section-header row">
+            <h1 class="section-title col-xs-24">
+                <a href="#jumbotron">Jumbotron</a>
+            </h1>
+        </header>
+        <div class="row">
+            <div class="col-md-18">
+                <p>Also known as <i>Hero</i>, Jumbotron is a lightweight container for different types of content meant to be emphasized at the top of a page. Heros and Jumbotrons jump outside the grid to allow full-bleed, edge to edge display.</p>
+                <p>Jumbotron has basic defaults designed to be flexibile for different types of content. Use defaults with combinations of text and spacer classes to achieve specific designs (see centered example below).</p>
+            </div>
+    </section>
+</div>
+
+<!-- Since Jumbotron is outside the grid... -->
+{{> jumbotron }}
+
+<div class="container m-v-xs">
+    <div class="row">
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+{{> jumbotron }}
+```
+            {{/markdown}}
+        </div>
+    </div>
+</div>
+
+<!-- Since Jumbotron is outside the grid... -->
+{{> jumbotron-centered }}
+
+<div class="container m-t-xs">
+    <div class="row">
+        <div class="col-xs-24">
+            {{#markdown}}
+```xml
+{{> jumbotron-centered }}
+```
+            {{/markdown}}
+        </div>
+        <div class="col-md-24">
+            <div class="guidance guidance-usage m-t-xs">
+                {{#markdown}}
+{{> jumbotron-guidance.md}}
+                {{/markdown}}
+            </div>
+        </div>
+    </div>
+</div>
