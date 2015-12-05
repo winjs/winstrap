@@ -10,51 +10,39 @@ module.exports = function (grunt) {
     },
 
     fileExists: {
-      css: ['./www/css/winstrap.min.css']
+      css: ['./dist/css/winstrap.min.css']
     },
 
     sass: {
-      options: {
-        outputStyle: 'compressed',
-        sourceMap: true,
-        precision: 5,
-        includePaths: [
-            "node_modules"
-        ]
-      },
-      dist: {
-        files: {
-          './dist/css/winstrap.min.css': './src/scss/winstrap.scss',
-          './dist/css/winstrap.css': './src/scss/winstrap.scss'
+        options: {
+          outputStyle: 'nested',
+          sourceMap: true,
+          precision: 5,
+          includePaths: [
+              "node_modules"
+          ]
+        },
+        dist: {
+          files: {
+            './dist/css/winstrap.css': './src/scss/winstrap.scss',
+            './dist/css/winstrap-optional.css': './src/scss/winstrap-optional.scss'
+          }        
         }
+    },
+    
+    //  Minify CSS
+    cssmin:{
+      target:{
+        files:[{
+          expand:true,
+          cwd: './dist/css',
+          src:['*.css', '!*.min.css'],
+          dest:'./dist/css/',
+          ext:'.min.css'
+        }]
       }
     },
     
-    //  Uglify winstrap.js
-    uglify: {
-      winstrapjs: {
-        options: {
-          beautify: true
-        },
-        files:{
-          './dist/js/winstrap.js': [
-            './node_modules/jquery/dist/jquery.js',
-            './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
-            './src/js/winstrap.js'
-          ]
-        }
-      },
-      winstrapjs_min:{
-        files: {
-          './dist/js/winstrap.min.js': [
-            './node_modules/jquery/dist/jquery.js',
-            './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
-            './src/js/winstrap.js'
-          ]
-        }
-      }
-    },
-
     // Copy files
     copy: {
       //  Copy distribution assets from src folder to dist
@@ -65,24 +53,44 @@ module.exports = function (grunt) {
             cwd: './src/fonts/',
             src: '**',
             dest: './dist/fonts/'
-          }
-        ]
-      },
-      //  Copy assets from src folder to www
-      assets: {
-        files: [
-        {
-          expand: true,
-          cwd: './src/fonts/',
-          src: '**',
-          dest: './www/fonts/'
-        },
-        {
-          expand: true,
-          cwd: './src/images/',
-          src: '*',
-          dest: './www/images/'
-        }
+          },
+          //  Copy vendor js to dist and www
+          {
+            expand: true,
+            cwd: 'node_modules/jquery/dist/',
+            src: ['jquery.min.js', 'jquery.min.map'],
+            dest: 'dist/js/vendor/'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/bootstrap-sass/assets/javascripts/',
+            src: 'bootstrap.min.js',
+            dest: 'dist/js/vendor/'
+          },
+          {
+            expand: true,
+            cwd: 'dist/js/vendor',
+            src: ['jquery.min.js', 'jquery.min.map'],
+            dest: 'www/js/vendor/'
+          },
+          {
+            expand: true,
+            cwd: 'dist/js/vendor',
+            src: 'bootstrap.min.js',
+            dest: 'www/js/vendor/'
+          },
+          {
+            expand: true,
+            cwd: './src/fonts/',
+            src: '**',
+            dest: './www/fonts/'
+          },
+          {
+            expand: true,
+            cwd: './src/images/',
+            src: '*',
+            dest: './www/images/'
+          }          
         ]
       },
       //  Copy css and js from dist to www
@@ -96,9 +104,15 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
-            cwd: './dist/js/',
-            src: '*.min.js',
+            cwd: './src/js/',
+            src: '*.js',
             dest: './www/js/'
+          },
+          {
+            expand: true,
+            cwd: './dist/js/vendor/',
+            src: '*.js',
+            dest: './www/js/vendor/'
           }
         ]
       }      
@@ -128,7 +142,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: './src/scss/**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass:min', 'sass:reg']
       },
       doc: {
         files: ['./src/doc/**/*', './src/js/*.js'],
@@ -202,14 +216,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-file-exists');
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass', 'assemble','uglify','copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass','cssmin', 'assemble','copy', 'fileExists', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 };
