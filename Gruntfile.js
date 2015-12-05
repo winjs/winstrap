@@ -142,7 +142,11 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: './src/scss/**/*.scss',
-        tasks: ['sass:min', 'sass:reg']
+        tasks: ['sass']
+      },
+      cssmin:{
+        files:'./dist/css/**.css',
+        tasks:['cssmin']
       },
       doc: {
         files: ['./src/doc/**/*', './src/js/*.js'],
@@ -224,6 +228,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass','cssmin', 'assemble','copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass', 'cssmin', 'assemble','copy', 'fileExists', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 };
