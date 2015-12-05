@@ -111,7 +111,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: './dist/js/vendor/',
-            src: '*.js',
+            src: ['*.js', '*.map'],
             dest: './www/js/vendor/'
           }
         ]
