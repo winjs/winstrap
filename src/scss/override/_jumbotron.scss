@@ -3,7 +3,7 @@
 }
 
 .jumbotron {
-    padding: spacing(xxs);
+    padding: spacing(xxs) 0;
     margin-bottom: initial;
     
     h1,
@@ -22,13 +22,13 @@
     }
     
     @media screen and (min-width: $screen-sm-min) {
-        padding: spacing(xs);
+        padding: spacing(xs) 0;
     }
     @media screen and (min-width: $screen-md-min) {
-        padding: spacing(md);
+        padding: spacing(md) 0;
     }
     @media screen and (min-width: $screen-lg-min) {
-        padding: spacing(lg, -4);
+        padding: spacing(lg, -4) 0;
     }
     
     //
