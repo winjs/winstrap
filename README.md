@@ -33,7 +33,6 @@ To install the required `npm` packages:
 ```
 cd winstrap
 npm install
-bower install
 ```
 
 ## Building Winstrap

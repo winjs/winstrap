@@ -7745,37 +7745,34 @@ hr {
       padding-top: 0;
       padding-bottom: 0; } }
 
-.navbar-local .navbar-nav .open .dropdown-menu > li > a {
-  padding: 15px 24px;
-  height: auto;
-  line-height: 1.5; }
-
-@media (min-width: 1084px) {
-  .navbar-local .navbar-nav {
-    margin: 0; }
-    .navbar-local .navbar-nav > li > a {
-      padding: 24.5px 24px; }
+.navbar-local {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+  .navbar-local .navbar-nav .open .dropdown-menu > li > a {
+    padding: 15px 24px;
+    height: auto;
+    line-height: 1.5; }
+  @media (min-width: 1084px) {
+    .navbar-local .navbar-nav {
+      margin: 0; }
+      .navbar-local .navbar-nav > li > a {
+        padding: 24.5px 24px; }
+      .navbar-local .navbar-nav.compressed > li > a {
+        padding: 24.5px 18px; } }
+  @media (min-width: 1400px) {
     .navbar-local .navbar-nav.compressed > li > a {
-      padding: 24.5px 18px; } }
-
-@media (min-width: 1400px) {
-  .navbar-local .navbar-nav.compressed > li > a {
-    padding: 24.5px 24px; } }
-
-.navbar-local .navbar-brand, .navbar-local .navbar-toggle {
-  padding: 10.5px 13px 10.5px 10px; }
-
-.navbar-local .navbar-toggle {
-  margin: 0;
-  line-height: 0; }
-
-@media (min-width: 1084px) {
+      padding: 24.5px 24px; } }
   .navbar-local .navbar-brand, .navbar-local .navbar-toggle {
-    padding: 24px 15px 24px 0px;
-    height: 72px; }
+    padding: 10.5px 13px 10.5px 10px; }
   .navbar-local .navbar-toggle {
-    margin-top: 19.5px;
-    margin-bottom: 19.5px; } }
+    margin: 0;
+    line-height: 0; }
+  @media (min-width: 1084px) {
+    .navbar-local .navbar-brand, .navbar-local .navbar-toggle {
+      padding: 24px 15px 24px 0px;
+      height: 72px; }
+    .navbar-local .navbar-toggle {
+      margin-top: 19.5px;
+      margin-bottom: 19.5px; } }
 
 .navbar-global, .navbar-global.theme-default, .navbar-global.theme-light,
 .navbar-local,
@@ -9708,7 +9705,7 @@ form .theme-light select {
     padding-bottom: 0; } }
 
 .jumbotron, .hero {
-  padding: 12px;
+  padding: 12px 0;
   margin-bottom: initial; }
   .jumbotron h1, .hero h1,
   .jumbotron .h1, .hero .h1 {
@@ -9730,13 +9727,13 @@ form .theme-light select {
     border-radius: 0; }
   @media screen and (min-width: 540px) {
     .jumbotron, .hero {
-      padding: 24px; } }
+      padding: 24px 0; } }
   @media screen and (min-width: 768px) {
     .jumbotron, .hero {
-      padding: 48px; } }
+      padding: 48px 0; } }
   @media screen and (min-width: 1084px) {
     .jumbotron, .hero {
-      padding: 60px; } }
+      padding: 60px 0; } }
   .jumbotron, .hero, .jumbotron.theme-default, .theme-default.hero {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.1); }

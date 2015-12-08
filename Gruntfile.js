@@ -26,25 +26,26 @@ module.exports = function (grunt) {
           files: {
             './dist/css/winstrap.css': './src/scss/winstrap.scss',
             './dist/css/winstrap-optional.css': './src/scss/winstrap-optional.scss'
-          }        
+          }
         }
     },
     
     //  Minify CSS
-    cssmin:{
-      target:{
-        files:[{
-          expand:true,
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
           cwd: './dist/css',
-          src:['*.css', '!*.min.css'],
-          dest:'./dist/css/',
-          ext:'.min.css'
+          src: ['*.css', '!*.min.css'],
+          dest: './dist/css/',
+          ext: '.min.css'
         }]
       }
     },
     
     // Copy files
     copy: {
+        
       //  Copy distribution assets from src folder to dist
       dist:{
         files:[
@@ -54,6 +55,7 @@ module.exports = function (grunt) {
             src: '**',
             dest: './dist/fonts/'
           },
+          
           //  Copy vendor js to dist and www
           {
             expand: true,
@@ -90,15 +92,16 @@ module.exports = function (grunt) {
             cwd: './src/images/',
             src: '*',
             dest: './www/images/'
-          }          
+          }
         ]
       },
+      
       //  Copy css and js from dist to www
       doc: {
         files: [
           {
             expand: true,
-            cwd:'./dist/css',
+            cwd: './dist/css',
             src: ['*.min.css', '*.min.css.map'],
             dest: './www/css/'
           },
@@ -115,7 +118,7 @@ module.exports = function (grunt) {
             dest: './www/js/vendor/'
           }
         ]
-      }      
+      }
     },
 
     // Build the main HTML files of the style guide
@@ -138,15 +141,16 @@ module.exports = function (grunt) {
         dest: './www/'
       }
     },
+    
     // Watch javascript and css files of the style guide
     watch: {
       sass: {
         files: './src/scss/**/*.scss',
         tasks: ['sass']
       },
-      cssmin:{
-        files:'./dist/css/**.css',
-        tasks:['cssmin']
+      cssmin: {
+        files: ['./dist/css/**.css', '!./dist/css/**.min.css'],
+        tasks: ['cssmin', 'copy:doc']
       },
       doc: {
         files: ['./src/doc/**/*', './src/js/*.js'],
@@ -228,6 +232,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['clean', 'sass', 'cssmin', 'assemble','copy', 'fileExists', 'jshint']);
+  grunt.registerTask('default', ['clean', 'sass', 'cssmin', 'assemble', 'copy', 'fileExists', 'jshint']);
   grunt.registerTask('server', ['connect', 'notify:server', 'watch']);
 };
