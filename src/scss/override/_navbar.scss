@@ -165,6 +165,8 @@ $navbar-transition-out: .5s;
 }
 
 .navbar-local {
+    box-shadow: 0px 1px 0px $color-dim-mid;
+    
     .navbar-nav {
         .open .dropdown-menu {
             > li > a {
