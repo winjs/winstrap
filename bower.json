@@ -7,8 +7,7 @@
     "homepage": "https://github.com/winjs/winstrap",
     "ignore": [
         "bower_components",
-        "node_modules",
-        "dist"
+        "node_modules"
     ],
     "authors": "",
     "description": "Bootstrap Theme for Microsoft design language",
