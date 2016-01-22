@@ -6274,9 +6274,19 @@ button.close {
     .type-c2 {
       padding: 3px 0 1px; } }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1260px; } }
+.container {
+  width: 90%; }
+  @media (min-width: 320px) and (max-width: 539px) {
+    .container {
+      margin-left: 12px;
+      margin-right: 12px; } }
+  @media (min-width: 540px) and (max-width: 767px) {
+    .container {
+      margin-left: 24px;
+      margin-right: 24px; } }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1260px; } }
 
 @media (min-width: 1400px) {
   .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-13, .col-xl-14, .col-xl-15, .col-xl-16, .col-xl-17, .col-xl-18, .col-xl-19, .col-xl-20, .col-xl-21, .col-xl-22, .col-xl-23, .col-xl-24 {
@@ -6548,11 +6558,11 @@ hr {
   background-color: transparent; }
 
 .page-header .nav-pills {
-  margin-top: 2em; }
+  margin: 24px 0; }
   .page-header .nav-pills > li > a {
-    margin-right: 2.5em;
-    padding: 1em 0;
-    color: black; }
+    margin: 0 24px 0 0;
+    padding: 12px 0;
+    color: #000000; }
     .page-header .nav-pills > li > a:hover {
       color: #000000;
       text-decoration: underline;
@@ -9981,7 +9991,7 @@ main {
   padding: 0 0 10vh; }
 
 .page-header {
-  margin: 0 0 1.5em;
+  margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.05); }
 
