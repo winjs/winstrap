@@ -34,12 +34,12 @@ $pivot-hover-color-alt:                                                         
 // Nav pills
 //
 .page-header .nav-pills {
-    margin-top: 2em;
+    margin: spacing(xs) 0;
 
     > li > a {
-        margin-right: 2.5em;
-        padding: 1em 0;
-        color: black;
+        margin: 0 spacing(xs) 0 0;
+        padding: spacing(xxs) 0;
+        color: $color-type-primary;
 
         &:hover {
             color: $brand-primary;

@@ -4870,6 +4870,9 @@ button.close {
 .glyph-edit::before {
   content: ""; }
 
+.glyph-edit-mirrored::before {
+  content: ""; }
+
 .glyph-save::before {
   content: ""; }
 
@@ -4939,6 +4942,9 @@ button.close {
 .glyph-help::before {
   content: ""; }
 
+.glyph-help-mirrored::before {
+  content: ""; }
+
 .glyph-upload::before {
   content: ""; }
 
@@ -4972,8 +4978,14 @@ button.close {
 .glyph-close-pane::before {
   content: ""; }
 
+.glyph-close-pane-mirrored::before {
+  content: ""; }
+
 .glyph-open-pane::before {
   content: ""; }
+
+.glyph-open-pane-mirrored::before {
+  content: ""; }
 
 .glyph-world::before {
   content: ""; }
@@ -4999,6 +5011,9 @@ button.close {
 .glyph-bookmarks::before {
   content: ""; }
 
+.glyph-bookmarks-mirrored::before {
+  content: ""; }
+
 .glyph-document::before {
   content: ""; }
 
@@ -5011,6 +5026,9 @@ button.close {
 .glyph-multi-select::before {
   content: ""; }
 
+.glyph-multi-select-mirrored::before {
+  content: ""; }
+
 .glyph-comment::before {
   content: ""; }
 
@@ -5019,6 +5037,9 @@ button.close {
 
 .glyph-contact-info::before {
   content: ""; }
+
+.glyph-contact-info-mirrored::before {
+  content: ""; }
 
 .glyph-hang-up::before {
   content: ""; }
@@ -5053,14 +5074,23 @@ button.close {
 .glyph-go::before {
   content: ""; }
 
+.glyph-go-mirrored::before {
+  content: ""; }
+
 .glyph-keyboard::before {
   content: ""; }
 
 .glyph-dock-left::before {
   content: ""; }
 
+.glyph-dock-left-mirrored::before {
+  content: ""; }
+
 .glyph-dock-right::before {
   content: ""; }
+
+.glyph-dock-right-mirrored::before {
+  content: ""; }
 
 .glyph-dock-bottom::before {
   content: ""; }
@@ -5080,6 +5110,9 @@ button.close {
 .glyph-list::before {
   content: ""; }
 
+.glyph-list-mirrored::before {
+  content: ""; }
+
 .glyph-shop::before {
   content: ""; }
 
@@ -5092,8 +5125,14 @@ button.close {
 .glyph-import::before {
   content: ""; }
 
+.glyph-import-mirrored::before {
+  content: ""; }
+
 .glyph-import-all::before {
   content: ""; }
+
+.glyph-import-all-mirrored::before {
+  content: ""; }
 
 .glyph-browse-photos::before {
   content: ""; }
@@ -5116,6 +5155,9 @@ button.close {
 .glyph-show-results::before {
   content: ""; }
 
+.glyph-show-results-mirrored::before {
+  content: ""; }
+
 .glyph-volume::before {
   content: ""; }
 
@@ -5137,11 +5179,17 @@ button.close {
 .glyph-calendar::before {
   content: ""; }
 
+.glyph-calendar-mirrored::before {
+  content: ""; }
+
 .glyph-characters::before {
   content: ""; }
 
 .glyph-mail-reply-all::before {
   content: ""; }
+
+.glyph-mail-reply-all-mirrored::before {
+  content: ""; }
 
 .glyph-mail-read::before {
   content: ""; }
@@ -5182,6 +5230,9 @@ button.close {
 .glyph-mail-reply::before {
   content: ""; }
 
+.glyph-mail-reply-mirrored::before {
+  content: ""; }
+
 .glyph-slideshow::before {
   content: ""; }
 
@@ -5194,6 +5245,9 @@ button.close {
 .glyph-all-apps::before {
   content: ""; }
 
+.glyph-all-apps-mirrored::before {
+  content: ""; }
+
 .glyph-disconnect-drive::before {
   content: ""; }
 
@@ -5205,6 +5259,9 @@ button.close {
 
 .glyph-open-with::before {
   content: ""; }
+
+.glyph-open-with-mirrored::before {
+  content: ""; }
 
 .glyph-contact-presence::before {
   content: ""; }
@@ -5325,6 +5382,9 @@ button.close {
 
 .glyph-clear-selection::before {
   content: ""; }
+
+.glyph-clear-selection-mirrored::before {
+  content: ""; }
 
 .glyph-font-decrease::before {
   content: ""; }
@@ -5484,6 +5544,30 @@ button.close {
 
 .glyph-media-browse::before {
   content: ""; }
+
+.glyph-miracast-small::before {
+  content: ""; }
+
+.glyph-miracast-large::before {
+  content: ""; }
+
+.glyph-playback-rate-1x::before {
+  content: ""; }
+
+.glyph-playback-rate-other::before {
+  content: ""; }
+
+.glyph-subscription-add::before {
+  content: ""; }
+
+.glyph-subscription-add-mirrored::before {
+  content: ""; }
+
+.glyph-subscriptions::before {
+  content: ""; }
+
+.glyph-subscriptions-mirrored::before {
+  content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   content: "■"; }
@@ -6274,9 +6358,19 @@ button.close {
     .type-c2 {
       padding: 3px 0 1px; } }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1260px; } }
+.container {
+  width: 90%; }
+  @media (min-width: 320px) and (max-width: 539px) {
+    .container {
+      margin-left: 12px;
+      margin-right: 12px; } }
+  @media (min-width: 540px) and (max-width: 767px) {
+    .container {
+      margin-left: 24px;
+      margin-right: 24px; } }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1260px; } }
 
 @media (min-width: 1400px) {
   .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-13, .col-xl-14, .col-xl-15, .col-xl-16, .col-xl-17, .col-xl-18, .col-xl-19, .col-xl-20, .col-xl-21, .col-xl-22, .col-xl-23, .col-xl-24 {
@@ -6548,11 +6642,11 @@ hr {
   background-color: transparent; }
 
 .page-header .nav-pills {
-  margin-top: 2em; }
+  margin: 24px 0; }
   .page-header .nav-pills > li > a {
-    margin-right: 2.5em;
-    padding: 1em 0;
-    color: black; }
+    margin: 0 24px 0 0;
+    padding: 12px 0;
+    color: #000000; }
     .page-header .nav-pills > li > a:hover {
       color: #000000;
       text-decoration: underline;
@@ -9981,7 +10075,7 @@ main {
   padding: 0 0 10vh; }
 
 .page-header {
-  margin: 0 0 1.5em;
+  margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.05); }
 

@@ -103,6 +103,10 @@ $glyphs: (
         unicode:        "\E104",
         original-name:  "editLegacy"
     ),
+    edit-mirrored: (
+        unicode:        "\E1C2",
+        original-name:  "editLegacyMirrored"
+    ),
     save: (
         unicode:        "\E105",
         original-name:  "saveLegacy"
@@ -195,6 +199,10 @@ $glyphs: (
         unicode:        "\E11B",
         original-name:  "helpLegacy"
     ),
+    help-mirrored: (
+        unicode:        "\E1F3",
+        original-name:  "helpLegacyMirrored"
+    ),
     upload: (
         unicode:        "\E11C",
         original-name:  "uploadLegacy"
@@ -239,9 +247,17 @@ $glyphs: (
         unicode:        "\E126",
         original-name:  "closePaneLegacy"
     ),
+    close-pane-mirrored: (
+        unicode:        "\E1BF",
+        original-name:  "closePaneLegacyMirrored"
+    ),
     open-pane: (
         unicode:        "\E127",
         original-name:  "openPaneLegacy"
+    ),
+    open-pane-mirrored: (
+        unicode:        "\E1C0",
+        original-name:  "openPaneLegacyMirrored"
     ),
     world: (
         unicode:        "\E128",
@@ -275,6 +291,10 @@ $glyphs: (
         unicode:        "\E12F",
         original-name:  "bookmarksLegacy"
     ),
+    bookmarks-mirrored: (
+        unicode:        "\E1EE",
+        original-name:  "bookmarksLegacyMirrored"
+    ),
     document: (
         unicode:        "\E130",
         original-name:  "documentLegacy"
@@ -291,6 +311,10 @@ $glyphs: (
         unicode:        "\E133",
         original-name:  "multiSelectLegacy"
     ),
+    multi-select-mirrored: (
+        unicode:        "\E1EF",
+        original-name:  "multiSelectLegacyMirrored"
+    ),
     comment: (
         unicode:        "\E134",
         original-name:  "commentLegacy"
@@ -302,6 +326,10 @@ $glyphs: (
     contact-info: (
         unicode:        "\E136",
         original-name:  "contactInfoLegacy"
+    ),
+    contact-info-mirrored: (
+        unicode:        "\EA4A",
+        original-name:  "contactInfoLegacyMirrored"
     ),
     hang-up: (
         unicode:        "\E137",
@@ -347,6 +375,10 @@ $glyphs: (
         unicode:        "\E143",
         original-name:  "goLegacy"
     ),
+    go-mirrored: (
+        unicode:        "\E1AA",
+        original-name:  "goLegacyMirrored"
+    ),
     keyboard: (
         unicode:        "\E144",
         original-name:  "keyBoardLegacy"
@@ -355,9 +387,17 @@ $glyphs: (
         unicode:        "\E145",
         original-name:  "dockLeftLegacy"
     ),
+    dock-left-mirrored: (
+        unicode:        "\E1AB",
+        original-name:  "dockLeftLegacyMirrored"
+    ),
     dock-right: (
         unicode:        "\E146",
         original-name:  "dockRightLegacy"
+    ),
+    dock-right-mirrored: (
+        unicode:        "\E1AC",
+        original-name:  "dockRightLegacyMIrrored"
     ),
     dock-bottom: (
         unicode:        "\E147",
@@ -383,6 +423,10 @@ $glyphs: (
         unicode:        "\E14C",
         original-name:  "listLegacy"
     ),
+    list-mirrored: (
+        unicode:        "\E175",
+        original-name:  "listLegacyMirrored"
+    ),
     shop: (
         unicode:        "\E14D",
         original-name:  "shopLegacy"
@@ -399,9 +443,17 @@ $glyphs: (
         unicode:        "\E150",
         original-name:  "importLegacy"
     ),
+    import-mirrored: (
+        unicode:        "\E1AD",
+        original-name:  "importLegacyMirrored"
+    ),
     import-all: (
         unicode:        "\E151",
         original-name:  "importAllLegacy"
+    ),
+    import-all-mirrored: (
+        unicode:        "\E1AE",
+        original-name:  "importAllLegacyMirrored"
     ),
     browse-photos: (
         unicode:        "\E155",
@@ -431,6 +483,10 @@ $glyphs: (
         unicode:        "\E15C",
         original-name:  "showResultsLegacy"
     ),
+    show-results-mirrored: (
+        unicode:        "\E1F1",
+        original-name:  "showResultsLegacyMirrored"
+    ),
     volume: (
         unicode:        "\E15D",
         original-name:  "volumeLegacy"
@@ -459,6 +515,10 @@ $glyphs: (
         unicode:        "\E163",
         original-name:  "calendarLegacy"
     ),
+    calendar-mirrored: (
+        unicode:        "\E1DC",
+        original-name:  "calendarLegacyMirrored"
+    ),
     characters: (
         unicode:        "\E164",
         original-name:  "charactersLegacy"
@@ -466,6 +526,10 @@ $glyphs: (
     mail-reply-all: (
         unicode:        "\E165",
         original-name:  "mailReplyAllLegacy"
+    ),
+    mail-reply-all-mirrored: (
+        unicode:        "\E1F2",
+        original-name:  "mailReplyAllLegacyMirrored"
     ),
     mail-read: (
         unicode:        "\E166",
@@ -519,6 +583,10 @@ $glyphs: (
         unicode:        "\E172",
         original-name:  "mailReplyLegacy"
     ),
+    mail-reply-mirrored: (
+        unicode:        "\E1AF",
+        original-name:  "mailReplyLegacyMirrored"
+    ),
     slideshow: (
         unicode:        "\E173",
         original-name:  "slideshowLegacy"
@@ -535,6 +603,10 @@ $glyphs: (
         unicode:        "\E179",
         original-name:  "allAppsLegacy"
     ),
+    all-apps-mirrored: (
+        unicode:        "\E1EC",
+        original-name:  "allAppsLegacyMirrored"
+    ),
     disconnect-drive: (
         unicode:        "\E17A",
         original-name:  "disconnectDriveLegacy"
@@ -550,6 +622,10 @@ $glyphs: (
     open-with: (
         unicode:        "\E17D",
         original-name:  "openWithLegacy"
+    ),
+    open-with-mirrored: (
+        unicode:        "\E1ED",
+        original-name:  "openWithLegacyMirrored"
     ),
     contact-presence: (
         unicode:        "\E181",
@@ -710,6 +786,10 @@ $glyphs: (
     clear-selection: (
         unicode:        "\E1C5",
         original-name:  "clearSelectionLegacy"
+    ),
+    clear-selection-mirrored: (
+        unicode:        "\E1F4",
+        original-name:  "clearSelectionLegacyMirrored"
     ),
     font-decrease: (
         unicode:        "\E1C6",
@@ -922,6 +1002,38 @@ $glyphs: (
     media-browse: (
         unicode:        "\ECCD",
         original-name:  "mediaBrowse"
+    ),
+    miracast-small: (
+        unicode:        "\EC15",
+        original-name:  "miracastLogoSmall"
+    ),
+    miracast-large: (
+        unicode:        "\EC16",
+        original-name:  "miracastLogoLarge"
+    ),
+    playback-rate-1x: (
+        unicode:        "\EC57",
+        original-name:  "playbackRate1x"
+    ),
+    playback-rate-other: (
+        unicode:        "\EC58",
+        original-name:  "playbackRateOther"
+    ),
+    subscription-add: (
+        unicode:        "\ED0E",
+        original-name:  "subscriptionAdd"
+    ),
+    subscription-add-mirrored: (
+        unicode:        "\ED0E",
+        original-name:  "subscriptionAddMirrored"
+    ),
+    subscriptions: (
+        unicode:        "\ED11",
+        original-name:  "subscriptions"
+    ),
+    subscriptions-mirrored: (
+        unicode:        "\ED12",
+        original-name:  "subscriptionsMirrored"
     )
 );
 

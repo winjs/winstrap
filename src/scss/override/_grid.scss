@@ -5,12 +5,22 @@
 
 // Container widths
 //
-// Set the container width, and override it for fixed navbars in media queries.
+// Set the container width and max-width, and override it for fixed navbars in media queries.
 
 .container {
-  @media (min-width: $screen-xl-min) {
-    width: $container-xl;
-  }
+    width: 90%;
+    
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        @include spacer(margin, horizontal, xxs);
+    }
+    
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        @include spacer(margin, horizontal, xs);
+    }
+    
+    @media (min-width: $screen-xl-min) {
+        max-width: $container-xl;
+    }
 }
 
 // Extra Large grid
