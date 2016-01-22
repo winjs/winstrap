@@ -6000,14 +6000,23 @@ button.close {
 .glyph-go::before {
   content: ""; }
 
+.glyph-go-mirrored::before {
+  content: ""; }
+
 .glyph-keyboard::before {
   content: ""; }
 
 .glyph-dock-left::before {
   content: ""; }
 
+.glyph-dock-left-mirrored::before {
+  content: ""; }
+
 .glyph-dock-right::before {
   content: ""; }
+
+.glyph-dock-right-mirrored::before {
+  content: ""; }
 
 .glyph-dock-bottom::before {
   content: ""; }
@@ -6026,6 +6035,9 @@ button.close {
 
 .glyph-list::before {
   content: ""; }
+
+.glyph-list-mirrored::before {
+  content: ""; }
 
 .glyph-shop::before {
   content: ""; }
@@ -6431,6 +6443,24 @@ button.close {
 
 .glyph-media-browse::before {
   content: ""; }
+
+.glyph-miracast-small::before {
+  content: ""; }
+
+.glyph-miracast-large::before {
+  content: ""; }
+
+.glyph-playback-rate-1x::before {
+  content: ""; }
+
+.glyph-playback-rate-other::before {
+  content: ""; }
+
+.glyph-subscription-add::before {
+  content: ""; }
+
+.glyph-subscriptions::before {
+  content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   content: "■"; }

@@ -165,11 +165,17 @@
         }, {
             "name": "go"
         }, {
+            "name": "go-mirrored"
+        }, {
             "name": "keyboard"
         }, {
             "name": "dock-left"
         }, {
+            "name": "dock-left-mirrored"
+        }, {
             "name": "dock-right"
+        }, {
+            "name": "dock-right-mirrored"
         }, {
             "name": "dock-bottom"
         }, {
@@ -182,6 +188,8 @@
             "name": "shuffle"
         }, {
             "name": "list"
+        }, {
+            "name": "list-mirrored"
         }, {
             "name": "shop"
         }, {
@@ -422,6 +430,48 @@
             "name": "preview"
         }, {
             "name": "hamburger"
+        }, {
+            "name": "checkbox-composite"
+        }, {
+            "name": "checkbox-indeterminate"
+        }, {
+            "name": "warning"
+        }, {
+            "name": "shopping-cart"
+        }, {
+            "name": "flag-2"
+        }, {
+            "name": "completed"
+        }, {
+            "name": "music-album"
+        }, {
+            "name": "info"
+        }, {
+            "name": "devices"
+        }, {
+            "name": "expand"
+        }, {
+            "name": "collapse"
+        }, {
+            "name": "radio-btn-off"
+        }, {
+            "name": "radio-btn-on"
+        }, {
+            "name": "radio-bullet"
+        }, {
+            "name": "media-browse"
+        }, {
+            "name": "miracast-small"
+        }, {
+            "name": "miracast-large"
+        }, {
+            "name": "playback-rate-1x"
+        }, {
+            "name": "playback-rate-other"
+        }, {
+            "name": "subscription-add"
+        }, {
+            "name": "subscriptions"
         }
     ]
 }

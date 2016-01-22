@@ -347,6 +347,10 @@ $glyphs: (
         unicode:        "\E143",
         original-name:  "goLegacy"
     ),
+    go-mirrored: (
+        unicode:        "\E1AA",
+        original-name:  "goLegacyMirrored"
+    ),
     keyboard: (
         unicode:        "\E144",
         original-name:  "keyBoardLegacy"
@@ -355,9 +359,17 @@ $glyphs: (
         unicode:        "\E145",
         original-name:  "dockLeftLegacy"
     ),
+    dock-left-mirrored: (
+        unicode:        "\E1AB",
+        original-name:  "dockLeftLegacyMirrored"
+    ),
     dock-right: (
         unicode:        "\E146",
         original-name:  "dockRightLegacy"
+    ),
+    dock-right-mirrored: (
+        unicode:        "\E1AC",
+        original-name:  "dockRightLegacyMIrrored"
     ),
     dock-bottom: (
         unicode:        "\E147",
@@ -382,6 +394,10 @@ $glyphs: (
     list: (
         unicode:        "\E14C",
         original-name:  "listLegacy"
+    ),
+    list-mirrored: (
+        unicode:        "\E175",
+        original-name:  "listLegacyMirrored"
     ),
     shop: (
         unicode:        "\E14D",
@@ -922,6 +938,30 @@ $glyphs: (
     media-browse: (
         unicode:        "\ECCD",
         original-name:  "mediaBrowse"
+    ),
+    miracast-small: (
+        unicode:        "\EC15",
+        original-name:  "miracastLogoSmall"
+    ),
+    miracast-large: (
+        unicode:        "\EC16",
+        original-name:  "miracastLogoLarge"
+    ),
+    playback-rate-1x: (
+        unicode:        "\EC57",
+        original-name:  "playbackRate1x"
+    ),
+    playback-rate-other: (
+        unicode:        "\EC58",
+        original-name:  "playbackRateOther"
+    ),
+    subscription-add: (
+        unicode:        "\ED0E",
+        original-name:  "subscriptionAdd"
+    ),
+    subscriptions: (
+        unicode:        "\ED0F",
+        original-name:  "subscriptions"
     )
 );
 
