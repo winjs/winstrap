@@ -5817,6 +5817,9 @@ button.close {
 .glyph-edit::before {
   content: ""; }
 
+.glyph-edit-mirrored::before {
+  content: ""; }
+
 .glyph-save::before {
   content: ""; }
 
@@ -5886,6 +5889,9 @@ button.close {
 .glyph-help::before {
   content: ""; }
 
+.glyph-help-mirrored::before {
+  content: ""; }
+
 .glyph-upload::before {
   content: ""; }
 
@@ -5919,8 +5925,14 @@ button.close {
 .glyph-close-pane::before {
   content: ""; }
 
+.glyph-close-pane-mirrored::before {
+  content: ""; }
+
 .glyph-open-pane::before {
   content: ""; }
+
+.glyph-open-pane-mirrored::before {
+  content: ""; }
 
 .glyph-world::before {
   content: ""; }
@@ -5946,6 +5958,9 @@ button.close {
 .glyph-bookmarks::before {
   content: ""; }
 
+.glyph-bookmarks-mirrored::before {
+  content: ""; }
+
 .glyph-document::before {
   content: ""; }
 
@@ -5958,6 +5973,9 @@ button.close {
 .glyph-multi-select::before {
   content: ""; }
 
+.glyph-multi-select-mirrored::before {
+  content: ""; }
+
 .glyph-comment::before {
   content: ""; }
 
@@ -5966,6 +5984,9 @@ button.close {
 
 .glyph-contact-info::before {
   content: ""; }
+
+.glyph-contact-info-mirrored::before {
+  content: ""; }
 
 .glyph-hang-up::before {
   content: ""; }
@@ -6051,8 +6072,14 @@ button.close {
 .glyph-import::before {
   content: ""; }
 
+.glyph-import-mirrored::before {
+  content: ""; }
+
 .glyph-import-all::before {
   content: ""; }
+
+.glyph-import-all-mirrored::before {
+  content: ""; }
 
 .glyph-browse-photos::before {
   content: ""; }
@@ -6075,6 +6102,9 @@ button.close {
 .glyph-show-results::before {
   content: ""; }
 
+.glyph-show-results-mirrored::before {
+  content: ""; }
+
 .glyph-volume::before {
   content: ""; }
 
@@ -6096,11 +6126,17 @@ button.close {
 .glyph-calendar::before {
   content: ""; }
 
+.glyph-calendar-mirrored::before {
+  content: ""; }
+
 .glyph-characters::before {
   content: ""; }
 
 .glyph-mail-reply-all::before {
   content: ""; }
+
+.glyph-mail-reply-all-mirrored::before {
+  content: ""; }
 
 .glyph-mail-read::before {
   content: ""; }
@@ -6141,6 +6177,9 @@ button.close {
 .glyph-mail-reply::before {
   content: ""; }
 
+.glyph-mail-reply-mirrored::before {
+  content: ""; }
+
 .glyph-slideshow::before {
   content: ""; }
 
@@ -6153,6 +6192,9 @@ button.close {
 .glyph-all-apps::before {
   content: ""; }
 
+.glyph-all-apps-mirrored::before {
+  content: ""; }
+
 .glyph-disconnect-drive::before {
   content: ""; }
 
@@ -6164,6 +6206,9 @@ button.close {
 
 .glyph-open-with::before {
   content: ""; }
+
+.glyph-open-with-mirrored::before {
+  content: ""; }
 
 .glyph-contact-presence::before {
   content: ""; }
@@ -6284,6 +6329,9 @@ button.close {
 
 .glyph-clear-selection::before {
   content: ""; }
+
+.glyph-clear-selection-mirrored::before {
+  content: ""; }
 
 .glyph-font-decrease::before {
   content: ""; }
@@ -6459,8 +6507,14 @@ button.close {
 .glyph-subscription-add::before {
   content: ""; }
 
+.glyph-subscription-add-mirrored::before {
+  content: ""; }
+
 .glyph-subscriptions::before {
-  content: ""; }
+  content: ""; }
+
+.glyph-subscriptions-mirrored::before {
+  content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   content: "■"; }

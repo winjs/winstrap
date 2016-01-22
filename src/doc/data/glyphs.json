@@ -43,6 +43,8 @@
         }, {
             "name": "edit"
         }, {
+            "name": "edit-mirrored"
+        }, {
             "name": "save"
         }, {
             "name": "clear"
@@ -89,6 +91,8 @@
         }, {
             "name": "help"
         }, {
+            "name": "help-mirrored"
+        }, {
             "name": "upload"
         }, {
             "name": "emoji"
@@ -111,7 +115,11 @@
         }, {
             "name": "close-pane"
         }, {
+            "name": "close-pane-mirrored"
+        }, {
             "name": "open-pane"
+        }, {
+            "name": "open-pane-mirrored"
         }, {
             "name": "world"
         }, {
@@ -129,6 +137,8 @@
         }, {
             "name": "bookmarks"
         }, {
+            "name": "bookmarks-mirrored"
+        }, {
             "name": "document"
         }, {
             "name": "protected-document"
@@ -137,11 +147,15 @@
         }, {
             "name": "multi-select"
         }, {
+            "name": "multi-select-mirrored"
+        }, {
             "name": "comment"
         }, {
             "name": "mail-2"
         }, {
             "name": "contact-info"
+        }, {
+            "name": "contact-info-mirrored"
         }, {
             "name": "hang-up"
         }, {
@@ -199,7 +213,11 @@
         }, {
             "name": "import"
         }, {
+            "name": "import-mirrored"
+        }, {
             "name": "import-all"
+        }, {
+            "name": "import-all-mirrored"
         }, {
             "name": "browse-photos"
         }, {
@@ -215,6 +233,8 @@
         }, {
             "name": "show-results"
         }, {
+            "name": "show-results-mirrored"
+        }, {
             "name": "volume"
         }, {
             "name": "repair"
@@ -229,9 +249,13 @@
         }, {
             "name": "calendar"
         }, {
+            "name": "calendar-mirrored"
+        }, {
             "name": "characters"
         }, {
             "name": "mail-reply-all"
+        }, {
+            "name": "mail-reply-all-mirrored"
         }, {
             "name": "mail-read"
         }, {
@@ -259,6 +283,8 @@
         }, {
             "name": "mail-reply"
         }, {
+            "name": "mail-reply-mirrored"
+        }, {
             "name": "slideshow"
         }, {
             "name": "sort"
@@ -267,6 +293,8 @@
         }, {
             "name": "all-apps"
         }, {
+            "name": "all-apps-mirrored"
+        }, {
             "name": "disconnect-drive"
         }, {
             "name": "map-drive"
@@ -274,6 +302,8 @@
             "name": "new-window"
         }, {
             "name": "open-with"
+        }, {
+            "name": "open-with-mirrored"
         }, {
             "name": "contact-presence"
         }, {
@@ -354,6 +384,8 @@
             "name": "map"
         }, {
             "name": "clear-selection"
+        }, {
+            "name": "clear-selection-mirrored"
         }, {
             "name": "font-decrease"
         }, {
@@ -471,7 +503,11 @@
         }, {
             "name": "subscription-add"
         }, {
+            "name": "subscription-add-mirrored"
+        }, {
             "name": "subscriptions"
+        }, {
+            "name": "subscriptions-mirrored"
         }
     ]
 }
