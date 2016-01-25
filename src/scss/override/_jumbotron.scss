@@ -6,6 +6,10 @@
     padding: spacing(xxs) 0;
     margin-bottom: initial;
     
+    .container {
+        max-width: $container-xl;
+    }
+    
     h1,
     .h1 {
         @include type(t1);

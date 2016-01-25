@@ -1,3 +1,19 @@
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: none;
+    border-left: 5px solid $pre-border-color;
+    margin: spacing(xxs) 0 0;
+    @include type(t8);
+}
+
+blockquote {
+    padding: spacing(xxxs, -4) 0 spacing(xxxs, -4) spacing(xs, -3);
+    margin: spacing(xs) 0 0;
+    @include type(t7, set-line-height, responsive);
+}

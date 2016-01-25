@@ -213,7 +213,7 @@ $navbar-transition-out: .5s;
     
     @media (min-width: $grid-float-breakpoint) {
         .navbar-brand {
-            padding: spacing(xs) spacing(xxs, 3) spacing(xs) spacing(n);
+            padding: spacing(xs, -2) spacing(xxs, 3) spacing(xs) spacing(n);
             height: 72px;
         }
     

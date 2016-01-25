@@ -1,4 +1,19 @@
-﻿.list-items {
+.list-unordered,
+.list-ordered {
+    li {
+        margin: spacing(xxs, 4) 0;
+    }
+}﻿
+
+.list-unordered {
+    padding-left: spacing(xs, -4);
+}
+
+.list-ordered {
+    padding-left: spacing(xs);
+}
+
+.list-items {
     @include list-unstyled();
     margin: 1em 0;
 
