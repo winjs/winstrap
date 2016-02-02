@@ -1,6 +1,6 @@
 {
     "name": "Winstrap",
-    "version": "0.5.7",
+    "version": "0.5.8",
     "main": [
         "src/scss/winstrap.scss"
     ],

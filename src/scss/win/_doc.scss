@@ -73,6 +73,10 @@ code {
 
 .guidance {
     border-left: 5px solid;
+    
+    ul {
+        padding-left: spacing(md, -8);
+    }
 
     &.guidance-example:before {
         position: absolute;
