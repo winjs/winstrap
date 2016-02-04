@@ -16,16 +16,6 @@
     padding-bottom: 29px;
 }
 
-pre {
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    border: none;
-    border-left: 8px solid $pre-border-color;
-    margin: spacing(xxs) 0 0;
-    @include type(t8);
-}
-
 code {
     .tag {
         color: #008080;
@@ -69,10 +59,6 @@ code {
     text-decoration: none;
 }
 
-#tiles > .row > .col-md-3 {
-    margin-right: 8px;
-}
-
 .example-dark-image-bg {
     background-image: url('../images/example_dark.jpg');
     background-position: top left;
@@ -87,6 +73,10 @@ code {
 
 .guidance {
     border-left: 5px solid;
+    
+    ul {
+        padding-left: spacing(md, -8);
+    }
 
     &.guidance-example:before {
         position: absolute;

@@ -33,37 +33,37 @@
 // Overridden components
 @import "override/grid";
 @import "override/scaffolding";
-@import "override/labels";
-@import "override/navs";
-@import "override/breadcrumb";
 @import "override/alerts";
-@import "override/navbar";
-@import "override/modal";
+@import "override/breadcrumb";
 @import "override/buttons";
 @import "override/dropdown";
-@import "override/tooltip";
+@import "override/forms";
+@import "override/jumbotron";
+@import "override/labels";
+@import "override/modal";
+@import "override/navbar";
+@import "override/navs";
+@import "override/pagination";
+@import "override/panels";
 @import "override/popover";
 @import "override/progress-bar";
-@import "override/panels";
-@import "override/forms";
-@import "override/pagination";
 @import "override/tables";
-@import "override/jumbotron";
+@import "override/tooltip";
 
 // New components
 @import "win/scaffolding";
-@import "win/buttons";
-@import "win/rating";
-@import "win/media";
-@import "win/section";
-@import "win/lists";
-@import "win/back-to-top";
-@import "win/progress-ring";
-@import "win/progress-bar";
-@import "win/panels";
 @import "win/alerts";
+@import "win/back-to-top";
+@import "win/buttons";
+@import "win/lists";
+@import "win/media";
 @import "win/pager";
 @import "win/pagination";
+@import "win/panels";
+@import "win/progress-bar";
+@import "win/progress-ring";
+@import "win/rating";
+@import "win/section";
 @import "win/side-navigation";
 
 // Layout

@@ -84,9 +84,9 @@ $navbar-transition-out: .5s;
             padding: spacing(xxs, 1) spacing(xxxs, 2);
             height: auto;
             line-height: 1.5;
-            @include transition(background-color, ease-out, $navbar-transition-out);
+            @include transition(background-color ease-out $navbar-transition-out);
             &:hover {
-                @include transition(background-color, $navbar-transition-in);
+                @include transition(background-color $navbar-transition-in);
             }
         }
 
@@ -101,9 +101,9 @@ $navbar-transition-out: .5s;
 
         > li > a {
             padding: spacing(xxs, .5) spacing(xs);
-            @include transition(background-color, ease-out, $navbar-transition-out);
+            @include transition(background-color ease-out $navbar-transition-out);
             &:hover {
-                @include transition(background-color, $navbar-transition-in);
+                @include transition(background-color $navbar-transition-in);
             }
         }
 
@@ -213,7 +213,7 @@ $navbar-transition-out: .5s;
     
     @media (min-width: $grid-float-breakpoint) {
         .navbar-brand {
-            padding: spacing(xs) spacing(xxs, 3) spacing(xs) spacing(n);
+            padding: spacing(xs, -2) spacing(xxs, 3) spacing(xs) spacing(n);
             height: 72px;
         }
     
@@ -274,6 +274,14 @@ $navbar-transition-out: .5s;
         }
 
         .navbar-nav {
+            > li {
+                border-top: 1px solid $color-dim-mid;
+                
+                @media (min-width: $grid-float-breakpoint) {
+                    border-top: none;
+                }
+            }
+            
             .active > a {
                 background-color: $color-bg-light-vivid-mid;
             }
@@ -285,14 +293,6 @@ $navbar-transition-out: .5s;
                         color: $color-type-primary;
                         background-color: $color-dim-low;
                     }
-                }
-            }
-        }
-
-        @media (max-width: $grid-float-breakpoint) {
-            .navbar-nav {
-                > li {
-                    border-top: 1px solid $color-dim-mid;
                 }
             }
         }

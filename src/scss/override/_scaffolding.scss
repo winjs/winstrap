@@ -91,3 +91,18 @@ hr {
         border-color: $color-vivid-high-alt;
     }
 }
+
+ul li,
+ol li,
+dl dd,
+dl dt {
+        margin: spacing(xxs) 0;
+}﻿
+
+ul {
+    padding-left: spacing(xs, -4);
+}
+
+ol {
+    padding-left: spacing(xs);
+}

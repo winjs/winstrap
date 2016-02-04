@@ -1,4 +1,6 @@
 ﻿.pagination > li {
+    margin: 0;
+    
     > a, > span {
         min-width: 34px;
         margin: spacing(xxs, -7);

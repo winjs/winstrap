@@ -9,6 +9,10 @@
       text-decoration: underline;
     }
   }
+  
+  li {
+      margin: 0;
+  }
 
   > li + li:before {
     content: '\005c';

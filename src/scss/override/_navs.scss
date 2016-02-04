@@ -10,6 +10,10 @@ $pivot-hover-color-alt:                                                         
 //
 .navbar {
     .nav {
+        li {
+            margin: 0;
+        }
+        
         // Open dropdowns
         .open > a {
             &,
@@ -35,6 +39,10 @@ $pivot-hover-color-alt:                                                         
 //
 .page-header .nav-pills {
     margin: spacing(xs) 0;
+    
+    li {
+        margin: 0;
+    }
 
     > li > a {
         margin: 0 spacing(xs) 0 0;
@@ -67,7 +75,7 @@ $pivot-hover-color-alt:                                                         
     margin-right: -($pivot-horizontal-padding); // Offsetting padding on the individual tabs
 
     > li {
-        margin-bottom: 0;
+        margin: 0;
 
         // Main tabs
         // Resetting most of the Bootstrap styles
