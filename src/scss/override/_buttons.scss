@@ -53,7 +53,6 @@
             }
             &:disabled,
             &.disabled {
-                color: $color-type-disabled;
                 background-color: $color-accent-neutral-low;
             }
         }

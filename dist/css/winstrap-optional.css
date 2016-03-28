@@ -6760,7 +6760,6 @@ ol {
       -webkit-box-shadow: none;
       box-shadow: none; }
     .btn.btn-primary:disabled, .btn.btn-primary.disabled, .btn.btn-primary.theme-default:disabled, .btn.btn-primary.theme-default.disabled {
-      color: rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 120, 215, 0.2); }
   .btn.btn-primary.theme-alt:hover, .jumbotron.theme-alt .btn.btn-primary:hover, .theme-alt.hero .btn.btn-primary:hover {
     background-color: #0086f1;
