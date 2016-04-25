@@ -73,9 +73,6 @@ a.navigation-btn {
                 word-wrap: break-word;
                 word-break: normal;
                 list-style-type: none;
-                .active {
-                    @extend .text-base;
-                }
             }
         }
         .close {

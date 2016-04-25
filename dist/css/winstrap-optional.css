@@ -6650,6 +6650,22 @@ ol {
     line-height: 1.33333;
     margin-bottom: 5px;
     margin-top: 1px; }
+    @media (max-width: 767px) {
+      .alert .alert-title {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .alert .alert-title {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .alert .alert-title {
+        line-height: 1.25; } }
+    @media (min-width: 2048px) {
+      .alert .alert-title {
+        line-height: 1.2; } }
   .alert p {
     font-size: 13px;
     font-weight: 400;
@@ -6658,6 +6674,22 @@ ol {
     line-height: 1.23077;
     margin: 0;
     padding: 4px 0 0; }
+    @media (max-width: 767px) {
+      .alert p {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .alert p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .alert p {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .alert p {
+        line-height: 1.33333; } }
   .alert .close {
     position: absolute;
     top: 0;
@@ -6693,7 +6725,24 @@ ol {
   font-size: 13px;
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  line-height: 1.23077; }
+  @media (max-width: 767px) {
+    .breadcrumb {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .breadcrumb {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .breadcrumb {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .breadcrumb {
+      line-height: 1.33333; } }
   .breadcrumb a {
     text-decoration: none; }
     .breadcrumb a:hover {
@@ -6737,6 +6786,7 @@ ol {
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.33333;
   min-width: 120px;
   line-height: 1;
   border-style: solid;
@@ -6744,6 +6794,22 @@ ol {
   text-decoration: none;
   padding: 9px 12px 10px;
   margin: 12px 8px 0 0; }
+  @media (max-width: 767px) {
+    .btn {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .btn {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .btn {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .btn {
+      line-height: 1.33333; } }
   .btn.theme-light, .btn.theme-dark {
     text-decoration: none; }
   .btn.btn-primary, .btn.btn-primary.theme-default {
@@ -6999,12 +7065,29 @@ ol {
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.33333;
   min-width: 120px;
   line-height: 1;
   font-weight: normal;
   border: none;
   border-radius: 0;
   padding: 9px 12px 10px; }
+  @media (max-width: 767px) {
+    .btn-link, .btn-lightweight {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .btn-link, .btn-lightweight {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .btn-link, .btn-lightweight {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .btn-link, .btn-lightweight {
+      line-height: 1.33333; } }
   .btn-link:hover, .btn-lightweight:hover {
     text-decoration: underline; }
   .btn-link:focus, .btn-lightweight:focus, .btn-link:active, .btn-lightweight:active, .btn-link.active, .active.btn-lightweight {
@@ -7271,11 +7354,28 @@ ol {
         font-weight: 400;
         font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
         letter-spacing: normal;
+        line-height: 1.33333;
         line-height: 44px;
         height: 44px;
         padding: 0px 0px 0px 12px;
         text-decoration: none;
         cursor: pointer; }
+        @media (max-width: 767px) {
+          .dropdown .dropdown-menu li a {
+            font-size: 15px;
+            font-weight: 400;
+            font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+        @media (min-width: 2048px) {
+          .dropdown .dropdown-menu li a {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+        @media (max-width: 767px) {
+          .dropdown .dropdown-menu li a {
+            line-height: 1.33333; } }
+        @media (min-width: 2048px) {
+          .dropdown .dropdown-menu li a {
+            line-height: 1.33333; } }
 
 .dropdown .btn-dropdown, .dropdown.theme-default .btn-dropdown, .dropdown.theme-on-img-light .btn-dropdown, .dropdown.theme-light .btn-dropdown {
   background-color: rgba(255, 255, 255, 0.8);
@@ -7532,7 +7632,24 @@ select {
   font-size: 15px;
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  line-height: 1.33333; }
+  @media (max-width: 767px) {
+    select {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    select {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    select {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    select {
+      line-height: 1.33333; } }
   select.form-control {
     width: 100%;
     min-width: 67px;
@@ -8268,7 +8385,28 @@ form .theme-light select {
     font-size: 62px;
     font-weight: 200;
     font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
-    letter-spacing: -0.01em; }
+    letter-spacing: -0.01em;
+    line-height: 1.16129; }
+    @media (max-width: 767px) {
+      .jumbotron h1, .hero h1,
+      .jumbotron .h1, .hero .h1 {
+        font-size: 46px;
+        font-weight: 200;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .jumbotron h1, .hero h1,
+      .jumbotron .h1, .hero .h1 {
+        font-size: 80px;
+        font-weight: 200;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .jumbotron h1, .hero h1,
+      .jumbotron .h1, .hero .h1 {
+        line-height: 1.21739; } }
+    @media (min-width: 2048px) {
+      .jumbotron h1, .hero h1,
+      .jumbotron .h1, .hero .h1 {
+        line-height: 1.1; } }
   .jumbotron p, .hero p {
     margin-bottom: initial;
     font-size: 15px;
@@ -8277,6 +8415,28 @@ form .theme-light select {
     letter-spacing: normal;
     line-height: 1.33333;
     padding: 24px 0 0; }
+    @media (max-width: 767px) {
+      .jumbotron p, .hero p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .jumbotron p, .hero p {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .jumbotron p, .hero p {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .jumbotron p, .hero p {
+        line-height: 1.33333; } }
+    @media (max-width: 767px) {
+      .jumbotron p, .hero p {
+        padding: 24px 0 0; } }
+    @media (min-width: 2048px) {
+      .jumbotron p, .hero p {
+        padding: 25px 0 3px; } }
   .container .jumbotron, .container .hero,
   .container-fluid .jumbotron,
   .container-fluid .hero {
@@ -8328,7 +8488,24 @@ form .theme-light select {
       font-size: 20px;
       font-weight: 300;
       font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif;
-      letter-spacing: normal; }
+      letter-spacing: normal;
+      line-height: 1.2; }
+      @media (max-width: 767px) {
+        .modal-content .modal-header .modal-title {
+          font-size: 18px;
+          font-weight: 300;
+          font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (min-width: 2048px) {
+        .modal-content .modal-header .modal-title {
+          font-size: 24px;
+          font-weight: 300;
+          font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (max-width: 767px) {
+        .modal-content .modal-header .modal-title {
+          line-height: 1.33333; } }
+      @media (min-width: 2048px) {
+        .modal-content .modal-header .modal-title {
+          line-height: 1.16667; } }
     .modal-content .modal-header .close {
       display: none; }
   .modal-content .modal-body {
@@ -8337,7 +8514,24 @@ form .theme-light select {
     font-size: 15px;
     font-weight: 400;
     font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-    letter-spacing: normal; }
+    letter-spacing: normal;
+    line-height: 1.33333; }
+    @media (max-width: 767px) {
+      .modal-content .modal-body {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .modal-content .modal-body {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .modal-content .modal-body {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .modal-content .modal-body {
+        line-height: 1.33333; } }
   .modal-content .modal-footer {
     padding: 0;
     margin: 28px 0 0; }
@@ -8573,10 +8767,8 @@ form .theme-light select {
         background: rgba(255, 255, 255, 0.8); }
   .navbar-global .navbar-brand, .navbar-global .navbar-local .navbar-toggle, .navbar-local .navbar-global .navbar-toggle, .navbar-global.theme-default .navbar-brand, .navbar-global.theme-default .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-default .navbar-toggle, .navbar-global.theme-light .navbar-brand, .navbar-global.theme-light .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-light .navbar-toggle,
   .navbar-local .navbar-brand, .navbar-local .navbar-toggle,
-  .navbar-local.theme-default .navbar-brand,
-  .navbar-local.theme-default .navbar-toggle,
-  .navbar-local.theme-light .navbar-brand,
-  .navbar-local.theme-light .navbar-toggle {
+  .navbar-local.theme-default .navbar-brand, .navbar-local.theme-default .navbar-toggle,
+  .navbar-local.theme-light .navbar-brand, .navbar-local.theme-light .navbar-toggle {
     color: #000000; }
   .navbar-global .navbar-nav > li, .navbar-global.theme-default .navbar-nav > li, .navbar-global.theme-light .navbar-nav > li,
   .navbar-local .navbar-nav > li,
@@ -8620,8 +8812,7 @@ form .theme-light select {
   border-color: rgba(255, 255, 255, 0.1); }
 
 .navbar-global.theme-dark .navbar-brand, .navbar-global.theme-dark .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-dark .navbar-toggle,
-.navbar-local.theme-dark .navbar-brand,
-.navbar-local.theme-dark .navbar-toggle {
+.navbar-local.theme-dark .navbar-brand, .navbar-local.theme-dark .navbar-toggle {
   color: #FFFFFF; }
 
 .navbar-global.theme-dark .navbar-nav .active > a,
@@ -8674,8 +8865,7 @@ form .theme-light select {
   border-color: rgba(255, 255, 255, 0.1); }
 
 .navbar-global.theme-alt .navbar-brand, .navbar-global.theme-alt .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-alt .navbar-toggle,
-.navbar-local.theme-alt .navbar-brand,
-.navbar-local.theme-alt .navbar-toggle {
+.navbar-local.theme-alt .navbar-brand, .navbar-local.theme-alt .navbar-toggle {
   color: #FFFFFF; }
 
 .navbar-global.theme-alt .navbar-nav > li > a,
@@ -8747,11 +8937,28 @@ form .theme-light select {
       font-weight: 300;
       font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif;
       letter-spacing: normal;
+      line-height: 1.16667;
       border: 0;
       border-radius: 0;
       margin: 0;
       padding-left: 12px;
       padding-right: 12px; }
+      @media (max-width: 767px) {
+        .nav-tabs > li > a {
+          font-size: 20px;
+          font-weight: 300;
+          font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (min-width: 2048px) {
+        .nav-tabs > li > a {
+          font-size: 34px;
+          font-weight: 200;
+          font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (max-width: 767px) {
+        .nav-tabs > li > a {
+          line-height: 1.2; } }
+      @media (min-width: 2048px) {
+        .nav-tabs > li > a {
+          line-height: 1.17647; } }
       .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
         border: 0;
         background: transparent; }
@@ -8811,6 +9018,22 @@ form .theme-light select {
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
   line-height: 1.33333; }
+  @media (max-width: 767px) {
+    .popover {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .popover {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .popover {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .popover {
+      line-height: 1.33333; } }
   .popover.top {
     margin-top: -8px; }
   .popover.right {
@@ -8864,16 +9087,50 @@ form .theme-light select {
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.33333;
   color: rgba(0, 0, 0, 0.6); }
+  @media (max-width: 767px) {
+    .table tr th {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .table tr th {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .table tr th {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .table tr th {
+      line-height: 1.33333; } }
 
 .table thead tr th {
   font-size: 11px;
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.45455;
   color: rgba(0, 0, 0, 0.6);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 13px; }
+  @media (max-width: 767px) {
+    .table thead tr th {
+      font-size: 10px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .table thead tr th {
+      font-size: 13px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .table thead tr th {
+      line-height: 1.2; } }
+  @media (min-width: 2048px) {
+    .table thead tr th {
+      line-height: 1.23077; } }
 
 .table.table-striped > tbody tr td, .table.table-striped > tbody tr th {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -8902,7 +9159,24 @@ form .theme-light select {
   font-size: 13px;
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  line-height: 1.23077; }
+  @media (max-width: 767px) {
+    .tooltip {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .tooltip {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .tooltip {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .tooltip {
+      line-height: 1.33333; } }
   .tooltip .tooltip-inner {
     min-width: 104px;
     padding: 7px 8px 8px;
@@ -8937,7 +9211,24 @@ pre {
   font-size: 13px;
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  line-height: 1.23077; }
+  @media (max-width: 767px) {
+    pre {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    pre {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    pre {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    pre {
+      line-height: 1.33333; } }
 
 blockquote {
   padding: 4px 0 4px 21px;
@@ -8981,8 +9272,25 @@ blockquote {
       font-weight: 400;
       font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
       letter-spacing: normal;
+      line-height: 1.23077;
       margin-bottom: 0;
       padding-top: 4px; }
+      @media (max-width: 767px) {
+        .alert-stack .alert p {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (min-width: 2048px) {
+        .alert-stack .alert p {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (max-width: 767px) {
+        .alert-stack .alert p {
+          line-height: 1.33333; } }
+      @media (min-width: 2048px) {
+        .alert-stack .alert p {
+          line-height: 1.33333; } }
 
 .back-to-top {
   visibility: hidden;
@@ -9053,7 +9361,24 @@ a.link-on-dark {
     font-size: 15px;
     font-weight: 400;
     font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-    letter-spacing: normal; }
+    letter-spacing: normal;
+    line-height: 1.33333; }
+    @media (max-width: 767px) {
+      .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
+        line-height: 1.33333; } }
   .btn[data-toggle="button"].btn-toggle-switch .stateLabel-on {
     display: none; }
   .btn[data-toggle="button"].btn-toggle-switch::before {
@@ -9228,7 +9553,24 @@ a.link-on-dark {
     font-weight: 300;
     font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif;
     letter-spacing: normal;
+    line-height: 1.16667;
     margin-bottom: 4px; }
+    @media (max-width: 767px) {
+      .list-quick-links li {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .list-quick-links li {
+        font-size: 34px;
+        font-weight: 200;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .list-quick-links li {
+        line-height: 1.2; } }
+    @media (min-width: 2048px) {
+      .list-quick-links li {
+        line-height: 1.17647; } }
   .list-quick-links a {
     display: block;
     padding: .5em .25em;
@@ -9328,10 +9670,27 @@ a.link-on-dark {
     font-weight: 400;
     font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
     letter-spacing: normal;
+    line-height: 1.33333;
     font-family: "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", Tahoma, Verdana, Arial, sans-serif;
     font-weight: 500;
     margin: .5em 0 .25em;
     color: inherit; }
+    @media (max-width: 767px) {
+      .media .media-header {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .media .media-header {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .media .media-header {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .media .media-header {
+        line-height: 1.33333; } }
     .media .media-header a {
       color: #000000; }
   .media [class*="media-header-clamp-"] {
@@ -9355,7 +9714,24 @@ a.link-on-dark {
     font-weight: 400;
     font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
     letter-spacing: normal;
+    line-height: 1.45455;
     color: #000000; }
+    @media (max-width: 767px) {
+      .media .media-subheader {
+        font-size: 10px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .media .media-subheader {
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .media .media-subheader {
+        line-height: 1.2; } }
+    @media (min-width: 2048px) {
+      .media .media-subheader {
+        line-height: 1.23077; } }
     .media .media-subheader a {
       color: inherit; }
   .media .media-caption {
@@ -9408,7 +9784,24 @@ a.link-on-dark {
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.45455;
   color: rgba(0, 0, 0, 0.6); }
+  @media (max-width: 767px) {
+    .media-info {
+      font-size: 10px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .media-info {
+      font-size: 13px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .media-info {
+      line-height: 1.2; } }
+  @media (min-width: 2048px) {
+    .media-info {
+      line-height: 1.23077; } }
 
 .pager .pager-prev > a:after, .pager .pager-prev > span:after {
   content: attr(aria-label); }
@@ -9826,9 +10219,26 @@ a.link-on-dark {
   font-weight: 300;
   font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.16667;
   line-height: 44px;
   margin-bottom: 1px;
   vertical-align: bottom; }
+  @media (max-width: 767px) {
+    .rating .rating-label {
+      font-size: 20px;
+      font-weight: 300;
+      font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .rating .rating-label {
+      font-size: 34px;
+      font-weight: 200;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .rating .rating-label {
+      line-height: 1.2; } }
+  @media (min-width: 2048px) {
+    .rating .rating-label {
+      line-height: 1.17647; } }
   .rating .rating-label.rating-label-left {
     display: inline-block;
     margin-right: 16px; }
@@ -9874,7 +10284,24 @@ a.link-on-dark {
   font-weight: 400;
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.23077;
   line-height: 16px; }
+  @media (max-width: 767px) {
+    .rating.rating-small .rating-label {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .rating.rating-small .rating-label {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .rating.rating-small .rating-label {
+      line-height: 1.33333; } }
+  @media (min-width: 2048px) {
+    .rating.rating-small .rating-label {
+      line-height: 1.33333; } }
   .rating.rating-small .rating-label.rating-label-left {
     margin-right: 5px; }
   .rating.rating-small .rating-label.rating-label-right {
@@ -9929,8 +10356,25 @@ a.link-on-dark {
     font-weight: 200;
     font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
     letter-spacing: -0.01em;
+    line-height: 1.21739;
     margin-bottom: 0;
     color: inherit; }
+    @media (max-width: 767px) {
+      .section-header .section-title {
+        font-size: 34px;
+        font-weight: 200;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .section-header .section-title {
+        font-size: 58px;
+        font-weight: 200;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .section-header .section-title {
+        line-height: 1.17647; } }
+    @media (min-width: 2048px) {
+      .section-header .section-title {
+        line-height: 1.24138; } }
     .section-header .section-title a {
       color: inherit; }
       .section-header .section-title a:hover, .section-header .section-title a:focus {
@@ -10041,7 +10485,24 @@ a.navigation-btn {
     font-size: 15px;
     font-weight: 400;
     font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-    letter-spacing: normal; }
+    letter-spacing: normal;
+    line-height: 1.33333; }
+    @media (max-width: 767px) {
+      .side-navigation.side-navigation-small.nav .side-nav-c2 {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (min-width: 2048px) {
+      .side-navigation.side-navigation-small.nav .side-nav-c2 {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+    @media (max-width: 767px) {
+      .side-navigation.side-navigation-small.nav .side-nav-c2 {
+        line-height: 1.33333; } }
+    @media (min-width: 2048px) {
+      .side-navigation.side-navigation-small.nav .side-nav-c2 {
+        line-height: 1.33333; } }
     .side-navigation.side-navigation-small.nav .side-nav-c2 a {
       padding-left: 0px; }
     .side-navigation.side-navigation-small.nav .side-nav-c2.with-icon a {
@@ -10066,7 +10527,24 @@ a.navigation-btn {
       font-size: 13px;
       font-weight: 400;
       font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
-      letter-spacing: normal; }
+      letter-spacing: normal;
+      line-height: 1.23077; }
+      @media (max-width: 767px) {
+        .side-navigation.side-navigation-small.nav .nav li a {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (min-width: 2048px) {
+        .side-navigation.side-navigation-small.nav .nav li a {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; } }
+      @media (max-width: 767px) {
+        .side-navigation.side-navigation-small.nav .nav li a {
+          line-height: 1.33333; } }
+      @media (min-width: 2048px) {
+        .side-navigation.side-navigation-small.nav .nav li a {
+          line-height: 1.33333; } }
   .side-navigation.side-navigation-small.nav .panel {
     margin: initial;
     background: transparent;
@@ -10089,7 +10567,24 @@ a.navigation-btn {
   font-weight: 300;
   font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif;
   letter-spacing: normal;
+  line-height: 1.16667;
   font-weight: 400; }
+  @media (max-width: 767px) {
+    .side-navigation .navigation-label {
+      font-size: 20px;
+      font-weight: 300;
+      font-family: "Segoe UI Semilight", "Segoe UI", "Selawik Semilight", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (min-width: 2048px) {
+    .side-navigation .navigation-label {
+      font-size: 34px;
+      font-weight: 200;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif; } }
+  @media (max-width: 767px) {
+    .side-navigation .navigation-label {
+      line-height: 1.2; } }
+  @media (min-width: 2048px) {
+    .side-navigation .navigation-label {
+      line-height: 1.17647; } }
   @media (min-width: 768px) {
     .side-navigation .navigation-label {
       margin-top: 48px;
