@@ -7,21 +7,21 @@
 
     <div class="row">
         <div class="col-xs-24">
-            <p>There are 254 free and open source glyphs included in Winstrap. Here are the available glyphs with their respective names. To display a glyph, add the <code>glyph</code> base class and the individual <code>glyph-*</code> class.</p>
+            <p>There are 954 free and open source Micon included in Winstrap. Here are the available Micon with their respective names. You can place Micon icons just about anywhere using the CSS Prefix mi and the icon's name. Micon is designed to be used with inline elements.</p>
 
             {{#markdown}}
 ```xml
-<span class="glyph glyph-[glyph-name]" aria-hidden="true"></span>
+<span class="mi mi-[glyph-name]"></span>
 ```
             {{/markdown}}
 
-            <p>Glyphs can also be displayed using the <code>glyph</code> Sass mixin:</p>
+            <p>Micon can also be displayed using the <code>glyph</code> Sass mixin:</p>
 
             {{#markdown}}
 ```scss
 .selector {
     &::before {
-        @include glyph( [glyph-name] );
+        @include mi( [glyph-name] );
     }
 }
 ```
@@ -32,20 +32,146 @@
             {{#markdown}}
 ```scss
 .selector {
-    font-family: "winjs-symbols";
+    font-family: "Micon";
 
     &::before {
-        content: glyph( [glyph-name] );
+        content: mi( [glyph-name] );
     }
 }
 ```
             {{/markdown}}
+			<hr>
+			<h3>Examples</h3>
+			<h4>Larger</h4>
+			<p>To increase icon sizes relative to their container, use the <code>mi-lg</code> (33% increase), <code>mi-2</code>x, <code>mi-3x</code>, <code>mi-4x</code>, or <code>mi-5x</code> classes. If your icons are getting chopped off on top and bottom, make sure you have sufficient line-height.</p>
+			<p><i class="mi mi-Settings mi-lg"></i> mi-lg :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-lg"></i>
+```
+            {{/markdown}}
+			<p><i class="mi mi-Settings mi-2x"></i> mi-2x :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-2x"></i>
+```
+            {{/markdown}}
+			<p><i class="mi mi-Settings mi-3x"></i> mi-3x :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-3x"></i>
+```
+            {{/markdown}}
+			<p><i class="mi mi-Settings mi-4x"></i> mi-4x :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-4x"></i>
+```
+            {{/markdown}}
+			<p><i class="mi mi-Settings mi-5x"></i> mi-5x :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-5x"></i>
+```
+            {{/markdown}}
+			<h4>Fixed Width Icons</h4>
+			<p>Use <code>mi-fw</code> to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists & list groups.</p>
+			<p><i class="mi mi-Settings mi-fw"></i> mi-fw :</p>
+            {{#markdown}}
+```xml
+<i class="mi mi-Settings mi-fw"></i>
+```
+            {{/markdown}}
+			<h4>List Icons</h4>
+			<p>Use <code>mi-ul</code> and <code>mi-li</code> to easily replace default bullets in unordered lists.</p>
+			<p><ul class="mi-ul">
+	<li><i class="mi-li mi mi-Settings"></i>List icons</li>
+	<li><i class="mi-li mi mi-Send"></i>can be used</li>
+	<li><i class="mi-li mi mi-Rotate mi-spin"></i>as bullets</li>
+	<li><i class="mi-li mi mi-MyNetwork"></i>in lists</li>
+</ul></p>
+            {{#markdown}}
+```xml
+	<ul class="mi-ul">
+	<li><i class="mi-li mi mi-Settings"></i>List icons</li>
+	<li><i class="mi-li mi mi-Send"></i>can be used</li>
+	<li><i class="mi-li mi mi-Rotate mi-spin"></i>as bullets</li>
+	<li><i class="mi-li mi mi-MyNetwork"></i>in lists</li>
+</ul>
+```
+            {{/markdown}}
+			<h4>Animated Icons</h4>
+			<p>Use the <code>mi-spin</code> class to get any icon to rotate, and use <code>mi-pulse</code> to have it rotate with 8 steps. Works well with <code>mi-Settings</code>, <code>mi-refresh</code>, and more. CSS3 animations aren't supported in IE8 - IE9. Some browsers on some platforms have issues with animated icons resulting in a jittery wobbling effect.</p>
+			<p><i class="mi mi-Settings mi-spin"></i>
+<i class="mi mi-Globe mi-pulse"></i>
+<i class="mi mi-Refresh mi-spin"></i></p>
+            {{#markdown}}
+```xml
+    <i class="mi mi-Settings mi-spin"></i>
+<i class="mi mi-Globe mi-pulse"></i>
+<i class="mi mi-Refresh mi-spin"></i>
+```
+            {{/markdown}}
+			<h4>Rotated & Flipped</h4>
+			<p>To arbitrarily rotate and flip icons, use the <code>mi-rotate-*</code> and <code>mi-flip-*</code> classes.</p>
+			<p><i class="mi mi-SDCard"></i> normal<br>
+<i class="mi mi-SDCard mi-rotate-90"></i> mi-rotate-90<br>
+<i class="mi mi-SDCard mi-rotate-180"></i> mi-rotate-180<br>
+<i class="mi mi-SDCard mi-rotate-270"></i> mi-rotate-270<br>
+<i class="mi mi-SDCard mi-flip-horizontal"></i> mi-flip-horizontal<br>
+<i class="mi mi-SDCard mi-flip-vertical"></i> icon-flip-vertical</p>
+            {{#markdown}}
+```xml
+    <i class="mi mi-SDCard"></i> normal
+<i class="mi mi-SDCard mi-rotate-90"></i> mi-rotate-90
+<i class="mi mi-SDCard mi-rotate-180"></i> mi-rotate-180
+<i class="mi mi-SDCard mi-rotate-270"></i> mi-rotate-270
+<i class="mi mi-SDCard mi-flip-horizontal"></i> mi-flip-horizontal
+<i class="mi mi-SDCard mi-flip-vertical"></i> icon-flip-vertical
+```
+            {{/markdown}}
+			<h4>Stacked Icons</h4>
+			<p>To stack multiple icons, use the <code>mi-stack</code> class on the parent, the <code>mi-stack-1x</code> for the regularly sized icon, and <code>mi-stack-2x</code> for the larger icon. <code>mi-inverse</code> can be used as an alternative icon color. You can even throw larger icon classes on the parent to get further control of sizing. </p>
+			<p><span class="mi-stack mi-lg">
+	<i class="mi mi-BodyCam mi-stack-1x"></i>
+	<i class="mi mi-BlockedLegacy mi-stack-2x text-danger"></i>
+</span> mi-BlockedLegacy on mi-BodyCam : </p>
+            {{#markdown}}
+```xml
+    <span class="mi-stack mi-lg">
+	<i class="mi mi-BodyCam mi-stack-1x"></i>
+	<i class="mi mi-BlockedLegacy mi-stack-2x text-danger"></i>
+</span>
+```
+            {{/markdown}}
+		<p>OR</p>
+		<p><span class="mi-stack mi-lg">
+	<i class="mi mi-HeartFill mi-stack-1x  text-danger"></i>
+	<i class="mi mi-Heart mi-stack-1x"></i>
+</span> mi-Heart on mi-HeartFill : </p>
+            {{#markdown}}
+```xml
+    <span class="mi-stack mi-lg">
+	<i class="mi mi-HeartFill mi-stack-1x  text-danger"></i>
+	<i class="mi mi-Heart mi-stack-1x"></i>
+</span>
+```
+            {{/markdown}}
         </div>
-
-        {{#each glyphs.names}}
-        <div class="col-xs-6">
-            <p><span class="glyph glyph-{{name}}"></span></p>
+		<div class="col-xs-24"><hr></div>
+        <h3 class="section-title col-xs-24">Original list</h3>
+        {{#each glyphs.orginal}}
+        <div class="col-xs-6 v-fix-height">
+            <p><span class="mi mi-{{name}}"></span></p>
             <p><code>{{name}}</code></p>
+        </div>
+        {{/each}}
+		<div class="col-xs-24"><hr></div>
+        <h3 class="section-title col-xs-24">Alias list</h3>
+        {{#each glyphs.alias}}
+        <div class="col-xs-6 v-fix-height">
+            <p><span class="mi mi-{{name}}"></span></p>
+            <p><code class="{{alias_class}}">{{name}}{{alias}}</code></p>
         </div>
         {{/each}}
 
