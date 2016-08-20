@@ -22,7 +22,7 @@
             margin-left: spacing(xxxs);
 
             &::before {
-                @include glyph(chevron-down-2);
+                @include glyph(ChevronDown);
                 vertical-align: bottom;
             }
         }

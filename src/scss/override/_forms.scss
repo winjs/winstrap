@@ -107,7 +107,7 @@ textarea.form-control {
 
     & label {
         input:checked ~ span::before {
-            @include glyph(checkmark);
+            @include glyph(CheckMark);
             text-indent: 2px;
             line-height: 1em;
             padding-top: 2px;
@@ -147,7 +147,7 @@ textarea.form-control {
     position: relative;
 
     &:after {
-        @include glyph(chevron-down);
+        @include glyph(ChevronDown);
         position: absolute;
         font-size: 1rem;
         top: 13px;

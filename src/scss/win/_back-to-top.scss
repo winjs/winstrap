@@ -22,7 +22,7 @@ $backtotop-button-size:  48px;
         @include translate(0, 0);
     }
 
-    [class*="glyph-"] {
+    [class*="mi-"] {
         font-size: ($backtotop-button-size / 2);
     }
 

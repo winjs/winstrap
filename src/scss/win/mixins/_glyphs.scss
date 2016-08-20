@@ -6,7 +6,7 @@
 // Mixin to display a glyph
 @mixin glyph($name) {
     & {
-        font-family: "winjs-symbols";
+        font-family: "micon";
         content: glyph($name);
     }
 }
