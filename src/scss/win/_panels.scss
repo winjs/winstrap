@@ -66,8 +66,8 @@
     }
 
     .panel-footer {
-        .glyph-flag,
-        .glyph-completed {
+        .mi-Flag,
+        .mi-Completed {
             font-size: 1.2em;
         }
     }
@@ -84,7 +84,7 @@
                 }
             }
 
-            .glyph-completed {
+            .mi-Completed {
                 color: $color-type-primary;
             }
         }

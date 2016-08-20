@@ -10,12 +10,12 @@ $navbar-transition-out: .5s;
 .navbar, .navbar-form {
     border: none;
 
-    .glyph-chevron-down-2 {
+    .mi-ChevronDown {
         font-size: 6px;
         margin: 0 0 0 spacing(xxxs, -3);
     }
 
-    .glyph-hamburger {
+    .mi-GlobalNavButton {
         font-size: 20px;
     }
 
@@ -148,7 +148,7 @@ $navbar-transition-out: .5s;
         padding: spacing(n);
 
         &::before {
-            @include glyph(magnifier);
+            @include glyph(Search);
             padding: spacing(xxxs, 1) spacing(xxxs, 1) spacing(xxxs, 2);
             font-size: 15px;
             line-height: 1;
@@ -252,7 +252,7 @@ $navbar-transition-out: .5s;
             background-color: transparent;
         }
 
-        .glyph-hamburger {
+        .mi-GlobalNavButton {
             color: $color-vivid-low;
         }
 
@@ -303,7 +303,7 @@ $navbar-transition-out: .5s;
     // Please note, our default $color-accent is designed to pass contrast ratio rules for accessibility
     // It is not recommended to use ligher colors for $color-accent as a result
     &.theme-dark {
-        .glyph-hamburger {
+        .mi-GlobalNavButton {
             color: $color-type-primary-alt;
         }
 
@@ -363,7 +363,7 @@ $navbar-transition-out: .5s;
     }
 
     &.theme-alt {
-        .glyph-hamburger {
+        .mi-GlobalNavButton {
             color: $color-type-primary-alt;
         }
 

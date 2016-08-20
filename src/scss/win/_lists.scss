@@ -31,17 +31,17 @@
         }
     }
 
-    .glyph-add,
-    .glyph-remove {
+    .mi-Add,
+    .mi-Remove {
         font-size: .75em;
         height: 1.25em;
     }
 
-    [aria-expanded="false"] .glyph-remove {
+    [aria-expanded="false"] .mi-Remove {
         display: none;
     }
 
-    [aria-expanded="true"] .glyph-add {
+    [aria-expanded="true"] .mi-Add {
         display: none;
     }
 

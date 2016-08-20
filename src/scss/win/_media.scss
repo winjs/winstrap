@@ -64,7 +64,7 @@
 
         &.media-img-has-play {
             a {
-                i[class*="glyph-"] {
+                i[class*="mi-"] {
                     z-index: 1;
                 }
 
@@ -93,7 +93,7 @@
             }
         }
 
-        i[class*="glyph-"] {
+        i[class*="mi-"] {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -198,7 +198,7 @@
             vertical-align: top;
         }
 
-        i[class*="glyph-"] {
+        i[class*="mi-"] {
             top: 36%;
         }
     }

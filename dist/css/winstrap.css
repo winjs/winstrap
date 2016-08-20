@@ -5926,784 +5926,3966 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.glyph {
+.mi {
   display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  overflow: hidden; }
-  .glyph:before {
-    display: block;
-    width: 1em;
-    height: 1em;
-    font-family: "winjs-symbols";
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+  font: normal normal normal 14px/1 micon;
+  font-size: inherit;
+  font-variant: normal;
+  text-rendering: auto;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle; }
+
+.mi-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%; }
+
+.mi-2x {
+  font-size: 2em; }
+
+.mi-3x {
+  font-size: 3em; }
+
+.mi-4x {
+  font-size: 4em; }
+
+.mi-5x {
+  font-size: 5em; }
+
+.mi-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+.mi-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none; }
+
+.mi-ul > li {
+  position: relative; }
+
+.mi-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: .14285714em;
+  text-align: center; }
+
+.mi-li.mi-lg {
+  left: -1.85714286em; }
+
+.mi-border {
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
+  border-radius: .1em; }
+
+.mi-pull-left {
+  float: left; }
+
+.mi-pull-right {
+  float: right; }
+
+.mi.mi-pull-left {
+  margin-right: .3em; }
+
+.mi.mi-pull-right {
+  margin-left: .3em; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.mi.pull-left {
+  margin-right: .3em; }
+
+.mi.pull-right {
+  margin-left: .3em; }
+
+.mi-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+.mi-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
 
-.glyph-chevron-up::before {
-  content: ""; }
+.mi-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
-.glyph-chevron-down::before {
-  content: ""; }
+.mi-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
-.glyph-checkmark::before {
-  content: ""; }
+.mi-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
 
-.glyph-star::before {
-  content: ""; }
+.mi-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
 
-.glyph-magnifier::before {
-  content: ""; }
+.mi-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
 
-.glyph-semantic-zoom::before {
-  content: ""; }
+:root .mi-rotate-90, :root .mi-rotate-180, :root .mi-rotate-270, :root .mi-flip-horizontal, :root .mi-flip-vertical {
+  filter: none; }
 
-.glyph-arrow-left::before {
-  content: ""; }
+.mi-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
 
-.glyph-arrow-right::before {
-  content: ""; }
+.mi-stack-1x, .mi-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
 
-.glyph-chevron-left::before {
-  content: ""; }
+.mi-stack-1x {
+  line-height: inherit; }
 
-.glyph-chevron-right::before {
-  content: ""; }
+.mi-stack-2x {
+  font-size: 2em; }
 
-.glyph-chevron-up-2::before {
-  content: ""; }
+.mi-inverse {
+  color: #fff; }
 
-.glyph-chevron-down-2::before {
-  content: ""; }
+.mi-CheckMarkLegacy::before {
+  content: ""; }
 
-.glyph-checkmark-2::before {
-  content: ""; }
+.mi-CheckboxFillLegacy::before {
+  content: ""; }
 
-.glyph-star-outline::before {
-  content: ""; }
+.mi-CheckboxLegacy::before {
+  content: ""; }
 
-.glyph-chevron-right-2::before {
-  content: ""; }
+.mi-CheckboxIndeterminateLegacy::before {
+  content: ""; }
 
-.glyph-chevron-left-2::before {
-  content: ""; }
+.mi-CheckboxCompositeReversedLegacy::before {
+  content: ""; }
 
-.glyph-previous::before {
-  content: ""; }
+.mi-HeartLegacy::before {
+  content: ""; }
 
-.glyph-next::before {
-  content: ""; }
+.mi-HeartBrokenLegacy::before {
+  content: ""; }
 
-.glyph-play::before {
-  content: ""; }
+.mi-RatingStarFillZeroWidthLegacy::before {
+  content: ""; }
 
-.glyph-pause::before {
-  content: ""; }
+.mi-HeartFillZeroWidthLegacy::before {
+  content: ""; }
 
-.glyph-edit::before {
-  content: ""; }
+.mi-ScrollChevronLeftLegacy::before {
+  content: ""; }
 
-.glyph-edit-mirrored::before {
-  content: ""; }
+.mi-ScrollChevronRightLegacy::before {
+  content: ""; }
 
-.glyph-save::before {
-  content: ""; }
+.mi-ScrollChevronUpLegacy::before {
+  content: ""; }
 
-.glyph-clear::before {
-  content: ""; }
+.mi-ScrollChevronDownLegacy::before {
+  content: ""; }
 
-.glyph-delete::before {
-  content: ""; }
+.mi-RevealPasswordLegacy::before {
+  content: ""; }
 
-.glyph-remove::before {
-  content: ""; }
+.mi-EaseOfAccessLegacy::before {
+  content: ""; }
 
-.glyph-add::before {
-  content: ""; }
+.mi-CheckmarkListviewLegacy::before {
+  content: ""; }
 
-.glyph-cancel::before {
-  content: ""; }
+.mi-KeyboardStandardLegacy::before {
+  content: ""; }
 
-.glyph-accept::before {
-  content: ""; }
+.mi-KeyboardSplitLegacy::before {
+  content: ""; }
 
-.glyph-more::before {
-  content: ""; }
+.mi-SearchboxLegacy::before {
+  content: ""; }
 
-.glyph-redo::before {
-  content: ""; }
+.mi-CheckboxCompositeLegacy::before {
+  content: ""; }
 
-.glyph-undo::before {
-  content: ""; }
+.mi-BackBttnArrow42Legacy::before {
+  content: ""; }
 
-.glyph-home::before {
-  content: ""; }
+.mi-BackBttnMirroredArrow42Legacy::before {
+  content: ""; }
 
-.glyph-up::before {
-  content: ""; }
+.mi-SemanticZoomLegacy::before {
+  content: ""; }
 
-.glyph-forward::before {
-  content: ""; }
+.mi-PreviousLegacy::before {
+  content: ""; }
 
-.glyph-back::before {
-  content: ""; }
+.mi-NextLegacy::before {
+  content: ""; }
 
-.glyph-favorite::before {
-  content: ""; }
+.mi-PlayLegacy::before {
+  content: ""; }
 
-.glyph-camera::before {
-  content: ""; }
+.mi-PauseLegacy::before {
+  content: ""; }
 
-.glyph-settings::before {
-  content: ""; }
+.mi-EditLegacy::before {
+  content: ""; }
 
-.glyph-video::before {
-  content: ""; }
+.mi-SaveLegacy::before {
+  content: ""; }
 
-.glyph-sync::before {
-  content: ""; }
+.mi-ClearLegacy::before {
+  content: ""; }
 
-.glyph-download::before {
-  content: ""; }
+.mi-DeleteLegacy::before {
+  content: ""; }
 
-.glyph-mail::before {
-  content: ""; }
+.mi-RemoveLegacy::before {
+  content: ""; }
 
-.glyph-magnifier-2::before {
-  content: ""; }
+.mi-AddLegacy::before {
+  content: ""; }
 
-.glyph-help::before {
-  content: ""; }
+.mi-CancelLegacy::before {
+  content: ""; }
 
-.glyph-help-mirrored::before {
-  content: ""; }
+.mi-MoreLegacy::before {
+  content: ""; }
 
-.glyph-upload::before {
-  content: ""; }
+.mi-RedoLegacy::before {
+  content: ""; }
 
-.glyph-emoji::before {
-  content: ""; }
+.mi-UndoLegacy::before {
+  content: ""; }
 
-.glyph-two-page::before {
-  content: ""; }
+.mi-HomeLegacy::before {
+  content: ""; }
 
-.glyph-leave-chat::before {
-  content: ""; }
+.mi-UpLegacy::before {
+  content: ""; }
 
-.glyph-mail-forward::before {
-  content: ""; }
+.mi-CameraLegacy::before {
+  content: ""; }
 
-.glyph-clock::before {
-  content: ""; }
+.mi-SettingsLegacy::before {
+  content: ""; }
 
-.glyph-send::before {
-  content: ""; }
+.mi-VideoLegacy::before {
+  content: ""; }
 
-.glyph-crop::before {
-  content: ""; }
+.mi-SyncLegacy::before {
+  content: ""; }
 
-.glyph-rotate-camera::before {
-  content: ""; }
+.mi-DownloadLegacy::before {
+  content: ""; }
 
-.glyph-people::before {
-  content: ""; }
+.mi-MailLegacy::before {
+  content: ""; }
 
-.glyph-close-pane::before {
-  content: ""; }
+.mi-HelpLegacy::before {
+  content: ""; }
 
-.glyph-close-pane-mirrored::before {
-  content: ""; }
+.mi-UploadLegacy::before {
+  content: ""; }
 
-.glyph-open-pane::before {
-  content: ""; }
+.mi-EmojiLegacy::before {
+  content: ""; }
 
-.glyph-open-pane-mirrored::before {
-  content: ""; }
-
-.glyph-world::before {
-  content: ""; }
-
-.glyph-flag::before {
-  content: ""; }
-
-.glyph-preview-link::before {
-  content: ""; }
-
-.glyph-globe::before {
-  content: ""; }
-
-.glyph-trim::before {
-  content: ""; }
-
-.glyph-attach-camera::before {
-  content: ""; }
-
-.glyph-zoom-in::before {
-  content: ""; }
-
-.glyph-bookmarks::before {
-  content: ""; }
-
-.glyph-bookmarks-mirrored::before {
-  content: ""; }
-
-.glyph-document::before {
-  content: ""; }
-
-.glyph-protected-document::before {
-  content: ""; }
-
-.glyph-page::before {
-  content: ""; }
-
-.glyph-multi-select::before {
-  content: ""; }
-
-.glyph-multi-select-mirrored::before {
-  content: ""; }
-
-.glyph-comment::before {
-  content: ""; }
-
-.glyph-mail-2::before {
-  content: ""; }
-
-.glyph-contact-info::before {
-  content: ""; }
-
-.glyph-contact-info-mirrored::before {
-  content: ""; }
-
-.glyph-hang-up::before {
-  content: ""; }
-
-.glyph-view-all::before {
-  content: ""; }
-
-.glyph-map-pin::before {
-  content: ""; }
-
-.glyph-phone::before {
-  content: ""; }
-
-.glyph-video-chat::before {
-  content: ""; }
-
-.glyph-switch::before {
-  content: ""; }
-
-.glyph-contact::before {
-  content: ""; }
-
-.glyph-rename::before {
-  content: ""; }
-
-.glyph-pin::before {
-  content: ""; }
-
-.glyph-music-info::before {
-  content: ""; }
-
-.glyph-go::before {
-  content: ""; }
-
-.glyph-go-mirrored::before {
-  content: ""; }
-
-.glyph-keyboard::before {
-  content: ""; }
-
-.glyph-dock-left::before {
-  content: ""; }
-
-.glyph-dock-left-mirrored::before {
-  content: ""; }
-
-.glyph-dock-right::before {
-  content: ""; }
-
-.glyph-dock-right-mirrored::before {
-  content: ""; }
-
-.glyph-dock-bottom::before {
-  content: ""; }
-
-.glyph-remote::before {
-  content: ""; }
-
-.glyph-refresh::before {
-  content: ""; }
-
-.glyph-rotate::before {
-  content: ""; }
-
-.glyph-shuffle::before {
-  content: ""; }
-
-.glyph-list::before {
-  content: ""; }
-
-.glyph-list-mirrored::before {
-  content: ""; }
-
-.glyph-shop::before {
-  content: ""; }
-
-.glyph-select-all::before {
-  content: ""; }
-
-.glyph-orientation::before {
-  content: ""; }
-
-.glyph-import::before {
-  content: ""; }
-
-.glyph-import-mirrored::before {
-  content: ""; }
-
-.glyph-import-all::before {
-  content: ""; }
-
-.glyph-import-all-mirrored::before {
-  content: ""; }
-
-.glyph-browse-photos::before {
-  content: ""; }
-
-.glyph-webcam::before {
-  content: ""; }
-
-.glyph-picture::before {
-  content: ""; }
-
-.glyph-save-local::before {
-  content: ""; }
-
-.glyph-caption::before {
-  content: ""; }
-
-.glyph-stop::before {
-  content: ""; }
-
-.glyph-show-results::before {
-  content: ""; }
-
-.glyph-show-results-mirrored::before {
-  content: ""; }
-
-.glyph-volume::before {
-  content: ""; }
-
-.glyph-repair::before {
-  content: ""; }
-
-.glyph-message::before {
-  content: ""; }
-
-.glyph-page-outline::before {
-  content: ""; }
-
-.glyph-calendar-day::before {
-  content: ""; }
-
-.glyph-calendar-week::before {
-  content: ""; }
-
-.glyph-calendar::before {
-  content: ""; }
-
-.glyph-calendar-mirrored::before {
-  content: ""; }
-
-.glyph-characters::before {
-  content: ""; }
-
-.glyph-mail-reply-all::before {
-  content: ""; }
-
-.glyph-mail-reply-all-mirrored::before {
-  content: ""; }
-
-.glyph-mail-read::before {
-  content: ""; }
-
-.glyph-link::before {
-  content: ""; }
-
-.glyph-accounts::before {
-  content: ""; }
-
-.glyph-show-bcc::before {
-  content: ""; }
-
-.glyph-hide-bcc::before {
-  content: ""; }
-
-.glyph-cut::before {
-  content: ""; }
-
-.glyph-attach::before {
-  content: ""; }
-
-.glyph-paste::before {
-  content: ""; }
-
-.glyph-filter::before {
-  content: ""; }
-
-.glyph-copy::before {
-  content: ""; }
-
-.glyph-emoji-2::before {
-  content: ""; }
-
-.glyph-important::before {
-  content: ""; }
-
-.glyph-mail-reply::before {
-  content: ""; }
-
-.glyph-mail-reply-mirrored::before {
-  content: ""; }
-
-.glyph-slideshow::before {
-  content: ""; }
-
-.glyph-sort::before {
-  content: ""; }
-
-.glyph-manage::before {
-  content: ""; }
-
-.glyph-all-apps::before {
-  content: ""; }
-
-.glyph-all-apps-mirrored::before {
-  content: ""; }
-
-.glyph-disconnect-drive::before {
-  content: ""; }
-
-.glyph-map-drive::before {
-  content: ""; }
-
-.glyph-new-window::before {
-  content: ""; }
-
-.glyph-open-with::before {
-  content: ""; }
-
-.glyph-open-with-mirrored::before {
-  content: ""; }
-
-.glyph-contact-presence::before {
-  content: ""; }
-
-.glyph-priority::before {
-  content: ""; }
-
-.glyph-upload-2::before {
-  content: ""; }
-
-.glyph-go-to-today::before {
-  content: ""; }
-
-.glyph-font::before {
-  content: ""; }
-
-.glyph-font-color::before {
-  content: ""; }
-
-.glyph-contact-2::before {
-  content: ""; }
-
-.glyph-folder::before {
-  content: ""; }
-
-.glyph-audio::before {
-  content: ""; }
-
-.glyph-placeholder::before {
-  content: ""; }
-
-.glyph-view::before {
-  content: ""; }
-
-.glyph-set-lockscreen::before {
-  content: ""; }
-
-.glyph-set-tile::before {
-  content: ""; }
-
-.glyph-cc::before {
-  content: ""; }
-
-.glyph-stop-slideshow::before {
-  content: ""; }
-
-.glyph-permissions::before {
-  content: ""; }
-
-.glyph-highlight::before {
-  content: ""; }
-
-.glyph-disable-updates::before {
-  content: ""; }
-
-.glyph-unfavorite::before {
-  content: ""; }
-
-.glyph-unpin::before {
-  content: ""; }
-
-.glyph-open-local::before {
-  content: ""; }
-
-.glyph-mute::before {
-  content: ""; }
-
-.glyph-italic::before {
-  content: ""; }
-
-.glyph-underline::before {
-  content: ""; }
-
-.glyph-bold::before {
-  content: ""; }
-
-.glyph-move-to-folder::before {
-  content: ""; }
-
-.glyph-like-dislike::before {
-  content: ""; }
-
-.glyph-dislike::before {
-  content: ""; }
-
-.glyph-like::before {
-  content: ""; }
-
-.glyph-align-right::before {
-  content: ""; }
-
-.glyph-align-center::before {
-  content: ""; }
-
-.glyph-align-left::before {
-  content: ""; }
-
-.glyph-magnifier-3::before {
-  content: ""; }
-
-.glyph-zoom-out::before {
-  content: ""; }
-
-.glyph-open-file::before {
-  content: ""; }
-
-.glyph-other-user::before {
-  content: ""; }
-
-.glyph-admin::before {
-  content: ""; }
-
-.glyph-street::before {
-  content: ""; }
-
-.glyph-map::before {
-  content: ""; }
-
-.glyph-clear-selection::before {
-  content: ""; }
-
-.glyph-clear-selection-mirrored::before {
-  content: ""; }
-
-.glyph-font-decrease::before {
-  content: ""; }
-
-.glyph-font-increase::before {
-  content: ""; }
-
-.glyph-font-size::before {
-  content: ""; }
-
-.glyph-cellphone::before {
-  content: ""; }
-
-.glyph-reshare::before {
-  content: ""; }
-
-.glyph-tag::before {
-  content: ""; }
-
-.glyph-repeat-once::before {
-  content: ""; }
-
-.glyph-repeat-all::before {
-  content: ""; }
-
-.glyph-star-outline-2::before {
-  content: ""; }
-
-.glyph-star-2::before {
-  content: ""; }
-
-.glyph-calculator::before {
-  content: ""; }
-
-.glyph-directions::before {
-  content: ""; }
-
-.glyph-location::before {
-  content: ""; }
-
-.glyph-library::before {
-  content: ""; }
-
-.glyph-phonebook::before {
-  content: ""; }
-
-.glyph-memo::before {
-  content: ""; }
-
-.glyph-microphone::before {
-  content: ""; }
-
-.glyph-post-update::before {
-  content: ""; }
-
-.glyph-back-to-window::before {
-  content: ""; }
-
-.glyph-fullscreen::before {
-  content: ""; }
-
-.glyph-new-folder::before {
-  content: ""; }
-
-.glyph-calendar-reply::before {
-  content: ""; }
-
-.glyph-unsync-folder::before {
-  content: ""; }
-
-.glyph-report-hacked::before {
-  content: ""; }
-
-.glyph-sync-folder::before {
-  content: ""; }
-
-.glyph-block-contact::before {
-  content: ""; }
-
-.glyph-switch-apps::before {
-  content: ""; }
-
-.glyph-add-friend::before {
-  content: ""; }
-
-.glyph-touch-pointer::before {
-  content: ""; }
-
-.glyph-go-to-start::before {
-  content: ""; }
-
-.glyph-zero-bar::before {
-  content: ""; }
-
-.glyph-one-bar::before {
-  content: ""; }
-
-.glyph-two-bars::before {
-  content: ""; }
-
-.glyph-three-bars::before {
-  content: ""; }
-
-.glyph-four-bars::before {
-  content: ""; }
-
-.glyph-scan::before {
-  content: ""; }
-
-.glyph-preview::before {
-  content: ""; }
-
-.glyph-hamburger::before {
-  content: ""; }
-
-.glyph-checkbox-composite::before {
-  content: ""; }
-
-.glyph-checkbox-indeterminate::before {
-  content: ""; }
-
-.glyph-warning::before {
-  content: ""; }
-
-.glyph-shopping-cart::before {
-  content: ""; }
-
-.glyph-flag-2::before {
-  content: ""; }
-
-.glyph-completed::before {
+.mi-TwoPageLegacy::before {
   content: ""; }
 
-.glyph-music-album::before {
+.mi-LeaveChatLegacy::before {
+  content: ""; }
+
+.mi-MailForwardLegacy::before {
+  content: ""; }
+
+.mi-ClockLegacy::before {
+  content: ""; }
+
+.mi-SendLegacy::before {
+  content: ""; }
+
+.mi-CropLegacy::before {
+  content: ""; }
+
+.mi-RotateCameraLegacy::before {
+  content: ""; }
+
+.mi-PeopleLegacy::before {
+  content: ""; }
+
+.mi-ClosePaneLegacy::before {
+  content: ""; }
+
+.mi-OpenPaneLegacy::before {
+  content: ""; }
+
+.mi-WorldLegacy::before {
+  content: ""; }
+
+.mi-FlagLegacy::before {
+  content: ""; }
+
+.mi-PreviewLinkLegacy::before {
   content: ""; }
 
-.glyph-info::before {
+.mi-GlobeLegacy::before {
+  content: ""; }
+
+.mi-TrimLegacy::before {
+  content: ""; }
+
+.mi-AttachCameraLegacy::before {
+  content: ""; }
+
+.mi-ZoomInLegacy::before {
+  content: ""; }
+
+.mi-BookmarksLegacy::before {
+  content: ""; }
+
+.mi-DocumentLegacy::before {
+  content: ""; }
+
+.mi-ProtectedDocumentLegacy::before {
+  content: ""; }
+
+.mi-PageFillLegacy::before {
+  content: ""; }
+
+.mi-MultiSelectLegacy::before {
+  content: ""; }
+
+.mi-CommentLegacy::before {
   content: ""; }
 
-.glyph-devices::before {
+.mi-MailFillLegacy::before {
+  content: ""; }
+
+.mi-ContactInfoLegacy::before {
+  content: ""; }
+
+.mi-HangUpLegacy::before {
+  content: ""; }
+
+.mi-ViewAllLegacy::before {
+  content: ""; }
+
+.mi-MapPinLegacy::before {
+  content: ""; }
+
+.mi-PhoneLegacy::before {
+  content: ""; }
+
+.mi-VideoChatLegacy::before {
+  content: ""; }
+
+.mi-SwitchLegacy::before {
+  content: ""; }
+
+.mi-ContactLegacy::before {
+  content: ""; }
+
+.mi-RenameLegacy::before {
+  content: ""; }
+
+.mi-ExpandTileLegacy::before {
+  content: ""; }
+
+.mi-ReduceTileLegacy::before {
+  content: ""; }
+
+.mi-PinLegacy::before {
+  content: ""; }
+
+.mi-MusicInfoLegacy::before {
+  content: ""; }
+
+.mi-GoLegacy::before {
+  content: ""; }
+
+.mi-KeyBoardLegacy::before {
+  content: ""; }
+
+.mi-DockLeftLegacy::before {
+  content: ""; }
+
+.mi-DockRightLegacy::before {
+  content: ""; }
+
+.mi-DockBottomLegacy::before {
+  content: ""; }
+
+.mi-RemoteLegacy::before {
+  content: ""; }
+
+.mi-RefreshLegacy::before {
+  content: ""; }
+
+.mi-RotateLegacy::before {
+  content: ""; }
+
+.mi-ShuffleLegacy::before {
+  content: ""; }
+
+.mi-ListLegacy::before {
+  content: ""; }
+
+.mi-ShopLegacy::before {
+  content: ""; }
+
+.mi-SelectAllLegacy::before {
+  content: ""; }
+
+.mi-OrientationLegacy::before {
+  content: ""; }
+
+.mi-ImportLegacy::before {
+  content: ""; }
+
+.mi-ImportAllLegacy::before {
+  content: ""; }
+
+.mi-ShowAllFiles3Legacy::before {
+  content: ""; }
+
+.mi-ShowAllFiles1Legacy::before {
+  content: ""; }
+
+.mi-BrowsePhotosLegacy::before {
+  content: ""; }
+
+.mi-WebcamLegacy::before {
+  content: ""; }
+
+.mi-PictureLegacy::before {
+  content: ""; }
+
+.mi-SaveLocalLegacy::before {
+  content: ""; }
+
+.mi-CaptionLegacy::before {
+  content: ""; }
+
+.mi-StopLegacy::before {
+  content: ""; }
+
+.mi-ShowResultsLegacy::before {
+  content: ""; }
+
+.mi-VolumeLegacy::before {
+  content: ""; }
+
+.mi-RepairLegacy::before {
+  content: ""; }
+
+.mi-MessageLegacy::before {
+  content: ""; }
+
+.mi-PageLegacy::before {
+  content: ""; }
+
+.mi-CalendarDayLegacy::before {
+  content: ""; }
+
+.mi-CalendarWeekLegacy::before {
+  content: ""; }
+
+.mi-CalendarLegacy::before {
+  content: ""; }
+
+.mi-CharactersLegacy::before {
+  content: ""; }
+
+.mi-MailReplyAllLegacy::before {
+  content: ""; }
+
+.mi-ReadLegacy::before {
+  content: ""; }
+
+.mi-LinkLegacy::before {
+  content: ""; }
+
+.mi-AccountsLegacy::before {
+  content: ""; }
+
+.mi-ShowBccLegacy::before {
+  content: ""; }
+
+.mi-HideBccLegacy::before {
+  content: ""; }
+
+.mi-CutLegacy::before {
+  content: ""; }
+
+.mi-AttachLegacy::before {
+  content: ""; }
+
+.mi-PasteLegacy::before {
+  content: ""; }
+
+.mi-FilterLegacy::before {
+  content: ""; }
+
+.mi-CopyLegacy::before {
+  content: ""; }
+
+.mi-Emoji2Legacy::before {
+  content: ""; }
+
+.mi-ImportantLegacy::before {
+  content: ""; }
+
+.mi-MailReplyLegacy::before {
+  content: ""; }
+
+.mi-SlideshowLegacy::before {
+  content: ""; }
+
+.mi-SortLegacy::before {
+  content: ""; }
+
+.mi-ListLegacyMirrored::before {
+  content: ""; }
+
+.mi-ExpandTileLegacyMirrored::before {
+  content: ""; }
+
+.mi-ReduceTileLegacyMirrored::before {
+  content: ""; }
+
+.mi-ManageLegacy::before {
+  content: ""; }
+
+.mi-AllAppsLegacy::before {
+  content: ""; }
+
+.mi-DisconnectDriveLegacy::before {
+  content: ""; }
+
+.mi-MapDriveLegacy::before {
+  content: ""; }
+
+.mi-NewWindowLegacy::before {
+  content: ""; }
+
+.mi-OpenWithLegacy::before {
+  content: ""; }
+
+.mi-ContactPresenceLegacy::before {
+  content: ""; }
+
+.mi-PriorityLegacy::before {
+  content: ""; }
+
+.mi-GotoTodayLegacy::before {
+  content: ""; }
+
+.mi-FontLegacy::before {
+  content: ""; }
+
+.mi-FontColorLegacy::before {
+  content: ""; }
+
+.mi-Contact2Legacy::before {
+  content: ""; }
+
+.mi-FolderLegacy::before {
+  content: ""; }
+
+.mi-AudioLegacy::before {
+  content: ""; }
+
+.mi-PlaceFolderLegacy::before {
+  content: ""; }
+
+.mi-SetlockScreenLegacy::before {
+  content: ""; }
+
+.mi-SetTileLegacy::before {
+  content: ""; }
+
+.mi-CCJapanLegacy::before {
+  content: ""; }
+
+.mi-CCEuroLegacy::before {
+  content: ""; }
+
+.mi-CCLegacy::before {
+  content: ""; }
+
+.mi-StopSlideshowLegacy::before {
+  content: ""; }
+
+.mi-PermissionsLegacy::before {
+  content: ""; }
+
+.mi-HighlightLegacy::before {
+  content: ""; }
+
+.mi-DisableUpdatesLegacy::before {
+  content: ""; }
+
+.mi-UnfavoriteLegacy::before {
+  content: ""; }
+
+.mi-UnpinLegacy::before {
+  content: ""; }
+
+.mi-OpenLocalLegacy::before {
+  content: ""; }
+
+.mi-MuteLegacy::before {
+  content: ""; }
+
+.mi-ItalicLegacy::before {
+  content: ""; }
+
+.mi-UnderlineLegacy::before {
+  content: ""; }
+
+.mi-BoldLegacy::before {
+  content: ""; }
+
+.mi-MoveToFolderLegacy::before {
+  content: ""; }
+
+.mi-LikeDislikeLegacy::before {
+  content: ""; }
+
+.mi-DislikeLegacy::before {
+  content: ""; }
+
+.mi-LikeLegacy::before {
+  content: ""; }
+
+.mi-AlignRightLegacy::before {
+  content: ""; }
+
+.mi-AlignCenterLegacy::before {
+  content: ""; }
+
+.mi-AlignLeftLegacy::before {
+  content: ""; }
+
+.mi-ZoomLegacy::before {
+  content: ""; }
+
+.mi-ZoomOutLegacy::before {
+  content: ""; }
+
+.mi-OpenFileLegacy::before {
+  content: ""; }
+
+.mi-OtherUserLegacy::before {
+  content: ""; }
+
+.mi-AdminLegacy::before {
+  content: ""; }
+
+.mi-MailForwardLegacyMirrored::before {
+  content: ""; }
+
+.mi-GoLegacyMirrored::before {
+  content: ""; }
+
+.mi-DockLeftLegacyMirrored::before {
+  content: ""; }
+
+.mi-DockRightLegacyMirrored::before {
+  content: ""; }
+
+.mi-ImportLegacyMirrored::before {
+  content: ""; }
+
+.mi-ImportAllLegacyMirrored::before {
+  content: ""; }
+
+.mi-MailReplyLegacyMirrored::before {
+  content: ""; }
+
+.mi-ItalicCLegacy::before {
+  content: ""; }
+
+.mi-BoldGLegacy::before {
+  content: ""; }
+
+.mi-UnderlineSLegacy::before {
+  content: ""; }
+
+.mi-BoldFLegacy::before {
+  content: ""; }
+
+.mi-ItalicKLegacy::before {
+  content: ""; }
+
+.mi-UnderlineULegacy::before {
+  content: ""; }
+
+.mi-ItalicILegacy::before {
+  content: ""; }
+
+.mi-BoldNLegacy::before {
+  content: ""; }
+
+.mi-UnderlineRussianLegacy::before {
+  content: ""; }
+
+.mi-BoldRussionLegacy::before {
+  content: ""; }
+
+.mi-FontStyleKoreanLegacy::before {
+  content: ""; }
+
+.mi-UnderlineLKoreanLegacy::before {
+  content: ""; }
+
+.mi-ItalicKoreanLegacy::before {
+  content: ""; }
+
+.mi-BoldKoreanLegacy::before {
+  content: ""; }
+
+.mi-FontColorKoreanLegacy::before {
+  content: ""; }
+
+.mi-ClosePaneLegacyMirrored::before {
+  content: ""; }
+
+.mi-OpenPaneLegacyMirrored::before {
+  content: ""; }
+
+.mi-EditLegacyMirrored::before {
+  content: ""; }
+
+.mi-StreetLegacy::before {
+  content: ""; }
+
+.mi-MapLegacy::before {
+  content: ""; }
+
+.mi-ClearSelectionLegacy::before {
+  content: ""; }
+
+.mi-FontDecreaseLegacy::before {
+  content: ""; }
+
+.mi-FontIncreaseLegacy::before {
+  content: ""; }
+
+.mi-FontSizeLegacy::before {
+  content: ""; }
+
+.mi-CellPhoneLegacy::before {
+  content: ""; }
+
+.mi-ReshareLegacy::before {
+  content: ""; }
+
+.mi-TagLegacy::before {
+  content: ""; }
+
+.mi-RepeatOneLegacy::before {
+  content: ""; }
+
+.mi-OutlineStarLegacy::before {
+  content: ""; }
+
+.mi-CalculatorLegacy::before {
+  content: ""; }
+
+.mi-DirectionsLegacy::before {
+  content: ""; }
+
+.mi-LocationLegacy::before {
+  content: ""; }
+
+.mi-LibraryLegacy::before {
+  content: ""; }
+
+.mi-PhoneBookLegacy::before {
+  content: ""; }
+
+.mi-MemoLegacy::before {
+  content: ""; }
+
+.mi-MicrophoneLegacy::before {
+  content: ""; }
+
+.mi-PostUpdateLegacy::before {
+  content: ""; }
+
+.mi-BackToWindowLegacy::before {
+  content: ""; }
+
+.mi-FullScreenLegacy::before {
+  content: ""; }
+
+.mi-NewFolderLegacy::before {
+  content: ""; }
+
+.mi-CalendarReplyLegacy::before {
+  content: ""; }
+
+.mi-CalendarLegacyMirrored::before {
+  content: ""; }
+
+.mi-UnsyncFolderLegacy::before {
+  content: ""; }
+
+.mi-ReportHackedLegacy::before {
+  content: ""; }
+
+.mi-SyncFolderLegacy::before {
+  content: ""; }
+
+.mi-BlockContactLegacy::before {
+  content: ""; }
+
+.mi-SwitchAppsLegacy::before {
+  content: ""; }
+
+.mi-AddFriendLegacy::before {
+  content: ""; }
+
+.mi-TouchPointerLegacy::before {
+  content: ""; }
+
+.mi-GoToStartLegacy::before {
+  content: ""; }
+
+.mi-ZeroBarsLegacy::before {
+  content: ""; }
+
+.mi-OneBarLegacy::before {
+  content: ""; }
+
+.mi-TwoBarsLegacy::before {
+  content: ""; }
+
+.mi-ThreeBarsLegacy::before {
+  content: ""; }
+
+.mi-FourBarsLegacy::before {
+  content: ""; }
+
+.mi-ItalicRussianLegacy::before {
+  content: ""; }
+
+.mi-AllAppsLegacyMirrored::before {
+  content: ""; }
+
+.mi-OpenWithLegacyMirrored::before {
+  content: ""; }
+
+.mi-BookmarksLegacyMirrored::before {
+  content: ""; }
+
+.mi-MultiSelectLegacyMirrored::before {
+  content: ""; }
+
+.mi-ShowResultsLegacyMirrored::before {
+  content: ""; }
+
+.mi-MailReplyAllLegacyMirrored::before {
+  content: ""; }
+
+.mi-HelpLegacyMirrored::before {
+  content: ""; }
+
+.mi-ClearSelectionLegacyMirrored::before {
+  content: ""; }
+
+.mi-RecordLegacy::before {
+  content: ""; }
+
+.mi-LockLegacy::before {
+  content: ""; }
+
+.mi-UnlockLegacy::before {
+  content: ""; }
+
+.mi-DownLegacy::before {
+  content: ""; }
+
+.mi-PC1Legacy::before {
+  content: ""; }
+
+.mi-DevicesLegacy::before {
+  content: ""; }
+
+.mi-ChevronDownSmLegacy::before {
+  content: ""; }
+
+.mi-ReplyLegacy::before {
+  content: ""; }
+
+.mi-BlockedLegacy::before {
+  content: ""; }
+
+.mi-TypingIndicatorLegacy::before {
+  content: ""; }
+
+.mi-PresenceChickletVideoLegacy::before {
+  content: ""; }
+
+.mi-ChevronRightSmLegacy::before {
+  content: ""; }
+
+.mi-ChevronLeftSmLegacy::before {
+  content: ""; }
+
+.mi-SaveAsLegacy::before {
+  content: ""; }
+
+.mi-DecreaseIndentLegacy::before {
+  content: ""; }
+
+.mi-IncreaseIndentLegacy::before {
+  content: ""; }
+
+.mi-ScanLegacy::before {
+  content: ""; }
+
+.mi-PreviewLegacy::before {
+  content: ""; }
+
+.mi-DecreaseIndentLegacyMirrored::before {
+  content: ""; }
+
+.mi-IncreaseIndentLegacyMirrored::before {
+  content: ""; }
+
+.mi-PlayOnLegacy::before {
+  content: ""; }
+
+.mi-ResolutionLegacy::before {
+  content: ""; }
+
+.mi-LengthLegacy::before {
+  content: ""; }
+
+.mi-LayoutLegacy::before {
+  content: ""; }
+
+.mi-TypeLegacy::before {
+  content: ""; }
+
+.mi-ColorLegacy::before {
+  content: ""; }
+
+.mi-SizeLegacy::before {
+  content: ""; }
+
+.mi-ReturnToWindowLegacy::before {
+  content: ""; }
+
+.mi-OpenInNewWindowLegacy::before {
+  content: ""; }
+
+.mi-PrintLegacy::before {
+  content: ""; }
+
+.mi-Printer3DLegacy::before {
+  content: ""; }
+
+.mi-GlobalNavButton::before {
+  content: ""; }
+
+.mi-Wifi::before {
+  content: ""; }
+
+.mi-Bluetooth::before {
+  content: ""; }
+
+.mi-Connect::before {
+  content: ""; }
+
+.mi-InternetSharing::before {
+  content: ""; }
+
+.mi-VPN::before {
+  content: ""; }
+
+.mi-Brightness::before {
+  content: ""; }
+
+.mi-QuietHours::before {
+  content: ""; }
+
+.mi-Airplane::before {
+  content: ""; }
+
+.mi-Tablet::before {
+  content: ""; }
+
+.mi-QuickNote::before {
+  content: ""; }
+
+.mi-RememberedDevice::before {
+  content: ""; }
+
+.mi-SendFill::before {
+  content: ""; }
+
+.mi-WalkSolid::before {
+  content: ""; }
+
+.mi-InPrivate::before {
+  content: ""; }
+
+.mi-FavoriteList::before {
+  content: ""; }
+
+.mi-Share::before {
+  content: ""; }
+
+.mi-ResizeTouchLarger::before {
+  content: ""; }
+
+.mi-ResizeTouchSmaller::before {
+  content: ""; }
+
+.mi-ResizeMouseSmall::before {
+  content: ""; }
+
+.mi-ResizeMouseMedium::before {
+  content: ""; }
+
+.mi-ResizeMouseWide::before {
+  content: ""; }
+
+.mi-ResizeMouseTall::before {
+  content: ""; }
+
+.mi-SwitchUser::before {
+  content: ""; }
+
+.mi-OEM::before {
+  content: ""; }
+
+.mi-BackSpaceQWERTY::before {
+  content: ""; }
+
+.mi-ReturnKey::before {
+  content: ""; }
+
+.mi-UpArrowShiftKey::before {
+  content: ""; }
+
+.mi-Cloud::before {
+  content: ""; }
+
+.mi-Flashlight::before {
+  content: ""; }
+
+.mi-RotationLock::before {
+  content: ""; }
+
+.mi-CommandPrompt::before {
+  content: ""; }
+
+.mi-SIPMove::before {
+  content: ""; }
+
+.mi-SIPUndock::before {
+  content: ""; }
+
+.mi-SIPRedock::before {
+  content: ""; }
+
+.mi-EraseTool::before {
+  content: ""; }
+
+.mi-UnderscoreSpace::before {
+  content: ""; }
+
+.mi-GripperTool::before {
+  content: ""; }
+
+.mi-Dialpad::before {
+  content: ""; }
+
+.mi-PageLeft::before {
+  content: ""; }
+
+.mi-PageRight::before {
+  content: ""; }
+
+.mi-KeyboardLeftHanded::before {
+  content: ""; }
+
+.mi-KeyboardRightHanded::before {
+  content: ""; }
+
+.mi-InkingTool::before {
+  content: ""; }
+
+.mi-GripperBarHorizontal::before {
+  content: ""; }
+
+.mi-System::before {
+  content: ""; }
+
+.mi-Personalize::before {
+  content: ""; }
+
+.mi-Devices::before {
+  content: ""; }
+
+.mi-SearchAndApps::before {
+  content: ""; }
+
+.mi-TimeLanguage::before {
+  content: ""; }
+
+.mi-UpdateRestore::before {
+  content: ""; }
+
+.mi-LEDLight::before {
+  content: ""; }
+
+.mi-Error::before {
+  content: ""; }
+
+.mi-GripperBarVertical::before {
+  content: ""; }
+
+.mi-GripperResize::before {
+  content: ""; }
+
+.mi-Megaphone::before {
+  content: ""; }
+
+.mi-DataSense::before {
+  content: ""; }
+
+.mi-Light::before {
+  content: ""; }
+
+.mi-AspectRatio::before {
+  content: ""; }
+
+.mi-DataSenseBar::before {
+  content: ""; }
+
+.mi-Rotate::before {
+  content: ""; }
+
+.mi-Package::before {
+  content: ""; }
+
+.mi-Warning::before {
+  content: ""; }
+
+.mi-ReadingList::before {
+  content: ""; }
+
+.mi-Education::before {
+  content: ""; }
+
+.mi-ShoppingCart::before {
+  content: ""; }
+
+.mi-Train::before {
+  content: ""; }
+
+.mi-Multitask::before {
+  content: ""; }
+
+.mi-HalfStarLeft::before {
+  content: ""; }
+
+.mi-HalfStarRight::before {
+  content: ""; }
+
+.mi-LangJPN::before {
+  content: ""; }
+
+.mi-Ferry::before {
+  content: ""; }
+
+.mi-ActionCenterNotification::before {
+  content: ""; }
+
+.mi-PowerButton::before {
+  content: ""; }
+
+.mi-ResizeTouchNarrower::before {
+  content: ""; }
+
+.mi-ResizeTouchShorter::before {
+  content: ""; }
+
+.mi-DrivingMode::before {
+  content: ""; }
+
+.mi-RingerSilent::before {
+  content: ""; }
+
+.mi-SDCard::before {
+  content: ""; }
+
+.mi-CallForwarding::before {
+  content: ""; }
+
+.mi-SettingsDisplaySound::before {
+  content: ""; }
+
+.mi-TVMonitor::before {
+  content: ""; }
+
+.mi-Speakers::before {
+  content: ""; }
+
+.mi-Headphone::before {
   content: ""; }
 
-.glyph-expand::before {
-  content: ""; }
+.mi-DeviceLaptopPic::before {
+  content: ""; }
 
-.glyph-collapse::before {
-  content: ""; }
+.mi-DeviceLaptopNoPic::before {
+  content: ""; }
 
-.glyph-radio-btn-off::before {
-  content: ""; }
+.mi-DeviceMonitorRightPic::before {
+  content: ""; }
 
-.glyph-radio-btn-on::before {
-  content: ""; }
+.mi-DeviceMonitorLeftPic::before {
+  content: ""; }
 
-.glyph-radio-bullet::before {
-  content: ""; }
+.mi-DeviceMonitorNoPic::before {
+  content: ""; }
 
-.glyph-media-browse::before {
-  content: ""; }
+.mi-Game::before {
+  content: ""; }
 
-.glyph-miracast-small::before {
+.mi-HorizontalTabKey::before {
+  content: ""; }
+
+.mi-StreetsideSplitMinimize::before {
+  content: ""; }
+
+.mi-StreetsideSplitExpand::before {
+  content: ""; }
+
+.mi-Walk::before {
+  content: ""; }
+
+.mi-Bus::before {
+  content: ""; }
+
+.mi-TiltUp::before {
+  content: ""; }
+
+.mi-TiltDown::before {
+  content: ""; }
+
+.mi-RotateMapRight::before {
+  content: ""; }
+
+.mi-RotateMapLeft::before {
+  content: ""; }
+
+.mi-ParkingLocation::before {
+  content: ""; }
+
+.mi-MapCompassTop::before {
+  content: ""; }
+
+.mi-MapCompassBottom::before {
+  content: ""; }
+
+.mi-IncidentTriangle::before {
+  content: ""; }
+
+.mi-Touch::before {
+  content: ""; }
+
+.mi-MapDirections::before {
+  content: ""; }
+
+.mi-StartPoint::before {
+  content: ""; }
+
+.mi-StopPoint::before {
+  content: ""; }
+
+.mi-History::before {
+  content: ""; }
+
+.mi-MapLayers::before {
+  content: ""; }
+
+.mi-Accident::before {
+  content: ""; }
+
+.mi-Work::before {
+  content: ""; }
+
+.mi-Construction::before {
+  content: ""; }
+
+.mi-Bank::before {
+  content: ""; }
+
+.mi-DownloadMap::before {
+  content: ""; }
+
+.mi-InkingToolFill2::before {
+  content: ""; }
+
+.mi-HighlightFill2::before {
+  content: ""; }
+
+.mi-EraseToolFill::before {
+  content: ""; }
+
+.mi-EraseToolFill2::before {
+  content: ""; }
+
+.mi-Dictionary::before {
+  content: ""; }
+
+.mi-DictionaryAdd::before {
+  content: ""; }
+
+.mi-ToolTip::before {
+  content: ""; }
+
+.mi-ChromeBack::before {
+  content: ""; }
+
+.mi-ProvisioningPackage::before {
+  content: ""; }
+
+.mi-AddRemoteDevice::before {
+  content: ""; }
+
+.mi-Ethernet::before {
+  content: ""; }
+
+.mi-ShareBroadband::before {
+  content: ""; }
+
+.mi-DirectAccess::before {
+  content: ""; }
+
+.mi-DialUp::before {
+  content: ""; }
+
+.mi-DefenderApp::before {
+  content: ""; }
+
+.mi-BatteryCharging9::before {
+  content: ""; }
+
+.mi-Battery10::before {
+  content: ""; }
+
+.mi-Pinned::before {
+  content: ""; }
+
+.mi-PinFill::before {
+  content: ""; }
+
+.mi-PinnedFill::before {
+  content: ""; }
+
+.mi-PeriodKey::before {
+  content: ""; }
+
+.mi-PuncKey::before {
+  content: ""; }
+
+.mi-RevToggleKey::before {
+  content: ""; }
+
+.mi-RightArrowKeyTime1::before {
+  content: ""; }
+
+.mi-RightArrowKeyTime2::before {
+  content: ""; }
+
+.mi-LeftQuote::before {
+  content: ""; }
+
+.mi-RightQuote::before {
+  content: ""; }
+
+.mi-DownShiftKey::before {
+  content: ""; }
+
+.mi-UpShiftKey::before {
+  content: ""; }
+
+.mi-PuncKey0::before {
+  content: ""; }
+
+.mi-PuncKeyLeftBottom::before {
+  content: ""; }
+
+.mi-RightArrowKeyTime3::before {
+  content: ""; }
+
+.mi-RightArrowKeyTime4::before {
+  content: ""; }
+
+.mi-Battery0::before {
+  content: ""; }
+
+.mi-Battery1::before {
+  content: ""; }
+
+.mi-Battery2::before {
+  content: ""; }
+
+.mi-Battery3::before {
+  content: ""; }
+
+.mi-Battery4::before {
+  content: ""; }
+
+.mi-Battery5::before {
+  content: ""; }
+
+.mi-Battery6::before {
+  content: ""; }
+
+.mi-Battery7::before {
+  content: ""; }
+
+.mi-Battery8::before {
+  content: ""; }
+
+.mi-Battery9::before {
+  content: ""; }
+
+.mi-BatteryCharging0::before {
+  content: ""; }
+
+.mi-BatteryCharging1::before {
+  content: ""; }
+
+.mi-BatteryCharging2::before {
+  content: ""; }
+
+.mi-BatteryCharging3::before {
+  content: ""; }
+
+.mi-BatteryCharging4::before {
+  content: ""; }
+
+.mi-BatteryCharging5::before {
+  content: ""; }
+
+.mi-BatteryCharging6::before {
+  content: ""; }
+
+.mi-BatteryCharging7::before {
+  content: ""; }
+
+.mi-BatteryCharging8::before {
+  content: ""; }
+
+.mi-BatterySaver0::before {
+  content: ""; }
+
+.mi-BatterySaver1::before {
+  content: ""; }
+
+.mi-BatterySaver2::before {
+  content: ""; }
+
+.mi-BatterySaver3::before {
+  content: ""; }
+
+.mi-BatterySaver4::before {
+  content: ""; }
+
+.mi-BatterySaver5::before {
+  content: ""; }
+
+.mi-BatterySaver6::before {
+  content: ""; }
+
+.mi-BatterySaver7::before {
+  content: ""; }
+
+.mi-BatterySaver8::before {
+  content: ""; }
+
+.mi-SignalBars1::before {
+  content: ""; }
+
+.mi-SignalBars2::before {
+  content: ""; }
+
+.mi-SignalBars3::before {
+  content: ""; }
+
+.mi-SignalBars4::before {
+  content: ""; }
+
+.mi-SignalBars5::before {
+  content: ""; }
+
+.mi-SignalNotConnected::before {
+  content: ""; }
+
+.mi-Wifi1::before {
+  content: ""; }
+
+.mi-Wifi2::before {
+  content: ""; }
+
+.mi-Wifi3::before {
+  content: ""; }
+
+.mi-SIMLock::before {
+  content: ""; }
+
+.mi-SIMMissing::before {
+  content: ""; }
+
+.mi-Vibrate::before {
+  content: ""; }
+
+.mi-RoamingInternational::before {
+  content: ""; }
+
+.mi-RoamingDomestic::before {
+  content: ""; }
+
+.mi-CallForwardInternational::before {
+  content: ""; }
+
+.mi-CallForwardRoaming::before {
+  content: ""; }
+
+.mi-JpnRomanji::before {
+  content: ""; }
+
+.mi-JpnRomanjiLock::before {
+  content: ""; }
+
+.mi-JpnRomanjiShift::before {
+  content: ""; }
+
+.mi-JpnRomanjiShiftLock::before {
+  content: ""; }
+
+.mi-StatusDataTransfer::before {
+  content: ""; }
+
+.mi-StatusDataTransferVPN::before {
+  content: ""; }
+
+.mi-StatusDualSIM2::before {
+  content: ""; }
+
+.mi-StatusDualSIM2VPN::before {
+  content: ""; }
+
+.mi-StatusDualSIM1::before {
+  content: ""; }
+
+.mi-StatusDualSIM1VPN::before {
+  content: ""; }
+
+.mi-StatusSGLTE::before {
+  content: ""; }
+
+.mi-StatusSGLTECell::before {
+  content: ""; }
+
+.mi-StatusSGLTEDataVPN::before {
+  content: ""; }
+
+.mi-StatusVPN::before {
+  content: ""; }
+
+.mi-LanguageKor::before {
+  content: ""; }
+
+.mi-LanguageCht::before {
+  content: ""; }
+
+.mi-LanguageChs::before {
+  content: ""; }
+
+.mi-USB::before {
+  content: ""; }
+
+.mi-InkingToolFill::before {
+  content: ""; }
+
+.mi-HighlightFill::before {
+  content: ""; }
+
+.mi-SurfaceHub::before {
+  content: ""; }
+
+.mi-Click::before {
+  content: ""; }
+
+.mi-Movies::before {
+  content: ""; }
+
+.mi-Folder::before {
+  content: ""; }
+
+.mi-ChromeClose::before {
+  content: ""; }
+
+.mi-Leaf::before {
+  content: ""; }
+
+.mi-MobileTablet::before {
+  content: ""; }
+
+.mi-ChatBubbles::before {
+  content: ""; }
+
+.mi-DullSound::before {
+  content: ""; }
+
+.mi-Printer3D::before {
+  content: ""; }
+
+.mi-RadioBullet::before {
+  content: ""; }
+
+.mi-Stopwatch::before {
+  content: ""; }
+
+.mi-Photo::before {
+  content: ""; }
+
+.mi-ActionCenter::before {
+  content: ""; }
+
+.mi-FullCircleMask::before {
+  content: ""; }
+
+.mi-ChromeMinimize::before {
+  content: ""; }
+
+.mi-ChromeMaximize::before {
+  content: ""; }
+
+.mi-ChromeRestore::before {
+  content: ""; }
+
+.mi-Annotation::before {
+  content: ""; }
+
+.mi-BackSpaceQWERTYSm::before {
+  content: ""; }
+
+.mi-BackSpaceQWERTYMd::before {
+  content: ""; }
+
+.mi-Swipe::before {
+  content: ""; }
+
+.mi-Fingerprint::before {
+  content: ""; }
+
+.mi-Handwriting::before {
+  content: ""; }
+
+.mi-ChromeBackToWindow::before {
+  content: ""; }
+
+.mi-ChromeFullScreen::before {
+  content: ""; }
+
+.mi-KeyboardDismiss::before {
+  content: ""; }
+
+.mi-Completed::before {
+  content: ""; }
+
+.mi-ChromeAnnotate::before {
+  content: ""; }
+
+.mi-Label::before {
+  content: ""; }
+
+.mi-IBeam::before {
+  content: ""; }
+
+.mi-IBeamOutline::before {
+  content: ""; }
+
+.mi-FlickDown::before {
+  content: ""; }
+
+.mi-FlickUp::before {
+  content: ""; }
+
+.mi-FlickLeft::before {
+  content: ""; }
+
+.mi-FlickRight::before {
+  content: ""; }
+
+.mi-FeedbackApp::before {
+  content: ""; }
+
+.mi-MusicAlbum::before {
+  content: ""; }
+
+.mi-Streaming::before {
+  content: ""; }
+
+.mi-Code::before {
+  content: ""; }
+
+.mi-LightningBolt::before {
+  content: ""; }
+
+.mi-Info::before {
+  content: ""; }
+
+.mi-CalculatorMultiply::before {
+  content: ""; }
+
+.mi-CalculatorAddition::before {
+  content: ""; }
+
+.mi-CalculatorSubtract::before {
+  content: ""; }
+
+.mi-CalculatorDivide::before {
+  content: ""; }
+
+.mi-CalculatorSquareroot::before {
+  content: ""; }
+
+.mi-CalculatorPercentage::before {
+  content: ""; }
+
+.mi-CalculatorNegate::before {
+  content: ""; }
+
+.mi-CalculatorEqualTo::before {
+  content: ""; }
+
+.mi-Component::before {
+  content: ""; }
+
+.mi-DMC::before {
+  content: ""; }
+
+.mi-Dock::before {
+  content: ""; }
+
+.mi-MultimediaDMS::before {
+  content: ""; }
+
+.mi-MultimediaDVR::before {
+  content: ""; }
+
+.mi-MultimediaPMP::before {
+  content: ""; }
+
+.mi-PrintfaxPrinterFile::before {
+  content: ""; }
+
+.mi-Sensor::before {
+  content: ""; }
+
+.mi-StorageOptical::before {
+  content: ""; }
+
+.mi-Communications::before {
+  content: ""; }
+
+.mi-Headset::before {
+  content: ""; }
+
+.mi-Projector::before {
+  content: ""; }
+
+.mi-Health::before {
+  content: ""; }
+
+.mi-Webcam2::before {
+  content: ""; }
+
+.mi-Input::before {
+  content: ""; }
+
+.mi-Mouse::before {
+  content: ""; }
+
+.mi-Smartcard::before {
+  content: ""; }
+
+.mi-SmartcardVirtual::before {
+  content: ""; }
+
+.mi-MediaStorageTower::before {
+  content: ""; }
+
+.mi-ReturnKeySm::before {
+  content: ""; }
+
+.mi-GameConsole::before {
+  content: ""; }
+
+.mi-Network::before {
+  content: ""; }
+
+.mi-StorageNetworkWireless::before {
+  content: ""; }
+
+.mi-StorageTape::before {
+  content: ""; }
+
+.mi-ChevronUpSmall::before {
+  content: ""; }
+
+.mi-ChevronUpMed::before {
+  content: ""; }
+
+.mi-ChevronDownMed::before {
+  content: ""; }
+
+.mi-ChevronLeftMed::before {
+  content: ""; }
+
+.mi-ChevronRightMed::before {
+  content: ""; }
+
+.mi-Korean::before {
+  content: ""; }
+
+.mi-HalfAlpha::before {
+  content: ""; }
+
+.mi-FullAlpha::before {
+  content: ""; }
+
+.mi-Key12On::before {
+  content: ""; }
+
+.mi-ChineseChangjie::before {
+  content: ""; }
+
+.mi-QWERTYOn::before {
+  content: ""; }
+
+.mi-QWERTYOff::before {
+  content: ""; }
+
+.mi-ChineseQuick::before {
+  content: ""; }
+
+.mi-Japanese::before {
+  content: ""; }
+
+.mi-FullHiragana::before {
+  content: ""; }
+
+.mi-FullKatakana::before {
+  content: ""; }
+
+.mi-HalfKatakana::before {
+  content: ""; }
+
+.mi-ChineseBoPoMoFo::before {
+  content: ""; }
+
+.mi-ChinesePinyin::before {
+  content: ""; }
+
+.mi-ConstructionCone::before {
+  content: ""; }
+
+.mi-XboxOneConsole::before {
+  content: ""; }
+
+.mi-Volume0::before {
+  content: ""; }
+
+.mi-Volume1::before {
+  content: ""; }
+
+.mi-Volume2::before {
+  content: ""; }
+
+.mi-Volume3::before {
+  content: ""; }
+
+.mi-BatteryUnknown::before {
+  content: ""; }
+
+.mi-WifiAttentionOverlay::before {
+  content: ""; }
+
+.mi-Robot::before {
+  content: ""; }
+
+.mi-TapAndSend::before {
+  content: ""; }
+
+.mi-PasswordKeyShow::before {
+  content: ""; }
+
+.mi-PasswordKeyHide::before {
+  content: ""; }
+
+.mi-BidiLtr::before {
+  content: ""; }
+
+.mi-BidiRtl::before {
+  content: ""; }
+
+.mi-ForwardSm::before {
+  content: ""; }
+
+.mi-CommaKey::before {
+  content: ""; }
+
+.mi-DashKey::before {
+  content: ""; }
+
+.mi-DullSoundKey::before {
+  content: ""; }
+
+.mi-HalfDullSound::before {
+  content: ""; }
+
+.mi-RightDoubleQuote::before {
+  content: ""; }
+
+.mi-LeftDoubleQuote::before {
+  content: ""; }
+
+.mi-PuncKeyRightBottom::before {
+  content: ""; }
+
+.mi-PuncKey1::before {
+  content: ""; }
+
+.mi-PuncKey2::before {
+  content: ""; }
+
+.mi-PuncKey3::before {
+  content: ""; }
+
+.mi-PuncKey4::before {
+  content: ""; }
+
+.mi-PuncKey5::before {
+  content: ""; }
+
+.mi-PuncKey6::before {
+  content: ""; }
+
+.mi-PuncKey9::before {
+  content: ""; }
+
+.mi-PuncKey7::before {
+  content: ""; }
+
+.mi-PuncKey8::before {
+  content: ""; }
+
+.mi-Frigid::before {
+  content: ""; }
+
+.mi-Diagnostic::before {
+  content: ""; }
+
+.mi-Process::before {
+  content: ""; }
+
+.mi-DisconnectDisplay::before {
+  content: ""; }
+
+.mi-Info2::before {
+  content: ""; }
+
+.mi-ActionCenterAsterisk::before {
+  content: ""; }
+
+.mi-Beta::before {
+  content: ""; }
+
+.mi-SaveCopy::before {
+  content: ""; }
+
+.mi-List::before {
+  content: ""; }
+
+.mi-Asterisk::before {
+  content: ""; }
+
+.mi-ErrorBadge::before {
+  content: ""; }
+
+.mi-CircleRing::before {
+  content: ""; }
+
+.mi-CircleFill::before {
+  content: ""; }
+
+.mi-CallForwardInternationalMirrored::before {
+  content: ""; }
+
+.mi-CallForwardRoamingMirrored::before {
+  content: ""; }
+
+.mi-ChromeBackMirrored::before {
+  content: ""; }
+
+.mi-ContactInfoMirrored::before {
+  content: ""; }
+
+.mi-GripperResizeMirrored::before {
+  content: ""; }
+
+.mi-LeaveChatMirrored::before {
+  content: ""; }
+
+.mi-ListMirrored::before {
+  content: ""; }
+
+.mi-ParkingLocationMirrored::before {
+  content: ""; }
+
+.mi-ResizeMouseMediumMirrored::before {
+  content: ""; }
+
+.mi-ResizeMouseSmallMirrored::before {
+  content: ""; }
+
+.mi-ResizeMouseTallMirrored::before {
+  content: ""; }
+
+.mi-ResizeTouchNarrowerMirrored::before {
+  content: ""; }
+
+.mi-SendMirrored::before {
+  content: ""; }
+
+.mi-SendFillMirrored::before {
+  content: ""; }
+
+.mi-Media::before {
+  content: ""; }
+
+.mi-SyncError::before {
+  content: ""; }
+
+.mi-Devices3::before {
+  content: ""; }
+
+.mi-StatusCircle::before {
+  content: ""; }
+
+.mi-StatusTriangle::before {
+  content: ""; }
+
+.mi-StatusError::before {
+  content: ""; }
+
+.mi-StatusWarning::before {
+  content: ""; }
+
+.mi-Puzzle::before {
+  content: ""; }
+
+.mi-CalendarSolid::before {
+  content: ""; }
+
+.mi-HomeSolid::before {
+  content: ""; }
+
+.mi-ParkingLocationSolid::before {
+  content: ""; }
+
+.mi-ContactSolid::before {
+  content: ""; }
+
+.mi-ConstructionSolid::before {
+  content: ""; }
+
+.mi-AccidentSolid::before {
+  content: ""; }
+
+.mi-Ringer::before {
+  content: ""; }
+
+.mi-ThoughtBubble::before {
+  content: ""; }
+
+.mi-HeartBroken::before {
+  content: ""; }
+
+.mi-BatteryCharging10::before {
+  content: ""; }
+
+.mi-BatterySaver9::before {
+  content: ""; }
+
+.mi-BatterySaver10::before {
+  content: ""; }
+
+.mi-CallForwardingMirrored::before {
+  content: ""; }
+
+.mi-Broom::before {
+  content: ""; }
+
+.mi-Trackers::before {
+  content: ""; }
+
+.mi-PieSingle::before {
+  content: ""; }
+
+.mi-StockDown::before {
+  content: ""; }
+
+.mi-StockUp::before {
+  content: ""; }
+
+.mi-Drop::before {
+  content: ""; }
+
+.mi-BusSolid::before {
+  content: ""; }
+
+.mi-FerrySolid::before {
+  content: ""; }
+
+.mi-StartPointSolid::before {
+  content: ""; }
+
+.mi-StopPointSolid::before {
+  content: ""; }
+
+.mi-EndPointSolid::before {
+  content: ""; }
+
+.mi-AirplaneSolid::before {
+  content: ""; }
+
+.mi-TrainSolid::before {
+  content: ""; }
+
+.mi-WorkSolid::before {
+  content: ""; }
+
+.mi-ReminderFill::before {
+  content: ""; }
+
+.mi-Reminder::before {
+  content: ""; }
+
+.mi-EthernetError::before {
+  content: ""; }
+
+.mi-EthernetWarning::before {
+  content: ""; }
+
+.mi-StatusConnecting1::before {
+  content: ""; }
+
+.mi-StatusConnecting2::before {
+  content: ""; }
+
+.mi-StatusUnsecure::before {
+  content: ""; }
+
+.mi-WifiError0::before {
+  content: ""; }
+
+.mi-WifiError1::before {
+  content: ""; }
+
+.mi-WifiError2::before {
+  content: ""; }
+
+.mi-WifiError3::before {
+  content: ""; }
+
+.mi-WifiError4::before {
+  content: ""; }
+
+.mi-WifiWarning0::before {
+  content: ""; }
+
+.mi-WifiWarning1::before {
+  content: ""; }
+
+.mi-WifiWarning2::before {
+  content: ""; }
+
+.mi-WifiWarning3::before {
+  content: ""; }
+
+.mi-WifiWarning4::before {
+  content: ""; }
+
+.mi-Devices4::before {
+  content: ""; }
+
+.mi-NUIIris::before {
+  content: ""; }
+
+.mi-NUIFace::before {
+  content: ""; }
+
+.mi-NUIFPStartSlideHand::before {
+  content: ""; }
+
+.mi-NUIFPStartSlideAction::before {
+  content: ""; }
+
+.mi-NUIFPContinueSlideHand::before {
+  content: ""; }
+
+.mi-NUIFPContinueSlideAction::before {
+  content: ""; }
+
+.mi-NUIFPRollRightHand::before {
+  content: ""; }
+
+.mi-NUIFPRollRightHandAction::before {
+  content: ""; }
+
+.mi-NUIFPRollLeftHand::before {
+  content: ""; }
+
+.mi-NUIFPRollLeftAction::before {
+  content: ""; }
+
+.mi-NUIFPPressHand::before {
+  content: ""; }
+
+.mi-NUIFPPressAction::before {
+  content: ""; }
+
+.mi-NUIFPPressRepeatAction::before {
+  content: ""; }
+
+.mi-StatusErrorFull::before {
+  content: ""; }
+
+.mi-MultitaskExpanded::before {
+  content: ""; }
+
+.mi-Certificate::before {
+  content: ""; }
+
+.mi-BackSpaceQWERTYLg::before {
+  content: ""; }
+
+.mi-ReturnKeyLg::before {
+  content: ""; }
+
+.mi-FastForward::before {
+  content: ""; }
+
+.mi-Rewind::before {
+  content: ""; }
+
+.mi-Photo2::before {
+  content: ""; }
+
+.mi-MobBattery0::before {
+  content: ""; }
+
+.mi-MobBattery1::before {
+  content: ""; }
+
+.mi-MobBattery2::before {
+  content: ""; }
+
+.mi-MobBattery3::before {
+  content: ""; }
+
+.mi-MobBattery4::before {
+  content: ""; }
+
+.mi-MobBattery5::before {
+  content: ""; }
+
+.mi-MobBattery6::before {
+  content: ""; }
+
+.mi-MobBattery7::before {
+  content: ""; }
+
+.mi-MobBattery8::before {
+  content: ""; }
+
+.mi-MobBattery9::before {
+  content: ""; }
+
+.mi-MobBattery10::before {
+  content: ""; }
+
+.mi-MobBatteryCharging0::before {
+  content: ""; }
+
+.mi-MobBatteryCharging1::before {
+  content: ""; }
+
+.mi-MobBatteryCharging2::before {
+  content: ""; }
+
+.mi-MobBatteryCharging3::before {
+  content: ""; }
+
+.mi-MobBatteryCharging4::before {
+  content: ""; }
+
+.mi-MobBatteryCharging5::before {
+  content: ""; }
+
+.mi-MobBatteryCharging6::before {
+  content: ""; }
+
+.mi-MobBatteryCharging7::before {
+  content: ""; }
+
+.mi-MobBatteryCharging8::before {
+  content: ""; }
+
+.mi-MobBatteryCharging9::before {
+  content: ""; }
+
+.mi-MobBatteryCharging10::before {
+  content: ""; }
+
+.mi-MobBatterySaver0::before {
+  content: ""; }
+
+.mi-MobBatterySaver1::before {
+  content: ""; }
+
+.mi-MobBatterySaver2::before {
+  content: ""; }
+
+.mi-MobBatterySaver3::before {
+  content: ""; }
+
+.mi-MobBatterySaver4::before {
+  content: ""; }
+
+.mi-MobBatterySaver5::before {
+  content: ""; }
+
+.mi-MobBatterySaver6::before {
+  content: ""; }
+
+.mi-MobBatterySaver7::before {
+  content: ""; }
+
+.mi-MobBatterySaver8::before {
+  content: ""; }
+
+.mi-MobBatterySaver9::before {
+  content: ""; }
+
+.mi-MobBatterySaver10::before {
+  content: ""; }
+
+.mi-DictionaryCloud::before {
+  content: ""; }
+
+.mi-ResetDrive::before {
+  content: ""; }
+
+.mi-VolumeBars::before {
+  content: ""; }
+
+.mi-Project::before {
+  content: ""; }
+
+.mi-AdjustHologram::before {
+  content: ""; }
+
+.mi-WifiCallBars::before {
+  content: ""; }
+
+.mi-WifiCall0::before {
+  content: ""; }
+
+.mi-WifiCall1::before {
+  content: ""; }
+
+.mi-WifiCall2::before {
+  content: ""; }
+
+.mi-WifiCall3::before {
+  content: ""; }
+
+.mi-WifiCall4::before {
+  content: ""; }
+
+.mi-DeviceDiscovery::before {
+  content: ""; }
+
+.mi-WindDirection::before {
+  content: ""; }
+
+.mi-RightArrowKeyTime0::before {
+  content: ""; }
+
+.mi-TabletMode::before {
+  content: ""; }
+
+.mi-StatusCircleLeft::before {
+  content: ""; }
+
+.mi-StatusTriangleLeft::before {
+  content: ""; }
+
+.mi-StatusErrorLeft::before {
+  content: ""; }
+
+.mi-StatusWarningLeft::before {
+  content: ""; }
+
+.mi-MobBatteryUnknown::before {
+  content: ""; }
+
+.mi-NetworkTower::before {
+  content: ""; }
+
+.mi-CityNext::before {
+  content: ""; }
+
+.mi-CityNext2::before {
+  content: ""; }
+
+.mi-Courthouse::before {
+  content: ""; }
+
+.mi-Groceries::before {
+  content: ""; }
+
+.mi-Sustainable::before {
+  content: ""; }
+
+.mi-BuildingEnergy::before {
+  content: ""; }
+
+.mi-ToggleFilled::before {
+  content: ""; }
+
+.mi-ToggleBorder::before {
+  content: ""; }
+
+.mi-SliderThumb::before {
+  content: ""; }
+
+.mi-ToggleThumb::before {
+  content: ""; }
+
+.mi-MiracastLogoSmall::before {
+  content: ""; }
+
+.mi-MiracastLogoLarge::before {
+  content: ""; }
+
+.mi-PLAP::before {
+  content: ""; }
+
+.mi-Badge::before {
+  content: ""; }
+
+.mi-SignalRoaming::before {
+  content: ""; }
+
+.mi-MobileLocked::before {
+  content: ""; }
+
+.mi-InsiderHubApp::before {
+  content: ""; }
+
+.mi-PersonalFolder::before {
+  content: ""; }
+
+.mi-HomeGroup::before {
   content: ""; }
 
-.glyph-miracast-large::before {
+.mi-MyNetwork::before {
   content: ""; }
 
-.glyph-playback-rate-1x::before {
+.mi-KeyboardFull::before {
+  content: ""; }
+
+.mi-MobSignal1::before {
+  content: ""; }
+
+.mi-MobSignal2::before {
+  content: ""; }
+
+.mi-MobSignal3::before {
+  content: ""; }
+
+.mi-MobSignal4::before {
+  content: ""; }
+
+.mi-MobSignal5::before {
+  content: ""; }
+
+.mi-MobWifi1::before {
+  content: ""; }
+
+.mi-MobWifi2::before {
+  content: ""; }
+
+.mi-MobWifi3::before {
+  content: ""; }
+
+.mi-MobWifi4::before {
+  content: ""; }
+
+.mi-MobAirplane::before {
+  content: ""; }
+
+.mi-MobBluetooth::before {
+  content: ""; }
+
+.mi-MobActionCenter::before {
+  content: ""; }
+
+.mi-MobLocation::before {
+  content: ""; }
+
+.mi-MobWifiHotspot::before {
+  content: ""; }
+
+.mi-LanguageJpn::before {
+  content: ""; }
+
+.mi-MobQuietHours::before {
+  content: ""; }
+
+.mi-MobDrivingMode::before {
+  content: ""; }
+
+.mi-SpeedOff::before {
+  content: ""; }
+
+.mi-SpeedMedium::before {
+  content: ""; }
+
+.mi-SpeedHigh::before {
+  content: ""; }
+
+.mi-ThisPC::before {
+  content: ""; }
+
+.mi-MusicNote::before {
+  content: ""; }
+
+.mi-FileExplorer::before {
+  content: ""; }
+
+.mi-FileExplorerApp::before {
+  content: ""; }
+
+.mi-LeftArrowKeyTime0::before {
+  content: ""; }
+
+.mi-MicOff::before {
+  content: ""; }
+
+.mi-MicSleep::before {
+  content: ""; }
+
+.mi-MicError::before {
+  content: ""; }
+
+.mi-PlaybackRate1x::before {
+  content: ""; }
+
+.mi-PlaybackRateOther::before {
+  content: ""; }
+
+.mi-CashDrawer::before {
+  content: ""; }
+
+.mi-BarcodeScanner::before {
+  content: ""; }
+
+.mi-ReceiptPrinter::before {
+  content: ""; }
+
+.mi-MagStripeReader::before {
+  content: ""; }
+
+.mi-CompletedSolid::before {
+  content: ""; }
+
+.mi-CompanionApp::before {
+  content: ""; }
+
+.mi-SwipeRevealArt::before {
+  content: ""; }
+
+.mi-MicOn::before {
+  content: ""; }
+
+.mi-MicClipping::before {
+  content: ""; }
+
+.mi-TabletSelected::before {
+  content: ""; }
+
+.mi-MobileSelected::before {
+  content: ""; }
+
+.mi-LaptopSelected::before {
+  content: ""; }
+
+.mi-TVMonitorSelected::before {
+  content: ""; }
+
+.mi-DeveloperTools::before {
+  content: ""; }
+
+.mi-MobCallForwarding::before {
+  content: ""; }
+
+.mi-MobCallForwardingMirrored::before {
+  content: ""; }
+
+.mi-BodyCam::before {
+  content: ""; }
+
+.mi-PoliceCar::before {
+  content: ""; }
+
+.mi-Draw::before {
+  content: ""; }
+
+.mi-DrawSolid::before {
+  content: ""; }
+
+.mi-LowerBrightness::before {
+  content: ""; }
+
+.mi-ScrollUpDown::before {
+  content: ""; }
+
+.mi-DateTime::before {
+  content: ""; }
+
+.mi-Tiles::before {
+  content: ""; }
+
+.mi-PartyLeader::before {
+  content: ""; }
+
+.mi-AppIconDefault::before {
+  content: ""; }
+
+.mi-AddSurfaceHub::before {
+  content: ""; }
+
+.mi-DevUpdate::before {
+  content: ""; }
+
+.mi-Unit::before {
+  content: ""; }
+
+.mi-AddTo::before {
+  content: ""; }
+
+.mi-RemoveFrom::before {
+  content: ""; }
+
+.mi-RadioBtnOff::before {
+  content: ""; }
+
+.mi-RadioBtnOn::before {
+  content: ""; }
+
+.mi-RadioBullet2::before {
   content: ""; }
 
-.glyph-playback-rate-other::before {
+.mi-ExploreContent::before {
   content: ""; }
 
-.glyph-subscription-add::before {
-  content: ""; }
+.mi-ScrollMode::before {
+  content: ""; }
 
-.glyph-subscription-add-mirrored::before {
-  content: ""; }
+.mi-ZoomMode::before {
+  content: ""; }
 
-.glyph-subscriptions::before {
-  content: ""; }
+.mi-PanMode::before {
+  content: ""; }
 
-.glyph-subscriptions-mirrored::before {
-  content: ""; }
+.mi-WiredUSB::before {
+  content: ""; }
+
+.mi-WirelessUSB::before {
+  content: ""; }
+
+.mi-USBSafeConnect::before {
+  content: ""; }
+
+.mi-ActionCenterNotificationMirrored::before {
+  content: ""; }
+
+.mi-ActionCenterMirrored::before {
+  content: ""; }
+
+.mi-ResetDevice::before {
+  content: ""; }
+
+.mi-Feedback::before {
+  content: ""; }
+
+.mi-Subtitles::before {
+  content: ""; }
+
+.mi-SubtitlesAudio::before {
+  content: ""; }
+
+.mi-eSIM::before {
+  content: ""; }
+
+.mi-eSIMNoProfile::before {
+  content: ""; }
+
+.mi-eSIMLocked::before {
+  content: ""; }
+
+.mi-eSIMBusy::before {
+  content: ""; }
+
+.mi-SignalError::before {
+  content: ""; }
+
+.mi-StreamingEnterprise::before {
+  content: ""; }
+
+.mi-Headphone0::before {
+  content: ""; }
+
+.mi-Headphone1::before {
+  content: ""; }
+
+.mi-Headphone2::before {
+  content: ""; }
+
+.mi-Headphone3::before {
+  content: ""; }
+
+.mi-KeyboardBrightness::before {
+  content: ""; }
+
+.mi-KeyboardLowerBrightness::before {
+  content: ""; }
+
+.mi-SkipBack10::before {
+  content: ""; }
+
+.mi-SkipForward30::before {
+  content: ""; }
+
+.mi-TreeFolderFolder::before {
+  content: ""; }
+
+.mi-TreeFolderFolderFill::before {
+  content: ""; }
+
+.mi-TreeFolderFolderOpen::before {
+  content: ""; }
+
+.mi-TreeFolderFolderOpenFill::before {
+  content: ""; }
+
+.mi-MultimediaDMP::before {
+  content: ""; }
+
+.mi-KeyboardOneHanded::before {
+  content: ""; }
+
+.mi-Narrator::before {
+  content: ""; }
+
+.mi-EmojiTabPeople::before {
+  content: ""; }
+
+.mi-EmojiTabSmilesAnimals::before {
+  content: ""; }
+
+.mi-EmojiTabCelebrationObjects::before {
+  content: ""; }
+
+.mi-EmojiTabFoodPlants::before {
+  content: ""; }
+
+.mi-EmojiTabTransitPlaces::before {
+  content: ""; }
+
+.mi-EmojiTabSymbols::before {
+  content: ""; }
+
+.mi-EmojiTabTextSmiles::before {
+  content: ""; }
+
+.mi-EmojiTabFavorites::before {
+  content: ""; }
+
+.mi-EmojiSwatch::before {
+  content: ""; }
+
+.mi-CompanionDeviceFramework::before {
+  content: ""; }
+
+.mi-Ruler::before {
+  content: ""; }
+
+.mi-FingerInking::before {
+  content: ""; }
+
+.mi-StrokeErase::before {
+  content: ""; }
+
+.mi-PointErase::before {
+  content: ""; }
+
+.mi-ClearAllInk::before {
+  content: ""; }
+
+.mi-Pencil::before {
+  content: ""; }
+
+.mi-Marker::before {
+  content: ""; }
+
+.mi-InkingCaret::before {
+  content: ""; }
+
+.mi-InkingColorOutline::before {
+  content: ""; }
+
+.mi-InkingColorFill::before {
+  content: ""; }
+
+.mi-HardDrive::before {
+  content: ""; }
+
+.mi-NetworkAdapter::before {
+  content: ""; }
+
+.mi-Touchscreen::before {
+  content: ""; }
+
+.mi-NetworkPrinter::before {
+  content: ""; }
+
+.mi-CloudPrinter::before {
+  content: ""; }
+
+.mi-KeyboardShortcut::before {
+  content: ""; }
+
+.mi-BrushSize::before {
+  content: ""; }
+
+.mi-NarratorForward::before {
+  content: ""; }
+
+.mi-NarratorForwardMirrored::before {
+  content: ""; }
+
+.mi-SyncBadge12::before {
+  content: ""; }
+
+.mi-RingerBadge12::before {
+  content: ""; }
+
+.mi-AsteriskBadge12::before {
+  content: ""; }
+
+.mi-ErrorBadge12::before {
+  content: ""; }
+
+.mi-CircleRingBadge12::before {
+  content: ""; }
+
+.mi-CircleFillBadge12::before {
+  content: ""; }
+
+.mi-ImportantBadge12::before {
+  content: ""; }
+
+.mi-MailBadge12::before {
+  content: ""; }
+
+.mi-PauseBadge12::before {
+  content: ""; }
+
+.mi-PlayBadge12::before {
+  content: ""; }
+
+.mi-PenWorkspace::before {
+  content: ""; }
+
+.mi-CaligraphyPen::before {
+  content: ""; }
+
+.mi-ReplyMirrored::before {
+  content: ""; }
+
+.mi-LockscreenDesktop::before {
+  content: ""; }
+
+.mi-Multitask16::before {
+  content: ""; }
+
+.mi-Play36::before {
+  content: ""; }
+
+.mi-PenPalette::before {
+  content: ""; }
+
+.mi-GuestUser::before {
+  content: ""; }
+
+.mi-SettingsBattery::before {
+  content: ""; }
+
+.mi-TaskbarPhone::before {
+  content: ""; }
+
+.mi-LockScreenGlance::before {
+  content: ""; }
+
+.mi-ImageExport::before {
+  content: ""; }
+
+.mi-WifiEthernet::before {
+  content: ""; }
+
+.mi-ActionCenterQuiet::before {
+  content: ""; }
+
+.mi-ActionCenterQuietNotification::before {
+  content: ""; }
+
+.mi-TrackersMirrored::before {
+  content: ""; }
+
+.mi-DateTimeMirrored::before {
+  content: ""; }
+
+.mi-Wheel::before {
+  content: ""; }
+
+.mi-PenWorkspaceMirrored::before {
+  content: ""; }
+
+.mi-PenPaletteMirrored::before {
+  content: ""; }
+
+.mi-StrokeEraseMirrored::before {
+  content: ""; }
+
+.mi-PointEraseMirrored::before {
+  content: ""; }
+
+.mi-ClearAllInkMirrored::before {
+  content: ""; }
+
+.mi-BackgroundToggle::before {
+  content: ""; }
+
+.mi-Marquee::before {
+  content: ""; }
+
+.mi-CheckMarkZeroWidthLegacy::before {
+  content: ""; }
+
+.mi-CheckboxFillZeroWidthLegacy::before {
+  content: ""; }
+
+.mi-HeartBrokenZeroWidthLegacy::before {
+  content: ""; }
+
+.mi-ChevronLeft3Legacy::before {
+  content: ""; }
+
+.mi-ChevronRight3Legacy::before {
+  content: ""; }
+
+.mi-ChevronUp3Legacy::before {
+  content: ""; }
+
+.mi-ChevronDown3Legacy::before {
+  content: ""; }
+
+.mi-ScrollChevronLeftBoldLegacy::before {
+  content: ""; }
+
+.mi-ScrollChevronRightBoldLegacy::before {
+  content: ""; }
+
+.mi-ScrollChevronUpBoldLegacy::before {
+  content: ""; }
+
+.mi-ScrollChevronDownBoldLegacy::before {
+  content: ""; }
+
+.mi-RatingStarFillReducedPaddingHTMLLegacy::before {
+  content: ""; }
+
+.mi-ChevronLeft1Legacy::before {
+  content: ""; }
+
+.mi-ChevronRight1Legacy::before {
+  content: ""; }
+
+.mi-ChevronUp1Legacy::before {
+  content: ""; }
+
+.mi-ChevronDown1Legacy::before {
+  content: ""; }
+
+.mi-ChevronLeft2Legacy::before {
+  content: ""; }
+
+.mi-ChevronRight2Legacy::before {
+  content: ""; }
+
+.mi-ChevronUp2Legacy::before {
+  content: ""; }
+
+.mi-ChevronDown2Legacy::before {
+  content: ""; }
+
+.mi-ChevronLeft4Legacy::before {
+  content: ""; }
+
+.mi-ChevronRight4Legacy::before {
+  content: ""; }
+
+.mi-ChevronUp4Legacy::before {
+  content: ""; }
+
+.mi-ChevronDown4Legacy::before {
+  content: ""; }
+
+.mi-HeartFillLegacy::before {
+  content: ""; }
+
+.mi-BackBttnMirroredArrow20Legacy::before {
+  content: ""; }
+
+.mi-ArrowHTMLLegacyMirrored::before {
+  content: ""; }
+
+.mi-RatingStarFillLegacy::before {
+  content: ""; }
+
+.mi-RatingStarFillSmallLegacy::before {
+  content: ""; }
+
+.mi-BackBttnArrow20Legacy::before {
+  content: ""; }
+
+.mi-ArrowHTMLLegacy::before {
+  content: ""; }
+
+.mi-ChevronFlipLeftLegacy::before {
+  content: ""; }
+
+.mi-ChevronFlipRightLegacy::before {
+  content: ""; }
+
+.mi-ChevronFlipUpLegacy::before {
+  content: ""; }
+
+.mi-ChevronFlipDownLegacy::before {
+  content: ""; }
+
+.mi-CheckmarkMenuLegacy::before {
+  content: ""; }
+
+.mi-AcceptLegacy::before {
+  content: ""; }
+
+.mi-ForwardLegacy::before {
+  content: ""; }
+
+.mi-BackLegacy::before {
+  content: ""; }
+
+.mi-FavoriteLegacy::before {
+  content: ""; }
+
+.mi-FindLegacy::before {
+  content: ""; }
+
+.mi-ShowAllFilesLegacy::before {
+  content: ""; }
+
+.mi-UploadSkyDriveLegacy::before {
+  content: ""; }
+
+.mi-ViewLegacy::before {
+  content: ""; }
+
+.mi-RepeatAllLegacy::before {
+  content: ""; }
+
+.mi-SolidStarLegacy::before {
+  content: ""; }
+
+.mi-CommentInlineLegacy::before {
+  content: ""; }
+
+.mi-FavoriteInlineLegacy::before {
+  content: ""; }
+
+.mi-LikeInlineLegacy::before {
+  content: ""; }
+
+.mi-VideoInlineLegacy::before {
+  content: ""; }
+
+.mi-MailMessageLegacy::before {
+  content: ""; }
+
+.mi-RatingStarLegacy::before {
+  content: ""; }
+
+.mi-Favorite2Legacy::before {
+  content: ""; }
+
+.mi-Unfavorite2Legacy::before {
+  content: ""; }
+
+.mi-MobileContactLegacy::before {
+  content: ""; }
+
+.mi-PresenceChickletLegacy::before {
+  content: ""; }
+
+.mi-BulletedListLegacy::before {
+  content: ""; }
+
+.mi-BulletedListLegacyMirrored::before {
+  content: ""; }
+
+.mi-Contact3Legacy::before {
+  content: ""; }
+
+.mi-MapPin::before {
+  content: ""; }
+
+.mi-ChevronDown::before {
+  content: ""; }
+
+.mi-ChevronUp::before {
+  content: ""; }
+
+.mi-Edit::before {
+  content: ""; }
+
+.mi-Add::before {
+  content: ""; }
+
+.mi-Cancel::before {
+  content: ""; }
+
+.mi-More::before {
+  content: ""; }
+
+.mi-Settings::before {
+  content: ""; }
+
+.mi-Video::before {
+  content: ""; }
+
+.mi-Mail::before {
+  content: ""; }
+
+.mi-People::before {
+  content: ""; }
+
+.mi-Phone::before {
+  content: ""; }
+
+.mi-Pin::before {
+  content: ""; }
+
+.mi-Shop::before {
+  content: ""; }
+
+.mi-Stop::before {
+  content: ""; }
+
+.mi-Link::before {
+  content: ""; }
+
+.mi-Filter::before {
+  content: ""; }
+
+.mi-AllApps::before {
+  content: ""; }
+
+.mi-Zoom::before {
+  content: ""; }
+
+.mi-ZoomOut::before {
+  content: ""; }
+
+.mi-Microphone::before {
+  content: ""; }
+
+.mi-Search::before {
+  content: ""; }
+
+.mi-Camera::before {
+  content: ""; }
+
+.mi-Attach::before {
+  content: ""; }
+
+.mi-Send::before {
+  content: ""; }
+
+.mi-PageSolid::before {
+  content: ""; }
+
+.mi-Forward::before {
+  content: ""; }
+
+.mi-Back::before {
+  content: ""; }
+
+.mi-Refresh::before {
+  content: ""; }
+
+.mi-Lock::before {
+  content: ""; }
+
+.mi-ReportHacked::before {
+  content: ""; }
+
+.mi-FavoriteStar::before {
+  content: ""; }
+
+.mi-FavoriteStarFill::before {
+  content: ""; }
+
+.mi-Remove::before {
+  content: ""; }
+
+.mi-Checkbox::before {
+  content: ""; }
+
+.mi-CheckboxComposite::before {
+  content: ""; }
+
+.mi-CheckboxFill::before {
+  content: ""; }
+
+.mi-CheckboxIndeterminate::before {
+  content: ""; }
+
+.mi-CheckboxCompositeReversed::before {
+  content: ""; }
+
+.mi-CheckMark::before {
+  content: ""; }
+
+.mi-BackToWindow::before {
+  content: ""; }
+
+.mi-FullScreen::before {
+  content: ""; }
+
+.mi-ResizeMouseLarge::before {
+  content: ""; }
+
+.mi-Print::before {
+  content: ""; }
+
+.mi-Up::before {
+  content: ""; }
+
+.mi-Down::before {
+  content: ""; }
+
+.mi-Delete::before {
+  content: ""; }
+
+.mi-Save::before {
+  content: ""; }
+
+.mi-Mute::before {
+  content: ""; }
+
+.mi-MultiSelect::before {
+  content: ""; }
+
+.mi-KeyboardClassic::before {
+  content: ""; }
+
+.mi-KeyboardSplit::before {
+  content: ""; }
+
+.mi-Volume::before {
+  content: ""; }
+
+.mi-Play::before {
+  content: ""; }
+
+.mi-Pause::before {
+  content: ""; }
+
+.mi-ChevronLeft::before {
+  content: ""; }
+
+.mi-ChevronRight::before {
+  content: ""; }
+
+.mi-Emoji2::before {
+  content: ""; }
+
+.mi-Globe::before {
+  content: ""; }
+
+.mi-EaseOfAccess::before {
+  content: ""; }
+
+.mi-HangUp::before {
+  content: ""; }
+
+.mi-ContactInfo::before {
+  content: ""; }
+
+.mi-Unpin::before {
+  content: ""; }
+
+.mi-Contact::before {
+  content: ""; }
+
+.mi-Memo::before {
+  content: ""; }
+
+.mi-Paste::before {
+  content: ""; }
+
+.mi-PhoneBook::before {
+  content: ""; }
+
+.mi-Unlock::before {
+  content: ""; }
+
+.mi-Slideshow::before {
+  content: ""; }
+
+.mi-Calendar::before {
+  content: ""; }
+
+.mi-Trim::before {
+  content: ""; }
+
+.mi-NewWindow::before {
+  content: ""; }
+
+.mi-SaveLocal::before {
+  content: ""; }
+
+.mi-Color::before {
+  content: ""; }
+
+.mi-SaveAs::before {
+  content: ""; }
+
+.mi-Redo::before {
+  content: ""; }
+
+.mi-Undo::before {
+  content: ""; }
+
+.mi-Crop::before {
+  content: ""; }
+
+.mi-OpenWith::before {
+  content: ""; }
+
+.mi-SetlockScreen::before {
+  content: ""; }
+
+.mi-MapPin2::before {
+  content: ""; }
+
+.mi-Flag::before {
+  content: ""; }
+
+.mi-Page::before {
+  content: ""; }
+
+.mi-BrowsePhotos::before {
+  content: ""; }
+
+.mi-Record::before {
+  content: ""; }
+
+.mi-TouchPointer::before {
+  content: ""; }
+
+.mi-Highlight::before {
+  content: ""; }
+
+.mi-OtherUser::before {
+  content: ""; }
+
+.mi-Admin::before {
+  content: ""; }
+
+.mi-CC::before {
+  content: ""; }
+
+.mi-Car::before {
+  content: ""; }
+
+.mi-Home::before {
+  content: ""; }
+
+.mi-EndPoint::before {
+  content: ""; }
+
+.mi-Location::before {
+  content: ""; }
+
+.mi-Recent::before {
+  content: ""; }
+
+.mi-WifiHotspot::before {
+  content: ""; }
+
+.mi-View::before {
+  content: ""; }
+
+.mi-Previous::before {
+  content: ""; }
+
+.mi-Next::before {
+  content: ""; }
+
+.mi-Clear::before {
+  content: ""; }
+
+.mi-Sync::before {
+  content: ""; }
+
+.mi-Download::before {
+  content: ""; }
+
+.mi-Help::before {
+  content: ""; }
+
+.mi-Upload::before {
+  content: ""; }
+
+.mi-Emoji::before {
+  content: ""; }
+
+.mi-TwoPage::before {
+  content: ""; }
+
+.mi-LeaveChat::before {
+  content: ""; }
+
+.mi-MailForward::before {
+  content: ""; }
+
+.mi-RotateCamera::before {
+  content: ""; }
+
+.mi-ClosePane::before {
+  content: ""; }
+
+.mi-OpenPane::before {
+  content: ""; }
+
+.mi-PreviewLink::before {
+  content: ""; }
+
+.mi-AttachCamera::before {
+  content: ""; }
+
+.mi-ZoomIn::before {
+  content: ""; }
+
+.mi-Bookmarks::before {
+  content: ""; }
+
+.mi-Document::before {
+  content: ""; }
+
+.mi-ProtectedDocument::before {
+  content: ""; }
+
+.mi-OpenInNewWindow::before {
+  content: ""; }
+
+.mi-MailFill::before {
+  content: ""; }
+
+.mi-ViewAll::before {
+  content: ""; }
+
+.mi-VideoChat::before {
+  content: ""; }
+
+.mi-Switch::before {
+  content: ""; }
+
+.mi-Rename::before {
+  content: ""; }
+
+.mi-Go::before {
+  content: ""; }
+
+.mi-Remote::before {
+  content: ""; }
+
+.mi-Shuffle::before {
+  content: ""; }
+
+.mi-SelectAll::before {
+  content: ""; }
+
+.mi-Orientation::before {
+  content: ""; }
+
+.mi-Import::before {
+  content: ""; }
+
+.mi-ImportAll::before {
+  content: ""; }
+
+.mi-Webcam::before {
+  content: ""; }
+
+.mi-Picture::before {
+  content: ""; }
+
+.mi-Caption::before {
+  content: ""; }
+
+.mi-ShowResults::before {
+  content: ""; }
+
+.mi-Message::before {
+  content: ""; }
+
+.mi-CalendarDay::before {
+  content: ""; }
+
+.mi-CalendarWeek::before {
+  content: ""; }
+
+.mi-Characters::before {
+  content: ""; }
+
+.mi-MailReplyAll::before {
+  content: ""; }
+
+.mi-Read::before {
+  content: ""; }
+
+.mi-ShowBcc::before {
+  content: ""; }
+
+.mi-HideBcc::before {
+  content: ""; }
+
+.mi-Cut::before {
+  content: ""; }
+
+.mi-Copy::before {
+  content: ""; }
+
+.mi-Important::before {
+  content: ""; }
+
+.mi-MailReply::before {
+  content: ""; }
+
+.mi-Sort::before {
+  content: ""; }
+
+.mi-DisconnectDrive::before {
+  content: ""; }
+
+.mi-MapDrive::before {
+  content: ""; }
+
+.mi-ContactPresence::before {
+  content: ""; }
+
+.mi-Priority::before {
+  content: ""; }
+
+.mi-GotoToday::before {
+  content: ""; }
+
+.mi-Font::before {
+  content: ""; }
+
+.mi-FontColor::before {
+  content: ""; }
+
+.mi-Contact2::before {
+  content: ""; }
+
+.mi-FolderFill::before {
+  content: ""; }
+
+.mi-Audio::before {
+  content: ""; }
+
+.mi-Permissions::before {
+  content: ""; }
+
+.mi-DisableUpdates::before {
+  content: ""; }
+
+.mi-Unfavorite::before {
+  content: ""; }
+
+.mi-OpenLocal::before {
+  content: ""; }
+
+.mi-Italic::before {
+  content: ""; }
+
+.mi-Underline::before {
+  content: ""; }
+
+.mi-Bold::before {
+  content: ""; }
+
+.mi-MoveToFolder::before {
+  content: ""; }
+
+.mi-LikeDislike::before {
+  content: ""; }
+
+.mi-Dislike::before {
+  content: ""; }
+
+.mi-Like::before {
+  content: ""; }
+
+.mi-AlignRight::before {
+  content: ""; }
+
+.mi-AlignCenter::before {
+  content: ""; }
+
+.mi-AlignLeft::before {
+  content: ""; }
+
+.mi-OpenFile::before {
+  content: ""; }
+
+.mi-ClearSelection::before {
+  content: ""; }
+
+.mi-FontDecrease::before {
+  content: ""; }
+
+.mi-FontIncrease::before {
+  content: ""; }
+
+.mi-FontSize::before {
+  content: ""; }
+
+.mi-CellPhone::before {
+  content: ""; }
+
+.mi-Reshare::before {
+  content: ""; }
+
+.mi-Tag::before {
+  content: ""; }
+
+.mi-RepeatOne::before {
+  content: ""; }
+
+.mi-RepeatAll::before {
+  content: ""; }
+
+.mi-Calculator::before {
+  content: ""; }
+
+.mi-Directions::before {
+  content: ""; }
+
+.mi-Library::before {
+  content: ""; }
+
+.mi-PostUpdate::before {
+  content: ""; }
+
+.mi-NewFolder::before {
+  content: ""; }
+
+.mi-CalendarReply::before {
+  content: ""; }
+
+.mi-UnsyncFolder::before {
+  content: ""; }
+
+.mi-SyncFolder::before {
+  content: ""; }
+
+.mi-BlockContact::before {
+  content: ""; }
+
+.mi-SwitchApps::before {
+  content: ""; }
+
+.mi-AddFriend::before {
+  content: ""; }
+
+.mi-Accept::before {
+  content: ""; }
+
+.mi-GoToStart::before {
+  content: ""; }
+
+.mi-BulletedList::before {
+  content: ""; }
+
+.mi-Scan::before {
+  content: ""; }
+
+.mi-Preview::before {
+  content: ""; }
+
+.mi-ZeroBars::before {
+  content: ""; }
+
+.mi-OneBar::before {
+  content: ""; }
+
+.mi-TwoBars::before {
+  content: ""; }
+
+.mi-ThreeBars::before {
+  content: ""; }
+
+.mi-FourBars::before {
+  content: ""; }
+
+.mi-World::before {
+  content: ""; }
+
+.mi-Comment::before {
+  content: ""; }
+
+.mi-MusicInfo::before {
+  content: ""; }
+
+.mi-DockLeft::before {
+  content: ""; }
+
+.mi-DockRight::before {
+  content: ""; }
+
+.mi-DockBottom::before {
+  content: ""; }
+
+.mi-Repair::before {
+  content: ""; }
+
+.mi-Accounts::before {
+  content: ""; }
+
+.mi-Manage::before {
+  content: ""; }
+
+.mi-Street::before {
+  content: ""; }
+
+.mi-KeyboardStandard::before {
+  content: ""; }
+
+.mi-ReturnToWindow::before {
+  content: ""; }
+
+.mi-CalculatorBackspace::before {
+  content: ""; }
+
+.mi-ChevronDownSmall::before {
+  content: ""; }
+
+.mi-ChevronLeftSmall::before {
+  content: ""; }
+
+.mi-ChevronRightSmall::before {
+  content: ""; }
+
+.mi-Devices2::before {
+  content: ""; }
+
+.mi-ExpandTile::before {
+  content: ""; }
+
+.mi-PC1::before {
+  content: ""; }
+
+.mi-PresenceChicklet::before {
+  content: ""; }
+
+.mi-PresenceChickletVideo::before {
+  content: ""; }
+
+.mi-Reply::before {
+  content: ""; }
+
+.mi-SetTile::before {
+  content: ""; }
+
+.mi-Type::before {
+  content: ""; }
+
+.mi-AllAppsMirrored::before {
+  content: ""; }
+
+.mi-BookmarksMirrored::before {
+  content: ""; }
+
+.mi-BulletedListMirrored::before {
+  content: ""; }
+
+.mi-ClearSelectionMirrored::before {
+  content: ""; }
+
+.mi-ClosePaneMirrored::before {
+  content: ""; }
+
+.mi-DockRightMirrored::before {
+  content: ""; }
+
+.mi-DockLeftMirrored::before {
+  content: ""; }
+
+.mi-ExpandTileMirrored::before {
+  content: ""; }
+
+.mi-GoMirrored::before {
+  content: ""; }
+
+.mi-HelpMirrored::before {
+  content: ""; }
+
+.mi-ImportMirrored::before {
+  content: ""; }
+
+.mi-ImportAllMirrored::before {
+  content: ""; }
+
+.mi-MailForwardMirrored::before {
+  content: ""; }
+
+.mi-MailReplyMirrored::before {
+  content: ""; }
+
+.mi-MailReplyAllMirrored::before {
+  content: ""; }
+
+.mi-OpenPaneMirrored::before {
+  content: ""; }
+
+.mi-OpenWithMirrored::before {
+  content: ""; }
+
+.mi-ShowResultsMirrored::before {
+  content: ""; }
+
+.mi-Lightbulb::before {
+  content: ""; }
+
+.mi-MultiSelectMirrored::before {
+  content: ""; }
+
+.mi-Heart::before {
+  content: ""; }
+
+.mi-HeartFill::before {
+  content: ""; }
+
+.mi-EditMirrored::before {
+  content: ""; }
+
+.mi-NUIFPPressRepeatHand::before {
+  content: ""; }
+
+.mi-CalendarMirrored::before {
+  content: ""; }
+
+.mi-ConnectApp::before {
+  content: ""; }
+
+.mi-Export::before {
+  content: ""; }
+
+.mi-ExportMirrored::before {
+  content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   content: "■"; }
@@ -6718,9 +9900,11 @@ button.close {
   display: inline-block; }
 
 @font-face {
-  font-family: "winjs-symbols";
-  src: url("../fonts/glyphs/winjs-symbols.eot");
-  src: url("../fonts/glyphs/winjs-symbols.eot#iefix") format("embedded-opentype"), url("../fonts/glyphs/winjs-symbols.ttf") format("truetype"); }
+  font-family: "micon";
+  src: url("../fonts/glyphs/mdl2-v1155.eot?k8zs0v");
+  src: url("../fonts/glyphs/mdl2-v1155.eot?k8zs0v#iefix") format("embedded-opentype"), url("../fonts/glyphs/mdl2-v1155.ttf?k8zs0v") format("truetype"), url("../fonts/glyphs/mdl2-v1155.woff?k8zs0v") format("woff"), url("../fonts/glyphs/mdl2-v1155.svg?k8zs0v#micon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "Selawik";
@@ -7763,8 +10947,7 @@ dl dd,
 dl dt {
   margin: 12px 0; }
 
-﻿
-ul {
+﻿ ul {
   padding-left: 20px; }
 
 ol {
@@ -8435,7 +11618,7 @@ ol {
       border-color: rgba(255, 255, 255, 0.2);
       color: rgba(255, 255, 255, 0.2); }
 
-.btn[data-toggle="collapse"] i[class*="glyph-"] {
+.btn[data-toggle="collapse"] i[class*="mi-"] {
   font-size: .9em; }
 
 .btn[data-toggle="collapse"][aria-expanded="true"] .button-label-collapsed {
@@ -8474,8 +11657,8 @@ ol {
       .dropdown .btn-dropdown .caret::before {
         vertical-align: bottom; }
         .dropdown .btn-dropdown .caret::before {
-          font-family: "winjs-symbols";
-          content: ""; }
+          font-family: "micon";
+          content: ""; }
   .dropdown .dropdown-menu {
     box-shadow: none;
     border: none;
@@ -8735,8 +11918,8 @@ textarea.form-control {
   line-height: 1em;
   padding-top: 2px; }
   .checkbox label input:checked ~ span::before {
-    font-family: "winjs-symbols";
-    content: ""; }
+    font-family: "micon";
+    content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   text-indent: 2px;
@@ -8761,8 +11944,8 @@ textarea.form-control {
     top: 13px;
     right: 9px; }
     .combobox:after {
-      font-family: "winjs-symbols";
-      content: ""; }
+      font-family: "micon";
+      content: ""; }
 
 select {
   font-size: 15px;
@@ -9712,10 +12895,10 @@ form .theme-light select {
 
 .navbar, .navbar-form {
   border: none; }
-  .navbar .glyph-chevron-down-2, .navbar-form .glyph-chevron-down-2 {
+  .navbar .mi-ChevronDown, .navbar-form .mi-ChevronDown {
     font-size: 6px;
     margin: 0 0 0 5px; }
-  .navbar .glyph-hamburger, .navbar-form .glyph-hamburger {
+  .navbar .mi-GlobalNavButton, .navbar-form .mi-GlobalNavButton {
     font-size: 20px; }
   .navbar .navbar-toggle, .navbar-form .navbar-toggle {
     padding: 4px 10px;
@@ -9809,8 +12992,8 @@ form .theme-light select {
       line-height: 1;
       display: block; }
       .navbar-form .btn.btn-default::before {
-        font-family: "winjs-symbols";
-        content: ""; }
+        font-family: "micon";
+        content: ""; }
   @media (min-width: 1084px) {
     .navbar-form {
       margin-top: 6px;
@@ -9862,10 +13045,10 @@ form .theme-light select {
   .navbar-local.theme-default .navbar-toggle,
   .navbar-local.theme-light .navbar-toggle {
     background-color: transparent; }
-  .navbar-global .glyph-hamburger, .navbar-global.theme-default .glyph-hamburger, .navbar-global.theme-light .glyph-hamburger,
-  .navbar-local .glyph-hamburger,
-  .navbar-local.theme-default .glyph-hamburger,
-  .navbar-local.theme-light .glyph-hamburger {
+  .navbar-global .mi-GlobalNavButton, .navbar-global.theme-default .mi-GlobalNavButton, .navbar-global.theme-light .mi-GlobalNavButton,
+  .navbar-local .mi-GlobalNavButton,
+  .navbar-local.theme-default .mi-GlobalNavButton,
+  .navbar-local.theme-light .mi-GlobalNavButton {
     color: rgba(0, 0, 0, 0.6); }
   .navbar-global .navbar-collapse,
   .navbar-global .navbar-form, .navbar-global.theme-default .navbar-collapse,
@@ -9937,8 +13120,8 @@ form .theme-light select {
       color: #000000;
       background-color: rgba(0, 0, 0, 0.05); }
 
-.navbar-global.theme-dark .glyph-hamburger,
-.navbar-local.theme-dark .glyph-hamburger {
+.navbar-global.theme-dark .mi-GlobalNavButton,
+.navbar-local.theme-dark .mi-GlobalNavButton {
   color: #FFFFFF; }
 
 .navbar-global.theme-dark .navbar-collapse,
@@ -9990,8 +13173,8 @@ form .theme-light select {
   .navbar-local.theme-dark .navbar-nav .open .dropdown-menu > li > a:hover {
     background-color: rgba(0, 0, 0, 0.1); }
 
-.navbar-global.theme-alt .glyph-hamburger,
-.navbar-local.theme-alt .glyph-hamburger {
+.navbar-global.theme-alt .mi-GlobalNavButton,
+.navbar-local.theme-alt .mi-GlobalNavButton {
   color: #FFFFFF; }
 
 .navbar-global.theme-alt .navbar-collapse,
@@ -10136,7 +13319,7 @@ form .theme-light select {
     margin: 0; }
     .panel .pager li > a {
       padding: 0; }
-    .panel .pager i[class*="glyph-"] {
+    .panel .pager i[class*="mi-"] {
       font-size: 1.7em; }
   .panel .nav-pills > .dropdown > a {
     border-left: none;
@@ -10451,7 +13634,7 @@ blockquote {
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0); }
-  .back-to-top [class*="glyph-"] {
+  .back-to-top [class*="mi-"] {
     font-size: 24px; }
   .back-to-top, .back-to-top:focus {
     color: rgba(0, 0, 0, 0.6);
@@ -10469,7 +13652,7 @@ blockquote {
 .button-filter {
   border-color: rgba(0, 0, 0, 0.6);
   background: none; }
-  .button-filter .glyph-clear {
+  .button-filter .mi-Clear {
     margin-left: 5px; }
 
 a.link-on-light {
@@ -10487,8 +13670,9 @@ a.link-on-dark {
   max-width: 44px;
   height: 20px;
   border-radius: 10px;
-  border-width: 1px;
-  border-style: solid; }
+  border-width: 2px;
+  border-style: solid;
+  padding: 0; }
   .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
     position: absolute;
     top: 1px;
@@ -10522,14 +13706,15 @@ a.link-on-dark {
     position: absolute;
     width: 10px;
     height: 10px;
-    top: 4px;
-    left: 4px;
-    border-radius: 5px; }
+    top: 3px;
+    left: 3px;
+    border-radius: 5px;
+    transition: left 0.1s; }
   .btn[data-toggle="button"].btn-toggle-switch:active {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn[data-toggle="button"].btn-toggle-switch.active::before {
-    left: 28px; }
+    left: 27px; }
   .btn[data-toggle="button"].btn-toggle-switch.active .stateLabel-on {
     display: block; }
   .btn[data-toggle="button"].btn-toggle-switch.active .stateLabel-off {
@@ -10667,13 +13852,13 @@ a.link-on-dark {
     cursor: pointer; }
     .list-items [data-toggle="collapse"][aria-expanded="true"], .list-items [data-toggle="collapse"]:hover {
       background: rgba(0, 0, 0, 0.05); }
-  .list-items .glyph-add,
-  .list-items .glyph-remove {
+  .list-items .mi-Add,
+  .list-items .mi-Remove {
     font-size: .75em;
     height: 1.25em; }
-  .list-items [aria-expanded="false"] .glyph-remove {
+  .list-items [aria-expanded="false"] .mi-Remove {
     display: none; }
-  .list-items [aria-expanded="true"] .glyph-add {
+  .list-items [aria-expanded="true"] .mi-Add {
     display: none; }
   .list-items .collapse,
   .list-items .collapsing {
@@ -10763,7 +13948,7 @@ a.link-on-dark {
         width: 0;
         height: 100%;
         vertical-align: bottom; }
-    .media .media-img.media-img-has-play a i[class*="glyph-"] {
+    .media .media-img.media-img-has-play a i[class*="mi-"] {
       z-index: 1; }
     .media .media-img.media-img-has-play a:after {
       background-color: rgba(0, 0, 0, 0.3); }
@@ -10780,7 +13965,7 @@ a.link-on-dark {
         opacity: 0; }
       .media .media-img img.loaded {
         opacity: 1; }
-    .media .media-img i[class*="glyph-"] {
+    .media .media-img i[class*="mi-"] {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -10880,7 +14065,7 @@ a.link-on-dark {
   .media .media-img-has-label a:before,
   .media .media-img-has-label img {
     vertical-align: top; }
-  .media .media-img-has-label i[class*="glyph-"] {
+  .media .media-img-has-label i[class*="mi-"] {
     top: 36%; }
   .media .media-img-label {
     position: absolute;
@@ -10961,8 +14146,8 @@ a.link-on-dark {
   padding: 4px 0 5px;
   min-width: 18px; }
 
-.pagination li.pagination-prev i[class*="glyph-"], .pager li.pagination-prev i[class*="glyph-"], .pager li.pager-prev i[class*="glyph-"],
-.pagination li.pagination-next i[class*="glyph-"], .pager li.pagination-next i[class*="glyph-"], .pager li.pager-next i[class*="glyph-"] {
+.pagination li.pagination-prev i[class*="mi-"], .pager li.pagination-prev i[class*="mi-"], .pager li.pager-prev i[class*="mi-"],
+.pagination li.pagination-next i[class*="mi-"], .pager li.pagination-next i[class*="mi-"], .pager li.pager-next i[class*="mi-"] {
   margin: 0 2px;
   font-size: .813em;
   vertical-align: -.1em; }
@@ -11068,8 +14253,8 @@ a.link-on-dark {
     background: none; }
   .panel-line .panel-body {
     padding: 0; }
-  .panel-line .panel-footer .glyph-flag,
-  .panel-line .panel-footer .glyph-completed {
+  .panel-line .panel-footer .mi-Flag,
+  .panel-line .panel-footer .mi-Completed {
     font-size: 1.2em; }
   .panel-line .list-inline {
     display: inline; }
@@ -11077,7 +14262,7 @@ a.link-on-dark {
       padding: 0 0 0 3em; }
       .panel-line .list-inline li.active a {
         color: rgba(0, 0, 0, 0.6); }
-      .panel-line .list-inline li .glyph-completed {
+      .panel-line .list-inline li .mi-Completed {
         color: #000000; }
   .panel-line .rating-inline {
     margin-right: 1em; }
@@ -11410,9 +14595,9 @@ a.link-on-dark {
       border: none;
       line-height: 1;
       background: none; }
-      .rating .rating-stars .rating-stars-input .rating-btn .glyph-star {
+      .rating .rating-stars .rating-stars-input .rating-btn .mi-RatingStarFillLegacy {
         visibility: hidden; }
-      .rating .rating-stars .rating-stars-input .rating-btn.active .glyph-star {
+      .rating .rating-stars .rating-stars-input .rating-btn.active .mi-RatingStarFillLegacy {
         visibility: visible; }
 
 .rating.rating-small .rating-label {
@@ -11451,31 +14636,31 @@ a.link-on-dark {
   .rating.rating-small .rating-stars .rating-stars-input .rating-btn {
     padding: 0px 2px 2px; }
 
-.rating .rating-stars .glyph-star {
+.rating .rating-stars .mi-RatingStarFillLegacy {
   color: rgba(0, 0, 0, 0.2); }
 
-.rating .rating-stars-value .glyph-star {
+.rating .rating-stars-value .mi-RatingStarFillLegacy {
   color: #000000; }
 
-.rating .rating-stars-value.rating-stars-value-user .glyph-star {
+.rating .rating-stars-value.rating-stars-value-user .mi-RatingStarFillLegacy {
   color: #0078D7; }
 
-.rating .rating-btn.active .glyph-star {
+.rating .rating-btn.active .mi-RatingStarFillLegacy {
   color: rgba(0, 0, 0, 0.8); }
 
 .rating .rating-label {
   color: #000000; }
 
-.rating.color-alt .rating-stars .glyph-star {
+.rating.color-alt .rating-stars .mi-RatingStarFillLegacy {
   color: rgba(255, 255, 255, 0.2); }
 
-.rating.color-alt .rating-stars-value .glyph-star {
+.rating.color-alt .rating-stars-value .mi-RatingStarFillLegacy {
   color: #FFFFFF; }
 
-.rating.color-alt .rating-stars-value.rating-stars-value-user .glyph-star {
+.rating.color-alt .rating-stars-value.rating-stars-value-user .mi-RatingStarFillLegacy {
   color: #0078D7; }
 
-.rating.color-alt .rating-btn.active .glyph-star {
+.rating.color-alt .rating-btn.active .mi-RatingStarFillLegacy {
   color: rgba(255, 255, 255, 0.8); }
 
 .rating.color-alt .rating-label {
@@ -11547,12 +14732,12 @@ a.navigation-btn {
     position: absolute;
     left: 0px; }
     a.navigation-btn:before {
-      font-family: "winjs-symbols";
-      content: ""; }
+      font-family: "micon";
+      content: ""; }
     [dir="rtl"] a.navigation-btn:before {
       left: auto;
       right: 0px;
-      content: ""; }
+      content: ""; }
   @media (min-width: 768px) {
     a.navigation-btn {
       display: none !important; } }
@@ -11648,10 +14833,10 @@ a.navigation-btn {
       top: 7px;
       font-size: 10px; }
       .side-navigation.side-navigation-small.nav .side-nav-c2.with-icon:before {
-        font-family: "winjs-symbols";
-        content: ""; }
+        font-family: "micon";
+        content: ""; }
     .side-navigation.side-navigation-small.nav .side-nav-c2.with-icon.active.with-icon:before {
-      content: ""; }
+      content: ""; }
   .side-navigation.side-navigation-small.nav .side-nav-c2:not(:first-of-type) {
     margin-top: 12px; }
   .side-navigation.side-navigation-small.nav .nav {
@@ -11779,8 +14964,11 @@ main {
   padding: 0;
   background: rgba(0, 0, 0, 0.05); }
 
-#glyphs span[class*="glyph-"] {
+#glyphs span[class*="mi-"] {
   font-size: 2em; }
+
+#glyphs .v-fix-height {
+  height: 100px; }
 
 .color {
   height: 0;

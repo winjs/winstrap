@@ -54,11 +54,11 @@
                 line-height: 1;
                 background: none;
 
-                .glyph-star {
+                .mi-RatingStarFillLegacy {
                     visibility: hidden;
                 }
 
-                &.active .glyph-star {
+                &.active .mi-RatingStarFillLegacy {
                     visibility: visible;
                 }
             }
@@ -99,25 +99,25 @@
 
     // Default colors
     .rating-stars {
-        .glyph-star {
+        .mi-RatingStarFillLegacy {
             color: $color-neutral-low;
         }
     }
 
     .rating-stars-value {
-        .glyph-star {
+        .mi-RatingStarFillLegacy {
             color: $color-vivid-high;
         }
 
         &.rating-stars-value-user {
-            .glyph-star {
+            .mi-RatingStarFillLegacy {
                 color: $color-accent;
             }
         }
     }
 
     .rating-btn.active {
-        .glyph-star {
+        .mi-RatingStarFillLegacy {
             color: $color-vivid-mid;
         }
     }
@@ -129,25 +129,25 @@
     // Alt colors
     &.color-alt {
         .rating-stars {
-            .glyph-star {
+            .mi-RatingStarFillLegacy {
                 color: $color-neutral-low-alt;
             }
         }
 
         .rating-stars-value {
-            .glyph-star {
+            .mi-RatingStarFillLegacy {
                 color: $color-vivid-high-alt;
             }
 
             &.rating-stars-value-user {
-                .glyph-star {
+                .mi-RatingStarFillLegacy {
                     color: $color-accent;
                 }
             }
         }
 
         .rating-btn.active {
-            .glyph-star {
+            .mi-RatingStarFillLegacy {
                 color: $color-vivid-mid-alt;
             }
         }

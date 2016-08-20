@@ -14,12 +14,12 @@ a.navigation-btn {
     &:before {
         position: absolute;
         left: spacing(n);
-        @include glyph(back);
+        @include glyph(Back);
         // This may change depending on the decided method for RTL
         [dir="rtl"] & {
             left: auto;
             right: spacing(n);
-            content: glyph(forward);
+            content: glyph(Forward);
         }
     }
     @media (min-width: $screen-md) {
@@ -125,11 +125,11 @@ a.navigation-btn {
                         position: absolute;
                         top: 7px;
                         font-size: 10px;
-                        @include glyph(add);
+                        @include glyph(Add);
                     }
                     &.active {
                         &.with-icon:before {
-                            content: glyph(remove);
+                            content: glyph(Remove);
                         }
                     }
                 }
