@@ -1,13 +1,9 @@
 // Glyph font
-@font-face{
-	font-family: "micon";
-	src: url("#{$icon-font-path}/mdl2-v1155.eot?k8zs0v");
-	src: url("#{$icon-font-path}/mdl2-v1155.eot?k8zs0v#iefix") format("embedded-opentype"),
-	url("#{$icon-font-path}/mdl2-v1155.ttf?k8zs0v") format("truetype"),
-	url("#{$icon-font-path}/mdl2-v1155.woff?k8zs0v") format("woff"),
-	url("#{$icon-font-path}/mdl2-v1155.svg?k8zs0v#micon") format("svg");
-	font-weight:normal;
-	font-style:normal;
+@font-face {
+    font-family: "winjs-symbols";
+    src: url("#{$icon-font-path}/winjs-symbols.eot");
+    src: url("#{$icon-font-path}/winjs-symbols.eot#iefix") format("embedded-opentype"),
+         url("#{$icon-font-path}/winjs-symbols.ttf") format("truetype");
 }
 
 @font-face {

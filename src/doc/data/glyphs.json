@@ -1,3168 +1,513 @@
 {
-    "orginal": [
-		{
-            "name": "CheckMarkLegacy"
+    "names": [
+        {
+            "name": "chevron-up"
         }, {
-            "name": "CheckboxFillLegacy"
+            "name": "chevron-down"
         }, {
-            "name": "CheckboxLegacy"
+            "name": "checkmark"
         }, {
-            "name": "CheckboxIndeterminateLegacy"
+            "name": "star"
         }, {
-            "name": "CheckboxCompositeReversedLegacy"
+            "name": "magnifier"
         }, {
-            "name": "HeartLegacy"
+            "name": "semantic-zoom"
         }, {
-            "name": "HeartBrokenLegacy"
+            "name": "arrow-left"
         }, {
-            "name": "RatingStarFillZeroWidthLegacy"
+            "name": "arrow-right"
         }, {
-            "name": "HeartFillZeroWidthLegacy"
+            "name": "chevron-left"
         }, {
-            "name": "ScrollChevronLeftLegacy"
+            "name": "chevron-right"
         }, {
-            "name": "ScrollChevronRightLegacy"
+            "name": "chevron-up-2"
         }, {
-            "name": "ScrollChevronUpLegacy"
+            "name": "chevron-down-2"
         }, {
-            "name": "ScrollChevronDownLegacy"
+            "name": "checkmark-2"
         }, {
-            "name": "RevealPasswordLegacy"
+            "name": "star-outline"
         }, {
-            "name": "EaseOfAccessLegacy"
+            "name": "chevron-right-2"
         }, {
-            "name": "CheckmarkListviewLegacy"
+            "name": "chevron-left-2"
         }, {
-            "name": "KeyboardStandardLegacy"
+            "name": "previous"
         }, {
-            "name": "KeyboardSplitLegacy"
+            "name": "next"
         }, {
-            "name": "SearchboxLegacy"
+            "name": "play"
         }, {
-            "name": "CheckboxCompositeLegacy"
+            "name": "pause"
         }, {
-            "name": "BackBttnArrow42Legacy"
+            "name": "edit"
         }, {
-            "name": "BackBttnMirroredArrow42Legacy"
+            "name": "edit-mirrored"
         }, {
-            "name": "SemanticZoomLegacy"
+            "name": "save"
         }, {
-            "name": "PreviousLegacy"
+            "name": "clear"
         }, {
-            "name": "NextLegacy"
+            "name": "delete"
         }, {
-            "name": "PlayLegacy"
+            "name": "remove"
         }, {
-            "name": "PauseLegacy"
+            "name": "add"
         }, {
-            "name": "EditLegacy"
+            "name": "cancel"
         }, {
-            "name": "SaveLegacy"
+            "name": "accept"
         }, {
-            "name": "ClearLegacy"
+            "name": "more"
         }, {
-            "name": "DeleteLegacy"
+            "name": "redo"
         }, {
-            "name": "RemoveLegacy"
+            "name": "undo"
         }, {
-            "name": "AddLegacy"
+            "name": "home"
         }, {
-            "name": "CancelLegacy"
+            "name": "up"
         }, {
-            "name": "MoreLegacy"
+            "name": "forward"
         }, {
-            "name": "RedoLegacy"
+            "name": "back"
         }, {
-            "name": "UndoLegacy"
+            "name": "favorite"
         }, {
-            "name": "HomeLegacy"
+            "name": "camera"
         }, {
-            "name": "UpLegacy"
+            "name": "settings"
         }, {
-            "name": "CameraLegacy"
+            "name": "video"
         }, {
-            "name": "SettingsLegacy"
+            "name": "sync"
         }, {
-            "name": "VideoLegacy"
+            "name": "download"
         }, {
-            "name": "SyncLegacy"
+            "name": "mail"
         }, {
-            "name": "DownloadLegacy"
+            "name": "magnifier-2"
         }, {
-            "name": "MailLegacy"
+            "name": "help"
         }, {
-            "name": "HelpLegacy"
+            "name": "help-mirrored"
         }, {
-            "name": "UploadLegacy"
+            "name": "upload"
         }, {
-            "name": "EmojiLegacy"
+            "name": "emoji"
         }, {
-            "name": "TwoPageLegacy"
+            "name": "two-page"
         }, {
-            "name": "LeaveChatLegacy"
+            "name": "leave-chat"
         }, {
-            "name": "MailForwardLegacy"
+            "name": "mail-forward"
         }, {
-            "name": "ClockLegacy"
+            "name": "clock"
         }, {
-            "name": "SendLegacy"
+            "name": "send"
         }, {
-            "name": "CropLegacy"
+            "name": "crop"
         }, {
-            "name": "RotateCameraLegacy"
+            "name": "rotate-camera"
         }, {
-            "name": "PeopleLegacy"
+            "name": "people"
         }, {
-            "name": "ClosePaneLegacy"
+            "name": "close-pane"
         }, {
-            "name": "OpenPaneLegacy"
+            "name": "close-pane-mirrored"
         }, {
-            "name": "WorldLegacy"
+            "name": "open-pane"
         }, {
-            "name": "FlagLegacy"
+            "name": "open-pane-mirrored"
         }, {
-            "name": "PreviewLinkLegacy"
+            "name": "world"
         }, {
-            "name": "GlobeLegacy"
+            "name": "flag"
         }, {
-            "name": "TrimLegacy"
+            "name": "preview-link"
         }, {
-            "name": "AttachCameraLegacy"
+            "name": "globe"
         }, {
-            "name": "ZoomInLegacy"
+            "name": "trim"
         }, {
-            "name": "BookmarksLegacy"
+            "name": "attach-camera"
         }, {
-            "name": "DocumentLegacy"
+            "name": "zoom-in"
         }, {
-            "name": "ProtectedDocumentLegacy"
+            "name": "bookmarks"
         }, {
-            "name": "PageFillLegacy"
+            "name": "bookmarks-mirrored"
         }, {
-            "name": "MultiSelectLegacy"
+            "name": "document"
         }, {
-            "name": "CommentLegacy"
+            "name": "protected-document"
         }, {
-            "name": "MailFillLegacy"
+            "name": "page"
         }, {
-            "name": "ContactInfoLegacy"
+            "name": "multi-select"
         }, {
-            "name": "HangUpLegacy"
+            "name": "multi-select-mirrored"
         }, {
-            "name": "ViewAllLegacy"
+            "name": "comment"
         }, {
-            "name": "MapPinLegacy"
+            "name": "mail-2"
         }, {
-            "name": "PhoneLegacy"
+            "name": "contact-info"
         }, {
-            "name": "VideoChatLegacy"
+            "name": "contact-info-mirrored"
         }, {
-            "name": "SwitchLegacy"
+            "name": "hang-up"
         }, {
-            "name": "ContactLegacy"
+            "name": "view-all"
         }, {
-            "name": "RenameLegacy"
+            "name": "map-pin"
         }, {
-            "name": "ExpandTileLegacy"
+            "name": "phone"
         }, {
-            "name": "ReduceTileLegacy"
+            "name": "video-chat"
         }, {
-            "name": "PinLegacy"
+            "name": "switch"
         }, {
-            "name": "MusicInfoLegacy"
+            "name": "contact"
         }, {
-            "name": "GoLegacy"
+            "name": "rename"
         }, {
-            "name": "KeyBoardLegacy"
+            "name": "pin"
         }, {
-            "name": "DockLeftLegacy"
+            "name": "music-info"
         }, {
-            "name": "DockRightLegacy"
+            "name": "go"
         }, {
-            "name": "DockBottomLegacy"
+            "name": "go-mirrored"
         }, {
-            "name": "RemoteLegacy"
+            "name": "keyboard"
         }, {
-            "name": "RefreshLegacy"
+            "name": "dock-left"
         }, {
-            "name": "RotateLegacy"
+            "name": "dock-left-mirrored"
         }, {
-            "name": "ShuffleLegacy"
+            "name": "dock-right"
         }, {
-            "name": "ListLegacy"
+            "name": "dock-right-mirrored"
         }, {
-            "name": "ShopLegacy"
+            "name": "dock-bottom"
         }, {
-            "name": "SelectAllLegacy"
+            "name": "remote"
         }, {
-            "name": "OrientationLegacy"
+            "name": "refresh"
         }, {
-            "name": "ImportLegacy"
+            "name": "rotate"
         }, {
-            "name": "ImportAllLegacy"
+            "name": "shuffle"
         }, {
-            "name": "ShowAllFiles3Legacy"
+            "name": "list"
         }, {
-            "name": "ShowAllFiles1Legacy"
+            "name": "list-mirrored"
         }, {
-            "name": "BrowsePhotosLegacy"
+            "name": "shop"
         }, {
-            "name": "WebcamLegacy"
+            "name": "select-all"
         }, {
-            "name": "PictureLegacy"
+            "name": "orientation"
         }, {
-            "name": "SaveLocalLegacy"
+            "name": "import"
         }, {
-            "name": "CaptionLegacy"
+            "name": "import-mirrored"
         }, {
-            "name": "StopLegacy"
+            "name": "import-all"
         }, {
-            "name": "ShowResultsLegacy"
+            "name": "import-all-mirrored"
         }, {
-            "name": "VolumeLegacy"
+            "name": "browse-photos"
         }, {
-            "name": "RepairLegacy"
+            "name": "webcam"
         }, {
-            "name": "MessageLegacy"
+            "name": "picture"
         }, {
-            "name": "PageLegacy"
+            "name": "save-local"
         }, {
-            "name": "CalendarDayLegacy"
+            "name": "caption"
         }, {
-            "name": "CalendarWeekLegacy"
+            "name": "stop"
         }, {
-            "name": "CalendarLegacy"
+            "name": "show-results"
         }, {
-            "name": "CharactersLegacy"
+            "name": "show-results-mirrored"
         }, {
-            "name": "MailReplyAllLegacy"
+            "name": "volume"
         }, {
-            "name": "ReadLegacy"
+            "name": "repair"
         }, {
-            "name": "LinkLegacy"
+            "name": "message"
         }, {
-            "name": "AccountsLegacy"
+            "name": "page-outline"
         }, {
-            "name": "ShowBccLegacy"
+            "name": "calendar-day"
         }, {
-            "name": "HideBccLegacy"
+            "name": "calendar-week"
         }, {
-            "name": "CutLegacy"
+            "name": "calendar"
         }, {
-            "name": "AttachLegacy"
+            "name": "calendar-mirrored"
         }, {
-            "name": "PasteLegacy"
+            "name": "characters"
         }, {
-            "name": "FilterLegacy"
+            "name": "mail-reply-all"
         }, {
-            "name": "CopyLegacy"
+            "name": "mail-reply-all-mirrored"
         }, {
-            "name": "Emoji2Legacy"
+            "name": "mail-read"
         }, {
-            "name": "ImportantLegacy"
+            "name": "link"
         }, {
-            "name": "MailReplyLegacy"
+            "name": "accounts"
         }, {
-            "name": "SlideshowLegacy"
+            "name": "show-bcc"
         }, {
-            "name": "SortLegacy"
+            "name": "hide-bcc"
         }, {
-            "name": "ListLegacyMirrored"
+            "name": "cut"
         }, {
-            "name": "ExpandTileLegacyMirrored"
+            "name": "attach"
         }, {
-            "name": "ReduceTileLegacyMirrored"
+            "name": "paste"
         }, {
-            "name": "ManageLegacy"
+            "name": "filter"
         }, {
-            "name": "AllAppsLegacy"
+            "name": "copy"
         }, {
-            "name": "DisconnectDriveLegacy"
+            "name": "emoji-2"
         }, {
-            "name": "MapDriveLegacy"
+            "name": "important"
         }, {
-            "name": "NewWindowLegacy"
+            "name": "mail-reply"
         }, {
-            "name": "OpenWithLegacy"
+            "name": "mail-reply-mirrored"
         }, {
-            "name": "ContactPresenceLegacy"
+            "name": "slideshow"
         }, {
-            "name": "PriorityLegacy"
+            "name": "sort"
         }, {
-            "name": "GotoTodayLegacy"
+            "name": "manage"
         }, {
-            "name": "FontLegacy"
+            "name": "all-apps"
         }, {
-            "name": "FontColorLegacy"
+            "name": "all-apps-mirrored"
         }, {
-            "name": "Contact2Legacy"
+            "name": "disconnect-drive"
         }, {
-            "name": "FolderLegacy"
+            "name": "map-drive"
         }, {
-            "name": "AudioLegacy"
+            "name": "new-window"
         }, {
-            "name": "PlaceFolderLegacy"
+            "name": "open-with"
         }, {
-            "name": "SetlockScreenLegacy"
+            "name": "open-with-mirrored"
         }, {
-            "name": "SetTileLegacy"
+            "name": "contact-presence"
         }, {
-            "name": "CCJapanLegacy"
+            "name": "priority"
         }, {
-            "name": "CCEuroLegacy"
+            "name": "upload-2"
         }, {
-            "name": "CCLegacy"
+            "name": "go-to-today"
         }, {
-            "name": "StopSlideshowLegacy"
+            "name": "font"
         }, {
-            "name": "PermissionsLegacy"
+            "name": "font-color"
         }, {
-            "name": "HighlightLegacy"
+            "name": "contact-2"
         }, {
-            "name": "DisableUpdatesLegacy"
+            "name": "folder"
         }, {
-            "name": "UnfavoriteLegacy"
+            "name": "audio"
         }, {
-            "name": "UnpinLegacy"
+            "name": "placeholder"
         }, {
-            "name": "OpenLocalLegacy"
+            "name": "view"
         }, {
-            "name": "MuteLegacy"
+            "name": "set-lockscreen"
         }, {
-            "name": "ItalicLegacy"
+            "name": "set-tile"
         }, {
-            "name": "UnderlineLegacy"
+            "name": "cc"
         }, {
-            "name": "BoldLegacy"
+            "name": "stop-slideshow"
         }, {
-            "name": "MoveToFolderLegacy"
+            "name": "permissions"
         }, {
-            "name": "LikeDislikeLegacy"
+            "name": "highlight"
         }, {
-            "name": "DislikeLegacy"
+            "name": "disable-updates"
         }, {
-            "name": "LikeLegacy"
+            "name": "unfavorite"
         }, {
-            "name": "AlignRightLegacy"
+            "name": "unpin"
         }, {
-            "name": "AlignCenterLegacy"
+            "name": "open-local"
         }, {
-            "name": "AlignLeftLegacy"
+            "name": "mute"
         }, {
-            "name": "ZoomLegacy"
+            "name": "italic"
         }, {
-            "name": "ZoomOutLegacy"
+            "name": "underline"
         }, {
-            "name": "OpenFileLegacy"
+            "name": "bold"
         }, {
-            "name": "OtherUserLegacy"
+            "name": "move-to-folder"
         }, {
-            "name": "AdminLegacy"
+            "name": "like-dislike"
         }, {
-            "name": "MailForwardLegacyMirrored"
+            "name": "dislike"
         }, {
-            "name": "GoLegacyMirrored"
+            "name": "like"
         }, {
-            "name": "DockLeftLegacyMirrored"
+            "name": "align-right"
         }, {
-            "name": "DockRightLegacyMirrored"
+            "name": "align-center"
         }, {
-            "name": "ImportLegacyMirrored"
+            "name": "align-left"
         }, {
-            "name": "ImportAllLegacyMirrored"
+            "name": "magnifier-3"
         }, {
-            "name": "MailReplyLegacyMirrored"
+            "name": "zoom-out"
         }, {
-            "name": "ItalicCLegacy"
+            "name": "open-file"
         }, {
-            "name": "BoldGLegacy"
+            "name": "other-user"
         }, {
-            "name": "UnderlineSLegacy"
+            "name": "admin"
         }, {
-            "name": "BoldFLegacy"
+            "name": "street"
         }, {
-            "name": "ItalicKLegacy"
+            "name": "map"
         }, {
-            "name": "UnderlineULegacy"
+            "name": "clear-selection"
         }, {
-            "name": "ItalicILegacy"
+            "name": "clear-selection-mirrored"
         }, {
-            "name": "BoldNLegacy"
+            "name": "font-decrease"
         }, {
-            "name": "UnderlineRussianLegacy"
+            "name": "font-increase"
         }, {
-            "name": "BoldRussionLegacy"
+            "name": "font-size"
         }, {
-            "name": "FontStyleKoreanLegacy"
+            "name": "cellphone"
         }, {
-            "name": "UnderlineLKoreanLegacy"
+            "name": "reshare"
         }, {
-            "name": "ItalicKoreanLegacy"
+            "name": "tag"
         }, {
-            "name": "BoldKoreanLegacy"
+            "name": "repeat-once"
         }, {
-            "name": "FontColorKoreanLegacy"
+            "name": "repeat-all"
         }, {
-            "name": "ClosePaneLegacyMirrored"
+            "name": "star-outline-2"
         }, {
-            "name": "OpenPaneLegacyMirrored"
+            "name": "star-2"
         }, {
-            "name": "EditLegacyMirrored"
+            "name": "calculator"
         }, {
-            "name": "StreetLegacy"
+            "name": "directions"
         }, {
-            "name": "MapLegacy"
+            "name": "location"
         }, {
-            "name": "ClearSelectionLegacy"
+            "name": "library"
         }, {
-            "name": "FontDecreaseLegacy"
+            "name": "phonebook"
         }, {
-            "name": "FontIncreaseLegacy"
+            "name": "memo"
         }, {
-            "name": "FontSizeLegacy"
+            "name": "microphone"
         }, {
-            "name": "CellPhoneLegacy"
+            "name": "post-update"
         }, {
-            "name": "ReshareLegacy"
+            "name": "back-to-window"
         }, {
-            "name": "TagLegacy"
+            "name": "fullscreen"
         }, {
-            "name": "RepeatOneLegacy"
+            "name": "new-folder"
         }, {
-            "name": "OutlineStarLegacy"
+            "name": "calendar-reply"
         }, {
-            "name": "CalculatorLegacy"
+            "name": "unsync-folder"
         }, {
-            "name": "DirectionsLegacy"
+            "name": "report-hacked"
         }, {
-            "name": "LocationLegacy"
+            "name": "sync-folder"
         }, {
-            "name": "LibraryLegacy"
+            "name": "block-contact"
         }, {
-            "name": "PhoneBookLegacy"
+            "name": "switch-apps"
         }, {
-            "name": "MemoLegacy"
+            "name": "add-friend"
         }, {
-            "name": "MicrophoneLegacy"
+            "name": "touch-pointer"
         }, {
-            "name": "PostUpdateLegacy"
+            "name": "go-to-start"
         }, {
-            "name": "BackToWindowLegacy"
+            "name": "zero-bar"
         }, {
-            "name": "FullScreenLegacy"
+            "name": "one-bar"
         }, {
-            "name": "NewFolderLegacy"
+            "name": "two-bars"
         }, {
-            "name": "CalendarReplyLegacy"
+            "name": "three-bars"
         }, {
-            "name": "CalendarLegacyMirrored"
+            "name": "four-bars"
         }, {
-            "name": "UnsyncFolderLegacy"
+            "name": "scan"
         }, {
-            "name": "ReportHackedLegacy"
+            "name": "preview"
         }, {
-            "name": "SyncFolderLegacy"
+            "name": "hamburger"
         }, {
-            "name": "BlockContactLegacy"
+            "name": "checkbox-composite"
         }, {
-            "name": "SwitchAppsLegacy"
+            "name": "checkbox-indeterminate"
         }, {
-            "name": "AddFriendLegacy"
+            "name": "warning"
         }, {
-            "name": "TouchPointerLegacy"
+            "name": "shopping-cart"
         }, {
-            "name": "GoToStartLegacy"
+            "name": "flag-2"
         }, {
-            "name": "ZeroBarsLegacy"
+            "name": "completed"
         }, {
-            "name": "OneBarLegacy"
+            "name": "music-album"
         }, {
-            "name": "TwoBarsLegacy"
+            "name": "info"
         }, {
-            "name": "ThreeBarsLegacy"
+            "name": "devices"
         }, {
-            "name": "FourBarsLegacy"
+            "name": "expand"
         }, {
-            "name": "ItalicRussianLegacy"
+            "name": "collapse"
         }, {
-            "name": "AllAppsLegacyMirrored"
+            "name": "radio-btn-off"
         }, {
-            "name": "OpenWithLegacyMirrored"
+            "name": "radio-btn-on"
         }, {
-            "name": "BookmarksLegacyMirrored"
+            "name": "radio-bullet"
         }, {
-            "name": "MultiSelectLegacyMirrored"
+            "name": "media-browse"
         }, {
-            "name": "ShowResultsLegacyMirrored"
+            "name": "miracast-small"
         }, {
-            "name": "MailReplyAllLegacyMirrored"
+            "name": "miracast-large"
         }, {
-            "name": "HelpLegacyMirrored"
+            "name": "playback-rate-1x"
         }, {
-            "name": "ClearSelectionLegacyMirrored"
+            "name": "playback-rate-other"
         }, {
-            "name": "RecordLegacy"
+            "name": "subscription-add"
         }, {
-            "name": "LockLegacy"
+            "name": "subscription-add-mirrored"
         }, {
-            "name": "UnlockLegacy"
+            "name": "subscriptions"
         }, {
-            "name": "DownLegacy"
-        }, {
-            "name": "PC1Legacy"
-        }, {
-            "name": "DevicesLegacy"
-        }, {
-            "name": "ChevronDownSmLegacy"
-        }, {
-            "name": "ReplyLegacy"
-        }, {
-            "name": "BlockedLegacy"
-        }, {
-            "name": "TypingIndicatorLegacy"
-        }, {
-            "name": "PresenceChickletVideoLegacy"
-        }, {
-            "name": "ChevronRightSmLegacy"
-        }, {
-            "name": "ChevronLeftSmLegacy"
-        }, {
-            "name": "SaveAsLegacy"
-        }, {
-            "name": "DecreaseIndentLegacy"
-        }, {
-            "name": "IncreaseIndentLegacy"
-        }, {
-            "name": "ScanLegacy"
-        }, {
-            "name": "PreviewLegacy"
-        }, {
-            "name": "DecreaseIndentLegacyMirrored"
-        }, {
-            "name": "IncreaseIndentLegacyMirrored"
-        }, {
-            "name": "PlayOnLegacy"
-        }, {
-            "name": "ResolutionLegacy"
-        }, {
-            "name": "LengthLegacy"
-        }, {
-            "name": "LayoutLegacy"
-        }, {
-            "name": "TypeLegacy"
-        }, {
-            "name": "ColorLegacy"
-        }, {
-            "name": "SizeLegacy"
-        }, {
-            "name": "ReturnToWindowLegacy"
-        }, {
-            "name": "OpenInNewWindowLegacy"
-        }, {
-            "name": "PrintLegacy"
-        }, {
-            "name": "Printer3DLegacy"
-        }, {
-            "name": "GlobalNavButton"
-        }, {
-            "name": "Wifi"
-        }, {
-            "name": "Bluetooth"
-        }, {
-            "name": "Connect"
-        }, {
-            "name": "InternetSharing"
-        }, {
-            "name": "VPN"
-        }, {
-            "name": "Brightness"
-        }, {
-            "name": "QuietHours"
-        }, {
-            "name": "Airplane"
-        }, {
-            "name": "Tablet"
-        }, {
-            "name": "QuickNote"
-        }, {
-            "name": "RememberedDevice"
-        }, {
-            "name": "SendFill"
-        }, {
-            "name": "WalkSolid"
-        }, {
-            "name": "InPrivate"
-        }, {
-            "name": "FavoriteList"
-        }, {
-            "name": "Share"
-        }, {
-            "name": "ResizeTouchLarger"
-        }, {
-            "name": "ResizeTouchSmaller"
-        }, {
-            "name": "ResizeMouseSmall"
-        }, {
-            "name": "ResizeMouseMedium"
-        }, {
-            "name": "ResizeMouseWide"
-        }, {
-            "name": "ResizeMouseTall"
-        }, {
-            "name": "SwitchUser"
-        }, {
-            "name": "OEM"
-        }, {
-            "name": "BackSpaceQWERTY"
-        }, {
-            "name": "ReturnKey"
-        }, {
-            "name": "UpArrowShiftKey"
-        }, {
-            "name": "Cloud"
-        }, {
-            "name": "Flashlight"
-        }, {
-            "name": "RotationLock"
-        }, {
-            "name": "CommandPrompt"
-        }, {
-            "name": "SIPMove"
-        }, {
-            "name": "SIPUndock"
-        }, {
-            "name": "SIPRedock"
-        }, {
-            "name": "EraseTool"
-        }, {
-            "name": "UnderscoreSpace"
-        }, {
-            "name": "GripperTool"
-        }, {
-            "name": "Dialpad"
-        }, {
-            "name": "PageLeft"
-        }, {
-            "name": "PageRight"
-        }, {
-            "name": "KeyboardLeftHanded"
-        }, {
-            "name": "KeyboardRightHanded"
-        }, {
-            "name": "InkingTool"
-        }, {
-            "name": "GripperBarHorizontal"
-        }, {
-            "name": "System"
-        }, {
-            "name": "Personalize"
-        }, {
-            "name": "Devices"
-        }, {
-            "name": "SearchAndApps"
-        }, {
-            "name": "TimeLanguage"
-        }, {
-            "name": "UpdateRestore"
-        }, {
-            "name": "LEDLight"
-        }, {
-            "name": "Error"
-        }, {
-            "name": "GripperBarVertical"
-        }, {
-            "name": "GripperResize"
-        }, {
-            "name": "Megaphone"
-        }, {
-            "name": "DataSense"
-        }, {
-            "name": "Light"
-        }, {
-            "name": "AspectRatio"
-        }, {
-            "name": "DataSenseBar"
-        }, {
-            "name": "Rotate"
-        }, {
-            "name": "Package"
-        }, {
-            "name": "Warning"
-        }, {
-            "name": "ReadingList"
-        }, {
-            "name": "Education"
-        }, {
-            "name": "ShoppingCart"
-        }, {
-            "name": "Train"
-        }, {
-            "name": "Multitask"
-        }, {
-            "name": "HalfStarLeft"
-        }, {
-            "name": "HalfStarRight"
-        }, {
-            "name": "LangJPN"
-        }, {
-            "name": "Ferry"
-        }, {
-            "name": "ActionCenterNotification"
-        }, {
-            "name": "PowerButton"
-        }, {
-            "name": "ResizeTouchNarrower"
-        }, {
-            "name": "ResizeTouchShorter"
-        }, {
-            "name": "DrivingMode"
-        }, {
-            "name": "RingerSilent"
-        }, {
-            "name": "SDCard"
-        }, {
-            "name": "CallForwarding"
-        }, {
-            "name": "SettingsDisplaySound"
-        }, {
-            "name": "TVMonitor"
-        }, {
-            "name": "Speakers"
-        }, {
-            "name": "Headphone"
-        }, {
-            "name": "DeviceLaptopPic"
-        }, {
-            "name": "DeviceLaptopNoPic"
-        }, {
-            "name": "DeviceMonitorRightPic"
-        }, {
-            "name": "DeviceMonitorLeftPic"
-        }, {
-            "name": "DeviceMonitorNoPic"
-        }, {
-            "name": "Game"
-        }, {
-            "name": "HorizontalTabKey"
-        }, {
-            "name": "StreetsideSplitMinimize"
-        }, {
-            "name": "StreetsideSplitExpand"
-        }, {
-            "name": "Walk"
-        }, {
-            "name": "Bus"
-        }, {
-            "name": "TiltUp"
-        }, {
-            "name": "TiltDown"
-        }, {
-            "name": "RotateMapRight"
-        }, {
-            "name": "RotateMapLeft"
-        }, {
-            "name": "ParkingLocation"
-        }, {
-            "name": "MapCompassTop"
-        }, {
-            "name": "MapCompassBottom"
-        }, {
-            "name": "IncidentTriangle"
-        }, {
-            "name": "Touch"
-        }, {
-            "name": "MapDirections"
-        }, {
-            "name": "StartPoint"
-        }, {
-            "name": "StopPoint"
-        }, {
-            "name": "History"
-        }, {
-            "name": "MapLayers"
-        }, {
-            "name": "Accident"
-        }, {
-            "name": "Work"
-        }, {
-            "name": "Construction"
-        }, {
-            "name": "Bank"
-        }, {
-            "name": "DownloadMap"
-        }, {
-            "name": "InkingToolFill2"
-        }, {
-            "name": "HighlightFill2"
-        }, {
-            "name": "EraseToolFill"
-        }, {
-            "name": "EraseToolFill2"
-        }, {
-            "name": "Dictionary"
-        }, {
-            "name": "DictionaryAdd"
-        }, {
-            "name": "ToolTip"
-        }, {
-            "name": "ChromeBack"
-        }, {
-            "name": "ProvisioningPackage"
-        }, {
-            "name": "AddRemoteDevice"
-        }, {
-            "name": "Ethernet"
-        }, {
-            "name": "ShareBroadband"
-        }, {
-            "name": "DirectAccess"
-        }, {
-            "name": "DialUp"
-        }, {
-            "name": "DefenderApp"
-        }, {
-            "name": "BatteryCharging9"
-        }, {
-            "name": "Battery10"
-        }, {
-            "name": "Pinned"
-        }, {
-            "name": "PinFill"
-        }, {
-            "name": "PinnedFill"
-        }, {
-            "name": "PeriodKey"
-        }, {
-            "name": "PuncKey"
-        }, {
-            "name": "RevToggleKey"
-        }, {
-            "name": "RightArrowKeyTime1"
-        }, {
-            "name": "RightArrowKeyTime2"
-        }, {
-            "name": "LeftQuote"
-        }, {
-            "name": "RightQuote"
-        }, {
-            "name": "DownShiftKey"
-        }, {
-            "name": "UpShiftKey"
-        }, {
-            "name": "PuncKey0"
-        }, {
-            "name": "PuncKeyLeftBottom"
-        }, {
-            "name": "RightArrowKeyTime3"
-        }, {
-            "name": "RightArrowKeyTime4"
-        }, {
-            "name": "Battery0"
-        }, {
-            "name": "Battery1"
-        }, {
-            "name": "Battery2"
-        }, {
-            "name": "Battery3"
-        }, {
-            "name": "Battery4"
-        }, {
-            "name": "Battery5"
-        }, {
-            "name": "Battery6"
-        }, {
-            "name": "Battery7"
-        }, {
-            "name": "Battery8"
-        }, {
-            "name": "Battery9"
-        }, {
-            "name": "BatteryCharging0"
-        }, {
-            "name": "BatteryCharging1"
-        }, {
-            "name": "BatteryCharging2"
-        }, {
-            "name": "BatteryCharging3"
-        }, {
-            "name": "BatteryCharging4"
-        }, {
-            "name": "BatteryCharging5"
-        }, {
-            "name": "BatteryCharging6"
-        }, {
-            "name": "BatteryCharging7"
-        }, {
-            "name": "BatteryCharging8"
-        }, {
-            "name": "BatterySaver0"
-        }, {
-            "name": "BatterySaver1"
-        }, {
-            "name": "BatterySaver2"
-        }, {
-            "name": "BatterySaver3"
-        }, {
-            "name": "BatterySaver4"
-        }, {
-            "name": "BatterySaver5"
-        }, {
-            "name": "BatterySaver6"
-        }, {
-            "name": "BatterySaver7"
-        }, {
-            "name": "BatterySaver8"
-        }, {
-            "name": "SignalBars1"
-        }, {
-            "name": "SignalBars2"
-        }, {
-            "name": "SignalBars3"
-        }, {
-            "name": "SignalBars4"
-        }, {
-            "name": "SignalBars5"
-        }, {
-            "name": "SignalNotConnected"
-        }, {
-            "name": "Wifi1"
-        }, {
-            "name": "Wifi2"
-        }, {
-            "name": "Wifi3"
-        }, {
-            "name": "SIMLock"
-        }, {
-            "name": "SIMMissing"
-        }, {
-            "name": "Vibrate"
-        }, {
-            "name": "RoamingInternational"
-        }, {
-            "name": "RoamingDomestic"
-        }, {
-            "name": "CallForwardInternational"
-        }, {
-            "name": "CallForwardRoaming"
-        }, {
-            "name": "JpnRomanji"
-        }, {
-            "name": "JpnRomanjiLock"
-        }, {
-            "name": "JpnRomanjiShift"
-        }, {
-            "name": "JpnRomanjiShiftLock"
-        }, {
-            "name": "StatusDataTransfer"
-        }, {
-            "name": "StatusDataTransferVPN"
-        }, {
-            "name": "StatusDualSIM2"
-        }, {
-            "name": "StatusDualSIM2VPN"
-        }, {
-            "name": "StatusDualSIM1"
-        }, {
-            "name": "StatusDualSIM1VPN"
-        }, {
-            "name": "StatusSGLTE"
-        }, {
-            "name": "StatusSGLTECell"
-        }, {
-            "name": "StatusSGLTEDataVPN"
-        }, {
-            "name": "StatusVPN"
-        }, {
-            "name": "LanguageKor"
-        }, {
-            "name": "LanguageCht"
-        }, {
-            "name": "LanguageChs"
-        }, {
-            "name": "USB"
-        }, {
-            "name": "InkingToolFill"
-        }, {
-            "name": "HighlightFill"
-        }, {
-            "name": "SurfaceHub"
-        }, {
-            "name": "Click"
-        }, {
-            "name": "Movies"
-        }, {
-            "name": "Folder"
-        }, {
-            "name": "ChromeClose"
-        }, {
-            "name": "Leaf"
-        }, {
-            "name": "MobileTablet"
-        }, {
-            "name": "ChatBubbles"
-        }, {
-            "name": "DullSound"
-        }, {
-            "name": "Printer3D"
-        }, {
-            "name": "RadioBullet"
-        }, {
-            "name": "Stopwatch"
-        }, {
-            "name": "Photo"
-        }, {
-            "name": "ActionCenter"
-        }, {
-            "name": "FullCircleMask"
-        }, {
-            "name": "ChromeMinimize"
-        }, {
-            "name": "ChromeMaximize"
-        }, {
-            "name": "ChromeRestore"
-        }, {
-            "name": "Annotation"
-        }, {
-            "name": "BackSpaceQWERTYSm"
-        }, {
-            "name": "BackSpaceQWERTYMd"
-        }, {
-            "name": "Swipe"
-        }, {
-            "name": "Fingerprint"
-        }, {
-            "name": "Handwriting"
-        }, {
-            "name": "ChromeBackToWindow"
-        }, {
-            "name": "ChromeFullScreen"
-        }, {
-            "name": "KeyboardDismiss"
-        }, {
-            "name": "Completed"
-        }, {
-            "name": "ChromeAnnotate"
-        }, {
-            "name": "Label"
-        }, {
-            "name": "IBeam"
-        }, {
-            "name": "IBeamOutline"
-        }, {
-            "name": "FlickDown"
-        }, {
-            "name": "FlickUp"
-        }, {
-            "name": "FlickLeft"
-        }, {
-            "name": "FlickRight"
-        }, {
-            "name": "FeedbackApp"
-        }, {
-            "name": "MusicAlbum"
-        }, {
-            "name": "Streaming"
-        }, {
-            "name": "Code"
-        }, {
-            "name": "LightningBolt"
-        }, {
-            "name": "Info"
-        }, {
-            "name": "CalculatorMultiply"
-        }, {
-            "name": "CalculatorAddition"
-        }, {
-            "name": "CalculatorSubtract"
-        }, {
-            "name": "CalculatorDivide"
-        }, {
-            "name": "CalculatorSquareroot"
-        }, {
-            "name": "CalculatorPercentage"
-        }, {
-            "name": "CalculatorNegate"
-        }, {
-            "name": "CalculatorEqualTo"
-        }, {
-            "name": "Component"
-        }, {
-            "name": "DMC"
-        }, {
-            "name": "Dock"
-        }, {
-            "name": "MultimediaDMS"
-        }, {
-            "name": "MultimediaDVR"
-        }, {
-            "name": "MultimediaPMP"
-        }, {
-            "name": "PrintfaxPrinterFile"
-        }, {
-            "name": "Sensor"
-        }, {
-            "name": "StorageOptical"
-        }, {
-            "name": "Communications"
-        }, {
-            "name": "Headset"
-        }, {
-            "name": "Projector"
-        }, {
-            "name": "Health"
-        }, {
-            "name": "Webcam2"
-        }, {
-            "name": "Input"
-        }, {
-            "name": "Mouse"
-        }, {
-            "name": "Smartcard"
-        }, {
-            "name": "SmartcardVirtual"
-        }, {
-            "name": "MediaStorageTower"
-        }, {
-            "name": "ReturnKeySm"
-        }, {
-            "name": "GameConsole"
-        }, {
-            "name": "Network"
-        }, {
-            "name": "StorageNetworkWireless"
-        }, {
-            "name": "StorageTape"
-        }, {
-            "name": "ChevronUpSmall"
-        }, {
-            "name": "ChevronUpMed"
-        }, {
-            "name": "ChevronDownMed"
-        }, {
-            "name": "ChevronLeftMed"
-        }, {
-            "name": "ChevronRightMed"
-        }, {
-            "name": "Korean"
-        }, {
-            "name": "HalfAlpha"
-        }, {
-            "name": "FullAlpha"
-        }, {
-            "name": "Key12On"
-        }, {
-            "name": "ChineseChangjie"
-        }, {
-            "name": "QWERTYOn"
-        }, {
-            "name": "QWERTYOff"
-        }, {
-            "name": "ChineseQuick"
-        }, {
-            "name": "Japanese"
-        }, {
-            "name": "FullHiragana"
-        }, {
-            "name": "FullKatakana"
-        }, {
-            "name": "HalfKatakana"
-        }, {
-            "name": "ChineseBoPoMoFo"
-        }, {
-            "name": "ChinesePinyin"
-        }, {
-            "name": "ConstructionCone"
-        }, {
-            "name": "XboxOneConsole"
-        }, {
-            "name": "Volume0"
-        }, {
-            "name": "Volume1"
-        }, {
-            "name": "Volume2"
-        }, {
-            "name": "Volume3"
-        }, {
-            "name": "BatteryUnknown"
-        }, {
-            "name": "WifiAttentionOverlay"
-        }, {
-            "name": "Robot"
-        }, {
-            "name": "TapAndSend"
-        }, {
-            "name": "PasswordKeyShow"
-        }, {
-            "name": "PasswordKeyHide"
-        }, {
-            "name": "BidiLtr"
-        }, {
-            "name": "BidiRtl"
-        }, {
-            "name": "ForwardSm"
-        }, {
-            "name": "CommaKey"
-        }, {
-            "name": "DashKey"
-        }, {
-            "name": "DullSoundKey"
-        }, {
-            "name": "HalfDullSound"
-        }, {
-            "name": "RightDoubleQuote"
-        }, {
-            "name": "LeftDoubleQuote"
-        }, {
-            "name": "PuncKeyRightBottom"
-        }, {
-            "name": "PuncKey1"
-        }, {
-            "name": "PuncKey2"
-        }, {
-            "name": "PuncKey3"
-        }, {
-            "name": "PuncKey4"
-        }, {
-            "name": "PuncKey5"
-        }, {
-            "name": "PuncKey6"
-        }, {
-            "name": "PuncKey9"
-        }, {
-            "name": "PuncKey7"
-        }, {
-            "name": "PuncKey8"
-        }, {
-            "name": "Frigid"
-        }, {
-            "name": "Diagnostic"
-        }, {
-            "name": "Process"
-        }, {
-            "name": "DisconnectDisplay"
-        }, {
-            "name": "Info2"
-        }, {
-            "name": "ActionCenterAsterisk"
-        }, {
-            "name": "Beta"
-        }, {
-            "name": "SaveCopy"
-        }, {
-            "name": "List"
-        }, {
-            "name": "Asterisk"
-        }, {
-            "name": "ErrorBadge"
-        }, {
-            "name": "CircleRing"
-        }, {
-            "name": "CircleFill"
-        }, {
-            "name": "CallForwardInternationalMirrored"
-        }, {
-            "name": "CallForwardRoamingMirrored"
-        }, {
-            "name": "ChromeBackMirrored"
-        }, {
-            "name": "ContactInfoMirrored"
-        }, {
-            "name": "GripperResizeMirrored"
-        }, {
-            "name": "LeaveChatMirrored"
-        }, {
-            "name": "ListMirrored"
-        }, {
-            "name": "ParkingLocationMirrored"
-        }, {
-            "name": "ResizeMouseMediumMirrored"
-        }, {
-            "name": "ResizeMouseSmallMirrored"
-        }, {
-            "name": "ResizeMouseTallMirrored"
-        }, {
-            "name": "ResizeTouchNarrowerMirrored"
-        }, {
-            "name": "SendMirrored"
-        }, {
-            "name": "SendFillMirrored"
-        }, {
-            "name": "Media"
-        }, {
-            "name": "SyncError"
-        }, {
-            "name": "Devices3"
-        }, {
-            "name": "StatusCircle"
-        }, {
-            "name": "StatusTriangle"
-        }, {
-            "name": "StatusError"
-        }, {
-            "name": "StatusWarning"
-        }, {
-            "name": "Puzzle"
-        }, {
-            "name": "CalendarSolid"
-        }, {
-            "name": "HomeSolid"
-        }, {
-            "name": "ParkingLocationSolid"
-        }, {
-            "name": "ContactSolid"
-        }, {
-            "name": "ConstructionSolid"
-        }, {
-            "name": "AccidentSolid"
-        }, {
-            "name": "Ringer"
-        }, {
-            "name": "ThoughtBubble"
-        }, {
-            "name": "HeartBroken"
-        }, {
-            "name": "BatteryCharging10"
-        }, {
-            "name": "BatterySaver9"
-        }, {
-            "name": "BatterySaver10"
-        }, {
-            "name": "CallForwardingMirrored"
-        }, {
-            "name": "Broom"
-        }, {
-            "name": "Trackers"
-        }, {
-            "name": "PieSingle"
-        }, {
-            "name": "StockDown"
-        }, {
-            "name": "StockUp"
-        }, {
-            "name": "Drop"
-        }, {
-            "name": "BusSolid"
-        }, {
-            "name": "FerrySolid"
-        }, {
-            "name": "StartPointSolid"
-        }, {
-            "name": "StopPointSolid"
-        }, {
-            "name": "EndPointSolid"
-        }, {
-            "name": "AirplaneSolid"
-        }, {
-            "name": "TrainSolid"
-        }, {
-            "name": "WorkSolid"
-        }, {
-            "name": "ReminderFill"
-        }, {
-            "name": "Reminder"
-        }, {
-            "name": "EthernetError"
-        }, {
-            "name": "EthernetWarning"
-        }, {
-            "name": "StatusConnecting1"
-        }, {
-            "name": "StatusConnecting2"
-        }, {
-            "name": "StatusUnsecure"
-        }, {
-            "name": "WifiError0"
-        }, {
-            "name": "WifiError1"
-        }, {
-            "name": "WifiError2"
-        }, {
-            "name": "WifiError3"
-        }, {
-            "name": "WifiError4"
-        }, {
-            "name": "WifiWarning0"
-        }, {
-            "name": "WifiWarning1"
-        }, {
-            "name": "WifiWarning2"
-        }, {
-            "name": "WifiWarning3"
-        }, {
-            "name": "WifiWarning4"
-        }, {
-            "name": "Devices4"
-        }, {
-            "name": "NUIIris"
-        }, {
-            "name": "NUIFace"
-        }, {
-            "name": "NUIFPStartSlideHand"
-        }, {
-            "name": "NUIFPStartSlideAction"
-        }, {
-            "name": "NUIFPContinueSlideHand"
-        }, {
-            "name": "NUIFPContinueSlideAction"
-        }, {
-            "name": "NUIFPRollRightHand"
-        }, {
-            "name": "NUIFPRollRightHandAction"
-        }, {
-            "name": "NUIFPRollLeftHand"
-        }, {
-            "name": "NUIFPRollLeftAction"
-        }, {
-            "name": "NUIFPPressHand"
-        }, {
-            "name": "NUIFPPressAction"
-        }, {
-            "name": "NUIFPPressRepeatAction"
-        }, {
-            "name": "StatusErrorFull"
-        }, {
-            "name": "MultitaskExpanded"
-        }, {
-            "name": "Certificate"
-        }, {
-            "name": "BackSpaceQWERTYLg"
-        }, {
-            "name": "ReturnKeyLg"
-        }, {
-            "name": "FastForward"
-        }, {
-            "name": "Rewind"
-        }, {
-            "name": "Photo2"
-        }, {
-            "name": "MobBattery0"
-        }, {
-            "name": "MobBattery1"
-        }, {
-            "name": "MobBattery2"
-        }, {
-            "name": "MobBattery3"
-        }, {
-            "name": "MobBattery4"
-        }, {
-            "name": "MobBattery5"
-        }, {
-            "name": "MobBattery6"
-        }, {
-            "name": "MobBattery7"
-        }, {
-            "name": "MobBattery8"
-        }, {
-            "name": "MobBattery9"
-        }, {
-            "name": "MobBattery10"
-        }, {
-            "name": "MobBatteryCharging0"
-        }, {
-            "name": "MobBatteryCharging1"
-        }, {
-            "name": "MobBatteryCharging2"
-        }, {
-            "name": "MobBatteryCharging3"
-        }, {
-            "name": "MobBatteryCharging4"
-        }, {
-            "name": "MobBatteryCharging5"
-        }, {
-            "name": "MobBatteryCharging6"
-        }, {
-            "name": "MobBatteryCharging7"
-        }, {
-            "name": "MobBatteryCharging8"
-        }, {
-            "name": "MobBatteryCharging9"
-        }, {
-            "name": "MobBatteryCharging10"
-        }, {
-            "name": "MobBatterySaver0"
-        }, {
-            "name": "MobBatterySaver1"
-        }, {
-            "name": "MobBatterySaver2"
-        }, {
-            "name": "MobBatterySaver3"
-        }, {
-            "name": "MobBatterySaver4"
-        }, {
-            "name": "MobBatterySaver5"
-        }, {
-            "name": "MobBatterySaver6"
-        }, {
-            "name": "MobBatterySaver7"
-        }, {
-            "name": "MobBatterySaver8"
-        }, {
-            "name": "MobBatterySaver9"
-        }, {
-            "name": "MobBatterySaver10"
-        }, {
-            "name": "DictionaryCloud"
-        }, {
-            "name": "ResetDrive"
-        }, {
-            "name": "VolumeBars"
-        }, {
-            "name": "Project"
-        }, {
-            "name": "AdjustHologram"
-        }, {
-            "name": "WifiCallBars"
-        }, {
-            "name": "WifiCall0"
-        }, {
-            "name": "WifiCall1"
-        }, {
-            "name": "WifiCall2"
-        }, {
-            "name": "WifiCall3"
-        }, {
-            "name": "WifiCall4"
-        }, {
-            "name": "DeviceDiscovery"
-        }, {
-            "name": "WindDirection"
-        }, {
-            "name": "RightArrowKeyTime0"
-        }, {
-            "name": "TabletMode"
-        }, {
-            "name": "StatusCircleLeft"
-        }, {
-            "name": "StatusTriangleLeft"
-        }, {
-            "name": "StatusErrorLeft"
-        }, {
-            "name": "StatusWarningLeft"
-        }, {
-            "name": "MobBatteryUnknown"
-        }, {
-            "name": "NetworkTower"
-        }, {
-            "name": "CityNext"
-        }, {
-            "name": "CityNext2"
-        }, {
-            "name": "Courthouse"
-        }, {
-            "name": "Groceries"
-        }, {
-            "name": "Sustainable"
-        }, {
-            "name": "BuildingEnergy"
-        }, {
-            "name": "ToggleFilled"
-        }, {
-            "name": "ToggleBorder"
-        }, {
-            "name": "SliderThumb"
-        }, {
-            "name": "ToggleThumb"
-        }, {
-            "name": "MiracastLogoSmall"
-        }, {
-            "name": "MiracastLogoLarge"
-        }, {
-            "name": "PLAP"
-        }, {
-            "name": "Badge"
-        }, {
-            "name": "SignalRoaming"
-        }, {
-            "name": "MobileLocked"
-        }, {
-            "name": "InsiderHubApp"
-        }, {
-            "name": "PersonalFolder"
-        }, {
-            "name": "HomeGroup"
-        }, {
-            "name": "MyNetwork"
-        }, {
-            "name": "KeyboardFull"
-        }, {
-            "name": "MobSignal1"
-        }, {
-            "name": "MobSignal2"
-        }, {
-            "name": "MobSignal3"
-        }, {
-            "name": "MobSignal4"
-        }, {
-            "name": "MobSignal5"
-        }, {
-            "name": "MobWifi1"
-        }, {
-            "name": "MobWifi2"
-        }, {
-            "name": "MobWifi3"
-        }, {
-            "name": "MobWifi4"
-        }, {
-            "name": "MobAirplane"
-        }, {
-            "name": "MobBluetooth"
-        }, {
-            "name": "MobActionCenter"
-        }, {
-            "name": "MobLocation"
-        }, {
-            "name": "MobWifiHotspot"
-        }, {
-            "name": "LanguageJpn"
-        }, {
-            "name": "MobQuietHours"
-        }, {
-            "name": "MobDrivingMode"
-        }, {
-            "name": "SpeedOff"
-        }, {
-            "name": "SpeedMedium"
-        }, {
-            "name": "SpeedHigh"
-        }, {
-            "name": "ThisPC"
-        }, {
-            "name": "MusicNote"
-        }, {
-            "name": "FileExplorer"
-        }, {
-            "name": "FileExplorerApp"
-        }, {
-            "name": "LeftArrowKeyTime0"
-        }, {
-            "name": "MicOff"
-        }, {
-            "name": "MicSleep"
-        }, {
-            "name": "MicError"
-        }, {
-            "name": "PlaybackRate1x"
-        }, {
-            "name": "PlaybackRateOther"
-        }, {
-            "name": "CashDrawer"
-        }, {
-            "name": "BarcodeScanner"
-        }, {
-            "name": "ReceiptPrinter"
-        }, {
-            "name": "MagStripeReader"
-        }, {
-            "name": "CompletedSolid"
-        }, {
-            "name": "CompanionApp"
-        }, {
-            "name": "SwipeRevealArt"
-        }, {
-            "name": "MicOn"
-        }, {
-            "name": "MicClipping"
-        }, {
-            "name": "TabletSelected"
-        }, {
-            "name": "MobileSelected"
-        }, {
-            "name": "LaptopSelected"
-        }, {
-            "name": "TVMonitorSelected"
-        }, {
-            "name": "DeveloperTools"
-        }, {
-            "name": "MobCallForwarding"
-        }, {
-            "name": "MobCallForwardingMirrored"
-        }, {
-            "name": "BodyCam"
-        }, {
-            "name": "PoliceCar"
-        }, {
-            "name": "Draw"
-        }, {
-            "name": "DrawSolid"
-        }, {
-            "name": "LowerBrightness"
-        }, {
-            "name": "ScrollUpDown"
-        }, {
-            "name": "DateTime"
-        }, {
-            "name": "Tiles"
-        }, {
-            "name": "PartyLeader"
-        }, {
-            "name": "AppIconDefault"
-        }, {
-            "name": "AddSurfaceHub"
-        }, {
-            "name": "DevUpdate"
-        }, {
-            "name": "Unit"
-        }, {
-            "name": "AddTo"
-        }, {
-            "name": "RemoveFrom"
-        }, {
-            "name": "RadioBtnOff"
-        }, {
-            "name": "RadioBtnOn"
-        }, {
-            "name": "RadioBullet2"
-        }, {
-            "name": "ExploreContent"
-        }, {
-            "name": "ScrollMode"
-        }, {
-            "name": "ZoomMode"
-        }, {
-            "name": "PanMode"
-        }, {
-            "name": "WiredUSB"
-        }, {
-            "name": "WirelessUSB"
-        }, {
-            "name": "USBSafeConnect"
-        }, {
-            "name": "ActionCenterNotificationMirrored"
-        }, {
-            "name": "ActionCenterMirrored"
-        }, {
-            "name": "ResetDevice"
-        }, {
-            "name": "Feedback"
-        }, {
-            "name": "Subtitles"
-        }, {
-            "name": "SubtitlesAudio"
-        }, {
-            "name": "eSIM"
-        }, {
-            "name": "eSIMNoProfile"
-        }, {
-            "name": "eSIMLocked"
-        }, {
-            "name": "eSIMBusy"
-        }, {
-            "name": "SignalError"
-        }, {
-            "name": "StreamingEnterprise"
-        }, {
-            "name": "Headphone0"
-        }, {
-            "name": "Headphone1"
-        }, {
-            "name": "Headphone2"
-        }, {
-            "name": "Headphone3"
-        }, {
-            "name": "KeyboardBrightness"
-        }, {
-            "name": "KeyboardLowerBrightness"
-        }, {
-            "name": "SkipBack10"
-        }, {
-            "name": "SkipForward30"
-        }, {
-            "name": "TreeFolderFolder"
-        }, {
-            "name": "TreeFolderFolderFill"
-        }, {
-            "name": "TreeFolderFolderOpen"
-        }, {
-            "name": "TreeFolderFolderOpenFill"
-        }, {
-            "name": "MultimediaDMP"
-        }, {
-            "name": "KeyboardOneHanded"
-        }, {
-            "name": "Narrator"
-        }, {
-            "name": "EmojiTabPeople"
-        }, {
-            "name": "EmojiTabSmilesAnimals"
-        }, {
-            "name": "EmojiTabCelebrationObjects"
-        }, {
-            "name": "EmojiTabFoodPlants"
-        }, {
-            "name": "EmojiTabTransitPlaces"
-        }, {
-            "name": "EmojiTabSymbols"
-        }, {
-            "name": "EmojiTabTextSmiles"
-        }, {
-            "name": "EmojiTabFavorites"
-        }, {
-            "name": "EmojiSwatch"
-        }, {
-            "name": "CompanionDeviceFramework"
-        }, {
-            "name": "Ruler"
-        }, {
-            "name": "FingerInking"
-        }, {
-            "name": "StrokeErase"
-        }, {
-            "name": "PointErase"
-        }, {
-            "name": "ClearAllInk"
-        }, {
-            "name": "Pencil"
-        }, {
-            "name": "Marker"
-        }, {
-            "name": "InkingCaret"
-        }, {
-            "name": "InkingColorOutline"
-        }, {
-            "name": "InkingColorFill"
-        }, {
-            "name": "HardDrive"
-        }, {
-            "name": "NetworkAdapter"
-        }, {
-            "name": "Touchscreen"
-        }, {
-            "name": "NetworkPrinter"
-        }, {
-            "name": "CloudPrinter"
-        }, {
-            "name": "KeyboardShortcut"
-        }, {
-            "name": "BrushSize"
-        }, {
-            "name": "NarratorForward"
-        }, {
-            "name": "NarratorForwardMirrored"
-        }, {
-            "name": "SyncBadge12"
-        }, {
-            "name": "RingerBadge12"
-        }, {
-            "name": "AsteriskBadge12"
-        }, {
-            "name": "ErrorBadge12"
-        }, {
-            "name": "CircleRingBadge12"
-        }, {
-            "name": "CircleFillBadge12"
-        }, {
-            "name": "ImportantBadge12"
-        }, {
-            "name": "MailBadge12"
-        }, {
-            "name": "PauseBadge12"
-        }, {
-            "name": "PlayBadge12"
-        }, {
-            "name": "PenWorkspace"
-        }, {
-            "name": "CaligraphyPen"
-        }, {
-            "name": "ReplyMirrored"
-        }, {
-            "name": "LockscreenDesktop"
-        }, {
-            "name": "Multitask16"
-        }, {
-            "name": "Play36"
-        }, {
-            "name": "PenPalette"
-        }, {
-            "name": "GuestUser"
-        }, {
-            "name": "SettingsBattery"
-        }, {
-            "name": "TaskbarPhone"
-        }, {
-            "name": "LockScreenGlance"
-        }, {
-            "name": "ImageExport"
-        }, {
-            "name": "WifiEthernet"
-        }, {
-            "name": "ActionCenterQuiet"
-        }, {
-            "name": "ActionCenterQuietNotification"
-        }, {
-            "name": "TrackersMirrored"
-        }, {
-            "name": "DateTimeMirrored"
-        }, {
-            "name": "Wheel"
-        }, {
-            "name": "PenWorkspaceMirrored"
-        }, {
-            "name": "PenPaletteMirrored"
-        }, {
-            "name": "StrokeEraseMirrored"
-        }, {
-            "name": "PointEraseMirrored"
-        }, {
-            "name": "ClearAllInkMirrored"
-        }, {
-            "name": "BackgroundToggle"
-        }, {
-            "name": "Marquee"
-        }
-    ],
-    "alias": [
-		{
-            "name": "CheckMarkZeroWidthLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckboxFillZeroWidthLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HeartBrokenZeroWidthLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeft3Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRight3Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronUp3Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDown3Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ScrollChevronLeftBoldLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ScrollChevronRightBoldLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ScrollChevronUpBoldLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ScrollChevronDownBoldLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RatingStarFillReducedPaddingHTMLLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeft1Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRight1Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronUp1Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDown1Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeft2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRight2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronUp2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDown2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeft4Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRight4Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronUp4Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDown4Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HeartFillLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BackBttnMirroredArrow20Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ArrowHTMLLegacyMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RatingStarFillLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RatingStarFillSmallLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BackBttnArrow20Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ArrowHTMLLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronFlipLeftLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronFlipRightLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronFlipUpLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronFlipDownLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckmarkMenuLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AcceptLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ForwardLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BackLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FavoriteLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FindLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ShowAllFilesLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "UploadSkyDriveLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ViewLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RepeatAllLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SolidStarLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CommentInlineLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FavoriteInlineLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "LikeInlineLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "VideoInlineLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailMessageLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RatingStarLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Favorite2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Unfavorite2Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MobileContactLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PresenceChickletLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BulletedListLegacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BulletedListLegacyMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Contact3Legacy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MapPin",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDown",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronUp",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Edit",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Add",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Cancel",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "More",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Settings",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Video",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Mail",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "People",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Phone",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Pin",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Shop",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Stop",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Link",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Filter",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AllApps",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Zoom",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ZoomOut",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Microphone",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Search",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Camera",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Attach",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Send",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PageSolid",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Forward",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Back",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Refresh",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Lock",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ReportHacked",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FavoriteStar",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FavoriteStarFill",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Remove",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Checkbox",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckboxComposite",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckboxFill",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckboxIndeterminate",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckboxCompositeReversed",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CheckMark",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BackToWindow",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FullScreen",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ResizeMouseLarge",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Print",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Up",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Down",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Delete",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Save",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Mute",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MultiSelect",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "KeyboardClassic",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "KeyboardSplit",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Volume",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Play",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Pause",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeft",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRight",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Emoji2",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Globe",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "EaseOfAccess",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HangUp",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ContactInfo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Unpin",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Contact",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Memo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Paste",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PhoneBook",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Unlock",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Slideshow",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Calendar",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Trim",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "NewWindow",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SaveLocal",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Color",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SaveAs",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Redo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Undo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Crop",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenWith",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SetlockScreen",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MapPin2",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Flag",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Page",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BrowsePhotos",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Record",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "TouchPointer",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Highlight",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OtherUser",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Admin",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CC",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Car",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Home",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "EndPoint",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Location",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Recent",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "WifiHotspot",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "View",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Previous",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Next",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Clear",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Sync",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Download",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Help",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Upload",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Emoji",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "TwoPage",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "LeaveChat",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailForward",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RotateCamera",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ClosePane",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenPane",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PreviewLink",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AttachCamera",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ZoomIn",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Bookmarks",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Document",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ProtectedDocument",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenInNewWindow",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailFill",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ViewAll",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "VideoChat",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Switch",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Rename",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Go",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Remote",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Shuffle",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SelectAll",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Orientation",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Import",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ImportAll",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Webcam",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Picture",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Caption",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ShowResults",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Message",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CalendarDay",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CalendarWeek",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Characters",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailReplyAll",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Read",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ShowBcc",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HideBcc",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Cut",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Copy",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Important",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailReply",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Sort",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DisconnectDrive",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MapDrive",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ContactPresence",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Priority",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "GotoToday",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Font",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FontColor",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Contact2",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FolderFill",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Audio",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Permissions",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DisableUpdates",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Unfavorite",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenLocal",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Italic",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Underline",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Bold",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MoveToFolder",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "LikeDislike",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Dislike",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Like",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AlignRight",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AlignCenter",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AlignLeft",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenFile",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ClearSelection",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FontDecrease",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FontIncrease",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FontSize",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CellPhone",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Reshare",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Tag",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RepeatOne",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "RepeatAll",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Calculator",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Directions",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Library",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PostUpdate",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "NewFolder",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CalendarReply",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "UnsyncFolder",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SyncFolder",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BlockContact",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SwitchApps",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AddFriend",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Accept",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "GoToStart",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BulletedList",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Scan",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Preview",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ZeroBars",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OneBar",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "TwoBars",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ThreeBars",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "FourBars",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "World",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Comment",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MusicInfo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DockLeft",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DockRight",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DockBottom",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Repair",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Accounts",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Manage",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Street",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "KeyboardStandard",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ReturnToWindow",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CalculatorBackspace",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronDownSmall",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronLeftSmall",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ChevronRightSmall",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Devices2",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ExpandTile",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PC1",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PresenceChicklet",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "PresenceChickletVideo",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Reply",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "SetTile",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Type",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "AllAppsMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BookmarksMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "BulletedListMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ClearSelectionMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ClosePaneMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DockRightMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "DockLeftMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ExpandTileMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "GoMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HelpMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ImportMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ImportAllMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailForwardMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailReplyMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MailReplyAllMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenPaneMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "OpenWithMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ShowResultsMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Lightbulb",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "MultiSelectMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Heart",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "HeartFill",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "EditMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "NUIFPPressRepeatHand",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "CalendarMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ConnectApp",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "Export",
-			"alias":" (alias)",
-			"alias_class":"alias"
-        }, {
-            "name": "ExportMirrored",
-			"alias":" (alias)",
-			"alias_class":"alias"
+            "name": "subscriptions-mirrored"
         }
     ]
 }
