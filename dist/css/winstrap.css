@@ -7763,8 +7763,7 @@ dl dd,
 dl dt {
   margin: 12px 0; }
 
-﻿
-ul {
+﻿ ul {
   padding-left: 20px; }
 
 ol {
@@ -10487,8 +10486,9 @@ a.link-on-dark {
   max-width: 44px;
   height: 20px;
   border-radius: 10px;
-  border-width: 1px;
-  border-style: solid; }
+  border-width: 2px;
+  border-style: solid;
+  padding: 0; }
   .btn[data-toggle="button"].btn-toggle-switch .stateLabel {
     position: absolute;
     top: 1px;
@@ -10522,14 +10522,15 @@ a.link-on-dark {
     position: absolute;
     width: 10px;
     height: 10px;
-    top: 4px;
-    left: 4px;
-    border-radius: 5px; }
+    top: 3px;
+    left: 3px;
+    border-radius: 5px;
+    transition: left 0.1s; }
   .btn[data-toggle="button"].btn-toggle-switch:active {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn[data-toggle="button"].btn-toggle-switch.active::before {
-    left: 28px; }
+    left: 27px; }
   .btn[data-toggle="button"].btn-toggle-switch.active .stateLabel-on {
     display: block; }
   .btn[data-toggle="button"].btn-toggle-switch.active .stateLabel-off {
