@@ -1,17 +1,20 @@
 //
 // Text controls
 //
+.form-control{
+	border-width: 2px;
+}
 input.form-control,
 textarea.form-control {
     -ms-user-select: element;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: $border-radius-base;
     margin-top: spacing(xxs, -10);
     margin-bottom: spacing(xs, -4);
     max-width: 296px;
     min-width: 88px;
-    min-height: 36px;
+    min-height: 34px;
     background-clip: border-box;
     box-sizing: border-box;
     padding-left: spacing(xxs, -1);
@@ -27,8 +30,8 @@ input.form-control::-ms-value {
 input.form-control::-ms-clear,
 input.form-control::-ms-reveal {
     margin-right: -8px;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     display: block;
 }
 
@@ -150,8 +153,8 @@ textarea.form-control {
         @include glyph(chevron-down);
         position: absolute;
         font-size: 1rem;
-        top: 13px;
-        right: 9px;
+        top: 10px;
+        right: 12px;
     }
 }
 select {
@@ -161,7 +164,7 @@ select {
         width: 100%;
         min-width: 67px;
         max-width: 368px;
-        min-height: 36px;
+        min-height: 34px;
 
         // remove browser generated icon on
         // Chrome, Safari, Opera, and Firefox
@@ -779,4 +782,45 @@ form .theme-light {
             }
         }
     }
+}
+.putbox{
+	.icon{
+		float: left;
+		height: 64px;
+		width: 34px;
+		span{
+			display: block;
+			margin-top: 32px;
+			width: 34px;
+			height: 32px;
+			color: $color-accent;
+			font-size: 24px;
+			line-height: 32px;
+			text-align: left;
+		}
+	}
+	.box{
+		display: block;
+		margin-left: 34px;
+		min-height:32px;
+		color: $color-black;
+		.form-control{
+			margin: 0;
+		}
+		.btn-link{
+			margin: 0;
+			text-align: left;
+			padding-left: 0;
+			font-size: 14px;
+		}
+	}
+	.title{
+		font-size: 14px;
+		line-height: 32px;
+	}
+}
+.putbox-alt{
+	.box{
+		color: $color-white;
+	}
 }

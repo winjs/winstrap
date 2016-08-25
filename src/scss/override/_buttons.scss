@@ -17,9 +17,9 @@
     min-width: 120px;
     line-height: 1;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     text-decoration: none;
-    padding: 9px 12px 10px;
+    padding: 7px 12px 8px;
     margin: 12px 8px 0 0;
 
     &.theme-light,
@@ -399,12 +399,10 @@
         &.active {
             color: $color-type-primary;
             border-color: $color-vivid-high;
-            box-shadow:0px 0px 0px 1px $color-vivid-high inset;
 
             &:hover {
                 color: $color-type-primary;
                 border-color: shade($color-accent-vivid-high, 40%);
-                box-shadow:0px 0px 0px 1px shade($color-accent-vivid-high, 40%) inset;
             }
 
         }
@@ -448,11 +446,9 @@
             color: $color-type-primary-alt;
             background-color: $color-vivid-high;
             border-color: $color-vivid-high-alt;
-            box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
 
             &:hover {
                 border-color: tint($color-accent-vivid-high, 40%);
-                box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
             }
         }
 
@@ -484,11 +480,9 @@
             color: $color-type-primary-alt;
             background-color: transparent;
             border-color: $color-vivid-high-alt;
-            box-shadow:0px 0px 0px 1px $color-vivid-high-alt inset;
 
             &:hover {
                 border-color: tint($color-accent-vivid-high, 40%);
-                box-shadow:0px 0px 0px 1px tint($color-accent-vivid-high, 40%) inset;
             }
         }
 

@@ -1,22 +1,175 @@
 ﻿// Generic glyph placeholder
 .glyph {
-    display: inline-block;
-    width: 1em; height: 1em;
+	display:inline-block;
+	font:normal normal normal 14px/1 "winjs-symbols";
+	font-size:inherit;
+	font-variant:normal;
+	text-rendering:auto;
+	speak:none;
+	text-transform:none;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
     vertical-align: middle;
-    overflow: hidden;
-
-    &:before {
-        display: block;
-        width: 1em; height: 1em;
-        font-family: "winjs-symbols";
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
 }
-
+/* makes the font 33% larger relative to the icon container */
+.glyph-lg {
+	font-size: 1.33333333em;
+	line-height: 0.75em;
+	vertical-align: -15%;
+}
+.glyph-2x {
+	font-size: 2em;
+}
+.glyph-3x {
+	font-size: 3em;
+}
+.glyph-4x {
+	font-size: 4em;
+}
+.glyph-5x {
+	font-size: 5em;
+}
+.glyph-fw {
+	width: 1.28571429em;
+	text-align: center;
+}
+.glyph-ul {
+	padding-left: 0;
+	margin-left: 2.14285714em;
+	list-style-type: none;
+}
+.glyph-ul > li {
+	position: relative;
+}
+.glyph-li {
+	position: absolute;
+	left: -2.14285714em;
+	width: 2.14285714em;
+	top: 0.14285714em;
+	text-align: center;
+}
+.glyph-li.glyph-lg {
+	left: -1.85714286em;
+}
+.glyph-border {
+	padding: .2em .25em .15em;
+	border: solid 0.08em #eee;
+	border-radius: .1em;
+}
+.glyph-pull-left {
+	float: left;
+}
+.glyph-pull-right {
+	float: right;
+}
+.fa.glyph-pull-left {
+	margin-right: .3em;
+}
+.fa.glyph-pull-right {
+	margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.fa.pull-left {
+	margin-right: .3em;
+}
+.fa.pull-right {
+	margin-left: .3em;
+}
+.glyph-spin {
+	-webkit-animation: glyph-spin 2s infinite linear;
+	animation: glyph-spin 2s infinite linear;
+}
+.glyph-pulse {
+	-webkit-animation: glyph-spin 1s infinite steps(8);
+	animation: glyph-spin 1s infinite steps(8);
+}
+@-webkit-keyframes glyph-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+@keyframes glyph-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+.glyph-rotate-90 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.glyph-rotate-180 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.glyph-rotate-270 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+.glyph-flip-horizontal {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+	-webkit-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+.glyph-flip-vertical {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+	-webkit-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	transform: scale(1, -1);
+}
+:root .glyph-rotate-90,
+:root .glyph-rotate-180,
+:root .glyph-rotate-270,
+:root .glyph-flip-horizontal,
+:root .glyph-flip-vertical {
+	filter: none;
+}
+.glyph-stack {
+	position: relative;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+}
+.glyph-stack-1x,
+.glyph-stack-2x {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.glyph-stack-1x {
+	line-height: inherit;
+}
+.glyph-stack-2x {
+	font-size: 2em;
+}
+.glyph-inverse {
+	color: #fff;
+}
 // List of glyphs with their associated UTF-8 private spaces and original names in WinJS Symbols
 $glyphs: (
     chevron-up: (
