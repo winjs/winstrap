@@ -3,11 +3,11 @@
     max-width: 368px;
 
     .btn-dropdown {
-        height: 36px;
+        height: 34px;
         padding: spacing(n) spacing(n) spacing(n) spacing(xxs);
         margin: spacing(n);
         min-width: 80px;
-
+		border-width: 2px;
         &:active {
             box-shadow: none;
         }
@@ -18,7 +18,7 @@
             height: auto;
             line-height: 1;
             font-size: 12px;
-            padding: spacing(xxs) spacing(xxs, -1);
+            padding: 10px;
             margin-left: spacing(xxxs);
 
             &::before {
