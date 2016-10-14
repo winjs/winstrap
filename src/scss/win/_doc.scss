@@ -1,4 +1,4 @@
-﻿#glyphs {
+﻿.gcf {
     span[class*="glyph-"] {
         font-size: 2em;
     }
@@ -73,7 +73,7 @@ code {
 
 .guidance {
     border-left: 5px solid;
-    
+
     ul {
         padding-left: spacing(md, -8);
     }
@@ -95,8 +95,8 @@ code {
         font-family: $font-family-semibold;
     }
 
-    
-    
+
+
 
     //
     // Colors
