@@ -1,0 +1,789 @@
+﻿<section class="section" id="wsa-list-items">
+    <header class="section-header row">
+        <h1 class="section-title col-xs-24">
+            <a href="#wsa-list-items">Windows Setting app List items style</a>
+        </h1>
+    </header>
+    <div class="row">
+        <div class="col-xs-24">
+            <p>
+                Instead of using a table this component uses a list, with windows setting app style!
+                Click on a item to expand or collapse the details.
+            </p>
+		</div>
+        <div class="col-xs-24">
+			<h3 class="section-title col-xs-24">
+				WSA list [with toggle]
+			</h3>
+		</div>
+        <div class="col-xs-24">
+			<br>
+		</div>
+        <div class="col-xs-10 p-xs">
+			<div class="wsa-list wsa-toggle">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">25.3 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-camera"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">44.5 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Camera</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-report-hacked"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Defender</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default" disabled="disabled">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<a href="#" class="btn btn-link btn-block">Advanced options</a>
+						<button class="btn btn-default">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="col-xs-14">
+		{{#markdown}}
+```xml
+	<div class="wsa-list wsa-toggle">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1">25.3 MB</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60%</span>
+				</div>
+			</div>
+		</div>
+		<div class="xhide">
+			<button class="btn btn-default" disabled="disabled">Uninstall</button>
+			<button class="btn btn-default">Move</button>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-camera"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1">44.5 MB</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">Camera</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+		<div class="xhide">
+			<button class="btn btn-default" disabled="disabled">Uninstall</button>
+			<button class="btn btn-default">Move</button>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-report-hacked"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1">Unavailable</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">Defender</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+		<div class="xhide">
+			<button class="btn btn-default" disabled="disabled">Uninstall</button>
+			<button class="btn btn-default" disabled="disabled">Move</button>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/30/30/technics"/>
+		</div>
+		<div class="morebox">
+			<span class="line1">Unavailable</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+		<div class="xhide">
+			<a href="#" class="btn btn-link btn-block">Advanced options</a>
+			<button class="btn btn-default">Uninstall</button>
+			<button class="btn btn-default">Move</button>
+		</div>
+	</div>
+</div>
+```
+            {{/markdown}}
+		</div>
+		<div class="col-xs-24">
+			<h3 class="section-title col-xs-24">
+				WSA list [without toggle]
+			</h3>
+		</div>
+        <div class="col-xs-24">
+			<br>
+		</div>
+        <div class="col-xs-10 p-xs">
+			<div class="wsa-list">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-camera"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Camera</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-report-hacked"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Defender</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-14">
+		{{#markdown}}
+```xml
+	<div class="wsa-list">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-camera"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Camera</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-report-hacked"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch" autocomplete="off" aria-pressed="false"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Defender</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/30/30/technics"/>
+		</div>
+		<div class="morebox">
+			<span class="line1">Unavailable</span>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+</div>
+```
+            {{/markdown}}
+		</div>
+       <div class="col-xs-24">
+			<h3 class="section-title col-xs-24">
+				WSA list style 2
+			</h3>
+		</div>
+        <div class="col-xs-24">
+			<br>
+		</div>
+        <div class="col-xs-10 p-xs">
+			<div class="wsa-list wsa-style2">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-camera"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Camera</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-report-hacked"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Defender</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/40/40/technics"/>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-14">
+		{{#markdown}}
+```xml
+	<div class="wsa-list wsa-style2">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-camera"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Camera</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-report-hacked"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Defender</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/40/40/technics"/>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+</div>
+```
+            {{/markdown}}
+		</div>
+		       <div class="col-xs-24">
+			<h3 class="section-title col-xs-24">
+				WSA add item
+			</h3>
+		</div>
+        <div class="col-xs-24">
+			<br>
+		</div>
+        <div class="col-xs-10 p-xs">
+			<div class="wsa-list wsa-add-item">
+				<a class="item" href="#">
+					<div class="icon">
+						<span class="glyph glyph-add"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Add features</span>
+					</div>
+				</a>
+			</div>
+			<div class="wsa-list wsa-toggle">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">25.3 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-camera"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">44.5 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Camera</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-report-hacked"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Defender</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default" disabled="disabled">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<a href="#" class="btn btn-link btn-block">Advanced options</a>
+						<button class="btn btn-default">Uninstall</button>
+						<button class="btn btn-default">Move</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-14">
+		{{#markdown}}
+```xml
+	<div class="wsa-list wsa-add-item">
+	<a class="item" href="#">
+		<div class="icon">
+			<span class="glyph glyph-add"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Add features</span>
+		</div>
+	</a>
+</div>
+```
+            {{/markdown}}
+		</div>
+        <div class="col-xs-24">
+			<h3 class="section-title col-xs-24">
+				WSA list ALT
+			</h3>
+		</div>
+        <div class="col-xs-24">
+			<br>
+		</div>
+		<div class="col-xs-24 color-bg-dark-vivid-high">
+        <div class="col-xs-10 p-xs">
+			<h5 class="color-type-primary-alt">WSA list [with toggle]</h5>
+			<div class="wsa-list wsa-toggle wsa-alt">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">25.3 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default theme-alt" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default theme-alt">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<a href="#" class="btn btn-link btn-block theme-alt">Advanced options</a>
+						<button class="btn btn-default theme-alt">Uninstall</button>
+						<button class="btn btn-default theme-alt">Move</button>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h5 class="color-type-primary-alt">WSA list [without toggle]</h5>
+			<div class="wsa-list wsa-alt">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h5 class="color-type-primary-alt">WSA list style 2</h5>
+			<div class="wsa-list wsa-style2 wsa-alt">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/40/40/technics"/>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h5 class="color-type-primary-alt">WSA add item</h5>
+			<div class="wsa-list wsa-add-item wsa-alt">
+				<a class="item" href="#">
+					<div class="icon">
+						<span class="glyph glyph-add"></span>
+					</div>
+					<div class="box">
+						<span class="line1">Add features</span>
+					</div>
+				</a>
+			</div>
+			<div class="wsa-list wsa-toggle wsa-alt">
+				<div class="item">
+					<div class="icon">
+						<span class="glyph glyph-mail"></span>
+					</div>
+					<div class="morebox">
+						<span class="line1">25.3 MB</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">Mail and Calendar</span>
+						<span class="line2">Microsoft Corporation</span>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60%</span>
+							</div>
+						</div>
+					</div>
+					<div class="xhide">
+						<button class="btn btn-default theme-alt" disabled="disabled">Uninstall</button>
+						<button class="btn btn-default theme-alt">Move</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+						<img src="http://lorempixel.com/30/30/technics"/>
+					</div>
+					<div class="morebox">
+						<span class="line1">Unavailable</span>
+						<span class="line2">25/08/2016</span>
+					</div>
+					<div class="box">
+						<span class="line1">App</span>
+						<span class="line2">Microsoft Corporation</span>
+					</div>
+					<div class="xhide">
+						<a href="#" class="btn btn-link btn-block theme-alt">Advanced options</a>
+						<button class="btn btn-default theme-alt">Uninstall</button>
+						<button class="btn btn-default theme-alt">Move</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-14">
+		{{#markdown}}
+```xml
+	<div class="wsa-list wsa-toggle wsa-alt">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1">25.3 MB</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60%</span>
+				</div>
+			</div>
+		</div>
+		<div class="xhide">
+			<button class="btn btn-default theme-alt" disabled="disabled">Uninstall</button>
+			<button class="btn btn-default theme-alt">Move</button>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/30/30/technics"/>
+		</div>
+		<div class="morebox">
+			<span class="line1">Unavailable</span>
+			<span class="line2">25/08/2016</span>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+		<div class="xhide">
+			<a href="#" class="btn btn-link btn-block theme-alt">Advanced options</a>
+			<button class="btn btn-default theme-alt">Uninstall</button>
+			<button class="btn btn-default theme-alt">Move</button>
+		</div>
+	</div>
+</div>
+<br>
+<div class="wsa-list wsa-alt">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="morebox">
+			<span class="line1"><button type="button" data-toggle="button" class="btn btn-toggle-switch theme-alt" autocomplete="off" aria-pressed="false"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/30/30/technics"/>
+		</div>
+		<div class="morebox">
+			<span class="line1">Unavailable</span>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+</div>
+<br>
+<div class="wsa-list wsa-style2 wsa-alt">
+	<div class="item">
+		<div class="icon">
+			<span class="glyph glyph-mail"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Mail and Calendar</span>
+			<span class="line2">Microsoft Corporation</span>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="icon">
+			<img src="http://lorempixel.com/40/40/technics"/>
+		</div>
+		<div class="box">
+			<span class="line1">App</span>
+			<span class="line2">Microsoft Corporation</span>
+		</div>
+	</div>
+</div>
+<div class="wsa-list wsa-add-item wsa-alt">
+	<a class="item" href="#">
+		<div class="icon">
+			<span class="glyph glyph-add"></span>
+		</div>
+		<div class="box">
+			<span class="line1">Add features</span>
+		</div>
+	</a>
+</div>
+```
+            {{/markdown}}
+			<br>
+		</div>
+		</div>
+    </div>
+</section>
