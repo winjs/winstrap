@@ -8374,6 +8374,40 @@ form .theme-light select {
       color: #FFFFFF;
       background-color: #0078D7; }
 
+.putbox .icon {
+  float: left;
+  height: 68px;
+  width: 34px; }
+  .putbox .icon span {
+    display: block;
+    margin-top: 32px;
+    width: 34px;
+    height: 36px;
+    color: #0078D7;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left; }
+
+.putbox .box {
+  display: block;
+  margin-left: 34px;
+  min-height: 32px;
+  color: #000000; }
+  .putbox .box .form-control {
+    margin: 0; }
+  .putbox .box .btn-link, .putbox .box .btn-lightweight {
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+    font-size: 14px; }
+
+.putbox .title {
+  font-size: 14px;
+  line-height: 32px; }
+
+.putbox-alt .box {
+  color: #FFFFFF; }
+
 .jumbotron, .hero {
   padding: 12px 0;
   margin-bottom: initial; }
@@ -9583,6 +9617,150 @@ a.link-on-dark {
         padding: 0;
         margin-bottom: 10px;
         background: none; } }
+
+.wsa-list .item {
+  display: block;
+  min-height: 40px;
+  padding: 10px;
+  color: #000000; }
+  .wsa-list .item:hover {
+    background: #e6e6e6; }
+  .wsa-list .item .line1 {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px; }
+  .wsa-list .item .line2 {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px; }
+  .wsa-list .item .icon {
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    background: #0078D7;
+    float: left;
+    color: #FFFFFF; }
+    .wsa-list .item .icon img, .wsa-list .item .icon span {
+      height: 30px;
+      width: 30px;
+      margin: 5px;
+      float: left; }
+  .wsa-list .item .morebox {
+    width: 74px;
+    min-height: 40px;
+    float: right;
+    text-align: right; }
+    .wsa-list .item .morebox .btn-toggle-switch {
+      margin: 0px;
+      padding: 0px;
+      float: right; }
+  .wsa-list .item .box {
+    min-height: 40px;
+    margin: 0 80px 0 50px; }
+    .wsa-list .item .box .progress {
+      margin-top: 2px;
+      height: 6px; }
+      .wsa-list .item .box .progress .progress-bar {
+        height: 6px; }
+  .wsa-list .item .xhide {
+    display: none;
+    margin-top: 18px;
+    width: 100%;
+    text-align: right; }
+    .wsa-list .item .xhide .btn {
+      margin-left: 10px;
+      margin-right: 0; }
+    .wsa-list .item .xhide .btn-block {
+      text-align: left;
+      padding: 0px;
+      margin: 0px 0px 0px 50px; }
+
+.wsa-style2 .item {
+  position: relative; }
+  .wsa-style2 .item .line1, .wsa-style2 .item .line2 {
+    font-size: 15px; }
+  .wsa-style2 .item .icon {
+    background: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px; }
+    .wsa-style2 .item .icon img, .wsa-style2 .item .icon span {
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      color: #000000;
+      line-height: 40px; }
+  .wsa-style2 .item .box .progress {
+    margin-top: 2px;
+    height: 15px; }
+    .wsa-style2 .item .box .progress .progress-bar {
+      height: 15px; }
+
+.wsa-toggle .item {
+  cursor: pointer; }
+
+.wsa-toggle .active {
+  cursor: default;
+  background: #f2f2f2; }
+  .wsa-toggle .active:hover {
+    background: #f2f2f2; }
+  .wsa-toggle .active .xhide {
+    display: block; }
+
+.wsa-add-item {
+  margin-bottom: 16px; }
+  .wsa-add-item .item {
+    text-decoration: none;
+    color: #000000; }
+    .wsa-add-item .item .icon {
+      background: #c5c5c5;
+      color: #333; }
+      .wsa-add-item .item .icon span {
+        margin: 12px;
+        width: 16px;
+        height: 16px;
+        font-size: 16px; }
+    .wsa-add-item .item:hover {
+      color: #000000; }
+      .wsa-add-item .item:hover .icon {
+        border: 2px solid #b8b8b8; }
+        .wsa-add-item .item:hover .icon span {
+          margin: 10px; }
+
+.wsa-alt .item {
+  color: #FFFFFF; }
+  .wsa-alt .item:hover {
+    background: #191919; }
+  .wsa-alt .item .line2 {
+    color: rgba(255, 255, 255, 0.6); }
+
+.wsa-alt .active {
+  background: #171717; }
+  .wsa-alt .active:hover {
+    background: #171717; }
+
+.wsa-alt.wsa-style2 .item .icon img, .wsa-alt.wsa-style2 .item .icon span {
+  color: #FFFFFF; }
+
+.wsa-alt.wsa-add-item .item {
+  color: #FFFFFF; }
+  .wsa-alt.wsa-add-item .item .icon {
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF; }
+    .wsa-alt.wsa-add-item .item .icon span {
+      margin: 10px; }
+  .wsa-alt.wsa-add-item .item:hover {
+    color: #FFFFFF; }
+    .wsa-alt.wsa-add-item .item:hover .icon {
+      border: 2px solid #FFFFFF; }
+      .wsa-alt.wsa-add-item .item:hover .icon span {
+        margin: 10px; }
 
 .media {
   position: relative;

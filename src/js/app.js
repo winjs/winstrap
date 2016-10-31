@@ -177,4 +177,12 @@
             template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
         }).data('bs.popover').tip().addClass($('#btn-close').data("theme"));
     }
+
+    $('.wsa-toggle .item').click(function() {
+        if ($(this).hasClass('active') === false) {
+            var parent = $(this).parent();
+            $('.item', parent).removeClass('active');
+            $(this).addClass('active');
+        }
+    });
 });
