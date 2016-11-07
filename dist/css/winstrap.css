@@ -9541,7 +9541,7 @@ form .theme-light select {
   font-size: 14px;
   line-height: 32px; }
 
-.putbox-alt .box {
+.putbox.theme-alt .box {
   color: #FFFFFF; }
 
 .jumbotron, .hero {
@@ -10760,7 +10760,7 @@ a.link-on-dark {
   padding: 10px;
   color: #000000; }
   .wsa-list .item:hover {
-    background: #e6e6e6; }
+    background: #E5E5E5; }
   .wsa-list .item .line1 {
     display: block;
     height: 22px;
@@ -10778,7 +10778,8 @@ a.link-on-dark {
     background: #0078D7;
     float: left;
     color: #FFFFFF; }
-    .wsa-list .item .icon img, .wsa-list .item .icon span {
+    .wsa-list .item .icon img,
+    .wsa-list .item .icon span {
       height: 30px;
       width: 30px;
       margin: 5px;
@@ -10789,8 +10790,8 @@ a.link-on-dark {
     float: right;
     text-align: right; }
     .wsa-list .item .morebox .btn-toggle-switch {
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       float: right; }
   .wsa-list .item .box {
     min-height: 40px;
@@ -10810,12 +10811,20 @@ a.link-on-dark {
       margin-right: 0; }
     .wsa-list .item .xhide .btn-block {
       text-align: left;
-      padding: 0px;
-      margin: 0px 0px 0px 50px; }
+      padding: 0;
+      margin: 0 0 0 50px; }
+
+.wsa-list.theme-alt .item {
+  color: #FFFFFF; }
+  .wsa-list.theme-alt .item:hover {
+    background: #191919; }
+  .wsa-list.theme-alt .item .line2 {
+    color: rgba(255, 255, 255, 0.6); }
 
 .wsa-style2 .item {
   position: relative; }
-  .wsa-style2 .item .line1, .wsa-style2 .item .line2 {
+  .wsa-style2 .item .line1,
+  .wsa-style2 .item .line2 {
     font-size: 15px; }
   .wsa-style2 .item .icon {
     background: none;
@@ -10825,7 +10834,8 @@ a.link-on-dark {
     margin-top: -20px;
     text-align: center;
     line-height: 40px; }
-    .wsa-style2 .item .icon img, .wsa-style2 .item .icon span {
+    .wsa-style2 .item .icon img,
+    .wsa-style2 .item .icon span {
       margin: 0;
       width: 40px;
       height: 40px;
@@ -10837,16 +10847,25 @@ a.link-on-dark {
     .wsa-style2 .item .box .progress .progress-bar {
       height: 15px; }
 
+.wsa-style2.theme-alt .item .icon img,
+.wsa-style2.theme-alt .item .icon span {
+  color: #FFFFFF; }
+
 .wsa-toggle .item {
   cursor: pointer; }
 
 .wsa-toggle .active {
   cursor: default;
-  background: #f2f2f2; }
+  background: #F2F2F2; }
   .wsa-toggle .active:hover {
-    background: #f2f2f2; }
+    background: #F2F2F2; }
   .wsa-toggle .active .xhide {
     display: block; }
+
+.wsa-toggle.theme-alt .active {
+  background: #191919; }
+  .wsa-toggle.theme-alt .active:hover {
+    background: #191919; }
 
 .wsa-add-item {
   margin-bottom: 16px; }
@@ -10854,8 +10873,8 @@ a.link-on-dark {
     text-decoration: none;
     color: #000000; }
     .wsa-add-item .item .icon {
-      background: #c5c5c5;
-      color: #333; }
+      background: rgba(0, 0, 0, 0.2);
+      color: #333333; }
       .wsa-add-item .item .icon span {
         margin: 12px;
         width: 16px;
@@ -10864,39 +10883,23 @@ a.link-on-dark {
     .wsa-add-item .item:hover {
       color: #000000; }
       .wsa-add-item .item:hover .icon {
-        border: 2px solid #b8b8b8; }
+        border: 2px solid rgba(0, 0, 0, 0.3); }
         .wsa-add-item .item:hover .icon span {
           margin: 10px; }
-
-.wsa-alt .item {
-  color: #FFFFFF; }
-  .wsa-alt .item:hover {
-    background: #191919; }
-  .wsa-alt .item .line2 {
-    color: rgba(255, 255, 255, 0.6); }
-
-.wsa-alt .active {
-  background: #171717; }
-  .wsa-alt .active:hover {
-    background: #171717; }
-
-.wsa-alt.wsa-style2 .item .icon img, .wsa-alt.wsa-style2 .item .icon span {
-  color: #FFFFFF; }
-
-.wsa-alt.wsa-add-item .item {
-  color: #FFFFFF; }
-  .wsa-alt.wsa-add-item .item .icon {
-    background: none;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF; }
-    .wsa-alt.wsa-add-item .item .icon span {
-      margin: 10px; }
-  .wsa-alt.wsa-add-item .item:hover {
+  .wsa-add-item.theme-alt .item {
     color: #FFFFFF; }
-    .wsa-alt.wsa-add-item .item:hover .icon {
+    .wsa-add-item.theme-alt .item .icon {
+      background: none;
+      color: #FFFFFF;
       border: 2px solid #FFFFFF; }
-      .wsa-alt.wsa-add-item .item:hover .icon span {
+      .wsa-add-item.theme-alt .item .icon span {
         margin: 10px; }
+    .wsa-add-item.theme-alt .item:hover {
+      color: #FFFFFF; }
+      .wsa-add-item.theme-alt .item:hover .icon {
+        border: 2px solid #FFFFFF; }
+        .wsa-add-item.theme-alt .item:hover .icon span {
+          margin: 10px; }
 
 .media {
   position: relative;
