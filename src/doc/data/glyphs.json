@@ -319,7 +319,7 @@
         }, {
             "name": "contact-2"
         }, {
-            "name": "folder"
+            "name": "folder-fill"
         }, {
             "name": "audio"
         }, {
@@ -467,11 +467,17 @@
         }, {
             "name": "checkbox-indeterminate"
         }, {
+            "name": "erase-tool"
+        }, {
             "name": "warning"
         }, {
             "name": "shopping-cart"
         }, {
             "name": "flag-2"
+        }, {
+            "name": "folder-open"
+        }, {
+            "name": "folder"
         }, {
             "name": "completed"
         }, {
@@ -508,6 +514,10 @@
             "name": "subscriptions"
         }, {
             "name": "subscriptions-mirrored"
+        }, {
+            "name": "folder-horizontal-open"
+        }, {
+            "name": "folder-horizontal"
         }
     ]
 }

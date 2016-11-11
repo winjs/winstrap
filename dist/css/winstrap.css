@@ -6590,7 +6590,7 @@ button.close {
 .glyph-contact-2::before {
   content: ""; }
 
-.glyph-folder::before {
+.glyph-folder-fill::before {
   content: ""; }
 
 .glyph-audio::before {
@@ -6812,6 +6812,9 @@ button.close {
 .glyph-checkbox-indeterminate::before {
   content: ""; }
 
+.glyph-erase-tool::before {
+  content: ""; }
+
 .glyph-warning::before {
   content: ""; }
 
@@ -6820,6 +6823,12 @@ button.close {
 
 .glyph-flag-2::before {
   content: ""; }
+
+.glyph-folder-open::before {
+  content: ""; }
+
+.glyph-folder::before {
+  content: ""; }
 
 .glyph-completed::before {
   content: ""; }
@@ -6874,6 +6883,12 @@ button.close {
 
 .glyph-subscriptions-mirrored::before {
   content: ""; }
+
+.glyph-folder-horizontal-open::before {
+  content: ""; }
+
+.glyph-folder-horizontal::before {
+  content: ""; }
 
 .checkbox label input:indeterminate ~ span::before {
   content: "■"; }

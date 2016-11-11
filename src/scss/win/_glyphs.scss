@@ -655,7 +655,7 @@ $glyphs: (
         unicode:        "\E187",
         original-name:  "contact2Legacy"
     ),
-    folder: (
+    folder-fill: (
         unicode:        "\E188",
         original-name:  "folderLegacy"
     ),
@@ -951,6 +951,10 @@ $glyphs: (
         unicode:        "\E73C",
         original-name:  "checkboxIndeterminate"
     ),
+    erase-tool: (
+        unicode:        "\E75C",
+        original-name:  "eraseTool"
+    ),
     warning: (
         unicode:        "\E7BA",
         original-name:  "warning"
@@ -962,6 +966,14 @@ $glyphs: (
     flag-2: (
         unicode:        "\E7C1",
         original-name:  "flag2"
+    ),
+    folder-open: (
+        unicode:        "\E838",
+        original-name:  "folderOpen"
+    ),
+    folder: (
+        unicode:        "\E8B7",
+        original-name:  "folder"
     ),
     completed: (
         unicode:        "\E930",
@@ -1034,6 +1046,14 @@ $glyphs: (
     subscriptions-mirrored: (
         unicode:        "\ED12",
         original-name:  "subscriptionsMirrored"
+    ),
+    folder-horizontal-open: (
+        unicode:        "\ED25",
+        original-name:  "openFolderHorizontal"
+    ),
+    folder-horizontal: (
+        unicode:        "\F12B",
+        original-name:  "folderHorizontal"
     )
 );
 
