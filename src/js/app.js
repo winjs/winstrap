@@ -178,10 +178,11 @@
         }).data('bs.popover').tip().addClass($('#btn-close').data("theme"));
     }
 
-    $('.wsa-toggle .item').click(function() {
+    // Entity list item
+    $('.entity-list-expandable .entity-list-item').click(function() {
         if ($(this).hasClass('active') === false) {
             var parent = $(this).parent();
-            $('.item', parent).removeClass('active');
+            $('.entity-list-item', parent).removeClass('active');
             $(this).addClass('active');
         }
     });

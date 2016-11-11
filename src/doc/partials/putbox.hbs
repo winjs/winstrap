@@ -5,127 +5,107 @@
         </h1>
     </header>
     <div class="row">
-        <div class="col-xs-24">
-            <p>
-                a box with title, input, icon and more details!
-            </p>
-		</div>
-        <div class="col-xs-24">
-			<h3 class="section-title col-xs-24">
-				basic
-			</h3>
-		</div>
-        <div class="col-xs-24">
-			<br>
-		</div>
-        <div class="col-xs-6 p-xs">
-			<div class="putbox">
-				<div class="icon">
-					<span class="glyph glyph-clock"></span>
-				</div>
-				<div class="box title">
-					Clock struct
-				</div>
-				<div class="box">
-					<input type="text" class="form-control" value="H:i"/>
-				</div>
-			</div>
-			<br>
-			<div class="putbox">
-				<div class="icon">
-					<span class="glyph glyph-picture"></span>
-				</div>
-				<div class="box title">
-					New photo save to:
-				</div>
-				<div class="box">
-					<div class="combobox">
-						<select class="form-control">
-							<option>This PC (C:)</option>
-							<option>Local Disk (D:)</option>
-						</select>
+        <div class="col-md-12">
+			<h4 class="section-title">Default</h4>
+			<div class="m-t-xxxs p-t-xxxs p-b-xs">
+				<div class="putbox">
+					<div class="putbox-icon">
+						<span class="glyph glyph-clock"></span>
 					</div>
-					<a href="#" class="btn btn-link btn-block">Advanced options</a>
+					<div class="putbox-content">
+						<div class="content-title">Time format:</div>
+						<form class="content-form">
+							<input type="text" class="form-control" value="H:i"/>
+						</form>
+					</div>
+				</div>
+				<div class="putbox">
+					<div class="putbox-icon">
+						<span class="glyph glyph-picture"></span>
+					</div>
+					<div class="putbox-content">
+						<div class="content-title">New photos will save to:</div>
+						<form class="content-form">
+							<div class="combobox">
+								<select class="form-control">
+									<option>This PC (C:)</option>
+									<option>Local Disk (D:)</option>
+								</select>
+							</div>
+						</form>
+						<a href="#" class="btn btn-link btn-block">Advanced options</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-18">
-		{{#markdown}}
+		<div class="col-md-12">
+			<h4 class="section-title">Alt</h4>
+			<div class="m-t-xxxs p-t-xxxs p-b-xs p-l-xs color-bg-dark-vivid-high">
+				<div class="putbox theme-alt">
+					<div class="putbox-icon">
+						<span class="glyph glyph-clock"></span>
+					</div>
+					<div class="putbox-content">
+						<div class="content-title">Time format:</div>
+						<form class="content-form theme-alt">
+							<input type="text" class="form-control" value="H:i"/>
+						</form>
+					</div>
+				</div>
+				<div class="putbox theme-alt">
+					<div class="putbox-icon">
+						<span class="glyph glyph-picture"></span>
+					</div>
+					<div class="putbox-content">
+						<div class="content-title">New photos will save to:</div>
+						<form class="content-form theme-alt">
+							<div class="combobox">
+								<select class="form-control">
+									<option>This PC (C:)</option>
+									<option>Local Disk (D:)</option>
+								</select>
+							</div>
+						</form>
+						<a href="#" class="btn btn-link btn-block">Advanced options</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-xs-24">
+			{{#markdown}}
 ```xml
-  <div class="putbox">
-    <div class="icon">
-        <span class="glyph glyph-clock"></span>
-    </div>
-    <div class="box title">
-        Clock struct
-    </div>
-    <div class="box">
-        <input class="form-control" value="H:i" type="text">
-    </div>
+	<div class="putbox">
+	<div class="putbox-icon">
+		<span class="glyph glyph-clock"></span>
+	</div>
+	<div class="putbox-content">
+		<div class="content-title">Time format:</div>
+		<form class="content-form">
+			<input type="text" class="form-control" value="H:i"/>
+		</form>
+	</div>
 </div>
-<br>
 <div class="putbox">
-    <div class="icon">
-        <span class="glyph glyph-picture"></span>
-    </div>
-    <div class="box title">
-        New photo save to:
-    </div>
-    <div class="box">
-        <div class="combobox">
-            <select class="form-control">
-        <option>This PC (C:)</option>
-        <option>Local Disk (D:)</option>
-      </select>
-        </div>
-        <a href="#" class="btn btn-link btn-block">Advanced options</a>
-    </div>
-</div>
-```
-        {{/markdown}}
-		</div>
-        <div class="col-xs-24">
-			<h3 class="section-title col-xs-24">
-				Put box Alt
-			</h3>
-		</div>
-        <div class="col-xs-24">
-			<br>
-		</div>
-        <div class="col-xs-24 color-bg-dark-vivid-high">
-        <div class="col-xs-6 p-xs">
-			<div class="putbox theme-alt">
-				<div class="icon">
-					<span class="glyph glyph-clock"></span>
-				</div>
-				<div class="box title">
-					Clock struct
-				</div>
-				<div class="box theme-alt">
-					<input type="text" class="form-control" value="H:i"/>
-					<a href="#" class="btn btn-link btn-block theme-alt">Advanced options</a>
-				</div>
+	<div class="putbox-icon">
+		<span class="glyph glyph-picture"></span>
+	</div>
+	<div class="putbox-content">
+		<div class="content-title">New photos will save to:</div>
+		<form class="content-form">
+			<div class="combobox">
+				<select class="form-control">
+					<option>This PC (C:)</option>
+					<option>Local Disk (D:)</option>
+				</select>
 			</div>
-		</div>
-		<div class="col-xs-18">
-		{{#markdown}}
-```xml
-  <div class="putbox theme-alt">
-    <div class="icon">
-        <span class="glyph glyph-clock"></span>
-    </div>
-    <div class="box title">
-        Clock struct
-    </div>
-    <div class="box theme-alt">
-        <input type="text" class="form-control" value="H:i" />
-        <a href="#" class="btn btn-link btn-block theme-alt">Advanced options</a>
-    </div>
+		</form>
+		<a href="#" class="btn btn-link btn-block">Advanced options</a>
+	</div>
 </div>
 ```
-        {{/markdown}}
-		<br>
+        	{{/markdown}}
 		</div>
-		</div>
-    </div>
+	</div>
 </section>

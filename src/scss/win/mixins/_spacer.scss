@@ -7,18 +7,18 @@
 @mixin spacer($prop: margin, $direction: vertical, $size: xxs) {
 
     @if $direction == vertical {
-        #{$prop}-top:           spacing($size);
-        #{$prop}-bottom:        spacing($size);
+        #{$prop}-top:           spacing($size) !important;
+        #{$prop}-bottom:        spacing($size) !important;
 
     } @else if $direction == horizontal {
-        #{$prop}-left:          spacing($size);
-        #{$prop}-right:         spacing($size);
+        #{$prop}-left:          spacing($size) !important;
+        #{$prop}-right:         spacing($size) !important;
 
     } @else if $direction == all {
-        #{$prop}:               spacing($size);
+        #{$prop}:               spacing($size) !important;
 
     } @else {
-        #{$prop}-#{$direction}: spacing($size);
+        #{$prop}-#{$direction}: spacing($size) !important;
     }
 }
 

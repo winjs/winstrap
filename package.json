@@ -19,7 +19,7 @@
   ],
   "homepage": "http://winstrap.azurewebsites.net",
   "dependencies": {
-    "bootstrap-sass": "3.3.4",
+    "bootstrap-sass": "3.3.7",
     "jquery": "^2.1.4"
   },
   "devDependencies": {

@@ -6,7 +6,10 @@
 
     .progress-bar {
         @include transition(width 2s ease-in-out);
-        background-color: $color-accent;
+        
+        &:not(.progress-bar-success):not(.progress-bar-info):not(.progress-bar-warning):not(.progress-bar-danger) {
+            background-color: $color-accent;
+        }
     }
 
     &.theme-alt,

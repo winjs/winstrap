@@ -781,50 +781,45 @@ form .theme-light {
     }
 }
 
+// Put box
 .putbox {
-    .icon {
-        float: left;
-        height: 68px;
-        width: 34px;
+    margin-top: spacing(xs);
+
+    .putbox-icon {
+        display: inline-block;
+        margin-top: spacing(sm, -4);
+        vertical-align: top;
 
         span {
-            display: block;
-            margin-top: 32px;
-            width: 34px;
-            height: 36px;
-            color: $color-accent;
             font-size: 24px;
-            line-height: 36px;
-            text-align: left;
+            color: $color-accent-vivid-high;
         }
     }
 
-    .box {
-        display: block;
-        margin-left: 34px;
-        min-height: 32px;
-        color: $color-black;
+    .putbox-content {
+        display: inline-block;
+        margin-left: spacing(xxxs);
+        @include type(t7, set-line-height);
 
-        .form-control {
-            margin: 0;
+        .content-form {
+            margin-top: spacing(xxxs);
         }
 
         .btn-link {
-            margin: 0;
+            margin: spacing(n);
+            padding-left: spacing(n);
             text-align: left;
-            padding-left: 0;
-            font-size: 14px;
         }
     }
 
-    .title {
-        font-size: 14px;
-        line-height: 32px;
-    }
+    //
+    // Colors
+    //
 
+    // Alt theme
     &.theme-alt {
-        .box {
-            color: $color-white;
+        .content-title {
+            color: $color-type-primary-alt;
         }
     }
 }

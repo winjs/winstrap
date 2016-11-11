@@ -76,7 +76,7 @@
     font-family:                map-deep-get($fonts, $font, "family-md");
     letter-spacing:             map-deep-get($fonts, $font, "letter-spacing");
 
-    @if (#{$responsive} == "true") {
+    @if ($responsive == "true") {
 
         // type($font, responsive)
         @media (max-width: $screen-sm-max) {
@@ -92,7 +92,7 @@
         }
 
         // type($font, responsive, set-line-height)
-        @if (#{$set-line-height} == "true") {
+        @if ($set-line-height == "true") {
 
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
 
@@ -106,7 +106,7 @@
         }
     } @else {
 
-        @if (#{$set-line-height} == "true") {
+        @if ($set-line-height == "true") {
 
             // type($font, set-line-height)
             line-height:        (map-deep-get($fonts, $font, "line-height-md") / map-deep-get($fonts, $font, "size-md"));
@@ -138,7 +138,7 @@
 
     padding:            map-deep-get($fonts-spacing, $control, "space-md");
 
-    @if (#{$responsive} == "responsive") {
+    @if ($responsive == "responsive") {
         @media (max-width: $screen-sm-max) {
             padding:    map-deep-get($fonts-spacing, $control, "space-sm");
         }

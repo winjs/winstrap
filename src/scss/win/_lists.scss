@@ -1,3 +1,9 @@
+//
+// Static resources
+//
+$entity-list-item-height:       60px;
+$entity-list-item-icon-size:    40px;
+
 .list-items {
     @include list-unstyled();
     margin: 1em 0;
@@ -77,67 +83,42 @@
     }
 }
 
-.wsa-list {
-    .item {
-        display: block;
-        min-height: 40px;
-        padding: 10px;
-        color: $color-black;
+// Entity list
+.entity-list {
+    .entity-list-item {
+        max-width: 450px;
+        min-height: $entity-list-item-height;
+        padding: spacing(xxs, -2);
 
-        &:hover {
-            background: $color-bg-light-vivid-low;
-        }
-
-        .line1 {
-            display: block;
-            height: 22px;
-            line-height: 22px;
-            font-size: 14px;
-        }
-
-        .line2 {
-            display: block;
-            height: 18px;
-            line-height: 18px;
-            font-size: 14px;
-        }
-
-        .icon {
-            height: 40px;
-            width: 40px;
-            font-size: 30px;
-            background: $color-accent;
+        .item-icon {
             float: left;
-            color: $color-white;
+            // display: inline-block;
+            width: $entity-list-item-icon-size;
+            height: $entity-list-item-icon-size;
+            vertical-align: top;
 
-            img,
-            span {
-                height: 30px;
-                width: 30px;
-                margin: 5px;
+            span,
+            img {
                 float: left;
             }
-        }
 
-        .morebox {
-            width: 74px;
-            min-height: 40px;
-            float: right;
-            text-align: right;
+            span {
+                margin: spacing(xxxs);
+                font-size: 24px;
+            }
 
-            .btn-toggle-switch {
-                margin: 0;
-                padding: 0;
-                float: right;
+            img {
+                height: 30px;
+                width: 30px;
+                margin: spacing(xxxs, -3);
             }
         }
 
-        .box {
-            min-height: 40px;
-            margin: 0 80px 0 50px;
+        .item-content-primary {
+            margin: 0 spacing(xxl) 0 spacing(md);
 
             .progress {
-                margin-top: 2px;
+                margin-top: spacing(xxxs);
                 height: 6px;
 
                 .progress-bar {
@@ -146,175 +127,182 @@
             }
         }
 
-        .xhide {
+        .item-content-secondary {
+            float: right;
+            text-align: right;
+
+            .btn-toggle-switch {
+                margin: spacing(xxs, -2) 0 0;
+                padding: 0;
+                float: right;
+            }
+        }
+
+        .item-content-expanded {
             display: none;
-            margin-top: 18px;
+            margin-top: spacing(xxs, 4);
             width: 100%;
             text-align: right;
 
             .btn {
-                margin-left: 10px;
+                margin-left: spacing(xxs);
                 margin-right: 0;
             }
 
             .btn-block {
                 text-align: left;
                 padding: 0;
-                margin: 0 0 0 50px;
-            }
-        }
-    }
-
-    &.theme-alt {
-        .item {
-            color: $color-white;
-
-            &:hover {
-                background: $color-bg-dark-vivid-mid;
-            }
-
-            .line2 {
-                color: rgba($color-white, 0.6);
-            }
-        }
-    }
-}
-
-.wsa-style2 {
-    .item {
-        position: relative;
-
-        .line1,
-        .line2 {
-            font-size: 15px;
-        }
-
-        .icon {
-            background: none;
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            margin-top: -20px;
-            text-align: center;
-            line-height: 40px;
-
-            img,
-            span {
-                margin: 0;
-                width: 40px;
-                height: 40px;
-                color: $color-black;
-                line-height: 40px;
+                margin: -(spacing(xxs)) 0 spacing(xxxs) spacing(md);
             }
         }
 
-        .box {
-            .progress {
-                margin-top: 2px;
-                height: 15px;
-
-                .progress-bar {
-                    height: 15px;
-                }
-            }
+        .content-text-primary,
+        .content-text-secondary {
+            @include type(t7, set-line-height);
         }
     }
 
-    &.theme-alt {
-        .item {
-            .icon {
-                img,
-                span {
-                    color: $color-white;
-                }
-            }
-        }
-    }
-}
-
-.wsa-toggle {
-    .item {
-        cursor: pointer;
-    }
-
-    .active {
-        cursor: default;
-        background: $color-bg-light-vivid-mid;
-
-        &:hover {
-            background: $color-bg-light-vivid-mid;
+    &.entity-list-expandable {
+        .entity-list-item {
+            cursor: pointer;
         }
 
-        .xhide {
-            display: block;
-        }
-    }
-
-    &.theme-alt {
         .active {
-            background: $color-bg-dark-vivid-mid;
+            cursor: default;
 
-            &:hover {
-                background: $color-bg-dark-vivid-mid;
-            }
-        }
-    }
-}
-
-.wsa-add-item {
-    margin-bottom: 16px;
-
-    .item {
-        text-decoration: none;
-        color: $color-black;
-
-        .icon {
-            background: $color-neutral-low;
-            color: $color-bg-dark-neutral-high;
-
-            span {
-                margin: 12px;
-                width: 16px;
-                height: 16px;
-                font-size: 16px;
-            }
-        }
-
-        &:hover {
-            color: $color-black;
-
-            .icon {
-                border: 2px solid $color-neutral-mid;
-
-                span {
-                    margin: 10px;
-                }
+            .item-content-expanded {
+                display: block;
             }
         }
     }
 
-    &.theme-alt {
-        .item {
-            color: $color-white;
+    &.entity-list-add-item-button {
+        .entity-list-item {
+            display: block;
+            text-decoration: none;
 
-            .icon {
-                background: none;
-                color: $color-white;
-                border: 2px solid $color-white;
-
+            .item-icon {
                 span {
-                    margin: 10px;
+                    margin: spacing(xxs);
+                    width: 16px;
+                    height: 16px;
+                    font-size: 16px;
                 }
             }
 
             &:hover {
-                color: $color-white;
-
-                .icon {
-                    border: 2px solid $color-white;
+                .item-icon {
+                    border: 2px solid;
 
                     span {
-                        margin: 10px;
+                        margin: spacing(xxs, -2);
+                    }
+                }
+            }
+        }
+
+        &.theme-alt {
+            .item-icon {
+                border: 2px solid;
+
+                span {
+                    margin: spacing(xxs, -2);
+                }
+            }
+        }
+    }
+
+    //
+    // Colors
+    //
+
+    // Default theme
+    &,
+    &.theme-default {
+        .entity-list-item {
+            &:hover {
+                background: $color-bg-light-vivid-low;
+            }
+
+            .item-icon {
+                background: $color-accent-vivid-high;
+                color: $color-type-primary-alt;
+            }
+
+            .content-text-secondary {
+                color: $color-type-secondary;
+            }
+        }
+
+        &.entity-list-expandable {
+            .active {
+                background: $color-bg-light-vivid-mid;
+
+                &:hover {
+                    background: $color-bg-light-vivid-mid;
+                }
+            }
+        }
+
+        &.entity-list-add-item-button {
+            .entity-list-item {
+                color: $color-black;
+
+                .item-icon {
+                    background: $color-neutral-low;
+                    color: $color-bg-dark-neutral-high;
+                }
+
+                &:hover {
+                    color: $color-black;
+
+                    .item-icon {
+                        border-color: $color-neutral-mid;
+                    }
+                }
+            }
+        }
+    }
+
+    // Alt theme
+    &.theme-alt {
+        .entity-list-item {
+            color: $color-type-primary-alt;
+
+            &:hover {
+                background: $color-bg-dark-neutral-high;
+            }
+
+            .content-text-secondary {
+                color: $color-type-secondary-alt;
+            }
+        }
+
+        &.entity-list-expandable {
+            .active {
+                background: $color-bg-dark-vivid-low;
+
+                &:hover {
+                    background: $color-bg-dark-vivid-low;
+                }
+            }
+        }
+
+        &.entity-list-add-item-button {
+            .entity-list-item {
+                color: $color-white;
+
+                .item-icon {
+                    background: none;
+                    color: $color-white;
+                    border-color: $color-white;
+                }
+
+                &:hover {
+                    color: $color-white;
+
+                    .item-icon {
+                        border-color: $color-white;
                     }
                 }
             }
