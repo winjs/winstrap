@@ -1,7 +1,8 @@
 .progress-bar {
   position: relative;
   width: 180px;
-  height: 4px;
+  float: inherit;
+  display: inline-block;
 
   .progress-circle {
     position: absolute;

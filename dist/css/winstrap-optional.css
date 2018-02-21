@@ -9894,7 +9894,8 @@ a.link-on-dark {
 .progress-bar {
   position: relative;
   width: 180px;
-  height: 4px; }
+  float: inherit;
+  display: inline-block; }
   .progress-bar .progress-circle {
     position: absolute;
     top: 0;
@@ -9994,7 +9995,9 @@ a.link-on-dark {
 .progress-ring {
   position: relative;
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  text-align: left;
+  display: inline-block; }
   .progress-ring .progress-circle {
     position: absolute;
     top: 0;
