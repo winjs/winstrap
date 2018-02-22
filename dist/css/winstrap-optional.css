@@ -4959,9 +4959,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.navbar-right > div:first-child {
-  display: inline-flex; }
-
 .glyph {
   display: inline-block;
   width: 1em;
