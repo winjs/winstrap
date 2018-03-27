@@ -8912,6 +8912,9 @@ form .theme-light select {
       color: #FFFFFF;
       background: rgba(255, 255, 255, 0.05); }
 
+.navbar-right > div:first-child {
+  display: inline-flex; }
+
 .navbar .nav li {
   margin: 0; }
 
@@ -9891,7 +9894,8 @@ a.link-on-dark {
 .progress-bar {
   position: relative;
   width: 180px;
-  height: 4px; }
+  float: inherit;
+  display: inline-block; }
   .progress-bar .progress-circle {
     position: absolute;
     top: 0;
@@ -9991,7 +9995,9 @@ a.link-on-dark {
 .progress-ring {
   position: relative;
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  text-align: left;
+  display: inline-block; }
   .progress-ring .progress-circle {
     position: absolute;
     top: 0;

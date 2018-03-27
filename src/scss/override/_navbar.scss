@@ -412,3 +412,8 @@ $navbar-transition-out: .5s;
         }
     }
 }
+
+// Bootsrap Overrides
+.navbar-right > div:first-child {
+    display: inline-flex
+}
