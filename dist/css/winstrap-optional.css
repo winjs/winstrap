@@ -3371,11 +3371,9 @@ tbody.collapse.in {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #000000; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #000000;
-        background-color: rgba(0, 0, 0, 0.05); }
+        color: #000000; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #000000;
-      background-color: #F2F2F2; }
+      color: #000000; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
@@ -8751,6 +8749,8 @@ form .theme-light select {
     padding: 15px 24px;
     height: auto;
     line-height: 1.5; }
+  .navbar-local .navbar-nav .open .dropdown-menu > .active > a, .navbar-local .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-local .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000; }
   @media (min-width: 1024px) {
     .navbar-local .navbar-nav {
       margin: 0; }
