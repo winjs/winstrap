@@ -964,7 +964,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif;
@@ -1292,7 +1292,7 @@ dd {
 .dl-horizontal dd:after {
   clear: both; }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1426,7 +1426,7 @@ pre {
   @media (min-width: 768px) {
     .container {
       width: 691px; } }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .container {
       width: 976px; } }
 
@@ -2160,7 +2160,7 @@ pre {
   .col-md-offset-24 {
     margin-left: 100%; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17, .col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24 {
     float: left; }
   .col-lg-1 {
@@ -2697,49 +2697,49 @@ input[type="search"] {
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
     line-height: 36px; }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
-  .input-group-sm > input[type="date"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="date"].btn,
+  input[type="date"].input-sm, .input-group-sm > input.form-control[type="date"],
+  .input-group-sm > input.input-group-addon[type="date"],
+  .input-group-sm > .input-group-btn > input.btn[type="date"],
   .input-group-sm input[type="date"],
   input[type="time"].input-sm,
-  .input-group-sm > input[type="time"].form-control,
-  .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm > input.form-control[type="time"],
+  .input-group-sm > input.input-group-addon[type="time"],
+  .input-group-sm > .input-group-btn > input.btn[type="time"],
   .input-group-sm
   input[type="time"],
   input[type="datetime-local"].input-sm,
-  .input-group-sm > input[type="datetime-local"].form-control,
-  .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm > input.form-control[type="datetime-local"],
+  .input-group-sm > input.input-group-addon[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input.btn[type="datetime-local"],
   .input-group-sm
   input[type="datetime-local"],
   input[type="month"].input-sm,
-  .input-group-sm > input[type="month"].form-control,
-  .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm > input.form-control[type="month"],
+  .input-group-sm > input.input-group-addon[type="month"],
+  .input-group-sm > .input-group-btn > input.btn[type="month"],
   .input-group-sm
   input[type="month"] {
     line-height: 24px; }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
-  .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn,
+  input[type="date"].input-lg, .input-group-lg > input.form-control[type="date"],
+  .input-group-lg > input.input-group-addon[type="date"],
+  .input-group-lg > .input-group-btn > input.btn[type="date"],
   .input-group-lg input[type="date"],
   input[type="time"].input-lg,
-  .input-group-lg > input[type="time"].form-control,
-  .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn,
+  .input-group-lg > input.form-control[type="time"],
+  .input-group-lg > input.input-group-addon[type="time"],
+  .input-group-lg > .input-group-btn > input.btn[type="time"],
   .input-group-lg
   input[type="time"],
   input[type="datetime-local"].input-lg,
-  .input-group-lg > input[type="datetime-local"].form-control,
-  .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-lg > input.form-control[type="datetime-local"],
+  .input-group-lg > input.input-group-addon[type="datetime-local"],
+  .input-group-lg > .input-group-btn > input.btn[type="datetime-local"],
   .input-group-lg
   input[type="datetime-local"],
   input[type="month"].input-lg,
-  .input-group-lg > input[type="month"].form-control,
-  .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn,
+  .input-group-lg > input.form-control[type="month"],
+  .input-group-lg > input.input-group-addon[type="month"],
+  .input-group-lg > .input-group-btn > input.btn[type="month"],
   .input-group-lg
   input[type="month"] {
     line-height: 46px; } }
@@ -2842,9 +2842,9 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 select[multiple].input-sm,
-.input-group-sm > select[multiple].form-control,
-.input-group-sm > select[multiple].input-group-addon,
-.input-group-sm > .input-group-btn > select[multiple].btn {
+.input-group-sm > select.form-control[multiple],
+.input-group-sm > select.input-group-addon[multiple],
+.input-group-sm > .input-group-btn > select.btn[multiple] {
   height: auto; }
 
 .form-group-sm .form-control {
@@ -2888,9 +2888,9 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 select[multiple].input-lg,
-.input-group-lg > select[multiple].form-control,
-.input-group-lg > select[multiple].input-group-addon,
-.input-group-lg > .input-group-btn > select[multiple].btn {
+.input-group-lg > select.form-control[multiple],
+.input-group-lg > select.input-group-addon[multiple],
+.input-group-lg > .input-group-btn > select.btn[multiple] {
   height: auto; }
 
 .form-group-lg .form-control {
@@ -2932,18 +2932,14 @@ select[multiple].input-lg,
   text-align: center;
   pointer-events: none; }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
-.input-group-lg > .input-group-addon + .form-control-feedback,
-.input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px; }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
-.input-group-sm > .input-group-addon + .form-control-feedback,
-.input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
   width: 24px;
@@ -3177,23 +3173,23 @@ fieldset[disabled] a.btn {
   .btn-default:focus, .btn-default.focus {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
   .btn-default:hover {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
     .open > .btn-default.dropdown-toggle:hover,
     .open > .btn-default.dropdown-toggle:focus,
     .open > .btn-default.dropdown-toggle.focus {
       color: #000000;
       background-color: rgba(0, 0, 0, 0.3);
-      border-color: transparent; }
+      border-color: rgba(0, 0, 0, 0); }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
     background-image: none; }
@@ -3288,23 +3284,23 @@ fieldset[disabled] a.btn {
   .btn-info:focus, .btn-info.focus {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
   .btn-info:hover {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
   .btn-info:active, .btn-info.active,
   .open > .btn-info.dropdown-toggle {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: transparent; }
+    border-color: rgba(0, 0, 0, 0); }
     .btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus,
     .open > .btn-info.dropdown-toggle:hover,
     .open > .btn-info.dropdown-toggle:focus,
     .open > .btn-info.dropdown-toggle.focus {
       color: #000000;
       background-color: rgba(0, 0, 0, 0.3);
-      border-color: transparent; }
+      border-color: rgba(0, 0, 0, 0); }
   .btn-info:active, .btn-info.active,
   .open > .btn-info.dropdown-toggle {
     background-image: none; }
@@ -3396,7 +3392,7 @@ fieldset[disabled] a.btn {
   color: #0078D7;
   font-weight: normal;
   border-radius: 0; }
-  .btn-link, .btn-lightweight, .btn-link:active, .btn-lightweight:active, .btn-link.active, .active.btn-lightweight, .btn-link[disabled], [disabled].btn-lightweight,
+  .btn-link, .btn-lightweight, .btn-link:active, .btn-lightweight:active, .btn-link.active, .active.btn-lightweight, .btn-link[disabled], .btn-lightweight[disabled],
   fieldset[disabled] .btn-link,
   fieldset[disabled] .btn-lightweight {
     background-color: transparent;
@@ -3408,7 +3404,7 @@ fieldset[disabled] a.btn {
     color: #0078D7;
     text-decoration: underline;
     background-color: transparent; }
-  .btn-link[disabled]:hover, [disabled].btn-lightweight:hover, .btn-link[disabled]:focus, [disabled].btn-lightweight:focus,
+  .btn-link[disabled]:hover, .btn-lightweight[disabled]:hover, .btn-link[disabled]:focus, .btn-lightweight[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
   fieldset[disabled] .btn-lightweight:hover,
   fieldset[disabled] .btn-link:focus,
@@ -3599,7 +3595,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px; }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto; }
@@ -3975,16 +3971,20 @@ tbody.collapse.in {
     margin-right: 0;
     border-radius: 0px; }
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-  .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus,
+  .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
   @media (min-width: 540px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 0px 0px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-    .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus,
+    .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #FFFFFF; } }
 
 .tab-content > .tab-pane {
@@ -4008,7 +4008,7 @@ tbody.collapse.in {
     display: table; }
   .navbar:after {
     clear: both; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar {
       border-radius: 0px; } }
 
@@ -4019,7 +4019,7 @@ tbody.collapse.in {
 .navbar-header:after {
   clear: both; }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .navbar-header {
     float: left; } }
 
@@ -4037,7 +4037,7 @@ tbody.collapse.in {
     clear: both; }
   .navbar-collapse.in {
     overflow-y: auto; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-collapse {
       width: auto;
       border-top: 0;
@@ -4069,7 +4069,7 @@ tbody.collapse.in {
 .container-fluid > .navbar-collapse {
   margin-right: -10px;
   margin-left: -10px; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .container > .navbar-header,
     .container > .navbar-collapse,
     .container-fluid > .navbar-header,
@@ -4080,7 +4080,7 @@ tbody.collapse.in {
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-static-top {
       border-radius: 0; } }
 
@@ -4090,7 +4090,7 @@ tbody.collapse.in {
   right: 0;
   left: 0;
   z-index: 1030; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-fixed-top,
     .navbar-fixed-bottom {
       border-radius: 0; } }
@@ -4114,11 +4114,11 @@ tbody.collapse.in {
     text-decoration: none; }
   .navbar-brand > img, .navbar-local .navbar-toggle > img {
     display: block; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar > .container .navbar-brand, .navbar > .container .navbar-local .navbar-toggle, .navbar-local .navbar > .container .navbar-toggle,
     .navbar > .container-fluid .navbar-brand,
-    .navbar > .container-fluid .navbar-local .navbar-toggle, .navbar-local
-    .navbar > .container-fluid .navbar-toggle {
+    .navbar > .container-fluid .navbar-local .navbar-toggle,
+    .navbar-local .navbar > .container-fluid .navbar-toggle {
       margin-left: -10px; } }
 
 .navbar-toggle {
@@ -4141,7 +4141,7 @@ tbody.collapse.in {
     border-radius: 1px; }
   .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 4px; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-toggle {
       display: none; } }
 
@@ -4151,7 +4151,7 @@ tbody.collapse.in {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 23px; }
-  @media (max-width: 1083px) {
+  @media (max-width: 1023px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
       float: none;
@@ -4167,7 +4167,7 @@ tbody.collapse.in {
         line-height: 23px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-nav {
       float: left;
       margin: 0; }
@@ -4225,12 +4225,12 @@ tbody.collapse.in {
       margin-left: 0; }
     .navbar-form .has-feedback .form-control-feedback {
       top: 0; } }
-  @media (max-width: 1083px) {
+  @media (max-width: 1023px) {
     .navbar-form .form-group {
       margin-bottom: 5px; }
       .navbar-form .form-group:last-child {
         margin-bottom: 0; } }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-form {
       width: auto;
       border: 0;
@@ -4266,13 +4266,13 @@ tbody.collapse.in {
 .navbar-text {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-text {
       float: left;
       margin-left: 10px;
       margin-right: 10px; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .navbar-left {
     float: left !important; }
   .navbar-right {
@@ -4314,7 +4314,7 @@ tbody.collapse.in {
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #F2F2F2;
     color: #000000; }
-  @media (max-width: 1083px) {
+  @media (max-width: 1023px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #000000; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4334,7 +4334,7 @@ tbody.collapse.in {
     color: #000000; }
     .navbar-default .btn-link:hover, .navbar-default .btn-lightweight:hover, .navbar-default .btn-link:focus, .navbar-default .btn-lightweight:focus {
       color: #000000; }
-    .navbar-default .btn-link[disabled]:hover, .navbar-default [disabled].btn-lightweight:hover, .navbar-default .btn-link[disabled]:focus, .navbar-default [disabled].btn-lightweight:focus,
+    .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-lightweight[disabled]:hover, .navbar-default .btn-link[disabled]:focus, .navbar-default .btn-lightweight[disabled]:focus,
     fieldset[disabled] .navbar-default .btn-link:hover,
     fieldset[disabled] .navbar-default .btn-lightweight:hover,
     fieldset[disabled] .navbar-default .btn-link:focus,
@@ -4374,7 +4374,7 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #404040;
     color: #FFFFFF; }
-  @media (max-width: 1083px) {
+  @media (max-width: 1023px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
       border-color: #000000; }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -4398,7 +4398,7 @@ tbody.collapse.in {
     color: #FFFFFF; }
     .navbar-inverse .btn-link:hover, .navbar-inverse .btn-lightweight:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-lightweight:focus {
       color: #FFFFFF; }
-    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-lightweight:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-lightweight:focus,
+    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-lightweight[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse .btn-lightweight[disabled]:focus,
     fieldset[disabled] .navbar-inverse .btn-link:hover,
     fieldset[disabled] .navbar-inverse .btn-lightweight:hover,
     fieldset[disabled] .navbar-inverse .btn-link:focus,
@@ -4428,7 +4428,8 @@ tbody.collapse.in {
   .pagination > li, .pager > li {
     display: inline; }
     .pagination > li > a, .pager > li > a,
-    .pagination > li > span, .pager > li > span {
+    .pagination > li > span,
+    .pager > li > span {
       position: relative;
       float: left;
       padding: 4px 8px;
@@ -4439,36 +4440,48 @@ tbody.collapse.in {
       border: 1px solid transparent;
       margin-left: -1px; }
     .pagination > li:first-child > a, .pager > li:first-child > a,
-    .pagination > li:first-child > span, .pager > li:first-child > span {
+    .pagination > li:first-child > span,
+    .pager > li:first-child > span {
       margin-left: 0;
       border-bottom-left-radius: 0px;
       border-top-left-radius: 0px; }
     .pagination > li:last-child > a, .pager > li:last-child > a,
-    .pagination > li:last-child > span, .pager > li:last-child > span {
+    .pagination > li:last-child > span,
+    .pager > li:last-child > span {
       border-bottom-right-radius: 0px;
       border-top-right-radius: 0px; }
   .pagination > li > a:hover, .pager > li > a:hover, .pagination > li > a:focus, .pager > li > a:focus,
-  .pagination > li > span:hover, .pager > li > span:hover,
-  .pagination > li > span:focus, .pager > li > span:focus {
+  .pagination > li > span:hover,
+  .pager > li > span:hover,
+  .pagination > li > span:focus,
+  .pager > li > span:focus {
     z-index: 2;
     color: #000000;
     background-color: rgba(0, 0, 0, 0.1);
     border-color: transparent; }
   .pagination > .active > a, .pager > .active > a, .pagination > .active > a:hover, .pager > .active > a:hover, .pagination > .active > a:focus, .pager > .active > a:focus,
-  .pagination > .active > span, .pager > .active > span,
-  .pagination > .active > span:hover, .pager > .active > span:hover,
-  .pagination > .active > span:focus, .pager > .active > span:focus {
+  .pagination > .active > span,
+  .pager > .active > span,
+  .pagination > .active > span:hover,
+  .pager > .active > span:hover,
+  .pagination > .active > span:focus,
+  .pager > .active > span:focus {
     z-index: 3;
     color: #000000;
     background-color: transparent;
     border-color: #0078D7;
     cursor: default; }
   .pagination > .disabled > span, .pager > .disabled > span,
-  .pagination > .disabled > span:hover, .pager > .disabled > span:hover,
-  .pagination > .disabled > span:focus, .pager > .disabled > span:focus,
-  .pagination > .disabled > a, .pager > .disabled > a,
-  .pagination > .disabled > a:hover, .pager > .disabled > a:hover,
-  .pagination > .disabled > a:focus, .pager > .disabled > a:focus {
+  .pagination > .disabled > span:hover,
+  .pager > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
+  .pager > .disabled > span:focus,
+  .pagination > .disabled > a,
+  .pager > .disabled > a,
+  .pagination > .disabled > a:hover,
+  .pager > .disabled > a:hover,
+  .pagination > .disabled > a:focus,
+  .pager > .disabled > a:focus {
     color: rgba(0, 0, 0, 0.6);
     background-color: transparent;
     border-color: transparent;
@@ -4640,7 +4653,8 @@ a.badge:hover, a.badge:focus {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.1); }
   .jumbotron h1, .hero h1,
-  .jumbotron .h1, .hero .h1 {
+  .jumbotron .h1,
+  .hero .h1 {
     color: inherit; }
   .jumbotron p, .hero p {
     margin-bottom: 15px;
@@ -4666,7 +4680,8 @@ a.badge:hover, a.badge:focus {
         padding-left: 60px;
         padding-right: 60px; }
       .jumbotron h1, .hero h1,
-      .jumbotron .h1, .hero .h1 {
+      .jumbotron .h1,
+      .hero .h1 {
         font-size: 68px; } }
 
 .alert {
@@ -5771,7 +5786,7 @@ button.close {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -5840,7 +5855,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -5998,7 +6013,7 @@ button.close {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 768px) and (max-width: 1083px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md {
     display: block !important; }
   table.visible-md {
@@ -6009,19 +6024,19 @@ button.close {
   td.visible-md {
     display: table-cell !important; } }
 
-@media (min-width: 768px) and (max-width: 1083px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 768px) and (max-width: 1083px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 768px) and (max-width: 1083px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .visible-lg {
     display: block !important; }
   table.visible-lg {
@@ -6032,15 +6047,15 @@ button.close {
   td.visible-lg {
     display: table-cell !important; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .visible-lg-block {
     display: block !important; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .visible-lg-inline {
     display: inline !important; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
@@ -6052,11 +6067,11 @@ button.close {
   .hidden-sm {
     display: none !important; } }
 
-@media (min-width: 768px) and (max-width: 1083px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hidden-md {
     display: none !important; } }
 
-@media (min-width: 1084px) {
+@media (min-width: 1024px) {
   .hidden-lg {
     display: none !important; } }
 
@@ -8334,53 +8349,85 @@ ol {
     .btn-link:focus, .btn-lightweight:focus, .btn-link:active, .btn-lightweight:active, .btn-link.theme-default:focus, .theme-default.btn-lightweight:focus, .btn-link.theme-default:active, .theme-default.btn-lightweight:active {
       color: #006abe;
       border-color: transparent; }
-    .btn-link:disabled, .btn-lightweight:disabled, .btn-link.disabled, .disabled.btn-lightweight, .btn-link[disabled], [disabled].btn-lightweight,
-    .btn-link fieldset[disabled], .btn-lightweight fieldset[disabled], .btn-link.theme-default:disabled, .theme-default.btn-lightweight:disabled, .btn-link.theme-default.disabled, .theme-default.disabled.btn-lightweight, .btn-link.theme-default[disabled], .theme-default[disabled].btn-lightweight,
-    .btn-link.theme-default fieldset[disabled], .theme-default.btn-lightweight fieldset[disabled] {
+    .btn-link:disabled, .btn-lightweight:disabled, .btn-link.disabled, .disabled.btn-lightweight, .btn-link[disabled], .btn-lightweight[disabled],
+    .btn-link fieldset[disabled],
+    .btn-lightweight fieldset[disabled], .btn-link.theme-default:disabled, .theme-default.btn-lightweight:disabled, .btn-link.theme-default.disabled, .theme-default.disabled.btn-lightweight, .btn-link.theme-default[disabled], .theme-default.btn-lightweight[disabled],
+    .btn-link.theme-default fieldset[disabled],
+    .theme-default.btn-lightweight fieldset[disabled] {
       color: rgba(0, 0, 0, 0.2);
       background-color: transparent;
       -webkit-box-shadow: none;
       box-shadow: none; }
   .btn-link.theme-alt:disabled, .theme-alt.btn-lightweight:disabled, .jumbotron.theme-alt .btn.btn-lightweight:disabled, .theme-alt.hero .btn.btn-lightweight:disabled,
-  .jumbotron.theme-alt .btn.btn-link:disabled, .theme-alt.hero .btn.btn-link:disabled, .btn-link.theme-alt.disabled, .theme-alt.disabled.btn-lightweight, .jumbotron.theme-alt .disabled.btn.btn-lightweight, .theme-alt.hero .disabled.btn.btn-lightweight,
-  .jumbotron.theme-alt .disabled.btn.btn-link, .theme-alt.hero .disabled.btn.btn-link, .btn-link.theme-alt[disabled], .theme-alt[disabled].btn-lightweight, .jumbotron.theme-alt [disabled].btn.btn-lightweight, .theme-alt.hero [disabled].btn.btn-lightweight,
-  .jumbotron.theme-alt [disabled].btn.btn-link, .theme-alt.hero [disabled].btn.btn-link,
-  .btn-link.theme-alt fieldset[disabled], .theme-alt.btn-lightweight fieldset[disabled], .jumbotron.theme-alt .btn.btn-lightweight fieldset[disabled], .theme-alt.hero .btn.btn-lightweight fieldset[disabled],
-  .jumbotron.theme-alt .btn.btn-link fieldset[disabled], .theme-alt.hero .btn.btn-link fieldset[disabled] {
+  .jumbotron.theme-alt .btn.btn-link:disabled,
+  .theme-alt.hero .btn.btn-link:disabled, .btn-link.theme-alt.disabled, .theme-alt.disabled.btn-lightweight, .jumbotron.theme-alt .disabled.btn.btn-lightweight, .theme-alt.hero .disabled.btn.btn-lightweight,
+  .jumbotron.theme-alt .disabled.btn.btn-link,
+  .theme-alt.hero .disabled.btn.btn-link, .btn-link.theme-alt[disabled], .theme-alt.btn-lightweight[disabled], .jumbotron.theme-alt .btn.btn-lightweight[disabled], .theme-alt.hero .btn.btn-lightweight[disabled],
+  .jumbotron.theme-alt .btn.btn-link[disabled],
+  .theme-alt.hero .btn.btn-link[disabled],
+  .btn-link.theme-alt fieldset[disabled],
+  .theme-alt.btn-lightweight fieldset[disabled],
+  .jumbotron.theme-alt .btn.btn-lightweight fieldset[disabled],
+  .theme-alt.hero .btn.btn-lightweight fieldset[disabled],
+  .jumbotron.theme-alt .btn.btn-link fieldset[disabled],
+  .theme-alt.hero .btn.btn-link fieldset[disabled] {
     color: rgba(255, 255, 255, 0.2);
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-link.theme-on-color, .theme-on-color.btn-lightweight, .btn-link.theme-on-img-dark, .theme-on-img-dark.btn-lightweight, .btn-link.theme-dark, .theme-dark.btn-lightweight, .jumbotron.theme-dark .btn.btn-lightweight, .theme-dark.hero .btn.btn-lightweight,
-  .jumbotron.theme-dark .btn.btn-link, .theme-dark.hero .btn.btn-link {
+  .jumbotron.theme-dark .btn.btn-link,
+  .theme-dark.hero .btn.btn-link {
     color: #FFFFFF; }
     .btn-link.theme-on-color:focus, .theme-on-color.btn-lightweight:focus, .btn-link.theme-on-color:active, .theme-on-color.btn-lightweight:active, .btn-link.theme-on-img-dark:focus, .theme-on-img-dark.btn-lightweight:focus, .btn-link.theme-on-img-dark:active, .theme-on-img-dark.btn-lightweight:active, .btn-link.theme-dark:focus, .theme-dark.btn-lightweight:focus, .jumbotron.theme-dark .btn.btn-lightweight:focus, .theme-dark.hero .btn.btn-lightweight:focus,
-    .jumbotron.theme-dark .btn.btn-link:focus, .theme-dark.hero .btn.btn-link:focus, .btn-link.theme-dark:active, .theme-dark.btn-lightweight:active, .jumbotron.theme-dark .btn.btn-lightweight:active, .theme-dark.hero .btn.btn-lightweight:active,
-    .jumbotron.theme-dark .btn.btn-link:active, .theme-dark.hero .btn.btn-link:active {
+    .jumbotron.theme-dark .btn.btn-link:focus,
+    .theme-dark.hero .btn.btn-link:focus, .btn-link.theme-dark:active, .theme-dark.btn-lightweight:active, .jumbotron.theme-dark .btn.btn-lightweight:active, .theme-dark.hero .btn.btn-lightweight:active,
+    .jumbotron.theme-dark .btn.btn-link:active,
+    .theme-dark.hero .btn.btn-link:active {
       color: rgba(255, 255, 255, 0.6); }
-    .btn-link.theme-on-color:disabled, .theme-on-color.btn-lightweight:disabled, .btn-link.theme-on-color.disabled, .theme-on-color.disabled.btn-lightweight, .btn-link.theme-on-color[disabled], .theme-on-color[disabled].btn-lightweight,
-    .btn-link.theme-on-color fieldset[disabled], .theme-on-color.btn-lightweight fieldset[disabled], .btn-link.theme-on-img-dark:disabled, .theme-on-img-dark.btn-lightweight:disabled, .btn-link.theme-on-img-dark.disabled, .theme-on-img-dark.disabled.btn-lightweight, .btn-link.theme-on-img-dark[disabled], .theme-on-img-dark[disabled].btn-lightweight,
-    .btn-link.theme-on-img-dark fieldset[disabled], .theme-on-img-dark.btn-lightweight fieldset[disabled], .btn-link.theme-dark:disabled, .theme-dark.btn-lightweight:disabled, .jumbotron.theme-dark .btn.btn-lightweight:disabled, .theme-dark.hero .btn.btn-lightweight:disabled,
-    .jumbotron.theme-dark .btn.btn-link:disabled, .theme-dark.hero .btn.btn-link:disabled, .btn-link.theme-dark.disabled, .theme-dark.disabled.btn-lightweight, .jumbotron.theme-dark .disabled.btn.btn-lightweight, .theme-dark.hero .disabled.btn.btn-lightweight,
-    .jumbotron.theme-dark .disabled.btn.btn-link, .theme-dark.hero .disabled.btn.btn-link, .btn-link.theme-dark[disabled], .theme-dark[disabled].btn-lightweight, .jumbotron.theme-dark [disabled].btn.btn-lightweight, .theme-dark.hero [disabled].btn.btn-lightweight,
-    .jumbotron.theme-dark [disabled].btn.btn-link, .theme-dark.hero [disabled].btn.btn-link,
-    .btn-link.theme-dark fieldset[disabled], .theme-dark.btn-lightweight fieldset[disabled], .jumbotron.theme-dark .btn.btn-lightweight fieldset[disabled], .theme-dark.hero .btn.btn-lightweight fieldset[disabled],
-    .jumbotron.theme-dark .btn.btn-link fieldset[disabled], .theme-dark.hero .btn.btn-link fieldset[disabled] {
+    .btn-link.theme-on-color:disabled, .theme-on-color.btn-lightweight:disabled, .btn-link.theme-on-color.disabled, .theme-on-color.disabled.btn-lightweight, .btn-link.theme-on-color[disabled], .theme-on-color.btn-lightweight[disabled],
+    .btn-link.theme-on-color fieldset[disabled],
+    .theme-on-color.btn-lightweight fieldset[disabled], .btn-link.theme-on-img-dark:disabled, .theme-on-img-dark.btn-lightweight:disabled, .btn-link.theme-on-img-dark.disabled, .theme-on-img-dark.disabled.btn-lightweight, .btn-link.theme-on-img-dark[disabled], .theme-on-img-dark.btn-lightweight[disabled],
+    .btn-link.theme-on-img-dark fieldset[disabled],
+    .theme-on-img-dark.btn-lightweight fieldset[disabled], .btn-link.theme-dark:disabled, .theme-dark.btn-lightweight:disabled, .jumbotron.theme-dark .btn.btn-lightweight:disabled, .theme-dark.hero .btn.btn-lightweight:disabled,
+    .jumbotron.theme-dark .btn.btn-link:disabled,
+    .theme-dark.hero .btn.btn-link:disabled, .btn-link.theme-dark.disabled, .theme-dark.disabled.btn-lightweight, .jumbotron.theme-dark .disabled.btn.btn-lightweight, .theme-dark.hero .disabled.btn.btn-lightweight,
+    .jumbotron.theme-dark .disabled.btn.btn-link,
+    .theme-dark.hero .disabled.btn.btn-link, .btn-link.theme-dark[disabled], .theme-dark.btn-lightweight[disabled], .jumbotron.theme-dark .btn.btn-lightweight[disabled], .theme-dark.hero .btn.btn-lightweight[disabled],
+    .jumbotron.theme-dark .btn.btn-link[disabled],
+    .theme-dark.hero .btn.btn-link[disabled],
+    .btn-link.theme-dark fieldset[disabled],
+    .theme-dark.btn-lightweight fieldset[disabled],
+    .jumbotron.theme-dark .btn.btn-lightweight fieldset[disabled],
+    .theme-dark.hero .btn.btn-lightweight fieldset[disabled],
+    .jumbotron.theme-dark .btn.btn-link fieldset[disabled],
+    .theme-dark.hero .btn.btn-link fieldset[disabled] {
       color: rgba(255, 255, 255, 0.2); }
   .btn-link.theme-on-img-light, .theme-on-img-light.btn-lightweight, .btn-link.theme-light, .theme-light.btn-lightweight, .jumbotron.theme-light .btn.btn-lightweight, .theme-light.hero .btn.btn-lightweight,
-  .jumbotron.theme-light .btn.btn-link, .theme-light.hero .btn.btn-link {
+  .jumbotron.theme-light .btn.btn-link,
+  .theme-light.hero .btn.btn-link {
     color: #000000; }
     .btn-link.theme-on-img-light:focus, .theme-on-img-light.btn-lightweight:focus, .btn-link.theme-on-img-light:active, .theme-on-img-light.btn-lightweight:active, .btn-link.theme-light:focus, .theme-light.btn-lightweight:focus, .jumbotron.theme-light .btn.btn-lightweight:focus, .theme-light.hero .btn.btn-lightweight:focus,
-    .jumbotron.theme-light .btn.btn-link:focus, .theme-light.hero .btn.btn-link:focus, .btn-link.theme-light:active, .theme-light.btn-lightweight:active, .jumbotron.theme-light .btn.btn-lightweight:active, .theme-light.hero .btn.btn-lightweight:active,
-    .jumbotron.theme-light .btn.btn-link:active, .theme-light.hero .btn.btn-link:active {
+    .jumbotron.theme-light .btn.btn-link:focus,
+    .theme-light.hero .btn.btn-link:focus, .btn-link.theme-light:active, .theme-light.btn-lightweight:active, .jumbotron.theme-light .btn.btn-lightweight:active, .theme-light.hero .btn.btn-lightweight:active,
+    .jumbotron.theme-light .btn.btn-link:active,
+    .theme-light.hero .btn.btn-link:active {
       color: rgba(0, 0, 0, 0.6); }
-    .btn-link.theme-on-img-light:disabled, .theme-on-img-light.btn-lightweight:disabled, .btn-link.theme-on-img-light.disabled, .theme-on-img-light.disabled.btn-lightweight, .btn-link.theme-on-img-light[disabled], .theme-on-img-light[disabled].btn-lightweight,
-    .btn-link.theme-on-img-light fieldset[disabled], .theme-on-img-light.btn-lightweight fieldset[disabled], .btn-link.theme-light:disabled, .theme-light.btn-lightweight:disabled, .jumbotron.theme-light .btn.btn-lightweight:disabled, .theme-light.hero .btn.btn-lightweight:disabled,
-    .jumbotron.theme-light .btn.btn-link:disabled, .theme-light.hero .btn.btn-link:disabled, .btn-link.theme-light.disabled, .theme-light.disabled.btn-lightweight, .jumbotron.theme-light .disabled.btn.btn-lightweight, .theme-light.hero .disabled.btn.btn-lightweight,
-    .jumbotron.theme-light .disabled.btn.btn-link, .theme-light.hero .disabled.btn.btn-link, .btn-link.theme-light[disabled], .theme-light[disabled].btn-lightweight, .jumbotron.theme-light [disabled].btn.btn-lightweight, .theme-light.hero [disabled].btn.btn-lightweight,
-    .jumbotron.theme-light [disabled].btn.btn-link, .theme-light.hero [disabled].btn.btn-link,
-    .btn-link.theme-light fieldset[disabled], .theme-light.btn-lightweight fieldset[disabled], .jumbotron.theme-light .btn.btn-lightweight fieldset[disabled], .theme-light.hero .btn.btn-lightweight fieldset[disabled],
-    .jumbotron.theme-light .btn.btn-link fieldset[disabled], .theme-light.hero .btn.btn-link fieldset[disabled] {
+    .btn-link.theme-on-img-light:disabled, .theme-on-img-light.btn-lightweight:disabled, .btn-link.theme-on-img-light.disabled, .theme-on-img-light.disabled.btn-lightweight, .btn-link.theme-on-img-light[disabled], .theme-on-img-light.btn-lightweight[disabled],
+    .btn-link.theme-on-img-light fieldset[disabled],
+    .theme-on-img-light.btn-lightweight fieldset[disabled], .btn-link.theme-light:disabled, .theme-light.btn-lightweight:disabled, .jumbotron.theme-light .btn.btn-lightweight:disabled, .theme-light.hero .btn.btn-lightweight:disabled,
+    .jumbotron.theme-light .btn.btn-link:disabled,
+    .theme-light.hero .btn.btn-link:disabled, .btn-link.theme-light.disabled, .theme-light.disabled.btn-lightweight, .jumbotron.theme-light .disabled.btn.btn-lightweight, .theme-light.hero .disabled.btn.btn-lightweight,
+    .jumbotron.theme-light .disabled.btn.btn-link,
+    .theme-light.hero .disabled.btn.btn-link, .btn-link.theme-light[disabled], .theme-light.btn-lightweight[disabled], .jumbotron.theme-light .btn.btn-lightweight[disabled], .theme-light.hero .btn.btn-lightweight[disabled],
+    .jumbotron.theme-light .btn.btn-link[disabled],
+    .theme-light.hero .btn.btn-link[disabled],
+    .btn-link.theme-light fieldset[disabled],
+    .theme-light.btn-lightweight fieldset[disabled],
+    .jumbotron.theme-light .btn.btn-lightweight fieldset[disabled],
+    .theme-light.hero .btn.btn-lightweight fieldset[disabled],
+    .jumbotron.theme-light .btn.btn-link fieldset[disabled],
+    .theme-light.hero .btn.btn-link fieldset[disabled] {
       color: rgba(0, 0, 0, 0.2); }
 
 .btn-dropdown {
@@ -9610,7 +9657,8 @@ form .theme-light select {
   .jumbotron .container, .hero .container {
     max-width: 1260px; }
   .jumbotron h1, .hero h1,
-  .jumbotron .h1, .hero .h1 {
+  .jumbotron .h1,
+  .hero .h1 {
     font-size: 62px;
     font-weight: 200;
     font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
@@ -9633,7 +9681,7 @@ form .theme-light select {
   @media screen and (min-width: 768px) {
     .jumbotron, .hero {
       padding: 48px 0; } }
-  @media screen and (min-width: 1084px) {
+  @media screen and (min-width: 1024px) {
     .jumbotron, .hero {
       padding: 60px 0; } }
   .jumbotron, .hero, .jumbotron.theme-default, .theme-default.hero {
@@ -9744,7 +9792,7 @@ form .theme-light select {
 
 .navbar-collapse {
   border-top: 0; }
-  @media (max-width: 1084px) {
+  @media (max-width: 1024px) {
     .navbar-collapse .navbar-nav > li > a {
       padding: 13px 10px;
       line-height: 1.5; }
@@ -9756,7 +9804,7 @@ form .theme-light select {
   padding: 12.5px 15px 12.5px 10px;
   margin-right: 15px;
   height: 48px; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-brand, .navbar-local .navbar-toggle {
       padding-left: 0px; } }
 
@@ -9780,7 +9828,7 @@ form .theme-light select {
         transition: background-color 0s; }
     .navbar-nav .open .dropdown-menu .divider {
       margin: 0; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-nav {
       margin: 0; }
       .navbar-nav > li > a {
@@ -9827,7 +9875,7 @@ form .theme-light select {
       .navbar-form .btn.btn-default::before {
         font-family: "winjs-symbols";
         content: ""; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-form {
       margin-top: 6px;
       margin-bottom: 6px;
@@ -9840,7 +9888,7 @@ form .theme-light select {
     padding: 15px 24px;
     height: auto;
     line-height: 1.5; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-local .navbar-nav {
       margin: 0; }
       .navbar-local .navbar-nav > li > a {
@@ -9855,7 +9903,7 @@ form .theme-light select {
   .navbar-local .navbar-toggle {
     margin: 0;
     line-height: 0; }
-  @media (min-width: 1084px) {
+  @media (min-width: 1024px) {
     .navbar-local .navbar-brand, .navbar-local .navbar-toggle {
       padding: 22px 15px 24px 0px;
       height: 72px; }
@@ -9917,17 +9965,18 @@ form .theme-light select {
       .navbar-local.theme-light .navbar-collapse .btn.btn-default:hover,
       .navbar-local.theme-light .navbar-form .btn.btn-default:hover {
         background: rgba(255, 255, 255, 0.8); }
-  .navbar-global .navbar-brand, .navbar-global .navbar-local .navbar-toggle, .navbar-local .navbar-global .navbar-toggle, .navbar-global.theme-default .navbar-brand, .navbar-global.theme-default .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-default .navbar-toggle, .navbar-global.theme-light .navbar-brand, .navbar-global.theme-light .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-light .navbar-toggle,
-  .navbar-local .navbar-brand, .navbar-local .navbar-toggle,
-  .navbar-local.theme-default .navbar-brand, .navbar-local.theme-default .navbar-toggle,
-  .navbar-local.theme-light .navbar-brand, .navbar-local.theme-light .navbar-toggle {
+  .navbar-global .navbar-brand, .navbar-global .navbar-local .navbar-toggle, .navbar-local .navbar-global .navbar-toggle, .navbar-global.theme-default .navbar-brand, .navbar-global.theme-default .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-default .navbar-toggle, .navbar-global.theme-light .navbar-brand, .navbar-global.theme-light .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-light .navbar-toggle, .navbar-local .navbar-brand, .navbar-local .navbar-toggle,
+  .navbar-local.theme-default .navbar-brand,
+  .navbar-local.theme-default .navbar-toggle,
+  .navbar-local.theme-light .navbar-brand,
+  .navbar-local.theme-light .navbar-toggle {
     color: #000000; }
   .navbar-global .navbar-nav > li, .navbar-global.theme-default .navbar-nav > li, .navbar-global.theme-light .navbar-nav > li,
   .navbar-local .navbar-nav > li,
   .navbar-local.theme-default .navbar-nav > li,
   .navbar-local.theme-light .navbar-nav > li {
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
-    @media (min-width: 1084px) {
+    @media (min-width: 1024px) {
       .navbar-global .navbar-nav > li, .navbar-global.theme-default .navbar-nav > li, .navbar-global.theme-light .navbar-nav > li,
       .navbar-local .navbar-nav > li,
       .navbar-local.theme-default .navbar-nav > li,
@@ -9964,7 +10013,8 @@ form .theme-light select {
   border-color: rgba(255, 255, 255, 0.1); }
 
 .navbar-global.theme-dark .navbar-brand, .navbar-global.theme-dark .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-dark .navbar-toggle,
-.navbar-local.theme-dark .navbar-brand, .navbar-local.theme-dark .navbar-toggle {
+.navbar-local.theme-dark .navbar-brand,
+.navbar-local.theme-dark .navbar-toggle {
   color: #FFFFFF; }
 
 .navbar-global.theme-dark .navbar-nav .active > a,
@@ -10017,7 +10067,8 @@ form .theme-light select {
   border-color: rgba(255, 255, 255, 0.1); }
 
 .navbar-global.theme-alt .navbar-brand, .navbar-global.theme-alt .navbar-local .navbar-toggle, .navbar-local .navbar-global.theme-alt .navbar-toggle,
-.navbar-local.theme-alt .navbar-brand, .navbar-local.theme-alt .navbar-toggle {
+.navbar-local.theme-alt .navbar-brand,
+.navbar-local.theme-alt .navbar-toggle {
   color: #FFFFFF; }
 
 .navbar-global.theme-alt .navbar-nav > li > a,
@@ -10058,8 +10109,7 @@ form .theme-light select {
 .navbar .nav .open > a, .navbar .nav .open > a:hover, .navbar .nav .open > a:focus {
   border: none; }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+.nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent; }
 
 .page-header .nav-pills {
@@ -10122,12 +10172,16 @@ form .theme-light select {
 
 .pagination > li, .pager > li {
   margin: 0; }
-  .pagination > li > a, .pager > li > a, .pagination > li > span, .pager > li > span {
+  .pagination > li > a, .pager > li > a,
+  .pagination > li > span,
+  .pager > li > span {
     min-width: 34px;
     margin: 5px;
     padding: 4px 8px 5px;
     text-align: center; }
-    .pagination > li > a:focus, .pager > li > a:focus, .pagination > li > span:focus, .pager > li > span:focus {
+    .pagination > li > a:focus, .pager > li > a:focus,
+    .pagination > li > span:focus,
+    .pager > li > span:focus {
       background-color: rgba(0, 0, 0, 0.3);
       border-color: transparent;
       outline: none; }
@@ -10202,7 +10256,12 @@ form .theme-light select {
     .progress.theme-on-color .progress-bar, .progress.theme-dark .progress-bar {
       background-color: #FFFFFF; }
 
-.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
   padding: 10px 12px; }
 
 .table tr th {
@@ -10765,7 +10824,7 @@ a.link-on-dark {
     .media .media-img.media-img-has-play a:after {
       background-color: rgba(0, 0, 0, 0.3); }
     .media .media-img.media-img-has-play a:hover:after {
-      background-color: transparent; }
+      background-color: rgba(0, 0, 0, 0); }
     .media .media-img img {
       display: inline-block;
       width: 100%;
@@ -10876,7 +10935,7 @@ a.link-on-dark {
     transition: background-color 0.3s;
     background: rgba(0, 0, 0, 0.3); }
     .media-play-overlay .btn-glyph:hover {
-      background: transparent; }
+      background: rgba(0, 0, 0, 0); }
 
 .media-info {
   font-size: 11px;
@@ -10908,13 +10967,17 @@ a.link-on-dark {
   min-width: 18px; }
 
 .pagination li.pagination-prev i[class*="glyph-"], .pager li.pagination-prev i[class*="glyph-"], .pager li.pager-prev i[class*="glyph-"],
-.pagination li.pagination-next i[class*="glyph-"], .pager li.pagination-next i[class*="glyph-"], .pager li.pager-next i[class*="glyph-"] {
+.pagination li.pagination-next i[class*="glyph-"],
+.pager li.pagination-next i[class*="glyph-"],
+.pager li.pager-next i[class*="glyph-"] {
   margin: 0 2px;
   font-size: .813em;
   vertical-align: -.1em; }
 
 .pagination li.pagination-prev.disabled, .pager li.pagination-prev.disabled, .pager li.disabled.pager-prev,
-.pagination li.pagination-next.disabled, .pager li.pagination-next.disabled, .pager li.disabled.pager-next {
+.pagination li.pagination-next.disabled,
+.pager li.pagination-next.disabled,
+.pager li.disabled.pager-next {
   display: none; }
 
 .pagination li.pagination-prev > a, .pager li.pagination-prev > a, .pager .pagination li.pager-prev > a, .pager li.pager-prev > a, .pagination li.pagination-prev > span, .pager li.pagination-prev > span, .pager .pagination li.pager-prev > span, .pager li.pager-prev > span {
@@ -10924,24 +10987,28 @@ a.link-on-dark {
 .pagination li.pagination-next > a, .pager li.pagination-next > a, .pager .pagination li.pager-next > a, .pager li.pager-next > a, .pagination li.pagination-next > span, .pager li.pagination-next > span, .pager .pagination li.pager-next > span, .pager li.pager-next > span {
   padding: 5px 6px 5px 10px; }
 
-.pagination li.pagination-prev > a, .pager li.pagination-prev > a, .pager .pagination li.pager-prev > a, .pager li.pager-prev > a, .pagination li.pagination-prev > span, .pager li.pagination-prev > span, .pager .pagination li.pager-prev > span, .pager li.pager-prev > span,
-.pagination li.pagination-next > a, .pager li.pagination-next > a, .pager
-.pagination li.pager-next > a, .pager li.pager-next > a,
-.pagination li.pagination-next > span, .pager li.pagination-next > span, .pager
-.pagination li.pager-next > span, .pager li.pager-next > span {
+.pagination li.pagination-prev > a, .pager li.pagination-prev > a, .pager .pagination li.pager-prev > a, .pager li.pager-prev > a, .pagination li.pagination-prev > span, .pager li.pagination-prev > span, .pager .pagination li.pager-prev > span, .pager li.pager-prev > span, .pagination li.pagination-next > a, .pager li.pagination-next > a, .pager .pagination li.pager-next > a, .pager li.pager-next > a, .pagination li.pagination-next > span, .pager li.pagination-next > span, .pager .pagination li.pager-next > span, .pager li.pager-next > span {
   background: none;
   border-color: transparent; }
   .pagination li.pagination-prev > a:hover, .pager li.pagination-prev > a:hover, .pager .pagination li.pager-prev > a:hover, .pager li.pager-prev > a:hover, .pagination li.pagination-prev > span:hover, .pager li.pagination-prev > span:hover, .pager .pagination li.pager-prev > span:hover, .pager li.pager-prev > span:hover,
-  .pagination li.pagination-next > a:hover, .pager li.pagination-next > a:hover, .pager
-  .pagination li.pager-next > a:hover, .pager li.pager-next > a:hover,
-  .pagination li.pagination-next > span:hover, .pager li.pagination-next > span:hover, .pager
-  .pagination li.pager-next > span:hover, .pager li.pager-next > span:hover {
+  .pagination li.pagination-next > a:hover,
+  .pager li.pagination-next > a:hover,
+  .pager .pagination li.pager-next > a:hover,
+  .pager li.pager-next > a:hover,
+  .pagination li.pagination-next > span:hover,
+  .pager li.pagination-next > span:hover,
+  .pager .pagination li.pager-next > span:hover,
+  .pager li.pager-next > span:hover {
     background-color: rgba(0, 0, 0, 0.1); }
   .pagination li.pagination-prev > a:focus, .pager li.pagination-prev > a:focus, .pager .pagination li.pager-prev > a:focus, .pager li.pager-prev > a:focus, .pagination li.pagination-prev > span:focus, .pager li.pagination-prev > span:focus, .pager .pagination li.pager-prev > span:focus, .pager li.pager-prev > span:focus,
-  .pagination li.pagination-next > a:focus, .pager li.pagination-next > a:focus, .pager
-  .pagination li.pager-next > a:focus, .pager li.pager-next > a:focus,
-  .pagination li.pagination-next > span:focus, .pager li.pagination-next > span:focus, .pager
-  .pagination li.pager-next > span:focus, .pager li.pager-next > span:focus {
+  .pagination li.pagination-next > a:focus,
+  .pager li.pagination-next > a:focus,
+  .pager .pagination li.pager-next > a:focus,
+  .pager li.pager-next > a:focus,
+  .pagination li.pagination-next > span:focus,
+  .pager li.pagination-next > span:focus,
+  .pager .pagination li.pager-next > span:focus,
+  .pager li.pager-next > span:focus {
     background-color: rgba(0, 0, 0, 0.3); }
 
 .pagination.theme-alt > li > a, .theme-alt.pager > li > a, .pagination.theme-alt > li > span, .theme-alt.pager > li > span {
@@ -10952,8 +11019,10 @@ a.link-on-dark {
     background-color: rgba(255, 255, 255, 0.3); }
 
 .pagination.theme-alt > .active > a:hover, .theme-alt.pager > .active > a:hover, .pagination.theme-alt > .active > a:focus, .theme-alt.pager > .active > a:focus,
-.pagination.theme-alt > .active > span:hover, .theme-alt.pager > .active > span:hover,
-.pagination.theme-alt > .active > span:focus, .theme-alt.pager > .active > span:focus {
+.pagination.theme-alt > .active > span:hover,
+.theme-alt.pager > .active > span:hover,
+.pagination.theme-alt > .active > span:focus,
+.theme-alt.pager > .active > span:focus {
   color: #FFFFFF;
   background-color: transparent; }
 
@@ -11459,7 +11528,8 @@ a.navigation-btn {
   a.navigation-btn.theme-alt {
     color: rgba(255, 255, 255, 0.6); }
     a.navigation-btn.theme-alt.btn-lightweight:hover, .jumbotron.theme-alt a.navigation-btn.btn.btn-lightweight:hover, .theme-alt.hero a.navigation-btn.btn.btn-lightweight:hover,
-    .jumbotron.theme-alt a.navigation-btn.btn.btn-link:hover, .theme-alt.hero a.navigation-btn.btn.btn-link:hover {
+    .jumbotron.theme-alt a.navigation-btn.btn.btn-link:hover,
+    .theme-alt.hero a.navigation-btn.btn.btn-link:hover {
       color: rgba(255, 255, 255, 0.6); }
 
 .side-navigation li {
