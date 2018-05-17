@@ -166,7 +166,7 @@ $navbar-transition-out: .5s;
 
 .navbar-local {
     box-shadow: 0px 1px 0px $color-dim-mid;
-    
+
     .navbar-nav {
         .open .dropdown-menu {
             > li > a {
@@ -174,9 +174,14 @@ $navbar-transition-out: .5s;
                 height: auto;
                 line-height: 1.5;
             }
+            > .active > a {
+                &,
+                &:hover,
+                &:focus {
+                    color: $navbar-default-link-active-color;
+                }
+            }
         }
-        
-        
         // Uncollapse the nav
         @media (min-width: $grid-float-breakpoint) {
             margin: 0;
@@ -184,14 +189,14 @@ $navbar-transition-out: .5s;
             > li > a {
                 padding: spacing(xs, .5) spacing(xs);
             }
-            
+
             &.compressed {
                 > li > a {
                     padding: spacing(xs, .5) spacing(xxs, 6);
                 }
             }
         }
-        
+
         @media (min-width: $screen-xl-min) {
             &.compressed {
                 > li > a {
@@ -200,29 +205,28 @@ $navbar-transition-out: .5s;
             }
         }
     }
-    
+
     .navbar-brand {
         padding: spacing(xxxs, 2.5) spacing(xxs, 1) spacing(xxxs, 2.5) spacing(xxxs, 2);
     }
-    
+
     .navbar-toggle {
         @extend .navbar-brand;
         margin: 0;
         line-height: 0;
     }
-    
+
     @media (min-width: $grid-float-breakpoint) {
         .navbar-brand {
             padding: spacing(xs, -2) spacing(xxs, 3) spacing(xs) spacing(n);
             height: 72px;
         }
-    
+
         .navbar-toggle {
             margin-top: spacing(xs, -4.5);
             margin-bottom: spacing(xs, -4.5);
         }
     }
-
 }
 
 //
