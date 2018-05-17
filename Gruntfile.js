@@ -55,6 +55,12 @@ module.exports = function (grunt) {
             src: '**',
             dest: './dist/fonts/'
           },
+          {
+            expand: true,
+            cwd: './src/images/',
+            src: '*',
+            dest: './dist/images/'
+          },
           
           //  Copy vendor js to dist and www
           {
