@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/winjs/winstrap.git"
   },
-  "version": "0.5.12",
+  "version": "0.5.13",
   "author": "Microsoft",
   "contributors": [
     "Frederic Perrin",
@@ -40,7 +40,7 @@
   "bugs": {
     "url": "https://github.com/winjs/winstrap/issues"
   },
-  "main": "dist/*",
+  "main": "index.js",
   "keywords": [
     "microsoft",
     "windows",
