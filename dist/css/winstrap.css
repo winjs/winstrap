@@ -8067,6 +8067,12 @@ ol {
     .btn-group {
       margin: 24px 0 0; } }
 
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+  margin-left: 0; }
+
 .btn {
   font-size: 15px;
   font-weight: 400;

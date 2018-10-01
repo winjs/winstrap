@@ -12,6 +12,16 @@
     }
 }
 
+// Override bootstraps behavior to add negative spacing to buttons because it doesn't work with winstraps buttons
+.btn-group {
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: 0;
+  }
+}
+
 .btn {
     @include type(t7);
     min-width: 120px;
