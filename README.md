@@ -53,7 +53,7 @@ Just run this task to display the demo pages in your browser:
 grunt server
 ```
 
-Launch this URL in your brower: http://localhost:9001/
+Launch this URL in your browser: http://localhost:9001/
 
 The changes you make to the Sass files `*.scss` or source documentation files `*.hbs` will be automatically recompiled. Just refresh your browser window.
 
