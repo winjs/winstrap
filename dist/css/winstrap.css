@@ -8078,7 +8078,7 @@ ol {
   border-width: 1px;
   text-decoration: none;
   padding: 9px 12px 10px;
-  margin: 12px 8px 0 0; }
+  margin: 2px; }
   .btn.theme-light, .btn.theme-dark {
     text-decoration: none; }
   .btn.btn-primary, .btn.btn-primary.theme-default {
@@ -8787,7 +8787,7 @@ textarea.form-control {
   border-width: 1px;
   border-radius: 0px;
   margin-top: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   max-width: 296px;
   min-width: 88px;
   min-height: 36px;
