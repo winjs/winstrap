@@ -242,6 +242,11 @@ textarea.form-control {
         border-color: $color-neutral-low;
         background-color: $color-neutral-low-alt;
     }
+        
+    &[readonly]:focus {
+        background: $color-dim-mid;
+        border-color: $color-vivid-low;   
+    }
 }
 
 input.form-control::-ms-clear,
