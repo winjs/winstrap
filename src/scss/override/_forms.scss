@@ -17,10 +17,6 @@ textarea.form-control {
     padding-left: spacing(xxs, -1);
     vertical-align: top;
     outline: 0;
-
-    .form-inline & {
-        margin-bottom: 0px;
-    }
 }
 
 input.form-control::-ms-value {
