@@ -22,6 +22,10 @@
     padding: 9px 12px 10px;
     margin: 12px 8px 0 0;
 
+    .form-inline & {
+        margin: 1px 8px 0 0;
+    }
+
     &.theme-light,
     &.theme-dark {
         // <a> with .theme-light or .theme-dark is always underlined by default.
