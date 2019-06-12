@@ -8595,9 +8595,10 @@ ol {
   display: none; }
 
 .btn-xs, .btn-group-xs > .btn {
-  padding: 0 5px;
+  padding: 0 10px;
   font-size: 12px;
-  line-height: 1.5625; }
+  line-height: 1.5625;
+  min-width: 60px; }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 2px 7px; }

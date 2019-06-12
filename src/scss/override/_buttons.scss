@@ -524,9 +524,10 @@
 
 // restore Bootstrap button size ramp
 .btn-xs {
-  padding: 0 5px;
+  padding: 0 10px;
   font-size: $font-size-small;
   line-height: $line-height-base;
+  min-width: 60px;
 }
 
 .btn-sm {
